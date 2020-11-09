@@ -14,7 +14,7 @@ steps:
 - task: AzureFileCopy@4
   inputs:
     SourcePath: '$(System.DefaultWorkingDirectory)/web/src/*'
-    azureSubscription: 'Visual Studio Enterprise (533de7ba-f01c-404b-bd44-3812b36bb853)'
+    azureSubscription: 'ronaldbrogan Azure'
     Destination: 'AzureBlob'
     storage: 'openblam'
     ContainerName: '$web'
