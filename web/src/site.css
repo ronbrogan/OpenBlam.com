@@ -1,0 +1,15 @@
+.logo img {
+    border-radius: 50%;
+    display: inline;
+    border: 2px solid #3681c3;
+    vertical-align: top;
+}
+
+.logo span {
+    display: inline-block;
+    font-size: 2em;
+}
+
+.logo .blam {
+    color: #ae9a87;
+}
