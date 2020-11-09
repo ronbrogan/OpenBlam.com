@@ -1,0 +1,20 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+
+- task: AzureFileCopy@4
+  inputs:
+    SourcePath: '$(System.DefaultWorkingDirectory)/web/src/*'
+    azureSubscription: 'Visual Studio Enterprise(533de7ba-f01c-404b-bd44-3812b36bb853)'
+    Destination: 'AzureBlob'
+    storage: 'openblam'
+    ContainerName: '$web'
