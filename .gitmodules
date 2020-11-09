@@ -1,0 +1,3 @@
+[submodule "lib/OpenH2"]
+	path = lib/OpenH2
+	url = https://github.com/ronbrogan/OpenH2.git
