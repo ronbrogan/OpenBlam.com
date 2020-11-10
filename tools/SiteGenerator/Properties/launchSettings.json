@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SiteGenerator": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "azSpeechKey": "f49199c7c9e046f68e5670685b3506cd"
+      }
+    }
+  }
+}
