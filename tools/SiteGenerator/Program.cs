@@ -1,7 +1,5 @@
-﻿using DeepSpeechClient.Interfaces;
-using Microsoft.CognitiveServices.Speech;
+﻿using Microsoft.CognitiveServices.Speech;
 using Microsoft.CognitiveServices.Speech.Audio;
-using NAudio.Wave;
 using OpenH2.Core.ExternalFormats;
 using OpenH2.Core.Factories;
 using OpenH2.Core.Maps;
@@ -11,7 +9,6 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Security.Cryptography.X509Certificates;
 using System.Text.Json;
 using System.Threading.Tasks;
 
@@ -27,25 +24,17 @@ namespace OpenBlam.SiteGenerator
 
     class Program
     {
-        private static IDeepSpeech model/* = new DeepSpeechClient.DeepSpeech("deepspeech-0.9.1-models.pbmm")*/;
         private static ConcurrentDictionary<long, string> resolved = new ConcurrentDictionary<long, string>();
 
         static async Task Main(string[] args)
         {
-            //model.EnableExternalScorer("deepspeech-0.9.1-models.scorer");
-            //model.SetScorerAlphaBeta(0.931289039105002f, 1.1834137581510284f);
-
             var factory = new MapFactory(@"D:\H2vMaps", NullMaterialFactory.Instance);
 
             var mapPaths = Directory.EnumerateFiles(@"D:\H2vMaps", "*.map");
 
             foreach(var mapPath in mapPaths)
             {
-                if (mapPath.Contains("00a") || mapPath.Contains("01a"))
-                {
-                    continue;
-                }
-
+                var processed = new HashSet<uint>();
                 var map = factory.FromFile(File.OpenRead(mapPath));
                 var soundMapping = map.GetTag(map.Globals.SoundInfos[0].SoundMap);
                 var lines = new List<LineInfo>();
@@ -57,6 +46,11 @@ namespace OpenBlam.SiteGenerator
                     {
                         foreach (var soundInfo in line.SoundTags)
                         {
+                            if (processed.Contains(soundInfo.Sound.Id))
+                                continue;
+
+                            processed.Add(soundInfo.Sound.Id);
+
                             var snd = map.GetTag(soundInfo.Sound);
                             foreach (var (index, text) in ProcessSoundTag(map, soundMapping, snd))
                             {
@@ -80,19 +74,27 @@ namespace OpenBlam.SiteGenerator
                         continue;
                     }
 
-                    foreach (var (index, text) in ProcessSoundTag(map, soundMapping, snd))
+                    if (snd.Name.Contains("combat") || snd.Name.Contains("mission"))
                     {
-                        lines.Add(new LineInfo()
+                        if (processed.Contains(snd.Id))
+                            continue;
+
+                        processed.Add(snd.Id);
+
+                        foreach (var (index, text) in ProcessSoundTag(map, soundMapping, snd))
                         {
-                            TagName = snd.Name,
-                            LineName = "N/A",
-                            ClipIndex = index,
-                            Text = text
-                        });
+                            lines.Add(new LineInfo()
+                            {
+                                TagName = snd.Name,
+                                LineName = "N/A",
+                                ClipIndex = index,
+                                Text = text
+                            });
+                        }
                     }
                 }
 
-                File.WriteAllText(@$"D:\maptts\{Path.GetFileNameWithoutExtension(mapPath)}.json",
+                File.WriteAllText(@$"D:\maptts3\{Path.GetFileNameWithoutExtension(mapPath)}.json",
                     JsonSerializer.Serialize(new { Lines = lines }, new JsonSerializerOptions()
                     {
                         WriteIndented = true
@@ -122,36 +124,6 @@ namespace OpenBlam.SiteGenerator
             return results;
         }
 
-        public static string DoDeepSpeechRecog(byte[] raw, bool stereo)
-        {
-            var pcm = ImaAdpcmAudio.Decode(stereo, raw);
-            var bytes = MemoryMarshal.Cast<short, byte>(pcm.AsSpan());
-            var src = new RawSourceWaveStream(new MemoryStream(bytes.ToArray()), new WaveFormat(44100, 16, stereo ? 2 : 1));
-
-            var outFormat = new WaveFormat(16000, 16, 1);
-            using (var pcmStream = new MemoryStream())
-            using (var resampler = new MediaFoundationResampler(src, outFormat))
-            {
-                resampler.ResamplerQuality = 60;
-                var buf = new byte[4096];
-                var read = 0;
-
-                do
-                {
-                    read = resampler.Read(buf, 0, buf.Length);
-                    pcmStream.Write(buf, 0, read);
-                }
-                while (read != 0);
-
-                pcmStream.Position = 0;
-
-                var samples = MemoryMarshal.Cast<byte, short>(pcmStream.ToArray().AsSpan());
-
-                var text = model.SpeechToText(samples.ToArray(), (uint)samples.Length);
-                return text;
-            }
-        }
-
         private static SpeechConfig speechConfig = SpeechConfig.FromSubscription(Environment.GetEnvironmentVariable("azSpeechKey", EnvironmentVariableTarget.Process), "eastus");
 
         public static string DoAzureSpeechRecog(ClipData clip)
@@ -170,7 +142,7 @@ namespace OpenBlam.SiteGenerator
             var hash = BytesHash(bytes);
             if(resolved.TryGetValue(hash, out var str))
             {
-                return str;
+                //return str;
             }
 
             using var stream = AudioInputStream.CreatePushStream(AudioStreamFormat.GetWaveFormatPCM((uint)sr, 16, stereo ? 2 : 1));
