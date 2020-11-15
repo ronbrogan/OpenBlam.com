@@ -20,7 +20,11 @@ steps:
   inputs:
     script: |
       npm install
-      
+    workingDirectory: '$(System.DefaultWorkingDirectory)/web'
+
+- task: CmdLine@2
+  inputs:
+    script: |
       npm run build
     workingDirectory: '$(System.DefaultWorkingDirectory)/web'
 
