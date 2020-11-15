@@ -40,3 +40,12 @@ steps:
     ContainerName: '$web'
     copyFilesInParallel: true
     cleanTargetBeforeCopy: true
+
+- task: PurgeAzureCDNEndpoint@2
+  inputs:
+    ConnectedServiceNameSelector: 'ConnectedServiceNameARM'
+    ConnectedServiceNameARM: 'ronaldbrogan Azure'
+    ResourceGroupName: 'OpenBlam.com'
+    EndpointName: 'openblam'
+    ProfileName: 'openblam-cdn'
+    PurgeContent: '/*'
