@@ -1,0 +1,83 @@
+{
+  "Name": "Gravemind",
+  "Description": "The Prophets have the Index and plan to use it? Over your dead body.",
+  "Scenario": "scenarios\\solo\\07a_highcharity\\07a_highcharity",
+  "TagCount": 7303,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head",
+      "position": "[-152.46346, -204.87334, -1.5715823]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-216.8272, -140.52676, 21.273098]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\pike\\pike",
+      "position": "[-219.9814, -150.5959, 21.2731]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\pike\\pike",
+      "position": "[-212.85173, -150.5682, 21.273102]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-179.44688, -137.02943, -8.494156]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-180.98732, -140.80515, -10.395137]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-179.39604, -148.52614, -8.89511]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[-131.20319, -169.52487, -7.4842143]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[-84.84916, -171.81552, -12.725773]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[-78.96942, -170.91574, -14.725844]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-80.36201, -172.37181, -14.28239]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-80.37503, -172.78693, -14.277872]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\flak_cannon\\flak_cannon",
+      "position": "[-87.97305, -171.42223, -11.489394]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-93.94019, -172.30855, -8.06572]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-93.87803, -172.73221, -8.101516]",
+      "byDefault": true
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+.mapDetails {
+    clear:both;
+}
+
+.main {
+    float: left;
+    width: 100%;
+
+    h1 {
+        margin-top: 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #333;
+    }
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 1em;
+        font-size: 1em;
+        color: #999
+    }
+}
+
+.metadata {
+    float: right;
+    width: 256px;
+    text-align: center;
+    padding: 6px;
+    margin: 6px;
+    background-color: rgba(150, 150, 150, 0.2);
+
+    img.ui-image {
+        width: 256px;
+        height: 256px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    div {
+        width: 100%;
+        font-size: 0.7em;
+        padding: 2px 0 2px 0;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.weaponList {
+    display: block;
+}

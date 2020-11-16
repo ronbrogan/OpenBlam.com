@@ -1,0 +1,228 @@
+{
+  "Name": "Outskirts",
+  "Description": "Rally scattered Marines, clear hostile contacts from the old-city.",
+  "Scenario": "scenarios\\solo\\03a_oldmombasa\\03a_oldmombasa",
+  "TagCount": 7594,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-523.99115, -612.6716, 2.230115]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-536.18304, -622.5107, -0.10189302]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-537.8896, -623.0705, -0.21384627]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-526.7897, -629.1742, 0.00032595714]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-530.78577, -623.43463, 0.0002931646]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-529.58435, -623.1659, 0.00029339106]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-528.1221, -621.13324, 0.00029137082]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-523.8814, -613.78906, 0.00027031006]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-522.39276, -613.30664, 0.0002837108]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-528.9264, -617.94495, 0.0002867368]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-531.8353, -615.83887, 0.00028251155]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-530.6033, -616.1624, 0.0002897049]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-528.3161, -620.9874, 0.00029109648]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-543.7272, -618.536, 0.015716877]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-510.0566, -591.2721, 0.0002454111]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-510.68787, -590.5882, 0.0002589468]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-512.44055, -587.6665, 0.0002573353]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-511.2907, -589.9893, 0.00025975308]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-584.40405, -596.1533, 1.7002658]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-576.40063, -605.506, 1.7002715]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-585.2553, -605.8651, 0.00024327009]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-565.7591, -618.2237, 1.5002443]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-528.8949, -608.3149, 3.4595227]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-525.24506, -595.3801, 0.00024509293]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-482.79605, -581.44275, 1.1494663]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-536.5038, -388.4864, -3.3197422]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-583.7143, -596.2594, 1.7002684]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-528.3677, -620.7263, 0.0016940362]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-530.97705, -623.8743, 0.00028251894]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-529.0143, -604.1316, 0.0002237864]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-512.18463, -587.3447, 0.00024606625]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-536.5846, -620.05817, 0.00025368104]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-568.71857, -365.8189, -5.723066]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-509.25583, -626.4322, -0.30839255]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-509.47543, -626.8919, -0.33058944]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-562.51184, -618.46344, 1.5002445]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-562.65717, -619.7263, 1.5002445]",
+      "byDefault": true
+    },
+    {
+      "tag": "scenarios\\objects\\covenant\\military\\scarab\\weapons\\main_gun\\scarab_main_gun_handheld",
+      "position": "[-582.8853, -103.83627, 3.5945532]",
+      "byDefault": false
+    },
+    {
+      "tag": "scenarios\\objects\\covenant\\military\\scarab\\weapons\\main_gun\\scarab_main_gun_handheld",
+      "position": "[-27.840311, -272.02228, -0.9998467]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\vehicles\\c_turret_ap\\weapon\\big_needler_handheld",
+      "position": "[-27.147533, -272.05115, -0.9998454]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-533.3112, -389.76343, -3.2009988]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-527.99243, -608.2479, 3.5047975]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-597.627, -624.9176, 3.586059]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-516.6771, -628.12006, 5.204443]",
+      "byDefault": true
+    }
+  ]
+}

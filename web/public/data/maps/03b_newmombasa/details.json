@@ -1,0 +1,123 @@
+{
+  "Name": "Metropolis",
+  "Description": "Take the bridge, break the Covenant\u0027s grip on the city-center.",
+  "Scenario": "scenarios\\solo\\03b_newmombasa\\03b_newmombasa",
+  "TagCount": 8148,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[246.7904, 191.49928, -0.22765526]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[246.75409, 191.12134, -0.22765554]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[228.0689, 206.32722, -12.932716]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[228.27457, 205.5866, -12.932832]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[361.8336, 118.378365, -14.798046]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[438.17197, 71.601814, -5.454421]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[431.6694, 68.2385, -5.5859294]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[438.57394, 71.11126, -5.4603176]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[438.80396, 71.1083, -5.45853]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[432.10803, 54.15029, -5.47139]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[429.51013, 33.98703, -5.4543743]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[429.51117, 33.874664, -5.4589047]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[431.89642, 67.373055, -5.18912]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[429.9308, 33.90156, -5.570672]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[480.2305, 8.40572, -5.5326467]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[480.22568, 8.708861, -5.5397205]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[480.178, 9.332383, -5.515355]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[480.18018, 9.207704, -5.512447]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[248.90302, 266.7639, -13.600186]",
+      "byDefault": true
+    },
+    {
+      "tag": "scenarios\\objects\\covenant\\military\\scarab\\weapons\\main_gun\\scarab_main_gun_handheld",
+      "position": "[319.00027, 99.14159, -8.269619]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[218.89876, 155.32602, -18.280441]",
+      "byDefault": true
+    },
+    {
+      "tag": "scenarios\\objects\\covenant\\military\\scarab\\weapons\\main_gun\\scarab_main_gun_handheld",
+      "position": "[399.56076, -17.233921, 151.11537]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[241.7643, 201.51022, -0.17823838]",
+      "byDefault": false
+    }
+  ]
+}

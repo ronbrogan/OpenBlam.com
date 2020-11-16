@@ -1,0 +1,7 @@
+{
+  "Name": "Example",
+  "Description": "This is a just a small example of what you can do as a Halo 2 cartographer!",
+  "Scenario": "scenarios\\multi\\example\\example",
+  "TagCount": 15065,
+  "Weapons": []
+}

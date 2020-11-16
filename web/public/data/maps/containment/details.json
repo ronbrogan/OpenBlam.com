@@ -1,0 +1,7 @@
+{
+  "Name": "Containment",
+  "Description": "Fighting for a patch of dirt abutting a wall containing a galaxy-devouring parasite may seem pointless to some, but ... um ....",
+  "Scenario": "scenarios\\multi\\containment\\containment",
+  "TagCount": 15065,
+  "Weapons": []
+}

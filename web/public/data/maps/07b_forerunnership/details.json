@@ -1,0 +1,143 @@
+{
+  "Name": "High Charity",
+  "Description": "Cortana can handle the Index - stopping Truth is up to you.",
+  "Scenario": "scenarios\\solo\\07b_forerunnership\\07b_forerunnership",
+  "TagCount": 6057,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[395.4418, -101.04122, 97.46921]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[406.08835, -101.65016, 96.79565]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[423.52914, -30.49767, 115.51336]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[425.30746, -22.85203, 115.51337]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[423.40036, -27.058737, 115.57681]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[419.0823, -28.308577, 115.51336]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[353.3287, -151.86913, 97.8471]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[354.44498, -146.28107, 97.85366]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[352.92493, -143.90329, 97.8471]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[349.98352, -143.59616, 66.839424]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[466.31195, -171.2857, 98.77202]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[391.4597, -173.73625, 99.81817]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[555.41113, -174.98596, -20.89223]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[553.2584, -174.26091, -20.8153]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[401.6826, -93.827995, 97.71275]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[467.53247, -173.55959, 98.77202]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[391.61615, -170.46475, 99.81845]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[378.84796, -173.79543, 99.2156]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[352.67368, -149.6011, 97.85527]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[357.35657, -129.21037, 99.34644]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[401.15405, -49.044807, 112.822495]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[401.8417, -48.629932, 113.137535]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[399.32535, -47.40582, 112.73866]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[399.87073, -51.074394, 112.73865]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[408.40256, -45.418324, 112.73866]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[394.9684, -47.607, 112.73866]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[416.13428, -48.535713, 135.05586]",
+      "byDefault": false
+    }
+  ]
+}

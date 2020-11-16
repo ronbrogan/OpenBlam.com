@@ -1,12 +1,172 @@
 {
-    "maps": [
-        {
-            "name": "01a_tutorial",
-            "displayName": "Armory"
-        },
-        {
-            "name": "01b_spacestation",
-            "displayName": "Cairo Station"
-        }
-    ]
+  "maps": [
+    {
+      "name": "00a_introduction",
+      "displayName": "The Heretic"
+    },
+    {
+      "name": "01a_tutorial",
+      "displayName": "Armory"
+    },
+    {
+      "name": "01b_spacestation",
+      "displayName": "Cairo Station"
+    },
+    {
+      "name": "03a_oldmombasa",
+      "displayName": "Outskirts"
+    },
+    {
+      "name": "03b_newmombasa",
+      "displayName": "Metropolis"
+    },
+    {
+      "name": "04a_gasgiant",
+      "displayName": "The Arbiter"
+    },
+    {
+      "name": "04b_floodlab",
+      "displayName": "Oracle"
+    },
+    {
+      "name": "05a_deltaapproach",
+      "displayName": "Delta Halo"
+    },
+    {
+      "name": "05b_deltatowers",
+      "displayName": "Regret"
+    },
+    {
+      "name": "06a_sentinelwalls",
+      "displayName": "Sacred Icon"
+    },
+    {
+      "name": "06b_floodzone",
+      "displayName": "Quarantine Zone"
+    },
+    {
+      "name": "07a_highcharity",
+      "displayName": "Gravemind"
+    },
+    {
+      "name": "07b_forerunnership",
+      "displayName": "High Charity"
+    },
+    {
+      "name": "08a_deltacliffs",
+      "displayName": "Uprising"
+    },
+    {
+      "name": "08b_deltacontrol",
+      "displayName": "The Great Journey"
+    },
+    {
+      "name": "ascension",
+      "displayName": "Ascension"
+    },
+    {
+      "name": "backwash",
+      "displayName": "Backwash"
+    },
+    {
+      "name": "beavercreek",
+      "displayName": "Beaver Creek"
+    },
+    {
+      "name": "burial_mounds",
+      "displayName": "Burial Mounds"
+    },
+    {
+      "name": "coagulation",
+      "displayName": "Coagulation"
+    },
+    {
+      "name": "colossus",
+      "displayName": "Colossus"
+    },
+    {
+      "name": "containment",
+      "displayName": "Containment"
+    },
+    {
+      "name": "cyclotron",
+      "displayName": "Ivory Tower"
+    },
+    {
+      "name": "deltatap",
+      "displayName": "Sanctuary"
+    },
+    {
+      "name": "dune",
+      "displayName": "Relic"
+    },
+    {
+      "name": "elongation",
+      "displayName": "Elongation"
+    },
+    {
+      "name": "example",
+      "displayName": "Example"
+    },
+    {
+      "name": "foundation",
+      "displayName": "Foundation"
+    },
+    {
+      "name": "gemini",
+      "displayName": "Gemini"
+    },
+    {
+      "name": "headlong",
+      "displayName": "Headlong"
+    },
+    {
+      "name": "lockout",
+      "displayName": "Lockout"
+    },
+    {
+      "name": "mainmenu",
+      "displayName": "mainmenu"
+    },
+    {
+      "name": "midship",
+      "displayName": "Midship"
+    },
+    {
+      "name": "needle",
+      "displayName": "Uplift"
+    },
+    {
+      "name": "shared",
+      "displayName": "shared"
+    },
+    {
+      "name": "single_player_shared",
+      "displayName": "single_player_shared"
+    },
+    {
+      "name": "street_sweeper",
+      "displayName": "District"
+    },
+    {
+      "name": "triplicate",
+      "displayName": "Terminal"
+    },
+    {
+      "name": "turf",
+      "displayName": "Turf"
+    },
+    {
+      "name": "warlock",
+      "displayName": "Warlock"
+    },
+    {
+      "name": "waterworks",
+      "displayName": "Waterworks"
+    },
+    {
+      "name": "zanzibar",
+      "displayName": "Zanzibar"
+    }
+  ]
 }

@@ -1,0 +1,7 @@
+{
+  "Name": "Ascension",
+  "Description": "This relay station is part of a network that has kept Delta Halo functioning smoothly for untold centuries.",
+  "Scenario": "scenarios\\multi\\ascension\\ascension",
+  "TagCount": 15065,
+  "Weapons": []
+}

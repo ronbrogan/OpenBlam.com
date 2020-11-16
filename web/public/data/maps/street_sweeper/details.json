@@ -1,0 +1,7 @@
+{
+  "Name": "District",
+  "Description": "The alleys of Old Mombasa were never kind to the unwary. On Covenant-controlled Earth, ramshackle homes prove ideal for ambush.",
+  "Scenario": "scenarios\\multi\\street_sweeper\\street_sweeper",
+  "TagCount": 15065,
+  "Weapons": []
+}

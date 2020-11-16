@@ -1,0 +1,78 @@
+{
+  "Name": "single_player_shared",
+  "Description": null,
+  "Scenario": "scenarios\\shared\\single_player_shared",
+  "TagCount": 8367,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-3.9664423, -2.0883315, 0.0009999482]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-3.8955812, -1.7091496, 0.000999993]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-3.9058414, -1.5224836, 0.0010000111]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-3.9109108, -1.1464854, 0.0009999846]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-3.8879852, -0.84739417, 0.0010000005]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[-3.9292622, -0.380831, 0.0009999588]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-3.952851, -0.08262889, 0.0010000226]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-3.9630926, 0.13331409, 0.001000049]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\flak_cannon\\flak_cannon",
+      "position": "[-3.9719205, 0.40857807, 0.001000028]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-3.929189, 1.8296262, 0.00024414196]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[-3.95103, 2.1942792, 0.000999954]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-3.9163344, 0.7398992, 0.0002440938]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-3.9136858, 1.338259, 0.00024417992]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-3.922004, 1.6205921, 0.00024413569]",
+      "byDefault": true
+    }
+  ]
+}

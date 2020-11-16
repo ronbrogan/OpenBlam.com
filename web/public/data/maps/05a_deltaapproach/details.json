@@ -1,0 +1,178 @@
+{
+  "Name": "Delta Halo",
+  "Description": "A Covenant army stands between you and the Prophet of Regret. Get to work.",
+  "Scenario": "scenarios\\solo\\05a_deltaapproach\\05a_deltaapproach",
+  "TagCount": 7936,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-281.24915, -260.0301, 39.288292]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-282.6904, -250.7194, 40.007305]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-290.7081, -251.92235, 40.105747]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-286.88998, -266.97406, 37.77319]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-289.40402, -245.8793, 43.022594]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-261.96158, -209.10208, 42.01557]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-63.459335, -334.80045, 21.899103]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-64.71945, -334.77255, 21.899103]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-63.202477, -334.22876, 21.899103]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-63.87102, -335.10004, 21.899103]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-64.29741, -334.8468, 21.899103]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-64.52742, -334.20987, 21.899103]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-4.7696695, -269.4946, 17.991016]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-4.2713504, -269.22748, 17.97102]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-20.594728, -302.95917, 15.839694]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-68.53565, -342.77197, 25.17774]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-123.849075, -346.03104, 33.016273]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-289.9802, -243.40665, 45.207306]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-1.5006379, -255.44704, 24.702805]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-34.579144, -307.30844, 23.45349]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-33.851284, -307.22745, 23.45483]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-203.49712, -277.6883, 32.720913]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-300.35025, -249.295, 39.96166]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-4.4964623, -245.49118, 22.08482]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-10.409483, -245.8761, 22.102816]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-18.570938, -248.82965, 23.430008]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-31.226604, -279.93552, 20.84209]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-13.887188, -277.19604, 11.7937155]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\vehicles\\c_turret_ap\\weapon\\big_needler_handheld",
+      "position": "[-278.5838, -265.05783, 42.865437]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\vehicles\\c_turret_ap\\weapon\\big_needler_handheld",
+      "position": "[-305.6572, -258.03415, 44.0768]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-10.587972, -248.21442, 22.102812]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-10.615054, -247.65923, 22.102814]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-36.78792, -306.8345, 26.677738]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\melee\\jackal_shield\\jackal_shield",
+      "position": "[-278.40762, -265.56943, 42.849953]",
+      "byDefault": false
+    }
+  ]
+}

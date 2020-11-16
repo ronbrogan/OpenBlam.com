@@ -1,0 +1,7 @@
+{
+  "Name": "Elongation",
+  "Description": "A well placed bribe can speed a cargo ship through what are surely some of the longest inspections in the galaxy.",
+  "Scenario": "scenarios\\multi\\elongation\\elongation",
+  "TagCount": 15065,
+  "Weapons": []
+}

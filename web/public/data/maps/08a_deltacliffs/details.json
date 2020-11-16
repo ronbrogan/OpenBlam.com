@@ -1,0 +1,178 @@
+{
+  "Name": "Uprising",
+  "Description": "This is certain: The Brutes shall pay for the blood they have spilled.",
+  "Scenario": "scenarios\\solo\\08a_deltacliffs\\08a_deltacliffs",
+  "TagCount": 6372,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[217.00502, 30.288044, 13.614322]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[157.3524, 103.10581, 57.50024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[158.19043, 101.51246, 57.500256]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[159.13892, 101.205696, 57.500275]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[158.57086, 100.66563, 57.50026]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[132.49684, 110.928986, 66.50018]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[131.77661, 177.53622, 64.23847]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[132.36472, 176.12703, 64.30301]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[131.23094, 171.93062, 64.699524]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[126.109055, 178.59854, 63.108837]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[126.18238, 178.36345, 63.099953]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\flak_cannon\\flak_cannon",
+      "position": "[155.31512, 78.25908, 55.500084]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[118.91533, 172.91116, 62.962345]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[118.96749, 172.89842, 62.967354]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[117.82237, 173.04935, 62.72959]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[111.0333, 177.12248, 63.68047]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\flak_cannon\\flak_cannon",
+      "position": "[144.9485, 77.581436, 55.499992]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[195.88461, 50.976208, 13.020559]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[196.53854, 49.934124, 13.187578]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[196.66936, 49.930992, 13.195114]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\flak_cannon\\flak_cannon",
+      "position": "[220.00543, 31.795717, 13.620988]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[219.90642, 32.14139, 13.603781]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[219.89664, 32.364586, 13.606484]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[219.96913, 30.09922, 13.606775]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[220.29842, 30.185556, 13.606765]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[216.9128, 32.191418, 13.606758]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[216.89745, 32.54648, 13.612397]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[216.58464, 32.52925, 13.612383]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[219.92511, 29.70002, 13.620607]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[220.18358, 29.48424, 13.620597]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[119.01847, 170.45848, 63.726894]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[137.27907, 173.32896, 64.9769]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[140.63945, 197.88594, 65.15544]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[218.45795, 27.616848, 15.755018]",
+      "byDefault": false
+    }
+  ]
+}

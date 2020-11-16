@@ -1,0 +1,7 @@
+{
+  "Name": "Burial Mounds",
+  "Description": "This makeshift Heretic camp on Basis is littered with wreckage from the destruction of Installation 04.",
+  "Scenario": "scenarios\\multi\\burial_mounds\\burial_mounds",
+  "TagCount": 15065,
+  "Weapons": []
+}

@@ -1,0 +1,108 @@
+{
+  "Name": "Quarantine Zone",
+  "Description": "Parasites, humans - no matter. The Icon must be found.",
+  "Scenario": "scenarios\\solo\\06b_floodzone\\06b_floodzone",
+  "TagCount": 7194,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[183.48622, -49.39214, -196.57025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[182.656, -52.814682, -196.89978]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[210.12547, -45.40553, -199.92046]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[207.61913, -40.96666, -201.44637]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[206.84872, -41.46173, -201.54803]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[235.26044, -36.34135, -200.11353]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[230.94417, -36.498413, -198.71275]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[222.07387, -53.373142, -198.40048]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[274.1084, -37.52253, -196.0098]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[279.24194, -41.56063, -197.83246]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[328.29663, -61.230644, 789.95496]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[331.62695, -60.859997, 789.8731]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-30.47894, -16.003214, -190.86992]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-28.806126, -17.654413, -190.86992]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-29.217098, -17.585842, -190.86992]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[270.9838, -39.673653, -196.758]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[277.1244, -40.757362, -197.3819]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-166.70197, -31.169374, -190.46806]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[327.79898, -53.333157, 789.6088]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[327.7871, -53.532017, 789.6088]",
+      "byDefault": false
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "Name": "Zanzibar",
+  "Description": "Wind Power Station 7 sits as a mute reminder of the EAP\u0027s late 25th-century attempt at re-nationalization.",
+  "Scenario": "scenarios\\multi\\zanzibar\\zanzibar",
+  "TagCount": 15065,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\multiplayer\\flag\\flag",
+      "position": "[-0.104189, -24.9235, 2.30999]",
+      "byDefault": false
+    }
+  ]
+}

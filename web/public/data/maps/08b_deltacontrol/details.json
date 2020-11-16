@@ -1,0 +1,38 @@
+{
+  "Name": "The Great Journey",
+  "Description": "Form an unexpected alliance, keep Tartarus from activating the ring.",
+  "Scenario": "scenarios\\solo\\08b_deltacontrol\\08b_deltacontrol",
+  "TagCount": 7511,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-28.961954, 202.20496, 25.963362]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[5.5188465, -27.338951, 16.000126]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-49.401146, 218.42767, 74.04275]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[31.533598, 11.116703, 22.81468]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-29.979868, 188.8579, 21.165228]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-29.712414, 188.84775, 21.151697]",
+      "byDefault": false
+    }
+  ]
+}

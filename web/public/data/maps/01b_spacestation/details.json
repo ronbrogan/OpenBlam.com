@@ -1,0 +1,483 @@
+{
+  "Name": "Cairo Station",
+  "Description": "Defend the station\u0027s MAC-gun from Covenant boarders.",
+  "Scenario": "scenarios\\solo\\01b_spacestation\\01b_spacestation",
+  "TagCount": 8466,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-3.5504506, 2.9517777, -19.999739]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-0.7668948, -1.2020944, -19.499758]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-0.57219553, -4.062692, -19.99974]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[2.4325075, -5.0187163, -19.499756]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[0.59092575, 1.5604874, -19.499758]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-7.1056166, -2.432334, -19.99974]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[34.45358, -43.585068, 3.3502495]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-6.9627914, -4.084729, -19.999743]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[75.92248, -36.742874, 3.0002491]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[68.72409, -27.12074, 3.0002484]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[71.96562, -22.715261, 5.0002594]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[60.61944, -17.452995, 3.0002506]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[55.862087, -26.149204, 3.0002503]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[64.659996, -36.398952, 4.900244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[64.99094, -38.664764, 4.500224]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[64.55735, -49.879578, 3.0002394]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[55.703278, -54.77467, 3.0002403]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[55.172607, -52.597782, 3.0002408]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[43.303616, -56.9149, 3.0002425]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[37.43618, -58.341125, 0.5002413]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[40.520782, -53.31847, 0.50024235]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[22.820898, -66.911934, 4.6809063]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[18.175877, -63.88538, 5.000255]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[23.644918, -81.846535, 5.0002627]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[4.6717954, -68.748474, 3.0002515]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[6.608794, -62.77952, 3.0002527]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[62.85964, -36.86676, 3.0002494]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[54.9898, -54.60953, 3.0002406]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-3.3795633, -0.39444616, -20.499739]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[0.60703844, -38.62452, -5.9997525]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-0.48861024, -38.78216, -5.9997525]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[69.19674, -13.174899, 5.0002584]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[69.32717, -13.36621, 5.0002584]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[69.56613, -13.411664, 5.0002584]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-12.488894, 1.5152969, -20.499752]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-12.695065, 1.6089761, -20.499754]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-12.51378, -1.218379, -20.499752]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-12.661254, -1.5004765, -20.499754]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-3.179903, 0.12013691, -20.499739]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[18.729588, -63.055256, 5.000259]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-2.1983514, -68.94612, 3.0002532]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-2.087453, -68.65267, 3.0002532]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[1.9854381, -68.98253, 3.0002527]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[18.727015, -64.9696, 5.0744348]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[18.449448, -64.80384, 5.053683]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[17.885794, -64.99398, 5.0002437]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[17.722118, -64.84515, 5.0002437]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[36.713604, -45.235233, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[36.480053, -45.45876, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[35.877937, -46.07812, 3.0002496]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[35.346836, -46.658405, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[35.136745, -46.84185, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[34.601948, -47.237293, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[30.847761, -51.299725, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[30.162086, -51.889404, 3.0002499]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[30.018694, -52.053944, 3.00025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[29.396645, -52.667633, 3.00025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[28.571585, -53.311607, 3.00025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[42.06334, -58.918205, 0.00024301451]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[42.305946, -58.64194, 0.00024296796]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[41.81996, -59.086464, 0.00024305985]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[66.44989, -16.138987, 5.0002575]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[66.45298, -15.836557, 5.0002575]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[83.675606, -22.924006, 4.00026]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[83.59473, -22.837938, 4.00026]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[83.36278, -22.518469, 4.00026]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[83.270805, -22.399174, 4.00026]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[66.704124, -16.358171, 5.0002575]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[66.764404, -16.57345, 5.0002575]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[69.82637, -13.753206, 5.000258]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[69.95443, -13.963394, 5.000258]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[17.4425, -67.45275, 5.0002427]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[64.89163, -9.055558, 6.000252]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[65.06776, -9.08513, 6.0002522]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[64.88554, -9.280602, 6.0002522]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[65.44299, -9.373425, 6.0002522]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[65.18454, -9.197633, 6.0002522]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[65.11573, -9.472964, 6.000252]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[68.044304, -15.089759, 5.41678]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[67.9085, -15.04452, 5.4271107]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[67.64246, -15.127363, 5.401342]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[67.5172, -15.085531, 5.396793]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[67.46621, -14.812646, 5.1319666]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[67.60959, -14.836147, 5.131967]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[73.70865, -14.318058, 5.122206]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[73.93037, -14.367579, 5.13051]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[73.8159, -14.346582, 5.1303635]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[74.12252, -14.239882, 5.409775]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[74.25941, -14.264117, 5.4085155]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[76.371735, -16.240667, 5.398412]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[34.234215, -43.910572, 3.3502498]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[28.127356, -47.301804, 7.203089]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[23.647968, -84.16133, 5.0502625]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-0.18713637, -39.651714, -5.9997525]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-0.19251713, -39.159813, -5.9997525]",
+      "byDefault": true
+    }
+  ]
+}

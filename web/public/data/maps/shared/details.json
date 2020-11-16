@@ -1,0 +1,108 @@
+{
+  "Name": "shared",
+  "Description": null,
+  "Scenario": "scenarios\\shared\\shared",
+  "TagCount": 15065,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-10, -6, 0.0002441381]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[-10, -2, 0.0002441407]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_low\\brute_shot\\brute_shot",
+      "position": "[-10, -4, 0.0002441392]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-10, -5, 0.00024392083]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-10, -1, 0.00024403173]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\flak_cannon\\flak_cannon",
+      "position": "[-10, 0, 0.00024435605]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-10, 5, 0.00024411388]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-10, -8, 0.0002441425]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-10, -7, 0.00024413994]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-10, 1, 0.00024414095]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-10, 4, 0.00024413828]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[-10, -3, 0.00024414077]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-10, 7, 0.00024408601]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\sniper_rifle\\sniper_rifle",
+      "position": "[-10, 8, 0.0002441424]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\assault_bomb\\assault_bomb",
+      "position": "[-10, -9, 0.00024414083]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\ball",
+      "position": "[-10, -12, 0.00024414095]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\flag\\flag",
+      "position": "[-10, -11, 0.00024414045]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\brute_plasma_rifle\\brute_plasma_rifle",
+      "position": "[-10, -10, 0.0002441404]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-10, 6, 0.00024403926]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg_silenced\\smg_silenced",
+      "position": "[-0.2732271, -5.9468756, 0.00024413808]",
+      "byDefault": true
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+{
+  "Name": "The Arbiter",
+  "Description": "Infiltrate a Forerunner facility, quell the heresy therein.",
+  "Scenario": "scenarios\\solo\\04a_gasgiant\\04a_gasgiant",
+  "TagCount": 5763,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[127.37, 2.20448, 64.5002]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[127.116425, 2.9562602, 64.85849]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[127.39786, 1.2502694, 64.502846]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[142.05305, 1.3048049, 41.06656]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\beam_rifle\\beam_rifle",
+      "position": "[141.00188, 0.19677927, 40.91653]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[140.8575, -2.7474685, 37.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[141.47456, -2.3694282, 37.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[117.95494, -0.20713641, 38.500237]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[117.89186, -0.87172073, 38.500237]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[118.696365, -0.9876389, 38.500237]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[153.69366, 2.1658156, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[152.84656, 1.8351086, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[156.30736, 1.994647, 26.500246]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[154.90865, 2.458305, 26.500246]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[131.16019, -4.829714, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[131.96544, -5.3372087, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[114.964806, -7.0108047, 71.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[115.43134, -7.410157, 71.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[115.75955, 7.013778, 71.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[125.33758, -7.901969, 42.300247]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[128.26642, 2.6907446, 42.300243]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[136.6965, 5.288059, 42.35721]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[144.66193, -7.395661, 42.300243]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[143.15785, -5.8916316, 40.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[134.84601, -4.415361, 40.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[132.91066, 0.92611265, 40.97892]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[125.91177, -1.2267258, 40.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[130.40944, -4.771021, 37.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[132.71275, 0.4873461, 37.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[141.97636, 4.5235786, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[143.76064, -1.7479022, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[144.17502, -1.9225056, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[156.5841, 5.5692434, 34.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[148.37808, 6.834284, 32.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[149.63039, -5.667517, 29.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[158.406, -8.882466, 28.000246]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[142.0288, 0.39414328, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[147.20416, 3.2078543, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[137.80022, -9.101893, 28.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[128.367, -12.421108, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[128.38289, -12.997059, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[132.02129, 6.5981894, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[131.68689, 6.4080486, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[126.302666, 4.5500145, 28.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[122.76801, -2.3766677, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[127.30365, -3.7377613, 64.9521]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[121.6094, 1.1374387, 69.42031]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[131.13658, -1.1439284, 67.30321]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[108.49821, -3.2804744, 70.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[111.59482, 1.2407984, 70.00025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[114.825584, 4.448174, 71.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[127.541405, -1.8118757, 68.10212]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[131.16544, 0.14560018, 64.50025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[127.27148, -2.6204858, 64.93601]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[127.48895, -2.1379654, 64.50025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[133.74695, -8.398531, 42.300247]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[141.23438, -4.982758, 42.47719]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[129.67523, 2.9308505, 40.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[128.35608, -1.2119765, 40.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[129.36179, 7.0249667, 42.300243]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[147.3189, 4.2306957, 40.800243]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[143.67125, -5.1692634, 40.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[119.62225, 1.2191408, 38.50024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[120.05073, -7.926337, 37.000237]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[128.54216, 5.693732, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[145.57503, -2.0154314, 37.000244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[145.34514, 3.5811694, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[146.01816, 4.488177, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[128.76381, 0.763081, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[133.6568, -3.8377275, 35.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[159.66092, 2.3055518, 34.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[156.34004, -3.320557, 26.935555]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[151.15154, -9.929683, 29.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[148.39334, 8.460691, 32.50024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[158.0332, 8.740207, 34.00024]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[146.73676, -3.9291575, 26.625006]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[140.20381, -10.2254095, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[138.58241, -13.908363, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[131.9104, -16.276583, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[135.39125, -12.749841, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[154.46886, 2.1916316, 26.53248]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[125.106995, 3.0571277, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[123.675285, 4.013609, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[119.326645, -1.2352518, 26.500242]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[126.87011, -2.975527, 26.500244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-15.813054, 0.23048362, -77.665596]",
+      "byDefault": false
+    }
+  ]
+}

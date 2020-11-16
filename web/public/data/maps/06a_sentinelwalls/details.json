@@ -1,0 +1,498 @@
+{
+  "Name": "Sacred Icon",
+  "Description": "Succeed where others have failed. Lower the shield protecting the Sacred Icon.",
+  "Scenario": "scenarios\\solo\\06a_sentinelwalls\\06a_sentinelwalls",
+  "TagCount": 7464,
+  "Weapons": [
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-468.532, 22.100895, 54.243423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-457.71863, 27.568546, 55.043427]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-460.19788, 26.98381, 55.043423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-470.4654, 27.011953, 54.243423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-465.0918, 25.855291, 54.243423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-452.4378, 30.364386, 47.628006]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-447.3386, 28.94427, 19.700274]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-442.47534, 32.964916, 19.700272]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-445, 42.99682, 17.200266]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-445.30457, 44.61317, 17.200266]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-436.81625, 46.148663, 16.200275]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-435.02362, 47.90408, 16.200275]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-437.81406, 56.058224, 16.200272]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-428.1261, 64.13821, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-430.0134, 61.44502, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-425.88815, 61.10114, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-428.04044, 78.22691, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-428.3348, 75.54035, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-427.87604, 79.74044, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-407.2507, 128.46721, 9.220877]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-402.56766, 133.88033, 9.20025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-421.9557, 96.16649, 12.300267]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-427.3964, 104.674515, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-427.12024, 106.92252, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-380.06003, 136.12976, 4.200082]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-379.55612, 153.15436, 4.2205224]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-392.39172, 145.13202, 2.420648]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-386.33276, 152.13698, 1.210441]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-422.71664, 94.36325, 12.300267]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-425.16595, 113.175606, 12.70025]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-412.3575, 123.15126, 10.200244]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol",
+      "position": "[-396.39804, 147.50627, 0.90024215]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-396.6565, 148.365, 0.9002411]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-396.3337, 150.08615, 0.900243]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-396.81177, 141.11365, 0.900239]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-395.8307, 140.7643, 0.90024346]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\needler\\needler",
+      "position": "[-395.8125, 142.34538, 0.9002438]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle",
+      "position": "[-388.76846, 151.15239, 1.2206378]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-384.00293, 142.54694, 1.2137284]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-179.0925, -8.19095, -100.68441]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-187.98026, -7.0193973, -99.88441]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-176.4864, -13.118576, -100.68441]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-170.29407, -5.723582, -100.68441]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-169.22693, -13.846834, -100.68442]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\melee\\energy_blade\\energy_blade",
+      "position": "[-173.30975, -12.572874, -100.68441]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine",
+      "position": "[-183.40329, -10.220319, -99.88441]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-472.77005, 24.329218, 54.243423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-471.8155, 22.324709, 54.243423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-464.75702, 28.838026, 54.243423]",
+      "byDefault": true
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-221.888, 103.35288, -9.099776]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-225.7286, 109.24428, -9.099776]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-232.39076, 102.14988, -9.899772]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-222.17142, 93.22502, -9.099776]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-220.57452, 91.32356, -8.676967]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-235.12218, 81.92002, -9.499778]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-232.39977, 70.7388, -9.899771]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-225.80576, 111.852905, -5.399787]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-219.2594, 118.19905, -5.3997865]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-211.04103, 112.11747, -4.3997865]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-194.15314, 122.29952, -5.399782]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-190.26237, 129.98259, -5.3997817]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-201.7742, 133.47527, -5.399784]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam",
+      "position": "[-194.40906, 136.21722, -5.399783]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[-204.52089, 139.15485, -5.3997846]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-206.1599, 138.7259, -5.399785]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-206.15872, 138.14333, -5.399785]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-196.14809, 133.13257, -5.399783]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-196.11238, 133.57016, -5.399783]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-188.07079, 129.47629, -4.399785]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-188.06264, 128.65366, -4.3997855]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-186.94267, 124.89651, -4.399785]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[-196.01147, 122.174614, -5.3997827]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-220.23767, 116.1668, -5.3997865]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-220.04262, 115.611534, -5.3997865]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[-228.39323, 103.27999, -12.200074]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-236.19363, 98.74878, -11.399773]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-218.3539, 74.92312, -12.599786]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-218.84528, 75.13423, -12.599786]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\battle_rifle\\battle_rifle",
+      "position": "[-217.88416, 77.89136, -12.599786]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-210.03464, 34.01039, -12.599782]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\smg\\smg",
+      "position": "[-209.25638, 34.52804, -12.599782]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\rifle\\shotgun\\shotgun",
+      "position": "[-211.72328, 32.365437, -12.599782]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-199.97632, 76.8624, -12.599784]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-208.53548, 69.418434, -12.106375]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-211.89264, 69.31479, -12.599785]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-214.42303, 59.78371, -12.599785]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-203.28851, 58.815407, -12.599783]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-200.2178, 40.176193, -12.599781]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-211.57378, 36.19378, -12.106371]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-206.09776, 31.013668, -12.599782]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-206.10583, 15.917419, -12.999764]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-202.38344, -0.5585164, -12.599779]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\characters\\sentinel_aggressor\\weapons\\beam_elim\\sent_agg_beam_elim",
+      "position": "[-198.48401, -10.474104, -12.599778]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\vehicles\\phantom\\plasma_turret\\weapons\\phantom_turret_handheld",
+      "position": "[-476.11908, 22.35733, 56.33779]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\support_high\\rocket_launcher\\rocket_launcher",
+      "position": "[-228.6327, 78.3747, -11.79977]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-219.99141, 74.620346, -8.676955]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\pistol\\magnum\\magnum",
+      "position": "[-220.57893, 74.742744, -8.676965]",
+      "byDefault": false
+    },
+    {
+      "tag": "objects\\weapons\\multiplayer\\ball\\head_sp",
+      "position": "[-215.99806, 63.299526, -9.073469]",
+      "byDefault": false
+    }
+  ]
+}

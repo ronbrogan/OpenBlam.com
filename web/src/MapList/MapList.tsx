@@ -2,13 +2,14 @@ import React from 'react';
 import { NavLink, withRouter, Switch, Route, RouteComponentProps } from 'react-router-dom';
 import MapDetails from './MapDetails/MapDetails';
 import { MapManifest } from './MapData';
+import MapListEntry from './MapListEntry/MapListEntry'
 
 interface MapListState
 {
     manifest: MapManifest;
 }
 
-export class MapList extends React.Component<any, MapListState, any> {
+export class MapList extends React.Component<RouteComponentProps, MapListState, any> {
     static manifest: MapManifest;
     
     constructor(props: any) {
@@ -31,20 +32,12 @@ export class MapList extends React.Component<any, MapListState, any> {
 
     getMapListing() {
         return (
-            <table>
-                <tbody>
-                    {this.state.manifest.maps.map(m => {
-                        return (<tr key={m.name}><td><NavLink to={`/maps/${m.name}`}>{m.displayName}</NavLink></td></tr>)
-                    })}
-                </tbody>
-            </table>
+            <section>
+                {this.state.manifest.maps.map(m => {
+                    return (<MapListEntry key={m.name} mapManifest={m}></MapListEntry>)
+                })}
+            </section>
         )
-    }
-
-    getMapDetails() {
-        let name = this.props.match.params.mapName;
-        console.log(name);
-        return (<h1>{name} info</h1>)
     }
 
     render() {

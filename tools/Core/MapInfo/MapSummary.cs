@@ -3,6 +3,9 @@ using System.Numerics;
 
 namespace OpenBlam.SiteGenerator.MapInfo
 {
+    public record MapManifest(IEnumerable<MapManifestEntry> maps);
+    public record MapManifestEntry(string name, string displayName);
+
     public record MapSummary
     (
         string Name,
