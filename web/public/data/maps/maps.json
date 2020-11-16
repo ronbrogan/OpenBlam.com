@@ -1,0 +1,12 @@
+{
+    "maps": [
+        {
+            "name": "01a_tutorial",
+            "displayName": "Armory"
+        },
+        {
+            "name": "01b_spacestation",
+            "displayName": "Cairo Station"
+        }
+    ]
+}

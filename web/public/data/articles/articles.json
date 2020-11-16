@@ -1,0 +1,16 @@
+{
+    "articles": [
+        {
+            "name": "test",
+            "displayName": "Test Article",
+            "tags": [],
+            "category": ""
+        },
+        {
+            "name": "test2",
+            "displayName": "Test Article 2",
+            "tags": [],
+            "category": ""
+        }
+    ]
+}

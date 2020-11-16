@@ -1,9 +1,24 @@
 import React from 'react';
-import AppHeader from './app-header/app-header';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home/Home';
+import Articles from './Articles/Articles';
+import MapList from './MapList/MapList';
 
 function App() {
   return (
-    <AppHeader></AppHeader>
+    <main>
+      <Switch>
+        <Route exact path="/">
+              <Home />
+          </Route>
+        <Route path="/articles">
+          <Articles />
+        </Route>
+        <Route path="/maps">
+          <MapList />
+        </Route>
+      </Switch>
+    </main>
   );
 }
 

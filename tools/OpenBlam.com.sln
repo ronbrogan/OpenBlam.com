@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30608.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SiteGenerator", "SiteGenerator.csproj", "{99A618A4-9D2C-4069-AFF4-492C5C59A154}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DialogSpeechToText", "DialogSpeechToText\DialogSpeechToText.csproj", "{99A618A4-9D2C-4069-AFF4-492C5C59A154}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenH2.Core", "..\..\lib\OpenH2\src\OpenH2.Core\OpenH2.Core.csproj", "{F9955667-1BEA-4AE4-9B73-F46B85F95E49}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenH2.Core", "..\lib\OpenH2\src\OpenH2.Core\OpenH2.Core.csproj", "{F9955667-1BEA-4AE4-9B73-F46B85F95E49}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenH2.Foundation", "..\..\lib\OpenH2\src\OpenH2.Foundation\OpenH2.Foundation.csproj", "{C4F0FE3C-67FE-4721-923B-CE08DFFF8785}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenH2.Foundation", "..\lib\OpenH2\src\OpenH2.Foundation\OpenH2.Foundation.csproj", "{C4F0FE3C-67FE-4721-923B-CE08DFFF8785}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenH2.Serialization", "..\..\lib\OpenH2\src\OpenH2.Serialization\OpenH2.Serialization.csproj", "{901E1295-4C6D-4702-9B5E-AE780A113532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenH2.Serialization", "..\lib\OpenH2\src\OpenH2.Serialization\OpenH2.Serialization.csproj", "{901E1295-4C6D-4702-9B5E-AE780A113532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{ACBE42C0-555A-49C2-A037-299C310EDF3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapDetailsGenerator", "MapDetailsGenerator\MapDetailsGenerator.csproj", "{070E4647-3491-40A9-AD8A-89D352C76F54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,22 @@ Global
 		{901E1295-4C6D-4702-9B5E-AE780A113532}.Release|Any CPU.Build.0 = Release|Any CPU
 		{901E1295-4C6D-4702-9B5E-AE780A113532}.Release|x64.ActiveCfg = Release|Any CPU
 		{901E1295-4C6D-4702-9B5E-AE780A113532}.Release|x64.Build.0 = Release|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Debug|x64.Build.0 = Debug|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Release|x64.ActiveCfg = Release|Any CPU
+		{ACBE42C0-555A-49C2-A037-299C310EDF3E}.Release|x64.Build.0 = Release|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Debug|x64.Build.0 = Debug|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Release|x64.ActiveCfg = Release|Any CPU
+		{070E4647-3491-40A9-AD8A-89D352C76F54}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

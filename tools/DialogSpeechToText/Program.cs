@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace OpenBlam.SiteGenerator
+namespace OpenBlam.DialogSpeechToText
 {
     public class LineInfo
     {

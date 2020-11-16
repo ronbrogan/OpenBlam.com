@@ -2,10 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AppHeader from './app-header/app-header';
+import { BrowserRouter as Router } from 'react-router-dom';
+import './awsm.scss';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <AppHeader></AppHeader>
+      <App />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
