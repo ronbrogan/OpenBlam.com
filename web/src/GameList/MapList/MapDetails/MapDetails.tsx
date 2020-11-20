@@ -4,6 +4,7 @@ import { MapSummary } from '../MapData';
 import './MapDetails.scss';
 
 interface MapDetailProps {
+    gameIdentifier: string;
     mapName: string;
 }
 
@@ -15,6 +16,7 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
     static detailCache: { [key: string]: MapSummary } = {};
 
     mapName: string = "";
+    gameIdentifier: string = "";
 
     constructor(props: any) {
         super(props);
@@ -22,9 +24,10 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
     }
 
     async componentDidMount() {
+        this.gameIdentifier = this.props.match.params.gameIdentifier;
         this.mapName = this.props.match.params.mapName;
         if (MapDetails.detailCache[this.mapName] == undefined) {
-            const resp = await fetch(`/data/maps/${this.mapName}/details.json`);
+            const resp = await fetch(`/data/maps/${this.gameIdentifier}/${this.mapName}/details.json`);
             MapDetails.detailCache[this.mapName] = (await resp.json()) as MapSummary;
             this.setState({ mapData: MapDetails.detailCache[this.mapName] });
         }
@@ -45,7 +48,7 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
     getMetadata() {
         return (
             <div className="metadata">
-                <a href={`/data/maps/${this.mapName}/full.png`}><img className="ui-image" src={`/data/maps/${this.mapName}/full.png`} /></a>
+                <a href={`/data/maps/${this.gameIdentifier}/${this.mapName}/full.png`}><img className="ui-image" src={`/data/maps/${this.gameIdentifier}/${this.mapName}/full.png`} /></a>
                 <div><strong>Name: </strong>{this.state.mapData.Name}</div>
                 <div><strong>Description: </strong>{this.state.mapData.Description}</div>
                 <div><strong>Scenario: </strong>{this.state.mapData.Scenario}</div>

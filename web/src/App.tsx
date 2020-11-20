@@ -2,7 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from './Home/Home';
 import Articles from './Articles/Articles';
-import MapList from './MapList/MapList';
+import MapList from './GameList/MapList/MapList';
+import GameList from './GameList/GameList';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Articles />
         </Route>
         <Route path="/maps">
-          <MapList />
+          <GameList />
         </Route>
       </Switch>
     </main>

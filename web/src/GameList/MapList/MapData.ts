@@ -1,3 +1,14 @@
+export interface GamesManifest 
+{
+    games: GameManifestEntry[];
+}
+
+export interface GameManifestEntry
+{
+    title: string;
+    gameIdentifier: string;
+}
+
 export interface MapManifest
 {
     maps: MapManifestEntry[];

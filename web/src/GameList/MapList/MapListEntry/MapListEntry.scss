@@ -1,0 +1,38 @@
+.mapListEntry {
+    display: grid;
+    grid-template-columns: 80px 40px;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid rgb(126, 180, 250);
+    width: 120px;
+}
+
+.thumbnail {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    justify-content: center;
+
+    img {
+        margin: auto;
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.title {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    margin-left: 4px;
+    font-size: 0.9em;
+    word-break: break-all;
+}
+
+.subtitle {
+    grid-column: 1 ;
+    grid-row: 2 ;
+}
+
+.metadata {
+    grid-column: 2;
+    grid-row: 2;
+}
