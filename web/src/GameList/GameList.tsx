@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, withRouter, Switch, Route, RouteComponentProps } from 'react-router-dom';
+import { NavLink, withRouter, Switch, Route, RouteComponentProps, Redirect } from 'react-router-dom';
 import { GamesManifest } from './MapList/MapData';
 import MapList from './MapList/MapList';
 
@@ -35,6 +35,10 @@ export class GameList extends React.Component<RouteComponentProps<MapListProps>,
     }
 
     getGameListing() {
+        if(this.state.gameManifest.games.length === 1) {
+            return (<Redirect to={`/maps/${this.state.gameManifest.games[0].gameIdentifier}`} />)
+        }
+
         return (
             <section className="game-list">
                 {this.state.gameManifest.games.map(g => {

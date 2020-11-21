@@ -51,7 +51,6 @@ export class MapList extends React.Component<RouteComponentProps<MapListProps>, 
         return (
             <Switch>
                 <Route exact path={`/maps/:gameIdentifier`}>
-                    <h2>ID: {this.props.match.params.gameIdentifier}</h2>
                     <h1>Maps</h1>
                         {(this.state.manifest == undefined
                             ? (<span>Loading</span>)
