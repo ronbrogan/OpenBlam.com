@@ -12,6 +12,7 @@ export default class AppHeader extends React.Component {
                 </div>
                 <nav>
                     <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+                    <li><NavLink to="/tools" activeClassName="active">Tools</NavLink></li>
                     <li><NavLink to="/articles" activeClassName="active">Articles</NavLink></li>
                     <li><NavLink to="/maps" activeClassName="active">Map Info</NavLink></li>
                 </nav>

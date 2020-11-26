@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import Articles from './Articles/Articles';
 import MapList from './GameList/MapList/MapList';
 import GameList from './GameList/GameList';
+import Tools from './Tools/Tools';
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
       <Switch>
         <Route exact path="/">
               <Home />
-          </Route>
+        </Route>
+        <Route path="/tools">
+          <Tools />
+        </Route>
         <Route path="/articles">
           <Articles />
         </Route>
