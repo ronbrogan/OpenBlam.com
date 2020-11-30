@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html><head><title>IndexOffset</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">2 implementations of IndexOffset</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2vMapHeader.cs (1)</div>
+<a href="../Maps/H2vMapHeader.cs.html#20"><b>20</b>public NormalOffset <i>IndexOffset</i> { get; set; }</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccMapHeader.cs (1)</div>
+<a href="../Maps/MCC/H2mccMapHeader.cs.html#20"><b>20</b>public NormalOffset <i>IndexOffset</i> { get; set; }</a>
+</div>
+</div>
+<div class="rH">4 references to IndexOffset</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (2)</div>
+<a href="../Factories/MapFactory.cs.html#197"><b>197</b>var index = BlamSerializer.Deserialize&lt;IndexHeader&gt;(reader.Data, header.<i>IndexOffset</i>.Value);</a>
+<a href="../Factories/MapFactory.cs.html#198"><b>198</b>index.FileRawOffset = header.<i>IndexOffset</i>;</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (2)</div>
+<a href="../Factories/MccMapFactory.cs.html#147"><b>147</b>var index = BlamSerializer.Deserialize&lt;IndexHeader&gt;(reader.Data, header.<i>IndexOffset</i>.Value);</a>
+<a href="../Factories/MccMapFactory.cs.html#148"><b>148</b>index.FileRawOffset = header.<i>IndexOffset</i>;</a>
+</div>
+</div>
+</body></html>

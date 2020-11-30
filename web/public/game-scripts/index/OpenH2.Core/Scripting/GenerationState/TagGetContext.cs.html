@@ -1,0 +1,44 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>;
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>.<span class="i n">CSharp</span>;
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>.<span class="i n">CSharp</span>.<span class="i n">Syntax</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">Generation</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Scenario</span>;
+<b>using</b> <span class="i n">System</span>;
+<b>using static</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>.<span class="i n">CSharp</span>.<span class="t t">SyntaxFactory</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">GenerationState</span>
+&lbrace;
+    <b>public class</b> <a id="99ae24810212743e" href="../../R/99ae24810212743e.html" target="n" data-glyph="0,0" class="t t">TagGetContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>
+    &lbrace;
+        <b>private readonly</b> <span class="t t">InvocationExpressionSyntax</span> <a id="4fa28cfb344a2cdd" href="../../R/4fa28cfb344a2cdd.html" target="n" data-glyph="46,1" class="i field">invocation</a>;
+        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="f0727b5744af2468" href="../../R/f0727b5744af2468.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
+ 
+        <b>public</b> <a id="42e44248fdc843f9" href="../../R/42e44248fdc843f9.html" target="n" data-glyph="72,1" class="t constructor">TagGetContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r0 rd" class="r0 r">scenario</span>, <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r1 rd" class="r1 r">node</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r1 r">node</span>)
+        &lbrace;
+            <a href="#99ae24810212743e" class="k">this</a>.<a href="#f0727b5744af2468" class="i property">OwnDataType</a> = <span class="r1 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a>;
+ 
+            <a href="#4fa28cfb344a2cdd" class="i field">invocation</a> = <span class="i method">InvocationExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                    <span class="i method">IdentifierName</span>(<span class="s">&quot;Engine&quot;</span>),
+                    <span class="i method">GenericName</span>(<span class="i method">Identifier</span>(<b>nameof</b>(<a href="../IScriptEngine.cs.html#31075aae0960da14" class="t t">IScriptEngine</a>.<span class="i">GetTag</span>)))
+                .<span class="i method">WithTypeArgumentList</span>(<span class="i method">TypeArgumentList</span>(<span class="i method">SingletonSeparatedList</span>(
+                    <a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<a href="#99ae24810212743e" class="k">this</a>.<a href="#f0727b5744af2468" class="i property">OwnDataType</a>.<span class="i property">Value</span>))))))
+                .<span class="i method">AddArgumentListArguments</span>(
+                    <span class="i method">Argument</span>(<a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#af996a91b55a4aee" class="i method">GetScriptString</a>(<span class="r0 r">scenario</span>, <span class="r1 r">node</span>))),
+                    <span class="i method">Argument</span>(<a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r1 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#2ec6ccd125ab1330" class="i property">NodeData_32</a>)))
+                .<span class="i method">WithAdditionalAnnotations</span>(<a href="../Generation/ScriptGenAnnotations.cs.html#f7f0cad0236f94b5" class="t t">ScriptGenAnnotations</a>.<a href="../Generation/ScriptGenAnnotations.cs.html#d76f6bc2bc8378f1" class="i method">TypeAnnotation</a>(<span class="r1 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a>));
+        &rbrace;
+ 
+        <b>public</b> <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <a id="7f0c6b45d719ed70" href="../../R/7f0c6b45d719ed70.html" target="n" data-glyph="72,1" class="i method">AddExpression</a>(<span class="t t">ExpressionSyntax</span> <span id="r2 rd" class="r2 r">expression</span>)
+        &lbrace;
+            <b>throw</b> <b>new</b> <span class="t constructor">NotImplementedException</span>();
+        &rbrace;
+ 
+        <b>public void</b> <a id="c5e582815f7ab09b" href="../../R/c5e582815f7ab09b.html" target="n" data-glyph="72,1" class="i method">GenerateInto</a>(<a href="Scope.cs.html#1566133395e6730d" class="t t">Scope</a> <span id="r3 rd" class="r3 r">scope</span>)
+        &lbrace;
+            <span class="r3 r">scope</span>.<a href="Scope.cs.html#25936af8934a3201" class="i property">Context</a>.<a href="IGenerationContext.cs.html#bcfc3bffb115f977" class="i method">AddExpression</a>(<a href="#4fa28cfb344a2cdd" class="i field">invocation</a>);
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

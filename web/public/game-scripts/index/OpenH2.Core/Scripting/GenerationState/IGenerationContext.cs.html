@@ -1,0 +1,44 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>.<span class="i n">CSharp</span>.<span class="i n">Syntax</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Scenario</span>;
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Collections</span>.<span class="i n">Generic</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">GenerationState</span>
+&lbrace;
+    <b>public interface</b> <a id="7daf434dd77ce6e6" href="../../R/7daf434dd77ce6e6.html" target="n" data-glyph="48,0" class="t t">IGenerationContext</a>
+    &lbrace;
+        <span class="t t">IReadOnlyList</span>&lt;<b>object</b>&gt; <a id="68b4876e48114bea" href="../../R/68b4876e48114bea.html" target="n" data-glyph="102,1" class="i property">Metadata</a> &lbrace; <b>get</b>; &rbrace;
+        <b>bool</b> <a id="80db76dad31ea681" href="../../R/80db76dad31ea681.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> &lbrace; <b>get</b>; &rbrace;
+        <b>bool</b> <a id="6ba1d319c6b480cd" href="../../R/6ba1d319c6b480cd.html" target="n" data-glyph="102,1" class="i property">SuppressHoisting</a> &lbrace; <b>get</b>; &rbrace;
+        <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="d3ec8a6edad49392" href="../../R/d3ec8a6edad49392.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
+        <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <a id="4382202a58ac1135" href="../../R/4382202a58ac1135.html" target="n" data-glyph="102,1" class="i property">OriginalNode</a> &lbrace; <b>get</b>; &rbrace;
+        <a href="#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <a id="bcfc3bffb115f977" href="../../R/bcfc3bffb115f977.html" target="n" data-glyph="72,1" class="i method">AddExpression</a>(<span class="t t">ExpressionSyntax</span> <span id="r0 rd" class="r0 r">expression</span>);
+        <b>void</b> <a id="604e78d1bfc10023" href="../../R/604e78d1bfc10023.html" target="n" data-glyph="72,1" class="i method">AddMetadata</a>(<b>object</b> <span id="r1 rd" class="r1 r">metadata</span>);
+        <b>void</b> <a id="6d24b6d1bc9f9655" href="../../R/6d24b6d1bc9f9655.html" target="n" data-glyph="72,1" class="i method">GenerateInto</a>(<a href="Scope.cs.html#1566133395e6730d" class="t t">Scope</a> <span id="r2 rd" class="r2 r">scope</span>);
+    &rbrace;
+ 
+    <b>public class</b> <a id="c09d258f5a881b15" href="../../R/c09d258f5a881b15.html" target="n" data-glyph="0,0" class="t t">NullGenerationContext</a> : <a href="#7daf434dd77ce6e6" class="t t">IGenerationContext</a>
+    &lbrace;
+        <b>public static</b> <a href="#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <a id="bb6408edb538fde6" href="../../R/bb6408edb538fde6.html" target="n" data-glyph="102,1" class="i property">Instance</a> &lbrace; <b>get</b>; &rbrace; = <b>new</b> <a href="#12b5ac61f2086897" class="t constructor">NullGenerationContext</a>();
+ 
+        <b>private</b> <a id="12b5ac61f2086897" href="../../R/12b5ac61f2086897.html" target="n" data-glyph="76,1" class="t constructor">NullGenerationContext</a>() &lbrace; &rbrace;
+ 
+        <b>public bool</b> <a id="db7f19139620c943" href="../../R/db7f19139620c943.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> =&gt; <b>false</b>;
+ 
+        <b>public bool</b> <a id="49bbd8519d9f1664" href="../../R/49bbd8519d9f1664.html" target="n" data-glyph="102,1" class="i property">SuppressHoisting</a> =&gt; <b>false</b>;
+ 
+        <b>public</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="e6b311b462236ab1" href="../../R/e6b311b462236ab1.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> =&gt; <b>null</b>;
+ 
+        <b>public</b> <span class="t t">IReadOnlyList</span>&lt;<b>object</b>&gt; <a id="d6242d80a8cc2d03" href="../../R/d6242d80a8cc2d03.html" target="n" data-glyph="102,1" class="i property">Metadata</a> =&gt; <span class="t t">Array</span>.<span class="i method">Empty</span>&lt;<b>object</b>&gt;();
+ 
+        <b>public</b> <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <a id="ec99a8ecc183db40" href="../../R/ec99a8ecc183db40.html" target="n" data-glyph="102,1" class="i property">OriginalNode</a> =&gt; <b>null</b>;
+ 
+        <b>public</b> <a href="#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <a id="b59b7facf5689f89" href="../../R/b59b7facf5689f89.html" target="n" data-glyph="72,1" class="i method">AddExpression</a>(<span class="t t">ExpressionSyntax</span> <span id="r3 rd" class="r3 r">expression</span>) =&gt; <a href="#c09d258f5a881b15" class="k">this</a>;
+ 
+        <b>public void</b> <a id="98a9fb2c587c95a8" href="../../R/98a9fb2c587c95a8.html" target="n" data-glyph="72,1" class="i method">AddMetadata</a>(<b>object</b> <span id="r4 rd" class="r4 r">metadata</span>) &lbrace; &rbrace;
+ 
+        <b>public void</b> <a id="b7a0d6f5083dcffb" href="../../R/b7a0d6f5083dcffb.html" target="n" data-glyph="72,1" class="i method">GenerateInto</a>(<a href="Scope.cs.html#1566133395e6730d" class="t t">Scope</a> <span id="r5 rd" class="r5 r">scope</span>) &lbrace; &rbrace;
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

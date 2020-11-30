@@ -1,0 +1,60 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>;
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Collections</span>.<span class="i n">Generic</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Text</span>.<span class="i n">Json</span>.<span class="i n">Serialization</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Common</span>.<span class="i n">Models</span>
+&lbrace;
+    <b>public class</b> <a id="8e1a179f8ba71c70" href="../../../R/8e1a179f8ba71c70.html" target="n" data-glyph="0,0" class="t t"><span id="aeea294da7e9fd39">ModelMesh</span></a> : <span class="t t">IEquatable</span>&lt;<a href="#8e1a179f8ba71c70" class="t t">ModelMesh</a>&gt;
+    &lbrace;
+        [<span class="t constructor">JsonIgnore</span>]
+        <b>public int</b>[] <a id="65a49624205e6aad" href="../../../R/65a49624205e6aad.html" target="n" data-glyph="102,1" class="i property">Indices</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        [<span class="t constructor">JsonIgnore</span>]
+        <b>public</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[] <a id="076737a1ccd4a9a3" href="../../../R/076737a1ccd4a9a3.html" target="n" data-glyph="102,1" class="i property">Verticies</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">JsonConverter</span>(<b>typeof</b>(<span class="t t">JsonStringEnumConverter</span>))]
+        <b>public</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a> <a id="0ef0b75ce9e7f04e" href="../../../R/0ef0b75ce9e7f04e.html" target="n" data-glyph="102,1" class="i property">ElementType</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>public</b> <a href="../../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../../ShaderTag.cs.html#e6d7cc959d02ba84" class="t t">ShaderTag</a>&gt; <a id="3475e8d5d3157674" href="../../../R/3475e8d5d3157674.html" target="n" data-glyph="102,1" class="i property">Shader</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public bool</b> <a id="50a0e3548bbddca0" href="../../../R/50a0e3548bbddca0.html" target="n" data-glyph="102,1" class="i property">Compressed</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">JsonIgnore</span>]
+        <b>public byte</b>[] <a id="47a66c2a1f9b6b55" href="../../../R/47a66c2a1f9b6b55.html" target="n" data-glyph="102,1" class="i property">RawData</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>public string</b> <a id="54083008872377ca" href="../../../R/54083008872377ca.html" target="n" data-glyph="102,1" class="i property">Note</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>public override bool</b> <a id="b75b23d5d5bf58cb" href="../../../R/b75b23d5d5bf58cb.html" target="n" data-glyph="72,1" class="i method">Equals</a>(<b>object</b> <span id="r0 rd" class="r0 r">obj</span>)
+        &lbrace;
+            <b>return</b> <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#4ed86756a27da265" class="i method">Equals</a>(<span class="r0 r">obj</span> <b>as</b> <a href="#8e1a179f8ba71c70" class="t t">ModelMesh</a>);
+        &rbrace;
+ 
+        <b>public bool</b> <a id="4ed86756a27da265" href="../../../R/4ed86756a27da265.html" target="n" data-glyph="72,1" class="i method">Equals</a>(<a href="#8e1a179f8ba71c70" class="t t">ModelMesh</a> <span id="r1 rd" class="r1 r">other</span>)
+        &lbrace;
+            <b>return</b> <span class="r1 r">other</span> != <b>null</b> &amp;&amp;
+                   <span class="t t">EqualityComparer</span>&lt;<b>int</b>[]&gt;.<span class="i property">Default</span>.<span class="i method">Equals</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#65a49624205e6aad" class="i property">Indices</a>, <span class="r1 r">other</span>.<a href="#65a49624205e6aad" class="i property">Indices</a>) &amp;&amp;
+                   <span class="t t">EqualityComparer</span>&lt;<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[]&gt;.<span class="i property">Default</span>.<span class="i method">Equals</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#076737a1ccd4a9a3" class="i property">Verticies</a>, <span class="r1 r">other</span>.<a href="#076737a1ccd4a9a3" class="i property">Verticies</a>) &amp;&amp;
+                   <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#0ef0b75ce9e7f04e" class="i property">ElementType</a> == <span class="r1 r">other</span>.<a href="#0ef0b75ce9e7f04e" class="i property">ElementType</a> &amp;&amp;
+                   <span class="t t">EqualityComparer</span>&lt;<a href="../../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../../ShaderTag.cs.html#e6d7cc959d02ba84" class="t t">ShaderTag</a>&gt;&gt;.<span class="i property">Default</span>.<span class="i method">Equals</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#3475e8d5d3157674" class="i property">Shader</a>, <span class="r1 r">other</span>.<a href="#3475e8d5d3157674" class="i property">Shader</a>) &amp;&amp;
+                   <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#50a0e3548bbddca0" class="i property">Compressed</a> == <span class="r1 r">other</span>.<a href="#50a0e3548bbddca0" class="i property">Compressed</a> &amp;&amp;
+                   <span class="t t">EqualityComparer</span>&lt;<b>byte</b>[]&gt;.<span class="i property">Default</span>.<span class="i method">Equals</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#47a66c2a1f9b6b55" class="i property">RawData</a>, <span class="r1 r">other</span>.<a href="#47a66c2a1f9b6b55" class="i property">RawData</a>) &amp;&amp;
+                   <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#54083008872377ca" class="i property">Note</a> == <span class="r1 r">other</span>.<a href="#54083008872377ca" class="i property">Note</a>;
+        &rbrace;
+ 
+        <b>public override int</b> <a id="9e04b89c2a128d52" href="../../../R/9e04b89c2a128d52.html" target="n" data-glyph="72,1" class="i method">GetHashCode</a>()
+        &lbrace;
+            <b>var</b> <span id="r2 rd" class="r2 r">hashCode</span> = 2053650439;
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <span class="t t">EqualityComparer</span>&lt;<b>int</b>[]&gt;.<span class="i property">Default</span>.<span class="i method">GetHashCode</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#65a49624205e6aad" class="i property">Indices</a>);
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <span class="t t">EqualityComparer</span>&lt;<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[]&gt;.<span class="i property">Default</span>.<span class="i method">GetHashCode</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#076737a1ccd4a9a3" class="i property">Verticies</a>);
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#0ef0b75ce9e7f04e" class="i property">ElementType</a>.<span class="i method">GetHashCode</span>();
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#3475e8d5d3157674" class="i property">Shader</a>.<span class="i method">GetHashCode</span>();
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#50a0e3548bbddca0" class="i property">Compressed</a>.<span class="i method">GetHashCode</span>();
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <span class="t t">EqualityComparer</span>&lt;<b>byte</b>[]&gt;.<span class="i property">Default</span>.<span class="i method">GetHashCode</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#47a66c2a1f9b6b55" class="i property">RawData</a>);
+            <span class="r2 r">hashCode</span> = <span class="r2 r">hashCode</span> * -1521134295 + <span class="t t">EqualityComparer</span>&lt;<b>string</b>&gt;.<span class="i property">Default</span>.<span class="i method">GetHashCode</span>(<a href="#8e1a179f8ba71c70" class="k">this</a>.<a href="#54083008872377ca" class="i property">Note</a>);
+            <b>return</b> <span class="r2 r">hashCode</span>;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

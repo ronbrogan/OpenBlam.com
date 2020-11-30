@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html><head><title>SecondaryOffset</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">7 instantiations of SecondaryOffset</div><div class="rA">OpenH2.Core (7)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#225"><b>225</b>Offset = new <i>SecondaryOffset</i>(scene, listBytes.ReadInt32At(entryBase + 8)),</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
+<a href="../Factories/MccMapFactory.cs.html#175"><b>175</b>Offset = new <i>SecondaryOffset</i>(scene, listBytes.ReadInt32At(entryBase + 8)),</a>
+</div>
+<div class="rF"><div class="rN">Maps\H2vMap.cs (4)</div>
+<a href="../Maps/H2vMap.cs.html#153"><b>153</b>DataFile.Local =&gt; new <i>SecondaryOffset</i>(this, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#154"><b>154</b>DataFile.MainMenu =&gt; new <i>SecondaryOffset</i>(this.mainMenu, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#155"><b>155</b>DataFile.Shared =&gt; new <i>SecondaryOffset</i>(this.mpShared, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#156"><b>156</b>DataFile.SinglePlayerShared =&gt; new <i>SecondaryOffset</i>(this.spShared, rawOffset),</a>
+</div>
+<div class="rF"><div class="rN">Patching\TagPatcher.cs (1)</div>
+<a href="../Patching/TagPatcher.cs.html#119"><b>119</b>var baseOffset = new <i>SecondaryOffset</i>(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.Offset.Value + offset + startsAt + 4));</a>
+</div>
+</div>
+<div class="rH">2 references to SecondaryOffset</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
+<a href="../Maps/H2vMap.cs.html#150"><b>150</b>public <i>SecondaryOffset</i> GetSecondaryOffset(DataFile source, int rawOffset)</a>
+</div>
+<div class="rF"><div class="rN">Patching\TagPatcher.cs (1)</div>
+<a href="../Patching/TagPatcher.cs.html#119"><b>119</b><i>var</i> baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.Offset.Value + offset + startsAt + 4));</a>
+</div>
+</div>
+</body></html>

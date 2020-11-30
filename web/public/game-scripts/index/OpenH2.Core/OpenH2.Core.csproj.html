@@ -1,0 +1,36 @@
+
+        <div className="cB"><div class="dH">
+<table style="width: 100%">
+<tr><td>File: <a id="filePath" class="blueLink" href="/#OpenH2.Core/OpenH2.Core.csproj" target="_top">OpenH2.Core.csproj</a><br/></td></tr>
+</table>
+</div>
+<div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"></pre></td><td valign="top" align="left"><pre id="code">
+<span class="xd">&lt;</span><span class="xn">Project </span><span class="xan">Sdk</span><span class="xd">=</span>&quot;<span class="xav">Microsoft.NET.Sdk</span>&quot;<span class="xd">&gt;</span><span class="xd">
+ 
+  &lt;</span><span class="xn">PropertyGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildProperties/R/TargetFramework.html" target="n" class="msbuildlink">TargetFramework</a></span><span class="xd">&gt;</span>netstandard2.1<span class="xd">&lt;/</span><span class="xn">TargetFramework</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildProperties/R/LangVersion.html" target="n" class="msbuildlink">LangVersion</a></span><span class="xd">&gt;</span>preview<span class="xd">&lt;/</span><span class="xn">LangVersion</span><span class="xd">&gt;</span><span class="xd">
+    &lt;!--</span><span class="c">&lt;DebugSerializerGeneration&gt;True&lt;/DebugSerializerGeneration&gt;</span><span class="xd">--&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildProperties/R/GenerateSerializersInto.html" target="n" class="msbuildlink">GenerateSerializersInto</a></span><span class="xd">&gt;</span>$(<a href="/MSBuildProperties/R/MSBuildProjectDirectory.html" target="n" class="msbuildlink">MSBuildProjectDirectory</a>)\$(<a href="/MSBuildProperties/R/BaseIntermediateOutputPath.html" target="n" class="msbuildlink">BaseIntermediateOutputPath</a>)\GeneratedSerializers<span class="xd">&lt;/</span><span class="xn">GenerateSerializersInto</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildProperties/R/Nullable.html" target="n" class="msbuildlink">Nullable</a></span><span class="xd">&gt;</span>enable<span class="xd">&lt;/</span><span class="xn">Nullable</span><span class="xd">&gt;</span><span class="xd">
+  &lt;/</span><span class="xn">PropertyGroup</span><span class="xd">&gt;</span><span class="xd">
+  
+  &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">OpenBlam.Serialization</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">1.0.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Text.Json</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">5.0.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Numerics.Vectors</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">4.5.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Runtime.Numerics</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">4.3.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">Microsoft.CodeAnalysis.CSharp</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">3.8.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+  &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+ 
+  &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/ProjectReference.html" target="n" class="msbuildlink">ProjectReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">..\OpenH2.Foundation\OpenH2.Foundation.csproj</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+  &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+ 
+  &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/None.html" target="n" class="msbuildlink">None</a> </span><span class="xan">Update</span><span class="xd">=</span>&quot;<span class="xav">Configs\material-config.json</span>&quot;<span class="xd">&gt;</span><span class="xd">
+      &lt;</span><span class="xn">CopyToOutputDirectory</span><span class="xd">&gt;</span>PreserveNewest<span class="xd">&lt;/</span><span class="xn">CopyToOutputDirectory</span><span class="xd">&gt;</span><span class="xd">
+    &lt;/</span><span class="xn">None</span><span class="xd">&gt;</span><span class="xd">
+  &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+ 
+&lt;/</span><span class="xn">Project</span><span class="xd">&gt;</span></pre></td></tr></table></div></div>

@@ -1,0 +1,10 @@
+﻿Halo2MCC;0;0
+Halo2Vista;1;0
+MSBuildFiles;-1;0
+MSBuildItems;-1;0
+MSBuildProperties;-1;0
+mscorlib;-1;4
+netstandard;-1;4
+OpenH2.Core;2;2
+OpenH2.Foundation;3;3
+TypeScriptFiles;-1;0

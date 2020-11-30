@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html><head><title>preloadStart</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to preloadStart</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Parsing\TrackingReader.cs (1)</div>
+<a href="../Parsing/TrackingReader.cs.html#51"><b>51</b><i>preloadStart</i> = offset;</a>
+</div>
+</div>
+<div class="rH">42 references to preloadStart</div><div class="rA">OpenH2.Core (42)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Parsing\TrackingReader.cs (42)</div>
+<a href="../Parsing/TrackingReader.cs.html#117"><b>117</b>if(offset &gt;= <i>preloadStart</i> &amp;&amp; offset + length &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#118"><b>118</b>return preloadData.AsSpan().ReadStringFrom(offset - <i>preloadStart</i>, length);</a>
+<a href="../Parsing/TrackingReader.cs.html#132"><b>132</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 1 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#133"><b>133</b>return preloadData[offset - <i>preloadStart</i>];</a>
+<a href="../Parsing/TrackingReader.cs.html#141"><b>141</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 2 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#142"><b>142</b>return preloadData.AsSpan().ReadInt16At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#150"><b>150</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 4 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#151"><b>151</b>return preloadData.AsSpan().ReadInt32At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#159"><b>159</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 2 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#160"><b>160</b>return preloadData.AsSpan().ReadUInt16At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#168"><b>168</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 4 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#169"><b>169</b>return preloadData.AsSpan().ReadUInt32At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#177"><b>177</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 4 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#178"><b>178</b>return preloadData.AsSpan().ReadTagRefAt(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#186"><b>186</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 8 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#187"><b>187</b>return preloadData.AsSpan().ReadVec2At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#195"><b>195</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 12 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#196"><b>196</b>return preloadData.AsSpan().ReadVec3At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#204"><b>204</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 16 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#205"><b>205</b>return preloadData.AsSpan().ReadVec4At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#213"><b>213</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 16 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#214"><b>214</b>return preloadData.AsSpan().ReadQuaternionAt(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#222"><b>222</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 64 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#223"><b>223</b>return preloadData.AsSpan().ReadMatrix4x4At(offset - <i>preloadStart</i>);</a>
+<a href="../Parsing/TrackingReader.cs.html#230"><b>230</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + length &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#231"><b>231</b>return preloadData.AsSpan().Slice(offset - <i>preloadStart</i>, length).ToArray();</a>
+<a href="../Parsing/TrackingReader.cs.html#239"><b>239</b>if (offset &gt;= <i>preloadStart</i> &amp;&amp; offset + 4 &lt; <i>preloadStart</i> + preloadLength)</a>
+<a href="../Parsing/TrackingReader.cs.html#240"><b>240</b>return preloadData.AsSpan().ReadFloatAt(offset - <i>preloadStart</i>);</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,54 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Layout</span>;
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Serialization</span>.<span class="i n">Layout</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Numerics</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>
+&lbrace;
+    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="TagName.cs.html#baebbd66003782bd" class="i field">lsnd</a>)]
+    <b>public class</b> <a id="782677ff35a50540" href="../R/782677ff35a50540.html" target="n" data-glyph="0,0" class="t t">LoopingSoundTag</a> : <a href="BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
+    &lbrace;
+        <b>public override string</b> <a id="82d6e8787e94782f" href="../R/82d6e8787e94782f.html" target="n" data-glyph="102,1" class="i property">Name</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a id="6cea41c79a866e50" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">LoopingSoundTag</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>) : <a href="BaseTag.cs.html#dac53823c1a58ae3" class="k">base</a>(<span class="r0 r">id</span>)
+        &lbrace;
+        &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(12)]
+        <b>public float</b> <a id="1a47ff4489125edb" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Value1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(16)]
+        <b>public float</b> <a id="aa40b68b68dd6ecf" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Value2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(24)]
+        <b>public</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="b79814c123698e87" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">CdmgTag</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">ReferenceArray</span>(36)]
+        <b>public</b> <a href="#29673ed01b42bafe" class="t t">SoundReference</a>[] <a id="24352c4be1d7905a" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">SoundReferences</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">FixedLength</span>(48)]
+        <b>public class</b> <a id="29673ed01b42bafe" href="../R/29673ed01b42bafe.html" target="n" data-glyph="0,1" class="t t"><span id="ffdaeb897928980d">SoundReference</span></a>
+        &lbrace;
+            [<span class="t constructor">PrimitiveValue</span>(0)]
+            <b>public uint</b> <a id="ee4396d4777bf4d0" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Value1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+            [<span class="t constructor">PrimitiveValue</span>(8)]
+            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="SoundTag.cs.html#fe4b8e460b3b6175" class="t t">SoundTag</a>&gt; <a id="989ada39dcd82bcd" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Sound</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+            [<span class="t constructor">PrimitiveValue</span>(12)]
+            <b>public float</b> <a id="dd65c060818bec33" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Value2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+            [<span class="t constructor">PrimitiveValue</span>(16)]
+            <b>public float</b> <a id="519bcadbb577ade1" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Value3</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+            [<span class="t constructor">PrimitiveValue</span>(20)]
+            <b>public uint</b> <a id="97d860dd45d0bf78" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Value4</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+            [<span class="t constructor">PrimitiveArray</span>(24, 4)]
+            <span class="c">// Maybe indicating sound coverage of a circle? to simulate directional sound?</span>
+            <b>public float</b>[] <a id="c8fa70b0bb6467ed" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">PiValues</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

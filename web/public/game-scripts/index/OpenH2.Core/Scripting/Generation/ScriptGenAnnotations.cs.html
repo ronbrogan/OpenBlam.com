@@ -1,0 +1,18 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">Generation</span>
+&lbrace;
+    <b>public static class</b> <a id="f7f0cad0236f94b5" href="../../R/f7f0cad0236f94b5.html" target="n" data-glyph="0,0" class="t t">ScriptGenAnnotations</a>
+    &lbrace;
+        <b>public static</b> <span class="t t">SyntaxAnnotation</span> <a id="0b9a8409bbfef0a4" href="../../R/0b9a8409bbfef0a4.html" target="n" data-glyph="102,1" class="i property">ResultStatement</a> &lbrace; <b>get</b>; &rbrace; = <b>new</b> <span class="t constructor">SyntaxAnnotation</span>(<span class="s">&quot;ResultStatement&quot;</span>);
+        <b>public static</b> <span class="t t">SyntaxAnnotation</span> <a id="d6a1b136e05a9890" href="../../R/d6a1b136e05a9890.html" target="n" data-glyph="102,1" class="i property">FinalScopeStatement</a> &lbrace; <b>get</b>; &rbrace; = <b>new</b> <span class="t constructor">SyntaxAnnotation</span>(<span class="s">&quot;FinalScopeStatement&quot;</span>);
+        <b>public static</b> <span class="t t">SyntaxAnnotation</span> <a id="44095e0f0baabe50" href="../../R/44095e0f0baabe50.html" target="n" data-glyph="102,1" class="i property">IfStatement</a> &lbrace; <b>get</b>; &rbrace; = <b>new</b> <span class="t constructor">SyntaxAnnotation</span>(<span class="s">&quot;IfStatement&quot;</span>);
+        <b>public static</b> <span class="t t">SyntaxAnnotation</span> <a id="296eba98897aeed8" href="../../R/296eba98897aeed8.html" target="n" data-glyph="102,1" class="i property">HoistedResultVar</a> &lbrace; <b>get</b>; &rbrace; = <b>new</b> <span class="t constructor">SyntaxAnnotation</span>(<span class="s">&quot;HoistedResultVar&quot;</span>);
+ 
+        <b>public const string</b> <a id="e9c0c01d4e80afaa" href="../../R/e9c0c01d4e80afaa.html" target="n" data-glyph="6,1" class="i field">TypeAnnotationKind</a> = <span class="s">&quot;TypeAnnotation&quot;</span>;
+        <b>public static</b> <span class="t t">SyntaxAnnotation</span> <a id="d76f6bc2bc8378f1" href="../../R/d76f6bc2bc8378f1.html" target="n" data-glyph="72,1" class="i method">TypeAnnotation</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r0 rd" class="r0 r">t</span>) =&gt; <b>new</b> <span class="t constructor">SyntaxAnnotation</span>(<a href="#e9c0c01d4e80afaa" class="i field">TypeAnnotationKind</a>, ((<b>int</b>)<span class="r0 r">t</span>).<span class="i method">ToString</span>());
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

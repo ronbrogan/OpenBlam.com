@@ -1,0 +1,18 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>.<span class="i n">Numerics</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>.<span class="i n">Physics</span>
+&lbrace;
+    <b>public interface</b> <a id="a9e4c4f27410f6c8" href="../R/a9e4c4f27410f6c8.html" target="n" data-glyph="48,0" class="t t">ITransform</a>
+    &lbrace;
+        <span class="t t">Vector3</span> <a id="726d2311f36fad34" href="../R/726d2311f36fad34.html" target="n" data-glyph="102,1" class="i property">Scale</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <span class="t t">Vector3</span> <a id="9aa1f111a20297f5" href="../R/9aa1f111a20297f5.html" target="n" data-glyph="102,1" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <span class="t t">Quaternion</span> <a id="afbd06bceb1a3939" href="../R/afbd06bceb1a3939.html" target="n" data-glyph="102,1" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <span class="t t">Matrix4x4</span> <a id="2844f551e353968f" href="../R/2844f551e353968f.html" target="n" data-glyph="102,1" class="i property">TransformationMatrix</a> &lbrace; <b>get</b>; &rbrace;
+ 
+        <b>void</b> <a id="bc50ad6b690e2e6b" href="../R/bc50ad6b690e2e6b.html" target="n" data-glyph="72,1" class="i method">UpdateDerivedData</a>();
+        <b>void</b> <a id="5c94167de0eb3184" href="../R/5c94167de0eb3184.html" target="n" data-glyph="72,1" class="i method">UseTransformationMatrix</a>(<span class="t t">Matrix4x4</span> <span id="r0 rd" class="r0 r">mat</span>);
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html><head><title>TagListEntry</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">4 instantiations of TagListEntry</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\TagTree.cs (4)</div>
+<a href="../Maps/TagTree.cs.html#11"><b>11</b>private TagListEntry root = new <i>TagListEntry</i>(&quot;root&quot;);</a>
+<a href="../Maps/TagTree.cs.html#32"><b>32</b>gp = new <i>TagListEntry</i>(grandparent);</a>
+<a href="../Maps/TagTree.cs.html#38"><b>38</b>p = new <i>TagListEntry</i>(parent);</a>
+<a href="../Maps/TagTree.cs.html#44"><b>44</b>c = new <i>TagListEntry</i>(tag);</a>
+</div>
+</div>
+<div class="rH">18 references to TagListEntry</div><div class="rA">OpenH2.Core (18)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\TagListEntry.cs (5)</div>
+<a href="../Maps/TagListEntry.cs.html#9"><b>9</b>public <i>TagListEntry</i> Parent { get; set; }</a>
+<a href="../Maps/TagListEntry.cs.html#11"><b>11</b>public HashSet&lt;<i>TagListEntry</i>&gt; Children = new HashSet&lt;<i>TagListEntry</i>&gt;();</a>
+<a href="../Maps/TagListEntry.cs.html#20"><b>20</b>internal void Add(<i>TagListEntry</i> entry)</a>
+<a href="../Maps/TagListEntry.cs.html#31"><b>31</b>public void Remove(<i>TagListEntry</i> entry)</a>
+</div>
+<div class="rF"><div class="rN">Maps\TagTree.cs (13)</div>
+<a href="../Maps/TagTree.cs.html#10"><b>10</b>private Dictionary&lt;string, <i>TagListEntry</i>&gt; children = new Dictionary&lt;string, <i>TagListEntry</i>&gt;();</a>
+<a href="../Maps/TagTree.cs.html#11"><b>11</b>private <i>TagListEntry</i> root = new TagListEntry(&quot;root&quot;);</a>
+<a href="../Maps/TagTree.cs.html#13"><b>13</b>private <i>TagListEntry</i> lookupChild(string key)</a>
+<a href="../Maps/TagTree.cs.html#18"><b>18</b>if (children.TryGetValue(key, out <i>var</i> child))</a>
+<a href="../Maps/TagTree.cs.html#24"><b>24</b>public <i>TagListEntry</i> Add(string tag, string parent = null, string grandparent = null)</a>
+<a href="../Maps/TagTree.cs.html#26"><b>26</b><i>var</i> gp = lookupChild(grandparent);</a>
+<a href="../Maps/TagTree.cs.html#27"><b>27</b><i>var</i> p = lookupChild(parent);</a>
+<a href="../Maps/TagTree.cs.html#28"><b>28</b><i>var</i> c = lookupChild(tag);</a>
+<a href="../Maps/TagTree.cs.html#71"><b>71</b>public IEnumerable&lt;<i>TagListEntry</i>&gt; Children()</a>
+<a href="../Maps/TagTree.cs.html#78"><b>78</b>foreach(<i>var</i> child in root.Children)</a>
+<a href="../Maps/TagTree.cs.html#84"><b>84</b>private void printImpl(Action&lt;string&gt; printLine, <i>TagListEntry</i> current, int level = 0)</a>
+<a href="../Maps/TagTree.cs.html#89"><b>89</b>foreach (<i>var</i> child in current.Children)</a>
+</div>
+</div>
+</body></html>

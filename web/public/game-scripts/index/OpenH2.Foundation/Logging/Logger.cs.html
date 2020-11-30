@@ -1,0 +1,39 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Numerics</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>.<span class="i n">Logging</span>
+&lbrace;
+    <b>public static class</b> <a id="3f248a139f68cdb0" href="../R/3f248a139f68cdb0.html" target="n" data-glyph="0,0" class="t t">Logger</a>
+    &lbrace;
+        <b>public class</b> <a id="d56a203151a45eb8" href="../R/d56a203151a45eb8.html" target="n" data-glyph="0,1" class="t t">Color</a>
+        &lbrace;
+            <b>internal</b> <span class="t t">ConsoleColor</span> <a id="ab5da158d01c237b" href="../R/ab5da158d01c237b.html" target="n" data-glyph="44,2" class="i field">foreground</a>;
+ 
+            <b>private</b> <a id="3cab558602e068d5" href="../R/3cab558602e068d5.html" target="n" data-glyph="76,2" class="t constructor">Color</a>(<span class="t t">ConsoleColor</span> <span id="r0 rd" class="r0 r">c</span>)
+            &lbrace;
+                <a href="#ab5da158d01c237b" class="i field">foreground</a> = <span class="r0 r">c</span>;
+            &rbrace;
+ 
+            <b>public static readonly</b> <a href="#d56a203151a45eb8" class="t t">Color</a> <a id="71e99e9ab24bb5b5" href="../R/../../0000000000.html" target="n" data-glyph="42,2" class="i field">White</a> = <b>new</b> <a href="#3cab558602e068d5" class="t constructor">Color</a>(<span class="t t">ConsoleColor</span>.<span class="i field">White</span>);
+            <b>public static readonly</b> <a href="#d56a203151a45eb8" class="t t">Color</a> <a id="f8e52b86deabc367" href="../R/f8e52b86deabc367.html" target="n" data-glyph="42,2" class="i field">Red</a> = <b>new</b> <a href="#3cab558602e068d5" class="t constructor">Color</a>(<span class="t t">ConsoleColor</span>.<span class="i field">Red</span>);
+            <b>public static readonly</b> <a href="#d56a203151a45eb8" class="t t">Color</a> <a id="9775e30540dc668e" href="../R/9775e30540dc668e.html" target="n" data-glyph="42,2" class="i field">Magenta</a> = <b>new</b> <a href="#3cab558602e068d5" class="t constructor">Color</a>(<span class="t t">ConsoleColor</span>.<span class="i field">Magenta</span>);
+            <b>public static readonly</b> <a href="#d56a203151a45eb8" class="t t">Color</a> <a id="5a0d8b95cefa5d76" href="../R/5a0d8b95cefa5d76.html" target="n" data-glyph="42,2" class="i field">Cyan</a> = <b>new</b> <a href="#3cab558602e068d5" class="t constructor">Color</a>(<span class="t t">ConsoleColor</span>.<span class="i field">Cyan</span>);
+        &rbrace;
+ 
+        <b>public static void</b> <a id="4c319781e6ec4572" href="../R/4c319781e6ec4572.html" target="n" data-glyph="72,1" class="i method">LogInfo</a>(<b>string</b> <span id="r1 rd" class="r1 r">message</span>)
+        &lbrace;
+            <span class="t t">Console</span>.<span class="i method">WriteLine</span>(<span class="r1 r">message</span>);
+        &rbrace;
+ 
+        <b>public static void</b> <a id="3e174e1b224297de" href="../R/3e174e1b224297de.html" target="n" data-glyph="72,1" class="i method">Log</a>(<b>string</b> <span id="r2 rd" class="r2 r">message</span>, <a href="#d56a203151a45eb8" class="t t">Color</a> <span id="r3 rd" class="r3 r">color</span>)
+        &lbrace;
+            <b>var</b> <span id="r4 rd" class="r4 r">c</span> = <span class="t t">Console</span>.<span class="i property">ForegroundColor</span>;
+            <span class="t t">Console</span>.<span class="i property">ForegroundColor</span> = <span class="r3 r">color</span>.<a href="#ab5da158d01c237b" class="i field">foreground</a>;
+            <span class="t t">Console</span>.<span class="i method">WriteLine</span>(<span class="r2 r">message</span>);
+            <span class="t t">Console</span>.<span class="i property">ForegroundColor</span> = <span class="r4 r">c</span>;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

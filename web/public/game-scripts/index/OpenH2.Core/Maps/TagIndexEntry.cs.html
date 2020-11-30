@@ -1,0 +1,26 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Extensions</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Offsets</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>
+&lbrace;
+    <b>public struct</b> <a id="9d92e19a05a9926d" href="../R/9d92e19a05a9926d.html" target="n" data-glyph="108,0" class="t t"><span id="5bbfe03dad1cc746">TagIndexEntry</span></a>
+    &lbrace;
+        <b>public</b> <a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a> <a id="5e3db5c45a2b734d" href="../R/5e3db5c45a2b734d.html" target="n" data-glyph="102,1" class="i property">Tag</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public uint</b> <a id="9c2bf0fa16ae25bb" href="../R/9c2bf0fa16ae25bb.html" target="n" data-glyph="102,1" class="i property">ID</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="../Offsets/IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a> <a id="5dbb968bd40df573" href="../R/5dbb968bd40df573.html" target="n" data-glyph="102,1" class="i property">Offset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public int</b> <a id="b9a097a3ebb284fb" href="../R/b9a097a3ebb284fb.html" target="n" data-glyph="102,1" class="i property">DataSize</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>private string</b> <a id="007a451bfbe8b225" href="../R/007a451bfbe8b225.html" target="n" data-glyph="106,1" class="i property">TagName</a> =&gt; <a href="#9d92e19a05a9926d" class="k">this</a>.<a href="#5e3db5c45a2b734d" class="i property">Tag</a>.<a href="../Extensions/StringExtensions.cs.html#d4355b18f2e5643d" class="i method">ToTagString</a>();
+        
+ 
+        <b>public static int</b> <a id="e96a2d3175df2ad8" href="../R/e96a2d3175df2ad8.html" target="n" data-glyph="102,1" class="i property">Size</a> =&gt; 16;
+ 
+        <b>public override string</b> <a id="1487fba186d72675" href="../R/1487fba186d72675.html" target="n" data-glyph="72,1" class="i method">ToString</a>()
+        &lbrace;
+            <b>return</b> <a href="#007a451bfbe8b225" class="i property">TagName</a> + <span class="s">&quot; &quot;</span> + <a href="#9c2bf0fa16ae25bb" class="i property">ID</a> + <span class="s">&quot;, &quot;</span> + <a href="#b9a097a3ebb284fb" class="i property">DataSize</a> + <span class="s">&quot;B @ &quot;</span> + <a href="#5dbb968bd40df573" class="i property">Offset</a>.<a href="../Offsets/IOffset.cs.html#54e0df3b2009ec91" class="i property">Value</a>;
+        &rbrace;
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

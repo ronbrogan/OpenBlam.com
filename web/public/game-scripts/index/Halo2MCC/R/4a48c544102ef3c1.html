@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html><head><title>e1_cov_inf1</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to e1_cov_inf1</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08a_deltacliffs.Data.cs (1)</div>
+<a href="../08a_deltacliffs.Data.cs.html#456"><b>456</b><i>e1_cov_inf1</i> = new Squad_e1_cov_inf1(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">8 references to e1_cov_inf1</div><div class="rA">Halo2MCC (8)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08a_deltacliffs.cs (8)</div>
+<a href="../08a_deltacliffs.cs.html#2531"><b>2531</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_spawn_count(<i>e1_cov_inf1</i>.Squad) &gt; 0);</a>
+<a href="../08a_deltacliffs.cs.html#2532"><b>2532</b>Engine.ai_migrate(<i>e1_cov_inf1</i>.Squad, e2_cov_inf0.Squad);</a>
+<a href="../08a_deltacliffs.cs.html#2954"><b>2954</b>await Engine.sleep_until(async () =&gt; this.g_e1_stealth_major_done || (short)Engine.ai_spawn_count(<i>e1_cov_inf1</i>.Squad) &gt; 0 &amp;&amp; (short)Engine.ai_living_count(<i>e1_cov_inf1</i>.Squad) &lt;= 0);</a>
+<a href="../08a_deltacliffs.cs.html#2987"><b>2987</b>Engine.ai_place(<i>e1_cov_inf1</i>.Squad);</a>
+<a href="../08a_deltacliffs.cs.html#2988"><b>2988</b>this.g_cov_stealth_major = Engine.ai_get_unit(<i>e1_cov_inf1</i>.stealth_major);</a>
+<a href="../08a_deltacliffs.cs.html#2989"><b>2989</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e1_stealth_major_scene&quot;, cs_e1_stealth_major_scene, <i>e1_cov_inf1</i>.Squad) || (short)Engine.ai_spawn_count(e1_cov_inf2.Squad) &gt; 0, 10);</a>
+<a href="../08a_deltacliffs.cs.html#2991"><b>2991</b>Engine.cs_run_command_script(<i>e1_cov_inf1</i>.Squad, cs_e1_watch_pods);</a>
+</div>
+</div>
+</body></html>

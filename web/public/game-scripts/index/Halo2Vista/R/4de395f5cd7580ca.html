@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html><head><title>all_allies</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">41 references to all_allies</div><div class="rA">Halo2Vista (41)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.cs (41)</div>
+<a href="../04b_floodlab.cs.html#1877"><b>1877</b>Engine.ai_set_orders(<i>all_allies</i>, allies_disposal);</a>
+<a href="../04b_floodlab.cs.html#1884"><b>1884</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;juggernaut_gosh_scene&quot;, juggernaut_gosh, <i>all_allies</i>), 30, 450);</a>
+<a href="../04b_floodlab.cs.html#1895"><b>1895</b>if (Engine.cs_command_script_running(<i>all_allies</i>, juggernaut_gosh))</a>
+<a href="../04b_floodlab.cs.html#1897"><b>1897</b>Engine.cs_run_command_script(<i>all_allies</i>, abort);</a>
+<a href="../04b_floodlab.cs.html#2147"><b>2147</b>Engine.ai_renew(<i>all_allies</i>);</a>
+<a href="../04b_floodlab.cs.html#2151"><b>2151</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(vol_disposal_all, Engine.ai_actors(<i>all_allies</i>)) == true &amp;&amp; await this.player_count() &gt; 0, 30, 300);</a>
+<a href="../04b_floodlab.cs.html#2153"><b>2153</b>Engine.ai_set_active_camo(<i>all_allies</i>, false);</a>
+<a href="../04b_floodlab.cs.html#2163"><b>2163</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;mess_react_02_scene&quot;, disposal_ally_comment_02, <i>all_allies</i>) || (short)Engine.ai_living_count(allies_grunts_03.Squad) &lt; 2, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2165"><b>2165</b>Engine.ai_disregard(Engine.ai_actors(<i>all_allies</i>), true);</a>
+<a href="../04b_floodlab.cs.html#2175"><b>2175</b>Engine.ai_disregard(Engine.ai_actors(<i>all_allies</i>), true);</a>
+<a href="../04b_floodlab.cs.html#2179"><b>2179</b>Engine.cs_run_command_script(<i>all_allies</i>, hologram_face);</a>
+<a href="../04b_floodlab.cs.html#2180"><b>2180</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_grunt_react_scene&quot;, hologram_ally_01, <i>all_allies</i>) || (short)Engine.ai_living_count(allies_grunts_03.Squad) == 0 || (short)Engine.ai_living_count(disposal_commander.Squad) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2204"><b>2204</b>Engine.ai_disregard(Engine.ai_actors(<i>all_allies</i>), false);</a>
+<a href="../04b_floodlab.cs.html#2214"><b>2214</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_after_scene&quot;, hologram_ally_04, <i>all_allies</i>) || (short)Engine.ai_living_count(disposal_commander.Squad) == 0 || (short)Engine.ai_living_count(allies_elites) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2219"><b>2219</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;disposal_post_scene&quot;, disposal_after_react, <i>all_allies</i>) || (short)Engine.ai_living_count(allies_elites) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2255"><b>2255</b>Engine.ai_scene(&quot;silo_commander_scene&quot;, silo_commander_whine, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../04b_floodlab.cs.html#2751"><b>2751</b>Engine.ai_renew(<i>all_allies</i>);</a>
+<a href="../04b_floodlab.cs.html#2764"><b>2764</b>Engine.ai_scene(&quot;silo_ally_scene&quot;, silo_ally_comment, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../04b_floodlab.cs.html#2794"><b>2794</b>Engine.ai_renew(<i>all_allies</i>);</a>
+<a href="../04b_floodlab.cs.html#2797"><b>2797</b>Engine.ai_scene(&quot;halls2lab_scene&quot;, halls2lab_ally_comment, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../04b_floodlab.cs.html#2848"><b>2848</b>if (Engine.volume_test_object(trans_3_0, Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4)) == false)</a>
+<a href="../04b_floodlab.cs.html#2850"><b>2850</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4));</a>
+<a href="../04b_floodlab.cs.html#2854"><b>2854</b>if (Engine.volume_test_object(trans_3_0, Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3)) == false)</a>
+<a href="../04b_floodlab.cs.html#2856"><b>2856</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3));</a>
+<a href="../04b_floodlab.cs.html#2860"><b>2860</b>if (Engine.volume_test_object(trans_3_0, Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2)) == false)</a>
+<a href="../04b_floodlab.cs.html#2862"><b>2862</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2));</a>
+<a href="../04b_floodlab.cs.html#2866"><b>2866</b>if (Engine.volume_test_object(trans_3_0, Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1)) == false)</a>
+<a href="../04b_floodlab.cs.html#2868"><b>2868</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1));</a>
+<a href="../04b_floodlab.cs.html#2872"><b>2872</b>if (Engine.volume_test_object(trans_3_0, Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0)) == false)</a>
+<a href="../04b_floodlab.cs.html#2874"><b>2874</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0));</a>
+<a href="../04b_floodlab.cs.html#2901"><b>2901</b>Engine.ai_set_orders(<i>all_allies</i>, allies_wraparound);</a>
+<a href="../04b_floodlab.cs.html#3206"><b>3206</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(allies_elites) == 0 || Engine.ai_scene(&quot;lab_heretic_ally_scene&quot;, lab_heretics_ally, <i>all_allies</i>), 30, 300);</a>
+<a href="../04b_floodlab.cs.html#3321"><b>3321</b>Engine.ai_set_orders(<i>all_allies</i>, allies_airlock);</a>
+<a href="../04b_floodlab.cs.html#3521"><b>3521</b>Engine.ai_renew(<i>all_allies</i>);</a>
+<a href="../04b_floodlab.cs.html#3729"><b>3729</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1);</a>
+<a href="../04b_floodlab.cs.html#3834"><b>3834</b>Engine.ai_renew(<i>all_allies</i>);</a>
+<a href="../04b_floodlab.cs.html#3848"><b>3848</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;control_grunt_scene&quot;, control_grunt_comment, <i>all_allies</i>) || Engine.ai_scene(&quot;control_elite_scene&quot;, control_elite_comment, <i>all_allies</i>), 30, 300);</a>
+<a href="../04b_floodlab.cs.html#3881"><b>3881</b>Engine.ai_set_orders(<i>all_allies</i>, allies_pickup);</a>
+<a href="../04b_floodlab.cs.html#3892"><b>3892</b>Engine.ai_scene(&quot;control_comm_scene&quot;, commander_farewell, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../04b_floodlab.cs.html#5051"><b>5051</b>Engine.ai_disposable(<i>all_allies</i>, true);</a>
+</div>
+</div>
+</body></html>

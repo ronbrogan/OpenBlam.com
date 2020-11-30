@@ -1,0 +1,20 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Architecture</span>
+&lbrace;
+    <b>public abstract class</b> <a id="0e132d369a72a803" href="../R/0e132d369a72a803.html" target="n" data-glyph="0,0" class="t t">Component</a>
+    &lbrace;
+        <b>public</b> <a href="Entity.cs.html#1d5748ce36ff5565" class="t t">Entity</a> <a id="a85b2251f84ff83e" href="../R/a85b2251f84ff83e.html" target="n" data-glyph="102,1" class="i property">Parent</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+ 
+        <b>public</b> <a id="9ddb8244ef6e9219" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">Component</a>(<a href="Entity.cs.html#1d5748ce36ff5565" class="t t">Entity</a> <span id="r0 rd" class="r0 r">parent</span>)
+        &lbrace;
+            <a href="#0e132d369a72a803" class="k">this</a>.<a href="#a85b2251f84ff83e" class="i property">Parent</a> = <span class="r0 r">parent</span>;
+        &rbrace;
+ 
+        <b>public bool</b> <a id="b302c9daaba6ef5d" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">TryGetSibling</a>&lt;<span id="r1 rd t" class="r1 r t">T</span>&gt;(<b>out</b> <span class="r1 r t">T</span> <span id="r2 rd" class="r2 r">component</span>) <b>where</b> <span class="r1 r t">T</span> : <a href="#0e132d369a72a803" class="t t">Component</a>
+        &lbrace;
+            <b>return</b> <a href="#0e132d369a72a803" class="k">this</a>.<a href="#a85b2251f84ff83e" class="i property">Parent</a>.<a href="Entity.cs.html#3cc694cd7a29e6b0" class="i method">TryGetChild</a>(<b>out</b> <span class="r2 r">component</span>);
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

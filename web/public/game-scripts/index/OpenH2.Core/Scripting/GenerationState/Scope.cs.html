@@ -1,0 +1,37 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">GenerationState</span>
+&lbrace;
+    <b>public class</b> <a id="1566133395e6730d" href="../../R/1566133395e6730d.html" target="n" data-glyph="0,0" class="t t">Scope</a>
+    &lbrace;
+        <b>public</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <a id="78ebb21d8a8f6d98" href="../../R/78ebb21d8a8f6d98.html" target="n" data-glyph="102,1" class="i property">Type</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public</b> <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <a id="25936af8934a3201" href="../../R/25936af8934a3201.html" target="n" data-glyph="102,1" class="i property">Context</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public</b> <a href="IStatementContext.cs.html#fffbb44acf3718f5" class="t t">IStatementContext</a> <a id="17a6ef90d24bbaf5" href="../../R/17a6ef90d24bbaf5.html" target="n" data-glyph="102,1" class="i property">StatementContext</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace; = <b>null</b>;
+ 
+        <b>public</b> <a id="40c898175e590180" href="../../R/40c898175e590180.html" target="n" data-glyph="72,1" class="t constructor">Scope</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r0 rd" class="r0 r">type</span>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <span id="r1 rd" class="r1 r">context</span>, <a href="IStatementContext.cs.html#fffbb44acf3718f5" class="t t">IStatementContext</a> <span id="r2 rd" class="r2 r">nearestStatements</span>)
+        &lbrace;
+            <a href="#1566133395e6730d" class="k">this</a>.<a href="#78ebb21d8a8f6d98" class="i property">Type</a> = <span class="r0 r">type</span>;
+            <a href="#1566133395e6730d" class="k">this</a>.<a href="#17a6ef90d24bbaf5" class="i property">StatementContext</a> = <span class="r2 r">nearestStatements</span>;
+            <a href="#1566133395e6730d" class="k">this</a>.<a href="#25936af8934a3201" class="i property">Context</a> = <span class="r1 r">context</span>;
+        &rbrace;
+ 
+        <b>public</b> <a href="#1566133395e6730d" class="t t">Scope</a> <a id="2e4fbb5197edf882" href="../../R/2e4fbb5197edf882.html" target="n" data-glyph="72,1" class="i method">CreateChild</a>(<a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <span id="r3 rd" class="r3 r">context</span>)
+        &lbrace;
+            <a href="#1566133395e6730d" class="k">var</a> <span id="r4 rd" class="r4 r">child</span> = <b>new</b> <a href="#40c898175e590180" class="t constructor">Scope</a>(
+                <span class="r3 r">context</span>.<a href="IGenerationContext.cs.html#d3ec8a6edad49392" class="i property">OwnDataType</a> ?? <a href="#1566133395e6730d" class="k">this</a>.<a href="#78ebb21d8a8f6d98" class="i property">Type</a>, 
+                <span class="r3 r">context</span>, 
+                <span class="r3 r">context</span> <b>as</b> <a href="IStatementContext.cs.html#fffbb44acf3718f5" class="t t">IStatementContext</a> ?? <a href="#1566133395e6730d" class="k">this</a>.<a href="#17a6ef90d24bbaf5" class="i property">StatementContext</a>);
+ 
+            <b>return</b> <span class="r4 r">child</span>;
+        &rbrace;
+ 
+        <b>public void</b> <a id="0add1bb9608e6804" href="../../R/0add1bb9608e6804.html" target="n" data-glyph="72,1" class="i method">GenerateInto</a>(<a href="#1566133395e6730d" class="t t">Scope</a> <span id="r5 rd" class="r5 r">destination</span>)
+        &lbrace;
+            <a href="#1566133395e6730d" class="k">this</a>.<a href="#25936af8934a3201" class="i property">Context</a>.<a href="IGenerationContext.cs.html#6d24b6d1bc9f9655" class="i method">GenerateInto</a>(<span class="r5 r">destination</span>);
+        &rbrace;
+ 
+        <b>public bool</b> <a id="3257d22372184090" href="../../R/3257d22372184090.html" target="n" data-glyph="102,1" class="i property">IsInStatementContext</a> =&gt; <a href="#1566133395e6730d" class="k">this</a>.<a href="#17a6ef90d24bbaf5" class="i property">StatementContext</a> == <a href="#1566133395e6730d" class="k">this</a>.<a href="#25936af8934a3201" class="i property">Context</a>;
+        <b>public bool</b> <a id="27ad957b26c82ba6" href="../../R/27ad957b26c82ba6.html" target="n" data-glyph="102,1" class="i property">SuppressHoisting</a> =&gt; <a href="#1566133395e6730d" class="k">this</a>.<a href="#25936af8934a3201" class="i property">Context</a>.<a href="IGenerationContext.cs.html#6ba1d319c6b480cd" class="i property">SuppressHoisting</a>;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html><head><title>allied_phantom_02</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to allied_phantom_02</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
+<a href="../04b_floodlab.Data.cs.html#1590"><b>1590</b><i>allied_phantom_02</i> = new Squad_allied_phantom_02(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">16 references to allied_phantom_02</div><div class="rA">Halo2MCC (16)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.cs (16)</div>
+<a href="../04b_floodlab.cs.html#3342"><b>3342</b>Engine.object_set_phantom_power(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), true);</a>
+<a href="../04b_floodlab.cs.html#3344"><b>3344</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p_a03&quot;);</a>
+<a href="../04b_floodlab.cs.html#3346"><b>3346</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p_a02&quot;);</a>
+<a href="../04b_floodlab.cs.html#3348"><b>3348</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p_a01&quot;);</a>
+<a href="../04b_floodlab.cs.html#3350"><b>3350</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p_b01&quot;);</a>
+<a href="../04b_floodlab.cs.html#3351"><b>3351</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p&quot;);</a>
+<a href="../04b_floodlab.cs.html#3352"><b>3352</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>allied_phantom_02</i>.Squad) &lt; 2);</a>
+<a href="../04b_floodlab.cs.html#3354"><b>3354</b>Engine.object_set_phantom_power(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), false);</a>
+<a href="../04b_floodlab.cs.html#3359"><b>3359</b>Engine.ai_erase(<i>allied_phantom_02</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#3367"><b>3367</b>Engine.ai_place(<i>allied_phantom_02</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#3368"><b>3368</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(allies_grunts_04.Squad));</a>
+<a href="../04b_floodlab.cs.html#3369"><b>3369</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(allies_elites_04.Squad));</a>
+<a href="../04b_floodlab.cs.html#3370"><b>3370</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_02</i>.pilot), true);</a>
+<a href="../04b_floodlab.cs.html#3371"><b>3371</b>Engine.cs_run_command_script(<i>allied_phantom_02</i>.pilot, bridge_phantom_arrives);</a>
+<a href="../04b_floodlab.cs.html#3515"><b>3515</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>allied_phantom_02</i>.Squad) &gt; 1);</a>
+<a href="../04b_floodlab.cs.html#3516"><b>3516</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>allied_phantom_02</i>.Squad) &lt; 2);</a>
+</div>
+</div>
+</body></html>

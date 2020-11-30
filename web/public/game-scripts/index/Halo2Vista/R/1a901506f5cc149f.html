@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html><head><title>e6_pro_inf1</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to e6_pro_inf1</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.Data.cs (1)</div>
+<a href="../08a_deltacliffs.Data.cs.html#498"><b>498</b><i>e6_pro_inf1</i> = new Squad_e6_pro_inf1(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">6 references to e6_pro_inf1</div><div class="rA">Halo2Vista (6)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.cs (6)</div>
+<a href="../08a_deltacliffs.cs.html#1824"><b>1824</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_weapon_scene&quot;, cs_e6_weapon_scene, e6_cov) || (short)Engine.ai_living_count(<i>e6_pro_inf1</i>.Squad) &lt;= 0, 15, this.two_minutes);</a>
+<a href="../08a_deltacliffs.cs.html#1838"><b>1838</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;e6_player_exited_onto_ledge&quot;, <i>e6_pro_inf1</i>.Squad) || this.g_e7_started || Engine.volume_test_objects(tv_e6_ledge0, Engine.players()) || Engine.volume_test_objects(tv_e6_ledge1, Engine.players()), 15);</a>
+<a href="../08a_deltacliffs.cs.html#1919"><b>1919</b>await Engine.sleep_until(async () =&gt; this.g_e7_started || Engine.object_model_targets_destroyed(Engine.ai_vehicle_get(e6_pro_phantom0.phantom0), &quot;target_front&quot;) &gt;= 3 || Engine.object_get_health(Engine.ai_vehicle_get(e6_pro_phantom0.phantom0)) &lt;= 0.05F || this.g_e6_pro_inf1_arrived &amp;&amp; (short)Engine.ai_living_count(<i>e6_pro_inf1</i>.Squad) &lt;= 0);</a>
+<a href="../08a_deltacliffs.cs.html#1927"><b>1927</b>Engine.ai_place(<i>e6_pro_inf1</i>.Squad, (short)Engine.pin(6F - (float)Engine.ai_living_count(e6_pro_inf0), 2F, 6F));</a>
+<a href="../08a_deltacliffs.cs.html#1945"><b>1945</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(e6_pro_inf0) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(<i>e6_pro_inf1</i>.Squad) &lt;= 0 &amp;&amp; (short)Engine.ai_spawn_count(<i>e6_pro_inf1</i>.Squad) &gt; 0 || this.g_e7_started || await this.player_in_vehicle(), 30, this.two_minutes);</a>
+</div>
+</div>
+</body></html>

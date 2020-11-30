@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html><head><title>tray06</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to tray06</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
+<a href="../04b_floodlab.Data.cs.html#1533"><b>1533</b><i>tray06</i> = new ScenarioEntity&lt;IDevice&gt;(386, scenarioTag.WellKnownItems[386]);</a>
+</div>
+</div>
+<div class="rH">7 references to tray06</div><div class="rA">Halo2MCC (7)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.cs (7)</div>
+<a href="../04b_floodlab.cs.html#2490"><b>2490</b>Engine.objects_attach(elev_silo.Entity, &quot;tray06&quot;, <i>tray06</i>.Entity, &quot;can_exit&quot;);</a>
+<a href="../04b_floodlab.cs.html#2492"><b>2492</b>Engine.objects_attach(<i>tray06</i>.Entity, &quot;can_exit&quot;, can06.Entity, &quot;can_base&quot;);</a>
+<a href="../04b_floodlab.cs.html#2493"><b>2493</b>Engine.device_set_position(<i>tray06</i>.Entity, 1F);</a>
+<a href="../04b_floodlab.cs.html#2494"><b>2494</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>tray06</i>.Entity) == 1F, 30, 300);</a>
+<a href="../04b_floodlab.cs.html#2495"><b>2495</b>Engine.objects_detach(<i>tray06</i>.Entity, can06.Entity);</a>
+<a href="../04b_floodlab.cs.html#2496"><b>2496</b>Engine.device_set_position_immediate(<i>tray06</i>.Entity, 0F);</a>
+<a href="../04b_floodlab.cs.html#2497"><b>2497</b>Engine.object_destroy(<i>tray06</i>.Entity);</a>
+</div>
+</div>
+</body></html>

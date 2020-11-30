@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html><head><title>g_e8_warthog</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">2 writes to g_e8_warthog</div><div class="rA">Halo2Vista (2)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03a_oldmombasa.cs (2)</div>
+<a href="../03a_oldmombasa.cs.html#90"><b>90</b>this.<i>g_e8_warthog</i> = default(IVehicle);</a>
+<a href="../03a_oldmombasa.cs.html#3723"><b>3723</b>this.<i>g_e8_warthog</i> = Engine.ai_vehicle_get_from_starting_location(e8_mars_warthog0.warthog0);</a>
+</div>
+</div>
+<div class="rH">12 references to g_e8_warthog</div><div class="rA">Halo2Vista (12)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03a_oldmombasa.cs (12)</div>
+<a href="../03a_oldmombasa.cs.html#2974"><b>2974</b>await Engine.sleep_until(async () =&gt; !(await this.player_in_vehicle()) &amp;&amp; !(Engine.volume_test_object(tv_beach, this.<i>g_e8_warthog</i>)) || Engine.object_get_health(this.<i>g_e8_warthog</i>) &lt;= 0F &amp;&amp; !(Engine.volume_test_object(tv_beach, this.g_e10_warthog)) || Engine.object_get_health(this.g_e10_warthog) &lt;= 0F);</a>
+<a href="../03a_oldmombasa.cs.html#3184"><b>3184</b>await Engine.sleep_until(async () =&gt; !(await this.player_in_vehicle()) &amp;&amp; !(Engine.volume_test_object(tv_beach, this.<i>g_e8_warthog</i>)) || Engine.object_get_health(this.<i>g_e8_warthog</i>) &lt;= 0F);</a>
+<a href="../03a_oldmombasa.cs.html#3323"><b>3323</b>Engine.sound_looping_start(Engine.GetTag&lt;LoopingSoundTag&gt;(&quot;sound\\vehicles\\warthog\\warthog_horn\\warthog_horn&quot;, 4137555070U), this.<i>g_e8_warthog</i>, 1.5F);</a>
+<a href="../03a_oldmombasa.cs.html#3365"><b>3365</b>Engine.activate_team_nav_point_object(_default, player, this.<i>g_e8_warthog</i>, 1F);</a>
+<a href="../03a_oldmombasa.cs.html#3372"><b>3372</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.unit_get_health(this.<i>g_e8_warthog</i>) &lt;= 0F);</a>
+<a href="../03a_oldmombasa.cs.html#3373"><b>3373</b>Engine.deactivate_team_nav_point_object(player, this.<i>g_e8_warthog</i>);</a>
+<a href="../03a_oldmombasa.cs.html#3455"><b>3455</b>Engine.ai_vehicle_reserve_seat(this.<i>g_e8_warthog</i>, &quot;warthog_d&quot;, false);</a>
+<a href="../03a_oldmombasa.cs.html#3456"><b>3456</b>Engine.ai_vehicle_enter(e9_mars_warthog0.Squad, this.<i>g_e8_warthog</i>, &quot;warthog_d&quot;);</a>
+<a href="../03a_oldmombasa.cs.html#3459"><b>3459</b>await Engine.sleep_until(async () =&gt; Engine.vehicle_test_seat_list(this.<i>g_e8_warthog</i>, &quot;warthog_d&quot;, Engine.ai_actors(e9_mars)), 30, 900);</a>
+<a href="../03a_oldmombasa.cs.html#3460"><b>3460</b>Engine.cs_run_command_script(Engine.object_get_ai(Engine.vehicle_driver(this.<i>g_e8_warthog</i>)), cs_e9_warthog_follow);</a>
+</div>
+</div>
+</body></html>

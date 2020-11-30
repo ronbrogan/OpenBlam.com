@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html><head><title>silo_flood_halls</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to silo_flood_halls</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
+<a href="../04b_floodlab.Data.cs.html#1575"><b>1575</b><i>silo_flood_halls</i> = new Squad_silo_flood_halls(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">9 references to silo_flood_halls</div><div class="rA">Halo2Vista (9)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.cs (9)</div>
+<a href="../04b_floodlab.cs.html#2709"><b>2709</b>Engine.ai_place(<i>silo_flood_halls</i>.Squad, 2);</a>
+<a href="../04b_floodlab.cs.html#2710"><b>2710</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_leaving_silo, Engine.players()) == true || (short)Engine.ai_nonswarm_count(<i>silo_flood_halls</i>.Squad) == 0);</a>
+<a href="../04b_floodlab.cs.html#2719"><b>2719</b>Engine.ai_place(<i>silo_flood_halls</i>.Squad, 2);</a>
+<a href="../04b_floodlab.cs.html#2722"><b>2722</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_leaving_silo, Engine.players()) == true || (short)Engine.ai_nonswarm_count(<i>silo_flood_halls</i>.Squad) == 0);</a>
+<a href="../04b_floodlab.cs.html#2731"><b>2731</b>if (Engine.volume_test_objects(vol_leaving_silo, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; (short)Engine.ai_living_count(<i>silo_flood_halls</i>.Squad) &lt; 1)</a>
+<a href="../04b_floodlab.cs.html#2733"><b>2733</b>Engine.ai_place(<i>silo_flood_halls</i>.Squad, 1);</a>
+<a href="../04b_floodlab.cs.html#2737"><b>2737</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_leaving_silo, Engine.players()) == true || (short)Engine.ai_living_count(<i>silo_flood_halls</i>.Squad) &lt; 1 || (short)Engine.ai_spawn_count(<i>silo_flood_halls</i>.Squad) &gt; 7);</a>
+<a href="../04b_floodlab.cs.html#2738"><b>2738</b>return Engine.volume_test_objects(vol_leaving_silo, Engine.players()) == true || (short)Engine.ai_spawn_count(<i>silo_flood_halls</i>.Squad) &gt; 7;</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html><head><title>player0</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">61 references to player0</div><div class="rA">Halo2MCC (61)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.cs (61)</div>
+<a href="../04b_floodlab.cs.html#317"><b>317</b>Engine.object_hide(await this.<i>player0</i>(), true);</a>
+<a href="../04b_floodlab.cs.html#325"><b>325</b>Engine.object_hide(await this.<i>player0</i>(), false);</a>
+<a href="../04b_floodlab.cs.html#337"><b>337</b>if (Engine.unit_get_shield(await this.<i>player0</i>()) &gt;= 1F &amp;&amp; (bool)Engine.player_action_test_vision_trigger())</a>
+<a href="../04b_floodlab.cs.html#349"><b>349</b>Engine.unit_set_maximum_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
+<a href="../04b_floodlab.cs.html#350"><b>350</b>Engine.unit_set_current_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
+<a href="../04b_floodlab.cs.html#351"><b>351</b>Engine.object_set_shield(await this.<i>player0</i>(), 0F);</a>
+<a href="../04b_floodlab.cs.html#354"><b>354</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(await this.<i>player0</i>()) &lt; 1F || (bool)Engine.player_action_test_vision_trigger(), 1);</a>
+<a href="../04b_floodlab.cs.html#357"><b>357</b>Engine.unit_set_maximum_vitality(await this.<i>player0</i>(), 30F, 70F);</a>
+<a href="../04b_floodlab.cs.html#358"><b>358</b>Engine.object_set_shield(await this.<i>player0</i>(), 0F);</a>
+<a href="../04b_floodlab.cs.html#1802"><b>1802</b>if (Engine.volume_test_object(vol_croom_kill_new, await this.<i>player0</i>()) == true || Engine.volume_test_object(vol_croom_kill_new_too, await this.<i>player0</i>()) == true)</a>
+<a href="../04b_floodlab.cs.html#1804"><b>1804</b>Engine.unit_kill(Engine.unit(await this.<i>player0</i>()));</a>
+<a href="../04b_floodlab.cs.html#1837"><b>1837</b>Engine.object_teleport(await this.<i>player0</i>(), research_player0);</a>
+<a href="../04b_floodlab.cs.html#2822"><b>2822</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4094235112U)) || Engine.unit_has_weapon(Engine.unit(await this.player1()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4094235112U)));</a>
+<a href="../04b_floodlab.cs.html#3193"><b>3193</b>Engine.ai_magically_see_object(lab_heretics_above.Squad, await this.<i>player0</i>());</a>
+<a href="../04b_floodlab.cs.html#3535"><b>3535</b>if (Engine.volume_test_object(vol_hl_killer, await this.<i>player0</i>()) == true)</a>
+<a href="../04b_floodlab.cs.html#3537"><b>3537</b>Engine.unit_kill(Engine.unit(await this.<i>player0</i>()));</a>
+<a href="../04b_floodlab.cs.html#3660"><b>3660</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3786211383U)) || Engine.unit_has_weapon(Engine.unit(await this.player1()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3786211383U)))</a>
+<a href="../04b_floodlab.cs.html#3669"><b>3669</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3786211383U)) || Engine.unit_has_weapon(Engine.unit(await this.player1()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3786211383U)) || Engine.volume_test_objects(vol_control_middle, Engine.players()) == true, 30, 900);</a>
+<a href="../04b_floodlab.cs.html#3848"><b>3848</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide);</a>
+<a href="../04b_floodlab.cs.html#3864"><b>3864</b>Engine.object_teleport(await this.<i>player0</i>(), player0_control);</a>
+<a href="../04b_floodlab.cs.html#4678"><b>4678</b>Engine.object_cannot_take_damage(await this.<i>player0</i>());</a>
+<a href="../04b_floodlab.cs.html#4705"><b>4705</b>Engine.object_can_take_damage(await this.<i>player0</i>());</a>
+<a href="../04b_floodlab.cs.html#6279"><b>6279</b>await Engine.sleep_until(async () =&gt; Engine.vehicle_test_seat(Engine.ai_vehicle_get_from_starting_location(ledge_banshees_02.right), &quot;banshee_d&quot;, Engine.unit(await this.<i>player0</i>())) == false);</a>
+<a href="../04b_floodlab.cs.html#6280"><b>6280</b>Engine.unit_kill(Engine.unit(await this.<i>player0</i>()));</a>
+<a href="../04b_floodlab.cs.html#6329"><b>6329</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle.weapon&quot;, 3794927804U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6335"><b>6335</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine.weapon&quot;, 3828155063U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6341"><b>6341</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\rifle\\beam_rifle\\beam_rifle.weapon&quot;, 3838247761U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6347"><b>6347</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\pistol\\needler\\needler.weapon&quot;, 3847357404U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6353"><b>6353</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol.weapon&quot;, 3815440885U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6359"><b>6359</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\support_high\\flak_cannon\\flak_cannon.weapon&quot;, 3856663658U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6365"><b>6365</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam.weapon&quot;, 3862693062U)) &amp;&amp; this.banshee_sin_01_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6448"><b>6448</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide);</a>
+<a href="../04b_floodlab.cs.html#6468"><b>6468</b>Engine.object_teleport(await this.<i>player0</i>(), banshee_player0);</a>
+<a href="../04b_floodlab.cs.html#6473"><b>6473</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(ledge_banshees_02.right), &quot;banshee_d&quot;, await this.<i>player0</i>());</a>
+<a href="../04b_floodlab.cs.html#6485"><b>6485</b>Engine.object_teleport(await this.<i>player0</i>(), banshee_player0);</a>
+<a href="../04b_floodlab.cs.html#6489"><b>6489</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(ledge_banshees_02.right), &quot;banshee_d&quot;, await this.<i>player0</i>());</a>
+<a href="../04b_floodlab.cs.html#6586"><b>6586</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\rifle\\plasma_rifle\\plasma_rifle.weapon&quot;, 3794927804U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6592"><b>6592</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\rifle\\covenant_carbine\\covenant_carbine.weapon&quot;, 3828155063U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6598"><b>6598</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\rifle\\beam_rifle\\beam_rifle.weapon&quot;, 3838247761U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6604"><b>6604</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\pistol\\needler\\needler.weapon&quot;, 3847357404U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6610"><b>6610</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\pistol\\plasma_pistol\\plasma_pistol.weapon&quot;, 3815440885U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6616"><b>6616</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\support_high\\flak_cannon\\flak_cannon.weapon&quot;, 3856663658U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#6622"><b>6622</b>if (Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\characters\\sentinel_aggressor\\weapons\\beam\\sentinel_aggressor_beam.weapon&quot;, 3862693062U)) &amp;&amp; this.banshee_sin_02_ready == false)</a>
+<a href="../04b_floodlab.cs.html#7101"><b>7101</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide);</a>
+<a href="../04b_floodlab.cs.html#7112"><b>7112</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide);</a>
+<a href="../04b_floodlab.cs.html#7127"><b>7127</b>Engine.object_teleport(await this.<i>player0</i>(), bottling_return_player0);</a>
+<a href="../04b_floodlab.cs.html#8811"><b>8811</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide2);</a>
+<a href="../04b_floodlab.cs.html#8824"><b>8824</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hangar);</a>
+<a href="../04b_floodlab.cs.html#8861"><b>8861</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide2);</a>
+<a href="../04b_floodlab.cs.html#9911"><b>9911</b>Engine.object_teleport(await this.<i>player0</i>(), silo_player0);</a>
+<a href="../04b_floodlab.cs.html#9945"><b>9945</b>Engine.object_teleport(await this.<i>player0</i>(), lab_player0);</a>
+<a href="../04b_floodlab.cs.html#9978"><b>9978</b>Engine.object_teleport(await this.<i>player0</i>(), wraparound_player0);</a>
+<a href="../04b_floodlab.cs.html#10009"><b>10009</b>Engine.object_teleport(await this.<i>player0</i>(), control_entry_player0);</a>
+<a href="../04b_floodlab.cs.html#10042"><b>10042</b>Engine.object_teleport(await this.<i>player0</i>(), cableroom_player0);</a>
+<a href="../04b_floodlab.cs.html#10073"><b>10073</b>Engine.object_teleport(await this.<i>player0</i>(), after_plummet_player0);</a>
+<a href="../04b_floodlab.cs.html#10105"><b>10105</b>Engine.object_teleport(await this.<i>player0</i>(), powercore_player0);</a>
+<a href="../04b_floodlab.cs.html#10133"><b>10133</b>Engine.object_teleport(await this.<i>player0</i>(), banshee_player0);</a>
+<a href="../04b_floodlab.cs.html#10168"><b>10168</b>Engine.object_teleport(await this.<i>player0</i>(), bottling_return_player0);</a>
+<a href="../04b_floodlab.cs.html#10196"><b>10196</b>Engine.object_teleport(await this.<i>player0</i>(), underhangar_return_player0);</a>
+<a href="../04b_floodlab.cs.html#10222"><b>10222</b>Engine.object_teleport(await this.<i>player0</i>(), boss_player0);</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html><head><title>H2mccMap</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 instantiation of H2mccMap</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
+<a href="../Factories/MccMapFactory.cs.html#42"><b>42</b>var scene = new <i>H2mccMap</i>(reader);</a>
+</div>
+</div>
+<div class="rH">14 references to H2mccMap</div><div class="rA">OpenH2.Core (14)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MccMapFactory.cs (12)</div>
+<a href="../Factories/MccMapFactory.cs.html#18"><b>18</b>public <i>H2mccMap</i> FromStream(Stream stream)</a>
+<a href="../Factories/MccMapFactory.cs.html#40"><b>40</b>private <i>H2mccMap</i> InternalFromFile(H2MapReader reader, bool lazyLoadTags = false)</a>
+<a href="../Factories/MccMapFactory.cs.html#42"><b>42</b><i>var</i> scene = new H2mccMap(reader);</a>
+<a href="../Factories/MccMapFactory.cs.html#54"><b>54</b>private void LoadMetadata(<i>H2mccMap</i> scene, H2MapReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#67"><b>67</b>private Dictionary&lt;int, string&gt; GetAllStrings(<i>H2mccMap</i> scene, H2MapReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#84"><b>84</b>private Dictionary&lt;uint, string&gt; GetTagNames(<i>H2mccMap</i> scene, H2MapReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#106"><b>106</b>private void LoadAllTags(<i>H2mccMap</i> scene, H2MapReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#111"><b>111</b>private Dictionary&lt;uint, BaseTag&gt; GetTags(<i>H2mccMap</i> scene, H2MapReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#127"><b>127</b>public static BaseTag GetTag(<i>H2mccMap</i> scene, TagIndexEntry entry, H2MapReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#134"><b>134</b>private H2mccMapHeader GetSceneHeader(<i>H2mccMap</i> scene, TrackingReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#143"><b>143</b>public IndexHeader GetIndexHeader(<i>H2mccMap</i> scene, TrackingReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#154"><b>154</b>public Dictionary&lt;uint, TagIndexEntry&gt; GetTagIndex(<i>H2mccMap</i> scene, TrackingReader reader, out int firstEntryOffset)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (2)</div>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#12"><b>12</b>public static void PatchMap(<i>H2mccMap</i> scene, Stream map, string patchFilePath)</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#72"><b>72</b>public static bool ShouldPatchFrom(<i>H2mccMap</i> scene, string line, out SyntaxNodePatch patch)</a>
+</div>
+</div>
+</body></html>

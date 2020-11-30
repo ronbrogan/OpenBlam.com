@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html><head><title>IndexHeader</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">2 writes to IndexHeader</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#107"><b>107</b>scene.<i>IndexHeader</i> = GetIndexHeader(scene, reader.MapReader);</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
+<a href="../Factories/MccMapFactory.cs.html#57"><b>57</b>scene.<i>IndexHeader</i> = GetIndexHeader(scene, reader.MapReader);</a>
+</div>
+</div>
+<div class="rH">10 references to IndexHeader</div><div class="rA">OpenH2.Core (10)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (2)</div>
+<a href="../Factories/MapFactory.cs.html#108"><b>108</b>scene.PrimaryMagic = CalculatePrimaryMagic(scene.<i>IndexHeader</i>);</a>
+<a href="../Factories/MapFactory.cs.html#207"><b>207</b>var index = scene.<i>IndexHeader</i>;</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (3)</div>
+<a href="../Factories/MccMapFactory.cs.html#49"><b>49</b>scene.Scenario = (ScenarioTag)GetTag(scene, scene.TagIndex[scene.<i>IndexHeader</i>.Scenario.Id], reader);</a>
+<a href="../Factories/MccMapFactory.cs.html#58"><b>58</b>scene.PrimaryMagic = CalculatePrimaryMagic(scene.<i>IndexHeader</i>);</a>
+<a href="../Factories/MccMapFactory.cs.html#157"><b>157</b>var index = scene.<i>IndexHeader</i>;</a>
+</div>
+<div class="rF"><div class="rN">Maps\H2vMap.cs (2)</div>
+<a href="../Maps/H2vMap.cs.html#42"><b>42</b>if (this.Tags.TryGetValue(this.<i>IndexHeader</i>.Scenario.Id, out var scnr))</a>
+<a href="../Maps/H2vMap.cs.html#53"><b>53</b>if (this.TryGetTag(this.<i>IndexHeader</i>.Globals, out var globals))</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccMap.cs (2)</div>
+<a href="../Maps/MCC/H2mccMap.cs.html#30"><b>30</b>if (this.Tags.TryGetValue(this.<i>IndexHeader</i>.Scenario.Id, out var scnr))</a>
+<a href="../Maps/MCC/H2mccMap.cs.html#41"><b>41</b>if (this.TryGetTag(this.<i>IndexHeader</i>.Globals, out var globals))</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#14"><b>14</b>var scenarioStart = scene.TagIndex[scene.<i>IndexHeader</i>.Scenario].Offset.Value;</a>
+</div>
+</div>
+</body></html>

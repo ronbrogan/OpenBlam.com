@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html><head><title>e6_jail_shield2</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to e6_jail_shield2</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08b_deltacontrol.Data.cs (1)</div>
+<a href="../08b_deltacontrol.Data.cs.html#595"><b>595</b><i>e6_jail_shield2</i> = new ScenarioEntity&lt;IScenery&gt;(3, scenarioTag.WellKnownItems[3]);</a>
+</div>
+</div>
+<div class="rH">17 references to e6_jail_shield2</div><div class="rA">Halo2Vista (17)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08b_deltacontrol.cs (17)</div>
+<a href="../08b_deltacontrol.cs.html#5948"><b>5948</b>return (short)Engine.ai_living_count(e6_pro) &lt;= 0 &amp;&amp; Engine.object_get_health(e6_jail_shield1.Entity) &lt; 0F &amp;&amp; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F &amp;&amp; Engine.object_get_health(e6_jail_shield4.Entity) &lt; 0F;</a>
+<a href="../08b_deltacontrol.cs.html#5994"><b>5994</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F)</a>
+<a href="../08b_deltacontrol.cs.html#5997"><b>5997</b>await Engine.sleep_until(async () =&gt; !((bool)Engine.cs_moving()) || Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 15);</a>
+<a href="../08b_deltacontrol.cs.html#5998"><b>5998</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F)</a>
+<a href="../08b_deltacontrol.cs.html#6003"><b>6003</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 15, 150);</a>
+<a href="../08b_deltacontrol.cs.html#6081"><b>6081</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door2)))</a>
+<a href="../08b_deltacontrol.cs.html#6162"><b>6162</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(e6_pro) &gt;= this.ai_combat_status_active || Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 15);</a>
+<a href="../08b_deltacontrol.cs.html#6170"><b>6170</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F)</a>
+<a href="../08b_deltacontrol.cs.html#6174"><b>6174</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 10, (int)Engine.random_range(90, 150));</a>
+<a href="../08b_deltacontrol.cs.html#6179"><b>6179</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F)</a>
+<a href="../08b_deltacontrol.cs.html#6183"><b>6183</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 10, (int)Engine.random_range(90, 150));</a>
+<a href="../08b_deltacontrol.cs.html#6188"><b>6188</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F)</a>
+<a href="../08b_deltacontrol.cs.html#6192"><b>6192</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 10, (int)Engine.random_range(90, 150));</a>
+<a href="../08b_deltacontrol.cs.html#6197"><b>6197</b>if (Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &gt;= 0F)</a>
+<a href="../08b_deltacontrol.cs.html#6201"><b>6201</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 10, (int)Engine.random_range(90, 150));</a>
+<a href="../08b_deltacontrol.cs.html#6204"><b>6204</b>return Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F || (short)Engine.ai_living_count(e6_pro) &lt;= 0;</a>
+<a href="../08b_deltacontrol.cs.html#6206"><b>6206</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield2</i>.Entity) &lt; 0F, 15);</a>
+</div>
+</div>
+</body></html>

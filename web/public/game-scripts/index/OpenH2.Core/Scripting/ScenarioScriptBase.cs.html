@@ -1,0 +1,42 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Architecture</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">GameObjects</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Scenario</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>
+&lbrace;
+    <b>public abstract class</b> <a id="1bd62336659f46c0" href="../R/1bd62336659f46c0.html" target="n" data-glyph="0,0" class="t t"><span id="9e226952b34f68ee">ScenarioScriptBase</span></a>
+    &lbrace;
+        <b>public</b> <a href="../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <a id="c14f3a895756ce9a" href="../R/c14f3a895756ce9a.html" target="n" data-glyph="102,1" class="i property">Scenario</a> &lbrace; <b>get</b>; <b>protected set</b>; &rbrace;
+        <b>protected</b> <a href="IScriptEngine.cs.html#31075aae0960da14" class="t t">IScriptEngine</a> <a id="8da654decb25bda5" href="../R/8da654decb25bda5.html" target="n" data-glyph="45,1" class="i field">Engine</a>;
+        <b>public</b> <a href="Types.cs.html#da15fcc7b0410350" class="t t">ITeam</a> <a id="cf674a99d381aeca" href="../R/cf674a99d381aeca.html" target="n" data-glyph="42,1" class="i field">player</a>;
+        <b>public</b> <a href="Types.cs.html#da15fcc7b0410350" class="t t">ITeam</a> <a id="fac896546b65d9e5" href="../R/fac896546b65d9e5.html" target="n" data-glyph="42,1" class="i field">human</a>;
+        <b>public</b> <a href="Types.cs.html#da15fcc7b0410350" class="t t">ITeam</a> <a id="70ddaa53ab3ae867" href="../R/70ddaa53ab3ae867.html" target="n" data-glyph="42,1" class="i field">prophet</a>;
+        <b>public</b> <a href="Types.cs.html#da15fcc7b0410350" class="t t">ITeam</a> <a id="c2370afb853ac671" href="../R/c2370afb853ac671.html" target="n" data-glyph="42,1" class="i field">covenant</a>;
+        <b>public</b> <a href="Types.cs.html#da15fcc7b0410350" class="t t">ITeam</a> <a id="118442848f51dc2c" href="../R/118442848f51dc2c.html" target="n" data-glyph="42,1" class="i field">sentinel</a>;
+        <b>public</b> <a href="Types.cs.html#da15fcc7b0410350" class="t t">ITeam</a> <a id="5572b085116f5a6b" href="../R/5572b085116f5a6b.html" target="n" data-glyph="42,1" class="i field">heretic</a>;
+        <b>public short</b> <a id="fa7a240af7991f6a" href="../R/fa7a240af7991f6a.html" target="n" data-glyph="42,1" class="i field">cinematic_letterbox_style</a>;
+        <b>public</b> <a href="../GameObjects/IAiActorDefinition.cs.html#ac7a0c7f7043aed5" class="t t">IAiActorDefinition</a> <a id="6d0eac98b17af7fc" href="../R/6d0eac98b17af7fc.html" target="n" data-glyph="42,1" class="i field">ai_current_actor</a>;
+        <b>public</b> <a href="../GameObjects/IAiActorDefinition.cs.html#ac7a0c7f7043aed5" class="t t">IAiActorDefinition</a> <a id="57c9e4c1cfd141de" href="../R/57c9e4c1cfd141de.html" target="n" data-glyph="42,1" class="i field">ai_current_squad</a>;
+        <b>public</b> <a href="Types.cs.html#39c8309d05a661ea" class="t t">IAIBehavior</a> <a id="89b57dae8267ed63" href="../R/89b57dae8267ed63.html" target="n" data-glyph="42,1" class="i field">guard</a>;
+        <b>public short</b> <a id="97dab7b453799e2f" href="../R/97dab7b453799e2f.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_active</a>;
+        <b>public short</b> <a id="4016fafd55ddff13" href="../R/4016fafd55ddff13.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_alert</a>;
+        <b>public short</b> <a id="12bb27d7e2aa581c" href="../R/12bb27d7e2aa581c.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_idle</a>;
+        <b>public short</b> <a id="161faec0c54a5c54" href="../R/161faec0c54a5c54.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_definite</a>;
+        <b>public short</b> <a id="b2818fd6237668a0" href="../R/b2818fd6237668a0.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_certain</a>;
+        <b>public short</b> <a id="90692ba760f0797f" href="../R/90692ba760f0797f.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_visible</a>;
+        <b>public short</b> <a id="d527397b1321ed66" href="../R/d527397b1321ed66.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_clear_los</a>;
+        <b>public short</b> <a id="a6875899fde0c38d" href="../R/a6875899fde0c38d.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_uninspected</a>;
+        <b>public short</b> <a id="d78dfd978a982b4a" href="../R/d78dfd978a982b4a.html" target="n" data-glyph="42,1" class="i field">ai_combat_status_dangerous</a>;
+        <b>public short</b> <a id="91c49393b263f692" href="../R/91c49393b263f692.html" target="n" data-glyph="42,1" class="i field">ai_movement_combat</a>;
+        <b>public short</b> <a id="64ee66b3f03478d5" href="../R/64ee66b3f03478d5.html" target="n" data-glyph="42,1" class="i field">ai_movement_patrol</a>;
+        <b>public short</b> <a id="6102ce611d75473e" href="../R/6102ce611d75473e.html" target="n" data-glyph="42,1" class="i field">ai_movement_flee</a>;
+        <b>public</b> <a href="Types.cs.html#16b0feb2c67130fd" class="t t">IDamageState</a> <a id="cbadfd5bba75628e" href="../R/cbadfd5bba75628e.html" target="n" data-glyph="42,1" class="i field">destroyed</a>;
+        <b>public</b> <a href="Types.cs.html#94f3e4460cc906c9" class="t t">INavigationPoint</a> <a id="23522eb165237418" href="../R/23522eb165237418.html" target="n" data-glyph="42,1" class="i field">_default</a>;
+        <b>public</b> <a href="Types.cs.html#94f3e4460cc906c9" class="t t">INavigationPoint</a> <a id="55c284b259e5111a" href="../R/55c284b259e5111a.html" target="n" data-glyph="42,1" class="i field">default_red</a>;
+ 
+        <b>public abstract void</b> <a id="3f1263de6e6986b0" href="../R/3f1263de6e6986b0.html" target="n" data-glyph="72,1" class="i method">InitializeData</a>(<a href="../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r0 rd" class="r0 r">scenario</span>, <a href="../Architecture/Scene.cs.html#52c4221f58d292a5" class="t t">Scene</a> <span id="r1 rd" class="r1 r">scene</span>);
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

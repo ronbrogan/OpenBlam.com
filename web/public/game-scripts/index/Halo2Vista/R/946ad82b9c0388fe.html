@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html><head><title>piston_ins</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to piston_ins</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">06a_sentinelwalls.Data.cs (1)</div>
+<a href="../06a_sentinelwalls.Data.cs.html#1345"><b>1345</b><i>piston_ins</i> = new ScenarioEntity&lt;IDevice&gt;(414, scenarioTag.WellKnownItems[414]);</a>
+</div>
+</div>
+<div class="rH">13 references to piston_ins</div><div class="rA">Halo2Vista (13)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">06a_sentinelwalls.cs (13)</div>
+<a href="../06a_sentinelwalls.cs.html#2602"><b>2602</b>Engine.objects_attach(<i>piston_ins</i>.Entity, &quot;absorber_a&quot;, absorber_ins.Entity, &quot;absorber_a&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#2633"><b>2633</b>Engine.objects_attach(<i>piston_ins</i>.Entity, &quot;absorber_a&quot;, ins_switch_a.Entity, &quot;switch&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#2634"><b>2634</b>Engine.objects_attach(<i>piston_ins</i>.Entity, &quot;absorber_b&quot;, ins_switch_b.Entity, &quot;switch&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#2635"><b>2635</b>Engine.objects_attach(<i>piston_ins</i>.Entity, &quot;absorber_c&quot;, ins_switch_c.Entity, &quot;switch&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#2636"><b>2636</b>Engine.objects_attach(<i>piston_ins</i>.Entity, &quot;absorber_d&quot;, ins_switch_d.Entity, &quot;switch&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#2698"><b>2698</b>Engine.device_set_position(<i>piston_ins</i>.Entity, 1F);</a>
+<a href="../06a_sentinelwalls.cs.html#2702"><b>2702</b>Engine.device_set_position(<i>piston_ins</i>.Entity, 0F);</a>
+<a href="../06a_sentinelwalls.cs.html#2981"><b>2981</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>piston_ins</i>.Entity) &gt;= 0.5F, 10);</a>
+<a href="../06a_sentinelwalls.cs.html#3011"><b>3011</b>if (Engine.device_get_position(<i>piston_ins</i>.Entity) == 0F)</a>
+<a href="../06a_sentinelwalls.cs.html#3045"><b>3045</b>if (Engine.device_get_position(<i>piston_ins</i>.Entity) == 1F)</a>
+<a href="../06a_sentinelwalls.cs.html#3157"><b>3157</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_ins_bk, Engine.players()) &amp;&amp; Engine.objects_can_see_object(Engine.players(), <i>piston_ins</i>.Entity, 180F));</a>
+<a href="../06a_sentinelwalls.cs.html#4371"><b>4371</b>Engine.object_destroy(<i>piston_ins</i>.Entity);</a>
+<a href="../06a_sentinelwalls.cs.html#6303"><b>6303</b>if (Engine.device_get_position(<i>piston_ins</i>.Entity) == 0F)</a>
+</div>
+</div>
+</body></html>

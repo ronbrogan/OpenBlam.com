@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html><head><title>e16_cov_wraiths0_0</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to e16_cov_wraiths0_0</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03b_newmombasa.Data.cs (1)</div>
+<a href="../03b_newmombasa.Data.cs.html#678"><b>678</b><i>e16_cov_wraiths0_0</i> = new Squad_e16_cov_wraiths0_0(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">16 references to e16_cov_wraiths0_0</div><div class="rA">Halo2MCC (16)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03b_newmombasa.cs (16)</div>
+<a href="../03b_newmombasa.cs.html#4920"><b>4920</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e16_toll_plaza, Engine.players()) || (short)Engine.ai_living_count(<i>e16_cov_wraiths0_0</i>.Squad) &lt;= 0);</a>
+<a href="../03b_newmombasa.cs.html#5006"><b>5006</b>if ((short)Engine.ai_living_count(<i>e16_cov_wraiths0_0</i>.wraith1) &gt; 0)</a>
+<a href="../03b_newmombasa.cs.html#5049"><b>5049</b>if ((short)Engine.ai_living_count(<i>e16_cov_wraiths0_0</i>.wraith0) &gt; 0)</a>
+<a href="../03b_newmombasa.cs.html#5147"><b>5147</b>Engine.ai_place(<i>e16_cov_wraiths0_0</i>.wraith1);</a>
+<a href="../03b_newmombasa.cs.html#5148"><b>5148</b>Engine.ai_braindead(<i>e16_cov_wraiths0_0</i>.wraith1, true);</a>
+<a href="../03b_newmombasa.cs.html#5150"><b>5150</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get(e15_cov_phantom0_1.phantom0), &quot;phantom_lc&quot;, Engine.ai_vehicle_get(<i>e16_cov_wraiths0_0</i>.wraith1));</a>
+<a href="../03b_newmombasa.cs.html#5151"><b>5151</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>e16_cov_wraiths0_0</i>.wraith1) &lt;= 0 || !(Engine.unit_in_vehicle(Engine.ai_vehicle_get(<i>e16_cov_wraiths0_0</i>.wraith1))));</a>
+<a href="../03b_newmombasa.cs.html#5153"><b>5153</b>Engine.ai_braindead(<i>e16_cov_wraiths0_0</i>.wraith1, false);</a>
+<a href="../03b_newmombasa.cs.html#5160"><b>5160</b>Engine.ai_place(<i>e16_cov_wraiths0_0</i>.wraith0);</a>
+<a href="../03b_newmombasa.cs.html#5161"><b>5161</b>Engine.ai_braindead(<i>e16_cov_wraiths0_0</i>.wraith0, true);</a>
+<a href="../03b_newmombasa.cs.html#5163"><b>5163</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get(e15_cov_phantom0_0.phantom0), &quot;phantom_lc&quot;, Engine.ai_vehicle_get(<i>e16_cov_wraiths0_0</i>.wraith0));</a>
+<a href="../03b_newmombasa.cs.html#5164"><b>5164</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>e16_cov_wraiths0_0</i>.wraith0) &lt;= 0 || !(Engine.unit_in_vehicle(Engine.ai_vehicle_get(<i>e16_cov_wraiths0_0</i>.wraith0))));</a>
+<a href="../03b_newmombasa.cs.html#5166"><b>5166</b>Engine.ai_braindead(<i>e16_cov_wraiths0_0</i>.wraith0, false);</a>
+<a href="../03b_newmombasa.cs.html#5188"><b>5188</b>await Engine.sleep_until(async () =&gt; this.g_e16_started || Engine.object_get_health(Engine.ai_vehicle_get(e15_cov_phantom0_1.phantom0)) &lt;= 0.05F || Engine.object_model_targets_destroyed(Engine.ai_vehicle_get(e15_cov_phantom0_1.phantom0), &quot;target_front&quot;) &gt;= 2 || (short)Engine.ai_living_count(<i>e16_cov_wraiths0_0</i>.wraith1) &lt;= 0, 30, this.one_minute);</a>
+</div>
+</div>
+</body></html>

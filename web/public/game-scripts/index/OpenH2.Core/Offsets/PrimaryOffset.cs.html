@@ -1,0 +1,22 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Offsets</span>
+&lbrace;
+    <b>public class</b> <a id="a9a667c4dc1e8804" href="../R/a9a667c4dc1e8804.html" target="n" data-glyph="0,0" class="t t">PrimaryOffset</a> : <a href="IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a>
+    &lbrace;
+        <b>private</b> <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <a id="5a89a990f4305b42" href="../R/5a89a990f4305b42.html" target="n" data-glyph="46,1" class="i field">scene</a>;
+        <b>private int</b> <a id="1e4a1123ba4d5e27" href="../R/1e4a1123ba4d5e27.html" target="n" data-glyph="46,1" class="i field">offset</a>;
+ 
+        <b>public</b> <a id="30b6fe56642f7d10" href="../R/30b6fe56642f7d10.html" target="n" data-glyph="72,1" class="t constructor">PrimaryOffset</a>(<a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">offsetValue</span>)
+        &lbrace;
+            <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#5a89a990f4305b42" class="i field">scene</a> = <span class="r0 r">scene</span>;
+            <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a> = <span class="r1 r">offsetValue</span>;
+        &rbrace;
+ 
+        <b>public int</b> <a id="65c5848b66175eaf" href="../R/65c5848b66175eaf.html" target="n" data-glyph="102,1" class="i property">Value</a> =&gt; <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#5a89a990f4305b42" class="i field">scene</a>.<a href="../Maps/H2BaseMap.cs.html#8e53f6b1e4f3922d" class="i property">PrimaryMagic</a> + <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a>;
+ 
+        <b>public int</b> <a id="38695b68900a36de" href="../R/38695b68900a36de.html" target="n" data-glyph="102,1" class="i property">OriginalValue</a> =&gt; <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a>;
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

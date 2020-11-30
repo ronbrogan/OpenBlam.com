@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html><head><title>e18_mars_warthog0</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to e18_mars_warthog0</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03b_newmombasa.Data.cs (1)</div>
+<a href="../03b_newmombasa.Data.cs.html#704"><b>704</b><i>e18_mars_warthog0</i> = new Squad_e18_mars_warthog0(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">13 references to e18_mars_warthog0</div><div class="rA">Halo2Vista (13)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03b_newmombasa.cs (13)</div>
+<a href="../03b_newmombasa.cs.html#4254"><b>4254</b>Engine.ai_migrate(<i>e18_mars_warthog0</i>.Squad, e19_mars_warthog0.Squad);</a>
+<a href="../03b_newmombasa.cs.html#4312"><b>4312</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.ai_actors(<i>e18_mars_warthog0</i>.warthog0), await this.player0()) &gt; 7F || Engine.unit_in_vehicle(Engine.unit(await this.player0())), 15, 600);</a>
+<a href="../03b_newmombasa.cs.html#4327"><b>4327</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.ai_actors(<i>e18_mars_warthog0</i>.warthog0), await this.player1()) &gt; 7F || Engine.unit_in_vehicle(Engine.unit(await this.player1())), 15, 600);</a>
+<a href="../03b_newmombasa.cs.html#4341"><b>4341</b>Engine.cs_aim_object(true, Engine.ai_vehicle_get(<i>e18_mars_warthog0</i>.warthog0));</a>
+<a href="../03b_newmombasa.cs.html#4454"><b>4454</b>Engine.ai_place(<i>e18_mars_warthog0</i>.Squad);</a>
+<a href="../03b_newmombasa.cs.html#4457"><b>4457</b>if (Engine.objects_distance_to_object(Engine.ai_actors(<i>e18_mars_warthog0</i>.warthog0), await this.player0()) &lt; 6F &amp;&amp; !(Engine.unit_in_vehicle(Engine.unit(await this.player0()))))</a>
+<a href="../03b_newmombasa.cs.html#4459"><b>4459</b>Engine.cs_stack_command_script(<i>e18_mars_warthog0</i>.warthog0, cs_e18_mars_warthog0_approach0);</a>
+<a href="../03b_newmombasa.cs.html#4460"><b>4460</b>await Engine.sleep_until(async () =&gt; !(Engine.unit_in_vehicle(Engine.ai_get_unit(<i>e18_mars_warthog0</i>.warthog0))), 30, 900);</a>
+<a href="../03b_newmombasa.cs.html#4462"><b>4462</b>else if ((bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(<i>e18_mars_warthog0</i>.warthog0), await this.player1()) &lt; 6F &amp;&amp; !(Engine.unit_in_vehicle(Engine.unit(await this.player1()))))</a>
+<a href="../03b_newmombasa.cs.html#4464"><b>4464</b>Engine.cs_stack_command_script(<i>e18_mars_warthog0</i>.warthog0, cs_e18_mars_warthog0_approach1);</a>
+<a href="../03b_newmombasa.cs.html#4465"><b>4465</b>await Engine.sleep_until(async () =&gt; !(Engine.unit_in_vehicle(Engine.ai_get_unit(<i>e18_mars_warthog0</i>.warthog0))), 30, 900);</a>
+<a href="../03b_newmombasa.cs.html#4468"><b>4468</b>return !(Engine.unit_in_vehicle(Engine.ai_get_unit(<i>e18_mars_warthog0</i>.warthog0)));</a>
+<a href="../03b_newmombasa.cs.html#4471"><b>4471</b>Engine.cs_run_command_script(<i>e18_mars_warthog0</i>.warthog0, cs_e18_mars_warthog0_abort);</a>
+</div>
+</div>
+</body></html>

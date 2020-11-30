@@ -1,0 +1,39 @@
+.logo {
+    clear: both;
+
+  img {
+    border-radius: 50%;
+    display: inline;
+    border: 2px solid #3681c3;
+    vertical-align: top;
+    margin-right: 5px;
+    float: left;
+  }
+
+  .text {
+
+    .maintext {
+        margin-bottom: 0;
+        padding-left: 60px;
+
+      span {
+        display: inline-block;
+        font-size: 2em;
+        vertical-align: top;
+        line-height: 0.7em;
+      }
+
+      .blam {
+        color: #ae9a87;
+      }
+    }
+
+    .subtext {
+        margin-top: 0.5em;
+        font-size: 0.8em;
+        padding-left: 60px;
+    }
+
+    
+  }
+}

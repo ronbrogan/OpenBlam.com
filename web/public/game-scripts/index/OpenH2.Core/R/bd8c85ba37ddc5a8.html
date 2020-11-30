@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html><head><title>TrackingChunk</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 instantiation of TrackingChunk</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Parsing\TrackingReader.cs (1)</div>
+<a href="../Parsing/TrackingReader.cs.html#39"><b>39</b>return new <i>TrackingChunk</i>(this, offset, length, (o, l, s) =&gt; this.LogUsage(o, l, s ?? defaultLabel));</a>
+</div>
+</div>
+<div class="rH">8 references to TrackingChunk</div><div class="rA">OpenH2.Core (8)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#208"><b>208</b><i>var</i> listBytes = reader.Chunk(index.TagIndexOffset.Value, index.TagIndexCount * TagIndexEntry.Size, &quot;TagIndex&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
+<a href="../Factories/MccMapFactory.cs.html#158"><b>158</b><i>var</i> listBytes = reader.Chunk(index.TagIndexOffset.Value, index.TagIndexCount * TagIndexEntry.Size, &quot;TagIndex&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
+<a href="../Maps/H2vMap.cs.html#165"><b>165</b><i>var</i> chunk = reader.Chunk(offset.Value, length);</a>
+</div>
+<div class="rF"><div class="rN">Parsing\H2MapReader.cs (1)</div>
+<a href="../Parsing/H2MapReader.cs.html#71"><b>71</b>public <i>TrackingChunk</i> Chunk(NormalOffset offset, int size, string label = null)</a>
+</div>
+<div class="rF"><div class="rN">Parsing\TrackingReader.cs (1)</div>
+<a href="../Parsing/TrackingReader.cs.html#35"><b>35</b>public <i>TrackingChunk</i> Chunk(int offset, int length, string defaultLabel = null)</a>
+</div>
+<div class="rF"><div class="rN">Tags\BspTag.cs (2)</div>
+<a href="../Tags/BspTag.cs.html#145"><b>145</b><i>var</i> headerData = sceneReader.Chunk(new NormalOffset((int)part.DataBlockRawOffset), (int)part.DataPreambleSize, &quot;ModelMeshHeader&quot;);</a>
+<a href="../Tags/BspTag.cs.html#177"><b>177</b><i>var</i> headerData = sceneReader.Chunk(new NormalOffset((int)def.DataBlockRawOffset), (int)def.DataPreambleSize, &quot;InstancedGeometryMeshHeader&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
+<a href="../Tags/RenderModelTag.cs.html#50"><b>50</b><i>var</i> headerData = sceneReader.Chunk(new NormalOffset((int)part.DataBlockRawOffset), 120, &quot;ModelMeshHeader&quot;);</a>
+</div>
+</div>
+</body></html>

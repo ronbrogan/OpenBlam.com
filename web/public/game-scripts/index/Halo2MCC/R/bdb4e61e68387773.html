@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html><head><title>regret1</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to regret1</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.Data.cs (1)</div>
+<a href="../05b_deltatowers.Data.cs.html#1017"><b>1017</b><i>regret1</i> = new Squad_regret1(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">79 references to regret1</div><div class="rA">Halo2MCC (79)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (79)</div>
+<a href="../05b_deltatowers.cs.html#4889"><b>4889</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &lt; 15F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0), 30F) == true);</a>
+<a href="../05b_deltatowers.cs.html#5037"><b>5037</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(<i>regret1</i>.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../05b_deltatowers.cs.html#5076"><b>5076</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:point&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5077"><b>5077</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1300&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5088"><b>5088</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:cheer&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5089"><b>5089</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1310&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5100"><b>5100</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:cheer&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5101"><b>5101</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1320&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5112"><b>5112</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:point&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5113"><b>5113</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1330&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5124"><b>5124</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:taunt&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5125"><b>5125</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1340&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5136"><b>5136</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:taunt&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5137"><b>5137</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1350&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5148"><b>5148</b>Engine.custom_animation(Engine.unit(Engine.ai_get_object(<i>regret1</i>.Squad)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\prophet\\prophet&quot;, 3895461562U), &quot;combat:any:any:cheer&quot;, true);</a>
+<a href="../05b_deltatowers.cs.html#5149"><b>5149</b>await Engine.sleep(Engine.ai_play_line(<i>regret1</i>.Squad, &quot;1360&quot;));</a>
+<a href="../05b_deltatowers.cs.html#5251"><b>5251</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == true || this.regret_dead == true || (short)Engine.ai_living_count(temple_honor_grunts) &lt; 2);</a>
+<a href="../05b_deltatowers.cs.html#5293"><b>5293</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == true || this.regret_dead == true || (short)Engine.ai_living_count(temple_hg) &lt; 1);</a>
+<a href="../05b_deltatowers.cs.html#5294"><b>5294</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == true || this.regret_dead == true, 30, (int)(this.hg_delay / this.regret_times_dead + 1F));</a>
+<a href="../05b_deltatowers.cs.html#5304"><b>5304</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == true);</a>
+<a href="../05b_deltatowers.cs.html#5312"><b>5312</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#5313"><b>5313</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5314"><b>5314</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5315"><b>5315</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5335"><b>5335</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_temple_02, Engine.players()) == true &amp;&amp; Engine.objects_can_see_object(Engine.ai_actors(<i>regret1</i>.Squad), await this.player0(), 45F) == true || Engine.objects_can_see_object(Engine.ai_actors(<i>regret1</i>.Squad), await this.player1(), 45F) == true);</a>
+<a href="../05b_deltatowers.cs.html#5353"><b>5353</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &lt; 5F);</a>
+<a href="../05b_deltatowers.cs.html#5354"><b>5354</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../05b_deltatowers.cs.html#5357"><b>5357</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == true, 30, 150);</a>
+<a href="../05b_deltatowers.cs.html#5358"><b>5358</b>if ((bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == false)</a>
+<a href="../05b_deltatowers.cs.html#5369"><b>5369</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#5370"><b>5370</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5373"><b>5373</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
+<a href="../05b_deltatowers.cs.html#5378"><b>5378</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
+<a href="../05b_deltatowers.cs.html#5381"><b>5381</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5382"><b>5382</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5399"><b>5399</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#5400"><b>5400</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5403"><b>5403</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
+<a href="../05b_deltatowers.cs.html#5408"><b>5408</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
+<a href="../05b_deltatowers.cs.html#5411"><b>5411</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5412"><b>5412</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5419"><b>5419</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &lt; 5F)</a>
+<a href="../05b_deltatowers.cs.html#5430"><b>5430</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#5431"><b>5431</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5434"><b>5434</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
+<a href="../05b_deltatowers.cs.html#5439"><b>5439</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
+<a href="../05b_deltatowers.cs.html#5442"><b>5442</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5443"><b>5443</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5466"><b>5466</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &lt; 5F);</a>
+<a href="../05b_deltatowers.cs.html#5467"><b>5467</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../05b_deltatowers.cs.html#5470"><b>5470</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == true, 30, 150);</a>
+<a href="../05b_deltatowers.cs.html#5471"><b>5471</b>if ((bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == false)</a>
+<a href="../05b_deltatowers.cs.html#5482"><b>5482</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#5483"><b>5483</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5484"><b>5484</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, reserve_throne);</a>
+<a href="../05b_deltatowers.cs.html#5487"><b>5487</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
+<a href="../05b_deltatowers.cs.html#5492"><b>5492</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
+<a href="../05b_deltatowers.cs.html#5495"><b>5495</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5496"><b>5496</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5517"><b>5517</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, false);</a>
+<a href="../05b_deltatowers.cs.html#5519"><b>5519</b>Engine.ai_kill(<i>regret1</i>.Squad);</a>
+<a href="../05b_deltatowers.cs.html#5527"><b>5527</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &lt; 5F)</a>
+<a href="../05b_deltatowers.cs.html#5538"><b>5538</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#5539"><b>5539</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5540"><b>5540</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, reserve_throne);</a>
+<a href="../05b_deltatowers.cs.html#5543"><b>5543</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
+<a href="../05b_deltatowers.cs.html#5548"><b>5548</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
+<a href="../05b_deltatowers.cs.html#5551"><b>5551</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5552"><b>5552</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5569"><b>5569</b>Engine.ai_place(<i>regret1</i>._1);</a>
+<a href="../05b_deltatowers.cs.html#5571"><b>5571</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5572"><b>5572</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+<a href="../05b_deltatowers.cs.html#5598"><b>5598</b>Engine.ai_place(<i>regret1</i>._1);</a>
+<a href="../05b_deltatowers.cs.html#5599"><b>5599</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
+<a href="../05b_deltatowers.cs.html#5600"><b>5600</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, regret_pause);</a>
+<a href="../05b_deltatowers.cs.html#5601"><b>5601</b>this.regret_corpse = this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
+<a href="../05b_deltatowers.cs.html#5602"><b>5602</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
+</div>
+</div>
+</body></html>

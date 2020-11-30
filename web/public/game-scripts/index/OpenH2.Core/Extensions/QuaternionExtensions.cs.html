@@ -1,0 +1,79 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/><a id="59" href="#59" target="_top">59</a><br/><a id="60" href="#60" target="_top">60</a><br/><a id="61" href="#61" target="_top">61</a><br/><a id="62" href="#62" target="_top">62</a><br/><a id="63" href="#63" target="_top">63</a><br/><a id="64" href="#64" target="_top">64</a><br/><a id="65" href="#65" target="_top">65</a><br/><a id="66" href="#66" target="_top">66</a><br/><a id="67" href="#67" target="_top">67</a><br/><a id="68" href="#68" target="_top">68</a><br/><a id="69" href="#69" target="_top">69</a><br/><a id="70" href="#70" target="_top">70</a><br/><a id="71" href="#71" target="_top">71</a><br/><a id="72" href="#72" target="_top">72</a><br/><a id="73" href="#73" target="_top">73</a><br/><a id="74" href="#74" target="_top">74</a><br/><a id="75" href="#75" target="_top">75</a><br/><a id="76" href="#76" target="_top">76</a><br/><a id="77" href="#77" target="_top">77</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Collections</span>.<span class="i n">Generic</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Numerics</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Text</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Extensions</span>
+&lbrace;
+    <b>public static class</b> <a id="55d86f55659c5adf" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">QuaternionExtensions</a>
+    &lbrace;
+        <b>public static</b> <span class="t t">Quaternion</span> <a id="43515af6bca5aa96" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">From3x3Mat</a>(<b>float</b>[] <span id="r0 rd" class="r0 r">vals</span>)
+        &lbrace;
+            <b>var</b> <span id="r1 rd" class="r1 r">mat4</span> = <b>new</b> <span class="t constructor">Matrix4x4</span>(
+                <span class="r0 r">vals</span>[0],
+                <span class="r0 r">vals</span>[1],
+                <span class="r0 r">vals</span>[2],
+                0f,
+                <span class="r0 r">vals</span>[3],
+                <span class="r0 r">vals</span>[4],
+                <span class="r0 r">vals</span>[5],
+                0f,
+                <span class="r0 r">vals</span>[6],
+                <span class="r0 r">vals</span>[7],
+                <span class="r0 r">vals</span>[8],
+                0f,
+                0f,
+                0f,
+                0f,
+                1f);
+ 
+            <b>if</b> (<span class="t t">Matrix4x4</span>.<span class="i method">Decompose</span>(<span class="r1 r">mat4</span>, <b>out</b> <b>var</b> <b>_</b>, <b>out</b> <b>var</b> <span id="r2 rd" class="r2 r">q</span>, <b>out</b> <b>var</b> <b>_</b>) == <b>false</b>)
+            &lbrace;
+                <b>return</b> <span class="t t">Quaternion</span>.<span class="i property">Identity</span>;
+            &rbrace;
+ 
+            <b>return</b> <span class="r2 r">q</span>;
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">Quaternion</span> <a id="4c5155aec79df634" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">FromH2vOrientation</a>(<span class="t t">Vector3</span> <span id="r3 rd" class="r3 r">orient</span>)
+        &lbrace;
+            <span class="c">/*
+             * This method is mathematically equivalent to these operations
+             * var q1 = Quaternion.CreateFromAxisAngle(new Vector3(0, 0, 1), orient.X);
+             * var q2 = Quaternion.CreateFromAxisAngle(new Vector3(0, -1, 0), orient.Y);
+             * var q3 = Quaternion.CreateFromAxisAngle(new Vector3(1, 0, 0), orient.Z);
+             * 
+             * return Quaternion.Normalize(q3 * q2 * q1);
+             */</span>
+ 
+            <b>float</b> <span id="r4 rd" class="r4 r">halfAngleX</span> = <span class="r3 r">orient</span>.<span class="i field">X</span> * 0.5f;
+            <b>float</b> <span id="r5 rd" class="r5 r">halfAngleY</span> = <span class="r3 r">orient</span>.<span class="i field">Y</span> * 0.5f;
+            <b>float</b> <span id="r6 rd" class="r6 r">halfAngleZ</span> = <span class="r3 r">orient</span>.<span class="i field">Z</span> * 0.5f;
+ 
+            <b>float</b> <span id="r7 rd" class="r7 r">xs</span> = (<b>float</b>)<span class="t t">Math</span>.<span class="i method">Sin</span>(<span class="r4 r">halfAngleX</span>);
+            <b>float</b> <span id="r8 rd" class="r8 r">ys</span> = (<b>float</b>)<span class="t t">Math</span>.<span class="i method">Sin</span>(<span class="r5 r">halfAngleY</span>);
+            <b>float</b> <span id="r9 rd" class="r9 r">zs</span> = (<b>float</b>)<span class="t t">Math</span>.<span class="i method">Sin</span>(<span class="r6 r">halfAngleZ</span>);
+ 
+            <b>float</b> <span id="r10 rd" class="r10 r">xc</span> = (<b>float</b>)<span class="t t">Math</span>.<span class="i method">Cos</span>(<span class="r4 r">halfAngleX</span>);
+            <b>float</b> <span id="r11 rd" class="r11 r">yc</span> = (<b>float</b>)<span class="t t">Math</span>.<span class="i method">Cos</span>(<span class="r5 r">halfAngleY</span>);
+            <b>float</b> <span id="r12 rd" class="r12 r">zc</span> = (<b>float</b>)<span class="t t">Math</span>.<span class="i method">Cos</span>(<span class="r6 r">halfAngleZ</span>);
+ 
+            <b>float</b> <span id="r13 rd" class="r13 r">q1x</span> = <span class="r9 r">zs</span> * <span class="r11 r">yc</span>;
+            <b>float</b> <span id="r14 rd" class="r14 r">q1y</span> = -<span class="r8 r">ys</span> * <span class="r12 r">zc</span>;
+            <b>float</b> <span id="r15 rd" class="r15 r">q1z</span> = <span class="r9 r">zs</span> * -<span class="r8 r">ys</span>;
+            <b>float</b> <span id="r16 rd" class="r16 r">q1w</span> = <span class="r12 r">zc</span> * <span class="r11 r">yc</span>;
+ 
+            <span class="t t">Quaternion</span> <span id="r17 rd" class="r17 r">t2</span> = <b>new</b> <span class="t constructor">Quaternion</span>(
+                <span class="r13 r">q1x</span> * <span class="r10 r">xc</span> + <span class="r14 r">q1y</span> * <span class="r7 r">xs</span>,
+                <span class="r14 r">q1y</span> * <span class="r10 r">xc</span> - <span class="r13 r">q1x</span> * <span class="r7 r">xs</span>,
+                <span class="r15 r">q1z</span> * <span class="r10 r">xc</span> + <span class="r7 r">xs</span> * <span class="r16 r">q1w</span>,
+                <span class="r16 r">q1w</span> * <span class="r10 r">xc</span> - <span class="r15 r">q1z</span> * <span class="r7 r">xs</span>
+            );
+ 
+            <b>return</b> <span class="t t">Quaternion</span>.<span class="i method">Normalize</span>(<span class="r17 r">t2</span>);
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

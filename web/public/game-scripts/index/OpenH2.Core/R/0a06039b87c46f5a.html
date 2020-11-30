@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html><head><title>DataFile</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">19 references to DataFile</div><div class="rA">OpenH2.Core (19)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2vMap.cs (6)</div>
+<a href="../Maps/H2vMap.cs.html#150"><b>150</b>public SecondaryOffset GetSecondaryOffset(<i>DataFile</i> source, int rawOffset)</a>
+<a href="../Maps/H2vMap.cs.html#153"><b>153</b><i>DataFile</i>.Local =&gt; new SecondaryOffset(this, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#154"><b>154</b><i>DataFile</i>.MainMenu =&gt; new SecondaryOffset(this.mainMenu, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#155"><b>155</b><i>DataFile</i>.Shared =&gt; new SecondaryOffset(this.mpShared, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#156"><b>156</b><i>DataFile</i>.SinglePlayerShared =&gt; new SecondaryOffset(this.spShared, rawOffset),</a>
+<a href="../Maps/H2vMap.cs.html#161"><b>161</b>public Memory&lt;byte&gt; ReadData(<i>DataFile</i> source, IOffset offset, int length)</a>
+</div>
+<div class="rF"><div class="rN">Offsets\NormalOffset.cs (2)</div>
+<a href="../Offsets/NormalOffset.cs.html#18"><b>18</b>public <i>DataFile</i> Location =&gt; (<i>DataFile</i>)((this.offset &amp; 0xC0000000) &gt;&gt; 28);</a>
+</div>
+<div class="rF"><div class="rN">Parsing\H2MapReader.cs (10)</div>
+<a href="../Parsing/H2MapReader.cs.html#29"><b>29</b>public TrackingReader GetReader(<i>DataFile</i> source)</a>
+<a href="../Parsing/H2MapReader.cs.html#33"><b>33</b>case <i>DataFile</i>.Local:</a>
+<a href="../Parsing/H2MapReader.cs.html#35"><b>35</b>case <i>DataFile</i>.MainMenu:</a>
+<a href="../Parsing/H2MapReader.cs.html#37"><b>37</b>case <i>DataFile</i>.Shared:</a>
+<a href="../Parsing/H2MapReader.cs.html#39"><b>39</b>case <i>DataFile</i>.SinglePlayerShared:</a>
+<a href="../Parsing/H2MapReader.cs.html#51"><b>51</b>public <i>DataFile</i> GetPrimaryDataFile()</a>
+<a href="../Parsing/H2MapReader.cs.html#55"><b>55</b>return <i>DataFile</i>.SinglePlayerShared;</a>
+<a href="../Parsing/H2MapReader.cs.html#60"><b>60</b>return <i>DataFile</i>.Shared;</a>
+<a href="../Parsing/H2MapReader.cs.html#65"><b>65</b>return <i>DataFile</i>.MainMenu;</a>
+<a href="../Parsing/H2MapReader.cs.html#68"><b>68</b>return <i>DataFile</i>.Local;</a>
+</div>
+<div class="rF"><div class="rN">Tags\BaseTag.cs (1)</div>
+<a href="../Tags/BaseTag.cs.html#21"><b>21</b>public <i>DataFile</i> DataFile { get; set; }</a>
+</div>
+</div>
+</body></html>

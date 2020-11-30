@@ -1,0 +1,39 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>;
+<b>using</b> <span class="i n">System</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Types</span>
+&lbrace;
+    <span class="c">// TODO: delete?</span>
+    <b>public class</b> <a id="03d1c0074a60978f" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t"><span id="26b40e72801f3e2f">ModeMesh</span></a>
+    &lbrace;
+        <b>public uint</b> <a id="12376580fe589d46" href="../R/12376580fe589d46.html" target="n" data-glyph="102,1" class="i property">ShaderCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public uint</b> <a id="bc3fb74786e2c393" href="../R/bc3fb74786e2c393.html" target="n" data-glyph="102,1" class="i property">UnknownCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public uint</b> <a id="7589a09acbf74c2f" href="../R/7589a09acbf74c2f.html" target="n" data-glyph="102,1" class="i property">IndiciesCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public uint</b> <a id="11900deaed353129" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">BoneCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+ 
+        <b>public</b> <span class="t t">Memory</span>&lt;<b>byte</b>&gt;[] <a id="af63fcec16533eb0" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">ShaderData</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        
+        <b>public</b> <span class="t t">Memory</span>&lt;<b>byte</b>&gt;[] <a id="a1a95b1853b67518" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">UnknownData</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        
+        <b>public int</b>[] <a id="18a62073c2c37c5b" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Indicies</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        
+        <b>public</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[] <a id="93b5bccedf9bec3f" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Verticies</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+ 
+        <b>public int</b> <a id="5d5c4dfaf752dc65" href="../R/5d5c4dfaf752dc65.html" target="n" data-glyph="102,1" class="i property">ShaderChunkSize</a> =&gt; 72;
+        <b>public int</b> <a id="332e8bec83478608" href="../R/332e8bec83478608.html" target="n" data-glyph="102,1" class="i property">ShaderDataOffset</a> =&gt; 120;
+ 
+        <b>public int</b> <a id="77cc883e754927f8" href="../R/77cc883e754927f8.html" target="n" data-glyph="102,1" class="i property">UnknownChunkSize</a> =&gt; 8;
+        <b>public int</b> <a id="462431a7a40a8ab1" href="../R/462431a7a40a8ab1.html" target="n" data-glyph="102,1" class="i property">UnknownDataOffset</a> =&gt; <a href="#332e8bec83478608" class="i property">ShaderDataOffset</a> + 4 + (<b>int</b>)(<a href="#12376580fe589d46" class="i property">ShaderCount</a> * <a href="#5d5c4dfaf752dc65" class="i property">ShaderChunkSize</a>);
+ 
+        <b>public int</b> <a id="701d07ccf0e4586d" href="../R/701d07ccf0e4586d.html" target="n" data-glyph="102,1" class="i property">IndiciesChunkSize</a> =&gt; 4 + (<b>int</b>)(<a href="#7589a09acbf74c2f" class="i property">IndiciesCount</a> * 2);
+        <b>public int</b> <a id="648d4486b2ef402a" href="../R/648d4486b2ef402a.html" target="n" data-glyph="102,1" class="i property">IndiciesDataOffset</a> =&gt; <a href="#462431a7a40a8ab1" class="i property">UnknownDataOffset</a> + 4 + (<b>int</b>)(<a href="#bc3fb74786e2c393" class="i property">UnknownCount</a> * <a href="#77cc883e754927f8" class="i property">UnknownChunkSize</a>);
+ 
+        <b>public int</b> <a id="8eb8bd5ab75285e9" href="../R/8eb8bd5ab75285e9.html" target="n" data-glyph="102,1" class="i property">VertexHeaderSize</a> =&gt; 100;
+        <b>public int</b> <a id="be386137a38c2c2a" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">VertexDataOffset</a> =&gt; <a href="#648d4486b2ef402a" class="i property">IndiciesDataOffset</a> + <a href="#701d07ccf0e4586d" class="i property">IndiciesChunkSize</a> + <a href="#8eb8bd5ab75285e9" class="i property">VertexHeaderSize</a>;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AppHeader from './app-header/app-header';
+import AppHeader from './AppHeader/AppHeader';
 import { BrowserRouter as Router } from 'react-router-dom';
 import './awsm.scss';
 

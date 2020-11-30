@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html><head><title>NodeType</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">2 writes to NodeType</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#28"><b>28</b><i>NodeType</i> = NodeType.MethodDecl,</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#91"><b>91</b><i>NodeType</i> = (NodeType)ParseFrom(line, &quot;nt:&quot;),</a>
+</div>
+</div>
+<div class="rH">18 references to NodeType</div><div class="rA">OpenH2.Core (18)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (2)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#452"><b>452</b>return node.<i>NodeType</i> switch</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#458"><b>458</b>_ =&gt; throw new NotSupportedException($&quot;Node type {node.<i>NodeType</i>} is not yet supported&quot;)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\UnknownContext.cs (1)</div>
+<a href="../Scripting/GenerationState/UnknownContext.cs.html#26"><b>26</b>unknownDescription += $&quot; -{node.<i>NodeType</i>}&lt;{node.DataType}&gt;&quot;;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (6)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#46"><b>46</b>if (node.<i>NodeType</i> == NodeType.Expression)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#80"><b>80</b>else if (node.<i>NodeType</i> == NodeType.VariableAccess)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#84"><b>84</b>else if (node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#91"><b>91</b>current.Type = node.<i>NodeType</i>;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#102"><b>102</b>if (node.<i>NodeType</i> == NodeType.Scope || node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (3)</div>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#51"><b>51</b>else if (orig.<i>NodeType</i> == NodeType.Scope)</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.<i>NodeType</i>},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.<i>NodeType</i>},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (6)</div>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#46"><b>46</b>if ((patch.NodeData.<i>NodeType</i> == NodeType.Scope || patch.NodeData.<i>NodeType</i> == NodeType.ScriptInvocation))</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#62"><b>62</b>map.WriteUInt16At(patchStart + 6, (ushort)patch.NodeData.<i>NodeType</i>);</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#100"><b>100</b>if (patch.NodeData.<i>NodeType</i> == NodeType.MethodDecl)</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#109"><b>109</b>|| node.<i>NodeType</i> != patch.NodeData.<i>NodeType</i></a>
+</div>
+</div>
+</body></html>

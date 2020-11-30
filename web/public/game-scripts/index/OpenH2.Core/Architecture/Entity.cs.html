@@ -1,0 +1,64 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/><a id="59" href="#59" target="_top">59</a><br/><a id="60" href="#60" target="_top">60</a><br/><a id="61" href="#61" target="_top">61</a><br/><a id="62" href="#62" target="_top">62</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Collections</span>.<span class="i n">Generic</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Linq</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Architecture</span>
+&lbrace;
+    <b>public abstract class</b> <a id="1d5748ce36ff5565" href="../R/1d5748ce36ff5565.html" target="n" data-glyph="0,0" class="t t">Entity</a>
+    &lbrace;
+        <b>public</b> <span class="t t">Guid</span> <a id="99b9b2a27c552dd6" href="../R/99b9b2a27c552dd6.html" target="n" data-glyph="102,1" class="i property">Id</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public string</b>? <a id="3e6c78f052d2232b" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">FriendlyName</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>protected</b> <a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>[] <a id="b5031231ff780c39" href="../R/b5031231ff780c39.html" target="n" data-glyph="45,1" class="i field">Components</a>;
+ 
+        <b>public</b> <a id="e1201d4eb21b6c97" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">Entity</a>()
+        &lbrace;
+            <a href="#1d5748ce36ff5565" class="k">this</a>.<a href="#99b9b2a27c552dd6" class="i property">Id</a> = <span class="t t">Guid</span>.<span class="i method">NewGuid</span>();
+        &rbrace;
+ 
+        <b>public void</b> <a id="b77a2a94234cf058" href="../R/b77a2a94234cf058.html" target="n" data-glyph="72,1" class="i method">SetComponents</a>(<a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>[] <span id="r0 rd" class="r0 r">components</span>)
+        &lbrace;
+            <a href="#1d5748ce36ff5565" class="k">this</a>.<a href="#b5031231ff780c39" class="i field">Components</a> = <span class="r0 r">components</span>;
+        &rbrace;
+ 
+        <b>public void</b> <a id="16f57aabd4c8bef4" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">SetComponents</a>(<span class="t t">IEnumerable</span>&lt;<a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>&gt; <span id="r1 rd" class="r1 r">components</span>)
+        &lbrace;
+            <a href="#1d5748ce36ff5565" class="k">this</a>.<a href="#b77a2a94234cf058" class="i method">SetComponents</a>(<span class="r1 r">components</span>.<span class="i method">ToArray</span>());
+        &rbrace;
+ 
+        <b>public bool</b> <a id="3cc694cd7a29e6b0" href="../R/3cc694cd7a29e6b0.html" target="n" data-glyph="72,1" class="i method">TryGetChild</a>&lt;<span id="r2 rd t" class="r2 r t">T</span>&gt;(<b>out</b> <span class="r2 r t">T</span> <span id="r3 rd" class="r3 r">component</span>) <b>where</b> <span class="r2 r t">T</span> : <a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>
+        &lbrace;
+            <span class="r3 r">component</span> = <b>null</b>;
+ 
+            <b>foreach</b>(<a href="Component.cs.html#0e132d369a72a803" class="k">var</a> <span id="r4 rd" class="r4 r">c</span> <b>in</b> <a href="#b5031231ff780c39" class="i field">Components</a>)
+            &lbrace;
+                <span class="r2 r t">var</span> <span id="r5 rd" class="r5 r">t</span> = <span class="r4 r">c</span> <b>as</b> <span class="r2 r t">T</span>;
+                <b>if</b> (<span class="r5 r">t</span> != <b>null</b>)
+                &lbrace;
+                    <span class="r3 r">component</span> = <span class="r5 r">t</span>;
+                    <b>return</b> <b>true</b>;
+                &rbrace;
+            &rbrace;
+ 
+            <b>return</b> <b>false</b>;
+        &rbrace;
+ 
+        <b>public</b> <span class="r6 r t">T</span>[] <a id="446b817f8a978641" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetChildren</a>&lt;<span id="r6 rd t" class="r6 r t">T</span>&gt;() <b>where</b> <span class="r6 r t">T</span> : <a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>
+        &lbrace;
+            <b>var</b> <span id="r7 rd" class="r7 r">children</span> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="r6 r t">T</span>&gt;();
+ 
+            <b>foreach</b> (<a href="Component.cs.html#0e132d369a72a803" class="k">var</a> <span id="r8 rd" class="r8 r">c</span> <b>in</b> <a href="#b5031231ff780c39" class="i field">Components</a>)
+            &lbrace;
+                <span class="r6 r t">var</span> <span id="r9 rd" class="r9 r">t</span> = <span class="r8 r">c</span> <b>as</b> <span class="r6 r t">T</span>;
+                <b>if</b> (<span class="r9 r">t</span> != <b>null</b>)
+                &lbrace;
+                    <span class="r7 r">children</span>.<span class="i method">Add</span>(<span class="r9 r">t</span>);
+                &rbrace;
+            &rbrace;
+ 
+            <b>return</b> <span class="r7 r">children</span>.<span class="i method">ToArray</span>();
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

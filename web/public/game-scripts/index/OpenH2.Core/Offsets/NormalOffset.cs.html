@@ -1,0 +1,22 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Enums</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Offsets</span>
+&lbrace;
+    <b>public class</b> <a id="35b3860c9fcb5eaf" href="../R/35b3860c9fcb5eaf.html" target="n" data-glyph="0,0" class="t t">NormalOffset</a> : <a href="IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a>
+    &lbrace;
+        <b>private int</b> <a id="c202eeac8cabc35c" href="../R/c202eeac8cabc35c.html" target="n" data-glyph="46,1" class="i field">offset</a>;
+ 
+        <b>public</b> <a id="bf4270878c5cd768" href="../R/bf4270878c5cd768.html" target="n" data-glyph="72,1" class="t constructor">NormalOffset</a>(<b>int</b> <span id="r0 rd" class="r0 r">offset</span>)
+        &lbrace;
+            <a href="#35b3860c9fcb5eaf" class="k">this</a>.<a href="#c202eeac8cabc35c" class="i field">offset</a> = <span class="r0 r">offset</span>;
+        &rbrace;
+ 
+        <b>public int</b> <a id="c86c272ee9453a96" href="../R/c86c272ee9453a96.html" target="n" data-glyph="102,1" class="i property">Value</a> =&gt; <a href="#35b3860c9fcb5eaf" class="k">this</a>.<a href="#c202eeac8cabc35c" class="i field">offset</a> &amp; 0x3FFFFFFF;
+ 
+        <b>public int</b> <a id="c6383e64cd16ae67" href="../R/c6383e64cd16ae67.html" target="n" data-glyph="102,1" class="i property">OriginalValue</a> =&gt; <a href="#35b3860c9fcb5eaf" class="k">this</a>.<a href="#c202eeac8cabc35c" class="i field">offset</a>;
+ 
+        <b>public</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a> <a id="9521f8bc1465e0e2" href="../R/9521f8bc1465e0e2.html" target="n" data-glyph="102,1" class="i property">Location</a> =&gt; (<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>)((<a href="#35b3860c9fcb5eaf" class="k">this</a>.<a href="#c202eeac8cabc35c" class="i field">offset</a> &amp; 0xC0000000) &gt;&gt; 28);
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

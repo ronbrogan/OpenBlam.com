@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html><head><title>hangar_phantom</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to hangar_phantom</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04a_gasgiant.Data.cs (1)</div>
+<a href="../04a_gasgiant.Data.cs.html#1010"><b>1010</b><i>hangar_phantom</i> = new Squad_hangar_phantom(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">22 references to hangar_phantom</div><div class="rA">Halo2MCC (22)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04a_gasgiant.cs (22)</div>
+<a href="../04a_gasgiant.cs.html#4020"><b>4020</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(reinforce_elites_01.Squad));</a>
+<a href="../04a_gasgiant.cs.html#4021"><b>4021</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(reinforce_grunts_01.Squad));</a>
+<a href="../04a_gasgiant.cs.html#4023"><b>4023</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_a01&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4025"><b>4025</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_a02&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4027"><b>4027</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_a03&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4029"><b>4029</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_b01&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4031"><b>4031</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_b02&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4033"><b>4033</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_b03&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4035"><b>4035</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_c01&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4037"><b>4037</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_c02&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4039"><b>4039</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p_c03&quot;);</a>
+<a href="../04a_gasgiant.cs.html#4040"><b>4040</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &lt; 2, 30, 900);</a>
+<a href="../04a_gasgiant.cs.html#4049"><b>4049</b>Engine.ai_erase(<i>hangar_phantom</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#4079"><b>4079</b>Engine.ai_place(<i>hangar_phantom</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#4080"><b>4080</b>Engine.cs_run_command_script(<i>hangar_phantom</i>.Squad, hangar_phantom_arrives);</a>
+<a href="../04a_gasgiant.cs.html#4082"><b>4082</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &gt; 1);</a>
+<a href="../04a_gasgiant.cs.html#4083"><b>4083</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &lt; 2);</a>
+<a href="../04a_gasgiant.cs.html#4110"><b>4110</b>Engine.ai_place(<i>hangar_phantom</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#4111"><b>4111</b>Engine.cs_run_command_script(<i>hangar_phantom</i>.Squad, hangar_phantom_arrives);</a>
+<a href="../04a_gasgiant.cs.html#4115"><b>4115</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(reinforce_elites_01.Squad));</a>
+<a href="../04a_gasgiant.cs.html#4116"><b>4116</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(reinforce_grunts_01.Squad));</a>
+<a href="../04a_gasgiant.cs.html#4117"><b>4117</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &lt; 2);</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html><head><title>qz_ent_pod_e</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to qz_ent_pod_e</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">06a_sentinelwalls.Data.cs (1)</div>
+<a href="../06a_sentinelwalls.Data.cs.html#1359"><b>1359</b><i>qz_ent_pod_e</i> = new ScenarioEntity&lt;IDevice&gt;(428, scenarioTag.WellKnownItems[428]);</a>
+</div>
+</div>
+<div class="rH">6 references to qz_ent_pod_e</div><div class="rA">Halo2Vista (6)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">06a_sentinelwalls.cs (6)</div>
+<a href="../06a_sentinelwalls.cs.html#5900"><b>5900</b>Engine.object_create(<i>qz_ent_pod_e</i>);</a>
+<a href="../06a_sentinelwalls.cs.html#5901"><b>5901</b>Engine.objects_attach(<i>qz_ent_pod_e</i>.Entity, &quot;pod_attach&quot;, Engine.ai_vehicle_get(qz_ini_ins_pods.e), &quot;pod_attach&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#5903"><b>5903</b>Engine.device_set_position(<i>qz_ent_pod_e</i>.Entity, 1F);</a>
+<a href="../06a_sentinelwalls.cs.html#5904"><b>5904</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>qz_ent_pod_e</i>.Entity) &gt;= 1F, 1);</a>
+<a href="../06a_sentinelwalls.cs.html#5905"><b>5905</b>Engine.objects_detach(<i>qz_ent_pod_e</i>.Entity, Engine.ai_vehicle_get(qz_ini_ins_pods.e));</a>
+<a href="../06a_sentinelwalls.cs.html#5906"><b>5906</b>Engine.object_destroy(<i>qz_ent_pod_e</i>.Entity);</a>
+</div>
+</div>
+</body></html>

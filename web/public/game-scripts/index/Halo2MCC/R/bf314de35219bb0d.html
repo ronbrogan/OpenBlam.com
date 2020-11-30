@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html><head><title>allied_phantom_01</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to allied_phantom_01</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04a_gasgiant.Data.cs (1)</div>
+<a href="../04a_gasgiant.Data.cs.html#1075"><b>1075</b><i>allied_phantom_01</i> = new Squad_allied_phantom_01(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">59 references to allied_phantom_01</div><div class="rA">Halo2MCC (59)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04a_gasgiant.cs (59)</div>
+<a href="../04a_gasgiant.cs.html#5175"><b>5175</b>Engine.ai_place(<i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#5176"><b>5176</b>Engine.object_cannot_take_damage(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver));</a>
+<a href="../04a_gasgiant.cs.html#5177"><b>5177</b>Engine.cs_run_command_script(<i>allied_phantom_01</i>.driver, phantom_to_ledge);</a>
+<a href="../04a_gasgiant.cs.html#6006"><b>6006</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_a01&quot;);</a>
+<a href="../04a_gasgiant.cs.html#6008"><b>6008</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_a02&quot;);</a>
+<a href="../04a_gasgiant.cs.html#6010"><b>6010</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_a03&quot;);</a>
+<a href="../04a_gasgiant.cs.html#6014"><b>6014</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_b01&quot;);</a>
+<a href="../04a_gasgiant.cs.html#6016"><b>6016</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_b02&quot;);</a>
+<a href="../04a_gasgiant.cs.html#6018"><b>6018</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_b03&quot;);</a>
+<a href="../04a_gasgiant.cs.html#6111"><b>6111</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.ai_get_object(this.ai_current_actor)) &lt; 50F || Engine.objects_distance_to_object(Engine.ai_actors(<i>allied_phantom_01</i>.Squad), Engine.ai_get_object(this.ai_current_actor)) &lt; 50F);</a>
+<a href="../04a_gasgiant.cs.html#6131"><b>6131</b>Engine.cs_run_command_script(<i>allied_phantom_01</i>.driver, abort);</a>
+<a href="../04a_gasgiant.cs.html#6132"><b>6132</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_01);</a>
+<a href="../04a_gasgiant.cs.html#6139"><b>6139</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_02);</a>
+<a href="../04a_gasgiant.cs.html#6150"><b>6150</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6160"><b>6160</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6170"><b>6170</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6174"><b>6174</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_02, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || (short)Engine.ai_living_count(dogfighters_01) &lt; 2);</a>
+<a href="../04a_gasgiant.cs.html#6175"><b>6175</b>return Engine.volume_test_objects(vol_dog_obj_02, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || this.dogfighters_spawned &gt; 3;</a>
+<a href="../04a_gasgiant.cs.html#6177"><b>6177</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_03);</a>
+<a href="../04a_gasgiant.cs.html#6188"><b>6188</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6198"><b>6198</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6208"><b>6208</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6212"><b>6212</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_03, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_03, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || (short)Engine.ai_living_count(dogfighters_01) &lt; 2);</a>
+<a href="../04a_gasgiant.cs.html#6213"><b>6213</b>return Engine.volume_test_objects(vol_dog_obj_03, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_03, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || this.dogfighters_spawned &gt; 3;</a>
+<a href="../04a_gasgiant.cs.html#6225"><b>6225</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_04);</a>
+<a href="../04a_gasgiant.cs.html#6236"><b>6236</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6246"><b>6246</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6256"><b>6256</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6260"><b>6260</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_04, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_04, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || (short)Engine.ai_living_count(dogfighters_01) &lt; 2);</a>
+<a href="../04a_gasgiant.cs.html#6261"><b>6261</b>return Engine.volume_test_objects(vol_dog_obj_04, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_04, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || this.dogfighters_spawned &gt; 3;</a>
+<a href="../04a_gasgiant.cs.html#6270"><b>6270</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_06);</a>
+<a href="../04a_gasgiant.cs.html#6281"><b>6281</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6291"><b>6291</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6301"><b>6301</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6305"><b>6305</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_06, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_06, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || (short)Engine.ai_living_count(dogfighters_01) &lt; 2);</a>
+<a href="../04a_gasgiant.cs.html#6306"><b>6306</b>return Engine.volume_test_objects(vol_dog_obj_06, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_06, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || this.dogfighters_spawned &gt; 3;</a>
+<a href="../04a_gasgiant.cs.html#6318"><b>6318</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_07);</a>
+<a href="../04a_gasgiant.cs.html#6329"><b>6329</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6339"><b>6339</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6349"><b>6349</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6353"><b>6353</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_07, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_07, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || (short)Engine.ai_living_count(dogfighters_01) &lt; 2);</a>
+<a href="../04a_gasgiant.cs.html#6354"><b>6354</b>return Engine.volume_test_objects(vol_dog_obj_07, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_07, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true || this.dogfighters_spawned &gt; 3;</a>
+<a href="../04a_gasgiant.cs.html#6552"><b>6552</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6560"><b>6560</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6568"><b>6568</b>Engine.ai_magically_see(dogfight_enemies.Squad, <i>allied_phantom_01</i>.Squad);</a>
+<a href="../04a_gasgiant.cs.html#6583"><b>6583</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_02, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_02, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6599"><b>6599</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_03, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_03, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6616"><b>6616</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_04, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_04, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6629"><b>6629</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_05, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_05, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6645"><b>6645</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_06, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_06, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6678"><b>6678</b>Engine.ai_set_orders(<i>allied_phantom_01</i>.Squad, dog_ph_obj_park);</a>
+<a href="../04a_gasgiant.cs.html#6682"><b>6682</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_a&quot;, Engine.ai_actors(allies_elites_03.Squad));</a>
+<a href="../04a_gasgiant.cs.html#6683"><b>6683</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>allied_phantom_01</i>.driver), &quot;phantom_p_b&quot;, Engine.ai_actors(allies_grunts_03.Squad));</a>
+<a href="../04a_gasgiant.cs.html#6684"><b>6684</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_arm02_air, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6685"><b>6685</b>Engine.cs_run_command_script(<i>allied_phantom_01</i>.driver, arm02_final_approach);</a>
+<a href="../04a_gasgiant.cs.html#6691"><b>6691</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_dog_obj_07, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_07, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true);</a>
+<a href="../04a_gasgiant.cs.html#6748"><b>6748</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>allied_phantom_01</i>.Squad) &lt; 1 || Engine.volume_test_objects(vol_dog_obj_07, Engine.players()) == true || Engine.volume_test_objects(vol_dog_obj_07, Engine.ai_actors(<i>allied_phantom_01</i>.Squad)) == true, 30, 24000);</a>
+<a href="../04a_gasgiant.cs.html#6809"><b>6809</b>Engine.activate_team_nav_point_object(_default, player, Engine.list_get(Engine.ai_actors(<i>allied_phantom_01</i>.Squad), 0), 3F);</a>
+</div>
+</div>
+</body></html>

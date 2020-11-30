@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html><head><title>arm_door_charger_1</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to arm_door_charger_1</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">01b_spacestation.Data.cs (1)</div>
+<a href="../01b_spacestation.Data.cs.html#1321"><b>1321</b><i>arm_door_charger_1</i> = new ScenarioEntity&lt;IDevice&gt;(445, scenarioTag.WellKnownItems[445]);</a>
+</div>
+</div>
+<div class="rH">3 references to arm_door_charger_1</div><div class="rA">Halo2Vista (3)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">01b_spacestation.cs (3)</div>
+<a href="../01b_spacestation.cs.html#5315"><b>5315</b>Engine.device_operates_automatically_set(<i>arm_door_charger_1</i>.Entity, true);</a>
+<a href="../01b_spacestation.cs.html#5317"><b>5317</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>arm_door_charger_1</i>.Entity) &gt;= 0.1F || Engine.device_get_position(arm_door_charger_2.Entity) &gt;= 0.1F, 1, 150);</a>
+<a href="../01b_spacestation.cs.html#5327"><b>5327</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>arm_door_charger_1</i>.Entity) &gt;= 0.3F || Engine.device_get_position(arm_door_charger_2.Entity) &gt;= 0.3F, 1, (int)((float)Engine.sound_impulse_language_time(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_3450_gun&quot;, 4081127713U)) + (float)Engine.sound_impulse_language_time(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_3430_gun&quot;, 4081193250U))));</a>
+</div>
+</div>
+</body></html>

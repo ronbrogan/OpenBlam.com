@@ -1,0 +1,11 @@
+﻿<!DOCTYPE html>
+<html><head><title>central_platform_enemies</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">5 references to central_platform_enemies</div><div class="rA">Halo2MCC (5)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (5)</div>
+<a href="../05b_deltatowers.cs.html#1912"><b>1912</b>if (Engine.volume_test_objects(vol_gondola_01, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>central_platform_enemies</i>) == true &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, gondola_01_enemies) == true)</a>
+<a href="../05b_deltatowers.cs.html#2195"><b>2195</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>central_platform_enemies</i>) &lt; 2, 30, 4000);</a>
+<a href="../05b_deltatowers.cs.html#2196"><b>2196</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>central_platform_enemies</i>) == true);</a>
+<a href="../05b_deltatowers.cs.html#2229"><b>2229</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_gondola_01, Engine.players()) == true || (short)Engine.ai_living_count(gondola_01_enemies) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(<i>central_platform_enemies</i>) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(bridge_enemies) &lt;= 0, 30, 4000);</a>
+<a href="../05b_deltatowers.cs.html#2600"><b>2600</b>Engine.ai_disposable(<i>central_platform_enemies</i>, true);</a>
+</div>
+</div>
+</body></html>

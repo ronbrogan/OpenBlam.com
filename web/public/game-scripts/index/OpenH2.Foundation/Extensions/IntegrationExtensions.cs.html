@@ -1,0 +1,59 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>.<span class="i n">Numerics</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>.<span class="i n">Extensions</span>
+&lbrace;
+    <b>public static class</b> <a id="10d59977bbf520a6" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">IntegrationExtensions</a>
+    &lbrace;
+        <b>public static</b> <span class="t t">Matrix4x4</span> <a id="e40d256294a1909e" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">SetSkewSymmetric</a>(<b>this</b> <span class="t t">Matrix4x4</span> <span id="r0 rd" class="r0 r">matrix</span>, <span class="t t">Vector3</span> <span id="r1 rd" class="r1 r">vector</span>)
+        &lbrace;
+            <span class="r0 r">matrix</span>.<span class="i field">M11</span> = <span class="r0 r">matrix</span>.<span class="i field">M22</span> = <span class="r0 r">matrix</span>.<span class="i field">M33</span> = 0;
+            <span class="r0 r">matrix</span>.<span class="i field">M21</span> = -<span class="r1 r">vector</span>.<span class="i field">Z</span>;
+            <span class="r0 r">matrix</span>.<span class="i field">M31</span> = <span class="r1 r">vector</span>.<span class="i field">Y</span>;
+            <span class="r0 r">matrix</span>.<span class="i field">M12</span> = <span class="r1 r">vector</span>.<span class="i field">Z</span>;
+            <span class="r0 r">matrix</span>.<span class="i field">M32</span> = -<span class="r1 r">vector</span>.<span class="i field">X</span>;
+            <span class="r0 r">matrix</span>.<span class="i field">M13</span> = -<span class="r1 r">vector</span>.<span class="i field">Y</span>;
+            <span class="r0 r">matrix</span>.<span class="i field">M23</span> = <span class="r1 r">vector</span>.<span class="i field">X</span>;
+ 
+            <b>return</b> <span class="r0 r">matrix</span>;
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">Quaternion</span> <a id="bec6717504d4e2ab" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ApplyScaledVector</a>(<b>this</b> <span class="t t">Quaternion</span> <span id="r2 rd" class="r2 r">quat</span>, <span class="t t">Vector3</span> <span id="r3 rd" class="r3 r">vector</span>, <b>float</b> <span id="r4 rd" class="r4 r">scale</span>)
+        &lbrace;
+            <b>var</b> <span id="r5 rd" class="r5 r">q</span> = <b>new</b> <span class="t constructor">Quaternion</span>(
+                <span class="r3 r">vector</span>.<span class="i field">X</span> * <span class="r4 r">scale</span>,
+                <span class="r3 r">vector</span>.<span class="i field">Y</span> * <span class="r4 r">scale</span>,
+                <span class="r3 r">vector</span>.<span class="i field">Z</span> * <span class="r4 r">scale</span>,
+                0);
+            <span class="r5 r">q</span> *= <span class="r2 r">quat</span>;
+            <span class="r2 r">quat</span>.<span class="i field">W</span> += <span class="r5 r">q</span>.<span class="i field">W</span> * 0.5f;
+            <span class="r2 r">quat</span>.<span class="i field">X</span> += <span class="r5 r">q</span>.<span class="i field">X</span> * 0.5f;
+            <span class="r2 r">quat</span>.<span class="i field">Y</span> += <span class="r5 r">q</span>.<span class="i field">Y</span> * 0.5f;
+            <span class="r2 r">quat</span>.<span class="i field">Z</span> += <span class="r5 r">q</span>.<span class="i field">Z</span> * 0.5f;
+ 
+            <b>return</b> <span class="r2 r">quat</span>;
+        &rbrace;
+ 
+        <b>public static float</b> <a id="96514a34a7ef9b50" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ScalarProduct</a>(<b>this</b> <span class="t t">Vector3</span> <span id="r6 rd" class="r6 r">vector</span>, <span class="t t">Vector3</span> <span id="r7 rd" class="r7 r">other</span>)
+        &lbrace;
+            <b>return</b> <span class="r6 r">vector</span>.<span class="i field">X</span> * <span class="r7 r">other</span>.<span class="i field">X</span> + <span class="r6 r">vector</span>.<span class="i field">Y</span> * <span class="r7 r">other</span>.<span class="i field">Y</span> + <span class="r6 r">vector</span>.<span class="i field">Z</span> * <span class="r7 r">other</span>.<span class="i field">Z</span>;
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">Matrix4x4</span> <a id="5da830e2c42035a2" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">SetComponents</a>(<b>this</b> <span class="t t">Matrix4x4</span> <span id="r8 rd" class="r8 r">matrix</span>, <span class="t t">Vector3</span> <span id="r9 rd" class="r9 r">compOne</span>, <span class="t t">Vector3</span> <span id="r10 rd" class="r10 r">compTwo</span>, <span class="t t">Vector3</span> <span id="r11 rd" class="r11 r">compThree</span>)
+        &lbrace;
+            <span class="r8 r">matrix</span>.<span class="i field">M11</span> = <span class="r9 r">compOne</span>.<span class="i field">X</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M12</span> = <span class="r9 r">compOne</span>.<span class="i field">Y</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M13</span> = <span class="r9 r">compOne</span>.<span class="i field">Z</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M21</span> = <span class="r10 r">compTwo</span>.<span class="i field">X</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M22</span> = <span class="r10 r">compTwo</span>.<span class="i field">Y</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M23</span> = <span class="r10 r">compTwo</span>.<span class="i field">Z</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M31</span> = <span class="r11 r">compThree</span>.<span class="i field">X</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M32</span> = <span class="r11 r">compThree</span>.<span class="i field">Y</span>;
+            <span class="r8 r">matrix</span>.<span class="i field">M33</span> = <span class="r11 r">compThree</span>.<span class="i field">Z</span>;
+ 
+            <b>return</b> <span class="r8 r">matrix</span>;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

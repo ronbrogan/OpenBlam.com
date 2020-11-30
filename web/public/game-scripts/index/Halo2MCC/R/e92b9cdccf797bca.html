@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html><head><title>tower1_hg_01a</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to tower1_hg_01a</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
+<a href="../05a_deltaapproach.Data.cs.html#1042"><b>1042</b><i>tower1_hg_01a</i> = new Squad_tower1_hg_01a(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">8 references to tower1_hg_01a</div><div class="rA">Halo2MCC (8)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.cs (8)</div>
+<a href="../05a_deltaapproach.cs.html#6372"><b>6372</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_tower1_see_hg, Engine.players()) == true &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>tower1_hg_01a</i>.Squad), 0), 30F) || Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(tower1_hg_01b.Squad), 0), 30F));</a>
+<a href="../05a_deltaapproach.cs.html#6398"><b>6398</b>Engine.ai_place(<i>tower1_hg_01a</i>.Squad, 1);</a>
+<a href="../05a_deltaapproach.cs.html#6404"><b>6404</b>Engine.cs_run_command_script(<i>tower1_hg_01a</i>.Squad, long_pause_point);</a>
+<a href="../05a_deltaapproach.cs.html#6405"><b>6405</b>Engine.ai_set_orders(<i>tower1_hg_01a</i>.Squad, tower1_hg1a);</a>
+<a href="../05a_deltaapproach.cs.html#6415"><b>6415</b>Engine.cs_run_command_script(<i>tower1_hg_01a</i>.Squad, long_pause);</a>
+<a href="../05a_deltaapproach.cs.html#6416"><b>6416</b>Engine.ai_set_orders(<i>tower1_hg_01a</i>.Squad, tower1_hg1a_back);</a>
+<a href="../05a_deltaapproach.cs.html#6423"><b>6423</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>tower1_hg_01a</i>.Squad) &lt; 1 &amp;&amp; (short)Engine.ai_living_count(tower1_hg_01b.Squad) &lt; 1 || Engine.volume_test_objects(vol_tower1_upper, Engine.players()) == true);</a>
+<a href="../05a_deltaapproach.cs.html#6424"><b>6424</b>Engine.ai_place(tower1_hg_02a.Squad, (short)(1 - (float)Engine.ai_living_count(<i>tower1_hg_01a</i>.Squad)));</a>
+</div>
+</div>
+</body></html>

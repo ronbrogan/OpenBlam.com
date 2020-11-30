@@ -1,0 +1,449 @@
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(20,13): warning CS0414: The field 'scnr_01b_spacestation.delay_witness' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(44,14): warning CS0414: The field 'scnr_06a_sentinelwalls.g_music_06a_09' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(21,13): warning CS0414: The field 'scnr_03a_oldmombasa._45_seconds' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(19,13): warning CS0414: The field 'scnr_01b_spacestation.delay_prompt' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(15,16): warning CS0414: The field 'scnr_05b_deltatowers.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(15,16): warning CS0414: The field 'scnr_08a_deltacliffs.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(57,13): warning CS0414: The field 'scnr_01b_spacestation.counter_flavor_dck' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(21,13): warning CS0414: The field 'scnr_08a_deltacliffs._45_seconds' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(36,14): warning CS0414: The field 'scnr_03b_newmombasa.g_e23_mars_pelican0_appeared' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(16,14): warning CS0414: The field 'scnr_08b_deltacontrol.blam' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(21,14): warning CS0414: The field 'scnr_04b_floodlab.done_shooting_holo' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(19,13): warning CS0414: The field 'scnr_01a_tutorial.global_random_bridge' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(48,14): warning CS0414: The field 'scnr_01a_tutorial.mark_training_done' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(45,14): warning CS0414: The field 'scnr_08a_deltacliffs.g_e1_pro_inf0_searching' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(25,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bsp1' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(83,14): warning CS0414: The field 'scnr_08b_deltacontrol.g_e1_started' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(63,14): warning CS0414: The field 'scnr_04b_floodlab.more_hl_orders' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(38,13): warning CS0414: The field 'scnr_03b_newmombasa.g_e23_target_pelican' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(15,16): warning CS0414: The field 'scnr_01a_tutorial.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(25,14): warning CS0414: The field 'scnr_04b_floodlab.mess_react_02_done' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(15,16): warning CS0414: The field 'scnr_04a_gasgiant.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(50,13): warning CS0414: The field 'scnr_01a_tutorial.timer_prompt_looker_start' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(56,14): warning CS0414: The field 'scnr_05a_deltaapproach.tower1_holo_chant' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(26,14): warning CS0414: The field 'scnr_05b_deltatowers.tower3_cortana_cont' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(76,14): warning CS0414: The field 'scnr_06b_floodzone.g_key_lock0_door1' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(18,14): warning CS0414: The field 'scnr_08a_deltacliffs.g_mission_over' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(92,14): warning CS0414: The field 'scnr_06a_sentinelwalls.g_plug_holder_loops' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.cs(15,16): warning CS0414: The field 'scnr_zanzibar.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(22,13): warning CS0414: The field 'scnr_01b_spacestation.delay_late' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(55,14): warning CS0414: The field 'scnr_08b_deltacontrol.g_e9_pro_phantom0_retreating' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(22,14): warning CS0414: The field 'scnr_07b_forerunnership.g_e12_go' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(17,13): warning CS0414: The field 'scnr_01b_spacestation.delay_dawdle' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(71,13): warning CS0414: The field 'scnr_08b_deltacontrol.g_e7_mars_living_count' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(21,13): warning CS0414: The field 'scnr_07b_forerunnership.g_e12_talk' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(26,14): warning CS0414: The field 'scnr_01a_tutorial.mark_bsp0' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\dune.cs(15,16): warning CS0414: The field 'scnr_dune.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(66,14): warning CS0414: The field 'scnr_03a_oldmombasa.g_e1_cov_phantom0_1_retreating' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(15,16): warning CS0414: The field 'scnr_03a_oldmombasa.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(56,14): warning CS0414: The field 'scnr_08b_deltacontrol.g_e9_pro_phantom1_retreating' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(24,14): warning CS0414: The field 'scnr_06a_sentinelwalls.g_cons_open_ins' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\backwash.cs(15,16): warning CS0414: The field 'scnr_backwash.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(61,14): warning CS0414: The field 'scnr_04b_floodlab.final_hl_boss_dead' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(102,14): warning CS0414: The field 'scnr_06a_sentinelwalls.g_plugholder_bk_spawn' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(18,14): warning CS0414: The field 'scnr_03a_oldmombasa.g_mission_over' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(46,14): warning CS0414: The field 'scnr_03b_newmombasa.g_e22_scarab_started_climb' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(15,16): warning CS0414: The field 'scnr_01b_spacestation.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(23,14): warning CS0414: The field 'scnr_03b_newmombasa.g_e23_scarab_arrived' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(25,15): warning CS0414: The field 'scnr_08a_deltacliffs.g_cov_gold_elite' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(24,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bsp0' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(21,13): warning CS0414: The field 'scnr_01b_spacestation.delay_wait' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(27,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bsp3' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(37,13): warning CS0414: The field 'scnr_08b_deltacontrol._15_seconds' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.cs(15,16): warning CS0414: The field 'scnr_triplicate.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(15,16): warning CS0414: The field 'scnr_06a_sentinelwalls.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(32,14): warning CS0414: The field 'scnr_06b_floodzone.g_music_06b_07' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(64,14): warning CS0414: The field 'scnr_06b_floodzone.g_ext_b_phantom' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.cs(15,16): warning CS0414: The field 'scnr_00a_introduction.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(28,14): warning CS0414: The field 'scnr_05b_deltatowers.elev_under_scene_gone' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(33,14): warning CS0414: The field 'scnr_07a_highcharity.g_marine_mig_garden_b' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(65,13): warning CS0414: The field 'scnr_03b_newmombasa.g_e14_ghost_respawn_limit' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(37,14): warning CS0414: The field 'scnr_07b_forerunnership.g_e1_pelican1_unloaded' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(15,16): warning CS0414: The field 'scnr_06b_floodzone.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(39,13): warning CS0414: The field 'scnr_08b_deltacontrol._45_seconds' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(31,13): warning CS0414: The field 'scnr_07b_forerunnership.g_e8_counter' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(56,14): warning CS0414: The field 'scnr_07a_highcharity.g_sc_room_b_done' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(35,14): warning CS0414: The field 'scnr_04a_gasgiant.left_bottling_firsthalf' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(34,14): warning CS0414: The field 'scnr_07b_forerunnership.g_e1_music' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(35,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bomb2_objective' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(31,14): warning CS0414: The field 'scnr_01a_tutorial.mark_bsp5' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(46,14): warning CS0414: The field 'scnr_08b_deltacontrol.g_e12_pro_inf0_1_berserk' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(19,13): warning CS0414: The field 'scnr_08a_deltacliffs._15_seconds' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(19,14): warning CS0414: The field 'scnr_04b_floodlab.holo_drone_arrived' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(20,13): warning CS0414: The field 'scnr_03b_newmombasa._45_seconds' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(47,14): warning CS0414: The field 'scnr_01a_tutorial.mark_training_free' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(28,14): warning CS0414: The field 'scnr_01a_tutorial.mark_bsp2' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\turf.cs(15,16): warning CS0414: The field 'scnr_turf.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(36,14): warning CS0414: The field 'scnr_07a_highcharity.g_marine_mig_maus_room' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(61,14): warning CS0414: The field 'scnr_03a_oldmombasa.g_e1_started' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(15,16): warning CS0414: The field 'scnr_03b_newmombasa.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(56,13): warning CS0414: The field 'scnr_01b_spacestation.counter_flavor_gun' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(36,14): warning CS0414: The field 'scnr_06b_floodzone.g_veh_int_migrate_a' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(18,13): warning CS0414: The field 'scnr_01b_spacestation.delay_tutorial' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(28,14): warning CS0414: The field 'scnr_05a_deltaapproach.lz_phantom_03_leaving' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\containment.cs(15,16): warning CS0414: The field 'scnr_containment.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(28,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bsp4' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(30,14): warning CS0414: The field 'scnr_01a_tutorial.mark_bsp4' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(47,14): warning CS0414: The field 'scnr_04a_gasgiant.emplace_05_done' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(26,14): warning CS0414: The field 'scnr_05a_deltaapproach.lz_phantom_01_leaving' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.cs(15,16): warning CS0414: The field 'scnr_waterworks.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(30,14): warning CS0414: The field 'scnr_01b_spacestation.gbl_1st_waves' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(20,14): warning CS0414: The field 'scnr_04b_floodlab.hl_done_talking' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(27,14): warning CS0414: The field 'scnr_05a_deltaapproach.lz_phantom_02_leaving' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(15,16): warning CS0414: The field 'scnr_07a_highcharity.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(25,14): warning CS0414: The field 'scnr_07b_forerunnership.g_e12_final_battle_ended' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(44,14): warning CS0414: The field 'scnr_04a_gasgiant.emplace_02_done' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(25,14): warning CS0414: The field 'scnr_06a_sentinelwalls.g_enc_insertion' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(16,13): warning CS0414: The field 'scnr_01b_spacestation.delay_blink' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(18,13): warning CS0414: The field 'scnr_01a_tutorial.global_random_rumble' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(23,14): warning CS0414: The field 'scnr_04b_floodlab.mess_react_02_go' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(15,16): warning CS0414: The field 'scnr_05a_deltaapproach.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(94,14): warning CS0414: The field 'scnr_06b_floodzone.g_e21_started' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(30,14): warning CS0414: The field 'scnr_04a_gasgiant.hangar_sentinels_come' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(42,14): warning CS0414: The field 'scnr_08a_deltacliffs.g_e1_started' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(27,14): warning CS0414: The field 'scnr_01a_tutorial.mark_bsp1' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(93,14): warning CS0414: The field 'scnr_06b_floodzone.g_e22_started' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(29,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bsp5' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(41,13): warning CS0414: The field 'scnr_08b_deltacontrol.two_minutes' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(19,14): warning CS0414: The field 'scnr_05b_deltatowers.tower1_holo_chant' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(15,16): warning CS0414: The field 'scnr_08b_deltacontrol.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(49,13): warning CS0414: The field 'scnr_01a_tutorial.timer_training_pitch_choose' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(15,16): warning CS0414: The field 'scnr_07b_forerunnership.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(64,14): warning CS0414: The field 'scnr_04b_floodlab.more_holo1_orders' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(39,13): warning CS0414: The field 'scnr_04a_gasgiant.phantom_course_pos' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(29,14): warning CS0414: The field 'scnr_01a_tutorial.mark_bsp3' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(29,14): warning CS0414: The field 'scnr_04a_gasgiant.hangar_phantom_cue' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(65,14): warning CS0414: The field 'scnr_04b_floodlab.more_holo2_orders' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(26,14): warning CS0414: The field 'scnr_01b_spacestation.mark_bsp2' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(35,14): warning CS0414: The field 'scnr_05a_deltaapproach.bridge_pelican_in_sight' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(32,13): warning CS0414: The field 'scnr_04a_gasgiant.a50_spawn_go' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(17,13): warning CS0414: The field 'scnr_01a_tutorial.global_random' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(23,13): warning CS0414: The field 'scnr_01b_spacestation.delay_lost' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(44,14): warning CS0414: The field 'scnr_08a_deltacliffs.g_e1_cov_inf0_should_die' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(36,13): warning CS0414: The field 'scnr_04a_gasgiant.bottling_sentinels_spawned' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(64,14): warning CS0414: The field 'scnr_03b_newmombasa.g_e14_started' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(15,16): warning CS0414: The field 'scnr_04b_floodlab.data_mine_mission_segment' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(33,13): warning CS0414: The field 'scnr_07b_forerunnership.g_e1_talk' is assigned but its value is never used
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\obj\Debug\netcoreapp3.1\Halo2Vista.AssemblyInfo.cs(11,1): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\obj\Debug\netcoreapp3.1\Halo2Vista.AssemblyInfo.cs(12,1): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\mainmenu.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\needle.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03b_newmombasa.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\waterworks.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\03a_oldmombasa.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\triplicate.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\single_player_shared.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs(2,1): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07b_forerunnership.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\ascension.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\headlong.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\deltatap.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\containment.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\00a_introduction.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01b_spacestation.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.Data.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\warlock.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\gemini.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs(3,1): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\beavercreek.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\01a_tutorial.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05a_deltaapproach.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\foundation.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\dune.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.cs(6,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\shared.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04b_floodlab.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08b_deltacontrol.cs(5,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\04a_gasgiant.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\turf.Data.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\elongation.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\07a_highcharity.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\cyclotron.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\colossus.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\05b_deltatowers.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\backwash.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\08a_deltacliffs.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\zanzibar.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06b_floodzone.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\coagulation.cs(9,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\06a_sentinelwalls.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\street_sweeper.Data.cs(3,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\example.cs(7,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\burial_mounds.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\lockout.Data.cs(4,5): hidden CS8019: Unnecessary using directive.
+C:\Users\ronal\source\halo-scripts\h2v\midship.Data.cs(4,5): hidden CS8019: Unnecessary using directive.

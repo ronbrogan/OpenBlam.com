@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html><head><title>IStatementContext</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">6 implementations of IStatementContext</div><div class="rA">OpenH2.Core (6)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\GenerationState\BeginCallContext.cs (1)</div>
+<a href="../Scripting/GenerationState/BeginCallContext.cs.html#10"><b>10</b>public class BeginCallContext : BaseGenerationContext, IGenerationContext, <i>IStatementContext</i></a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\BeginRandomContext.cs (1)</div>
+<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#11"><b>11</b>public class BeginRandomContext : BaseGenerationContext, IGenerationContext, <i>IStatementContext</i></a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\IfStatementContext.cs (1)</div>
+<a href="../Scripting/GenerationState/IfStatementContext.cs.html#14"><b>14</b>internal class IfStatementContext : BaseGenerationContext, IGenerationContext, <i>IStatementContext</i></a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\ScopeGenerationContext.cs (1)</div>
+<a href="../Scripting/GenerationState/ScopeGenerationContext.cs.html#31"><b>31</b>public class StatementContext : ScopeGenerationContext, <i>IStatementContext</i></a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\SingleExpressionContext.cs (1)</div>
+<a href="../Scripting/GenerationState/SingleExpressionContext.cs.html#8"><b>8</b>public class SingleExpressionStatementContext : BaseGenerationContext, IGenerationContext, <i>IStatementContext</i></a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\StatementBlockContext.cs (1)</div>
+<a href="../Scripting/GenerationState/StatementBlockContext.cs.html#10"><b>10</b>public class StatementBlockContext : BaseGenerationContext, IGenerationContext, <i>IStatementContext</i></a>
+</div>
+</div>
+<div class="rH">11 references to IStatementContext</div><div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\GenerationState\BeginCallContext.cs (1)</div>
+<a href="../Scripting/GenerationState/BeginCallContext.cs.html#64"><b>64</b>public <i>IStatementContext</i> AddStatement(StatementSyntax statement)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\BeginRandomContext.cs (1)</div>
+<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#71"><b>71</b>public <i>IStatementContext</i> AddStatement(StatementSyntax statement)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\IfStatementContext.cs (1)</div>
+<a href="../Scripting/GenerationState/IfStatementContext.cs.html#61"><b>61</b>public <i>IStatementContext</i> AddStatement(StatementSyntax statement)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\IStatementContext.cs (1)</div>
+<a href="../Scripting/GenerationState/IStatementContext.cs.html#7"><b>7</b><i>IStatementContext</i> AddStatement(StatementSyntax statement);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\Scope.cs (3)</div>
+<a href="../Scripting/GenerationState/Scope.cs.html#7"><b>7</b>public <i>IStatementContext</i> StatementContext { get; private set; } = null;</a>
+<a href="../Scripting/GenerationState/Scope.cs.html#9"><b>9</b>public Scope(ScriptDataType type, IGenerationContext context, <i>IStatementContext</i> nearestStatements)</a>
+<a href="../Scripting/GenerationState/Scope.cs.html#21"><b>21</b>context as <i>IStatementContext</i> ?? this.StatementContext);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\ScopeGenerationContext.cs (1)</div>
+<a href="../Scripting/GenerationState/ScopeGenerationContext.cs.html#37"><b>37</b>public <i>IStatementContext</i> AddStatement(StatementSyntax statement)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\SingleExpressionContext.cs (1)</div>
+<a href="../Scripting/GenerationState/SingleExpressionContext.cs.html#38"><b>38</b>public <i>IStatementContext</i> AddStatement(StatementSyntax statement)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\StatementBlockContext.cs (2)</div>
+<a href="../Scripting/GenerationState/StatementBlockContext.cs.html#24"><b>24</b><i>IStatementContext</i> <i>IStatementContext</i>.AddStatement(StatementSyntax statement) =&gt; AddStatement(statement);</a>
+</div>
+</div>
+</body></html>

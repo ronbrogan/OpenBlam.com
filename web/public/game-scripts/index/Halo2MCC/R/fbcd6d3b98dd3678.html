@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html><head><title>bridge_bunker_turrets</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to bridge_bunker_turrets</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
+<a href="../05a_deltaapproach.Data.cs.html#890"><b>890</b><i>bridge_bunker_turrets</i> = new Squad_bridge_bunker_turrets(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">14 references to bridge_bunker_turrets</div><div class="rA">Halo2MCC (14)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.cs (14)</div>
+<a href="../05a_deltaapproach.cs.html#3570"><b>3570</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(bridge_vehicles_all) &lt; 1 &amp;&amp; (short)Engine.ai_living_count(<i>bridge_bunker_turrets</i>.Squad) &lt; 1);</a>
+<a href="../05a_deltaapproach.cs.html#3776"><b>3776</b>if (Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_01), &quot;c_turret_ap_d&quot;, Engine.ai_actors(all_enemies)) == false &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_01)) &gt; 0F &amp;&amp; (short)Engine.ai_living_count(bunker_turret_remen.Squad) &lt; 1)</a>
+<a href="../05a_deltaapproach.cs.html#3780"><b>3780</b>Engine.ai_vehicle_enter(bunker_turret_remen.Squad, Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_01));</a>
+<a href="../05a_deltaapproach.cs.html#3783"><b>3783</b>if (Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_02), &quot;c_turret_ap_d&quot;, Engine.ai_actors(all_enemies)) == false &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_02)) &gt; 0F &amp;&amp; (short)Engine.ai_living_count(bunker_turret_remen.Squad) &lt; 1)</a>
+<a href="../05a_deltaapproach.cs.html#3787"><b>3787</b>Engine.ai_vehicle_enter(bunker_turret_remen.Squad, Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_02));</a>
+<a href="../05a_deltaapproach.cs.html#3790"><b>3790</b>if (Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_03), &quot;c_turret_ap_d&quot;, Engine.ai_actors(all_enemies)) == false &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_03)) &gt; 0F &amp;&amp; (short)Engine.ai_living_count(bunker_turret_remen.Squad) &lt; 1)</a>
+<a href="../05a_deltaapproach.cs.html#3794"><b>3794</b>Engine.ai_vehicle_enter(bunker_turret_remen.Squad, Engine.ai_vehicle_get_from_starting_location(<i>bridge_bunker_turrets</i>.bunker_03));</a>
+<a href="../05a_deltaapproach.cs.html#4120"><b>4120</b>Engine.ai_place(<i>bridge_bunker_turrets</i>.Squad, 4);</a>
+<a href="../05a_deltaapproach.cs.html#4125"><b>4125</b>Engine.ai_place(<i>bridge_bunker_turrets</i>.Squad, 3);</a>
+<a href="../05a_deltaapproach.cs.html#4130"><b>4130</b>Engine.ai_place(<i>bridge_bunker_turrets</i>.Squad, 2);</a>
+<a href="../05a_deltaapproach.cs.html#4133"><b>4133</b>Engine.cs_run_command_script(<i>bridge_bunker_turrets</i>.Squad, stay_shooting);</a>
+</div>
+</div>
+</body></html>

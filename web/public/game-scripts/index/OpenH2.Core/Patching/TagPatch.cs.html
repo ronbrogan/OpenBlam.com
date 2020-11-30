@@ -1,0 +1,80 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/><a id="59" href="#59" target="_top">59</a><br/><a id="60" href="#60" target="_top">60</a><br/><a id="61" href="#61" target="_top">61</a><br/><a id="62" href="#62" target="_top">62</a><br/><a id="63" href="#63" target="_top">63</a><br/><a id="64" href="#64" target="_top">64</a><br/><a id="65" href="#65" target="_top">65</a><br/><a id="66" href="#66" target="_top">66</a><br/><a id="67" href="#67" target="_top">67</a><br/><a id="68" href="#68" target="_top">68</a><br/><a id="69" href="#69" target="_top">69</a><br/><a id="70" href="#70" target="_top">70</a><br/><a id="71" href="#71" target="_top">71</a><br/><a id="72" href="#72" target="_top">72</a><br/><a id="73" href="#73" target="_top">73</a><br/><a id="74" href="#74" target="_top">74</a><br/><a id="75" href="#75" target="_top">75</a><br/><a id="76" href="#76" target="_top">76</a><br/><a id="77" href="#77" target="_top">77</a><br/><a id="78" href="#78" target="_top">78</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Text</span>.<span class="i n">Json</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Text</span>.<span class="i n">Json</span>.<span class="i n">Serialization</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Patching</span>
+&lbrace;
+    <b>public class</b> <a id="593b04a8a9623122" href="../R/593b04a8a9623122.html" target="n" data-glyph="0,0" class="t t"><span id="daecf9bb80b37a97">TagPatch</span></a>
+    &lbrace;
+        <b>public string</b> <a id="615e96feecdf12f6" href="../R/615e96feecdf12f6.html" target="n" data-glyph="102,1" class="i property">TagName</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>public</b> <a href="#8084a458ac95fba1" class="t t">TagPropertyPatch</a>[] <a id="563b18e38b055266" href="../R/563b18e38b055266.html" target="n" data-glyph="102,1" class="i property">PropertyPatches</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t t">Array</span>.<span class="i method">Empty</span>&lt;<a href="#8084a458ac95fba1" class="t t">TagPropertyPatch</a>&gt;();
+        <b>public</b> <a href="#24f076df9de7369f" class="t t">TagBinaryPatch</a>[] <a id="e9f1018d10b58e15" href="../R/e9f1018d10b58e15.html" target="n" data-glyph="102,1" class="i property">BinaryPatches</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t t">Array</span>.<span class="i method">Empty</span>&lt;<a href="#24f076df9de7369f" class="t t">TagBinaryPatch</a>&gt;();
+    &rbrace;
+ 
+    <b>public class</b> <a id="8084a458ac95fba1" href="../R/8084a458ac95fba1.html" target="n" data-glyph="0,0" class="t t"><span id="a6a04e9f76a10285">TagPropertyPatch</span></a>
+    &lbrace;
+        <b>public string</b> <a id="3bfa874893529a9c" href="../R/3bfa874893529a9c.html" target="n" data-glyph="102,1" class="i property">PropertySelector</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>public</b> <span class="t t">JsonElement</span> <a id="546d556038efcd7f" href="../R/546d556038efcd7f.html" target="n" data-glyph="102,1" class="i property">Value</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+    &rbrace;
+ 
+    <b>public class</b> <a id="24f076df9de7369f" href="../R/24f076df9de7369f.html" target="n" data-glyph="0,0" class="t t"><span id="c098cba94bfb6856">TagBinaryPatch</span></a>
+    &lbrace;
+        <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">summary</span><span class="c">&gt;</span>
+        <span class="c">///</span><span class="c"> The offset of the data to modify, relative to the start of the tag data</span>
+        <span class="c">///</span><span class="c"> </span><span class="c">&lt;/</span><span class="c">summary</span><span class="c">&gt;</span>
+        <b>public uint</b> <a id="4f4b348a23273257" href="../R/4f4b348a23273257.html" target="n" data-glyph="102,1" class="i property">RelativeOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">summary</span><span class="c">&gt;</span>
+        <span class="c">///</span><span class="c"> The data to replace with</span>
+        <span class="c">///</span><span class="c"> </span><span class="c">&lt;/</span><span class="c">summary</span><span class="c">&gt;</span>
+        [<span class="t constructor">JsonConverter</span>(<b>typeof</b>(<a href="#77a178c22861d0b8" class="t t">HexBytesConverter</a>))]
+        <b>public byte</b>[] <a id="4cc4ae2ba6c47e58" href="../R/4cc4ae2ba6c47e58.html" target="n" data-glyph="102,1" class="i property">Data</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>private class</b> <a id="77a178c22861d0b8" href="../R/77a178c22861d0b8.html" target="n" data-glyph="4,1" class="t t"><span id="3f09cc98344f46ee">HexBytesConverter</span></a> : <span class="t t">JsonConverter</span>&lt;<b>byte</b>[]&gt;
+        &lbrace;
+            <b>public override bool</b> <a id="1be7ebe3e83f3651" href="../R/1be7ebe3e83f3651.html" target="n" data-glyph="72,2" class="i method">CanConvert</a>(<span class="t t">Type</span> <span id="r0 rd" class="r0 r">typeToConvert</span>)
+            &lbrace;
+                <b>return</b> <span class="r0 r">typeToConvert</span> == <b>typeof</b>(<b>byte</b>[]);
+            &rbrace;
+ 
+            <b>public override byte</b>[] <a id="a3f4f973d43f89ab" href="../R/a3f4f973d43f89ab.html" target="n" data-glyph="72,2" class="i method">Read</a>(<b>ref</b> <span class="t t">Utf8JsonReader</span> <span id="r1 rd" class="r1 r">reader</span>, <span class="t t">Type</span> <span id="r2 rd" class="r2 r">typeToConvert</span>, <span class="t t">JsonSerializerOptions</span> <span id="r3 rd" class="r3 r">options</span>)
+            &lbrace;
+                <b>var</b> <span id="r4 rd" class="r4 r">hex</span> = <span class="r1 r">reader</span>.<span class="i method">GetString</span>();
+ 
+                <b>if</b> (<span class="r4 r">hex</span>.<span class="i property">Length</span> % 2 == 1)
+                    <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">&quot;Hex data must have an even number of characters&quot;</span>);
+ 
+                <b>var</b> <span id="r5 rd" class="r5 r">arr</span> = <b>new</b> <b>byte</b>[<span class="r4 r">hex</span>.<span class="i property">Length</span> &gt;&gt; 1];
+ 
+                <b>for</b> (<b>int</b> <span id="r6 rd" class="r6 r">i</span> = 0; <span class="r6 r">i</span> &lt; <span class="r4 r">hex</span>.<span class="i property">Length</span> &gt;&gt; 1; ++<span class="r6 r">i</span>)
+                &lbrace;
+                    <span class="r5 r">arr</span>[<span class="r6 r">i</span>] = (<b>byte</b>)((<a href="#6f07b38b0e8fca77" class="i method">GetHexVal</a>(<span class="r4 r">hex</span>[<span class="r6 r">i</span> &lt;&lt; 1]) &lt;&lt; 4) + (<a href="#6f07b38b0e8fca77" class="i method">GetHexVal</a>(<span class="r4 r">hex</span>[(<span class="r6 r">i</span> &lt;&lt; 1) + 1])));
+                &rbrace;
+ 
+                <b>return</b> <span class="r5 r">arr</span>;
+ 
+                <b>int</b> <a id="6f07b38b0e8fca77" href="../R/6f07b38b0e8fca77.html" target="n" data-glyph="76,3" class="i method">GetHexVal</a>(<b>char</b> <span id="r7 rd" class="r7 r">hex</span>)
+                &lbrace;
+                    <b>int</b> <span id="r8 rd" class="r8 r">val</span> = (<b>int</b>)<span class="r7 r">hex</span>;
+                    <span class="c">//For uppercase A-F letters:</span>
+                    <span class="c">//return val - (val &lt; 58 ? 48 : 55);</span>
+                    <span class="c">//For lowercase a-f letters:</span>
+                    <span class="c">//return val - (val &lt; 58 ? 48 : 87);</span>
+                    <span class="c">//Or the two combined, but a bit slower:</span>
+                    <b>return</b> <span class="r8 r">val</span> - (<span class="r8 r">val</span> &lt; 58 ? 48 : (<span class="r8 r">val</span> &lt; 97 ? 55 : 87));
+                &rbrace;
+            &rbrace;
+ 
+            <b>public override void</b> <a id="27a61354e39b35b8" href="../R/27a61354e39b35b8.html" target="n" data-glyph="72,2" class="i method">Write</a>(<span class="t t">Utf8JsonWriter</span> <span id="r9 rd" class="r9 r">writer</span>, <b>byte</b>[] <span id="r10 rd" class="r10 r">value</span>, <span class="t t">JsonSerializerOptions</span> <span id="r11 rd" class="r11 r">options</span>)
+            &lbrace;
+                <b>throw</b> <b>new</b> <span class="t constructor">NotImplementedException</span>();
+            &rbrace;
+        &rbrace;
+ 
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

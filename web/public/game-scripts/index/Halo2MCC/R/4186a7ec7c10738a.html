@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html><head><title>hl_boss_random</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to hl_boss_random</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
+<a href="../04b_floodlab.Data.cs.html#1687"><b>1687</b><i>hl_boss_random</i> = new Squad_hl_boss_random(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">25 references to hl_boss_random</div><div class="rA">Halo2MCC (25)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.cs (25)</div>
+<a href="../04b_floodlab.cs.html#8592"><b>8592</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_boss_delete_r, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == true || Engine.volume_test_objects(vol_boss_delete_l, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == true || Engine.volume_test_objects(vol_boss_delete_c1, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == true || Engine.volume_test_objects(vol_boss_delete_c2, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == true, 30, 900);</a>
+<a href="../04b_floodlab.cs.html#8593"><b>8593</b>if (Engine.volume_test_objects(vol_boss_delete_r, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == false &amp;&amp; Engine.volume_test_objects(vol_boss_delete_l, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == false &amp;&amp; Engine.volume_test_objects(vol_boss_delete_c1, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == false &amp;&amp; Engine.volume_test_objects(vol_boss_delete_c2, Engine.ai_actors(<i>hl_boss_random</i>.Squad)) == false)</a>
+<a href="../04b_floodlab.cs.html#8595"><b>8595</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\scenarios\\objects\\solo\\alphagasgiant\\holo_drone\\drone_death&quot;, 3919382567U), Engine.list_get(Engine.ai_actors(<i>hl_boss_random</i>.Squad), 0), &quot;&quot;);</a>
+<a href="../04b_floodlab.cs.html#8596"><b>8596</b>Engine.object_set_scale(Engine.list_get(Engine.ai_actors(<i>hl_boss_random</i>.Squad), 0), 0.1F, 30);</a>
+<a href="../04b_floodlab.cs.html#8600"><b>8600</b>Engine.ai_erase(<i>hl_boss_random</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#8662"><b>8662</b>await Engine.sleep_until(async () =&gt; Engine.object_get_shield(Engine.list_get(Engine.ai_actors(<i>hl_boss_random</i>.Squad), 0)) &lt;= 0F);</a>
+<a href="../04b_floodlab.cs.html#8665"><b>8665</b>Engine.ai_set_orders(<i>hl_boss_random</i>.Squad, hole_up);</a>
+<a href="../04b_floodlab.cs.html#8666"><b>8666</b>Engine.cs_run_command_script(<i>hl_boss_random</i>.Squad, hack);</a>
+<a href="../04b_floodlab.cs.html#8670"><b>8670</b>Engine.ai_place(<i>hl_boss_random</i>.Squad, 1);</a>
+<a href="../04b_floodlab.cs.html#8671"><b>8671</b>Engine.ai_cannot_die(<i>hl_boss_random</i>.Squad, true);</a>
+<a href="../04b_floodlab.cs.html#8672"><b>8672</b>this.heretic_leader = Engine.list_get(Engine.ai_actors(<i>hl_boss_random</i>.Squad), 0);</a>
+<a href="../04b_floodlab.cs.html#8684"><b>8684</b>Engine.cs_run_command_script(<i>hl_boss_random</i>.Squad, hl_boss_chat_01);</a>
+<a href="../04b_floodlab.cs.html#8689"><b>8689</b>Engine.cs_run_command_script(<i>hl_boss_random</i>.Squad, hl_boss_chat_02);</a>
+<a href="../04b_floodlab.cs.html#8694"><b>8694</b>Engine.cs_run_command_script(<i>hl_boss_random</i>.Squad, hl_boss_chat_03);</a>
+<a href="../04b_floodlab.cs.html#8729"><b>8729</b>Engine.ai_set_orders(<i>hl_boss_random</i>.Squad, boss_fight_hl_center);</a>
+<a href="../04b_floodlab.cs.html#8829"><b>8829</b>Engine.ai_migrate(boss_fight_heretic_leader.Squad, <i>hl_boss_random</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#8830"><b>8830</b>Engine.ai_cannot_die(<i>hl_boss_random</i>.Squad, true);</a>
+<a href="../04b_floodlab.cs.html#8849"><b>8849</b>Engine.ai_cannot_die(<i>hl_boss_random</i>.Squad, false);</a>
+<a href="../04b_floodlab.cs.html#8850"><b>8850</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hl_boss_random</i>.Squad) == 0);</a>
+</div>
+</div>
+</body></html>

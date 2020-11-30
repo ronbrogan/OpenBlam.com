@@ -1,0 +1,73 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/><a id="59" href="#59" target="_top">59</a><br/><a id="60" href="#60" target="_top">60</a><br/><a id="61" href="#61" target="_top">61</a><br/><a id="62" href="#62" target="_top">62</a><br/><a id="63" href="#63" target="_top">63</a><br/><a id="64" href="#64" target="_top">64</a><br/><a id="65" href="#65" target="_top">65</a><br/><a id="66" href="#66" target="_top">66</a><br/><a id="67" href="#67" target="_top">67</a><br/><a id="68" href="#68" target="_top">68</a><br/><a id="69" href="#69" target="_top">69</a><br/><a id="70" href="#70" target="_top">70</a><br/><a id="71" href="#71" target="_top">71</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Layout</span>;
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Serialization</span>.<span class="i n">Layout</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Text</span>.<span class="i n">Json</span>.<span class="i n">Serialization</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>
+&lbrace;
+    [<span class="t constructor">JsonConverter</span>(<b>typeof</b>(<span class="t t">JsonStringEnumConverter</span>))]
+    <b>public enum</b> <a id="e8678961cf647187" href="../R/e8678961cf647187.html" target="n" data-glyph="18,0" class="t t"><span id="a9772464dfae4aad">EncodingType</span></a> : <b>byte</b>
+    &lbrace;
+        <a id="ac68ef2d7033df5e" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">ImaAdpcmMono</a> = 0,
+        <a id="29a5873f907f4155" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">ImaAdpcmStereo</a> = 1,
+        <a id="b036acc53de50c08" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">WmaBytestream</a> = 2
+    &rbrace;
+ 
+    [<span class="t constructor">JsonConverter</span>(<b>typeof</b>(<span class="t t">JsonStringEnumConverter</span>))]
+    <b>public enum</b> <a id="bccaafe5ef17d278" href="../R/bccaafe5ef17d278.html" target="n" data-glyph="18,0" class="t t"><span id="de2945f02554db4c">SampleRate</span></a> : <b>byte</b>
+    &lbrace;
+        <a id="7a4dab9256bd9234" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">hz22k05</a> = 0,
+        <a id="457baaea2071f63d" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">hz44k1</a> = 1
+    &rbrace;
+ 
+    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="TagName.cs.html#a179cb099e6f2aa2" class="i field">snd</a>)] <span class="c">// snd!</span>
+    <b>public class</b> <a id="fe4b8e460b3b6175" href="../R/fe4b8e460b3b6175.html" target="n" data-glyph="0,0" class="t t">SoundTag</a> : <a href="BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
+    &lbrace;
+        <b>public override string</b> <a id="c30e3330532ffca7" href="../R/c30e3330532ffca7.html" target="n" data-glyph="102,1" class="i property">Name</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a id="938f1c65479977d9" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">SoundTag</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>) : <a href="BaseTag.cs.html#dac53823c1a58ae3" class="k">base</a>(<span class="r0 r">id</span>)
+        &lbrace;
+        &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(0)]
+        <b>public byte</b> <a id="8f046c1be40f3390" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Option1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(1)]
+        <b>public byte</b> <a id="be56de30c466de40" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Option2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(2)]
+        <b>public byte</b> <a id="0444e9e6904ab88b" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Option3</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(3)]
+        <b>public</b> <a href="#bccaafe5ef17d278" class="t t">SampleRate</a> <a id="fc6c2bf1df692a4d" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">SampleRate</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(4)]
+        <b>public</b> <a href="#e8678961cf647187" class="t t">EncodingType</a> <a id="f962e084cb9a4f81" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Encoding</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(5)]
+        <b>public byte</b> <a id="78194af5126c9d2c" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Format2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(6)]
+        <b>public ushort</b> <a id="39027b91cb61eacc" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Unknown</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(8)]
+        <b>public ushort</b> <a id="e4d49bf80a6f74cd" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">SoundEntryIndex</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(10)]
+        <b>public ushort</b> <a id="15616f3fb1ee3075" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">LoopLength</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(12)]
+        <b>public ushort</b> <a id="cb528d24b00778ad" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">UsuallyMaxValue</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(14)]
+        <b>public ushort</b> <a id="fea30fa7f98467b9" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">DialogId</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(16)]
+        <b>public ushort</b> <a id="a6c87e209d3a1c5e" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Duration</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(18)]
+        <b>public ushort</b> <a id="65a37f2c86eaa60a" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">UsuallyZero</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

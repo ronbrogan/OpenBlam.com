@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html><head><title>H2mccMapHeader</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">6 references to H2mccMapHeader</div><div class="rA">OpenH2.Core (6)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MccMapFactory.cs (3)</div>
+<a href="../Factories/MccMapFactory.cs.html#134"><b>134</b>private <i>H2mccMapHeader</i> GetSceneHeader(H2mccMap scene, TrackingReader reader)</a>
+<a href="../Factories/MccMapFactory.cs.html#136"><b>136</b><i>var</i> head = BlamSerializer.Deserialize&lt;<i>H2mccMapHeader</i>&gt;(reader.Data, instanceStart: 0);</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccCompression.cs (2)</div>
+<a href="../Maps/MCC/H2mccCompression.cs.html#113"><b>113</b>var header = new Span&lt;byte&gt;(new byte[BlamSerializer.SizeOf&lt;<i>H2mccMapHeader</i>&gt;()]);</a>
+<a href="../Maps/MCC/H2mccCompression.cs.html#154"><b>154</b>compressTo.Seek(BlamSerializer.SizeOf&lt;<i>H2mccMapHeader</i>&gt;(), SeekOrigin.Begin);</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccMap.cs (1)</div>
+<a href="../Maps/MCC/H2mccMap.cs.html#133"><b>133</b>for (var i = BlamSerializer.SizeOf&lt;<i>H2mccMapHeader</i>&gt;(); i &lt; streamLength; i += 4)</a>
+</div>
+</div>
+</body></html>

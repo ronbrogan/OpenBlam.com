@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html><head><title>Offset</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">2 writes to Offset</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#225"><b>225</b><i>Offset</i> = new SecondaryOffset(scene, listBytes.ReadInt32At(entryBase + 8)),</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
+<a href="../Factories/MccMapFactory.cs.html#175"><b>175</b><i>Offset</i> = new SecondaryOffset(scene, listBytes.ReadInt32At(entryBase + 8)),</a>
+</div>
+</div>
+<div class="rH">20 references to Offset</div><div class="rA">OpenH2.Core (20)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (5)</div>
+<a href="../Factories/MapFactory.cs.html#137"><b>137</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.<i>Offset</i>.Value);</a>
+<a href="../Factories/MapFactory.cs.html#143"><b>143</b>if (item.DataSize == 0 || item.<i>Offset</i>.OriginalValue == 0)</a>
+<a href="../Factories/MapFactory.cs.html#164"><b>164</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.<i>Offset</i>.Value);</a>
+<a href="../Factories/MapFactory.cs.html#168"><b>168</b>if (item.DataSize == 0 || item.<i>Offset</i>.OriginalValue == 0)</a>
+<a href="../Factories/MapFactory.cs.html#233"><b>233</b>firstEntryOffset = entry.<i>Offset</i>.OriginalValue;</a>
+</div>
+<div class="rF"><div class="rN">Factories\MccMapFactory.cs (5)</div>
+<a href="../Factories/MccMapFactory.cs.html#87"><b>87</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.<i>Offset</i>.Value);</a>
+<a href="../Factories/MccMapFactory.cs.html#93"><b>93</b>if (item.DataSize == 0 || item.<i>Offset</i>.OriginalValue == 0)</a>
+<a href="../Factories/MccMapFactory.cs.html#114"><b>114</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.<i>Offset</i>.Value);</a>
+<a href="../Factories/MccMapFactory.cs.html#118"><b>118</b>if (item.DataSize == 0 || item.<i>Offset</i>.OriginalValue == 0)</a>
+<a href="../Factories/MccMapFactory.cs.html#183"><b>183</b>firstEntryOffset = entry.<i>Offset</i>.OriginalValue;</a>
+</div>
+<div class="rF"><div class="rN">Factories\TagFactory.cs (4)</div>
+<a href="../Factories/TagFactory.cs.html#29"><b>29</b>Offset = (uint)index.<i>Offset</i>.Value,</a>
+<a href="../Factories/TagFactory.cs.html#30"><b>30</b>InternalSecondaryMagic = map.SecondaryMagic + index.<i>Offset</i>.Value</a>
+<a href="../Factories/TagFactory.cs.html#38"><b>38</b>mapData.Preload(index.<i>Offset</i>.Value, index.DataSize);</a>
+<a href="../Factories/TagFactory.cs.html#57"><b>57</b>index.<i>Offset</i>.Value,</a>
+</div>
+<div class="rF"><div class="rN">Maps\TagIndexEntry.cs (1)</div>
+<a href="../Maps/TagIndexEntry.cs.html#21"><b>21</b>return TagName + &quot; &quot; + ID + &quot;, &quot; + DataSize + &quot;B @ &quot; + <i>Offset</i>.Value;</a>
+</div>
+<div class="rF"><div class="rN">Patching\TagPatcher.cs (4)</div>
+<a href="../Patching/TagPatcher.cs.html#63"><b>63</b>var patchOffset = tagInfo.<i>Offset</i>.Value + bin.RelativeOffset;</a>
+<a href="../Patching/TagPatcher.cs.html#119"><b>119</b>var baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.<i>Offset</i>.Value + offset + startsAt + 4));</a>
+<a href="../Patching/TagPatcher.cs.html#122"><b>122</b>offset += baseOffset.Value - tagInfo.<i>Offset</i>.Value - offset + elementOffset;</a>
+<a href="../Patching/TagPatcher.cs.html#165"><b>165</b>writer(this.mapToPatch, tagInfo.<i>Offset</i>.Value + info.RelativeOffset, patch.Value);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#14"><b>14</b>var scenarioStart = scene.TagIndex[scene.IndexHeader.Scenario].<i>Offset</i>.Value;</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,10 @@
+mscorlib;4
+netstandard;4
+OpenH2.Foundation;3
+OpenH2.Core;2
+Halo2MCC;0
+Halo2Vista;0
+MSBuildFiles;0
+MSBuildItems;0
+MSBuildProperties;0
+TypeScriptFiles;0

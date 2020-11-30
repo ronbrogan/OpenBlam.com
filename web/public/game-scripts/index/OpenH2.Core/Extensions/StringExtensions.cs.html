@@ -1,0 +1,42 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>;
+<b>using</b> <span class="i n">System</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Extensions</span>
+&lbrace;
+    <b>public static class</b> <a id="d1d64358b20dcf3a" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">StringExtensions</a>
+    &lbrace;
+        <b>public static string</b> <a id="3fa5c5e15fa62453" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">Reverse</a>(<b>this</b> <b>string</b> <span id="r0 rd" class="r0 r">s</span>)
+        &lbrace;
+            <b>var</b> <span id="r1 rd" class="r1 r">c</span> = <span class="r0 r">s</span>.<span class="i method">ToCharArray</span>();
+            <span class="t t">Array</span>.<span class="i method">Reverse</span>(<span class="r1 r">c</span>);
+            <b>return</b> <b>new</b> <b>string</b>(<span class="r1 r">c</span>);
+        &rbrace;
+ 
+        <b>public static bool</b> <a id="c9734e6c0f87d6a7" href="../R/c9734e6c0f87d6a7.html" target="n" data-glyph="220,1" class="i method">IsSignificant</a>(<b>this</b> <b>string</b> <span id="r2 rd" class="r2 r">s</span>)
+        &lbrace;
+            <b>return</b> !<b>string</b>.<span class="i method">IsNullOrWhiteSpace</span>(<span class="r2 r">s</span>);
+        &rbrace;
+ 
+        <b>public static string</b> <a id="d4355b18f2e5643d" href="../R/d4355b18f2e5643d.html" target="n" data-glyph="220,1" class="i method">ToTagString</a>(<b>this</b> <a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a> <span id="r3 rd" class="r3 r">tag</span>)
+        &lbrace;
+            <b>if</b> (<span class="t t">Enum</span>.<span class="i method">IsDefined</span>(<b>typeof</b>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>), <span class="r3 r">tag</span>))
+            &lbrace;
+                <b>return</b> <span class="r3 r">tag</span>.<span class="i method">ToString</span>();
+            &rbrace;
+            <b>else</b>
+            &lbrace;
+                <b>var</b> <span id="r4 rd" class="r4 r">u</span> = (<b>uint</b>)<span class="r3 r">tag</span>;
+                <b>var</b> <span id="r5 rd" class="r5 r">chars</span> = <b>new</b> <b>char</b>[4];
+ 
+                <b>for</b>(<b>var</b> <span id="r6 rd" class="r6 r">i</span> = 0; <span class="r6 r">i</span> &lt; 4; <span class="r6 r">i</span>++)
+                &lbrace;
+                    <span class="r5 r">chars</span>[3-<span class="r6 r">i</span>] = (<b>char</b>)((<span class="r4 r">u</span> &gt;&gt; (<span class="r6 r">i</span> * 8)) &amp; 0x000000FF);
+                &rbrace;
+ 
+                <b>return</b> <b>new</b> <b>string</b>(<span class="r5 r">chars</span>);
+            &rbrace;
+        &rbrace;
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

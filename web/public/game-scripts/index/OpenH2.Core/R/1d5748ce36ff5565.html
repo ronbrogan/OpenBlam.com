@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html><head><title>Entity</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">22 references to Entity</div><div class="rA">OpenH2.Core (22)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Component.cs (2)</div>
+<a href="../Architecture/Component.cs.html#5"><b>5</b>public <i>Entity</i> Parent { get; private set; }</a>
+<a href="../Architecture/Component.cs.html#7"><b>7</b>public Component(<i>Entity</i> parent)</a>
+</div>
+<div class="rF"><div class="rN">Architecture\IEntityCreator.cs (11)</div>
+<a href="../Architecture/IEntityCreator.cs.html#9"><b>9</b><i>Entity</i> FromBsp(BspTag bsp);</a>
+<a href="../Architecture/IEntityCreator.cs.html#10"><b>10</b><i>Entity</i> FromInstancedGeometry(BspTag bsp, BspTag.InstancedGeometryInstance instance);</a>
+<a href="../Architecture/IEntityCreator.cs.html#11"><b>11</b><i>Entity</i> FromSkyboxInstance(ScenarioTag.SkyboxInstance sky);</a>
+<a href="../Architecture/IEntityCreator.cs.html#12"><b>12</b><i>Entity</i> FromSceneryInstance(ScenarioTag.SceneryInstance scen);</a>
+<a href="../Architecture/IEntityCreator.cs.html#13"><b>13</b><i>Entity</i> FromBlocInstance(ScenarioTag.BlocInstance bloc);</a>
+<a href="../Architecture/IEntityCreator.cs.html#14"><b>14</b><i>Entity</i> FromMachineryInstance(ScenarioTag.MachineryInstance mach);</a>
+<a href="../Architecture/IEntityCreator.cs.html#15"><b>15</b><i>Entity</i> FromItemCollectionPlacement(ScenarioTag.ItemCollectionPlacement item);</a>
+<a href="../Architecture/IEntityCreator.cs.html#16"><b>16</b><i>Entity</i> FromVehicleInstance(ScenarioTag.VehicleInstance item);</a>
+<a href="../Architecture/IEntityCreator.cs.html#17"><b>17</b><i>Entity</i> FromTriggerVolume(ScenarioTag.TriggerVolume tv);</a>
+<a href="../Architecture/IEntityCreator.cs.html#18"><b>18</b><i>Entity</i> FromSquadStartingLocation(ScenarioTag.AiSquadDefinition.StartingLocation loc);</a>
+<a href="../Architecture/IEntityCreator.cs.html#19"><b>19</b><i>Entity</i> FromGlobals();</a>
+</div>
+<div class="rF"><div class="rN">Architecture\Scene.cs (6)</div>
+<a href="../Architecture/Scene.cs.html#21"><b>21</b>public Dictionary&lt;Guid, <i>Entity</i>&gt; Entities { get; private set; } = new Dictionary&lt;Guid, <i>Entity</i>&gt;();</a>
+<a href="../Architecture/Scene.cs.html#29"><b>29</b>public void AddEntity(<i>Entity</i> e)</a>
+<a href="../Architecture/Scene.cs.html#35"><b>35</b>public void RemoveEntity(<i>Entity</i> e)</a>
+<a href="../Architecture/Scene.cs.html#41"><b>41</b>public delegate void EntityEventHandler(<i>Entity</i> entity);</a>
+<a href="../Architecture/Scene.cs.html#113"><b>113</b><i>Entity</i>? newEntity = def.ItemType switch</a>
+</div>
+<div class="rF"><div class="rN">Architecture\World.cs (3)</div>
+<a href="../Architecture/World.cs.html#32"><b>32</b>foreach (<i>var</i> entity in this.Scene.Entities.Values)</a>
+<a href="../Architecture/World.cs.html#43"><b>43</b>public List&lt;T&gt; Entities&lt;T&gt;() where T : <i>Entity</i></a>
+<a href="../Architecture/World.cs.html#50"><b>50</b>foreach (<i>var</i> entity in this.Scene.Entities.Values)</a>
+</div>
+</div>
+</body></html>

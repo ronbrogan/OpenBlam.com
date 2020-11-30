@@ -1,0 +1,76 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/><a id="59" href="#59" target="_top">59</a><br/><a id="60" href="#60" target="_top">60</a><br/><a id="61" href="#61" target="_top">61</a><br/><a id="62" href="#62" target="_top">62</a><br/><a id="63" href="#63" target="_top">63</a><br/><a id="64" href="#64" target="_top">64</a><br/><a id="65" href="#65" target="_top">65</a><br/><a id="66" href="#66" target="_top">66</a><br/><a id="67" href="#67" target="_top">67</a><br/><a id="68" href="#68" target="_top">68</a><br/><a id="69" href="#69" target="_top">69</a><br/><a id="70" href="#70" target="_top">70</a><br/><a id="71" href="#71" target="_top">71</a><br/><a id="72" href="#72" target="_top">72</a><br/><a id="73" href="#73" target="_top">73</a><br/><a id="74" href="#74" target="_top">74</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Offsets</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>;
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Serialization</span>.<span class="i n">Layout</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>
+&lbrace;
+    [<span class="t constructor">FixedLength</span>(2048)]
+    <b>public class</b> <a id="27d3cc7e4ed9a1ac" href="../R/27d3cc7e4ed9a1ac.html" target="n" data-glyph="0,0" class="t t"><span id="35ad1959f2c4e811">H2vMapHeader</span></a> : <a href="IH2MapHeader.cs.html#9d1836b658fffe65" class="t t">IH2MapHeader</a>
+    &lbrace;
+        [<span class="t constructor">StringValue</span>(0, 4)]
+        <b>public string</b> <a id="e015d961f00b07f3" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">FileHead</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(4)]
+        <b>public int</b> <a id="dd46b5c2faf35ca3" href="../R/dd46b5c2faf35ca3.html" target="n" data-glyph="102,1" class="i property">Version</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(8)]
+        <b>public int</b> <a id="b1e34c06eb924644" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">TotalBytes</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(16)]
+        <b>public</b> <a href="../Offsets/NormalOffset.cs.html#35b3860c9fcb5eaf" class="t t">NormalOffset</a> <a id="1f5959f0310b8da4" href="../R/1f5959f0310b8da4.html" target="n" data-glyph="102,1" class="i property">IndexOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(20)]
+        <b>public int</b> <a id="d185b7fc413e8732" href="../R/d185b7fc413e8732.html" target="n" data-glyph="102,1" class="i property">RawSecondaryOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="../Offsets/PrimaryOffset.cs.html#a9a667c4dc1e8804" class="t t">PrimaryOffset</a> <a id="89572b9933f3068e" href="../R/89572b9933f3068e.html" target="n" data-glyph="102,1" class="i property">SecondaryOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">StringValue</span>(32, 32)]
+        <b>public string</b> <a id="6af94cd4e9894cff" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">MapOrigin</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">StringValue</span>(300, 32)]
+        <b>public string</b> <a id="6f42260258b0a846" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Build</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(364)]
+        <b>public int</b> <a id="f850ae9eec5300a0" href="../R/f850ae9eec5300a0.html" target="n" data-glyph="102,1" class="i property">OffsetToUnknownSection</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(368)]
+        <b>public int</b> <a id="ab37d76e2f17025a" href="../R/ab37d76e2f17025a.html" target="n" data-glyph="102,1" class="i property">InternedStringCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(372)]
+        <b>public int</b> <a id="72f0c2ed112d9e52" href="../R/72f0c2ed112d9e52.html" target="n" data-glyph="102,1" class="i property">SizeOfScriptReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(376)]
+        <b>public int</b> <a id="ca491916b9d1db76" href="../R/ca491916b9d1db76.html" target="n" data-glyph="102,1" class="i property">InternedStringIndexOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(380)]
+        <b>public int</b> <a id="6019ae07338a260a" href="../R/6019ae07338a260a.html" target="n" data-glyph="102,1" class="i property">InternedStringsOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">StringValue</span>(420, 32)]
+        <b>public string</b> <a id="a9fd1b77ef796783" href="../R/a9fd1b77ef796783.html" target="n" data-glyph="102,1" class="i property">Name</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">StringValue</span>(456, 256)]
+        <b>public string</b> <a id="d89c1d28e1752d42" href="../R/d89c1d28e1752d42.html" target="n" data-glyph="102,1" class="i property">ScenarioPath</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(716)]
+        <b>public int</b> <a id="d48b90911d248cdb" href="../R/d48b90911d248cdb.html" target="n" data-glyph="102,1" class="i property">FileCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(720)]
+        <b>public int</b> <a id="94e878b14718d30d" href="../R/94e878b14718d30d.html" target="n" data-glyph="102,1" class="i property">FileTableOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(724)]
+        <b>public int</b> <a id="b4d69031a5649a81" href="../R/b4d69031a5649a81.html" target="n" data-glyph="102,1" class="i property">FileTableSize</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(728)]
+        <b>public int</b> <a id="3f996f470b455456" href="../R/3f996f470b455456.html" target="n" data-glyph="102,1" class="i property">FilesIndex</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(740)]
+        <b>public</b> <a href="TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../Tags/SoundMappingTag.cs.html#4cc6e15060c37997" class="t t">SoundMappingTag</a>&gt; <a id="d2470c4bfb2224e8" href="../R/d2470c4bfb2224e8.html" target="n" data-glyph="102,1" class="i property">LocalSounds</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">PrimitiveValue</span>(752)]
+        <b>public int</b> <a id="326131c450c84daa" href="../R/326131c450c84daa.html" target="n" data-glyph="102,1" class="i property">StoredSignature</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">StringValue</span>(2044, 4)]
+        <b>public string</b> <a id="b55a97b0696e6fcf" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Footer</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

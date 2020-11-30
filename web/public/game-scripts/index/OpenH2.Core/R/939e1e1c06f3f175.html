@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html><head><title>ScriptSyntaxNodes</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">12 references to ScriptSyntaxNodes</div><div class="rA">OpenH2.Core (12)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (5)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#344"><b>344</b>Debug.Assert(variable.Value_H16 &lt; scenario.<i>ScriptSyntaxNodes</i>.Length, &quot;Variable expression is not valid&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#346"><b>346</b>var node = scenario.<i>ScriptSyntaxNodes</i>[variable.Value_H16];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#413"><b>413</b>var node = scenario.<i>ScriptSyntaxNodes</i>[currentIndex];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#445"><b>445</b>Debug.Assert(scenario.<i>ScriptSyntaxNodes</i>[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#483"><b>483</b>Debug.Assert(scenario.<i>ScriptSyntaxNodes</i>[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (3)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#40"><b>40</b>var node = tag.<i>ScriptSyntaxNodes</i>[currentIndex];</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#108"><b>108</b>Debug.Assert(tag.<i>ScriptSyntaxNodes</i>[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#115"><b>115</b>Debug.Assert(tag.<i>ScriptSyntaxNodes</i>[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (4)</div>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#15"><b>15</b>var nodesStart = BlamSerializer.StartsAt&lt;ScenarioTag&gt;(s =&gt; s.<i>ScriptSyntaxNodes</i>);</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#41"><b>41</b>var nextNode = scene.Scenario.<i>ScriptSyntaxNodes</i>[patch.NodeData.NextIndex];</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#54"><b>54</b>var nextNode = scene.Scenario.<i>ScriptSyntaxNodes</i>[patch.NodeData.NodeData_H16];</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#105"><b>105</b>var node = scene.Scenario.<i>ScriptSyntaxNodes</i>[patch.Index];</a>
+</div>
+</div>
+</body></html>

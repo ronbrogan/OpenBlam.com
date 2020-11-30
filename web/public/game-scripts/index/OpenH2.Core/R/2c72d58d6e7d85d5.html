@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html><head><title>ScriptStrings</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">8 references to ScriptStrings</div><div class="rA">OpenH2.Core (8)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#703"><b>703</b>return ((Span&lt;byte&gt;)scenario.<i>ScriptStrings</i>).ReadStringStarting(node.NodeString);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#240"><b>240</b>return ((Span&lt;byte&gt;)tag.<i>ScriptStrings</i>).ReadStringStarting(node.NodeString);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\UnknownContext.cs (2)</div>
+<a href="../Scripting/GenerationState/UnknownContext.cs.html#20"><b>20</b>if (node.NodeString &gt; 0 &amp;&amp; node.NodeString &lt; scenario.<i>ScriptStrings</i>.Length</a>
+<a href="../Scripting/GenerationState/UnknownContext.cs.html#21"><b>21</b>&amp;&amp; scenario.<i>ScriptStrings</i>[node.NodeString - 1] == 0)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (4)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#16"><b>16</b>var strings = (Span&lt;byte&gt;)tag.<i>ScriptStrings</i>;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#72"><b>72</b>if (node.NodeString &gt; 0 &amp;&amp; node.NodeString &lt; tag.<i>ScriptStrings</i>.Length</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#73"><b>73</b>&amp;&amp; tag.<i>ScriptStrings</i>[node.NodeString - 1] == 0)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#75"><b>75</b>value = SpanByteExtensions.ReadStringStarting(tag.<i>ScriptStrings</i>, node.NodeString);</a>
+</div>
+</div>
+</body></html>

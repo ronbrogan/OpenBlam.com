@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html><head><title>ModelMesh</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 instantiation of ModelMesh</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Tags\Common\Models\ModelResouceContainerProcessor.cs (1)</div>
+<a href="../Tags/Common/Models/ModelResouceContainerProcessor.cs.html#162"><b>162</b>meshes.Add(new <i>ModelMesh</i></a>
+</div>
+</div>
+<div class="rH">18 references to ModelMesh</div><div class="rA">OpenH2.Core (18)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">ExternalFormats\WavefrontObjWriter.cs (4)</div>
+<a href="../ExternalFormats/WavefrontObjWriter.cs.html#42"><b>42</b>foreach (<i>var</i> mesh in meshCollection.Meshes)</a>
+<a href="../ExternalFormats/WavefrontObjWriter.cs.html#76"><b>76</b>foreach (<i>var</i> mesh in meshCollection.Meshes)</a>
+<a href="../ExternalFormats/WavefrontObjWriter.cs.html#95"><b>95</b>private void WriteTriangleList(<i>ModelMesh</i> mesh, int basis)</a>
+<a href="../ExternalFormats/WavefrontObjWriter.cs.html#105"><b>105</b>private void WriteTriangleStrip(<i>ModelMesh</i> mesh, int basis)</a>
+</div>
+<div class="rF"><div class="rN">Factories\IMaterialFactory.cs (2)</div>
+<a href="../Factories/IMaterialFactory.cs.html#12"><b>12</b>Material&lt;BitmapTag&gt; CreateMaterial(H2vMap map, <i>ModelMesh</i> mesh);</a>
+<a href="../Factories/IMaterialFactory.cs.html#21"><b>21</b>public Material&lt;BitmapTag&gt; CreateMaterial(H2vMap map, <i>ModelMesh</i> mesh) =&gt; new Material&lt;BitmapTag&gt;();</a>
+</div>
+<div class="rF"><div class="rN">Factories\MaterialFactory.cs (1)</div>
+<a href="../Factories/MaterialFactory.cs.html#47"><b>47</b>public Material&lt;BitmapTag&gt; CreateMaterial(H2vMap map, <i>ModelMesh</i> mesh)</a>
+</div>
+<div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
+<a href="../Maps/H2vMap.cs.html#65"><b>65</b>public Material&lt;BitmapTag&gt; CreateMaterial(<i>ModelMesh</i> mesh)</a>
+</div>
+<div class="rF"><div class="rN">Tags\BspTag.cs (2)</div>
+<a href="../Tags/BspTag.cs.html#141"><b>141</b>part.Model = new MeshCollection(new <i>ModelMesh</i>[0]);</a>
+<a href="../Tags/BspTag.cs.html#173"><b>173</b>def.Model = new MeshCollection(new <i>ModelMesh</i>[0]);</a>
+</div>
+<div class="rF"><div class="rN">Tags\Common\Models\MeshCollection.cs (2)</div>
+<a href="../Tags/Common/Models/MeshCollection.cs.html#5"><b>5</b>public MeshCollection(<i>ModelMesh</i>[] meshes)</a>
+<a href="../Tags/Common/Models/MeshCollection.cs.html#10"><b>10</b>public <i>ModelMesh</i>[] Meshes { get; set; }</a>
+</div>
+<div class="rF"><div class="rN">Tags\Common\Models\ModelMesh.cs (3)</div>
+<a href="../Tags/Common/Models/ModelMesh.cs.html#9"><b>9</b>public class ModelMesh : IEquatable&lt;<i>ModelMesh</i>&gt;</a>
+<a href="../Tags/Common/Models/ModelMesh.cs.html#29"><b>29</b>return this.Equals(obj as <i>ModelMesh</i>);</a>
+<a href="../Tags/Common/Models/ModelMesh.cs.html#32"><b>32</b>public bool Equals(<i>ModelMesh</i> other)</a>
+</div>
+<div class="rF"><div class="rN">Tags\Common\Models\ModelResouceContainerProcessor.cs (2)</div>
+<a href="../Tags/Common/Models/ModelResouceContainerProcessor.cs.html#27"><b>27</b>public static <i>ModelMesh</i>[] ProcessContainer(IModelResourceContainer container, ModelShaderReference[] shaders, string note = null)</a>
+<a href="../Tags/Common/Models/ModelResouceContainerProcessor.cs.html#158"><b>158</b>var meshes = new List&lt;<i>ModelMesh</i>&gt;(parts.Count);</a>
+</div>
+<div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
+<a href="../Tags/RenderModelTag.cs.html#94"><b>94</b><i>var</i> mesh = meshes[0];</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html><head><title>central_platform_phantom</title><link rel="stylesheet" href="../../styles.css"/><script src="../../scripts.js"></script></head><body onload="ro();">
+<div class="rH">1 write to central_platform_phantom</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05b_deltatowers.Data.cs (1)</div>
+<a href="../05b_deltatowers.Data.cs.html#905"><b>905</b><i>central_platform_phantom</i> = new Squad_central_platform_phantom(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">17 references to central_platform_phantom</div><div class="rA">Halo2Vista (17)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05b_deltatowers.cs (17)</div>
+<a href="../05b_deltatowers.cs.html#1955"><b>1955</b>Engine.object_set_phantom_power(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), true);</a>
+<a href="../05b_deltatowers.cs.html#1957"><b>1957</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), &quot;phantom_p_a01&quot;);</a>
+<a href="../05b_deltatowers.cs.html#1959"><b>1959</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), &quot;phantom_p_a02&quot;);</a>
+<a href="../05b_deltatowers.cs.html#1961"><b>1961</b>Engine.object_set_phantom_power(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), false);</a>
+<a href="../05b_deltatowers.cs.html#1977"><b>1977</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>central_platform_phantom</i>.Squad) &lt; 2);</a>
+<a href="../05b_deltatowers.cs.html#1985"><b>1985</b>Engine.ai_erase(<i>central_platform_phantom</i>.Squad);</a>
+<a href="../05b_deltatowers.cs.html#2123"><b>2123</b>Engine.ai_place(<i>central_platform_phantom</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#2124"><b>2124</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), &quot;phantom_p_a&quot;, Engine.ai_actors(central_platform_hunters.Squad));</a>
+<a href="../05b_deltatowers.cs.html#2125"><b>2125</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), true);</a>
+<a href="../05b_deltatowers.cs.html#2126"><b>2126</b>Engine.cs_run_command_script(<i>central_platform_phantom</i>.pilot, central_platform_dropship);</a>
+<a href="../05b_deltatowers.cs.html#2128"><b>2128</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot));</a>
+<a href="../05b_deltatowers.cs.html#2198"><b>2198</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(central_platform_hunters.Squad) &gt; 0 || (short)Engine.ai_living_count(<i>central_platform_phantom</i>.Squad) &lt; 1);</a>
+<a href="../05b_deltatowers.cs.html#2247"><b>2247</b>Engine.ai_place(<i>central_platform_phantom</i>.Squad, 1);</a>
+<a href="../05b_deltatowers.cs.html#2248"><b>2248</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), &quot;phantom_p_a&quot;, Engine.ai_actors(central_platform_hunters.Squad));</a>
+<a href="../05b_deltatowers.cs.html#2249"><b>2249</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), true);</a>
+<a href="../05b_deltatowers.cs.html#2250"><b>2250</b>Engine.cs_run_command_script(<i>central_platform_phantom</i>.pilot, central_platform_dropship);</a>
+<a href="../05b_deltatowers.cs.html#2252"><b>2252</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot));</a>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,4 @@
+Halo2MCC
+Halo2Vista
+OpenH2.Core
+OpenH2.Foundation
