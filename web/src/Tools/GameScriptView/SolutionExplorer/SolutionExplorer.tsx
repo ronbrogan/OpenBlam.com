@@ -52,7 +52,7 @@ export class SolutionExplorer extends React.Component<RouteComponentProps<ChildP
   }
 
   async componentDidMount() {
-    let slnExpHtml = await (await fetch("/game-scripts/index/solutionexplorer.html")).text();
+    let slnExpHtml = await (await fetch("/game-scripts/index/SolutionExplorer.html")).text();
 
     this.contentReady = true;
     this.setState({ slnExpHtml: slnExpHtml });
@@ -106,17 +106,6 @@ export class SolutionExplorer extends React.Component<RouteComponentProps<ChildP
     url = url.slice(0, url.length - 5);
     url = unescape(url);
     return url;
-  }
-
-  getAssemblyFromExplorerFile(a: any) {
-    while (a) {
-      a = a.parentElement;
-      if (a && a.getAttribute("data-assembly")) {
-        return a.getAttribute("data-assembly");
-      }
-    }
-
-    return null;
   }
 
   makeFoldersCollapsible(folderIcon: any, openFolderIcon: any, pathToIcons: any, initializeHandler: any) {
