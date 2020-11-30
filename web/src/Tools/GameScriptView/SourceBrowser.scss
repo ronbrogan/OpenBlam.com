@@ -12,8 +12,7 @@
   }
 
   pre {
-    font-family: Consolas, 'Courier New', 'Andale Mono', 'Lucida Console',
-      monospace;
+    font-family: Consolas, 'Courier New', 'Andale Mono', 'Lucida Console', monospace;
     font-size: 12pt;
     line-height: 125%;
     tab-size: 4;
@@ -165,8 +164,7 @@
   .rL,
   a.rL,
   .referenceLine {
-    font-family: Consolas, 'Courier New', 'Andale Mono', 'Lucida Console',
-      monospace;
+    font-family: Consolas, 'Courier New', 'Andale Mono', 'Lucida Console', monospace;
     font-size: small;
     white-space: nowrap;
     display: block;
@@ -236,7 +234,6 @@
   .namespaceExplorerBody,
   .solutionExplorerBody {
     cursor: default;
-    /*font-size: 12px;*/
   }
 
   .reference {
@@ -332,8 +329,8 @@
   }
 
   .cs {
-    cursor: pointer;
     white-space: nowrap;
+    cursor: pointer;
     display: block;
     padding-left: 32px;
     margin-left: 21px;
@@ -491,6 +488,156 @@
     color: white;
   }
 
+  h1 {
+    background: linear-gradient(to right, #789 0%, #012 80%, #000 100%);
+  }
+
+  pre a:focus {
+    color: inherit;
+    background-color: #255;
+  }
+
+  pre b {
+    color: #569cd6;
+  }
+
+  a:link {
+    color: inherit;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  a:hover {
+    color: inherit;
+  }
+
+  a:active {
+    color: inherit;
+  }
+
+  table.ex {
+    border-color: #333;
+  }
+
+  thead td.ex {
+    background: linear-gradient(to right, #444 0%, #111 100%);
+  }
+
+  tr td.ex {
+    border-color: #333;
+  }
+
+  .note {
+    background-color: #443;
+    border-color: #665;
+  }
+
+  .resultGroupHeader {
+    background-color: #333;
+  }
+
+  .resultGroupHeader:hover {
+    background-color: #555;
+  }
+
+  .rA {
+    background-color: #123;
+  }
+
+  .rA:hover {
+    background-color: #123;
+  }
+
+  .resultGroupProjectPath {
+    color: silver;
+  }
+
+  .rL:hover,
+  .referenceLine:hover {
+    background-color: #333;
+  }
+
+  a b {
+    color: #2b91af;
+  }
+
+  a i {
+    background-color: #553;
+  }
+
+  .rO,
+  .referenceOccurrence {
+    background-color: #aa0;
+  }
+
+  .rN,
+  .resultGroupFileName {
+    background-color: #222;
+    color: gray;
+  }
+
+  .resultItem {
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+  }
+
+  .resultItem:hover {
+    background-color: #222;
+  }
+
+  .referenceDisabled {
+    color: lightgray;
+  }
+
+  .typeDeclarationNode:focus,
+  .tDN:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .cs:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .vb:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .csproj:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .vbproj:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .xaml:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .xml:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .resx:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
+  .ts:focus {
+    background-color: #3399ff;
+    color: white;
+  }
+
   .selectedFilename {
     background-color: #3399ff;
     color: white;
@@ -507,222 +654,81 @@
     border-left-color: lightgray;
     border-top-color: lightgray;
     border-bottom-color: lightgray;
-    border-left-style: solid;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-left-width: 1px;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    background-color: #eeeeee;
+    background-color: #222;
   }
 
   .currentResult:hover {
-    background-color: #eeeeee;
-  }
-
-  .resultLine {
+    background-color: #222;
   }
 
   .resultKind {
-    display: inline;
-    color: blue;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .resultName {
-    display: inline;
-    margin-left: 0px;
+    color: #569cd6;
   }
 
   .resultDescription {
-    font-size: smaller;
-    color: silver;
-    text-decoration: none;
+    color: #555;
   }
 
   .rH {
-    margin-right: 0px;
-    padding: 8px;
-    background-color: #68217a;
+    background-color: #39487d;
     color: white;
-  }
-
-  .cB {
-  }
-
-  .cz {
-    margin-bottom: 66px;
-  }
-
-  .tb {
-    border: 0;
   }
 
   #ln,
   #glyph {
-    margin-left: 16px;
-    margin-right: 24px;
-    margin-top: 0;
     color: #2b91af;
-    text-align: right;
-    vertical-align: top;
-  }
-
-  #code {
-    margin: 0;
-    vertical-align: top;
-    text-align: left;
   }
 
   .dH {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    background-color: aliceblue;
-    padding: 8px;
+    background: linear-gradient(to right, #232 0%, #000 100%);
     color: gray;
-    height: 50px;
     opacity: 0.85;
   }
 
   .headerBody {
-    background-color: #68217a;
-    margin: 0px;
-    padding: 0px;
-    border-width: 0px;
-  }
-
-  #dotnetLogo {
-    margin-top: 10px;
-    margin-bottom: 6px;
-    margin-left: 10px;
-    margin-right: 0px;
-    padding: 0px;
-    border-width: 0px;
-    vertical-align: top;
-    display: inline-block;
+    background: linear-gradient(to right, #789 0%, #012 80%, #000 100%);
   }
 
   #search-box {
-    font-size: 16pt;
-    width: 405px;
-    border-color: lightgray;
-    border-width: 1px;
-    border-style: solid;
-    background: url('./icons/searchmagnifyingglass.png');
-    background-repeat: no-repeat;
-    background-position: 8px 10px;
-    padding-left: 32px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    margin-left: 8px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 0px;
-    vertical-align: top;
-    /*border-style: none;
-    background-color: transparent;
-    width: 100%;*/
+    background: black;
+    border-color: #555;
   }
 
   #logoText {
-    background-repeat: no-repeat;
-    background-position: 0px 22px;
-    background-clip: border-box;
     color: white;
-    font-size: 20px;
-    margin-left: 16px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding-top: 14px;
-    padding-bottom: 2px;
-    padding-left: 95px;
-    padding-right: 0px;
-    vertical-align: top;
-    display: inline-block;
   }
 
   #currentVersion {
-    color: #e0e0e0;
-    margin-top: 19px;
-    margin-left: 15px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
-    vertical-align: top;
-    display: inline-block;
-  }
-
-  #headerMenu {
-    float: right;
-    top: 0px;
-    right: 10px;
-    padding: 18px;
+    color: #222;
   }
 
   #downloadButton {
-    text-align: center;
     background-color: #68217a;
     color: white;
-    font-size: 16pt;
-    padding: 40px;
-    margin: 60px;
   }
 
   #feedbackButtonLink {
     color: white;
-    margin: 8px;
-  }
-
-  #feedbackButtonLink:hover {
-    text-decoration: underline;
   }
 
   #downloadButtonLink {
     color: white;
-    margin: 8px;
-  }
-
-  #downloadButtonLink:hover {
-    text-decoration: underline;
   }
 
   #licenseButtonLink {
     color: white;
-    margin: 8px;
-  }
-
-  #licenseButtonLink:hover {
-    text-decoration: underline;
   }
 
   #helpButtonLink {
     color: white;
-    margin: 8px;
-  }
-
-  #helpButtonLink:hover {
-    text-decoration: underline;
   }
 
   .result {
-    margin: 16px;
-    padding: 4px;
     background-color: lightgoldenrodyellow;
   }
 
-  .r,
-  .rd {
-    cursor: pointer;
-  }
-
   .r {
-    border-width: 1px;
-    border-color: ivory;
-    border-style: solid;
+    border-color: transparent;
   }
 
   .unknownClassification {
@@ -731,23 +737,18 @@
 
   .k,
   a.k {
-    color: blue;
-  }
-
-  a.k,
-  a.k:hover {
-    text-decoration: underline;
+    color: #569cd6;
   }
 
   .t,
   a.t,
   .l,
   .lineNumber {
-    color: #2b91af;
+    color: #4ec9b0;
   }
 
   .c {
-    color: #008000;
+    color: #57a64a;
   }
 
   .x,
@@ -756,23 +757,23 @@
   }
 
   .s {
-    color: #a31515;
+    color: #8c6a5c;
   }
 
   .xd {
-    color: blue;
+    color: #808080;
   }
 
   .xn {
-    color: #a31515;
+    color: #569cd6;
   }
 
   .xan {
-    color: red;
+    color: #92caf4;
   }
 
   .xav {
-    color: blue;
+    color: #c8c8c8;
   }
 
   .xer {
@@ -826,8 +827,7 @@
 
   a.s,
   a.s:hover {
-    color: #a31515;
-    text-decoration: underline;
+    color: #8c6a5c;
   }
 
   p a,
@@ -850,761 +850,100 @@
   .blueLink:hover,
   .blueLink:focus,
   .blueLink:active {
-    text-decoration: underline;
-    color: blue;
+    color: deepskyblue;
   }
 
   p a:visited,
   ul a:visited,
   .blueLink:visited {
-    color: blue;
+    color: deepskyblue;
   }
 
   .partialTypeLink {
-    color: blue;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-left: 32px;
-    text-decoration: none;
+    color: deepskyblue;
   }
 
   .partialTypeLink:hover {
-    background-color: #eeeeee;
-    text-decoration: none;
+    background-color: #333;
   }
 
   .documentOutlineButton {
-    position: fixed;
-    right: 0;
-    top: 0;
-    margin: 0px;
-    padding: 8px;
-    cursor: pointer;
-    border-width: 1px;
-    border-style: solid;
     border-color: transparent;
-    background-color: #ffffff;
+    background-color: #000;
     opacity: 0.9;
   }
 
   .documentOutlineButton:hover {
     border-color: #eeccc0;
-    background-color: #fff5ec;
+    background-color: #000;
   }
 
   .projectExplorerButton {
-    position: fixed;
-    right: 0;
-    top: 50px;
-    margin: 0px;
-    padding: 8px;
-    cursor: pointer;
-    border-width: 1px;
-    border-style: solid;
     border-color: transparent;
-    background-color: #ffffff;
+    background-color: #000;
     opacity: 0.9;
   }
 
   .projectExplorerButton:hover {
     border-color: #90e6d4;
-    background-color: #dcfff8;
+    background-color: #000;
   }
 
   .namespaceExplorerButton {
-    position: fixed;
-    right: 0;
-    top: 100px;
-    margin: 0px;
-    padding: 8px;
-    cursor: pointer;
-    border-width: 1px;
-    border-style: solid;
     border-color: transparent;
-    background-color: #ffffff;
+    background-color: #000;
     opacity: 0.9;
   }
 
   .namespaceExplorerButton:hover {
     border-color: #e0e0e0;
-    background-color: #f0f0f0;
+    background-color: #000;
   }
 
   .documentOutlineDiv:hover {
-    background-color: #f6f6f6;
-  }
-
-  #root {
-    padding: 16px;
+    background-color: #345;
   }
 
   .tabChannel {
-    margin: 0px;
-    padding: 0px;
-    background-color: #68217a;
+    background-color: #102;
   }
 
   .activeTab {
-    background-color: white;
-    padding-left: 16px;
-    padding-top: 6px;
-    padding-right: 16px;
-    padding-bottom: 6px;
-    display: inline-block;
+    background-color: #203;
+    color: white;
   }
 
   .inactiveTab {
-    background-color: #68217a;
-    color: white;
-    padding-left: 16px;
-    padding-top: 6px;
-    padding-right: 16px;
-    padding-bottom: 6px;
-    display: inline-block;
+    background-color: #100020;
+    color: #777;
   }
 
   .inactiveTab:link,
   .inactiveTab:visited,
   .inactiveTab:hover,
   .inactiveTab:active {
-    color: white;
-  }
-
-  .imagePlusMinus {
-    vertical-align: top;
-    margin-left: 8px;
-    margin-top: 6px;
-    margin-right: 14px;
-    margin-bottom: -1px;
-  }
-
-  .imageFolder {
-    margin-left: 0px;
-    margin-top: 5px;
-    margin-right: 6px;
-    margin-bottom: -2px;
-  }
-
-  #sourcesList {
-    margin: 32px;
+    color: #777;
   }
 
   #sourcesList li {
     background-color: steelblue;
     color: white;
-    padding: 5px 10px 5px 10px;
-    margin: 4px;
-    display: inline-block;
-    list-style-type: none;
-    font-weight: 100;
-  }
-
-  .externalIndexLinks {
-    margin: 32px;
   }
 
   .externalIndexLinks li {
     background-color: purple;
     color: white;
-    padding: 10px 20px;
-    margin: 4px;
-    display: inline-block;
-    list-style-type: none;
   }
 
   .externalIndexLinks li a {
     color: white;
   }
 
-  .msbuildlink {
-  }
-
   .msbuildlink:hover {
-    background-color: whitesmoke;
+    background-color: #222;
   }
 
   .projectInfo {
-    color: lightgray;
-  }
-
-  @media only screen and (max-width: 462px) {
-    #dotnetLogo {
-      display: none;
-    }
-
-    #searchBoxAndImages {
-      padding-right: 58px;
-      box-sizing: border-box;
-      display: block;
-    }
-
-    #search-box {
-      width: 100%;
-    }
-
-    #logoText {
-      display: none;
-    }
-
-    #currentVersion {
-      display: none;
-    }
-
-    #headerMenu {
-      display: none;
-    }
-  }
-
-  @media only screen and (min-width: 463px) and (max-width: 869px) {
-    #dotnetLogo {
-      display: none;
-    }
-
-    #searchBoxAndImages {
-    }
-
-    #search-box {
-      width: 405px;
-    }
-
-    #logoText {
-      display: none;
-    }
-
-    #currentVersion {
-      display: none;
-    }
-
-    #headerMenu {
-      display: inline-block;
-    }
-  }
-
-  @media only screen and (min-width: 870px) and (max-width: 1280px) {
-    #dotnetLogo {
-      display: none;
-    }
-
-    #searchBoxAndImages {
-    }
-
-    #search-box {
-      width: 405px;
-    }
-
-    #logoText {
-      display: inline-block;
-    }
-
-    #currentVersion {
-      display: none;
-    }
-
-    #headerMenu {
-      display: inline-block;
-    }
-  }
-
-  @media only screen and (min-width: 1281px) {
-    #dotnetLogo {
-      display: inline-block;
-    }
-
-    #searchBoxAndImages {
-    }
-
-    #search-box {
-      width: 405px;
-    }
-
-    #logoText {
-      display: inline-block;
-    }
-
-    #currentVersion {
-      display: inline-block;
-    }
-
-    #headerMenu {
-      display: inline-block;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    * {
-      background: transparent;
-      color: #aaa;
-    }
-
-    html {
-      background: black;
-    }
-
-    body {
-      background: black;
-    }
-
-    h1 {
-      background: linear-gradient(to right, #789 0%, #012 80%, #000 100%);
-      /*color: white;*/
-    }
-
-    pre a:focus {
-      color: inherit;
-      background-color: #255;
-    }
-
-    pre b {
-      color: #569cd6;
-    }
-
-    a:link {
-      color: inherit;
-    }
-
-    a:visited {
-      color: inherit;
-    }
-
-    a:hover {
-      color: inherit;
-    }
-
-    a:active {
-      color: inherit;
-    }
-
-    table.ex {
-      border-color: #333;
-    }
-
-    thead td.ex {
-      background: linear-gradient(to right, #444 0%, #111 100%);
-    }
-
-    tr td.ex {
-      border-color: #333;
-    }
-
-    .note {
-      background-color: #443;
-      border-color: #665;
-    }
-
-    .resultGroupHeader {
-      background-color: #333;
-    }
-
-    .resultGroupHeader:hover {
-      background-color: #555;
-    }
-
-    .rA {
-      background-color: #123;
-    }
-
-    .rA:hover {
-      background-color: #123;
-    }
-
-    .resultGroupProjectPath {
-      color: silver;
-    }
-
-    .rL:hover,
-    .referenceLine:hover {
-      background-color: #333;
-    }
-
-    a b {
-      color: #2b91af;
-    }
-
-    a i {
-      background-color: #553;
-    }
-
-    .rO,
-    .referenceOccurrence {
-      background-color: #aa0;
-    }
-
-    .rN,
-    .resultGroupFileName {
-      background-color: #222;
-      color: gray;
-    }
-
-    .resultItem {
-      border-left-color: transparent;
-      border-top-color: transparent;
-      border-bottom-color: transparent;
-    }
-
-    .resultItem:hover {
-      background-color: #222;
-    }
-
-    .referenceDisabled {
-      color: lightgray;
-    }
-
-    .typeDeclarationNode:focus,
-    .tDN:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .cs:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .vb:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .csproj:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .vbproj:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .xaml:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .xml:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .resx:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .ts:focus {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .selectedFilename {
-      background-color: #3399ff;
-      color: white;
-    }
-
-    .selectedFilename:link,
-    .selectedFilename:visited,
-    .selectedFilename:hover,
-    .selectedFilename:active {
-      color: white;
-    }
-
-    .currentResult {
-      border-left-color: lightgray;
-      border-top-color: lightgray;
-      border-bottom-color: lightgray;
-      background-color: #222;
-    }
-
-    .currentResult:hover {
-      background-color: #222;
-    }
-
-    .resultKind {
-      color: #569cd6;
-    }
-
-    .resultDescription {
-      color: #555;
-    }
-
-    .rH {
-      background-color: #39487d;
-      color: white;
-    }
-
-    #ln,
-    #glyph {
-      color: #2b91af;
-    }
-
-    .dH {
-      background: linear-gradient(to right, #232 0%, #000 100%);
-      color: gray;
-      opacity: 0.85;
-    }
-
-    .headerBody {
-      background: linear-gradient(to right, #789 0%, #012 80%, #000 100%);
-    }
-
-    #search-box {
-      background: black;
-      border-color: #555;
-    }
-
-    #logoText {
-      color: white;
-    }
-
-    #currentVersion {
-      color: #222;
-    }
-
-    #downloadButton {
-      background-color: #68217a;
-      color: white;
-    }
-
-    #feedbackButtonLink {
-      color: white;
-    }
-
-    #downloadButtonLink {
-      color: white;
-    }
-
-    #licenseButtonLink {
-      color: white;
-    }
-
-    #helpButtonLink {
-      color: white;
-    }
-
-    .result {
-      background-color: lightgoldenrodyellow;
-    }
-
-    .r {
-      border-color: transparent;
-    }
-
-    .unknownClassification {
-      color: hotpink;
-    }
-
-    .k,
-    a.k {
-      color: #569cd6;
-    }
-
-    .t,
-    a.t,
-    .l,
-    .lineNumber {
-      color: #4ec9b0;
-    }
-
-    .c {
-      color: #57a64a;
-    }
-
-    .x,
-    .e {
-      color: #808080;
-    }
-
-    .s {
-      color: #8c6a5c;
-    }
-
-    .xd {
-      color: #808080;
-    }
-
-    .xn {
-      color: #569cd6;
-    }
-
-    .xan {
-      color: #92caf4;
-    }
-
-    .xav {
-      color: #c8c8c8;
-    }
-
-    .xer {
-      color: red;
-    }
-
-    .xcs {
-      color: #808080;
-    }
-
-    .xpi {
-      color: #808080;
-    }
-
-    .xld {
-      color: #6464b9;
-    }
-
-    .xln {
-      color: #844646;
-    }
-
-    .xlan {
-      color: #b96464;
-    }
-
-    .xlav {
-      color: #6464b9;
-    }
-
-    .xlaq {
-      color: #555555;
-    }
-
-    .xler {
-      color: #b96464;
-    }
-
-    .xlcs {
-      color: #c0c0c0;
-    }
-
-    .xlpi {
-      color: #c0c0c0;
-    }
-
-    .xlee {
-      color: #b96464;
-      background-color: #fffebf;
-    }
-
-    a.s,
-    a.s:hover {
-      color: #8c6a5c;
-    }
-
-    p a,
-    p a:link,
-    p a:hover,
-    p a:focus,
-    p a:active,
-    ul a,
-    ul a:link,
-    ul a:hover,
-    ul a:focus,
-    ul a:active,
-    ol a,
-    ol a:link,
-    ol a:hover,
-    ol a:focus,
-    ol a:active,
-    .blueLink,
-    .blueLink:link,
-    .blueLink:hover,
-    .blueLink:focus,
-    .blueLink:active {
-      color: deepskyblue;
-    }
-
-    p a:visited,
-    ul a:visited,
-    .blueLink:visited {
-      color: deepskyblue;
-    }
-
-    .partialTypeLink {
-      color: deepskyblue;
-    }
-
-    .partialTypeLink:hover {
-      background-color: #333;
-    }
-
-    .documentOutlineButton {
-      border-color: transparent;
-      background-color: #000;
-      opacity: 0.9;
-    }
-
-    .documentOutlineButton:hover {
-      border-color: #eeccc0;
-      background-color: #000;
-    }
-
-    .projectExplorerButton {
-      border-color: transparent;
-      background-color: #000;
-      opacity: 0.9;
-    }
-
-    .projectExplorerButton:hover {
-      border-color: #90e6d4;
-      background-color: #000;
-    }
-
-    .namespaceExplorerButton {
-      border-color: transparent;
-      background-color: #000;
-      opacity: 0.9;
-    }
-
-    .namespaceExplorerButton:hover {
-      border-color: #e0e0e0;
-      background-color: #000;
-    }
-
-    .documentOutlineDiv:hover {
-      background-color: #345;
-    }
-
-    .tabChannel {
-      background-color: #102;
-    }
-
-    .activeTab {
-      background-color: #203;
-      color: white;
-    }
-
-    .inactiveTab {
-      background-color: #100020;
-      color: #777;
-    }
-
-    .inactiveTab:link,
-    .inactiveTab:visited,
-    .inactiveTab:hover,
-    .inactiveTab:active {
-      color: #777;
-    }
-
-    #sourcesList li {
-      background-color: steelblue;
-      color: white;
-    }
-
-    .externalIndexLinks li {
-      background-color: purple;
-      color: white;
-    }
-
-    .externalIndexLinks li a {
-      color: white;
-    }
-
-    .msbuildlink {
-    }
-
-    .msbuildlink:hover {
-      background-color: #222;
-    }
-
-    .projectInfo {
-      color: #555;
-    }
+    color: #555;
   }
 }

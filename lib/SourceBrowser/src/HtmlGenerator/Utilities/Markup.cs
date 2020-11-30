@@ -105,21 +105,18 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
             }
         }
 
-        private const string referencesFileHeader = @"<!DOCTYPE html>
-<html><head><title>{0}</title><link rel=""stylesheet"" href=""../../styles.css""/><script src=""../../scripts.js""></script></head><body onload=""ro();"">";
+        private const string referencesFileHeader = @"<div class=""referenceBody"">";
 
         public static void WriteReferencesFileHeader(StreamWriter writer, string title)
         {
-            writer.WriteLine(referencesFileHeader, title);
+            writer.WriteLine(referencesFileHeader);
         }
 
         private const string zeroFileName = "0000000000.html";
 
         public static void WriteReferencesNotFoundFile(string folder)
         {
-            const string html = @"<!DOCTYPE html>
-<html><head><link rel=""stylesheet"" href=""styles.css""/></head>
-<body><div class=""rH"">No references found</div></body></html>";
+            const string html = @"<div class=""rH"">No references found</div>";
             string filePath = Path.Combine(folder, zeroFileName);
             if (!File.Exists(filePath))
             {

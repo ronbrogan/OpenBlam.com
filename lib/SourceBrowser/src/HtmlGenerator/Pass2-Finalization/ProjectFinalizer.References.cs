@@ -171,7 +171,7 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                     }
                 }
 
-                Write(writer, "</body></html>");
+                Write(writer, "</div>");
             }
 
             File.Delete(rawReferencesFile);

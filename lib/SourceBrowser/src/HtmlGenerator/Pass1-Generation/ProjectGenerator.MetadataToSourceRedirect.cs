@@ -28,10 +28,11 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
 
             using (var writer = new StreamWriter(fileName, append: true, encoding: Encoding.UTF8))
             {
-                Markup.WriteMetadataToSourceRedirectPrefix(writer);
+                
 
                 if (prefix?.Length == 0)
                 {
+                    Markup.WriteMetadataToSourceRedirectPrefix(writer);
                     writer.WriteLine("redirectToNextLevelRedirectFile();");
 
                     var maps = SplitByFirstLetter(symbolIDToListOfLocationsMap);
@@ -43,6 +44,7 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                             map.Value,
                             map.Key.ToString());
                     }
+                    Markup.WriteMetadataToSourceRedirectSuffix(writer);
                 }
                 else
                 {
@@ -53,7 +55,7 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                         symbolIDToListOfLocationsMap);
                 }
 
-                Markup.WriteMetadataToSourceRedirectSuffix(writer);
+                
             }
         }
 
@@ -88,6 +90,8 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
             var files = ExtractFilePaths(symbolIDToListOfLocationsMap);
             var fileIndexLookup = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
 
+            writer.WriteLine("extract(){");
+
             writer.WriteLine("var f = [");
             for (int i = 0; i < files.Length; i++)
             {
@@ -120,7 +124,8 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                 }
             }
 
-            writer.WriteLine("redirect(m, {0});", SignificantIdBytes);
+            writer.WriteLine("return {map: m, bytes: {0} };", SignificantIdBytes);
+            writer.WriteLine("}");
         }
 
         private static string GetShortenedKey(string key)
