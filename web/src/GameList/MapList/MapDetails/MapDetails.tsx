@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, RouteComponentProps, withRouter } from 'react-router-dom';
+import { Link, Route, RouteComponentProps, withRouter } from 'react-router-dom';
 import { MapSummary } from '../MapData';
 import './MapDetails.scss';
 
@@ -39,10 +39,25 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
     getMainSection() {
         return (
             <section className="main">
-                <h1>{this.state.mapData.Name}</h1>
+                <h1 className="slim">{this.state.mapData.Name}</h1>
                 <h4>{this.state.mapData.Description}</h4>
+                {this.getMetadata()}
+                {this.getContents()}
+                {this.getAbout()}
             </section>
         );
+    }
+
+    getContents() {
+        return (
+            <nav className="tableOfContents">
+                <ol>
+                    <li><Link to="#aboutSection">About</Link></li>
+                    <li><Link to="#dialogSection">Dialog</Link></li>
+                    <li><Link to="#triviaSection">Trivia</Link></li>
+                </ol>
+            </nav>
+        )
     }
 
     getMetadata() {
@@ -57,14 +72,27 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
         );
     }
 
-    getWeapons() {
+    getAbout() {
         return (
-            <section className="weaponList">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fusce ut placerat orci nulla pellentesque dignissim. Eros in cursus turpis massa tincidunt dui ut ornare. Nullam non nisi est sit. Cras semper auctor neque vitae tempus quam pellentesque nec nam. Diam sit amet nisl suscipit adipiscing bibendum est ultricies integer. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Imperdiet massa tincidunt nunc pulvinar sapien et. Adipiscing commodo elit at imperdiet dui. Mauris nunc congue nisi vitae suscipit tellus mauris a diam. Metus vulputate eu scelerisque felis imperdiet. Mi in nulla posuere sollicitudin aliquam ultrices sagittis.
+            <section>
+                <h1 id="aboutSection">About</h1>
+            </section>
+        );
+    }
 
-Iaculis at erat pellentesque adipiscing. At in tellus integer feugiat scelerisque varius morbi enim nunc. Proin fermentum leo vel orci porta. In egestas erat imperdiet sed euismod nisi porta lorem. Semper eget duis at tellus. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Penatibus et magnis dis parturient montes nascetur ridiculus mus mauris. Ut diam quam nulla porttitor massa id neque aliquam. Tortor posuere ac ut consequat semper viverra nam libero. Faucibus interdum posuere lorem ipsum dolor sit. Nascetur ridiculus mus mauris vitae.
+    getDialog() {
+        return (
+            <section>
+                <h1 id="dialogSection">Dialog</h1>
+            </section>
+        );
+    }
 
-Nullam vehicula ipsum a arcu cursus vitae congue. Et netus et malesuada fames. Ornare arcu odio ut sem nulla pharetra diam sit. Eget duis at tellus at urna condimentum mattis. Sit amet porttitor eget dolor morbi non arcu risus. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Integer feugiat scelerisque varius morbi enim. Vestibulum sed arcu non odio euismod. In aliquam sem fringilla ut morbi tincidunt augue. Urna nec tincidunt praesent semper feugiat nibh. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Ultrices dui sapien eget mi proin sed libero enim sed. Donec adipiscing tristique risus nec. Ac tortor vitae purus faucibus ornare suspendisse sed nisi. Egestas pretium aenean pharetra magna ac. Morbi enim nunc faucibus a pellentesque sit amet porttitor eget. Nam aliquam sem et tortor consequat id porta nibh venenatis. Fermentum iaculis eu non diam phasellus vestibulum lorem. Pellentesque eu tincidunt tortor aliquam nulla facilisi.
+    getTrivia() {
+        return (
+            <section>
+                <h1 id="triviaSection">Trivia</h1>
+                <em>nothing to see here</em>
             </section>
         );
     }
@@ -76,8 +104,8 @@ Nullam vehicula ipsum a arcu cursus vitae congue. Et netus et malesuada fames. O
         return (
             <div className="mapDetails">
                 {this.getMainSection()}
-                {this.getMetadata()}
-                {this.getWeapons()}
+                {this.getDialog()}
+                {this.getTrivia()}
             </div>
         );
     }

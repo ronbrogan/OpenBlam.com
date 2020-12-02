@@ -5,19 +5,22 @@
 .main {
     float: left;
     width: 100%;
+}
 
-    h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-        border-bottom: 1px solid #333;
-    }
+h1 {
+    border-bottom: 2px solid #7c7c7c;
+    margin-bottom: 0.25em;
 
-    h4 {
+    &.slim {
         margin-top: 0;
-        margin-bottom: 1em;
-        font-size: 1em;
-        color: #999
     }
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #999
 }
 
 .metadata {
@@ -46,3 +49,19 @@
 .weaponList {
     display: block;
 }
+
+.tableOfContents {
+    border: 1px solid #235689;
+    max-width: 175px;
+    padding: 15px;
+
+    ol {
+        list-style-type: lower-roman;
+        padding-left: 2em;
+    }
+
+    li {
+        display: revert;
+    }
+}
+
