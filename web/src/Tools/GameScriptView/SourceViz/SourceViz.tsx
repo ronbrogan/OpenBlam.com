@@ -27,7 +27,8 @@ export class SourceViz extends React.Component<RouteComponentProps<ChildPaneRout
 
     shouldComponentUpdate(nextProps:  RouteComponentProps<ChildPaneRouteProps>, nextState: SourceVizState) { 
         return !this.done 
-            || this.props.match.params.contentPath !== nextProps.match.params.contentPath;
+            || this.props.match.params.contentPath !== nextProps.match.params.contentPath
+            || this.props.location.hash !== nextProps.location.hash;
      }
 
     async componentDidUpdate(prevProps: RouteComponentProps<ChildPaneRouteProps>) {
@@ -40,16 +41,21 @@ export class SourceViz extends React.Component<RouteComponentProps<ChildPaneRout
             return;
         }
 
-        if(this.props.location.hash != null && this.props.location.hash !== prevProps.location.hash) {
-            const id = this.props.location.hash.replace('#', '');
-            const element = document.getElementById(id);
-            if (element) element.scrollIntoView();
-        }
-
         // If we're here, this is an update after a new contentPath
         if(this.contentReady === false)
         {
             return;
+        }
+
+        if(this.props.location.hash != null) {
+            const id = this.props.location.hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView();
+
+            // If the content path is the same, but the hash changed, we can bail out here, no need to rewrite in that case
+            if(this.props.match.params.contentPath === prevProps.match.params.contentPath
+                && this.props.location.hash !== prevProps.location.hash)
+                return;
         }
 
         // This is after the data is done fetching, we can fixup the DOM and suppress updates

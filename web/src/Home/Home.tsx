@@ -19,9 +19,9 @@ export default class Home extends React.Component {
                 <p>
                     If you'd like to contribute or spot an inaccuracy, this site is on <a href="https://github.com/ronbrogan/OpenBlam">Github</a> - pull requests and issues are welcome.
                 </p>
-                <aside>
+                <em>
                     - Ron
-                </aside>
+                </em>
             </article>
         )
     }
