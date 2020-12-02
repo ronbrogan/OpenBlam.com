@@ -23,7 +23,7 @@
         <b>private readonly</b> <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <a id="05fcd20567cc90fb" href="../R/05fcd20567cc90fb.html" target="n" data-glyph="46,1" class="i field">originalMap</a>;
         <b>private readonly</b> <span class="t t">Stream</span> <a id="aaa0052a93d57425" href="../R/aaa0052a93d57425.html" target="n" data-glyph="46,1" class="i field">mapToPatch</a>;
  
-        <b>private</b> <span class="t t">Dictionary</span>&lt;<span class="t t">Type</span>, <span class="t t">Action</span>&lt;<span class="t t">Stream</span>, <b>int</b>, <span class="t t">JsonElement</span>&gt;&gt; <a id="62288dfd65087662" href="../R/62288dfd65087662.html" target="n" data-glyph="46,1" class="i field">DataWriters</a> = <b>new</b> <span class="t constructor">Dictionary</span>&lt;<span class="t t">Type</span>, <span class="t t">Action</span>&lt;<span class="t t">Stream</span>, <b>int</b>, <span class="t t">JsonElement</span>&gt;&gt;
+        <b>private</b> <span class="t t">Dictionary</span>&lt;<span class="t t">Type</span>, <span class="t t">Action</span>&lt;<span class="t t">Stream</span>, <b>int</b>, <span class="t valueType">JsonElement</span>&gt;&gt; <a id="62288dfd65087662" href="../R/62288dfd65087662.html" target="n" data-glyph="46,1" class="i field">DataWriters</a> = <b>new</b> <span class="t constructor">Dictionary</span>&lt;<span class="t t">Type</span>, <span class="t t">Action</span>&lt;<span class="t t">Stream</span>, <b>int</b>, <span class="t valueType">JsonElement</span>&gt;&gt;
         &lbrace;
             &lbrace; <b>typeof</b>(<b>byte</b>), (<span id="r0 rd" class="r0 r">s</span>,<span id="r1 rd" class="r1 r">o</span>,<span id="r2 rd" class="r2 r">e</span>) =&gt; <span class="r0 r">s</span>.<a href="../Extensions/StreamExtensions.cs.html#47c9203fde8b781d" class="i method">WriteByteAt</a>(<span class="r1 r">o</span>, <span class="r2 r">e</span>.<span class="i method">GetByte</span>()) &rbrace;,
             &lbrace; <b>typeof</b>(<b>short</b>), (<span id="r3 rd" class="r3 r">s</span>,<span id="r4 rd" class="r4 r">o</span>,<span id="r5 rd" class="r5 r">e</span>) =&gt; <span class="r3 r">s</span>.<a href="../Extensions/StreamExtensions.cs.html#c7f6eff901ea1b10" class="i method">WriteInt16At</a>(<span class="r4 r">o</span>, <span class="r5 r">e</span>.<span class="i method">GetInt16</span>()) &rbrace;,
@@ -39,8 +39,8 @@
             <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#aaa0052a93d57425" class="i field">mapToPatch</a> = <span class="r19 r">mapToPatch</span>;
  
             <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#62288dfd65087662" class="i field">DataWriters</a>.<span class="i method">Add</span>(<b>typeof</b>(<a href="../Maps/TagRef.cs.html#f0f089f664ff3920" class="t t">ITagRef</a>), <a href="#2e442c53c03880de" class="i method">WriteTagRef</a>);
-            <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#62288dfd65087662" class="i field">DataWriters</a>.<span class="i method">Add</span>(<b>typeof</b>(<a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a>), <a href="#2e442c53c03880de" class="i method">WriteTagRef</a>);
-            <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#62288dfd65087662" class="i field">DataWriters</a>.<span class="i method">Add</span>(<b>typeof</b>(<a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;&gt;), <a href="#2e442c53c03880de" class="i method">WriteTagRef</a>);
+            <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#62288dfd65087662" class="i field">DataWriters</a>.<span class="i method">Add</span>(<b>typeof</b>(<a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a>), <a href="#2e442c53c03880de" class="i method">WriteTagRef</a>);
+            <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#62288dfd65087662" class="i field">DataWriters</a>.<span class="i method">Add</span>(<b>typeof</b>(<a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;&gt;), <a href="#2e442c53c03880de" class="i method">WriteTagRef</a>);
         &rbrace;
  
         <b>public void</b> <a id="2436be19c98af612" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Apply</a>(<a href="TagPatch.cs.html#593b04a8a9623122" class="t t">TagPatch</a> <span id="r20 rd" class="r20 r">patchSet</span>)
@@ -60,7 +60,7 @@
             &rbrace;
         &rbrace;
  
-        <b>public void</b> <a id="ac9089760d91a241" href="../R/ac9089760d91a241.html" target="n" data-glyph="72,1" class="i method">PatchBinaryData</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t t">TagIndexEntry</a> <span id="r25 rd" class="r25 r">tagInfo</span>, <a href="TagPatch.cs.html#24f076df9de7369f" class="t t">TagBinaryPatch</a> <span id="r26 rd" class="r26 r">bin</span>)
+        <b>public void</b> <a id="ac9089760d91a241" href="../R/ac9089760d91a241.html" target="n" data-glyph="72,1" class="i method">PatchBinaryData</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t valueType">TagIndexEntry</a> <span id="r25 rd" class="r25 r">tagInfo</span>, <a href="TagPatch.cs.html#24f076df9de7369f" class="t t">TagBinaryPatch</a> <span id="r26 rd" class="r26 r">bin</span>)
         &lbrace;
             <b>var</b> <span id="r27 rd" class="r27 r">patchOffset</span> = <span class="r25 r">tagInfo</span>.<a href="../Maps/TagIndexEntry.cs.html#5dbb968bd40df573" class="i property">Offset</a>.<a href="../Offsets/IOffset.cs.html#54e0df3b2009ec91" class="i property">Value</a> + <span class="r26 r">bin</span>.<a href="TagPatch.cs.html#4f4b348a23273257" class="i property">RelativeOffset</a>;
  
@@ -70,7 +70,7 @@
             <a href="#6b466e15cbf40dc3" class="k">this</a>.<a href="#aaa0052a93d57425" class="i field">mapToPatch</a>.<span class="i method">Write</span>(<span class="r26 r">bin</span>.<a href="TagPatch.cs.html#4cc4ae2ba6c47e58" class="i property">Data</a>);
         &rbrace;
  
-        <b>public void</b> <a id="ca43ddeae44e7458" href="../R/ca43ddeae44e7458.html" target="n" data-glyph="72,1" class="i method">PatchProperty</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t t">TagIndexEntry</a> <span id="r28 rd" class="r28 r">tagInfo</span>, <a href="TagPatch.cs.html#8084a458ac95fba1" class="t t">TagPropertyPatch</a> <span id="r29 rd" class="r29 r">patch</span>)
+        <b>public void</b> <a id="ca43ddeae44e7458" href="../R/ca43ddeae44e7458.html" target="n" data-glyph="72,1" class="i method">PatchProperty</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t valueType">TagIndexEntry</a> <span id="r28 rd" class="r28 r">tagInfo</span>, <a href="TagPatch.cs.html#8084a458ac95fba1" class="t t">TagPropertyPatch</a> <span id="r29 rd" class="r29 r">patch</span>)
         &lbrace;
             <a href="#cbedbddd9326295f" class="k">var</a> <span id="r30 rd" class="r30 r">propertyInfo</span> = <a href="#f9926e74478d5b55" class="i method">ResolvePropertyInfo</a>(<span class="r28 r">tagInfo</span>, <span class="r29 r">patch</span>.<a href="TagPatch.cs.html#3bfa874893529a9c" class="i property">PropertySelector</a>);
  
@@ -79,7 +79,7 @@
             <a href="#de94d53c31cf7b49" class="i method">WritePropertyValue</a>(<span class="r28 r">tagInfo</span>, <span class="r30 r">propertyInfo</span>, <span class="r29 r">patch</span>);
         &rbrace;
  
-        <b>private</b> <a href="#cbedbddd9326295f" class="t t">ResolvedTagPropertyInfo</a> <a id="f9926e74478d5b55" href="../R/f9926e74478d5b55.html" target="n" data-glyph="76,1" class="i method">ResolvePropertyInfo</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t t">TagIndexEntry</a> <span id="r31 rd" class="r31 r">tagInfo</span>, <b>string</b> <span id="r32 rd" class="r32 r">propertyPath</span>)
+        <b>private</b> <a href="#cbedbddd9326295f" class="t t">ResolvedTagPropertyInfo</a> <a id="f9926e74478d5b55" href="../R/f9926e74478d5b55.html" target="n" data-glyph="76,1" class="i method">ResolvePropertyInfo</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t valueType">TagIndexEntry</a> <span id="r31 rd" class="r31 r">tagInfo</span>, <b>string</b> <span id="r32 rd" class="r32 r">propertyPath</span>)
         &lbrace;
             <b>var</b> <span id="r33 rd" class="r33 r">topTagType</span> = <a href="../Factories/TagFactory.cs.html#7d10d94f66271cb7" class="t t">TagFactory</a>.<a href="../Factories/TagFactory.cs.html#039b54d1ff953770" class="i method">GetTypeForTag</a>(<span class="r31 r">tagInfo</span>.<a href="../Maps/TagIndexEntry.cs.html#5e3db5c45a2b734d" class="i property">Tag</a>);
  
@@ -98,12 +98,12 @@
                     <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">$&quot;</span><span class="s">Couldn&#39;t find property &#39;</span>&lbrace;<span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#72314fe03a98207b" class="i property">PropertyName</a>&rbrace;<span class="s">&#39; on type &#39;</span>&lbrace;<span class="r36 r">stepType</span>&rbrace;<span class="s">&#39;</span><span class="s">&quot;</span>);
                 &rbrace;
  
-                <b>if</b> (<span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#6d18fa1541c93d4c" class="i property">AccessType</a> == <a href="../Parsing/PropertyAccessorParser.cs.html#64cb16cd19f1035b" class="t t">PropertyAccessorParser</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#ce713cd79b13a484" class="t t">PropertyAccessType</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#007852d972aa1447" class="i field">Normal</a>)
+                <b>if</b> (<span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#6d18fa1541c93d4c" class="i property">AccessType</a> == <a href="../Parsing/PropertyAccessorParser.cs.html#64cb16cd19f1035b" class="t t">PropertyAccessorParser</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#ce713cd79b13a484" class="t valueType">PropertyAccessType</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#007852d972aa1447" class="i field">Normal</a>)
                 &lbrace;
                     <span class="r35 r">offset</span> += <span class="t t">BlamSerializer</span>.<span class="i method">StartsAt</span>(<span class="r36 r">stepType</span>, <span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#72314fe03a98207b" class="i property">PropertyName</a>);
                     <span class="r36 r">stepType</span> = <span class="r38 r">prop</span>.<span class="i property">PropertyType</span>;
                 &rbrace;
-                <b>else</b> <b>if</b>(<span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#6d18fa1541c93d4c" class="i property">AccessType</a> == <a href="../Parsing/PropertyAccessorParser.cs.html#64cb16cd19f1035b" class="t t">PropertyAccessorParser</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#ce713cd79b13a484" class="t t">PropertyAccessType</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#b8774cff3d5a5ac7" class="i field">ElementAccess</a>)
+                <b>else</b> <b>if</b>(<span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#6d18fa1541c93d4c" class="i property">AccessType</a> == <a href="../Parsing/PropertyAccessorParser.cs.html#64cb16cd19f1035b" class="t t">PropertyAccessorParser</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#ce713cd79b13a484" class="t valueType">PropertyAccessType</a>.<a href="../Parsing/PropertyAccessorParser.cs.html#b8774cff3d5a5ac7" class="i field">ElementAccess</a>)
                 &lbrace;
                     <b>if</b>(<span class="r38 r">prop</span>.<span class="i property">PropertyType</span>.<span class="i property">IsArray</span> == <b>false</b> || <span class="r37 r">step</span>.<a href="../Parsing/PropertyAccessorParser.cs.html#1f462b4df1e295f6" class="i property">ElementArgument</a> <b>is not int</b>)
                     &lbrace;
@@ -143,7 +143,7 @@
             &rbrace;;
         &rbrace;
  
-        <b>private void</b> <a id="de94d53c31cf7b49" href="../R/de94d53c31cf7b49.html" target="n" data-glyph="76,1" class="i method">WritePropertyValue</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t t">TagIndexEntry</a> <span id="r43 rd" class="r43 r">tagInfo</span>, <a href="#cbedbddd9326295f" class="t t">ResolvedTagPropertyInfo</a> <span id="r44 rd" class="r44 r">info</span>, <a href="TagPatch.cs.html#8084a458ac95fba1" class="t t">TagPropertyPatch</a> <span id="r45 rd" class="r45 r">patch</span>)
+        <b>private void</b> <a id="de94d53c31cf7b49" href="../R/de94d53c31cf7b49.html" target="n" data-glyph="76,1" class="i method">WritePropertyValue</a>(<a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t valueType">TagIndexEntry</a> <span id="r43 rd" class="r43 r">tagInfo</span>, <a href="#cbedbddd9326295f" class="t t">ResolvedTagPropertyInfo</a> <span id="r44 rd" class="r44 r">info</span>, <a href="TagPatch.cs.html#8084a458ac95fba1" class="t t">TagPropertyPatch</a> <span id="r45 rd" class="r45 r">patch</span>)
         &lbrace;
             <b>if</b>(<span class="r44 r">info</span>.<a href="#dd259b2993b0a3d6" class="i property">RelativeOffset</a> &lt; 0)
             &lbrace;
@@ -172,15 +172,15 @@
             &rbrace;
         &rbrace;
  
-        <b>public void</b> <a id="2e442c53c03880de" href="../R/2e442c53c03880de.html" target="n" data-glyph="72,1" class="i method">WriteTagRef</a>(<span class="t t">Stream</span> <span id="r48 rd" class="r48 r">data</span>, <b>int</b> <span id="r49 rd" class="r49 r">offset</span>, <span class="t t">JsonElement</span> <span id="r50 rd" class="r50 r">value</span>)
+        <b>public void</b> <a id="2e442c53c03880de" href="../R/2e442c53c03880de.html" target="n" data-glyph="72,1" class="i method">WriteTagRef</a>(<span class="t t">Stream</span> <span id="r48 rd" class="r48 r">data</span>, <b>int</b> <span id="r49 rd" class="r49 r">offset</span>, <span class="t valueType">JsonElement</span> <span id="r50 rd" class="r50 r">value</span>)
         &lbrace;
             <b>uint</b> <span id="r51 rd" class="r51 r">tagId</span> = <b>uint</b>.<span class="i field">MaxValue</span>;
  
-            <b>if</b>(<span class="r50 r">value</span>.<span class="i property">ValueKind</span> == <span class="t t">JsonValueKind</span>.<span class="i field">Number</span>)
+            <b>if</b>(<span class="r50 r">value</span>.<span class="i property">ValueKind</span> == <span class="t valueType">JsonValueKind</span>.<span class="i field">Number</span>)
             &lbrace;
                 <span class="r51 r">tagId</span> = <span class="r50 r">value</span>.<span class="i method">GetUInt32</span>();
             &rbrace;
-            <b>else</b> <b>if</b>(<span class="r50 r">value</span>.<span class="i property">ValueKind</span> == <span class="t t">JsonValueKind</span>.<span class="i field">String</span>)
+            <b>else</b> <b>if</b>(<span class="r50 r">value</span>.<span class="i property">ValueKind</span> == <span class="t valueType">JsonValueKind</span>.<span class="i field">String</span>)
             &lbrace;
                 <span class="r51 r">tagId</span> = <a href="#bba8910f47ecd5d4" class="i method">GetTagIdFromString</a>(<span class="r50 r">value</span>.<span class="i method">GetString</span>());
             &rbrace;
@@ -197,12 +197,12 @@
             <b>var</b> <span id="r53 rd" class="r53 r">tagName</span> = <span class="r52 r">tagNameWithExtension</span>.<span class="i method">Substring</span>(0, <span class="r52 r">tagNameWithExtension</span>.<span class="i method">IndexOf</span>(<span class="s">&#39;.&#39;</span>));
             <b>var</b> <span id="r54 rd" class="r54 r">tagFourCc</span> = <span class="t t">Path</span>.<span class="i method">GetExtension</span>(<span class="r52 r">tagNameWithExtension</span>).<span class="i method">Substring</span>(1);
  
-            <b>if</b> (<span class="t t">Enum</span>.<span class="i method">TryParse</span>(<b>typeof</b>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>), <span class="r54 r">tagFourCc</span>, <b>out</b> <b>var</b> <span id="r55 rd" class="r55 r">tagType</span>) == <b>false</b>)
+            <b>if</b> (<span class="t t">Enum</span>.<span class="i method">TryParse</span>(<b>typeof</b>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>), <span class="r54 r">tagFourCc</span>, <b>out</b> <b>var</b> <span id="r55 rd" class="r55 r">tagType</span>) == <b>false</b>)
             &lbrace;
                 <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">&quot;Tag names in patch must end with a valid extension&quot;</span>);
             &rbrace;
  
-            <b>if</b> (<a href="#05fcd20567cc90fb" class="i field">originalMap</a>.<a href="../Maps/H2BaseMap.cs.html#d5ac9e0365616c99" class="i property">TagNameLookup</a>.<span class="i method">TryGetValue</span>(((<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>)<span class="r55 r">tagType</span>, <span class="r53 r">tagName</span>), <b>out</b> <b>var</b> <span id="r56 rd" class="r56 r">tagId</span>) == <b>false</b>)
+            <b>if</b> (<a href="#05fcd20567cc90fb" class="i field">originalMap</a>.<a href="../Maps/H2BaseMap.cs.html#d5ac9e0365616c99" class="i property">TagNameLookup</a>.<span class="i method">TryGetValue</span>(((<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>)<span class="r55 r">tagType</span>, <span class="r53 r">tagName</span>), <b>out</b> <b>var</b> <span id="r56 rd" class="r56 r">tagId</span>) == <b>false</b>)
             &lbrace;
                 <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">$&quot;</span><span class="s">Tag &#39;</span>&lbrace;<span class="r52 r">tagNameWithExtension</span>&rbrace;<span class="s">&#39; not found in map</span><span class="s">&quot;</span>);
             &rbrace;

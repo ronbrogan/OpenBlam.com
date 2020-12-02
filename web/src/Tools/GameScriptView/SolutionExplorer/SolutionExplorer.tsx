@@ -17,7 +17,7 @@ export class SolutionExplorer extends React.Component<RouteComponentProps<ChildP
   contentReady = false;
   fixup: SourceBrowserFixup;
   done = false;
-
+  selectedFile: HTMLAnchorElement | null = null;
 
   constructor(props: any) {
     super(props);
@@ -26,8 +26,8 @@ export class SolutionExplorer extends React.Component<RouteComponentProps<ChildP
     this.state = { slnExpHtml: "Loading" };
   }
 
-  shouldComponentUpdate() {
-    return !this.done;
+  shouldComponentUpdate(nextProps:  RouteComponentProps<ChildPaneRouteProps>, nextState: SolutionExplorerState) {
+    return !this.done || this.props.match.params.contentPath !== nextProps.match.params.contentPath;
   }
 
   async componentDidUpdate() {
@@ -45,11 +45,67 @@ export class SolutionExplorer extends React.Component<RouteComponentProps<ChildP
 
     this.contentPath = updatedContentPath;
 
-    this.loadSolutionExplorer();
-    this.fixup = new SourceBrowserFixup(this.props.history, this.props.location);
-    this.fixup.fixupLinks(this.contentRoot.current!, this.contentPath, this.props.match.path, this.props.match.url);
-    this.done = true;
+    if(!this.done) {
+      this.loadSolutionExplorer();
+      this.fixup = new SourceBrowserFixup(this.props.history, this.props.location);
+      this.fixup.fixupLinks(this.contentRoot.current!, this.contentPath, this.props.match.path, this.props.match.url);
+      this.done = true;
+    }
+
+    this.syncSolutionExplorer();
   }
+
+  syncSolutionExplorer() {
+    var parts = this.contentPath.split("/");
+
+    let currentElement :HTMLElement | null = this.contentRoot.current;
+
+    for(var i = 0; i < parts.length; i++)
+    {
+      if(currentElement === null)
+        return;
+
+      let folder :HTMLElement | null = currentElement.querySelector(`div[data-assembly="${parts[i]}"]`);
+
+      if(folder !== null) {
+        if(folder.style.display === "none") {
+          folder.previousSibling?.dispatchEvent(new Event("click"));
+        }
+        currentElement = folder;
+      } else {
+        let anchors = currentElement.querySelectorAll("a");
+        var anchor = Array.from(anchors).find(a => a.getAttribute("href")?.endsWith(parts[i]));
+
+        if(anchor != null) {
+          this.selectFile(anchor);
+        }
+      }
+    }
+  }
+
+  selectFile(a: HTMLAnchorElement) {
+    if (this.selectedFile === a) {
+        return;
+    }
+
+    if (this.selectedFile && this.selectedFile.classList) {
+      this.selectedFile.classList.remove("selectedFilename");
+    }
+
+    this.selectedFile = a;
+    if (a) {
+        if (a.classList) {
+            a.classList.add("selectedFilename");
+        }
+
+        var bounds = a.getBoundingClientRect();
+        let isVisible = bounds.top < window.innerHeight && bounds.bottom >= 0
+        
+        if(!isVisible) {
+          a.scrollIntoView({behavior: "smooth", inline: "nearest"});
+        }
+    }
+}
 
   async componentDidMount() {
     let slnExpHtml = await (await fetch("/game-scripts/index/SolutionExplorer.html")).text();

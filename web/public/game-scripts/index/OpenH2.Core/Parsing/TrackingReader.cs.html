@@ -113,7 +113,7 @@
             <b>return</b> <span class="r21 r">ranges</span>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public string</b> <a id="557738579fa3174b" href="../R/557738579fa3174b.html" target="n" data-glyph="72,1" class="i method">ReadStringFrom</a>(<b>int</b> <span id="r25 rd" class="r25 r">offset</span>, <b>int</b> <span id="r26 rd" class="r26 r">length</span>)
         &lbrace;
             <b>if</b>(<span class="r25 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r25 r">offset</span> + <span class="r26 r">length</span> &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
@@ -122,13 +122,13 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#06918bbdc4cfa254" class="i method">ReadStringFrom</a>(<span class="r25 r">offset</span>, <span class="r26 r">length</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public string</b> <a id="9efe9456c3b0c7b1" href="../R/9efe9456c3b0c7b1.html" target="n" data-glyph="72,1" class="i method">ReadStringStarting</a>(<b>int</b> <span id="r27 rd" class="r27 r">offset</span>)
         &lbrace;
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#f56f71d07a6dc129" class="i method">ReadStringStarting</a>(<span class="r27 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public byte</b> <a id="71fd2b5f289cc245" href="../R/71fd2b5f289cc245.html" target="n" data-glyph="72,1" class="i method">ReadByteAt</a>(<b>int</b> <span id="r28 rd" class="r28 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r28 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r28 r">offset</span> + 1 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
@@ -137,7 +137,7 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#65142f63212cdb3a" class="i method">ReadByteAt</a>(<span class="r28 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public short</b> <a id="3fc5ac6b280235ab" href="../R/3fc5ac6b280235ab.html" target="n" data-glyph="72,1" class="i method">ReadInt16At</a>(<b>int</b> <span id="r29 rd" class="r29 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r29 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r29 r">offset</span> + 2 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
@@ -146,7 +146,7 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#0aca4ff217da8c49" class="i method">ReadInt16At</a>(<span class="r29 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public int</b> <a id="a43e518f33257f0c" href="../R/a43e518f33257f0c.html" target="n" data-glyph="72,1" class="i method">ReadInt32At</a>(<b>int</b> <span id="r30 rd" class="r30 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r30 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r30 r">offset</span> + 4 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
@@ -155,7 +155,7 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#662a493f13023a6d" class="i method">ReadInt32At</a>(<span class="r30 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public ushort</b> <a id="c87cff8c6b6af3c0" href="../R/c87cff8c6b6af3c0.html" target="n" data-glyph="72,1" class="i method">ReadUInt16At</a>(<b>int</b> <span id="r31 rd" class="r31 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r31 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r31 r">offset</span> + 2 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
@@ -164,7 +164,7 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#88b56f0c85363c41" class="i method">ReadUInt16At</a>(<span class="r31 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public uint</b> <a id="5a4f64001f562dd9" href="../R/5a4f64001f562dd9.html" target="n" data-glyph="72,1" class="i method">ReadUInt32At</a>(<b>int</b> <span id="r32 rd" class="r32 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r32 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r32 r">offset</span> + 4 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
@@ -173,8 +173,8 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#3fce839389d9ca5e" class="i method">ReadUInt32At</a>(<span class="r32 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="1649b8867d085754" href="../R/1649b8867d085754.html" target="n" data-glyph="72,1" class="i method">ReadTagRefAt</a>(<b>int</b> <span id="r33 rd" class="r33 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="1649b8867d085754" href="../R/1649b8867d085754.html" target="n" data-glyph="72,1" class="i method">ReadTagRefAt</a>(<b>int</b> <span id="r33 rd" class="r33 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r33 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r33 r">offset</span> + 4 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
                 <b>return</b> <a href="#c43286aa698aad11" class="i field">preloadData</a>.<span class="i method">AsSpan</span>().<a href="../Extensions/SpanByteExtensions.cs.html#733ecfc7844f914f" class="i method">ReadTagRefAt</a>(<span class="r33 r">offset</span> - <a href="#6915ac3a6273de71" class="i field">preloadStart</a>);
@@ -182,8 +182,8 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#1659612e8b89cf3a" class="i method">ReadTagRefAt</a>(<span class="r33 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public</b> <span class="t t">Vector2</span> <a id="bcd6889c4bb7bab5" href="../R/bcd6889c4bb7bab5.html" target="n" data-glyph="72,1" class="i method">ReadVec2At</a>(<b>int</b> <span id="r34 rd" class="r34 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public</b> <span class="t valueType">Vector2</span> <a id="bcd6889c4bb7bab5" href="../R/bcd6889c4bb7bab5.html" target="n" data-glyph="72,1" class="i method">ReadVec2At</a>(<b>int</b> <span id="r34 rd" class="r34 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r34 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r34 r">offset</span> + 8 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
                 <b>return</b> <a href="#c43286aa698aad11" class="i field">preloadData</a>.<span class="i method">AsSpan</span>().<a href="../Extensions/SpanByteExtensions.cs.html#8886381abda27521" class="i method">ReadVec2At</a>(<span class="r34 r">offset</span> - <a href="#6915ac3a6273de71" class="i field">preloadStart</a>);
@@ -191,8 +191,8 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#8473fef099b4700d" class="i method">ReadVec2At</a>(<span class="r34 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public</b> <span class="t t">Vector3</span> <a id="e1991b29c627f1a1" href="../R/e1991b29c627f1a1.html" target="n" data-glyph="72,1" class="i method">ReadVec3At</a>(<b>int</b> <span id="r35 rd" class="r35 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="e1991b29c627f1a1" href="../R/e1991b29c627f1a1.html" target="n" data-glyph="72,1" class="i method">ReadVec3At</a>(<b>int</b> <span id="r35 rd" class="r35 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r35 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r35 r">offset</span> + 12 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
                 <b>return</b> <a href="#c43286aa698aad11" class="i field">preloadData</a>.<span class="i method">AsSpan</span>().<a href="../Extensions/SpanByteExtensions.cs.html#647578aced3fc11c" class="i method">ReadVec3At</a>(<span class="r35 r">offset</span> - <a href="#6915ac3a6273de71" class="i field">preloadStart</a>);
@@ -200,8 +200,8 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#285bc3b7a89ea010" class="i method">ReadVec3At</a>(<span class="r35 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public</b> <span class="t t">Vector4</span> <a id="2c25e36fc66469ab" href="../R/2c25e36fc66469ab.html" target="n" data-glyph="72,1" class="i method">ReadVec4At</a>(<b>int</b> <span id="r36 rd" class="r36 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public</b> <span class="t valueType">Vector4</span> <a id="2c25e36fc66469ab" href="../R/2c25e36fc66469ab.html" target="n" data-glyph="72,1" class="i method">ReadVec4At</a>(<b>int</b> <span id="r36 rd" class="r36 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r36 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r36 r">offset</span> + 16 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
                 <b>return</b> <a href="#c43286aa698aad11" class="i field">preloadData</a>.<span class="i method">AsSpan</span>().<a href="../Extensions/SpanByteExtensions.cs.html#844dace39ec39173" class="i method">ReadVec4At</a>(<span class="r36 r">offset</span> - <a href="#6915ac3a6273de71" class="i field">preloadStart</a>);
@@ -209,8 +209,8 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#061525575be1466a" class="i method">ReadVec4At</a>(<span class="r36 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public</b> <span class="t t">Quaternion</span> <a id="77ad61301b1e7936" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ReadQuaternionAt</a>(<b>int</b> <span id="r37 rd" class="r37 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public</b> <span class="t valueType">Quaternion</span> <a id="77ad61301b1e7936" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ReadQuaternionAt</a>(<b>int</b> <span id="r37 rd" class="r37 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r37 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r37 r">offset</span> + 16 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
                 <b>return</b> <a href="#c43286aa698aad11" class="i field">preloadData</a>.<span class="i method">AsSpan</span>().<a href="../Extensions/SpanByteExtensions.cs.html#a99960eb8ba70e23" class="i method">ReadQuaternionAt</a>(<span class="r37 r">offset</span> - <a href="#6915ac3a6273de71" class="i field">preloadStart</a>);
@@ -218,8 +218,8 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#bfb5dda47bce6401" class="i method">ReadQuaternionAt</a>(<span class="r37 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public</b> <span class="t t">Matrix4x4</span> <a id="bc637a24da52c4f5" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ReadMatrix4x4At</a>(<b>int</b> <span id="r38 rd" class="r38 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public</b> <span class="t valueType">Matrix4x4</span> <a id="bc637a24da52c4f5" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ReadMatrix4x4At</a>(<b>int</b> <span id="r38 rd" class="r38 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r38 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r38 r">offset</span> + 64 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)
                 <b>return</b> <a href="#c43286aa698aad11" class="i field">preloadData</a>.<span class="i method">AsSpan</span>().<a href="../Extensions/SpanByteExtensions.cs.html#dd57690367f38869" class="i method">ReadMatrix4x4At</a>(<span class="r38 r">offset</span> - <a href="#6915ac3a6273de71" class="i field">preloadStart</a>);
@@ -235,7 +235,7 @@
             <b>return</b> <a href="#8b045d7313da4438" class="i property">Data</a>.<a href="../Extensions/StreamExtensions.cs.html#3e131300a373ae8f" class="i method">ReadArray</a>(<span class="r39 r">offset</span>, <span class="r40 r">length</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public float</b> <a id="090ae41045107afb" href="../R/090ae41045107afb.html" target="n" data-glyph="72,1" class="i method">ReadFloatAt</a>(<b>int</b> <span id="r41 rd" class="r41 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r41 r">offset</span> &gt;= <a href="#6915ac3a6273de71" class="i field">preloadStart</a> &amp;&amp; <span class="r41 r">offset</span> + 4 &lt; <a href="#6915ac3a6273de71" class="i field">preloadStart</a> + <a href="#fe319ae8ba5e69d6" class="i field">preloadLength</a>)

@@ -16,7 +16,7 @@
     &lbrace;
         <b>private int</b> <a id="ee964722a6a02e34" href="../R/ee964722a6a02e34.html" target="n" data-glyph="46,1" class="i field">vertexCount</a> = 0;
         <b>private</b> <span class="t t">StringBuilder</span> <a id="75345268239230d2" href="../R/75345268239230d2.html" target="n" data-glyph="46,1" class="i field">builder</a>;
-        <b>private</b> <span class="t t">Dictionary</span>&lt;(<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[], <span class="t t">Matrix4x4</span>), <b>int</b>&gt; <a id="9f0b087c1b877895" href="../R/9f0b087c1b877895.html" target="n" data-glyph="46,1" class="i field">indexBasis</a> = <b>new</b> <span class="t constructor">Dictionary</span>&lt;(<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[], <span class="t t">Matrix4x4</span>), <b>int</b>&gt;();
+        <b>private</b> <span class="t t">Dictionary</span>&lt;(<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>[], <span class="t valueType">Matrix4x4</span>), <b>int</b>&gt; <a id="9f0b087c1b877895" href="../R/9f0b087c1b877895.html" target="n" data-glyph="46,1" class="i field">indexBasis</a> = <b>new</b> <span class="t constructor">Dictionary</span>&lt;(<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>[], <span class="t valueType">Matrix4x4</span>), <b>int</b>&gt;();
  
         <b>public</b> <a id="e0f7cd2f9a750e43" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">WavefrontObjWriter</a>(<span class="t t">StringBuilder</span> <span id="r0 rd" class="r0 r">builder</span>, <b>string</b> <span id="r1 rd" class="r1 r">name</span>)
         &lbrace;
@@ -35,9 +35,9 @@
             <b>return</b> <a href="#75345268239230d2" class="i field">builder</a>.<span class="i method">ToString</span>();
         &rbrace;
  
-        <b>public void</b> <a id="d45fd761d8d2066e" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">WriteModel</a>(<a href="../Tags/Common/Models/MeshCollection.cs.html#9da8cd4d7b93b499" class="t t">MeshCollection</a> <span id="r3 rd" class="r3 r">meshCollection</span>, <span class="t t">Matrix4x4</span> <span id="r4 rd" class="r4 r">transform</span> = <b>default</b>, <b>string</b> <span id="r5 rd" class="r5 r">name</span> = <b>null</b>)
+        <b>public void</b> <a id="d45fd761d8d2066e" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">WriteModel</a>(<a href="../Tags/Common/Models/MeshCollection.cs.html#9da8cd4d7b93b499" class="t t">MeshCollection</a> <span id="r3 rd" class="r3 r">meshCollection</span>, <span class="t valueType">Matrix4x4</span> <span id="r4 rd" class="r4 r">transform</span> = <b>default</b>, <b>string</b> <span id="r5 rd" class="r5 r">name</span> = <b>null</b>)
         &lbrace;
-            <b>var</b> <span id="r6 rd" class="r6 r">xform</span> = <span class="r4 r">transform</span> == <b>default</b> ? <span class="t t">Matrix4x4</span>.<span class="i property">Identity</span> : <span class="r4 r">transform</span>;
+            <b>var</b> <span id="r6 rd" class="r6 r">xform</span> = <span class="r4 r">transform</span> == <b>default</b> ? <span class="t valueType">Matrix4x4</span>.<span class="i property">Identity</span> : <span class="r4 r">transform</span>;
  
             <a href="#75345268239230d2" class="i field">builder</a>.<span class="i method">AppendLine</span>(<span class="s">&quot;o &quot;</span> + <span class="r5 r">name</span> ?? <span class="s">&quot;mesh&quot;</span>);
  
@@ -54,7 +54,7 @@
  
                 <b>foreach</b> (<a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="k">var</a> <span id="r9 rd" class="r9 r">vert</span> <b>in</b> <span class="r8 r">verts</span>)
                 &lbrace;
-                    <b>var</b> <span id="r10 rd" class="r10 r">pos</span> = <span class="t t">Vector3</span>.<span class="i method">Transform</span>(<span class="r9 r">vert</span>.<a href="/OpenH2.Foundation/A.html#6558462f88f51b38" class="i field">Position</a>, <span class="r6 r">xform</span>);
+                    <b>var</b> <span id="r10 rd" class="r10 r">pos</span> = <span class="t valueType">Vector3</span>.<span class="i method">Transform</span>(<span class="r9 r">vert</span>.<a href="/OpenH2.Foundation/A.html#6558462f88f51b38" class="i field">Position</a>, <span class="r6 r">xform</span>);
  
                     <a href="#75345268239230d2" class="i field">builder</a>.<span class="i method">AppendLine</span>(<span class="s">$&quot;</span><span class="s">v </span>&lbrace;<span class="r10 r">pos</span>.<span class="i field">X</span>.<span class="i method">ToString</span>(<span class="s">&quot;0.000000&quot;</span>)&rbrace;<span class="s"> </span>&lbrace;<span class="r10 r">pos</span>.<span class="i field">Y</span>.<span class="i method">ToString</span>(<span class="s">&quot;0.000000&quot;</span>)&rbrace;<span class="s"> </span>&lbrace;<span class="r10 r">pos</span>.<span class="i field">Z</span>.<span class="i method">ToString</span>(<span class="s">&quot;0.000000&quot;</span>)&rbrace;<span class="s">&quot;</span>);
                 &rbrace;
@@ -81,11 +81,11 @@
  
                 <b>switch</b> (<span class="r13 r">mesh</span>.<a href="../Tags/Common/Models/ModelMesh.cs.html#0ef0b75ce9e7f04e" class="i property">ElementType</a>)
                 &lbrace;
-                    <b>case</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#221046bead31a386" class="i field">TriangleStrip</a>:
-                    <b>case</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#38079dec26b9b379" class="i field">TriangleStripDecal</a>:
+                    <b>case</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#221046bead31a386" class="i field">TriangleStrip</a>:
+                    <b>case</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#38079dec26b9b379" class="i field">TriangleStripDecal</a>:
                         <a href="#b4db447b53666278" class="i method">WriteTriangleStrip</a>(<span class="r13 r">mesh</span>, <span class="r14 r">basis</span>);
                         <b>break</b>;
-                    <b>case</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>:
+                    <b>case</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>:
                         <a href="#ac33d04dc47cdc7a" class="i method">WriteTriangleList</a>(<span class="r13 r">mesh</span>, <span class="r14 r">basis</span>);
                         <b>break</b>;
                 &rbrace;

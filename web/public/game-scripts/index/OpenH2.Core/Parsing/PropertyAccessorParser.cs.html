@@ -8,7 +8,7 @@
 &lbrace;
     <b>public static class</b> <a id="64cb16cd19f1035b" href="../R/64cb16cd19f1035b.html" target="n" data-glyph="0,0" class="t t">PropertyAccessorParser</a>
     &lbrace;
-        <b>public static</b> <span class="t t">List</span>&lt;<a href="#66dd7c7c82bf1c7c" class="t t">PropertyAccessData</a>&gt; <a id="a3c73d4f663ae9df" href="../R/a3c73d4f663ae9df.html" target="n" data-glyph="72,1" class="i method">ExtractProperties</a>(<span class="t t">ReadOnlySpan</span>&lt;<b>char</b>&gt; <span id="r0 rd" class="r0 r">input</span>)
+        <b>public static</b> <span class="t t">List</span>&lt;<a href="#66dd7c7c82bf1c7c" class="t t">PropertyAccessData</a>&gt; <a id="a3c73d4f663ae9df" href="../R/a3c73d4f663ae9df.html" target="n" data-glyph="72,1" class="i method">ExtractProperties</a>(<span class="t valueType">ReadOnlySpan</span>&lt;<b>char</b>&gt; <span id="r0 rd" class="r0 r">input</span>)
         &lbrace;
             <b>var</b> <span id="r1 rd" class="r1 r">props</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="#66dd7c7c82bf1c7c" class="t t">PropertyAccessData</a>&gt;();
  
@@ -24,7 +24,7 @@
                 <b>if</b> (<span class="r0 r">input</span>[<span class="r4 r">curr</span>] == <span class="s">&#39;[&#39;</span>)
                 &lbrace;
                     <span class="r3 r">elementArgStart</span> = <span class="r4 r">curr</span>;
-                    <span class="r5 r">token</span>.<a href="#6d18fa1541c93d4c" class="i property">AccessType</a> = <a href="#ce713cd79b13a484" class="t t">PropertyAccessType</a>.<a href="#b8774cff3d5a5ac7" class="i field">ElementAccess</a>;
+                    <span class="r5 r">token</span>.<a href="#6d18fa1541c93d4c" class="i property">AccessType</a> = <a href="#ce713cd79b13a484" class="t valueType">PropertyAccessType</a>.<a href="#b8774cff3d5a5ac7" class="i field">ElementAccess</a>;
                 &rbrace;
  
                 <b>if</b> (<span class="r0 r">input</span>[<span class="r4 r">curr</span>] == <span class="s">&#39;]&#39;</span>)
@@ -55,7 +55,7 @@
                         <span class="r8 r">tokenLength</span>++;
                     &rbrace;
  
-                    <b>if</b> (<span class="r5 r">token</span>.<a href="#6d18fa1541c93d4c" class="i property">AccessType</a> == <a href="#ce713cd79b13a484" class="t t">PropertyAccessType</a>.<a href="#b8774cff3d5a5ac7" class="i field">ElementAccess</a>)
+                    <b>if</b> (<span class="r5 r">token</span>.<a href="#6d18fa1541c93d4c" class="i property">AccessType</a> == <a href="#ce713cd79b13a484" class="t valueType">PropertyAccessType</a>.<a href="#b8774cff3d5a5ac7" class="i field">ElementAccess</a>)
                     &lbrace;
                         <span class="r8 r">tokenLength</span> = <span class="r3 r">elementArgStart</span> - <span class="r2 r">tokenStart</span>;
                     &rbrace;
@@ -86,11 +86,11 @@
         <b>public class</b> <a id="66dd7c7c82bf1c7c" href="../R/66dd7c7c82bf1c7c.html" target="n" data-glyph="0,1" class="t t"><span id="91802a1e79ef13a0">PropertyAccessData</span></a>
         &lbrace;
             <b>public string</b> <a id="72314fe03a98207b" href="../R/72314fe03a98207b.html" target="n" data-glyph="102,2" class="i property">PropertyName</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
-            <b>public</b> <a href="#ce713cd79b13a484" class="t t">PropertyAccessType</a> <a id="6d18fa1541c93d4c" href="../R/6d18fa1541c93d4c.html" target="n" data-glyph="102,2" class="i property">AccessType</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="#ce713cd79b13a484" class="t valueType">PropertyAccessType</a> <a id="6d18fa1541c93d4c" href="../R/6d18fa1541c93d4c.html" target="n" data-glyph="102,2" class="i property">AccessType</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
             <b>public object</b> <a id="1f462b4df1e295f6" href="../R/1f462b4df1e295f6.html" target="n" data-glyph="102,2" class="i property">ElementArgument</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
-        <b>public enum</b> <a id="ce713cd79b13a484" href="../R/ce713cd79b13a484.html" target="n" data-glyph="18,1" class="t t"><span id="c1a7c9e2c213f2ab">PropertyAccessType</span></a>
+        <b>public enum</b> <a id="ce713cd79b13a484" href="../R/ce713cd79b13a484.html" target="n" data-glyph="18,1" class="t valueType"><span id="c1a7c9e2c213f2ab">PropertyAccessType</span></a>
         &lbrace;
             <a id="007852d972aa1447" href="../R/007852d972aa1447.html" target="n" data-glyph="24,2" class="i field">Normal</a> = 0,
             <a id="b8774cff3d5a5ac7" href="../R/b8774cff3d5a5ac7.html" target="n" data-glyph="24,2" class="i field">ElementAccess</a> = 1

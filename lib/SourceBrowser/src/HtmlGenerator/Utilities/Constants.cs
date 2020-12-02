@@ -17,6 +17,7 @@
 
         public static readonly string ClassificationIdentifier = "i";
         public static readonly string ClassificationKeyword = "k";
+        public static readonly string ClassificationKeywordControl = "kc";
         public static readonly string ClassificationTypeName = "t";
         public static readonly string ClassificationComment = "c";
         public static readonly string ClassificationLiteral = "s";
@@ -32,6 +33,7 @@
         public static readonly string ClassificationNamespace = "n";
         public static readonly string ClassificationMethod = "method";
         public static readonly string ClassificationField = "field";
+        public static readonly string ClassificationValueType = "valueType";
         public static readonly string ClassificationConstructor = "constructor";
         public static readonly string ClassificationPreprocessKeyword = "k preprocess";
         public static readonly string ClassificationProperty = "property";

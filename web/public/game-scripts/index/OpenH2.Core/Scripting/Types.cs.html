@@ -62,10 +62,10 @@
  
     <b>public interface</b> <a id="dca549364d921db0" href="../R/dca549364d921db0.html" target="n" data-glyph="48,0" class="t t">IPlaceable</a>
     &lbrace;
-        <a href="../Enums/PlacementFlags.cs.html#b55d1ef5930ab4b1" class="t t">PlacementFlags</a> <a id="618a0f4e4659b40a" href="../R/618a0f4e4659b40a.html" target="n" data-glyph="102,1" class="i property">PlacementFlags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <a href="../Enums/PlacementFlags.cs.html#b55d1ef5930ab4b1" class="t valueType">PlacementFlags</a> <a id="618a0f4e4659b40a" href="../R/618a0f4e4659b40a.html" target="n" data-glyph="102,1" class="i property">PlacementFlags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
     &rbrace;
  
-    <b>public struct</b> <a id="43713fb07584f5f5" href="../R/43713fb07584f5f5.html" target="n" data-glyph="108,0" class="t t"><span id="14ad74e1d6b6d593">ScenarioEntity</span></a>&lt;<span id="r2 rd t" class="r2 r t">TItem</span>&gt; : <a href="#fb7d3c09d725f398" class="t t">IEntityIdentifier</a> 
+    <b>public struct</b> <a id="43713fb07584f5f5" href="../R/43713fb07584f5f5.html" target="n" data-glyph="108,0" class="t valueType"><span id="14ad74e1d6b6d593">ScenarioEntity</span></a>&lt;<span id="r2 rd t" class="r2 r t">TItem</span>&gt; : <a href="#fb7d3c09d725f398" class="t t">IEntityIdentifier</a> 
     &lbrace;
         <b>public</b> <a id="be3b15b85395f2ed" href="../R/be3b15b85395f2ed.html" target="n" data-glyph="72,1" class="t constructor">ScenarioEntity</a>(<b>int</b> <span id="r3 rd" class="r3 r">id</span>, <a href="#52407372da9d64da" class="t t">IGameObjectDefinition</a>&lt;<b>object</b>&gt; <span id="r4 rd" class="r4 r">item</span>)
         &lbrace;
@@ -81,10 +81,10 @@
             ? <b>default</b>(<span class="r2 r t">TItem</span>)
             : (<span class="r2 r t">TItem</span>)<a href="#463d459fe7c8fed7" class="i field">reference</a>.<a href="#ba48ff71070cc854" class="i property">GameObject</a>;
  
-        <b>public static implicit operator int</b>(<a href="#43713fb07584f5f5" class="t t">ScenarioEntity</a>&lt;<span class="r2 r t">TItem</span>&gt; <span id="r5 rd" class="r5 r">scenarioItem</span>) =&gt; <span class="r5 r">scenarioItem</span>.<a href="#143194a553e17156" class="i property">Identifier</a>;
-        <b>public static implicit operator</b> <span class="r2 r t">TItem</span>(<a href="#43713fb07584f5f5" class="t t">ScenarioEntity</a>&lt;<span class="r2 r t">TItem</span>&gt; <span id="r6 rd" class="r6 r">scenarioItem</span>) =&gt; <span class="r6 r">scenarioItem</span>.<a href="#3299f0e68f4a4bb5" class="i property">Entity</a>;
+        <b>public static implicit operator int</b>(<a href="#43713fb07584f5f5" class="t valueType">ScenarioEntity</a>&lt;<span class="r2 r t">TItem</span>&gt; <span id="r5 rd" class="r5 r">scenarioItem</span>) =&gt; <span class="r5 r">scenarioItem</span>.<a href="#143194a553e17156" class="i property">Identifier</a>;
+        <b>public static implicit operator</b> <span class="r2 r t">TItem</span>(<a href="#43713fb07584f5f5" class="t valueType">ScenarioEntity</a>&lt;<span class="r2 r t">TItem</span>&gt; <span id="r6 rd" class="r6 r">scenarioItem</span>) =&gt; <span class="r6 r">scenarioItem</span>.<a href="#3299f0e68f4a4bb5" class="i property">Entity</a>;
  
-        <b>public override int</b> <a id="71796d67e5487c9d" href="../R/71796d67e5487c9d.html" target="n" data-glyph="72,1" class="i method">GetHashCode</a>() =&gt; <span class="t t">HashCode</span>.<span class="i method">Combine</span>(
+        <b>public override int</b> <a id="71796d67e5487c9d" href="../R/71796d67e5487c9d.html" target="n" data-glyph="72,1" class="i method">GetHashCode</a>() =&gt; <span class="t valueType">HashCode</span>.<span class="i method">Combine</span>(
             <a href="#43713fb07584f5f5" class="k">this</a>.<a href="#143194a553e17156" class="i property">Identifier</a>.<span class="i method">GetHashCode</span>(), 
             <a href="#43713fb07584f5f5" class="k">this</a>.<a href="#463d459fe7c8fed7" class="i field">reference</a>.<span class="i method">GetHashCode</span>());
     &rbrace;

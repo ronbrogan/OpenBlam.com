@@ -425,7 +425,7 @@ $color-map: (
  
  //- Tables
  
- table {
+ .table {
    $scrollBorderColor: rgba(color('primary'), .15);
  
    display: inline-block;

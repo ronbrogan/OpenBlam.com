@@ -26,7 +26,8 @@ export class SourceViz extends React.Component<RouteComponentProps<ChildPaneRout
     }
 
     shouldComponentUpdate(nextProps:  RouteComponentProps<ChildPaneRouteProps>, nextState: SourceVizState) { 
-        return !this.done || this.props.match.params.contentPath !== nextProps.match.params.contentPath;
+        return !this.done 
+            || this.props.match.params.contentPath !== nextProps.match.params.contentPath;
      }
 
     async componentDidUpdate(prevProps: RouteComponentProps<ChildPaneRouteProps>) {
@@ -62,6 +63,10 @@ export class SourceViz extends React.Component<RouteComponentProps<ChildPaneRout
     }
 
     async fetchData() {
+        if(await this.redirectToNextLevelRedirectFileIfNecessary()) {
+            return;
+        }
+
         var updatedContentPath = this.props.match.params.contentPath;
 
         if(updatedContentPath == null){
@@ -79,6 +84,94 @@ export class SourceViz extends React.Component<RouteComponentProps<ChildPaneRout
 
         this.contentReady = true;
         this.setState({ codeVizHtml: codeVizHtml });
+    }
+    static anchorSplitChar = ",";
+
+    // multi-staged redirect A.html -> A0.html -> filePath.html (to reduce size of a.html)
+    async redirectToNextLevelRedirectFileIfNecessary() {
+        let contentPath = this.props.match.params.contentPath;
+        if(!contentPath) {
+            return false;
+        }
+
+        if(contentPath.endsWith("/A.html") === false) {
+            return false;
+        }
+
+        var anchor = this.props.location.hash;
+        if (anchor) {
+            anchor = anchor.slice(1);
+            var hashParts = anchor.split(SourceViz.anchorSplitChar);
+            var anchorHasReferencesSuffix = false;
+            if (hashParts.length > 1 && hashParts[hashParts.length - 1] == "references") {
+                anchorHasReferencesSuffix = true;
+                hashParts.pop();
+            }
+            var id = hashParts.join(SourceViz.anchorSplitChar);
+
+            var destinationHash = "#" + this.createSafeLineNumber(id);
+            if (anchorHasReferencesSuffix) {
+                destinationHash = destinationHash + SourceViz.anchorSplitChar + "references";
+            }
+
+            let redirectMapIife = await (await fetch(`/game-scripts/index/${contentPath.replace("A.html", "A" + id.slice(0, 1) + ".html")}`)).text();
+
+            var redirectMap = eval(redirectMapIife);
+
+            await this.redirect(redirectMap.map, redirectMap.bytes, destinationHash);
+            return true;
+        }
+
+        return false;
+    }
+
+    async redirect(map: any, prefixLength: number, anchor: string) {
+        if (!prefixLength) {
+            prefixLength = 16;
+        }
+    
+        if (anchor) {
+            anchor = anchor.slice(1);
+            var hashParts = anchor.split(SourceViz.anchorSplitChar);
+            var anchorHasReferencesSuffix = false;
+            if (hashParts.length > 1 && hashParts[hashParts.length - 1] == "references") {
+                anchorHasReferencesSuffix = true;
+                hashParts.pop();
+            }
+            var id = hashParts.join(SourceViz.anchorSplitChar);
+            var shortId = id;
+            if (prefixLength < shortId.length) {
+                shortId = shortId.slice(0, prefixLength);
+            }
+    
+            // all the keys have their first character trimmed since it's a bucket file aX.html
+            // and X is the same for all ids
+            shortId = shortId.slice(1);
+    
+            var redirectTo = map[shortId];
+            if (redirectTo) {
+                var destination = redirectTo + ".html" + "#" + this.createSafeLineNumber(id);
+                if (anchorHasReferencesSuffix) {
+                    destination = destination + SourceViz.anchorSplitChar + "references";
+                }
+                
+                this.props.history.replace(`/tools/game-scripts/${destination}`);
+            }
+        }
+    }
+    
+
+    createSafeLineNumber(text: string) {
+        if (this.isNumber(text) && text.length != 16) {
+            text = "l" + text;
+        }
+    
+        return text;
+    }
+    
+    isNumber(s: string) {
+        let n = parseFloat(s);
+        return !isNaN(n) && isFinite(n);
     }
 
     render() {

@@ -90,13 +90,13 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
             var files = ExtractFilePaths(symbolIDToListOfLocationsMap);
             var fileIndexLookup = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
 
-            writer.WriteLine("extract(){");
+            writer.WriteLine("(function(){");
 
             writer.WriteLine("var f = [");
             for (int i = 0; i < files.Length; i++)
             {
                 fileIndexLookup.Add(files[i], i);
-                writer.WriteLine("\"" + files[i] + "\",");
+                writer.WriteLine($@"""{Path.GetFileName(projectDestinationFolder)}/{files[i]}"",");
             }
 
             writer.WriteLine("];");
@@ -124,8 +124,8 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                 }
             }
 
-            writer.WriteLine("return {map: m, bytes: {0} };", SignificantIdBytes);
-            writer.WriteLine("}");
+            writer.WriteLine("return {{map: m, bytes: {0} }};", SignificantIdBytes);
+            writer.WriteLine("})();");
         }
 
         private static string GetShortenedKey(string key)

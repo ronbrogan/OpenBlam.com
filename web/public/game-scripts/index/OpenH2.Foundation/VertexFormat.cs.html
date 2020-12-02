@@ -5,25 +5,25 @@
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>
 &lbrace;
-    [<span class="t constructor">StructLayout</span>(<span class="t t">LayoutKind</span>.<span class="i field">Sequential</span>)]
-    <b>public struct</b> <a id="bd15aecb4fc5f3a4" href="R/bd15aecb4fc5f3a4.html" target="n" data-glyph="108,0" class="t t"><span id="0be64429cd625837">VertexFormat</span></a>
+    [<span class="t constructor">StructLayout</span>(<span class="t valueType">LayoutKind</span>.<span class="i field">Sequential</span>)]
+    <b>public struct</b> <a id="bd15aecb4fc5f3a4" href="R/bd15aecb4fc5f3a4.html" target="n" data-glyph="108,0" class="t valueType"><span id="0be64429cd625837">VertexFormat</span></a>
     &lbrace;
-        <b>public</b> <span class="t t">Vector3</span> <a id="6558462f88f51b38" href="R/6558462f88f51b38.html" target="n" data-glyph="42,1" class="i field">Position</a>;
-        <b>public</b> <span class="t t">Vector2</span> <a id="c6cb9aa8ce8faa5e" href="R/c6cb9aa8ce8faa5e.html" target="n" data-glyph="42,1" class="i field">TexCoords</a>;
-        <b>public</b> <span class="t t">Vector3</span> <a id="f3180bc7d9ea26b8" href="R/f3180bc7d9ea26b8.html" target="n" data-glyph="42,1" class="i field">Normal</a>;
-        <b>public</b> <span class="t t">Vector3</span> <a id="6d0be76278dfde66" href="R/6d0be76278dfde66.html" target="n" data-glyph="42,1" class="i field">Tangent</a>;
-        <b>public</b> <span class="t t">Vector3</span> <a id="041386723de1d5ba" href="R/041386723de1d5ba.html" target="n" data-glyph="42,1" class="i field">Bitangent</a>;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="6558462f88f51b38" href="R/6558462f88f51b38.html" target="n" data-glyph="42,1" class="i field">Position</a>;
+        <b>public</b> <span class="t valueType">Vector2</span> <a id="c6cb9aa8ce8faa5e" href="R/c6cb9aa8ce8faa5e.html" target="n" data-glyph="42,1" class="i field">TexCoords</a>;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="f3180bc7d9ea26b8" href="R/f3180bc7d9ea26b8.html" target="n" data-glyph="42,1" class="i field">Normal</a>;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="6d0be76278dfde66" href="R/6d0be76278dfde66.html" target="n" data-glyph="42,1" class="i field">Tangent</a>;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="041386723de1d5ba" href="R/041386723de1d5ba.html" target="n" data-glyph="42,1" class="i field">Bitangent</a>;
  
-        <b>public</b> <a id="88cc525b11e2fb00" href="R/88cc525b11e2fb00.html" target="n" data-glyph="72,1" class="t constructor">VertexFormat</a>(<span class="t t">Vector3</span> <span id="r0 rd" class="r0 r">pos</span>, <span class="t t">Vector2</span> <span id="r1 rd" class="r1 r">tex</span>, <span class="t t">Vector3</span> <span id="r2 rd" class="r2 r">norm</span>)
+        <b>public</b> <a id="88cc525b11e2fb00" href="R/88cc525b11e2fb00.html" target="n" data-glyph="72,1" class="t constructor">VertexFormat</a>(<span class="t valueType">Vector3</span> <span id="r0 rd" class="r0 r">pos</span>, <span class="t valueType">Vector2</span> <span id="r1 rd" class="r1 r">tex</span>, <span class="t valueType">Vector3</span> <span id="r2 rd" class="r2 r">norm</span>)
         &lbrace;
             <a href="#6558462f88f51b38" class="i field">Position</a> = <span class="r0 r">pos</span>;
             <a href="#c6cb9aa8ce8faa5e" class="i field">TexCoords</a> = <span class="r1 r">tex</span>;
             <a href="#f3180bc7d9ea26b8" class="i field">Normal</a> = <span class="r2 r">norm</span>;
-            <a href="#6d0be76278dfde66" class="i field">Tangent</a> = <span class="t t">Vector3</span>.<span class="i property">One</span>;
-            <a href="#041386723de1d5ba" class="i field">Bitangent</a> = <span class="t t">Vector3</span>.<span class="i property">One</span>;
+            <a href="#6d0be76278dfde66" class="i field">Tangent</a> = <span class="t valueType">Vector3</span>.<span class="i property">One</span>;
+            <a href="#041386723de1d5ba" class="i field">Bitangent</a> = <span class="t valueType">Vector3</span>.<span class="i property">One</span>;
         &rbrace;
  
-        <b>public</b> <a id="8c7400b370dd00b0" href="R/8c7400b370dd00b0.html" target="n" data-glyph="72,1" class="t constructor">VertexFormat</a>(<span class="t t">Vector3</span> <span id="r3 rd" class="r3 r">pos</span>, <span class="t t">Vector2</span> <span id="r4 rd" class="r4 r">tex</span>, <span class="t t">Vector3</span> <span id="r5 rd" class="r5 r">norm</span>, <span class="t t">Vector3</span> <span id="r6 rd" class="r6 r">tan</span>, <span class="t t">Vector3</span> <span id="r7 rd" class="r7 r">bitan</span>)
+        <b>public</b> <a id="8c7400b370dd00b0" href="R/8c7400b370dd00b0.html" target="n" data-glyph="72,1" class="t constructor">VertexFormat</a>(<span class="t valueType">Vector3</span> <span id="r3 rd" class="r3 r">pos</span>, <span class="t valueType">Vector2</span> <span id="r4 rd" class="r4 r">tex</span>, <span class="t valueType">Vector3</span> <span id="r5 rd" class="r5 r">norm</span>, <span class="t valueType">Vector3</span> <span id="r6 rd" class="r6 r">tan</span>, <span class="t valueType">Vector3</span> <span id="r7 rd" class="r7 r">bitan</span>)
         &lbrace;
             <a href="#6558462f88f51b38" class="i field">Position</a> = <span class="r3 r">pos</span>;
             <a href="#c6cb9aa8ce8faa5e" class="i field">TexCoords</a> = <span class="r4 r">tex</span>;
@@ -32,7 +32,7 @@
             <a href="#041386723de1d5ba" class="i field">Bitangent</a> = <span class="r7 r">bitan</span>;
         &rbrace;
  
-        <b>public static readonly int</b> <a id="41891c05ccca6676" href="R/../../0000000000.html" target="n" data-glyph="42,1" class="i field">Size</a> = <span class="t t">Marshal</span>.<span class="i method">SizeOf</span>&lt;<a href="#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>&gt;();
+        <b>public static readonly int</b> <a id="41891c05ccca6676" href="R/../../0000000000.html" target="n" data-glyph="42,1" class="i field">Size</a> = <span class="t t">Marshal</span>.<span class="i method">SizeOf</span>&lt;<a href="#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>&gt;();
     &rbrace;
 &rbrace;
 </pre></td></tr></table></div></div>

@@ -8,11 +8,11 @@
 &lbrace;
     <b>public static class</b> <a id="49418da74d99fae7" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">ModelFactory</a>
     &lbrace;
-        <b>public static</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t t">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="d3718c0642ac3cfc" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Cuboid</a>(<span class="t t">Vector3</span> <span id="r0 rd" class="r0 r">lower</span>, <span class="t t">Vector3</span> <span id="r1 rd" class="r1 r">upper</span>, <span class="t t">Vector4</span> <span id="r2 rd" class="r2 r">color</span>)
+        <b>public static</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t t">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="d3718c0642ac3cfc" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Cuboid</a>(<span class="t valueType">Vector3</span> <span id="r0 rd" class="r0 r">lower</span>, <span class="t valueType">Vector3</span> <span id="r1 rd" class="r1 r">upper</span>, <span class="t valueType">Vector4</span> <span id="r2 rd" class="r2 r">color</span>)
         &lbrace;
             <a href="/OpenH2.Foundation/A.html#be491be8a8b0ec17" class="k">var</a> <span id="r3 rd" class="r3 r">mesh</span> = <b>new</b> <a href="/OpenH2.Foundation/A.html#be491be8a8b0ec17" class="t constructor">Mesh</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt;
             &lbrace;
-                <a href="/OpenH2.Foundation/A.html#3487528321290e64" class="i property">ElementType</a> = <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>,
+                <a href="/OpenH2.Foundation/A.html#3487528321290e64" class="i property">ElementType</a> = <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>,
                 <a href="/OpenH2.Foundation/A.html#b0c8c5384e040952" class="i property">Indicies</a> = <b>new</b>[] &lbrace;
                     0, 2, 3,
                     0, 3, 1,
@@ -27,7 +27,7 @@
                     7, 4, 6,
                     7, 6, 5
                 &rbrace;,
-                <a href="/OpenH2.Foundation/A.html#7f695107e6b698e1" class="i property">Verticies</a> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[] &lbrace;
+                <a href="/OpenH2.Foundation/A.html#7f695107e6b698e1" class="i property">Verticies</a> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>[] &lbrace;
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<span class="r0 r">lower</span>, <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(<span class="r1 r">upper</span>.<span class="i field">X</span>, <span class="r0 r">lower</span>.<span class="i field">Y</span>, <span class="r0 r">lower</span>.<span class="i field">Z</span>), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(<span class="r0 r">lower</span>.<span class="i field">X</span>, <span class="r1 r">upper</span>.<span class="i field">Y</span>, <span class="r0 r">lower</span>.<span class="i field">Z</span>), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
@@ -43,21 +43,21 @@
             <b>return</b> <b>new</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t constructor">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt;()
             &lbrace;
                 <a href="/OpenH2.Foundation/A.html#1e2a35583670a05f" class="i property">Meshes</a> = <b>new</b>[] &lbrace; <span class="r3 r">mesh</span> &rbrace;,
-                <a href="/OpenH2.Foundation/A.html#d27fb02d681eb922" class="i property">Flags</a> = <a href="/OpenH2.Foundation/A.html#6b70698c43b4bd7a" class="t t">ModelFlags</a>.<a href="/OpenH2.Foundation/A.html#6175fd54c5a9c5fa" class="i field">Diffuse</a>
+                <a href="/OpenH2.Foundation/A.html#d27fb02d681eb922" class="i property">Flags</a> = <a href="/OpenH2.Foundation/A.html#6b70698c43b4bd7a" class="t valueType">ModelFlags</a>.<a href="/OpenH2.Foundation/A.html#6175fd54c5a9c5fa" class="i field">Diffuse</a>
             &rbrace;;
         &rbrace;
  
-        <b>public static</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t t">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="6a0dd9dc68a38bab" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">UnitPyramid</a>(<span class="t t">Vector4</span> <span id="r4 rd" class="r4 r">color</span>)
+        <b>public static</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t t">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="6a0dd9dc68a38bab" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">UnitPyramid</a>(<span class="t valueType">Vector4</span> <span id="r4 rd" class="r4 r">color</span>)
         &lbrace;
             <a href="/OpenH2.Foundation/A.html#be491be8a8b0ec17" class="k">var</a> <span id="r5 rd" class="r5 r">mesh</span> = <b>new</b> <a href="/OpenH2.Foundation/A.html#be491be8a8b0ec17" class="t constructor">Mesh</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt;
             &lbrace;
-                <a href="/OpenH2.Foundation/A.html#3487528321290e64" class="i property">ElementType</a> = <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>,
+                <a href="/OpenH2.Foundation/A.html#3487528321290e64" class="i property">ElementType</a> = <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>,
                 <a href="/OpenH2.Foundation/A.html#b0c8c5384e040952" class="i property">Indicies</a> = <b>new</b>[] &lbrace;
                     0, 2, 1,
                     0, 1, 3,
                     1, 2, 3,
                     2, 0, 3 &rbrace;,
-                <a href="/OpenH2.Foundation/A.html#7f695107e6b698e1" class="i property">Verticies</a> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[] &lbrace;
+                <a href="/OpenH2.Foundation/A.html#7f695107e6b698e1" class="i property">Verticies</a> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>[] &lbrace;
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(0, 0, 0), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(0.5f, 0, 0), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(0.25f, 0.5f, 0), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
@@ -69,15 +69,15 @@
             <b>return</b> <b>new</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t constructor">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt;()
             &lbrace;
                 <a href="/OpenH2.Foundation/A.html#1e2a35583670a05f" class="i property">Meshes</a> = <b>new</b>[] &lbrace; <span class="r5 r">mesh</span> &rbrace;,
-                <a href="/OpenH2.Foundation/A.html#d27fb02d681eb922" class="i property">Flags</a> = <a href="/OpenH2.Foundation/A.html#6b70698c43b4bd7a" class="t t">ModelFlags</a>.<a href="/OpenH2.Foundation/A.html#6175fd54c5a9c5fa" class="i field">Diffuse</a>
+                <a href="/OpenH2.Foundation/A.html#d27fb02d681eb922" class="i property">Flags</a> = <a href="/OpenH2.Foundation/A.html#6b70698c43b4bd7a" class="t valueType">ModelFlags</a>.<a href="/OpenH2.Foundation/A.html#6175fd54c5a9c5fa" class="i field">Diffuse</a>
             &rbrace;;
         &rbrace;
  
-        <b>public static</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t t">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="649540c7980e3f39" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">HalfTriangularThing</a>(<span class="t t">Vector4</span> <span id="r6 rd" class="r6 r">color</span>)
+        <b>public static</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t t">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="649540c7980e3f39" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">HalfTriangularThing</a>(<span class="t valueType">Vector4</span> <span id="r6 rd" class="r6 r">color</span>)
         &lbrace;
             <a href="/OpenH2.Foundation/A.html#be491be8a8b0ec17" class="k">var</a> <span id="r7 rd" class="r7 r">mesh</span> = <b>new</b> <a href="/OpenH2.Foundation/A.html#be491be8a8b0ec17" class="t constructor">Mesh</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt;
             &lbrace;
-                <a href="/OpenH2.Foundation/A.html#3487528321290e64" class="i property">ElementType</a> = <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>,
+                <a href="/OpenH2.Foundation/A.html#3487528321290e64" class="i property">ElementType</a> = <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>.<a href="/OpenH2.Foundation/A.html#bbbcf7180ef5a471" class="i field">TriangleList</a>,
                 <a href="/OpenH2.Foundation/A.html#b0c8c5384e040952" class="i property">Indicies</a> = <b>new</b>[] &lbrace;
                     1, 0, 4,
                     2, 1, 4,
@@ -85,7 +85,7 @@
                     0, 1, 3,
                     1, 2, 3,
                     2, 0, 3 &rbrace;,
-                <a href="/OpenH2.Foundation/A.html#7f695107e6b698e1" class="i property">Verticies</a> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[] &lbrace;
+                <a href="/OpenH2.Foundation/A.html#7f695107e6b698e1" class="i property">Verticies</a> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>[] &lbrace;
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(0, 0, 0), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(0.25f, 0, 0), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
                     <b>new</b> <a href="/OpenH2.Foundation/A.html#88cc525b11e2fb00" class="t constructor">VertexFormat</a>(<b>new</b> <span class="t constructor">Vector3</span>(0.12f, 0.25f, 0), <b>new</b> <span class="t constructor">Vector2</span>(), <b>new</b> <span class="t constructor">Vector3</span>()),
@@ -98,7 +98,7 @@
             <b>return</b> <b>new</b> <a href="/OpenH2.Foundation/A.html#d014a06270c8d5db" class="t constructor">Model</a>&lt;<a href="../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt;()
             &lbrace;
                 <a href="/OpenH2.Foundation/A.html#1e2a35583670a05f" class="i property">Meshes</a> = <b>new</b>[] &lbrace; <span class="r7 r">mesh</span> &rbrace;,
-                <a href="/OpenH2.Foundation/A.html#d27fb02d681eb922" class="i property">Flags</a> = <a href="/OpenH2.Foundation/A.html#6b70698c43b4bd7a" class="t t">ModelFlags</a>.<a href="/OpenH2.Foundation/A.html#6175fd54c5a9c5fa" class="i field">Diffuse</a>
+                <a href="/OpenH2.Foundation/A.html#d27fb02d681eb922" class="i property">Flags</a> = <a href="/OpenH2.Foundation/A.html#6b70698c43b4bd7a" class="t valueType">ModelFlags</a>.<a href="/OpenH2.Foundation/A.html#6175fd54c5a9c5fa" class="i field">Diffuse</a>
             &rbrace;;
         &rbrace;
     &rbrace;

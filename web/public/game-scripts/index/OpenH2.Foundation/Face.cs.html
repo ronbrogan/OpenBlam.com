@@ -6,17 +6,17 @@
 &lbrace;
     <b>public class</b> <a id="e98fe820de159bab" href="R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">Face</a>
     &lbrace;
-        <b>public</b> <span class="t t">Vector3</span> <a id="9598386c391bd52b" href="R/9598386c391bd52b.html" target="n" data-glyph="102,1" class="i property">Normal</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
-        <b>public</b> <span class="t t">Vector3</span>[] <a id="b80889ebe4029c65" href="R/b80889ebe4029c65.html" target="n" data-glyph="102,1" class="i property">Vertices</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
-        <b>public</b> <span class="t t">Vector3</span> <a id="c7ef3670e8b0ba81" href="R/c7ef3670e8b0ba81.html" target="n" data-glyph="102,1" class="i property">Position</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="9598386c391bd52b" href="R/9598386c391bd52b.html" target="n" data-glyph="102,1" class="i property">Normal</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public</b> <span class="t valueType">Vector3</span>[] <a id="b80889ebe4029c65" href="R/b80889ebe4029c65.html" target="n" data-glyph="102,1" class="i property">Vertices</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="c7ef3670e8b0ba81" href="R/c7ef3670e8b0ba81.html" target="n" data-glyph="102,1" class="i property">Position</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
  
-        <b>public</b> <a id="293aced11b48ff8b" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">Face</a>(<span class="t t">Vector3</span>[] <span id="r0 rd" class="r0 r">verts</span>)
+        <b>public</b> <a id="293aced11b48ff8b" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">Face</a>(<span class="t valueType">Vector3</span>[] <span id="r0 rd" class="r0 r">verts</span>)
         &lbrace;
             <a href="#e98fe820de159bab" class="k">this</a>.<a href="#b80889ebe4029c65" class="i property">Vertices</a> = <span class="r0 r">verts</span>;
-            <b>var</b> <span id="r1 rd" class="r1 r">cross</span> = <span class="t t">Vector3</span>.<span class="i method">Cross</span>(<span class="r0 r">verts</span>[1] - <span class="r0 r">verts</span>[0], <span class="r0 r">verts</span>[2] - <span class="r0 r">verts</span>[0]);
-            <a href="#e98fe820de159bab" class="k">this</a>.<a href="#9598386c391bd52b" class="i property">Normal</a> = <span class="t t">Vector3</span>.<span class="i method">Normalize</span>(<span class="r1 r">cross</span>);
+            <b>var</b> <span id="r1 rd" class="r1 r">cross</span> = <span class="t valueType">Vector3</span>.<span class="i method">Cross</span>(<span class="r0 r">verts</span>[1] - <span class="r0 r">verts</span>[0], <span class="r0 r">verts</span>[2] - <span class="r0 r">verts</span>[0]);
+            <a href="#e98fe820de159bab" class="k">this</a>.<a href="#9598386c391bd52b" class="i property">Normal</a> = <span class="t valueType">Vector3</span>.<span class="i method">Normalize</span>(<span class="r1 r">cross</span>);
  
-            <b>var</b> <span id="r2 rd" class="r2 r">acc</span> = <span class="t t">Vector3</span>.<span class="i property">Zero</span>;
+            <b>var</b> <span id="r2 rd" class="r2 r">acc</span> = <span class="t valueType">Vector3</span>.<span class="i property">Zero</span>;
             <b>foreach</b>(<b>var</b> <span id="r3 rd" class="r3 r">vert</span> <b>in</b> <span class="r0 r">verts</span>)
             &lbrace;
                 <span class="r2 r">acc</span> += <span class="r3 r">vert</span>;

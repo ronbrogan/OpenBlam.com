@@ -71,13 +71,13 @@
                         <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">&quot;Unable to read the amount of data required&quot;</span>);
                     &rbrace;
  
-                    <span class="r1 r">decompressTo</span>.<span class="i method">Write</span>(((<span class="t t">Span</span>&lt;<b>byte</b>&gt;)<span class="r7 r">buf</span>).<span class="i method">Slice</span>(0, <span class="r8 r">readCount</span>));
+                    <span class="r1 r">decompressTo</span>.<span class="i method">Write</span>(((<span class="t valueType">Span</span>&lt;<b>byte</b>&gt;)<span class="r7 r">buf</span>).<span class="i method">Slice</span>(0, <span class="r8 r">readCount</span>));
                     <a href="#8ef95380b3eb76a1" class="i field">copyPool</a>.<span class="i method">Return</span>(<span class="r7 r">buf</span>);
                 &rbrace;
                 <b>else</b>
                 &lbrace;
-                    <span class="r0 r">compressed</span>.<span class="i method">Seek</span>(<span class="r5 r">section</span>.<a href="H2mccCompressionSections.cs.html#867b01f929124ebd" class="i property">Offset</a> + 2, <span class="t t">SeekOrigin</span>.<span class="i field">Begin</span>);
-                    <b>using</b> <b>var</b> <span id="r9 rd" class="r9 r">deflate</span> = <b>new</b> <span class="t constructor">DeflateStream</span>(<span class="r0 r">compressed</span>, <span class="t t">CompressionMode</span>.<span class="i field">Decompress</span>, <span class="r10 r">leaveOpen</span>: <b>true</b>);
+                    <span class="r0 r">compressed</span>.<span class="i method">Seek</span>(<span class="r5 r">section</span>.<a href="H2mccCompressionSections.cs.html#867b01f929124ebd" class="i property">Offset</a> + 2, <span class="t valueType">SeekOrigin</span>.<span class="i field">Begin</span>);
+                    <b>using</b> <b>var</b> <span id="r9 rd" class="r9 r">deflate</span> = <b>new</b> <span class="t constructor">DeflateStream</span>(<span class="r0 r">compressed</span>, <span class="t valueType">CompressionMode</span>.<span class="i field">Decompress</span>, <span class="r10 r">leaveOpen</span>: <b>true</b>);
                     <span class="r9 r">deflate</span>.<span class="i method">CopyTo</span>(<span class="r1 r">decompressTo</span>);
                 &rbrace;
             &rbrace;
@@ -123,7 +123,7 @@
             <b>var</b> <span id="r15 rd" class="r15 r">compressionSections</span> = <b>new</b> <span class="t constructor">Span</span>&lt;<b>byte</b>&gt;(<b>new</b> <b>byte</b>[8192]);
             <span class="r12 r">compressTo</span>.<span class="i method">Write</span>(<span class="r15 r">compressionSections</span>);
  
-            <b>var</b> <span id="r16 rd" class="r16 r">sections</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="H2mccCompressionSections.cs.html#253bc48ae9a1a537" class="t t">H2mccCompressionSections</a>.<a href="H2mccCompressionSections.cs.html#ab7656d3a3648c7f" class="t t">CompressionSection</a>&gt;();
+            <b>var</b> <span id="r16 rd" class="r16 r">sections</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="H2mccCompressionSections.cs.html#253bc48ae9a1a537" class="t t">H2mccCompressionSections</a>.<a href="H2mccCompressionSections.cs.html#ab7656d3a3648c7f" class="t valueType">CompressionSection</a>&gt;();
  
             <b>var</b> <span id="r17 rd" class="r17 r">chunk</span> = <b>new</b> <span class="t constructor">Span</span>&lt;<b>byte</b>&gt;(<b>new</b> <b>byte</b>[<a href="#90e5e8fee3830fc8" class="i field">CompressionChunkSize</a>]);
  
@@ -136,12 +136,12 @@
                 <span class="t t">Debug</span>.<span class="i method">Assert</span>(<span class="r19 r">readBytes</span> == <span class="r18 r">bytesToTake</span>);
  
                 <b>using</b> <b>var</b> <span id="r20 rd" class="r20 r">compressed</span> = <b>new</b> <span class="t constructor">MemoryStream</span>();
-                <b>using</b> (<b>var</b> <span id="r21 rd" class="r21 r">compressor</span> = <b>new</b> <span class="t constructor">DeflateStream</span>(<span class="r20 r">compressed</span>, <span class="t t">CompressionLevel</span>.<span class="i field">Optimal</span>, <b>true</b>))
+                <b>using</b> (<b>var</b> <span id="r21 rd" class="r21 r">compressor</span> = <b>new</b> <span class="t constructor">DeflateStream</span>(<span class="r20 r">compressed</span>, <span class="t valueType">CompressionLevel</span>.<span class="i field">Optimal</span>, <b>true</b>))
                 &lbrace;
                     <span class="r21 r">compressor</span>.<span class="i method">Write</span>(<span class="r17 r">chunk</span>.<span class="i method">ToArray</span>(), 0, <span class="r19 r">readBytes</span>);
                 &rbrace;
  
-                <span class="r20 r">compressed</span>.<span class="i method">Seek</span>(0, <span class="t t">SeekOrigin</span>.<span class="i field">Begin</span>);
+                <span class="r20 r">compressed</span>.<span class="i method">Seek</span>(0, <span class="t valueType">SeekOrigin</span>.<span class="i field">Begin</span>);
  
                 <a href="H2mccCompressionSections.cs.html#ab7656d3a3648c7f" class="k">var</a> <span id="r22 rd" class="r22 r">section</span> = <b>new</b> <a href="H2mccCompressionSections.cs.html#253bc48ae9a1a537" class="t t">H2mccCompressionSections</a>.<a href="H2mccCompressionSections.cs.html#626b5bf8b887fb48" class="t constructor">CompressionSection</a>((<b>int</b>)<span class="r20 r">compressed</span>.<span class="i property">Length</span> + 2, (<b>uint</b>)<span class="r12 r">compressTo</span>.<span class="i property">Position</span>);
                 <span class="r16 r">sections</span>.<span class="i method">Add</span>(<span class="r22 r">section</span>);
@@ -153,7 +153,7 @@
             &rbrace;
  
             <span class="c">// Go back and write compression section info</span>
-            <span class="r12 r">compressTo</span>.<span class="i method">Seek</span>(<span class="t t">BlamSerializer</span>.<span class="i method">SizeOf</span>&lt;<a href="H2mccMapHeader.cs.html#fcdcc681dab5e1a6" class="t t">H2mccMapHeader</a>&gt;(), <span class="t t">SeekOrigin</span>.<span class="i field">Begin</span>);
+            <span class="r12 r">compressTo</span>.<span class="i method">Seek</span>(<span class="t t">BlamSerializer</span>.<span class="i method">SizeOf</span>&lt;<a href="H2mccMapHeader.cs.html#fcdcc681dab5e1a6" class="t t">H2mccMapHeader</a>&gt;(), <span class="t valueType">SeekOrigin</span>.<span class="i field">Begin</span>);
             <b>foreach</b> (<a href="H2mccCompressionSections.cs.html#ab7656d3a3648c7f" class="k">var</a> <span id="r23 rd" class="r23 r">section</span> <b>in</b> <span class="r16 r">sections</span>)
             &lbrace;
                 <span class="r12 r">compressTo</span>.<a href="../../Extensions/StreamExtensions.cs.html#debbac7007b97d08" class="i method">WriteInt32</a>(<span class="r23 r">section</span>.<a href="H2mccCompressionSections.cs.html#a2ed4ca274f753b7" class="i property">Count</a>);

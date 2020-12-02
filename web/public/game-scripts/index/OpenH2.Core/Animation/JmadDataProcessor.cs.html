@@ -11,8 +11,8 @@
 &lbrace;
     <b>public class</b> <a id="d174e6ae92362b7c" href="../R/d174e6ae92362b7c.html" target="n" data-glyph="0,0" class="t t">JmadDataProcessor</a> : <a href="IAnimationProcessor.cs.html#2b6760aa05ece70c" class="t t">IAnimationProcessor</a>
     &lbrace;
-        <b>private delegate int</b> <a id="530122ac4459e9f4" href="../R/../../0000000000.html" target="n" data-glyph="16,1" class="t t"><span id="64994e07a3becd64">OrientationFrameSetCount</span></a>(<span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r0 rd" class="r0 r">data</span>);
-        <b>private delegate int</b> <a id="42419694efbfdfb6" href="../R/../../0000000000.html" target="n" data-glyph="16,1" class="t t"><span id="4521cf97551d5272">TranslationFrameSetCount</span></a>(<span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r1 rd" class="r1 r">data</span>);
+        <b>private delegate int</b> <a id="530122ac4459e9f4" href="../R/../../0000000000.html" target="n" data-glyph="16,1" class="t t"><span id="64994e07a3becd64">OrientationFrameSetCount</span></a>(<span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r0 rd" class="r0 r">data</span>);
+        <b>private delegate int</b> <a id="42419694efbfdfb6" href="../R/../../0000000000.html" target="n" data-glyph="16,1" class="t t"><span id="4521cf97551d5272">TranslationFrameSetCount</span></a>(<span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r1 rd" class="r1 r">data</span>);
  
         <b>private</b> <a id="36543d0eeab4745a" href="../R/36543d0eeab4745a.html" target="n" data-glyph="76,1" class="t constructor">JmadDataProcessor</a>() &lbrace; &rbrace;
         <b>public static</b> <a href="IAnimationProcessor.cs.html#2b6760aa05ece70c" class="t t">IAnimationProcessor</a> <a id="35187453ee858b7e" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetProcessor</a>()
@@ -22,7 +22,7 @@
             <b>return</b> <span class="r2 r">processor</span>;
         &rbrace;
  
-        <b>public</b> <a href="Animation.cs.html#df262d9f417ba4ef" class="t t">Animation</a> <a id="d0603e00e4fe8095" href="../R/d0603e00e4fe8095.html" target="n" data-glyph="72,1" class="i method">GetAnimation</a>(<b>int</b> <span id="r3 rd" class="r3 r">frames</span>, <b>int</b> <span id="r4 rd" class="r4 r">bones</span>, <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r5 rd" class="r5 r">data</span>)
+        <b>public</b> <a href="Animation.cs.html#df262d9f417ba4ef" class="t t">Animation</a> <a id="d0603e00e4fe8095" href="../R/d0603e00e4fe8095.html" target="n" data-glyph="72,1" class="i method">GetAnimation</a>(<b>int</b> <span id="r3 rd" class="r3 r">frames</span>, <b>int</b> <span id="r4 rd" class="r4 r">bones</span>, <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r5 rd" class="r5 r">data</span>)
         &lbrace;
             <b>var</b> <span id="r6 rd" class="r6 r">orientationSets</span> = <a href="#3fc7001cdd9b2038" class="i method">GetOrientationBoneCount</a>(<span class="r5 r">data</span>);
             <b>var</b> <span id="r7 rd" class="r7 r">translationSets</span> = <a href="#d8e882da42b76e7c" class="i method">GetTranslationBoneCount</a>(<span class="r5 r">data</span>);
@@ -32,7 +32,7 @@
  
             <b>var</b> <span id="r9 rd" class="r9 r">dataStart</span> = <a href="#6c0c90b6705a9fd2" class="i method">GetFrameDataStart</a>(<span class="r5 r">data</span>);
  
-            <b>var</b> <span id="r10 rd" class="r10 r">frameData</span> = <b>new</b> <a href="AnimationFrame.cs.html#0c0182e74985541c" class="t t">AnimationFrame</a>[<span class="r8 r">setCount</span>, <span class="r3 r">frames</span>];
+            <b>var</b> <span id="r10 rd" class="r10 r">frameData</span> = <b>new</b> <a href="AnimationFrame.cs.html#0c0182e74985541c" class="t valueType">AnimationFrame</a>[<span class="r8 r">setCount</span>, <span class="r3 r">frames</span>];
  
             <b>var</b> <span id="r11 rd" class="r11 r">orientStart</span> = <span class="r9 r">dataStart</span>;
             <b>for</b>(<b>var</b> <span id="r12 rd" class="r12 r">i</span> = 0; <span class="r12 r">i</span> &lt; <span class="r6 r">orientationSets</span>; <span class="r12 r">i</span>++)
@@ -76,7 +76,7 @@
             <b>return</b> <b>new</b> <a href="Animation.cs.html#df262d9f417ba4ef" class="t constructor">Animation</a>() &lbrace; <a href="Animation.cs.html#20226d61522fb9fc" class="i property">Frames</a> = <span class="r10 r">frameData</span> &rbrace;;
         &rbrace;
  
-        <b>private int</b> <a id="f03b7a022cfe6957" href="../R/f03b7a022cfe6957.html" target="n" data-glyph="76,1" class="i method">GetInfoOffset</a>(<span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r23 rd" class="r23 r">data</span>)
+        <b>private int</b> <a id="f03b7a022cfe6957" href="../R/f03b7a022cfe6957.html" target="n" data-glyph="76,1" class="i method">GetInfoOffset</a>(<span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r23 rd" class="r23 r">data</span>)
         &lbrace;
             <span class="c">// Guessing that 0x3 indicates that there&#39;s a float in front of info header</span>
             <b>var</b> <span id="r24 rd" class="r24 r">threeVal</span> = <span class="r23 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#a655f220967c3ca6" class="i method">ReadByteAt</a>(3);
@@ -84,7 +84,7 @@
             <b>return</b> <span class="r23 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#ac7027ff2bef2108" class="i method">ReadInt32At</a>(16) + (<span class="r24 r">threeVal</span> == 1 ? 4 : 0);
         &rbrace;
  
-        <b>private int</b> <a id="6c0c90b6705a9fd2" href="../R/6c0c90b6705a9fd2.html" target="n" data-glyph="76,1" class="i method">GetFrameDataStart</a>(<span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r25 rd" class="r25 r">data</span>)
+        <b>private int</b> <a id="6c0c90b6705a9fd2" href="../R/6c0c90b6705a9fd2.html" target="n" data-glyph="76,1" class="i method">GetFrameDataStart</a>(<span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r25 rd" class="r25 r">data</span>)
         &lbrace;
             <b>var</b> <span id="r26 rd" class="r26 r">infoOffset</span> = <a href="#f03b7a022cfe6957" class="i method">GetInfoOffset</a>(<span class="r25 r">data</span>);
             <b>var</b> <span id="r27 rd" class="r27 r">sizeCount</span> = <span class="r25 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#a655f220967c3ca6" class="i method">ReadByteAt</a>(<span class="r26 r">infoOffset</span>);
@@ -93,13 +93,13 @@
             <b>return</b> <span class="r26 r">infoOffset</span> + 4 + 8 + 8 + <span class="r27 r">sizeCount</span> * 4;
         &rbrace;
  
-        <b>private int</b> <a id="3fc7001cdd9b2038" href="../R/3fc7001cdd9b2038.html" target="n" data-glyph="76,1" class="i method">GetOrientationBoneCount</a>(<span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r28 rd" class="r28 r">data</span>)
+        <b>private int</b> <a id="3fc7001cdd9b2038" href="../R/3fc7001cdd9b2038.html" target="n" data-glyph="76,1" class="i method">GetOrientationBoneCount</a>(<span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r28 rd" class="r28 r">data</span>)
         &lbrace;
             <b>var</b> <span id="r29 rd" class="r29 r">infoOffset</span> = <a href="#f03b7a022cfe6957" class="i method">GetInfoOffset</a>(<span class="r28 r">data</span>);
             <b>return</b> <span class="r28 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#a655f220967c3ca6" class="i method">ReadByteAt</a>(<span class="r29 r">infoOffset</span> + 1);
         &rbrace;
  
-        <b>private int</b> <a id="d8e882da42b76e7c" href="../R/d8e882da42b76e7c.html" target="n" data-glyph="76,1" class="i method">GetTranslationBoneCount</a>(<span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r30 rd" class="r30 r">data</span>)
+        <b>private int</b> <a id="d8e882da42b76e7c" href="../R/d8e882da42b76e7c.html" target="n" data-glyph="76,1" class="i method">GetTranslationBoneCount</a>(<span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r30 rd" class="r30 r">data</span>)
         &lbrace;
             <b>var</b> <span id="r31 rd" class="r31 r">infoOffset</span> = <a href="#f03b7a022cfe6957" class="i method">GetInfoOffset</a>(<span class="r30 r">data</span>);
             <b>return</b> <span class="r30 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#a655f220967c3ca6" class="i method">ReadByteAt</a>(<span class="r31 r">infoOffset</span> + 2);

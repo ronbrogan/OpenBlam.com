@@ -37,7 +37,7 @@
             <a href="#118b1ea6f0751253" class="i field">resultVariable</a> = <span class="i method">IdentifierName</span>(<span class="r2 r">resultVarName</span>)
                 .<span class="i method">WithAdditionalAnnotations</span>(<a href="../Generation/ScriptGenAnnotations.cs.html#f7f0cad0236f94b5" class="t t">ScriptGenAnnotations</a>.<a href="../Generation/ScriptGenAnnotations.cs.html#d76f6bc2bc8378f1" class="i method">TypeAnnotation</a>(<span class="r1 r">containingScope</span>.<a href="Scope.cs.html#78ebb21d8a8f6d98" class="i property">Type</a>));
             <a href="#83d2d4a099121434" class="k">this</a>.<a href="#34f8525562d96b1d" class="i field">containingScope</a> = <span class="r1 r">containingScope</span>;
-            <a href="#83d2d4a099121434" class="k">this</a>.<a href="#44c8d5ce764fed1a" class="i field">producesValue</a> = <span class="r1 r">containingScope</span>.<a href="Scope.cs.html#78ebb21d8a8f6d98" class="i property">Type</a> != <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>;
+            <a href="#83d2d4a099121434" class="k">this</a>.<a href="#44c8d5ce764fed1a" class="i field">producesValue</a> = <span class="r1 r">containingScope</span>.<a href="Scope.cs.html#78ebb21d8a8f6d98" class="i property">Type</a> != <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>;
             <a href="#83d2d4a099121434" class="k">this</a>.<a href="#f2f29edd15650472" class="i field">shouldHoist</a> = <span class="r1 r">containingScope</span>.<a href="Scope.cs.html#3257d22372184090" class="i property">IsInStatementContext</a> == <b>false</b> &amp;&amp; <span class="r1 r">containingScope</span>.<a href="Scope.cs.html#27ad957b26c82ba6" class="i property">SuppressHoisting</a> == <b>false</b>;
         &rbrace;
  
@@ -90,7 +90,7 @@
             <b>if</b> (<a href="#f2f29edd15650472" class="i field">shouldHoist</a>)
             &lbrace;
                 <span class="r7 r">statement</span> = <span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(
-                    <span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                    <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
                     <a href="#118b1ea6f0751253" class="i field">resultVariable</a>,
                     <span class="r6 r">resultValue</span>))
                 .<span class="i method">WithAdditionalAnnotations</span>(<a href="../Generation/ScriptGenAnnotations.cs.html#f7f0cad0236f94b5" class="t t">ScriptGenAnnotations</a>.<a href="../Generation/ScriptGenAnnotations.cs.html#0b9a8409bbfef0a4" class="i property">ResultStatement</a>);
@@ -246,7 +246,7 @@
             <b>if</b> (<span class="r26 r">lastStatement</span>.<a href="../Generation/SyntaxUtil.cs.html#65e1b537de50b11b" class="i method">TryGetContainingSimpleExpression</a>(<b>out</b> <b>var</b> <span id="r27 rd" class="r27 r">simple</span>))
             &lbrace;
                 <b>var</b> <span id="r28 rd" class="r28 r">updatedLastTrue</span> = <span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(
-                    <span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                    <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
                     <a href="#118b1ea6f0751253" class="i field">resultVariable</a>,
                     <span class="r27 r">simple</span>));
  
@@ -256,7 +256,7 @@
             <b>else</b> <b>if</b> (<span class="r26 r">lastStatement</span>.<a href="../Generation/SyntaxUtil.cs.html#9e68e416166cbc8b" class="i method">TryGetLeftHandExpression</a>(<b>out</b> <b>var</b> <span id="r29 rd" class="r29 r">rhs</span>))
             &lbrace;
                 <b>var</b> <span id="r30 rd" class="r30 r">rhsAssignment</span> = <span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(
-                    <span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                    <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
                     <a href="#118b1ea6f0751253" class="i field">resultVariable</a>,
                     <span class="r29 r">rhs</span>));
  

@@ -1,66 +1,66 @@
 ﻿===============================================
-11/29/2020 9:17:55 PM: First chance exception
+12/1/2020 11:38:10 PM: First chance exception
 System.Runtime.InteropServices.COMException (0x80070490): Element not found. (Exception from HRESULT: 0x80070490)
    at Microsoft.VisualStudio.Setup.Configuration.ISetupConfiguration2.GetInstanceForCurrentProcess()
    at Microsoft.DotNet.DotNetSdkResolver.VSSettings..ctor()
 ===============================================
 Workspace failed: Found project reference without a matching metadata reference: C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Foundation\OpenH2.Foundation.csproj
 ===============================================
-11/29/2020 9:18:07 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:21 PM: First chance exception while processing assembly: OpenH2.Core
 System.TypeInitializationException: The type initializer for 'OpenBlam.Serialization.Materialization.WellKnown' threw an exception. ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Numerics.Vectors, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a' or one of its dependencies. The system cannot find the file specified.
    at OpenBlam.Serialization.Materialization.WellKnown..cctor()
    --- End of inner exception stack trace ---
    at OpenBlam.Serialization.Materialization.WellKnown..ctor(Compilation compilation, TypeDiscoverer typeDiscoverer)
    at OpenBlam.Serialization.SerializationGenerator.Execute(GeneratorExecutionContext context)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:27 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'real' start tag on line 53 position 191 does not match the end tag of 'summary'. Line 53, position 257.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:27 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'real' start tag on line 1 position 193 does not match the end tag of 'summary'. Line 1, position 259.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:27 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: '>' is an unexpected token. The expected token is '='. Line 83, position 119.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:27 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'real' start tag on line 12 position 126 does not match the end tag of 'summary'. Line 12, position 141.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:27 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: '>' is an unexpected token. The expected token is '='. Line 133, position 112.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'roll' start tag on line 89 position 108 does not match the end tag of 'summary'. Line 89, position 115.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'right' start tag on line 1 position 100 does not match the end tag of 'summary'. Line 1, position 108.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: '>' is an unexpected token. The expected token is '='. Line 1, position 120.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'decay' start tag on line 1 position 93 does not match the end tag of 'summary'. Line 1, position 101.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'object' start tag on line 57 position 125 does not match the end tag of 'summary'. Line 57, position 163.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'intensity' start tag on line 37 position 101 does not match the end tag of 'summary'. Line 37, position 113.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:13 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'time' start tag on line 1 position 93 does not match the end tag of 'summary'. Line 1, position 100.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)
 ===============================================
-11/29/2020 9:18:14 PM: First chance exception while processing assembly: OpenH2.Core
+12/1/2020 11:38:28 PM: First chance exception while processing assembly: OpenH2.Core
 System.Xml.XmlException: The 'time' start tag on line 1 position 93 does not match the end tag of 'summary'. Line 1, position 100.
    at System.Xml.XmlTextReaderImpl.Throw(Exception e)

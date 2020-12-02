@@ -15,16 +15,16 @@
         <b>private delegate</b> <span class="t t">Task</span> <a id="23afe0de3063fca5" href="../../R/23afe0de3063fca5.html" target="n" data-glyph="16,1" class="t t"><span id="9cef6f6fb94a8f4b">OrchestratedScript</span></a>();
         <b>public ulong</b> <a id="782dbf6c2255de80" href="../../R/782dbf6c2255de80.html" target="n" data-glyph="102,1" class="i property">CurrentTick</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace; = 0;
  
-        <b>private</b> <a href="#ec2707aa63e85845" class="t t">ExecutionState</a>[] <a id="bc29b42fb39a5e67" href="../../R/bc29b42fb39a5e67.html" target="n" data-glyph="46,1" class="i field">executionStates</a> = <span class="t t">Array</span>.<span class="i method">Empty</span>&lt;<a href="#ec2707aa63e85845" class="t t">ExecutionState</a>&gt;();
+        <b>private</b> <a href="#ec2707aa63e85845" class="t valueType">ExecutionState</a>[] <a id="bc29b42fb39a5e67" href="../../R/bc29b42fb39a5e67.html" target="n" data-glyph="46,1" class="i field">executionStates</a> = <span class="t t">Array</span>.<span class="i method">Empty</span>&lt;<a href="#ec2707aa63e85845" class="t valueType">ExecutionState</a>&gt;();
  
         <b>public void</b> <a id="cf3cadf9035a741a" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Setup</a>(<a href="../ScenarioScriptBase.cs.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a> <span id="r0 rd" class="r0 r">scripts</span>)
         &lbrace;
             <b>var</b> <span id="r1 rd" class="r1 r">scriptMethods</span> = <span class="r0 r">scripts</span>.<span class="i method">GetType</span>()
-                .<span class="i method">GetMethods</span>(<span class="t t">BindingFlags</span>.<span class="i field">Public</span> | <span class="t t">BindingFlags</span>.<span class="i field">Instance</span>)
+                .<span class="i method">GetMethods</span>(<span class="t valueType">BindingFlags</span>.<span class="i field">Public</span> | <span class="t valueType">BindingFlags</span>.<span class="i field">Instance</span>)
                 .<span class="i method">Where</span>(<span id="r2 rd" class="r2 r">m</span> =&gt; <span class="r2 r">m</span>.<span class="i method">GetCustomAttribute</span>&lt;<a href="../ScriptMethodAttribute.cs.html#0ab010ef821e91b8" class="t t">ScriptMethodAttribute</a>&gt;() != <b>null</b>)
                 .<span class="i method">ToArray</span>();
  
-            <b>var</b> <span id="r3 rd" class="r3 r">execStates</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="#ec2707aa63e85845" class="t t">ExecutionState</a>&gt;(<span class="r1 r">scriptMethods</span>.<span class="i property">Length</span>);
+            <b>var</b> <span id="r3 rd" class="r3 r">execStates</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="#ec2707aa63e85845" class="t valueType">ExecutionState</a>&gt;(<span class="r1 r">scriptMethods</span>.<span class="i property">Length</span>);
  
             <b>foreach</b> (<b>var</b> <span id="r4 rd" class="r4 r">script</span> <b>in</b> <span class="r1 r">scriptMethods</span>)
             &lbrace;
@@ -32,12 +32,12 @@
  
                 <a href="ScriptStatus.cs.html#dc7060952719c9be" class="k">var</a> <span id="r6 rd" class="r6 r">initialStatus</span> = <span class="r5 r">attr</span>.<a href="../ScriptMethodAttribute.cs.html#3ca326143e0e9167" class="i property">Lifecycle</a> <b>switch</b>
                 &lbrace;
-                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#989025355133af52" class="i field">Startup</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#296a51f3ad0148bc" class="i field">RunOnce</a>,
-                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#1d55331eaa99be74" class="i field">Dormant</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#0afd1c2018cce347" class="i field">Sleeping</a>,
-                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#436787a911bc5594" class="i field">Continuous</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#bce7e6282dba3989" class="i field">RunContinuous</a>,
-                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#030313851be53070" class="i field">Static</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>,
-                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#fd57d6ad76d470c9" class="i field">Stub</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>,
-                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#2cd8559f160a63c5" class="i field">CommandScript</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>,
+                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#989025355133af52" class="i field">Startup</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#296a51f3ad0148bc" class="i field">RunOnce</a>,
+                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#1d55331eaa99be74" class="i field">Dormant</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#0afd1c2018cce347" class="i field">Sleeping</a>,
+                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#436787a911bc5594" class="i field">Continuous</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#bce7e6282dba3989" class="i field">RunContinuous</a>,
+                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#030313851be53070" class="i field">Static</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>,
+                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#fd57d6ad76d470c9" class="i field">Stub</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>,
+                    <a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="../ScriptMethodAttribute.cs.html#2cd8559f160a63c5" class="i field">CommandScript</a> =&gt; <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>,
                     <b>_</b> =&gt; <b>throw</b> <b>new</b> <span class="t constructor">NotImplementedException</span>()
                 &rbrace;;
  
@@ -47,7 +47,7 @@
                     <a href="#6f163816a170db5a" class="i field">Description</a> = <span class="r4 r">script</span>.<span class="i property">Name</span>,
                     <a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <span class="r6 r">initialStatus</span>,
                     <a href="#947008daa4816fca" class="i field">Task</a> = <b>null</b>,
-                    <a href="#329d50607f72d23b" class="i field">SleepUntil</a> = <span class="t t">DateTimeOffset</span>.<span class="i field">MaxValue</span>
+                    <a href="#329d50607f72d23b" class="i field">SleepUntil</a> = <span class="t valueType">DateTimeOffset</span>.<span class="i field">MaxValue</span>
                 &rbrace;;
  
                 <a href="#23afe0de3063fca5" class="t t">OrchestratedScript</a> <span id="r8 rd" class="r8 r">func</span>;
@@ -98,11 +98,11 @@
             &lbrace;
                 <a href="#ec2707aa63e85845" class="k">var</a> <span id="r13 rd" class="r13 r">state</span> = <a href="#bc29b42fb39a5e67" class="i field">executionStates</a>[<span class="r12 r">i</span>];
  
-                <b>if</b>(<span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#bce7e6282dba3989" class="i field">RunContinuous</a> &amp;&amp; (<span class="r13 r">state</span>.<a href="#947008daa4816fca" class="i field">Task</a>?.<span class="i property">IsCompleted</span> ?? <b>true</b>))
+                <b>if</b>(<span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#bce7e6282dba3989" class="i field">RunContinuous</a> &amp;&amp; (<span class="r13 r">state</span>.<a href="#947008daa4816fca" class="i field">Task</a>?.<span class="i property">IsCompleted</span> ?? <b>true</b>))
                 &lbrace;
                     <span class="r13 r">state</span>.<a href="#947008daa4816fca" class="i field">Task</a> = <span class="r13 r">state</span>.<a href="#429bc85156d92aa5" class="i field">Func</a>();
                 &rbrace;
-                <b>if</b> (<span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#296a51f3ad0148bc" class="i field">RunOnce</a>)
+                <b>if</b> (<span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#296a51f3ad0148bc" class="i field">RunOnce</a>)
                 &lbrace;
                     <b>if</b>(<span class="r13 r">state</span>.<a href="#947008daa4816fca" class="i field">Task</a> == <b>null</b>)
                     &lbrace;
@@ -110,13 +110,13 @@
                     &rbrace;
                     <b>else</b> <b>if</b>(<span class="r13 r">state</span>.<a href="#947008daa4816fca" class="i field">Task</a>.<span class="i property">IsCompleted</span>)
                     &lbrace;
-                        <span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>;
+                        <span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>;
                     &rbrace;
                 &rbrace;
-                <b>if</b> (<span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#0afd1c2018cce347" class="i field">Sleeping</a> &amp;&amp; <span class="r13 r">state</span>.<a href="#329d50607f72d23b" class="i field">SleepUntil</a> &lt; <span class="t t">DateTimeOffset</span>.<span class="i property">UtcNow</span>)
+                <b>if</b> (<span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#0afd1c2018cce347" class="i field">Sleeping</a> &amp;&amp; <span class="r13 r">state</span>.<a href="#329d50607f72d23b" class="i field">SleepUntil</a> &lt; <span class="t valueType">DateTimeOffset</span>.<span class="i property">UtcNow</span>)
                 &lbrace;
                     <a href="/OpenH2.Foundation/A.html#3f248a139f68cdb0" class="t t">Logger</a>.<a href="/OpenH2.Foundation/A.html#4c319781e6ec4572" class="i method">LogInfo</a>(<span class="s">$&quot;</span><span class="s">[SCRIPT] (</span>&lbrace;<span class="r13 r">state</span>.<a href="#6f163816a170db5a" class="i field">Description</a>&rbrace;<span class="s">) - waking up</span><span class="s">&quot;</span>);
-                    <span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#296a51f3ad0148bc" class="i field">RunOnce</a>;
+                    <span class="r13 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#296a51f3ad0148bc" class="i field">RunOnce</a>;
                     <span class="r13 r">state</span>.<a href="#947008daa4816fca" class="i field">Task</a> = <span class="r13 r">state</span>.<a href="#429bc85156d92aa5" class="i field">Func</a>();
                 &rbrace;
  
@@ -124,7 +124,7 @@
             &rbrace;
         &rbrace;
  
-        <b>public void</b> <a id="e25ec35201021a83" href="../../R/e25ec35201021a83.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<b>string</b> <span id="r14 rd" class="r14 r">methodName</span>, <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a> <span id="r15 rd" class="r15 r">desiredStatus</span>)
+        <b>public void</b> <a id="e25ec35201021a83" href="../../R/e25ec35201021a83.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<b>string</b> <span id="r14 rd" class="r14 r">methodName</span>, <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <span id="r15 rd" class="r15 r">desiredStatus</span>)
         &lbrace;
             <b>for</b> (<b>var</b> <span id="r16 rd" class="r16 r">i</span> = 0; <span class="r16 r">i</span> &lt; <a href="#bc29b42fb39a5e67" class="i field">executionStates</a>.<span class="i property">Length</span>; <span class="r16 r">i</span>++)
             &lbrace;
@@ -132,7 +132,7 @@
  
                 <b>if</b> (<span class="r17 r">state</span>.<a href="#6f163816a170db5a" class="i field">Description</a> == <span class="r14 r">methodName</span>)
                 &lbrace;
-                    <b>if</b>(<span class="r17 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>)
+                    <b>if</b>(<span class="r17 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> == <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#99f13616b63ecb56" class="i field">Terminated</a>)
                     &lbrace;
                         <a href="/OpenH2.Foundation/A.html#3f248a139f68cdb0" class="t t">Logger</a>.<a href="/OpenH2.Foundation/A.html#3e174e1b224297de" class="i method">Log</a>(<span class="s">$&quot;</span><span class="s">[SCRIPT] Trying to set terminated lifecycle to </span>&lbrace;<span class="r15 r">desiredStatus</span>&rbrace;<span class="s">&quot;</span>, <a href="/OpenH2.Foundation/A.html#3f248a139f68cdb0" class="t t">Logger</a>.<a href="/OpenH2.Foundation/A.html#d56a203151a45eb8" class="t t">Color</a>.<a href="/OpenH2.Foundation/A.html#f8e52b86deabc367" class="i field">Red</a>);
                         <b>return</b>;
@@ -146,7 +146,7 @@
             &rbrace;
         &rbrace;
  
-        <b>public void</b> <a id="6123d649c1544794" href="../../R/6123d649c1544794.html" target="n" data-glyph="72,1" class="i method">SleepUntil</a>(<b>string</b> <span id="r18 rd" class="r18 r">methodName</span>, <span class="t t">DateTimeOffset</span> <span id="r19 rd" class="r19 r">offset</span>)
+        <b>public void</b> <a id="6123d649c1544794" href="../../R/6123d649c1544794.html" target="n" data-glyph="72,1" class="i method">SleepUntil</a>(<b>string</b> <span id="r18 rd" class="r18 r">methodName</span>, <span class="t valueType">DateTimeOffset</span> <span id="r19 rd" class="r19 r">offset</span>)
         &lbrace;
             <b>for</b> (<b>var</b> <span id="r20 rd" class="r20 r">i</span> = 0; <span class="r20 r">i</span> &lt; <a href="#bc29b42fb39a5e67" class="i field">executionStates</a>.<span class="i property">Length</span>; <span class="r20 r">i</span>++)
             &lbrace;
@@ -154,8 +154,8 @@
  
                 <b>if</b> (<span class="r21 r">state</span>.<a href="#6f163816a170db5a" class="i field">Description</a> == <span class="r18 r">methodName</span>)
                 &lbrace;
-                    <a href="/OpenH2.Foundation/A.html#3f248a139f68cdb0" class="t t">Logger</a>.<a href="/OpenH2.Foundation/A.html#4c319781e6ec4572" class="i method">LogInfo</a>(<span class="s">$&quot;</span><span class="s">[SCRIPT] (</span>&lbrace;<span class="r18 r">methodName</span>&rbrace;<span class="s">) @ </span>&lbrace;(<span class="r19 r">offset</span> - <span class="t t">DateTimeOffset</span>.<span class="i property">UtcNow</span>).<span class="i property">TotalMilliseconds</span>&rbrace;<span class="s">&quot;</span>);
-                    <span class="r21 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a>.<a href="ScriptStatus.cs.html#0afd1c2018cce347" class="i field">Sleeping</a>;
+                    <a href="/OpenH2.Foundation/A.html#3f248a139f68cdb0" class="t t">Logger</a>.<a href="/OpenH2.Foundation/A.html#4c319781e6ec4572" class="i method">LogInfo</a>(<span class="s">$&quot;</span><span class="s">[SCRIPT] (</span>&lbrace;<span class="r18 r">methodName</span>&rbrace;<span class="s">) @ </span>&lbrace;(<span class="r19 r">offset</span> - <span class="t valueType">DateTimeOffset</span>.<span class="i property">UtcNow</span>).<span class="i property">TotalMilliseconds</span>&rbrace;<span class="s">&quot;</span>);
+                    <span class="r21 r">state</span>.<a href="#65dcec28fe9d1fa1" class="i field">Status</a> = <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a>.<a href="ScriptStatus.cs.html#0afd1c2018cce347" class="i field">Sleeping</a>;
                     <span class="r21 r">state</span>.<a href="#329d50607f72d23b" class="i field">SleepUntil</a> = <span class="r19 r">offset</span>;
                 &rbrace;
  
@@ -163,12 +163,12 @@
             &rbrace;
         &rbrace;
  
-        <b>private struct</b> <a id="ec2707aa63e85845" href="../../R/ec2707aa63e85845.html" target="n" data-glyph="112,1" class="t t"><span id="2ac87e3363ba6e3c">ExecutionState</span></a>
+        <b>private struct</b> <a id="ec2707aa63e85845" href="../../R/ec2707aa63e85845.html" target="n" data-glyph="112,1" class="t valueType"><span id="2ac87e3363ba6e3c">ExecutionState</span></a>
         &lbrace;
             <b>public string</b> <a id="6f163816a170db5a" href="../../R/6f163816a170db5a.html" target="n" data-glyph="42,2" class="i field">Description</a>;
             <b>public</b> <a href="#23afe0de3063fca5" class="t t">OrchestratedScript</a> <a id="429bc85156d92aa5" href="../../R/429bc85156d92aa5.html" target="n" data-glyph="42,2" class="i field">Func</a>;
-            <b>public</b> <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t t">ScriptStatus</a> <a id="65dcec28fe9d1fa1" href="../../R/65dcec28fe9d1fa1.html" target="n" data-glyph="42,2" class="i field">Status</a>;
-            <b>public</b> <span class="t t">DateTimeOffset</span> <a id="329d50607f72d23b" href="../../R/329d50607f72d23b.html" target="n" data-glyph="42,2" class="i field">SleepUntil</a>;
+            <b>public</b> <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <a id="65dcec28fe9d1fa1" href="../../R/65dcec28fe9d1fa1.html" target="n" data-glyph="42,2" class="i field">Status</a>;
+            <b>public</b> <span class="t valueType">DateTimeOffset</span> <a id="329d50607f72d23b" href="../../R/329d50607f72d23b.html" target="n" data-glyph="42,2" class="i field">SleepUntil</a>;
             <b>public</b> <span class="t t">Task</span>? <a id="947008daa4816fca" href="../../R/947008daa4816fca.html" target="n" data-glyph="42,2" class="i field">Task</a>;
         &rbrace;
  
@@ -187,9 +187,9 @@
             <b>return</b> <span class="r23 r">t</span>.<span class="i property">Task</span>;
         &rbrace;
  
-        <b>private</b> <span class="t t">LinkedList</span>&lt;<a href="#76a8b707081eb05b" class="t t">EngineTickTask</a>&gt; <a id="2e335787ba1e7987" href="../../R/2e335787ba1e7987.html" target="n" data-glyph="46,1" class="i field">tasks</a> = <b>new</b> <span class="t constructor">LinkedList</span>&lt;<a href="#76a8b707081eb05b" class="t t">EngineTickTask</a>&gt;();
+        <b>private</b> <span class="t t">LinkedList</span>&lt;<a href="#76a8b707081eb05b" class="t valueType">EngineTickTask</a>&gt; <a id="2e335787ba1e7987" href="../../R/2e335787ba1e7987.html" target="n" data-glyph="46,1" class="i field">tasks</a> = <b>new</b> <span class="t constructor">LinkedList</span>&lt;<a href="#76a8b707081eb05b" class="t valueType">EngineTickTask</a>&gt;();
  
-        <b>private struct</b> <a id="76a8b707081eb05b" href="../../R/76a8b707081eb05b.html" target="n" data-glyph="112,1" class="t t"><span id="7763fdb8ae24db30">EngineTickTask</span></a> &lbrace; <b>public ulong</b> <a id="6cf720593acb1018" href="../../R/6cf720593acb1018.html" target="n" data-glyph="42,2" class="i field">expiry</a>; <b>public</b> <span class="t t">TaskCompletionSource</span>&lt;<b>object</b>&gt; <a id="c8ad90cf6d8d15b6" href="../../R/c8ad90cf6d8d15b6.html" target="n" data-glyph="42,2" class="i field">tcs</a>; &rbrace;
+        <b>private struct</b> <a id="76a8b707081eb05b" href="../../R/76a8b707081eb05b.html" target="n" data-glyph="112,1" class="t valueType"><span id="7763fdb8ae24db30">EngineTickTask</span></a> &lbrace; <b>public ulong</b> <a id="6cf720593acb1018" href="../../R/6cf720593acb1018.html" target="n" data-glyph="42,2" class="i field">expiry</a>; <b>public</b> <span class="t t">TaskCompletionSource</span>&lt;<b>object</b>&gt; <a id="c8ad90cf6d8d15b6" href="../../R/c8ad90cf6d8d15b6.html" target="n" data-glyph="42,2" class="i field">tcs</a>; &rbrace;
     &rbrace;
 &rbrace;
 </pre></td></tr></table></div></div>

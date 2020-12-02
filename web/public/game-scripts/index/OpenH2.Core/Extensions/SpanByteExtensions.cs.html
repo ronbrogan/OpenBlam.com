@@ -14,8 +14,8 @@
 &lbrace;
     <b>public static class</b> <a id="0b348aac941f7ff9" href="../R/0b348aac941f7ff9.html" target="n" data-glyph="0,0" class="t t">SpanByteExtensions</a>
     &lbrace;
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static string</b> <a id="350c0fd6076278f0" href="../R/350c0fd6076278f0.html" target="n" data-glyph="220,1" class="i method">ToStringFromNullTerminated</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r0 rd" class="r0 r">data</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static string</b> <a id="350c0fd6076278f0" href="../R/350c0fd6076278f0.html" target="n" data-glyph="220,1" class="i method">ToStringFromNullTerminated</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r0 rd" class="r0 r">data</span>)
         &lbrace;
             <b>var</b> <span id="r1 rd" class="r1 r">builder</span> = <b>new</b> <span class="t constructor">StringBuilder</span>(<span class="r0 r">data</span>.<span class="i property">Length</span>);
  
@@ -34,16 +34,16 @@
             <b>return</b> <span class="r1 r">builder</span>.<span class="i method">ToString</span>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static string</b> <a id="282d19ca708ba684" href="../R/282d19ca708ba684.html" target="n" data-glyph="220,1" class="i method">ReadStringFrom</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r3 rd" class="r3 r">data</span>, <b>int</b> <span id="r4 rd" class="r4 r">offset</span>, <b>int</b> <span id="r5 rd" class="r5 r">length</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static string</b> <a id="282d19ca708ba684" href="../R/282d19ca708ba684.html" target="n" data-glyph="220,1" class="i method">ReadStringFrom</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r3 rd" class="r3 r">data</span>, <b>int</b> <span id="r4 rd" class="r4 r">offset</span>, <b>int</b> <span id="r5 rd" class="r5 r">length</span>)
         &lbrace;
             <b>var</b> <span id="r6 rd" class="r6 r">len</span> = <span class="t t">Math</span>.<span class="i method">Min</span>(<span class="r5 r">length</span>, <span class="r3 r">data</span>.<span class="i property">Length</span> - <span class="r4 r">offset</span>);
  
             <b>return</b> <span class="r3 r">data</span>.<span class="i method">Slice</span>(<span class="r4 r">offset</span>, <span class="r6 r">len</span>).<a href="#350c0fd6076278f0" class="i method">ToStringFromNullTerminated</a>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static string</b> <a id="c937f1ca592e8fde" href="../R/c937f1ca592e8fde.html" target="n" data-glyph="220,1" class="i method">ReadStringStarting</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r7 rd" class="r7 r">data</span>, <b>int</b> <span id="r8 rd" class="r8 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static string</b> <a id="c937f1ca592e8fde" href="../R/c937f1ca592e8fde.html" target="n" data-glyph="220,1" class="i method">ReadStringStarting</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r7 rd" class="r7 r">data</span>, <b>int</b> <span id="r8 rd" class="r8 r">offset</span>)
         &lbrace;
             <b>var</b> <span id="r9 rd" class="r9 r">builder</span> = <b>new</b> <span class="t constructor">StringBuilder</span>(32);
  
@@ -62,14 +62,14 @@
             <b>return</b> <span class="r9 r">builder</span>.<span class="i method">ToString</span>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static byte</b> <a id="a655f220967c3ca6" href="../R/a655f220967c3ca6.html" target="n" data-glyph="220,1" class="i method">ReadByteAt</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r11 rd" class="r11 r">data</span>, <b>int</b> <span id="r12 rd" class="r12 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static byte</b> <a id="a655f220967c3ca6" href="../R/a655f220967c3ca6.html" target="n" data-glyph="220,1" class="i method">ReadByteAt</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r11 rd" class="r11 r">data</span>, <b>int</b> <span id="r12 rd" class="r12 r">offset</span>)
         &lbrace;
             <b>return</b> <span class="r11 r">data</span>[<span class="r12 r">offset</span>];
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static short</b> <a id="76a62b1d20c35986" href="../R/76a62b1d20c35986.html" target="n" data-glyph="220,1" class="i method">ReadInt16At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r13 rd" class="r13 r">data</span>, <b>int</b> <span id="r14 rd" class="r14 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static short</b> <a id="76a62b1d20c35986" href="../R/76a62b1d20c35986.html" target="n" data-glyph="220,1" class="i method">ReadInt16At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r13 rd" class="r13 r">data</span>, <b>int</b> <span id="r14 rd" class="r14 r">offset</span>)
         &lbrace;
             <b>if</b>(<span class="r14 r">offset</span> + 2 &gt; <span class="r13 r">data</span>.<span class="i property">Length</span>)
             &lbrace;
@@ -93,8 +93,8 @@
             
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static int</b> <a id="ac7027ff2bef2108" href="../R/ac7027ff2bef2108.html" target="n" data-glyph="220,1" class="i method">ReadInt32At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r19 rd" class="r19 r">data</span>, <b>int</b> <span id="r20 rd" class="r20 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static int</b> <a id="ac7027ff2bef2108" href="../R/ac7027ff2bef2108.html" target="n" data-glyph="220,1" class="i method">ReadInt32At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r19 rd" class="r19 r">data</span>, <b>int</b> <span id="r20 rd" class="r20 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r20 r">offset</span> + 4 &gt; <span class="r19 r">data</span>.<span class="i property">Length</span>)
             &lbrace;
@@ -121,8 +121,8 @@
             <b>return</b> <span class="r22 r">value</span>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static ushort</b> <a id="da47b1ab06f188ad" href="../R/da47b1ab06f188ad.html" target="n" data-glyph="220,1" class="i method">ReadUInt16At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r25 rd" class="r25 r">data</span>, <b>int</b> <span id="r26 rd" class="r26 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static ushort</b> <a id="da47b1ab06f188ad" href="../R/da47b1ab06f188ad.html" target="n" data-glyph="220,1" class="i method">ReadUInt16At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r25 rd" class="r25 r">data</span>, <b>int</b> <span id="r26 rd" class="r26 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r26 r">offset</span> + 2 &gt; <span class="r25 r">data</span>.<span class="i property">Length</span>)
             &lbrace;
@@ -135,8 +135,8 @@
             <b>return</b> <span class="r27 r">value</span>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static uint</b> <a id="c12b5b99b1f5fb4c" href="../R/c12b5b99b1f5fb4c.html" target="n" data-glyph="220,1" class="i method">ReadUInt32At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r28 rd" class="r28 r">data</span>, <b>int</b> <span id="r29 rd" class="r29 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static uint</b> <a id="c12b5b99b1f5fb4c" href="../R/c12b5b99b1f5fb4c.html" target="n" data-glyph="220,1" class="i method">ReadUInt32At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r28 rd" class="r28 r">data</span>, <b>int</b> <span id="r29 rd" class="r29 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r29 r">offset</span> + 4 &gt; <span class="r28 r">data</span>.<span class="i property">Length</span>)
             &lbrace;
@@ -159,30 +159,30 @@
             <b>return</b> <span class="r31 r">value</span>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         [<span class="t constructor">PrimitiveValueMaterializer</span>]
-        <b>public static</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="733ecfc7844f914f" href="../R/733ecfc7844f914f.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r34 rd" class="r34 r">data</span>, <b>int</b> <span id="r35 rd" class="r35 r">offset</span>)
+        <b>public static</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="733ecfc7844f914f" href="../R/733ecfc7844f914f.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r34 rd" class="r34 r">data</span>, <b>int</b> <span id="r35 rd" class="r35 r">offset</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="../Maps/TagRef.cs.html#4e4a0a337482a131" class="t constructor">TagRef</a>(<span class="r34 r">data</span>.<a href="#c12b5b99b1f5fb4c" class="i method">ReadUInt32At</a>(<span class="r35 r">offset</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         [<span class="t constructor">PrimitiveValueMaterializer</span>]
-        <b>public static</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r36 r t">T</span>&gt; <a id="808693c8bc3a23c7" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>&lt;<span id="r36 rd t" class="r36 r t">T</span>&gt;(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r37 rd" class="r37 r">data</span>, <b>int</b> <span id="r38 rd" class="r38 r">offset</span>)
+        <b>public static</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r36 r t">T</span>&gt; <a id="808693c8bc3a23c7" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>&lt;<span id="r36 rd t" class="r36 r t">T</span>&gt;(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r37 rd" class="r37 r">data</span>, <b>int</b> <span id="r38 rd" class="r38 r">offset</span>)
             <b>where</b> <span class="r36 r t">T</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
         &lbrace;
             <b>return</b> <a href="#733ecfc7844f914f" class="i method">ReadTagRefAt</a>(<span class="r37 r">data</span>, <span class="r38 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         [<span class="t constructor">PrimitiveValueMaterializer</span>]
-        <b>public static</b> <a href="../Offsets/NormalOffset.cs.html#35b3860c9fcb5eaf" class="t t">NormalOffset</a> <a id="50364d7341bcfc10" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadNormalOffsetAt</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r39 rd" class="r39 r">data</span>, <b>int</b> <span id="r40 rd" class="r40 r">offset</span>)
+        <b>public static</b> <a href="../Offsets/NormalOffset.cs.html#35b3860c9fcb5eaf" class="t t">NormalOffset</a> <a id="50364d7341bcfc10" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadNormalOffsetAt</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r39 rd" class="r39 r">data</span>, <b>int</b> <span id="r40 rd" class="r40 r">offset</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="../Offsets/NormalOffset.cs.html#bf4270878c5cd768" class="t constructor">NormalOffset</a>(<span class="r39 r">data</span>.<a href="#ac7027ff2bef2108" class="i method">ReadInt32At</a>(<span class="r40 r">offset</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Vector2</span> <a id="8886381abda27521" href="../R/8886381abda27521.html" target="n" data-glyph="220,1" class="i method">ReadVec2At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r41 rd" class="r41 r">data</span>, <b>int</b> <span id="r42 rd" class="r42 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Vector2</span> <a id="8886381abda27521" href="../R/8886381abda27521.html" target="n" data-glyph="220,1" class="i method">ReadVec2At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r41 rd" class="r41 r">data</span>, <b>int</b> <span id="r42 rd" class="r42 r">offset</span>)
         &lbrace;
             <span class="r41 r">data</span>.<span class="i method">Slice</span>(<span class="r42 r">offset</span>, 8).<span class="i method">CopyTo</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
             <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#58cc3b985985b054" class="i field">Guid</a> = <b>new</b> <span class="t constructor">Guid</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
@@ -190,8 +190,8 @@
             <b>return</b> <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#90924a7a8919c02d" class="i field">Vec2</a>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Vector3</span> <a id="647578aced3fc11c" href="../R/647578aced3fc11c.html" target="n" data-glyph="220,1" class="i method">ReadVec3At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r43 rd" class="r43 r">data</span>, <b>int</b> <span id="r44 rd" class="r44 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Vector3</span> <a id="647578aced3fc11c" href="../R/647578aced3fc11c.html" target="n" data-glyph="220,1" class="i method">ReadVec3At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r43 rd" class="r43 r">data</span>, <b>int</b> <span id="r44 rd" class="r44 r">offset</span>)
         &lbrace;
             <span class="r43 r">data</span>.<span class="i method">Slice</span>(<span class="r44 r">offset</span>, 12).<span class="i method">CopyTo</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
             <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#58cc3b985985b054" class="i field">Guid</a> = <b>new</b> <span class="t constructor">Guid</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
@@ -199,8 +199,8 @@
             <b>return</b> <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#d78f6a7fe694ed14" class="i field">Vec3</a>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Vector4</span> <a id="844dace39ec39173" href="../R/844dace39ec39173.html" target="n" data-glyph="220,1" class="i method">ReadVec4At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r45 rd" class="r45 r">data</span>, <b>int</b> <span id="r46 rd" class="r46 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Vector4</span> <a id="844dace39ec39173" href="../R/844dace39ec39173.html" target="n" data-glyph="220,1" class="i method">ReadVec4At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r45 rd" class="r45 r">data</span>, <b>int</b> <span id="r46 rd" class="r46 r">offset</span>)
         &lbrace;
             <span class="r45 r">data</span>.<span class="i method">Slice</span>(<span class="r46 r">offset</span>, 16).<span class="i method">CopyTo</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
             <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#58cc3b985985b054" class="i field">Guid</a> = <b>new</b> <span class="t constructor">Guid</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
@@ -208,8 +208,8 @@
             <b>return</b> <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#5d7f775591bae76d" class="i field">Vec4</a>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Quaternion</span> <a id="a99960eb8ba70e23" href="../R/a99960eb8ba70e23.html" target="n" data-glyph="220,1" class="i method">ReadQuaternionAt</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r47 rd" class="r47 r">data</span>, <b>int</b> <span id="r48 rd" class="r48 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Quaternion</span> <a id="a99960eb8ba70e23" href="../R/a99960eb8ba70e23.html" target="n" data-glyph="220,1" class="i method">ReadQuaternionAt</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r47 rd" class="r47 r">data</span>, <b>int</b> <span id="r48 rd" class="r48 r">offset</span>)
         &lbrace;
             <span class="r47 r">data</span>.<span class="i method">Slice</span>(<span class="r48 r">offset</span>, 16).<span class="i method">CopyTo</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
             <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#58cc3b985985b054" class="i field">Guid</a> = <b>new</b> <span class="t constructor">Guid</span>(<a href="#eccc157b50a07504" class="i field">vectorConverterBytes</a>);
@@ -217,8 +217,8 @@
             <b>return</b> <a href="#6e34ee684d3b5207" class="i field">vectorConverter</a>.<a href="#f3c2594bafc19290" class="i field">Quaternion</a>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Matrix4x4</span> <a id="dd57690367f38869" href="../R/dd57690367f38869.html" target="n" data-glyph="220,1" class="i method">ReadMatrix4x4At</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r49 rd" class="r49 r">data</span>, <b>int</b> <span id="r50 rd" class="r50 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Matrix4x4</span> <a id="dd57690367f38869" href="../R/dd57690367f38869.html" target="n" data-glyph="220,1" class="i method">ReadMatrix4x4At</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r49 rd" class="r49 r">data</span>, <b>int</b> <span id="r50 rd" class="r50 r">offset</span>)
         &lbrace;
             <b>var</b> <span id="r51 rd" class="r51 r">matrixBytes</span> = <span class="r49 r">data</span>.<span class="i method">Slice</span>(<span class="r50 r">offset</span>, 64);
  
@@ -242,45 +242,45 @@
             );
         &rbrace;
  
-        <b>public static byte</b>[] <a id="c52be320d9bab07b" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadArray</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r52 rd" class="r52 r">data</span>, <b>int</b> <span id="r53 rd" class="r53 r">offset</span>, <b>int</b> <span id="r54 rd" class="r54 r">length</span>)
+        <b>public static byte</b>[] <a id="c52be320d9bab07b" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadArray</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r52 rd" class="r52 r">data</span>, <b>int</b> <span id="r53 rd" class="r53 r">offset</span>, <b>int</b> <span id="r54 rd" class="r54 r">length</span>)
         &lbrace;
             <b>return</b> <span class="r52 r">data</span>.<span class="i method">Slice</span>(<span class="r53 r">offset</span>, <span class="r54 r">length</span>).<span class="i method">ToArray</span>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static float</b> <a id="5bc5dfa0e3a3385a" href="../R/5bc5dfa0e3a3385a.html" target="n" data-glyph="220,1" class="i method">ReadFloatAt</a>(<b>this</b> <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r55 rd" class="r55 r">data</span>, <b>int</b> <span id="r56 rd" class="r56 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static float</b> <a id="5bc5dfa0e3a3385a" href="../R/5bc5dfa0e3a3385a.html" target="n" data-glyph="220,1" class="i method">ReadFloatAt</a>(<b>this</b> <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r55 rd" class="r55 r">data</span>, <b>int</b> <span id="r56 rd" class="r56 r">offset</span>)
         &lbrace;
             <a href="#1a14c8d5ac468d22" class="i field">floatConverter</a>.<a href="#b4608ed9264846aa" class="i field">UInt32</a> = <span class="r55 r">data</span>.<a href="#c12b5b99b1f5fb4c" class="i method">ReadUInt32At</a>(<span class="r56 r">offset</span>);
  
             <b>return</b> <a href="#1a14c8d5ac468d22" class="i field">floatConverter</a>.<a href="#9fe1e8b2c0bcb6d3" class="i field">Single</a>;
         &rbrace;
  
-        <b>private static</b> <a href="#810a847b51e5de92" class="t t">UInt32ToSingle</a> <a id="1a14c8d5ac468d22" href="../R/1a14c8d5ac468d22.html" target="n" data-glyph="46,1" class="i field">floatConverter</a> = <b>new</b> <a href="#810a847b51e5de92" class="t constructor">UInt32ToSingle</a>();
-        <b>private static</b> <a href="#09bfa5b5514bdcd0" class="t t">VecConverter</a> <a id="6e34ee684d3b5207" href="../R/6e34ee684d3b5207.html" target="n" data-glyph="46,1" class="i field">vectorConverter</a> = <b>new</b> <a href="#09bfa5b5514bdcd0" class="t constructor">VecConverter</a>();
+        <b>private static</b> <a href="#810a847b51e5de92" class="t valueType">UInt32ToSingle</a> <a id="1a14c8d5ac468d22" href="../R/1a14c8d5ac468d22.html" target="n" data-glyph="46,1" class="i field">floatConverter</a> = <b>new</b> <a href="#810a847b51e5de92" class="t constructor">UInt32ToSingle</a>();
+        <b>private static</b> <a href="#09bfa5b5514bdcd0" class="t valueType">VecConverter</a> <a id="6e34ee684d3b5207" href="../R/6e34ee684d3b5207.html" target="n" data-glyph="46,1" class="i field">vectorConverter</a> = <b>new</b> <a href="#09bfa5b5514bdcd0" class="t constructor">VecConverter</a>();
         <b>private static byte</b>[] <a id="eccc157b50a07504" href="../R/eccc157b50a07504.html" target="n" data-glyph="46,1" class="i field">vectorConverterBytes</a> = <b>new</b> <b>byte</b>[16];
  
  
-        [<span class="t constructor">StructLayout</span>(<span class="t t">LayoutKind</span>.<span class="i field">Explicit</span>)]
-        <b>private struct</b> <a id="09bfa5b5514bdcd0" href="../R/09bfa5b5514bdcd0.html" target="n" data-glyph="112,1" class="t t"><span id="16441f8e43754166">VecConverter</span></a>
+        [<span class="t constructor">StructLayout</span>(<span class="t valueType">LayoutKind</span>.<span class="i field">Explicit</span>)]
+        <b>private struct</b> <a id="09bfa5b5514bdcd0" href="../R/09bfa5b5514bdcd0.html" target="n" data-glyph="112,1" class="t valueType"><span id="16441f8e43754166">VecConverter</span></a>
         &lbrace;
             [<span class="t constructor">FieldOffset</span>(0)]
-            <b>public</b> <span class="t t">Guid</span> <a id="58cc3b985985b054" href="../R/58cc3b985985b054.html" target="n" data-glyph="42,2" class="i field">Guid</a>;
+            <b>public</b> <span class="t valueType">Guid</span> <a id="58cc3b985985b054" href="../R/58cc3b985985b054.html" target="n" data-glyph="42,2" class="i field">Guid</a>;
  
             [<span class="t constructor">FieldOffset</span>(0)]
-            <b>public</b> <span class="t t">Vector2</span> <a id="90924a7a8919c02d" href="../R/90924a7a8919c02d.html" target="n" data-glyph="42,2" class="i field">Vec2</a>;
+            <b>public</b> <span class="t valueType">Vector2</span> <a id="90924a7a8919c02d" href="../R/90924a7a8919c02d.html" target="n" data-glyph="42,2" class="i field">Vec2</a>;
  
             [<span class="t constructor">FieldOffset</span>(0)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="d78f6a7fe694ed14" href="../R/d78f6a7fe694ed14.html" target="n" data-glyph="42,2" class="i field">Vec3</a>;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="d78f6a7fe694ed14" href="../R/d78f6a7fe694ed14.html" target="n" data-glyph="42,2" class="i field">Vec3</a>;
  
             [<span class="t constructor">FieldOffset</span>(0)]
-            <b>public</b> <span class="t t">Vector4</span> <a id="5d7f775591bae76d" href="../R/5d7f775591bae76d.html" target="n" data-glyph="42,2" class="i field">Vec4</a>;
+            <b>public</b> <span class="t valueType">Vector4</span> <a id="5d7f775591bae76d" href="../R/5d7f775591bae76d.html" target="n" data-glyph="42,2" class="i field">Vec4</a>;
  
             [<span class="t constructor">FieldOffset</span>(0)]
-            <b>public</b> <span class="t t">Quaternion</span> <a id="f3c2594bafc19290" href="../R/f3c2594bafc19290.html" target="n" data-glyph="42,2" class="i field">Quaternion</a>;
+            <b>public</b> <span class="t valueType">Quaternion</span> <a id="f3c2594bafc19290" href="../R/f3c2594bafc19290.html" target="n" data-glyph="42,2" class="i field">Quaternion</a>;
         &rbrace;
  
-        [<span class="t constructor">StructLayout</span>(<span class="t t">LayoutKind</span>.<span class="i field">Explicit</span>)]
-        <b>private struct</b> <a id="810a847b51e5de92" href="../R/810a847b51e5de92.html" target="n" data-glyph="112,1" class="t t"><span id="844a485c067d254d">UInt32ToSingle</span></a>
+        [<span class="t constructor">StructLayout</span>(<span class="t valueType">LayoutKind</span>.<span class="i field">Explicit</span>)]
+        <b>private struct</b> <a id="810a847b51e5de92" href="../R/810a847b51e5de92.html" target="n" data-glyph="112,1" class="t valueType"><span id="844a485c067d254d">UInt32ToSingle</span></a>
         &lbrace;
             [<span class="t constructor">FieldOffset</span>(0)]
             <b>public uint</b> <a id="b4608ed9264846aa" href="../R/b4608ed9264846aa.html" target="n" data-glyph="42,2" class="i field">UInt32</a>;

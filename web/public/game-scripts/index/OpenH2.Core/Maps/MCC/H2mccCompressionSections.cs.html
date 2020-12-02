@@ -10,10 +10,10 @@
     <b>public class</b> <a id="253bc48ae9a1a537" href="../../R/253bc48ae9a1a537.html" target="n" data-glyph="0,0" class="t t"><span id="4edc539d6a789d5c">H2mccCompressionSections</span></a>
     &lbrace;
         [<span class="t constructor">PrimitiveArray</span>(4096, 1024)]
-        <b>public</b> <a href="#ab7656d3a3648c7f" class="t t">CompressionSection</a>[] <a id="2ff62c772335efb4" href="../../R/2ff62c772335efb4.html" target="n" data-glyph="102,1" class="i property">Sections</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="#ab7656d3a3648c7f" class="t valueType">CompressionSection</a>[] <a id="2ff62c772335efb4" href="../../R/2ff62c772335efb4.html" target="n" data-glyph="102,1" class="i property">Sections</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">FixedLength</span>(8)]
-        <b>public readonly struct</b> <a id="ab7656d3a3648c7f" href="../../R/ab7656d3a3648c7f.html" target="n" data-glyph="108,1" class="t t"><span id="0626391275c5b51e">CompressionSection</span></a>
+        <b>public readonly struct</b> <a id="ab7656d3a3648c7f" href="../../R/ab7656d3a3648c7f.html" target="n" data-glyph="108,1" class="t valueType"><span id="0626391275c5b51e">CompressionSection</span></a>
         &lbrace;
             <span class="c">//[PrimitiveValue(0)]</span>
             <b>public readonly int</b> <a id="a2ed4ca274f753b7" href="../../R/a2ed4ca274f753b7.html" target="n" data-glyph="102,2" class="i property">Count</a> &lbrace; <b>get</b>; &rbrace;
@@ -29,7 +29,7 @@
  
             <span class="c">// TODO: support deserializing a &#39;literal&#39;/in-place array of non-primitives</span>
             [<span class="t constructor">PrimitiveValueMaterializer</span>]
-            <b>public static</b> <a href="#ab7656d3a3648c7f" class="t t">CompressionSection</a> <a id="0fd76877f6596363" href="../../R/../../0000000000.html" target="n" data-glyph="72,2" class="i method">ReadCompressionSection</a>(<span class="t t">Stream</span> <span id="r2 rd" class="r2 r">s</span>, <b>int</b> <span id="r3 rd" class="r3 r">offset</span>)
+            <b>public static</b> <a href="#ab7656d3a3648c7f" class="t valueType">CompressionSection</a> <a id="0fd76877f6596363" href="../../R/../../0000000000.html" target="n" data-glyph="72,2" class="i method">ReadCompressionSection</a>(<span class="t t">Stream</span> <span id="r2 rd" class="r2 r">s</span>, <b>int</b> <span id="r3 rd" class="r3 r">offset</span>)
             &lbrace;
                 <b>return</b> <b>new</b> <a href="#626b5bf8b887fb48" class="t constructor">CompressionSection</a>(<span class="r2 r">s</span>.<span class="i method">ReadInt32At</span>(<span class="r3 r">offset</span>), <span class="r2 r">s</span>.<span class="i method">ReadUInt32At</span>(<span class="r3 r">offset</span> + 4));
             &rbrace;

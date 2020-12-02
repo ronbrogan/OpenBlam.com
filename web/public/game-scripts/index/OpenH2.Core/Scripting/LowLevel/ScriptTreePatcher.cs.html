@@ -45,7 +45,7 @@
                     &rbrace;
  
                     <span class="c">// Fixup next node&#39;s check value for scope/invocation nodes</span>
-                    <b>if</b> ((<span class="r11 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#62ae5683baf036d6" class="i field">Scope</a> || <span class="r11 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a>))
+                    <b>if</b> ((<span class="r11 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#62ae5683baf036d6" class="i field">Scope</a> || <span class="r11 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a>))
                     &lbrace;
                         <b>if</b>(<span class="r11 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#ca410aedf4a62935" class="i property">NodeData_H16</a> == <b>ushort</b>.<span class="i field">MaxValue</span>)
                         &lbrace;
@@ -89,8 +89,8 @@
                     &lbrace;
                         <span class="c">//Checkval = ParseFrom(line, &quot;a:&quot;),</span>
                         <a href="../../Tags/Scenario/ScenarioScripting.cs.html#b26e451b424788d7" class="i property">ScriptIndex</a> = <a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;op:&quot;</span>),
-                        <a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a> = (<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>)<a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;dt:&quot;</span>),
-                        <a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> = (<a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>)<a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;nt:&quot;</span>),
+                        <a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a> = (<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>)<a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;dt:&quot;</span>),
+                        <a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> = (<a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>)<a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;nt:&quot;</span>),
                         <a href="../../Tags/Scenario/ScenarioScripting.cs.html#8cf401dd9de9daf8" class="i property">NextIndex</a> = <a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;next:&quot;</span>),
                         <span class="c">//NextCheckval = ParseFrom(line, &quot;f:&quot;),</span>
                         <a href="../../Tags/Scenario/ScenarioScripting.cs.html#0d44c23c5e3af99b" class="i property">NodeString</a> = <a href="#a441cd1d5dbd3d25" class="i method">ParseFrom</a>(<span class="r16 r">line</span>, <span class="s">&quot;str:&quot;</span>),
@@ -99,7 +99,7 @@
                     &rbrace;
                 &rbrace;;
  
-                <b>if</b> (<span class="r17 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#34546ad118d30da2" class="i field">MethodDecl</a>)
+                <b>if</b> (<span class="r17 r">patch</span>.<a href="#673c923910936cfa" class="i property">NodeData</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#34546ad118d30da2" class="i field">MethodDecl</a>)
                 &lbrace;
                     <b>return</b> <b>false</b>;
                 &rbrace;

@@ -15,14 +15,14 @@
     <b>public class</b> <a id="7e564e6a33572183" href="../../R/7e564e6a33572183.html" target="n" data-glyph="0,0" class="t t">MethodCallContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>
     &lbrace;
         <b>public string</b> <a id="ec0b46668df302e7" href="../../R/ec0b46668df302e7.html" target="n" data-glyph="102,1" class="i property">MethodName</a> &lbrace; <b>get</b>; &rbrace;
-        <b>public</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <a id="6394eba5a2f47a9d" href="../../R/6394eba5a2f47a9d.html" target="n" data-glyph="102,1" class="i property">ReturnType</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <a id="6394eba5a2f47a9d" href="../../R/6394eba5a2f47a9d.html" target="n" data-glyph="102,1" class="i property">ReturnType</a> &lbrace; <b>get</b>; &rbrace;
  
         <b>private</b> <span class="t t">List</span>&lt;<span class="t t">ArgumentSyntax</span>&gt; <a id="ae2092729dadb2ff" href="../../R/ae2092729dadb2ff.html" target="n" data-glyph="46,1" class="i field">arguments</a> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">ArgumentSyntax</span>&gt;();
-        <b>private</b> <span class="t t">List</span>&lt;<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>?&gt; <a id="ca7cbb0dcd875e57" href="../../R/ca7cbb0dcd875e57.html" target="n" data-glyph="46,1" class="i field">argumentTypes</a> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>?&gt;();
+        <b>private</b> <span class="t t">List</span>&lt;<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>?&gt; <a id="ca7cbb0dcd875e57" href="../../R/ca7cbb0dcd875e57.html" target="n" data-glyph="46,1" class="i field">argumentTypes</a> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>?&gt;();
  
         <b>public override bool</b> <a id="4c4589116d58fed6" href="../../R/4c4589116d58fed6.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> =&gt; <b>true</b>;
  
-        <b>public</b> <a id="8ac56bbf8e54fd21" href="../../R/8ac56bbf8e54fd21.html" target="n" data-glyph="72,1" class="t constructor">MethodCallContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <b>string</b> <span id="r1 rd" class="r1 r">methodName</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r2 rd" class="r2 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
+        <b>public</b> <a id="8ac56bbf8e54fd21" href="../../R/8ac56bbf8e54fd21.html" target="n" data-glyph="72,1" class="t constructor">MethodCallContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <b>string</b> <span id="r1 rd" class="r1 r">methodName</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r2 rd" class="r2 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
         &lbrace;
             <a href="#7e564e6a33572183" class="k">this</a>.<a href="#ec0b46668df302e7" class="i property">MethodName</a> = <span class="r1 r">methodName</span>;
             <a href="#7e564e6a33572183" class="k">this</a>.<a href="#6394eba5a2f47a9d" class="i property">ReturnType</a> = <span class="r2 r">returnType</span>;
@@ -48,7 +48,7 @@
  
         <b>public void</b> <a id="008af9fe84a300c7" href="../../R/008af9fe84a300c7.html" target="n" data-glyph="72,1" class="i method">GenerateInto</a>(<a href="Scope.cs.html#1566133395e6730d" class="t t">Scope</a> <span id="r6 rd" class="r6 r">scope</span>)
         &lbrace;
-            <b>var</b> <span id="r7 rd" class="r7 r">invocationExpression</span> = <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+            <b>var</b> <span id="r7 rd" class="r7 r">invocationExpression</span> = <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                 <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;Engine&quot;</span>),
                 <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<a href="#7e564e6a33572183" class="k">this</a>.<a href="#ec0b46668df302e7" class="i property">MethodName</a>));
  
@@ -75,7 +75,7 @@
             &lbrace;
                 <span class="c">// Do full overload match</span>
                 <b>var</b> <span id="r12 rd" class="r12 r">method</span> = <b>typeof</b>(<a href="../IScriptEngine.cs.html#31075aae0960da14" class="t t">IScriptEngine</a>).<span class="i method">GetMethod</span>(<a href="#7e564e6a33572183" class="k">this</a>.<a href="#ec0b46668df302e7" class="i property">MethodName</a>, 
-                    <span class="t t">BindingFlags</span>.<span class="i field">Public</span> | <span class="t t">BindingFlags</span>.<span class="i field">Instance</span>,
+                    <span class="t valueType">BindingFlags</span>.<span class="i field">Public</span> | <span class="t valueType">BindingFlags</span>.<span class="i field">Instance</span>,
                     <b>null</b>,
                     <span class="r9 r">tempArgs</span>.<span class="i method">ToArray</span>(), 
                     <b>null</b>);

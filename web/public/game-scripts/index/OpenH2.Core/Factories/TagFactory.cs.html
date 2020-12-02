@@ -16,7 +16,7 @@
 &lbrace;
     <b>public static class</b> <a id="7d10d94f66271cb7" href="../R/7d10d94f66271cb7.html" target="n" data-glyph="0,0" class="t t">TagFactory</a>
     &lbrace;
-        <b>public static</b> <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a> <a id="3564c64b751853c5" href="../R/3564c64b751853c5.html" target="n" data-glyph="72,1" class="i method">CreateTag</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>, <b>string</b> <span id="r1 rd" class="r1 r">name</span>, <a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t t">TagIndexEntry</a> <span id="r2 rd" class="r2 r">index</span>, <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <span id="r3 rd" class="r3 r">map</span>, <a href="../Parsing/H2MapReader.cs.html#f578fb67d304902b" class="t t">H2MapReader</a> <span id="r4 rd" class="r4 r">reader</span>)
+        <b>public static</b> <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a> <a id="3564c64b751853c5" href="../R/3564c64b751853c5.html" target="n" data-glyph="72,1" class="i method">CreateTag</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>, <b>string</b> <span id="r1 rd" class="r1 r">name</span>, <a href="../Maps/TagIndexEntry.cs.html#9d92e19a05a9926d" class="t valueType">TagIndexEntry</a> <span id="r2 rd" class="r2 r">index</span>, <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <span id="r3 rd" class="r3 r">map</span>, <a href="../Parsing/H2MapReader.cs.html#f578fb67d304902b" class="t t">H2MapReader</a> <span id="r4 rd" class="r4 r">reader</span>)
         &lbrace;
             <b>var</b> <span id="r5 rd" class="r5 r">tagType</span> = <a href="#039b54d1ff953770" class="i method">GetTypeForTag</a>(<span class="r2 r">index</span>.<a href="../Maps/TagIndexEntry.cs.html#5e3db5c45a2b734d" class="i property">Tag</a>);
  
@@ -69,9 +69,9 @@
             <b>return</b> <span class="r6 r">tag</span>;
         &rbrace;
  
-        <b>private static</b> <span class="t t">Dictionary</span>&lt;<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>, <span class="t t">Type</span>&gt; <a id="c2c7d9912ed46a43" href="../R/c2c7d9912ed46a43.html" target="n" data-glyph="46,1" class="i field">cachedTagTypes</a> = <b>null</b>;
+        <b>private static</b> <span class="t t">Dictionary</span>&lt;<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>, <span class="t t">Type</span>&gt; <a id="c2c7d9912ed46a43" href="../R/c2c7d9912ed46a43.html" target="n" data-glyph="46,1" class="i field">cachedTagTypes</a> = <b>null</b>;
  
-        <b>public static</b> <span class="t t">Type</span> <a id="039b54d1ff953770" href="../R/039b54d1ff953770.html" target="n" data-glyph="72,1" class="i method">GetTypeForTag</a>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a> <span id="r9 rd" class="r9 r">tag</span>)
+        <b>public static</b> <span class="t t">Type</span> <a id="039b54d1ff953770" href="../R/039b54d1ff953770.html" target="n" data-glyph="72,1" class="i method">GetTypeForTag</a>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a> <span id="r9 rd" class="r9 r">tag</span>)
         &lbrace;
             <b>if</b>(<a href="#c2c7d9912ed46a43" class="i field">cachedTagTypes</a> == <b>null</b>)
             &lbrace;
@@ -82,7 +82,7 @@
                         <a href="#4175e86102125c39" class="i property">Label</a> = <span class="r11 r">t</span>.<span class="i method">GetCustomAttribute</span>&lt;<a href="../Tags/Layout/TagLabelAttribute.cs.html#e6718c626c42c9e2" class="t t">TagLabelAttribute</a>&gt;()?.<a href="../Tags/Layout/TagLabelAttribute.cs.html#2ad812714ba366d1" class="i property">Label</a>,
                         <a href="#32b3e9d53a6e4af0" class="i property">Type</a> = <span class="r11 r">t</span>
                     &rbrace;)
-                    .<span class="i method">Where</span>(<span id="r12 rd" class="r12 r">e</span> =&gt; <span class="r12 r">e</span> != <b>null</b> &amp;&amp; <span class="t t">Enum</span>.<span class="i method">IsDefined</span>(<b>typeof</b>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>), <span class="r12 r">e</span>.<a href="#4175e86102125c39" class="i property">Label</a>.<span class="i property">Value</span>))
+                    .<span class="i method">Where</span>(<span id="r12 rd" class="r12 r">e</span> =&gt; <span class="r12 r">e</span> != <b>null</b> &amp;&amp; <span class="t t">Enum</span>.<span class="i method">IsDefined</span>(<b>typeof</b>(<a href="../Tags/TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>), <span class="r12 r">e</span>.<a href="#4175e86102125c39" class="i property">Label</a>.<span class="i property">Value</span>))
                     .<span class="i method">ToDictionary</span>(<span id="r13 rd" class="r13 r">e</span> =&gt; <span class="r13 r">e</span>.<a href="#4175e86102125c39" class="i property">Label</a>.<span class="i property">Value</span>, <span id="r14 rd" class="r14 r">e</span> =&gt; <span class="r14 r">e</span>.<a href="#32b3e9d53a6e4af0" class="i property">Type</a>);
             &rbrace;
  

@@ -8,13 +8,13 @@
 &lbrace;
     <b>public abstract class</b> <a id="1d5748ce36ff5565" href="../R/1d5748ce36ff5565.html" target="n" data-glyph="0,0" class="t t">Entity</a>
     &lbrace;
-        <b>public</b> <span class="t t">Guid</span> <a id="99b9b2a27c552dd6" href="../R/99b9b2a27c552dd6.html" target="n" data-glyph="102,1" class="i property">Id</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public</b> <span class="t valueType">Guid</span> <a id="99b9b2a27c552dd6" href="../R/99b9b2a27c552dd6.html" target="n" data-glyph="102,1" class="i property">Id</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
         <b>public string</b>? <a id="3e6c78f052d2232b" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">FriendlyName</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         <b>protected</b> <a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>[] <a id="b5031231ff780c39" href="../R/b5031231ff780c39.html" target="n" data-glyph="45,1" class="i field">Components</a>;
  
         <b>public</b> <a id="e1201d4eb21b6c97" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">Entity</a>()
         &lbrace;
-            <a href="#1d5748ce36ff5565" class="k">this</a>.<a href="#99b9b2a27c552dd6" class="i property">Id</a> = <span class="t t">Guid</span>.<span class="i method">NewGuid</span>();
+            <a href="#1d5748ce36ff5565" class="k">this</a>.<a href="#99b9b2a27c552dd6" class="i property">Id</a> = <span class="t valueType">Guid</span>.<span class="i method">NewGuid</span>();
         &rbrace;
  
         <b>public void</b> <a id="b77a2a94234cf058" href="../R/b77a2a94234cf058.html" target="n" data-glyph="72,1" class="i method">SetComponents</a>(<a href="Component.cs.html#0e132d369a72a803" class="t t">Component</a>[] <span id="r0 rd" class="r0 r">components</span>)

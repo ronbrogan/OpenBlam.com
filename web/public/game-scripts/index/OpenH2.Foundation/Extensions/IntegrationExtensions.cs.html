@@ -6,7 +6,7 @@
 &lbrace;
     <b>public static class</b> <a id="10d59977bbf520a6" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">IntegrationExtensions</a>
     &lbrace;
-        <b>public static</b> <span class="t t">Matrix4x4</span> <a id="e40d256294a1909e" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">SetSkewSymmetric</a>(<b>this</b> <span class="t t">Matrix4x4</span> <span id="r0 rd" class="r0 r">matrix</span>, <span class="t t">Vector3</span> <span id="r1 rd" class="r1 r">vector</span>)
+        <b>public static</b> <span class="t valueType">Matrix4x4</span> <a id="e40d256294a1909e" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">SetSkewSymmetric</a>(<b>this</b> <span class="t valueType">Matrix4x4</span> <span id="r0 rd" class="r0 r">matrix</span>, <span class="t valueType">Vector3</span> <span id="r1 rd" class="r1 r">vector</span>)
         &lbrace;
             <span class="r0 r">matrix</span>.<span class="i field">M11</span> = <span class="r0 r">matrix</span>.<span class="i field">M22</span> = <span class="r0 r">matrix</span>.<span class="i field">M33</span> = 0;
             <span class="r0 r">matrix</span>.<span class="i field">M21</span> = -<span class="r1 r">vector</span>.<span class="i field">Z</span>;
@@ -19,7 +19,7 @@
             <b>return</b> <span class="r0 r">matrix</span>;
         &rbrace;
  
-        <b>public static</b> <span class="t t">Quaternion</span> <a id="bec6717504d4e2ab" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ApplyScaledVector</a>(<b>this</b> <span class="t t">Quaternion</span> <span id="r2 rd" class="r2 r">quat</span>, <span class="t t">Vector3</span> <span id="r3 rd" class="r3 r">vector</span>, <b>float</b> <span id="r4 rd" class="r4 r">scale</span>)
+        <b>public static</b> <span class="t valueType">Quaternion</span> <a id="bec6717504d4e2ab" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ApplyScaledVector</a>(<b>this</b> <span class="t valueType">Quaternion</span> <span id="r2 rd" class="r2 r">quat</span>, <span class="t valueType">Vector3</span> <span id="r3 rd" class="r3 r">vector</span>, <b>float</b> <span id="r4 rd" class="r4 r">scale</span>)
         &lbrace;
             <b>var</b> <span id="r5 rd" class="r5 r">q</span> = <b>new</b> <span class="t constructor">Quaternion</span>(
                 <span class="r3 r">vector</span>.<span class="i field">X</span> * <span class="r4 r">scale</span>,
@@ -35,12 +35,12 @@
             <b>return</b> <span class="r2 r">quat</span>;
         &rbrace;
  
-        <b>public static float</b> <a id="96514a34a7ef9b50" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ScalarProduct</a>(<b>this</b> <span class="t t">Vector3</span> <span id="r6 rd" class="r6 r">vector</span>, <span class="t t">Vector3</span> <span id="r7 rd" class="r7 r">other</span>)
+        <b>public static float</b> <a id="96514a34a7ef9b50" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ScalarProduct</a>(<b>this</b> <span class="t valueType">Vector3</span> <span id="r6 rd" class="r6 r">vector</span>, <span class="t valueType">Vector3</span> <span id="r7 rd" class="r7 r">other</span>)
         &lbrace;
             <b>return</b> <span class="r6 r">vector</span>.<span class="i field">X</span> * <span class="r7 r">other</span>.<span class="i field">X</span> + <span class="r6 r">vector</span>.<span class="i field">Y</span> * <span class="r7 r">other</span>.<span class="i field">Y</span> + <span class="r6 r">vector</span>.<span class="i field">Z</span> * <span class="r7 r">other</span>.<span class="i field">Z</span>;
         &rbrace;
  
-        <b>public static</b> <span class="t t">Matrix4x4</span> <a id="5da830e2c42035a2" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">SetComponents</a>(<b>this</b> <span class="t t">Matrix4x4</span> <span id="r8 rd" class="r8 r">matrix</span>, <span class="t t">Vector3</span> <span id="r9 rd" class="r9 r">compOne</span>, <span class="t t">Vector3</span> <span id="r10 rd" class="r10 r">compTwo</span>, <span class="t t">Vector3</span> <span id="r11 rd" class="r11 r">compThree</span>)
+        <b>public static</b> <span class="t valueType">Matrix4x4</span> <a id="5da830e2c42035a2" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">SetComponents</a>(<b>this</b> <span class="t valueType">Matrix4x4</span> <span id="r8 rd" class="r8 r">matrix</span>, <span class="t valueType">Vector3</span> <span id="r9 rd" class="r9 r">compOne</span>, <span class="t valueType">Vector3</span> <span id="r10 rd" class="r10 r">compTwo</span>, <span class="t valueType">Vector3</span> <span id="r11 rd" class="r11 r">compThree</span>)
         &lbrace;
             <span class="r8 r">matrix</span>.<span class="i field">M11</span> = <span class="r9 r">compOne</span>.<span class="i field">X</span>;
             <span class="r8 r">matrix</span>.<span class="i field">M12</span> = <span class="r9 r">compOne</span>.<span class="i field">Y</span>;

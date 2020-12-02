@@ -14,7 +14,7 @@
 &lbrace;
     <b>public static class</b> <a id="fb98dfdef4ffe416" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">StreamExtensions</a>
     &lbrace;
-        <b>public static</b> <span class="t t">Memory</span>&lt;<b>byte</b>&gt; <a id="0a6ec0bfe148d3f7" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ToMemory</a>(<b>this</b> <span class="t t">Stream</span> <span id="r0 rd" class="r0 r">stream</span>)
+        <b>public static</b> <span class="t valueType">Memory</span>&lt;<b>byte</b>&gt; <a id="0a6ec0bfe148d3f7" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ToMemory</a>(<b>this</b> <span class="t t">Stream</span> <span id="r0 rd" class="r0 r">stream</span>)
         &lbrace;
             <b>if</b> (<span class="r0 r">stream</span> == <b>null</b>)
                 <b>throw</b> <b>new</b> <span class="t constructor">ArgumentNullException</span>(<b>nameof</b>(<span class="r0 r">stream</span>));
@@ -23,7 +23,7 @@
                 <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">&quot;The stream provided is greater than &quot;</span> + <b>int</b>.<span class="i field">MaxValue</span> + <span class="s">&quot; bytes long.&quot;</span>);
  
             <b>var</b> <span id="r1 rd" class="r1 r">bytes</span> = <b>new</b> <b>byte</b>[<span class="r0 r">stream</span>.<span class="i property">Length</span>];
-            <span class="r0 r">stream</span>.<span class="i method">Seek</span>(0, <span class="t t">SeekOrigin</span>.<span class="i field">Begin</span>);
+            <span class="r0 r">stream</span>.<span class="i method">Seek</span>(0, <span class="t valueType">SeekOrigin</span>.<span class="i field">Begin</span>);
             <span class="r0 r">stream</span>.<span class="i method">Read</span>(<span class="r1 r">bytes</span>, 0, (<b>int</b>)<span class="r0 r">stream</span>.<span class="i property">Length</span>);
             <b>return</b> <b>new</b> <span class="t constructor">Memory</span>&lt;<b>byte</b>&gt;(<span class="r1 r">bytes</span>);
         &rbrace;
@@ -51,13 +51,13 @@
         &rbrace;
  
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static string</b> <a id="06918bbdc4cfa254" href="../R/06918bbdc4cfa254.html" target="n" data-glyph="220,1" class="i method">ReadStringFrom</a>(<b>this</b> <span class="t t">Stream</span> <span id="r8 rd" class="r8 r">data</span>, <b>int</b> <span id="r9 rd" class="r9 r">offset</span>, <b>int</b> <span id="r10 rd" class="r10 r">length</span>)
         &lbrace;
             <b>var</b> <span id="r11 rd" class="r11 r">len</span> = <span class="t t">Math</span>.<span class="i method">Min</span>(<span class="r10 r">length</span>, <span class="r8 r">data</span>.<span class="i property">Length</span> - <span class="r9 r">offset</span>);
  
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r12 rd" class="r12 r">stringBytes</span> = <b>stackalloc byte</b>[0];
-            <span class="t t">Span</span>&lt;<b>char</b>&gt; <span id="r13 rd" class="r13 r">stringChars</span> = <b>stackalloc char</b>[0];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r12 rd" class="r12 r">stringBytes</span> = <b>stackalloc byte</b>[0];
+            <span class="t valueType">Span</span>&lt;<b>char</b>&gt; <span id="r13 rd" class="r13 r">stringChars</span> = <b>stackalloc char</b>[0];
  
             <b>if</b> (<span class="r10 r">length</span> &lt; 512)
             &lbrace;
@@ -96,13 +96,13 @@
             <b>return</b> <b>new</b> <b>string</b>(<span class="r13 r">stringChars</span>.<span class="i method">Slice</span>(0, <span class="r15 r">i</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static string</b> <a id="f56f71d07a6dc129" href="../R/f56f71d07a6dc129.html" target="n" data-glyph="220,1" class="i method">ReadStringStarting</a>(<b>this</b> <span class="t t">Stream</span> <span id="r16 rd" class="r16 r">data</span>, <b>int</b> <span id="r17 rd" class="r17 r">offset</span>)
         &lbrace;
             <b>var</b> <span id="r18 rd" class="r18 r">builder</span> = <b>new</b> <span class="t constructor">StringBuilder</span>(32);
  
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r19 rd" class="r19 r">stringBytes</span> = <b>stackalloc byte</b>[512];
-            <span class="t t">Span</span>&lt;<b>char</b>&gt; <span id="r20 rd" class="r20 r">stringChars</span> = <b>stackalloc char</b>[512];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r19 rd" class="r19 r">stringBytes</span> = <b>stackalloc byte</b>[512];
+            <span class="t valueType">Span</span>&lt;<b>char</b>&gt; <span id="r20 rd" class="r20 r">stringChars</span> = <b>stackalloc char</b>[512];
  
             <b>if</b> (<span class="r16 r">data</span>.<span class="i property">Position</span> != <span class="r17 r">offset</span>)
                 <span class="r16 r">data</span>.<span class="i property">Position</span> = <span class="r17 r">offset</span>;
@@ -143,7 +143,7 @@
             <b>return</b> <span class="r18 r">builder</span>.<span class="i method">ToString</span>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static byte</b> <a id="65142f63212cdb3a" href="../R/65142f63212cdb3a.html" target="n" data-glyph="220,1" class="i method">ReadByteAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r24 rd" class="r24 r">data</span>, <b>int</b> <span id="r25 rd" class="r25 r">offset</span>)
         &lbrace;
             <b>if</b> (<span class="r24 r">data</span>.<span class="i property">Position</span> != <span class="r25 r">offset</span>)
@@ -152,7 +152,7 @@
             <b>return</b> (<b>byte</b>)<span class="r24 r">data</span>.<span class="i method">ReadByte</span>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static void</b> <a id="47c9203fde8b781d" href="../R/47c9203fde8b781d.html" target="n" data-glyph="220,1" class="i method">WriteByteAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r26 rd" class="r26 r">data</span>, <b>int</b> <span id="r27 rd" class="r27 r">offset</span>, <b>byte</b> <span id="r28 rd" class="r28 r">value</span>)
         &lbrace;
             <b>if</b> (<span class="r26 r">data</span>.<span class="i property">Position</span> != <span class="r27 r">offset</span>)
@@ -161,10 +161,10 @@
             <span class="r26 r">data</span>.<span class="i method">WriteByte</span>(<span class="r28 r">value</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static short</b> <a id="0aca4ff217da8c49" href="../R/0aca4ff217da8c49.html" target="n" data-glyph="220,1" class="i method">ReadInt16At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r29 rd" class="r29 r">data</span>, <b>int</b> <span id="r30 rd" class="r30 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r31 rd" class="r31 r">bytes</span> = <b>stackalloc byte</b>[2];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r31 rd" class="r31 r">bytes</span> = <b>stackalloc byte</b>[2];
  
             <b>if</b> (<span class="r29 r">data</span>.<span class="i property">Position</span> != <span class="r30 r">offset</span>)
                 <span class="r29 r">data</span>.<span class="i property">Position</span> = <span class="r30 r">offset</span>;
@@ -174,7 +174,7 @@
             <b>return</b> <span class="t t">BitConverter</span>.<span class="i method">ToInt16</span>(<span class="r31 r">bytes</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static void</b> <a id="c7f6eff901ea1b10" href="../R/c7f6eff901ea1b10.html" target="n" data-glyph="220,1" class="i method">WriteInt16At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r32 rd" class="r32 r">data</span>, <b>int</b> <span id="r33 rd" class="r33 r">offset</span>, <b>short</b> <span id="r34 rd" class="r34 r">value</span>)
         &lbrace;
             <b>if</b> (<span class="r33 r">offset</span> + 2 &gt; <span class="r32 r">data</span>.<span class="i property">Length</span>)
@@ -188,10 +188,10 @@
             <span class="r32 r">data</span>.<span class="i method">Write</span>(<span class="t t">BitConverter</span>.<span class="i method">GetBytes</span>(<span class="r34 r">value</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static int</b> <a id="662a493f13023a6d" href="../R/662a493f13023a6d.html" target="n" data-glyph="220,1" class="i method">ReadInt32At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r35 rd" class="r35 r">data</span>, <b>int</b> <span id="r36 rd" class="r36 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r37 rd" class="r37 r">bytes</span> = <b>stackalloc byte</b>[4];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r37 rd" class="r37 r">bytes</span> = <b>stackalloc byte</b>[4];
             
             <b>if</b>(<span class="r35 r">data</span>.<span class="i property">Position</span> != <span class="r36 r">offset</span>)
                 <span class="r35 r">data</span>.<span class="i property">Position</span> = <span class="r36 r">offset</span>;
@@ -201,7 +201,7 @@
             <b>return</b> <span class="t t">BitConverter</span>.<span class="i method">ToInt32</span>(<span class="r37 r">bytes</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static void</b> <a id="3c66070c752dd731" href="../R/3c66070c752dd731.html" target="n" data-glyph="220,1" class="i method">WriteInt32At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r38 rd" class="r38 r">data</span>, <b>int</b> <span id="r39 rd" class="r39 r">offset</span>, <b>int</b> <span id="r40 rd" class="r40 r">value</span>)
         &lbrace;
             <b>if</b> (<span class="r39 r">offset</span> + 4 &gt; <span class="r38 r">data</span>.<span class="i property">Length</span>)
@@ -215,10 +215,10 @@
             <span class="r38 r">data</span>.<span class="i method">Write</span>(<span class="t t">BitConverter</span>.<span class="i method">GetBytes</span>(<span class="r40 r">value</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static ushort</b> <a id="88b56f0c85363c41" href="../R/88b56f0c85363c41.html" target="n" data-glyph="220,1" class="i method">ReadUInt16At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r41 rd" class="r41 r">data</span>, <b>int</b> <span id="r42 rd" class="r42 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r43 rd" class="r43 r">bytes</span> = <b>stackalloc byte</b>[2];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r43 rd" class="r43 r">bytes</span> = <b>stackalloc byte</b>[2];
  
             <b>if</b> (<span class="r41 r">data</span>.<span class="i property">Position</span> != <span class="r42 r">offset</span>)
                 <span class="r41 r">data</span>.<span class="i property">Position</span> = <span class="r42 r">offset</span>;
@@ -228,7 +228,7 @@
             <b>return</b> <span class="t t">BitConverter</span>.<span class="i method">ToUInt16</span>(<span class="r43 r">bytes</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static void</b> <a id="a5b2f544c0d7672b" href="../R/a5b2f544c0d7672b.html" target="n" data-glyph="220,1" class="i method">WriteUInt16At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r44 rd" class="r44 r">data</span>, <b>int</b> <span id="r45 rd" class="r45 r">offset</span>, <b>ushort</b> <span id="r46 rd" class="r46 r">value</span>)
         &lbrace;
             <b>if</b> (<span class="r45 r">offset</span> + 2 &gt; <span class="r44 r">data</span>.<span class="i property">Length</span>)
@@ -242,10 +242,10 @@
             <span class="r44 r">data</span>.<span class="i method">Write</span>(<span class="t t">BitConverter</span>.<span class="i method">GetBytes</span>(<span class="r46 r">value</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static uint</b> <a id="3fce839389d9ca5e" href="../R/3fce839389d9ca5e.html" target="n" data-glyph="220,1" class="i method">ReadUInt32At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r47 rd" class="r47 r">data</span>, <b>int</b> <span id="r48 rd" class="r48 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r49 rd" class="r49 r">bytes</span> = <b>stackalloc byte</b>[4];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r49 rd" class="r49 r">bytes</span> = <b>stackalloc byte</b>[4];
  
             <b>if</b> (<span class="r47 r">data</span>.<span class="i property">Position</span> != <span class="r48 r">offset</span>)
                 <span class="r47 r">data</span>.<span class="i property">Position</span> = <span class="r48 r">offset</span>;
@@ -255,7 +255,7 @@
             <b>return</b> <span class="t t">BitConverter</span>.<span class="i method">ToUInt32</span>(<span class="r49 r">bytes</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static void</b> <a id="037285b16bf5711b" href="../R/037285b16bf5711b.html" target="n" data-glyph="220,1" class="i method">WriteUInt32At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r50 rd" class="r50 r">data</span>, <b>int</b> <span id="r51 rd" class="r51 r">offset</span>, <b>uint</b> <span id="r52 rd" class="r52 r">value</span>)
         &lbrace;
             <b>if</b> (<span class="r51 r">offset</span> + 4 &gt; <span class="r50 r">data</span>.<span class="i property">Length</span>)
@@ -269,10 +269,10 @@
             <span class="r50 r">data</span>.<span class="i method">Write</span>(<span class="t t">BitConverter</span>.<span class="i method">GetBytes</span>(<span class="r52 r">value</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Vector2</span> <a id="8473fef099b4700d" href="../R/8473fef099b4700d.html" target="n" data-glyph="220,1" class="i method">ReadVec2At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r53 rd" class="r53 r">data</span>, <b>int</b> <span id="r54 rd" class="r54 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Vector2</span> <a id="8473fef099b4700d" href="../R/8473fef099b4700d.html" target="n" data-glyph="220,1" class="i method">ReadVec2At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r53 rd" class="r53 r">data</span>, <b>int</b> <span id="r54 rd" class="r54 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r55 rd" class="r55 r">bytes</span> = <b>stackalloc byte</b>[8];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r55 rd" class="r55 r">bytes</span> = <b>stackalloc byte</b>[8];
  
             <b>if</b> (<span class="r53 r">data</span>.<span class="i property">Position</span> != <span class="r54 r">offset</span>)
                 <span class="r53 r">data</span>.<span class="i property">Position</span> = <span class="r54 r">offset</span>;
@@ -285,10 +285,10 @@
             );
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Vector3</span> <a id="285bc3b7a89ea010" href="../R/285bc3b7a89ea010.html" target="n" data-glyph="220,1" class="i method">ReadVec3At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r56 rd" class="r56 r">data</span>, <b>int</b> <span id="r57 rd" class="r57 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Vector3</span> <a id="285bc3b7a89ea010" href="../R/285bc3b7a89ea010.html" target="n" data-glyph="220,1" class="i method">ReadVec3At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r56 rd" class="r56 r">data</span>, <b>int</b> <span id="r57 rd" class="r57 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r58 rd" class="r58 r">bytes</span> = <b>stackalloc byte</b>[12];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r58 rd" class="r58 r">bytes</span> = <b>stackalloc byte</b>[12];
  
             <b>if</b> (<span class="r56 r">data</span>.<span class="i property">Position</span> != <span class="r57 r">offset</span>)
                 <span class="r56 r">data</span>.<span class="i property">Position</span> = <span class="r57 r">offset</span>;
@@ -302,10 +302,10 @@
             );
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Vector4</span> <a id="061525575be1466a" href="../R/061525575be1466a.html" target="n" data-glyph="220,1" class="i method">ReadVec4At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r59 rd" class="r59 r">data</span>, <b>int</b> <span id="r60 rd" class="r60 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Vector4</span> <a id="061525575be1466a" href="../R/061525575be1466a.html" target="n" data-glyph="220,1" class="i method">ReadVec4At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r59 rd" class="r59 r">data</span>, <b>int</b> <span id="r60 rd" class="r60 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r61 rd" class="r61 r">bytes</span> = <b>stackalloc byte</b>[16];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r61 rd" class="r61 r">bytes</span> = <b>stackalloc byte</b>[16];
  
             <b>if</b> (<span class="r59 r">data</span>.<span class="i property">Position</span> != <span class="r60 r">offset</span>)
                 <span class="r59 r">data</span>.<span class="i property">Position</span> = <span class="r60 r">offset</span>;
@@ -320,10 +320,10 @@
             );
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Quaternion</span> <a id="bfb5dda47bce6401" href="../R/bfb5dda47bce6401.html" target="n" data-glyph="220,1" class="i method">ReadQuaternionAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r62 rd" class="r62 r">data</span>, <b>int</b> <span id="r63 rd" class="r63 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Quaternion</span> <a id="bfb5dda47bce6401" href="../R/bfb5dda47bce6401.html" target="n" data-glyph="220,1" class="i method">ReadQuaternionAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r62 rd" class="r62 r">data</span>, <b>int</b> <span id="r63 rd" class="r63 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r64 rd" class="r64 r">bytes</span> = <b>stackalloc byte</b>[16];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r64 rd" class="r64 r">bytes</span> = <b>stackalloc byte</b>[16];
  
             <b>if</b> (<span class="r62 r">data</span>.<span class="i property">Position</span> != <span class="r63 r">offset</span>)
                 <span class="r62 r">data</span>.<span class="i property">Position</span> = <span class="r63 r">offset</span>;
@@ -338,10 +338,10 @@
             );
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <span class="t t">Matrix4x4</span> <a id="056d93706641973f" href="../R/056d93706641973f.html" target="n" data-glyph="220,1" class="i method">ReadMatrix4x4At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r65 rd" class="r65 r">data</span>, <b>int</b> <span id="r66 rd" class="r66 r">offset</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <span class="t valueType">Matrix4x4</span> <a id="056d93706641973f" href="../R/056d93706641973f.html" target="n" data-glyph="220,1" class="i method">ReadMatrix4x4At</a>(<b>this</b> <span class="t t">Stream</span> <span id="r65 rd" class="r65 r">data</span>, <b>int</b> <span id="r66 rd" class="r66 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r67 rd" class="r67 r">bytes</span> = <b>stackalloc byte</b>[64];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r67 rd" class="r67 r">bytes</span> = <b>stackalloc byte</b>[64];
  
             <b>if</b> (<span class="r65 r">data</span>.<span class="i property">Position</span> != <span class="r66 r">offset</span>)
                 <span class="r65 r">data</span>.<span class="i property">Position</span> = <span class="r66 r">offset</span>;
@@ -386,10 +386,10 @@
             <b>return</b> <span class="r71 r">bytes</span>;
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static float</b> <a id="a4cb0bc3aa537b4f" href="../R/a4cb0bc3aa537b4f.html" target="n" data-glyph="220,1" class="i method">ReadFloatAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r74 rd" class="r74 r">data</span>, <b>int</b> <span id="r75 rd" class="r75 r">offset</span>)
         &lbrace;
-            <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r76 rd" class="r76 r">bytes</span> = <b>stackalloc byte</b>[4];
+            <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r76 rd" class="r76 r">bytes</span> = <b>stackalloc byte</b>[4];
  
             <b>if</b> (<span class="r74 r">data</span>.<span class="i property">Position</span> != <span class="r75 r">offset</span>)
                 <span class="r74 r">data</span>.<span class="i property">Position</span> = <span class="r75 r">offset</span>;
@@ -399,7 +399,7 @@
             <b>return</b> <span class="t t">BitConverter</span>.<span class="i method">ToSingle</span>(<span class="r76 r">bytes</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static void</b> <a id="68abd315b0db6698" href="../R/68abd315b0db6698.html" target="n" data-glyph="220,1" class="i method">WriteFloatAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r77 rd" class="r77 r">data</span>, <b>int</b> <span id="r78 rd" class="r78 r">offset</span>, <b>float</b> <span id="r79 rd" class="r79 r">value</span>)
         &lbrace;
             <b>if</b> (<span class="r78 r">offset</span> + 4 &gt; <span class="r77 r">data</span>.<span class="i property">Length</span>)
@@ -413,7 +413,7 @@
             <span class="r77 r">data</span>.<span class="i method">Write</span>(<span class="t t">BitConverter</span>.<span class="i method">GetBytes</span>(<span class="r79 r">value</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public static string</b> <a id="9f3593b4942f909d" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ToStringFromNullTerminated</a>(<b>this</b> <b>byte</b>[] <span id="r80 rd" class="r80 r">data</span>)
         &lbrace;
             <b>var</b> <span id="r81 rd" class="r81 r">builder</span> = <b>new</b> <span class="t constructor">StringBuilder</span>(<span class="r80 r">data</span>.<span class="i property">Length</span>);
@@ -433,22 +433,22 @@
             <b>return</b> <span class="r81 r">builder</span>.<span class="i method">ToString</span>();
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         [<span class="t constructor">PrimitiveValueMaterializer</span>]
-        <b>public static</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="1659612e8b89cf3a" href="../R/1659612e8b89cf3a.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r83 rd" class="r83 r">data</span>, <b>int</b> <span id="r84 rd" class="r84 r">offset</span>)
+        <b>public static</b> <a href="../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="1659612e8b89cf3a" href="../R/1659612e8b89cf3a.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r83 rd" class="r83 r">data</span>, <b>int</b> <span id="r84 rd" class="r84 r">offset</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="../Maps/TagRef.cs.html#4e4a0a337482a131" class="t constructor">TagRef</a>(<span class="r83 r">data</span>.<a href="#3fce839389d9ca5e" class="i method">ReadUInt32At</a>(<span class="r84 r">offset</span>));
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         [<span class="t constructor">PrimitiveValueMaterializer</span>]
-        <b>public static</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r85 r t">T</span>&gt; <a id="be081185074f6302" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>&lt;<span id="r85 rd t" class="r85 r t">T</span>&gt;(<b>this</b> <span class="t t">Stream</span> <span id="r86 rd" class="r86 r">data</span>, <b>int</b> <span id="r87 rd" class="r87 r">offset</span>)
+        <b>public static</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r85 r t">T</span>&gt; <a id="be081185074f6302" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadTagRefAt</a>&lt;<span id="r85 rd t" class="r85 r t">T</span>&gt;(<b>this</b> <span class="t t">Stream</span> <span id="r86 rd" class="r86 r">data</span>, <b>int</b> <span id="r87 rd" class="r87 r">offset</span>)
             <b>where</b> <span class="r85 r t">T</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
         &lbrace;
             <b>return</b> <a href="#1659612e8b89cf3a" class="i method">ReadTagRefAt</a>(<span class="r86 r">data</span>, <span class="r87 r">offset</span>);
         &rbrace;
  
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         [<span class="t constructor">PrimitiveValueMaterializer</span>]
         <b>public static</b> <a href="../Offsets/NormalOffset.cs.html#35b3860c9fcb5eaf" class="t t">NormalOffset</a> <a id="2a01ca400903f055" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">ReadNormalOffsetAt</a>(<b>this</b> <span class="t t">Stream</span> <span id="r88 rd" class="r88 r">data</span>, <b>int</b> <span id="r89 rd" class="r89 r">offset</span>)
         &lbrace;

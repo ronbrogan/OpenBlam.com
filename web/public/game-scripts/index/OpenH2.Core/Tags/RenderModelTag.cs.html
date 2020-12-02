@@ -12,7 +12,7 @@
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>
 &lbrace;
-    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="TagName.cs.html#e5ce9e2adfe21b76" class="i field">mode</a>)]
+    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>.<a href="TagName.cs.html#e5ce9e2adfe21b76" class="i field">mode</a>)]
     <b>public class</b> <a id="d8330311d2d1360a" href="../R/d8330311d2d1360a.html" target="n" data-glyph="0,0" class="t t">RenderModelTag</a> : <a href="BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
     &lbrace; 
         <b>public</b> <a id="fcdfdf000f7a8ada" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">RenderModelTag</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>) : <a href="BaseTag.cs.html#dac53823c1a58ae3" class="k">base</a>(<span class="r0 r">id</span>)
@@ -99,13 +99,13 @@
                     &lbrace;
                         <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="k">var</a> <span id="r14 rd" class="r14 r">vert</span> = <span class="r12 r">mesh</span>.<a href="Common/Models/ModelMesh.cs.html#076737a1ccd4a9a3" class="i property">Verticies</a>[<span class="r13 r">i</span>];
  
-                        <b>var</b> <span id="r15 rd" class="r15 r">newPos</span> = <span class="r2 r">part</span>.<a href="#a56a71286aad5355" class="i property">Flags</a>.<span class="i method">HasFlag</span>(<a href="#9509056b6c897126" class="t t">Properties</a>.<a href="#6c38c6d9e7cf5d46" class="i field">CompressedVerts</a>) ? <b>new</b> <span class="t constructor">Vector3</span>(
+                        <b>var</b> <span id="r15 rd" class="r15 r">newPos</span> = <span class="r2 r">part</span>.<a href="#a56a71286aad5355" class="i property">Flags</a>.<span class="i method">HasFlag</span>(<a href="#9509056b6c897126" class="t valueType">Properties</a>.<a href="#6c38c6d9e7cf5d46" class="i field">CompressedVerts</a>) ? <b>new</b> <span class="t constructor">Vector3</span>(
                             <a href="#390bd9c9230318cb" class="i method">Decompress</a>(<span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#6558462f88f51b38" class="i field">Position</a>.<span class="i field">X</span>, <span class="r9 r">minBounds</span>.<span class="i field">X</span>, <span class="r8 r">maxBounds</span>.<span class="i field">X</span>),
                             <a href="#390bd9c9230318cb" class="i method">Decompress</a>(<span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#6558462f88f51b38" class="i field">Position</a>.<span class="i field">Y</span>, <span class="r9 r">minBounds</span>.<span class="i field">Y</span>, <span class="r8 r">maxBounds</span>.<span class="i field">Y</span>),
                             <a href="#390bd9c9230318cb" class="i method">Decompress</a>(<span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#6558462f88f51b38" class="i field">Position</a>.<span class="i field">Z</span>, <span class="r9 r">minBounds</span>.<span class="i field">Z</span>, <span class="r8 r">maxBounds</span>.<span class="i field">Z</span>)
                             ) : <span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#6558462f88f51b38" class="i field">Position</a>;
  
-                        <b>var</b> <span id="r16 rd" class="r16 r">newTex</span> = <span class="r2 r">part</span>.<a href="#a56a71286aad5355" class="i property">Flags</a>.<span class="i method">HasFlag</span>(<a href="#9509056b6c897126" class="t t">Properties</a>.<a href="#156edc8a3301f4ba" class="i field">CompressedTexCoords</a>) ? <b>new</b> <span class="t constructor">Vector2</span>(
+                        <b>var</b> <span id="r16 rd" class="r16 r">newTex</span> = <span class="r2 r">part</span>.<a href="#a56a71286aad5355" class="i property">Flags</a>.<span class="i method">HasFlag</span>(<a href="#9509056b6c897126" class="t valueType">Properties</a>.<a href="#156edc8a3301f4ba" class="i field">CompressedTexCoords</a>) ? <b>new</b> <span class="t constructor">Vector2</span>(
                             <a href="#390bd9c9230318cb" class="i method">Decompress</a>(<span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#c6cb9aa8ce8faa5e" class="i field">TexCoords</a>.<span class="i field">X</span>, <span class="r11 r">minUV</span>.<span class="i field">X</span>, <span class="r10 r">maxUV</span>.<span class="i field">X</span>),
                             <a href="#390bd9c9230318cb" class="i method">Decompress</a>(<span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#c6cb9aa8ce8faa5e" class="i field">TexCoords</a>.<span class="i field">Y</span>, <span class="r11 r">minUV</span>.<span class="i field">Y</span>, <span class="r10 r">maxUV</span>.<span class="i field">Y</span>)
                             ) : <span class="r14 r">vert</span>.<a href="/OpenH2.Foundation/A.html#c6cb9aa8ce8faa5e" class="i field">TexCoords</a>;
@@ -132,7 +132,7 @@
         &rbrace;
  
         [<span class="t constructor">Flags</span>]
-        <b>public enum</b> <a id="9509056b6c897126" href="../R/9509056b6c897126.html" target="n" data-glyph="18,1" class="t t"><span id="b053da1361f805c8">Properties</span></a> : <b>short</b>
+        <b>public enum</b> <a id="9509056b6c897126" href="../R/9509056b6c897126.html" target="n" data-glyph="18,1" class="t valueType"><span id="b053da1361f805c8">Properties</span></a> : <b>short</b>
         &lbrace;
             <a id="6c38c6d9e7cf5d46" href="../R/6c38c6d9e7cf5d46.html" target="n" data-glyph="24,2" class="i field">CompressedVerts</a>             = 1 &lt;&lt; 0,
             <a id="156edc8a3301f4ba" href="../R/156edc8a3301f4ba.html" target="n" data-glyph="24,2" class="i field">CompressedTexCoords</a>         = 1 &lt;&lt; 1,
@@ -228,7 +228,7 @@
             <b>public ushort</b> <a id="ed88eb753b13d970" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">BoneCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(26)]
-            <b>public</b> <a href="#9509056b6c897126" class="t t">Properties</a> <a id="a56a71286aad5355" href="../R/a56a71286aad5355.html" target="n" data-glyph="102,2" class="i property">Flags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="#9509056b6c897126" class="t valueType">Properties</a> <a id="a56a71286aad5355" href="../R/a56a71286aad5355.html" target="n" data-glyph="102,2" class="i property">Flags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(56)]
             <b>public uint</b> <a id="1fcafa2129edc245" href="../R/1fcafa2129edc245.html" target="n" data-glyph="102,2" class="i property">DataBlockRawOffset</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -272,25 +272,25 @@
             <b>public short</b> <a id="358c49da8eada783" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">NextSiblingIndex</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(12)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="06f060b73310a98b" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Translation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="06f060b73310a98b" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Translation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(24)]
-            <b>public</b> <span class="t t">Quaternion</span> <a id="c5da61df7104abcb" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Quaternion</span> <a id="c5da61df7104abcb" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <span class="t t">Vector2</span> <a id="f729ecf960ff5d88" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector2</span> <a id="f729ecf960ff5d88" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(48)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="f4ec881880c764f0" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="f4ec881880c764f0" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(60)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="5c1929a6bdf85293" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown3</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="5c1929a6bdf85293" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown3</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(72)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="6f9bb854af62c775" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown4</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="6f9bb854af62c775" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown4</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(84)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="a3b142e2b8b1ba64" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown5</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="a3b142e2b8b1ba64" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Unknown5</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(12)]
@@ -307,7 +307,7 @@
         <b>public class</b> <a id="43676f65613dcf0f" href="../R/43676f65613dcf0f.html" target="n" data-glyph="0,1" class="t t"><span id="71ca7a48ee7dfcbc">SectionInfo</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="0dd668cc383d0814" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Bounds</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="0dd668cc383d0814" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Bounds</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             <span class="c">// More floats, stuff</span>
         &rbrace;

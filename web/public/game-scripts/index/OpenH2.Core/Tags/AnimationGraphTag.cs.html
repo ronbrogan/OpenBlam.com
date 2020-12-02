@@ -10,7 +10,7 @@
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>
 &lbrace;
-    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="TagName.cs.html#92299b0ce55d4231" class="i field">jmad</a>)]
+    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>.<a href="TagName.cs.html#92299b0ce55d4231" class="i field">jmad</a>)]
     <b>public class</b> <a id="1245f2fb6f6d346d" href="../R/1245f2fb6f6d346d.html" target="n" data-glyph="0,0" class="t t">AnimationGraphTag</a> : <a href="BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
     &lbrace;
         <b>public</b> <a id="2ef6a87176687783" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">AnimationGraphTag</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>) : <a href="BaseTag.cs.html#dac53823c1a58ae3" class="k">base</a>(<span class="r0 r">id</span>)
@@ -18,7 +18,7 @@
         &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(4)]
-        <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="#1245f2fb6f6d346d" class="t t">AnimationGraphTag</a>&gt; <a id="eb5688537506d896" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Unknown</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="#1245f2fb6f6d346d" class="t t">AnimationGraphTag</a>&gt; <a id="eb5688537506d896" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Unknown</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">ReferenceArray</span>(12)]
         <b>public</b> <a href="#31434efd4b8cda7d" class="t t">AnimationBone</a>[] <a id="7ddbc192016b0942" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Bones</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -44,12 +44,12 @@
             &lbrace;
                 <b>var</b> <span id="r3 rd" class="r3 r">frames</span> = <span class="r2 r">track</span>.<a href="#2296616c045c4498" class="i property">FrameCount</a>;
  
-                <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r4 rd" class="r4 r">data</span> = <span class="r2 r">track</span>.<a href="#711b70e473244e11" class="i property">Data</a>;
+                <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r4 rd" class="r4 r">data</span> = <span class="r2 r">track</span>.<a href="#711b70e473244e11" class="i property">Data</a>;
  
                 <b>var</b> <span id="r5 rd" class="r5 r">rotStart</span> = 64;
                 <b>var</b> <span id="r6 rd" class="r6 r">posStart</span> = 64 + <span class="r4 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#ac7027ff2bef2108" class="i method">ReadInt32At</a>(52);
  
-                <b>var</b> <span id="r7 rd" class="r7 r">frameData</span> = <b>new</b> <span class="t t">Matrix4x4</span>[<span class="r3 r">frames</span>];
+                <b>var</b> <span id="r7 rd" class="r7 r">frameData</span> = <b>new</b> <span class="t valueType">Matrix4x4</span>[<span class="r3 r">frames</span>];
  
                 <b>for</b> (<b>int</b> <span id="r8 rd" class="r8 r">i</span> = 0; <span class="r8 r">i</span> &lt; <span class="r3 r">frames</span>; <span class="r8 r">i</span>++)
                 &lbrace;
@@ -71,9 +71,9 @@
                         <span class="r4 r">data</span>.<a href="../Extensions/SpanByteExtensions.cs.html#5bc5dfa0e3a3385a" class="i method">ReadFloatAt</a>(<span class="r13 r">thisPos</span> + 8)
                     );
  
-                    <span class="r7 r">frameData</span>[<span class="r8 r">i</span>] = <span class="t t">Matrix4x4</span>.<span class="i method">Multiply</span>(
-                        <span class="t t">Matrix4x4</span>.<span class="i method">CreateFromQuaternion</span>(<span class="r11 r">quat</span>),
-                        <span class="t t">Matrix4x4</span>.<span class="i method">CreateTranslation</span>(<span class="r14 r">pos</span>));
+                    <span class="r7 r">frameData</span>[<span class="r8 r">i</span>] = <span class="t valueType">Matrix4x4</span>.<span class="i method">Multiply</span>(
+                        <span class="t valueType">Matrix4x4</span>.<span class="i method">CreateFromQuaternion</span>(<span class="r11 r">quat</span>),
+                        <span class="t valueType">Matrix4x4</span>.<span class="i method">CreateTranslation</span>(<span class="r14 r">pos</span>));
                 &rbrace;
             &rbrace;
  
@@ -106,7 +106,7 @@
         <b>public class</b> <a id="6dae2dc11f795f23" href="../R/6dae2dc11f795f23.html" target="n" data-glyph="0,1" class="t t"><span id="670d1dcd83b20bf1">AnimationSoundReference</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="SoundTag.cs.html#fe4b8e460b3b6175" class="t t">SoundTag</a>&gt; <a id="eeb390dff7e79116" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">SoundTag</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="SoundTag.cs.html#fe4b8e460b3b6175" class="t t">SoundTag</a>&gt; <a id="eeb390dff7e79116" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">SoundTag</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(8)]
             <b>public uint</b> <a id="898634c3c18cc6cb" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Param</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;

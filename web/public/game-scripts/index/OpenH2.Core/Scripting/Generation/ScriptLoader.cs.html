@@ -26,16 +26,16 @@
  
         <b>public</b> <a id="82d2d34edd953172" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">ScriptLoader</a>(<b>string</b> <span id="r0 rd" class="r0 r">generatedScriptOutput</span> = <b>null</b>)
         &lbrace;
-            <b>var</b> <span id="r1 rd" class="r1 r">suppressions</span> = <b>new</b> <span class="t constructor">Dictionary</span>&lt;<b>string</b>, <span class="t t">ReportDiagnostic</span>&gt;
+            <b>var</b> <span id="r1 rd" class="r1 r">suppressions</span> = <b>new</b> <span class="t constructor">Dictionary</span>&lt;<b>string</b>, <span class="t valueType">ReportDiagnostic</span>&gt;
             &lbrace;
-                &lbrace; <span class="s">&quot;CS1998&quot;</span>, <span class="t t">ReportDiagnostic</span>.<span class="i field">Suppress</span> &rbrace;
+                &lbrace; <span class="s">&quot;CS1998&quot;</span>, <span class="t valueType">ReportDiagnostic</span>.<span class="i field">Suppress</span> &rbrace;
             &rbrace;;
  
  
-            <b>var</b> <span id="r2 rd" class="r2 r">compilationOptions</span> = <b>new</b> <span class="t constructor">CSharpCompilationOptions</span>(<span class="t t">OutputKind</span>.<span class="i field">DynamicallyLinkedLibrary</span>,
+            <b>var</b> <span id="r2 rd" class="r2 r">compilationOptions</span> = <b>new</b> <span class="t constructor">CSharpCompilationOptions</span>(<span class="t valueType">OutputKind</span>.<span class="i field">DynamicallyLinkedLibrary</span>,
                 <span class="r3 r">specificDiagnosticOptions</span>: <span class="r1 r">suppressions</span>,
-                <span class="r4 r">optimizationLevel</span>: <span class="t t">OptimizationLevel</span>.<span class="i field">Debug</span>,
-                <span class="r5 r">platform</span>: <span class="t t">Platform</span>.<span class="i field">AnyCpu</span>);
+                <span class="r4 r">optimizationLevel</span>: <span class="t valueType">OptimizationLevel</span>.<span class="i field">Debug</span>,
+                <span class="r5 r">platform</span>: <span class="t valueType">Platform</span>.<span class="i field">AnyCpu</span>);
  
             <b>var</b> <span id="r6 rd" class="r6 r">baseLibPath</span> = <span class="t t">Path</span>.<span class="i method">GetDirectoryName</span>(<b>typeof</b>(<b>object</b>).<span class="i property">Assembly</span>.<span class="i property">Location</span>);
  
@@ -77,7 +77,7 @@
                                     <span class="t t">SyntaxFactory</span>.<span class="i method">AttributeArgument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="s">&quot;.NETStandard,Version=v2.1&quot;</span>)),
                                     <span class="t t">SyntaxFactory</span>.<span class="i method">AttributeArgument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="s">&quot;&quot;</span>))
                                         .<span class="i method">WithNameEquals</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">NameEquals</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;FrameworkDisplayName&quot;</span>))))))
-                    .<span class="i method">WithTarget</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">AttributeTargetSpecifier</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">AssemblyKeyword</span>))));
+                    .<span class="i method">WithTarget</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">AttributeTargetSpecifier</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">AssemblyKeyword</span>))));
  
             <a href="#f48687b1b2252972" class="k">this</a>.<a href="#2bf461f2ff069b11" class="i field">compilation</a> = <a href="#f48687b1b2252972" class="k">this</a>.<a href="#2bf461f2ff069b11" class="i field">compilation</a>.<span class="i method">AddSyntaxTrees</span>(<span class="r11 r">targetFrameworkUnit</span>.<span class="i property">SyntaxTree</span>);
  
@@ -85,7 +85,7 @@
  
         <b>public void</b> <a id="f7c81720ecea8eef" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Load</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r12 rd" class="r12 r">scnr</span>)
         &lbrace;
-            <b>var</b> <span id="r13 rd" class="r13 r">scenarioParts</span> = <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#98daa8a43f9d49ee" class="i property">Name</a>.<span class="i method">Split</span>(<span class="s">&#39;\\&#39;</span>, <span class="t t">StringSplitOptions</span>.<span class="i field">RemoveEmptyEntries</span>)
+            <b>var</b> <span id="r13 rd" class="r13 r">scenarioParts</span> = <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#98daa8a43f9d49ee" class="i property">Name</a>.<span class="i method">Split</span>(<span class="s">&#39;\\&#39;</span>, <span class="t valueType">StringSplitOptions</span>.<span class="i field">RemoveEmptyEntries</span>)
                         .<span class="i method">Select</span>(<span id="r14 rd" class="r14 r">p</span> =&gt; <span class="r14 r">p</span>.<span class="i method">Trim</span>())
                         .<span class="i method">ToArray</span>();
  
@@ -102,7 +102,7 @@
             <b>for</b> (<b>var</b> <span id="r19 rd" class="r19 r">i</span> = 0; <span class="r19 r">i</span> &lt; <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#296f9ff33e79186d" class="i property">ScriptMethods</a>.<span class="i property">Length</span>; <span class="r19 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioScripting.cs.html#5c25ea3a03f33243" class="k">var</a> <span id="r20 rd" class="r20 r">method</span> = <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#296f9ff33e79186d" class="i property">ScriptMethods</a>[<span class="r19 r">i</span>];
-                <b>var</b> <span id="r21 rd" class="r21 r">returnedName</span> = <span class="r15 r">repo</span>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r20 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#08a9a7cabc3b1ec3" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c5c2395f738d5aaf" class="i field">ScriptReference</a>.<span class="i method">ToString</span>(), <span class="r19 r">i</span>);
+                <b>var</b> <span id="r21 rd" class="r21 r">returnedName</span> = <span class="r15 r">repo</span>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r20 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#08a9a7cabc3b1ec3" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c5c2395f738d5aaf" class="i field">ScriptReference</a>.<span class="i method">ToString</span>(), <span class="r19 r">i</span>);
             &rbrace;
  
             <b>var</b> <span id="r22 rd" class="r22 r">baseFields</span> = <b>typeof</b>(<a href="../ScenarioScriptBase.cs.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a>).<span class="i method">GetFields</span>();
@@ -129,7 +129,7 @@
                 <span class="t t">SyntaxFactory</span>.<span class="i method">AttributeArgumentList</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">SeparatedList</span>(<b>new</b>[] &lbrace;
                     <span class="t t">SyntaxFactory</span>.<span class="i method">AttributeArgument</span>(
                         <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(
-                            <span class="t t">SyntaxKind</span>.<span class="i field">StringLiteralExpression</span>, 
+                            <span class="t valueType">SyntaxKind</span>.<span class="i field">StringLiteralExpression</span>, 
                             <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#98daa8a43f9d49ee" class="i property">Name</a>)))
                 &rbrace;)));
  
@@ -173,11 +173,11 @@
             <b>var</b> <span id="r41 rd" class="r41 r">dllPath</span> = <span class="t t">Path</span>.<span class="i method">Combine</span>(<span class="r40 r">binRoot</span>, <a href="#a147be7b7467e784" class="i field">AssemblyName</a> + <span class="s">&quot;.dll&quot;</span>);
             <b>var</b> <span id="r42 rd" class="r42 r">pdbPath</span> = <span class="t t">Path</span>.<span class="i method">Combine</span>(<span class="r40 r">binRoot</span>, <a href="#a147be7b7467e784" class="i field">AssemblyName</a> + <span class="s">&quot;.pdb&quot;</span>);
  
-            <b>using</b> (<b>var</b> <span id="r43 rd" class="r43 r">pe</span> = <b>new</b> <span class="t constructor">FileStream</span>(<span class="r41 r">dllPath</span>, <span class="t t">FileMode</span>.<span class="i field">Create</span>))
-            <b>using</b> (<b>var</b> <span id="r44 rd" class="r44 r">pdb</span> = <b>new</b> <span class="t constructor">FileStream</span>(<span class="r42 r">pdbPath</span>, <span class="t t">FileMode</span>.<span class="i field">Create</span>))
+            <b>using</b> (<b>var</b> <span id="r43 rd" class="r43 r">pe</span> = <b>new</b> <span class="t constructor">FileStream</span>(<span class="r41 r">dllPath</span>, <span class="t valueType">FileMode</span>.<span class="i field">Create</span>))
+            <b>using</b> (<b>var</b> <span id="r44 rd" class="r44 r">pdb</span> = <b>new</b> <span class="t constructor">FileStream</span>(<span class="r42 r">pdbPath</span>, <span class="t valueType">FileMode</span>.<span class="i field">Create</span>))
             &lbrace;
                 <b>var</b> <span id="r45 rd" class="r45 r">result</span> = <a href="#f48687b1b2252972" class="k">this</a>.<a href="#2bf461f2ff069b11" class="i field">compilation</a>.<span class="i method">Emit</span>(<span class="r43 r">pe</span>, <span class="r44 r">pdb</span>, <span class="r46 r">options</span>: <b>new</b> <span class="t constructor">EmitOptions</span>(
-                    <span class="r47 r">debugInformationFormat</span>: <span class="t t">DebugInformationFormat</span>.<span class="i field">PortablePdb</span>, 
+                    <span class="r47 r">debugInformationFormat</span>: <span class="t valueType">DebugInformationFormat</span>.<span class="i field">PortablePdb</span>, 
                     <span class="r48 r">defaultSourceFileEncoding</span>: <span class="t t">Encoding</span>.<span class="i property">UTF8</span>),
                     <span class="r49 r">embeddedTexts</span>: <a href="#bb347da05b8f1e56" class="i field">embeddedSource</a>);
  

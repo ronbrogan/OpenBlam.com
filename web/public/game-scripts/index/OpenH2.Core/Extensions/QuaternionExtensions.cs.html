@@ -9,7 +9,7 @@
 &lbrace;
     <b>public static class</b> <a id="55d86f55659c5adf" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">QuaternionExtensions</a>
     &lbrace;
-        <b>public static</b> <span class="t t">Quaternion</span> <a id="43515af6bca5aa96" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">From3x3Mat</a>(<b>float</b>[] <span id="r0 rd" class="r0 r">vals</span>)
+        <b>public static</b> <span class="t valueType">Quaternion</span> <a id="43515af6bca5aa96" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">From3x3Mat</a>(<b>float</b>[] <span id="r0 rd" class="r0 r">vals</span>)
         &lbrace;
             <b>var</b> <span id="r1 rd" class="r1 r">mat4</span> = <b>new</b> <span class="t constructor">Matrix4x4</span>(
                 <span class="r0 r">vals</span>[0],
@@ -29,15 +29,15 @@
                 0f,
                 1f);
  
-            <b>if</b> (<span class="t t">Matrix4x4</span>.<span class="i method">Decompose</span>(<span class="r1 r">mat4</span>, <b>out</b> <b>var</b> <b>_</b>, <b>out</b> <b>var</b> <span id="r2 rd" class="r2 r">q</span>, <b>out</b> <b>var</b> <b>_</b>) == <b>false</b>)
+            <b>if</b> (<span class="t valueType">Matrix4x4</span>.<span class="i method">Decompose</span>(<span class="r1 r">mat4</span>, <b>out</b> <b>var</b> <b>_</b>, <b>out</b> <b>var</b> <span id="r2 rd" class="r2 r">q</span>, <b>out</b> <b>var</b> <b>_</b>) == <b>false</b>)
             &lbrace;
-                <b>return</b> <span class="t t">Quaternion</span>.<span class="i property">Identity</span>;
+                <b>return</b> <span class="t valueType">Quaternion</span>.<span class="i property">Identity</span>;
             &rbrace;
  
             <b>return</b> <span class="r2 r">q</span>;
         &rbrace;
  
-        <b>public static</b> <span class="t t">Quaternion</span> <a id="4c5155aec79df634" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">FromH2vOrientation</a>(<span class="t t">Vector3</span> <span id="r3 rd" class="r3 r">orient</span>)
+        <b>public static</b> <span class="t valueType">Quaternion</span> <a id="4c5155aec79df634" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">FromH2vOrientation</a>(<span class="t valueType">Vector3</span> <span id="r3 rd" class="r3 r">orient</span>)
         &lbrace;
             <span class="c">/*
              * This method is mathematically equivalent to these operations
@@ -65,14 +65,14 @@
             <b>float</b> <span id="r15 rd" class="r15 r">q1z</span> = <span class="r9 r">zs</span> * -<span class="r8 r">ys</span>;
             <b>float</b> <span id="r16 rd" class="r16 r">q1w</span> = <span class="r12 r">zc</span> * <span class="r11 r">yc</span>;
  
-            <span class="t t">Quaternion</span> <span id="r17 rd" class="r17 r">t2</span> = <b>new</b> <span class="t constructor">Quaternion</span>(
+            <span class="t valueType">Quaternion</span> <span id="r17 rd" class="r17 r">t2</span> = <b>new</b> <span class="t constructor">Quaternion</span>(
                 <span class="r13 r">q1x</span> * <span class="r10 r">xc</span> + <span class="r14 r">q1y</span> * <span class="r7 r">xs</span>,
                 <span class="r14 r">q1y</span> * <span class="r10 r">xc</span> - <span class="r13 r">q1x</span> * <span class="r7 r">xs</span>,
                 <span class="r15 r">q1z</span> * <span class="r10 r">xc</span> + <span class="r7 r">xs</span> * <span class="r16 r">q1w</span>,
                 <span class="r16 r">q1w</span> * <span class="r10 r">xc</span> - <span class="r15 r">q1z</span> * <span class="r7 r">xs</span>
             );
  
-            <b>return</b> <span class="t t">Quaternion</span>.<span class="i method">Normalize</span>(<span class="r17 r">t2</span>);
+            <b>return</b> <span class="t valueType">Quaternion</span>.<span class="i method">Normalize</span>(<span class="r17 r">t2</span>);
         &rbrace;
     &rbrace;
 &rbrace;

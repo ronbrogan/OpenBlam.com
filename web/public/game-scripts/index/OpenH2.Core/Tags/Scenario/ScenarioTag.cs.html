@@ -11,7 +11,7 @@
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Scenario</span>
 &lbrace;
-    [<a href="../Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="../TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="../TagName.cs.html#9f1d5d888a71492f" class="i field">scnr</a>)]
+    [<a href="../Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="../TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>.<a href="../TagName.cs.html#9f1d5d888a71492f" class="i field">scnr</a>)]
     <b>public</b> <a href="../../P/d8117f600839b8fd.html" target="s" class="k">partial</a> <b>class</b> <a id="d8117f600839b8fd" href="../../R/d8117f600839b8fd.html" target="n" data-glyph="0,0" class="t t">ScenarioTag</a> : <a href="../BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
     &lbrace;
         <b>public override string</b> <a id="98daa8a43f9d49ee" href="../../R/98daa8a43f9d49ee.html" target="n" data-glyph="102,1" class="i property">Name</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -115,7 +115,7 @@
             <b>public</b> <a href="#3f54faf4f1d02690" class="t t">Obj12</a>[] <a id="910f4121c43ac09e" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Obj12s</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(44)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="8c2b39c5837a0901" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Creature</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="8c2b39c5837a0901" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Creature</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">FixedLength</span>(28)]
             <b>public class</b> <a id="3f54faf4f1d02690" href="../../R/3f54faf4f1d02690.html" target="n" data-glyph="0,2" class="t t"><span id="cf3131e7e0eb0b79">Obj12</span></a>
@@ -132,23 +132,23 @@
             <b>public string</b> <a id="4059206696131aaa" href="../../R/4059206696131aaa.html" target="n" data-glyph="102,2" class="i property">Identifier</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(32)]
-            <b>public</b> <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a> <a id="d9775f53799d3f81" href="../../R/d9775f53799d3f81.html" target="n" data-glyph="102,2" class="i property">ItemType</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a> <a id="d9775f53799d3f81" href="../../R/d9775f53799d3f81.html" target="n" data-glyph="102,2" class="i property">ItemType</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(34)]
             <b>public ushort</b> <a id="07878d855c4d7f8a" href="../../R/07878d855c4d7f8a.html" target="n" data-glyph="102,2" class="i property">Index</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             <b>public object</b> <a id="bf8a3bfb1db3c617" href="../../R/bf8a3bfb1db3c617.html" target="n" data-glyph="102,2" class="i property">GameObject</a> =&gt; <a href="#c5f58866aa21404d" class="k">this</a>.<a href="#d9775f53799d3f81" class="i property">ItemType</a> <b>switch</b>
             &lbrace;
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#665084167aa8b44b" class="i field">Biped</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#4d356ce0bafef614" class="i property">BipedInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="#1b1d106a3d5e5ec7" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#86a60a55f47196ec" class="i field">Vehicle</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#e94443e238207bab" class="i property">VehicleInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="#81e46ca06aea44e0" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#467f24d8b92032f3" class="i field">Weapon</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#51d70f1f3a32579d" class="i property">WeaponPlacements</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioItems.cs.html#7d27bccb248f2e25" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#145c384eb4549a9a" class="i field">Equipment</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#a0ee3cdbfb9121a4" class="i property">EquipmentPlacements</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="#c25f3a6d6b504ea8" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#d4055488689e95ed" class="i field">Scenery</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#18b96ae20fac2261" class="i property">SceneryInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#9d89bd700bcbc202" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#162df90467f767d1" class="i field">Machinery</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#eadcb23ed95d3736" class="i property">MachineryInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#a06f4d038fdce514" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#bdaed0cd29866fb4" class="i field">Controller</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#bdae9309f972846c" class="i property">ControllerInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#64808e036d077956" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#e29269e096662518" class="i field">Sound</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#4e87f20a319aeb88" class="i property">SoundSceneryInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#9330fa67af08fc7a" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#553eb52ab727e49b" class="i field">Bloc</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#9d824c423eb1657d" class="i property">BlocInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioItems.cs.html#733af5f62801bbd0" class="i property">GameObject</a>,
-                <a href="#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="#18700bbd50ddd2b7" class="i field">Undef</a> =&gt; <b>null</b>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#665084167aa8b44b" class="i field">Biped</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#4d356ce0bafef614" class="i property">BipedInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="#1b1d106a3d5e5ec7" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#86a60a55f47196ec" class="i field">Vehicle</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#e94443e238207bab" class="i property">VehicleInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="#81e46ca06aea44e0" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#467f24d8b92032f3" class="i field">Weapon</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#51d70f1f3a32579d" class="i property">WeaponPlacements</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioItems.cs.html#7d27bccb248f2e25" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#145c384eb4549a9a" class="i field">Equipment</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#a0ee3cdbfb9121a4" class="i property">EquipmentPlacements</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="#c25f3a6d6b504ea8" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#d4055488689e95ed" class="i field">Scenery</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#18b96ae20fac2261" class="i property">SceneryInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#9d89bd700bcbc202" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#162df90467f767d1" class="i field">Machinery</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#eadcb23ed95d3736" class="i property">MachineryInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#a06f4d038fdce514" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#bdaed0cd29866fb4" class="i field">Controller</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#bdae9309f972846c" class="i property">ControllerInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#64808e036d077956" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#e29269e096662518" class="i field">Sound</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#4e87f20a319aeb88" class="i property">SoundSceneryInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioEnvironment.cs.html#9330fa67af08fc7a" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#553eb52ab727e49b" class="i field">Bloc</a> =&gt; <a href="#8b18af4950db02cd" class="i field">scenario</a>.<a href="#9d824c423eb1657d" class="i property">BlocInstances</a>[<a href="#07878d855c4d7f8a" class="i property">Index</a>].<a href="ScenarioItems.cs.html#733af5f62801bbd0" class="i property">GameObject</a>,
+                <a href="#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="#18700bbd50ddd2b7" class="i field">Undef</a> =&gt; <b>null</b>,
                 <b>_</b> =&gt; <b>throw</b> <b>new</b> <span class="i n">System</span>.<span class="t constructor">NotImplementedException</span>(),
             &rbrace;;
  
@@ -159,7 +159,7 @@
             &rbrace;
         &rbrace;
  
-        <b>public enum</b> <a id="35688e6afe7691a6" href="../../R/35688e6afe7691a6.html" target="n" data-glyph="18,1" class="t t"><span id="611a4a934d1ae36a">WellKnownVarType</span></a> : <b>ushort</b>
+        <b>public enum</b> <a id="35688e6afe7691a6" href="../../R/35688e6afe7691a6.html" target="n" data-glyph="18,1" class="t valueType"><span id="611a4a934d1ae36a">WellKnownVarType</span></a> : <b>ushort</b>
         &lbrace;
             <a id="665084167aa8b44b" href="../../R/665084167aa8b44b.html" target="n" data-glyph="24,2" class="i field">Biped</a> = 0,
             <a id="86a60a55f47196ec" href="../../R/86a60a55f47196ec.html" target="n" data-glyph="24,2" class="i field">Vehicle</a> = 1,
@@ -183,10 +183,10 @@
             <b>public ushort</b> <a id="17ddd5afae8b9897" href="../../R/17ddd5afae8b9897.html" target="n" data-glyph="102,2" class="i property">Index</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(8)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="b81bcc9289b2f0d5" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="b81bcc9289b2f0d5" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(20)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="c9aee979edc3a0ce" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="c9aee979edc3a0ce" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             <b>public</b> <a href="../../GameObjects/IVehicle.cs.html#1b6496b5844473bc" class="t t">IVehicle</a> <a id="81e46ca06aea44e0" href="../../R/81e46ca06aea44e0.html" target="n" data-glyph="102,2" class="i property">GameObject</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
@@ -198,10 +198,10 @@
             <b>public ushort</b> <a id="be2e63bc407f6c33" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Index</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(8)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="44575cfdff4c8f36" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="44575cfdff4c8f36" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(20)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="4b0e1054fffc7292" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="4b0e1054fffc7292" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             <b>public</b> <a href="../../GameObjects/IEquipment.cs.html#1d07b45f5260ec7b" class="t t">IEquipment</a> <a id="c25f3a6d6b504ea8" href="../../R/c25f3a6d6b504ea8.html" target="n" data-glyph="102,2" class="i property">GameObject</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
@@ -219,10 +219,10 @@
             <b>public ushort</b> <a id="918286e3745e04a7" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Value</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(8)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="ad0fe91f9aac6787" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="ad0fe91f9aac6787" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(20)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="61a87a615a568c1e" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="61a87a615a568c1e" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">InternedString</span>(52)]
             <b>public string</b> <a id="d03ad87213ab256d" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Description</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -247,16 +247,16 @@
             <b>public string</b> <a id="c60263dfed00ba93" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">ParentDescription</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(16)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="dc74ef2f92a84e1b" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="dc74ef2f92a84e1b" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(28)]
-            <b>public</b> <span class="t t">Vector2</span> <a id="eb5605d2746f8320" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Something</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector2</span> <a id="eb5605d2746f8320" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Something</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="b3e5a9e0ca42e0fc" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="b3e5a9e0ca42e0fc" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(48)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="42b51643964af1ed" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Size</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="42b51643964af1ed" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Size</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(60)]
             <b>public float</b> <a id="9d25f01724cca52b" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Param</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -272,7 +272,7 @@
         <b>public class</b> <a id="2c9ead658b03ea04" href="../../R/2c9ead658b03ea04.html" target="n" data-glyph="0,1" class="t t"><span id="ad91b159e61f643c">GameModeMarker</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(0)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="17cddb9ee403d9d6" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="17cddb9ee403d9d6" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         <span class="c">// only in MP?</span>
@@ -295,7 +295,7 @@
         <b>public class</b> <a id="d4348ae5d46837a1" href="../../R/d4348ae5d46837a1.html" target="n" data-glyph="0,1" class="t t"><span id="65384a9079a24b19">StyleDefinition</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="ea1f7c916eb9552d" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">StyleReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="ea1f7c916eb9552d" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">StyleReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(84)] 
@@ -342,14 +342,14 @@
         <b>public class</b> <a id="04464eca945d5612" href="../../R/04464eca945d5612.html" target="n" data-glyph="0,1" class="t t"><span id="44dee6b64e844753">CharacterDefinition</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../CharacterTag.cs.html#61de7a1a5aca6b71" class="t t">CharacterTag</a>&gt; <a id="f24c85050e657e3b" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">CharacterReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../CharacterTag.cs.html#61de7a1a5aca6b71" class="t t">CharacterTag</a>&gt; <a id="f24c85050e657e3b" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">CharacterReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(8)]
         <b>public class</b> <a id="ab9ebfacd8cc8af1" href="../../R/ab9ebfacd8cc8af1.html" target="n" data-glyph="0,1" class="t t"><span id="08d78b2f868c2fd4">SoundDefinition</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../SoundTag.cs.html#fe4b8e460b3b6175" class="t t">SoundTag</a>&gt; <a id="7e14146a36f777b3" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Sound</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../SoundTag.cs.html#fe4b8e460b3b6175" class="t t">SoundTag</a>&gt; <a id="7e14146a36f777b3" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Sound</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(128)]
@@ -375,13 +375,13 @@
                     <b>public string</b> <a id="c71f106cfdfef7d2" href="../../R/../../0000000000.html" target="n" data-glyph="102,4" class="i property">Description</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                     [<span class="t constructor">PrimitiveValue</span>(32)]
-                    <b>public</b> <span class="t t">Vector3</span> <a id="e7d59e813af29c25" href="../../R/../../0000000000.html" target="n" data-glyph="102,4" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+                    <b>public</b> <span class="t valueType">Vector3</span> <a id="e7d59e813af29c25" href="../../R/../../0000000000.html" target="n" data-glyph="102,4" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                     [<span class="t constructor">PrimitiveValue</span>(48)]
                     <b>public short</b> <a id="ebb4106d75dc5db5" href="../../R/../../0000000000.html" target="n" data-glyph="102,4" class="i property">Value</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                     [<span class="t constructor">PrimitiveValue</span>(52)]
-                    <b>public</b> <span class="t t">Vector2</span> <a id="0f1a98b762f00a75" href="../../R/../../0000000000.html" target="n" data-glyph="102,4" class="i property">Unknown</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+                    <b>public</b> <span class="t valueType">Vector2</span> <a id="0f1a98b762f00a75" href="../../R/../../0000000000.html" target="n" data-glyph="102,4" class="i property">Unknown</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
                 &rbrace;
             &rbrace;
         &rbrace;
@@ -396,7 +396,7 @@
             <b>public string</b> <a id="39889bb072fe838f" href="../../R/39889bb072fe838f.html" target="n" data-glyph="102,2" class="i property">Description</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="b96d168c1c6f5398" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="b96d168c1c6f5398" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(48)]
             <b>public float</b> <a id="488322f744e305f9" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Param</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -414,10 +414,10 @@
             <b>public string</b> <a id="2474a14432231952" href="../../R/2474a14432231952.html" target="n" data-glyph="102,2" class="i property">Description</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="5995f912b2942037" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="5995f912b2942037" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(48)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="796cf5fb723d54ca" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="796cf5fb723d54ca" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(60)]
             <b>public float</b> <a id="3b400323cd51503f" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">FieldOfView</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -451,7 +451,7 @@
             <b>public ushort</b> <a id="daaa61d5b932e6f0" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">ValueD</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(24)]
-            <b>public</b> <span class="t t">Vector3</span> <a id="5c382a334fae42d3" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Floats</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector3</span> <a id="5c382a334fae42d3" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Floats</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             <b>public</b> <a href="../../GameObjects/ICinematicTitle.cs.html#7f07471fc6ee0687" class="t t">ICinematicTitle</a> <a id="6d06002597471237" href="../../R/6d06002597471237.html" target="n" data-glyph="102,2" class="i property">GameObject</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
@@ -461,7 +461,7 @@
         <b>public class</b> <a id="63c3f7e485a4a6e6" href="../../R/63c3f7e485a4a6e6.html" target="n" data-glyph="0,1" class="t t"><span id="511a1649b0b84651">VehicleReference</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(0)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="39493d3acd5cc9b8" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Tag</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="39493d3acd5cc9b8" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Tag</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(4)]
             <b>public uint</b> <a id="62c1d9da5472ca54" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Value</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -539,10 +539,10 @@
             <b>public string</b> <a id="df83aa71b8a06f1b" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Description</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../LoopingSoundTag.cs.html#782677ff35a50540" class="t t">LoopingSoundTag</a>&gt; <a id="603de6853a67b67d" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">LoopingSound1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../LoopingSoundTag.cs.html#782677ff35a50540" class="t t">LoopingSoundTag</a>&gt; <a id="603de6853a67b67d" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">LoopingSound1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(44)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../LoopingSoundTag.cs.html#782677ff35a50540" class="t t">LoopingSoundTag</a>&gt; <a id="46f51ba461e1fe32" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">LoopingSound2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../LoopingSoundTag.cs.html#782677ff35a50540" class="t t">LoopingSoundTag</a>&gt; <a id="46f51ba461e1fe32" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">LoopingSound2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(68)]
             <b>public float</b> <a id="4d7b2f0fda76c643" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Param1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -558,7 +558,7 @@
             <b>public string</b> <a id="fc99bc7af8bc6a2f" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Description</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(36)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="7c0f8da7545b406e" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">SndeReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="7c0f8da7545b406e" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">SndeReference</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(40)]
             <b>public float</b> <a id="d2e41eff8111cb50" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Param1</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -571,7 +571,7 @@
         <b>public class</b> <a id="737be7e19ae4efd8" href="../../R/737be7e19ae4efd8.html" target="n" data-glyph="0,1" class="t t"><span id="cd0595d656925bff">Obj656</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../BspTag.cs.html#f6fbc8d87483a6ea" class="t t">BspTag</a>&gt; <a id="478a2862d4e34c13" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Bsp</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../BspTag.cs.html#f6fbc8d87483a6ea" class="t t">BspTag</a>&gt; <a id="478a2862d4e34c13" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Bsp</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">ReferenceArray</span>(8)]
             <b>public uint</b>[] <a id="7fca7b9c7841da06" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">ValueAs</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -616,7 +616,7 @@
             <b>public float</b>[] <a id="4f0703886d591261" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">FloatsB</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(212)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="88ba722e42cb8c35" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">FpchRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="88ba722e42cb8c35" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">FpchRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         
@@ -625,7 +625,7 @@
         <b>public class</b> <a id="54fdef24c5959e5e" href="../../R/54fdef24c5959e5e.html" target="n" data-glyph="0,1" class="t t"><span id="37ee8ab2c0aa0f1f">DecrDefinition</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="1739eedae87cfe60" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">DecrRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="1739eedae87cfe60" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">DecrRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(8)]
@@ -645,18 +645,18 @@
         <b>public class</b> <a id="532e8366e5105ceb" href="../../R/532e8366e5105ceb.html" target="n" data-glyph="0,1" class="t t"><span id="50a1a09446946902">BspLightingInfo</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../BspTag.cs.html#f6fbc8d87483a6ea" class="t t">BspTag</a>&gt; <a id="db4cc1679a21294f" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">BspRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../BspTag.cs.html#f6fbc8d87483a6ea" class="t t">BspTag</a>&gt; <a id="db4cc1679a21294f" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">BspRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             <span class="c">// TODO: using Vector4[] for ReferenceArray isn&#39;t supported</span>
             <span class="c">//[ReferenceArray(8)]</span>
-            <b>public</b> <span class="t t">Vector4</span>[] <a id="a3fe86c321d4a631" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">LightPoints</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <span class="t valueType">Vector4</span>[] <a id="a3fe86c321d4a631" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">LightPoints</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(24)]
         <b>public class</b> <a id="612f2606dd124d90" href="../../R/612f2606dd124d90.html" target="n" data-glyph="0,1" class="t t"><span id="47635b1e8d44bd4a">LevelInfo</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t t">TagRef</a> <a id="9d8c517af96be463" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">DescriptionUnicode</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#d13c6819f256d499" class="t valueType">TagRef</a> <a id="9d8c517af96be463" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">DescriptionUnicode</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">ReferenceArray</span>(8)]
             <b>public</b> <a href="#7dc075a3968c0071" class="t t">CampaignInfo</a>[] <a id="de0ede58a90700a3" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">CampaignInfos</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -674,7 +674,7 @@
                 <b>public uint</b> <a id="3a289c7ec847835c" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">MapId</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                 [<span class="t constructor">PrimitiveValue</span>(12)]
-                <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="c5ad2272996a6f3b" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">BitmapRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+                <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="c5ad2272996a6f3b" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">BitmapRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                 [<span class="t constructor">Utf16StringValue</span>(16, 32)]
                 <b>public string</b> <a id="15ca621c704fa550" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">EnglishName</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -690,7 +690,7 @@
                 <b>public uint</b> <a id="aec25478f9e4724d" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">MapId</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                 [<span class="t constructor">PrimitiveValue</span>(8)]
-                <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="04aed3fd83366d8a" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">BitmapRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+                <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="04aed3fd83366d8a" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">BitmapRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
                 [<span class="t constructor">Utf16StringValue</span>(12, 32)]
                 <b>public string</b> <a id="892607c4e7d5124c" href="../../R/../../0000000000.html" target="n" data-glyph="102,3" class="i property">EnglishName</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -704,7 +704,7 @@
         <b>public class</b> <a id="3a711277e6b4cf75" href="../../R/3a711277e6b4cf75.html" target="n" data-glyph="0,1" class="t t"><span id="a9f24efc259e01a4">MissionDialogMap</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../DialogMapTag.cs.html#e6fee71e307058a3" class="t t">DialogMapTag</a>&gt; <a id="08820c685c4ea455" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">MdlgRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../DialogMapTag.cs.html#e6fee71e307058a3" class="t t">DialogMapTag</a>&gt; <a id="08820c685c4ea455" href="../../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">MdlgRef</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
     &rbrace;
 &rbrace;</pre></td></tr></table></div></div>

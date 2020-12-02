@@ -14,16 +14,16 @@
     <b>public class</b> <a id="c317422ccbf37b6f" href="../../R/c317422ccbf37b6f.html" target="n" data-glyph="0,0" class="t t">SleepUntilContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>
     &lbrace;
         <b>private static</b> <span class="t t">TypeSyntax</span> <a id="9b03acf369fb36cc" href="../../R/9b03acf369fb36cc.html" target="n" data-glyph="46,1" class="i field">FuncBoolType</a> = <span class="t t">SyntaxFactory</span>.<span class="i method">GenericName</span>(<span class="s">&quot;Func&quot;</span>)
-            .<span class="i method">AddTypeArgumentListArguments</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">PredefinedType</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">BoolKeyword</span>)));
+            .<span class="i method">AddTypeArgumentListArguments</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">PredefinedType</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">BoolKeyword</span>)));
  
-        <b>public</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <a id="e585c157dc257b99" href="../../R/e585c157dc257b99.html" target="n" data-glyph="102,1" class="i property">ReturnType</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <a id="e585c157dc257b99" href="../../R/e585c157dc257b99.html" target="n" data-glyph="102,1" class="i property">ReturnType</a> &lbrace; <b>get</b>; &rbrace;
  
         <b>private</b> <span class="t t">List</span>&lt;<span class="t t">ArgumentSyntax</span>&gt; <a id="02ee7b44b1b77d9e" href="../../R/02ee7b44b1b77d9e.html" target="n" data-glyph="46,1" class="i field">arguments</a> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">ArgumentSyntax</span>&gt;();
  
         <b>public override bool</b> <a id="d10ab21e904065b4" href="../../R/d10ab21e904065b4.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> =&gt; <b>true</b>;
         <b>public override bool</b> <a id="425770b5dbf86ce0" href="../../R/425770b5dbf86ce0.html" target="n" data-glyph="102,1" class="i property">SuppressHoisting</a> =&gt; <b>true</b>;
  
-        <b>public</b> <a id="3098be91e0d9ba85" href="../../R/3098be91e0d9ba85.html" target="n" data-glyph="72,1" class="t constructor">SleepUntilContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r1 rd" class="r1 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
+        <b>public</b> <a id="3098be91e0d9ba85" href="../../R/3098be91e0d9ba85.html" target="n" data-glyph="72,1" class="t constructor">SleepUntilContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r1 rd" class="r1 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
         &lbrace;
             <a href="#c317422ccbf37b6f" class="k">this</a>.<a href="#e585c157dc257b99" class="i property">ReturnType</a> = <span class="r1 r">returnType</span>;
         &rbrace;
@@ -52,14 +52,14 @@
             <b>else</b>
             &lbrace;
                 <span class="r6 r">checkExpression</span> = <span class="t t">SyntaxFactory</span>.<span class="i method">ParenthesizedLambdaExpression</span>(<span class="r5 r">checkArg</span>.<span class="i property">Expression</span>)
-                    .<span class="i method">WithAsyncKeyword</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">AsyncKeyword</span>));
+                    .<span class="i method">WithAsyncKeyword</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">AsyncKeyword</span>));
             &rbrace;
  
             <b>var</b> <span id="r9 rd" class="r9 r">finalArgs</span> = <a href="#c317422ccbf37b6f" class="k">this</a>.<a href="#02ee7b44b1b77d9e" class="i field">arguments</a>.<span class="i method">ToArray</span>();
             <span class="r9 r">finalArgs</span>[0] = <span class="t t">SyntaxFactory</span>.<span class="i method">Argument</span>(<span class="r6 r">checkExpression</span>);
  
             <span class="r4 r">scope</span>.<a href="Scope.cs.html#25936af8934a3201" class="i property">Context</a>.<a href="IGenerationContext.cs.html#bcfc3bffb115f977" class="i method">AddExpression</a>(<span class="t t">SyntaxFactory</span>.<span class="i method">AwaitExpression</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">InvocationExpression</span>(
-                <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;Engine&quot;</span>),
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;sleep_until&quot;</span>)))
                     .<span class="i method">AddArgumentListArguments</span>(<span class="r9 r">finalArgs</span>)

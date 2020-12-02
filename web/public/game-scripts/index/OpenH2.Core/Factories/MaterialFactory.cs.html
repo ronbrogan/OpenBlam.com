@@ -158,14 +158,14 @@
                     <b>continue</b>;
                 &rbrace;
  
-                <b>if</b> (<span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t t">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#9b4cba5d1863ccda" class="i field">Bump</a> || <span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#ae553b96ccbdfaea" class="i property">Name</a>.<span class="i method">Contains</span>(<span class="s">&quot;bump&quot;</span>))
+                <b>if</b> (<span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t valueType">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#9b4cba5d1863ccda" class="i field">Bump</a> || <span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#ae553b96ccbdfaea" class="i property">Name</a>.<span class="i method">Contains</span>(<span class="s">&quot;bump&quot;</span>))
                 &lbrace;
                     <span class="r16 r">mat</span>.<a href="/OpenH2.Foundation/A.html#ae2487d596987c2c" class="i property">NormalMap</a> = <span class="r25 r">bitm</span>;
                     <span class="r16 r">mat</span>.<a href="/OpenH2.Foundation/A.html#26868d05b23d7bd9" class="i property">NormalMapScale</a> = <span class="r21 r">args</span>.<a href="../Extensions/TagExtensions.cs.html#7029bd46d3edd180" class="i method">GetInput</a>(0, <b>new</b> <span class="t constructor">Vector4</span>(1, 1, 0, 0));
                     <b>continue</b>;
                 &rbrace;
  
-                <b>if</b> (<span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t t">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#a2b2ca7e9c81ead2" class="i field">Diffuse</a>)
+                <b>if</b> (<span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t valueType">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#a2b2ca7e9c81ead2" class="i field">Diffuse</a>)
                 &lbrace;
                     <b>if</b> (<span class="r16 r">mat</span>.<a href="/OpenH2.Foundation/A.html#8d5ec4720c7b845d" class="i property">DiffuseMap</a> == <b>default</b>)
                     &lbrace;
@@ -174,7 +174,7 @@
                     &rbrace;
                 &rbrace;
  
-                <b>if</b> (<span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t t">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#a2b2ca7e9c81ead2" class="i field">Diffuse</a> || <span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t t">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#86c9f4f547e1e66b" class="i field">Detail</a> || <span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#ae553b96ccbdfaea" class="i property">Name</a>.<span class="i method">Contains</span>(<span class="s">&quot;detail&quot;</span>))
+                <b>if</b> (<span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t valueType">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#a2b2ca7e9c81ead2" class="i field">Diffuse</a> || <span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#04f2d16da90a78ba" class="i property">TextureUsage</a> == <a href="../Enums/Texture/TextureUsage.cs.html#72d2486ab3ae70b9" class="t valueType">TextureUsage</a>.<a href="../Enums/Texture/TextureUsage.cs.html#86c9f4f547e1e66b" class="i field">Detail</a> || <span class="r25 r">bitm</span>.<a href="../Tags/BitmapTag.cs.html#ae553b96ccbdfaea" class="i property">Name</a>.<span class="i method">Contains</span>(<span class="s">&quot;detail&quot;</span>))
                 &lbrace;
  
                     <span class="c">// HACK: if texture is small, it&#39;s likely not a detail map</span>
@@ -182,7 +182,7 @@
                         <b>continue</b>;
  
                     <b>int</b> <span id="r26 rd" class="r26 r">inputOffset</span> = <span class="r23 r">i</span>;
-                    <span class="t t">Vector4</span> <span id="r27 rd" class="r27 r">detailScale</span> = <span class="t t">Vector4</span>.<span class="i property">Zero</span>;
+                    <span class="t valueType">Vector4</span> <span id="r27 rd" class="r27 r">detailScale</span> = <span class="t valueType">Vector4</span>.<span class="i property">Zero</span>;
  
                     <b>while</b> ((<span class="r27 r">detailScale</span>.<span class="i field">X</span> &lt; 1 || <span class="r27 r">detailScale</span>.<span class="i field">Y</span> &lt; 1 || <span class="r27 r">detailScale</span>.<span class="i field">Z</span> != 0 || <span class="r27 r">detailScale</span>.<span class="i field">W</span> != 0)
                         &amp;&amp; <span class="r26 r">inputOffset</span> &lt; <span class="r21 r">args</span>.<a href="../Tags/ShaderTag.cs.html#e841116f05aba5be" class="i property">ShaderInputs</a>.<span class="i property">Length</span>)
@@ -213,7 +213,7 @@
             <b>var</b> <span id="r30 rd" class="r30 r">opts</span> = <b>new</b> <span class="t constructor">JsonSerializerOptions</span>()
             &lbrace;
                 <span class="i property">AllowTrailingCommas</span> = <b>true</b>,
-                <span class="i property">ReadCommentHandling</span> = <span class="t t">JsonCommentHandling</span>.<span class="i field">Skip</span>,
+                <span class="i property">ReadCommentHandling</span> = <span class="t valueType">JsonCommentHandling</span>.<span class="i field">Skip</span>,
                 <span class="i property">PropertyNameCaseInsensitive</span> = <b>true</b>
             &rbrace;;
  
@@ -256,7 +256,7 @@
                 <span class="t t">JsonConverter</span> <span id="r36 rd" class="r36 r">converter</span> = (<span class="t t">JsonConverter</span>)<span class="t t">Activator</span>.<span class="i method">CreateInstance</span>(
                     <b>typeof</b>(<a href="#f9f0eb7e8453467c" class="t t">DictionaryUintConverterInner</a>&lt;&gt;).<span class="i method">MakeGenericType</span>(
                         <b>new</b> <span class="t t">Type</span>[] &lbrace; <span class="r35 r">valueType</span> &rbrace;),
-                    <span class="t t">BindingFlags</span>.<span class="i field">Instance</span> | <span class="t t">BindingFlags</span>.<span class="i field">Public</span>,
+                    <span class="t valueType">BindingFlags</span>.<span class="i field">Instance</span> | <span class="t valueType">BindingFlags</span>.<span class="i field">Public</span>,
                     <span class="r37 r">binder</span>: <b>null</b>,
                     <span class="r38 r">args</span>: <b>new</b> <b>object</b>[] &lbrace; <span class="r34 r">options</span> &rbrace;,
                     <span class="r39 r">culture</span>: <b>null</b>);
@@ -280,11 +280,11 @@
                 &rbrace;
  
                 <b>public override</b> <span class="t t">Dictionary</span>&lt;<b>uint</b>, <span class="r40 r t">TValue</span>&gt; <a id="71054a4e0fc146a4" href="../R/71054a4e0fc146a4.html" target="n" data-glyph="72,3" class="i method">Read</a>(
-                    <b>ref</b> <span class="t t">Utf8JsonReader</span> <span id="r42 rd" class="r42 r">reader</span>,
+                    <b>ref</b> <span class="t valueType">Utf8JsonReader</span> <span id="r42 rd" class="r42 r">reader</span>,
                     <span class="t t">Type</span> <span id="r43 rd" class="r43 r">typeToConvert</span>,
                     <span class="t t">JsonSerializerOptions</span> <span id="r44 rd" class="r44 r">options</span>)
                 &lbrace;
-                    <b>if</b> (<span class="r42 r">reader</span>.<span class="i property">TokenType</span> != <span class="t t">JsonTokenType</span>.<span class="i field">StartObject</span>)
+                    <b>if</b> (<span class="r42 r">reader</span>.<span class="i property">TokenType</span> != <span class="t valueType">JsonTokenType</span>.<span class="i field">StartObject</span>)
                     &lbrace;
                         <b>throw</b> <b>new</b> <span class="t constructor">JsonException</span>();
                     &rbrace;
@@ -293,13 +293,13 @@
  
                     <b>while</b> (<span class="r42 r">reader</span>.<span class="i method">Read</span>())
                     &lbrace;
-                        <b>if</b> (<span class="r42 r">reader</span>.<span class="i property">TokenType</span> == <span class="t t">JsonTokenType</span>.<span class="i field">EndObject</span>)
+                        <b>if</b> (<span class="r42 r">reader</span>.<span class="i property">TokenType</span> == <span class="t valueType">JsonTokenType</span>.<span class="i field">EndObject</span>)
                         &lbrace;
                             <b>return</b> <span class="r45 r">value</span>;
                         &rbrace;
  
                         <span class="c">// Get the key.</span>
-                        <b>if</b> (<span class="r42 r">reader</span>.<span class="i property">TokenType</span> != <span class="t t">JsonTokenType</span>.<span class="i field">PropertyName</span>)
+                        <b>if</b> (<span class="r42 r">reader</span>.<span class="i property">TokenType</span> != <span class="t valueType">JsonTokenType</span>.<span class="i field">PropertyName</span>)
                         &lbrace;
                             <b>throw</b> <b>new</b> <span class="t constructor">JsonException</span>();
                         &rbrace;
@@ -338,7 +338,7 @@
                 &lbrace;
                     <span class="r49 r">writer</span>.<span class="i method">WriteStartObject</span>();
  
-                    <b>foreach</b> (<span class="t t">KeyValuePair</span>&lt;<b>uint</b>, <span class="r40 r t">TValue</span>&gt; <span id="r52 rd" class="r52 r">kvp</span> <b>in</b> <span class="r50 r">value</span>)
+                    <b>foreach</b> (<span class="t valueType">KeyValuePair</span>&lt;<b>uint</b>, <span class="r40 r t">TValue</span>&gt; <span id="r52 rd" class="r52 r">kvp</span> <b>in</b> <span class="r50 r">value</span>)
                     &lbrace;
                         <span class="r49 r">writer</span>.<span class="i method">WritePropertyName</span>(<span class="r52 r">kvp</span>.<span class="i property">Key</span>.<span class="i method">ToString</span>());
  

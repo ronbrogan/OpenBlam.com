@@ -8,7 +8,7 @@
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>.<span class="i n">Numerics</span>
 &lbrace;
-    <b>public struct</b> <a id="1a9cde4d8fc3d4ab" href="../R/1a9cde4d8fc3d4ab.html" target="n" data-glyph="108,0" class="t t"><span id="e3fd3dffb4808b9f">VectorD3</span></a> : <span class="t t">IEquatable</span>&lt;<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a>&gt;
+    <b>public struct</b> <a id="1a9cde4d8fc3d4ab" href="../R/1a9cde4d8fc3d4ab.html" target="n" data-glyph="108,0" class="t valueType"><span id="e3fd3dffb4808b9f">VectorD3</span></a> : <span class="t t">IEquatable</span>&lt;<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a>&gt;
     &lbrace;
         <b>double</b> <a id="4eba41a04a572c38" href="../R/4eba41a04a572c38.html" target="n" data-glyph="46,1" class="i field">X</a>;
         <b>double</b> <a id="327fd4ce411f4368" href="../R/327fd4ce411f4368.html" target="n" data-glyph="46,1" class="i field">Y</a>;
@@ -21,20 +21,20 @@
             <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#873c2346f7027519" class="i field">Z</a> = <span class="r2 r">z</span>;
         &rbrace;
  
-        <b>public</b> <a id="a51be6b6940fed2f" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">VectorD3</a>(<span class="t t">Vector3</span> <span id="r3 rd" class="r3 r">v</span>)
+        <b>public</b> <a id="a51be6b6940fed2f" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">VectorD3</a>(<span class="t valueType">Vector3</span> <span id="r3 rd" class="r3 r">v</span>)
         &lbrace;
             <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#4eba41a04a572c38" class="i field">X</a> = <span class="r3 r">v</span>.<span class="i field">X</span>;
             <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#327fd4ce411f4368" class="i field">Y</a> = <span class="r3 r">v</span>.<span class="i field">Y</span>;
             <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#873c2346f7027519" class="i field">Z</a> = <span class="r3 r">v</span>.<span class="i field">Z</span>;
         &rbrace;
  
-        <b>public</b> <span class="t t">Vector3</span> <a id="2082502c220fe543" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ToSingle</a>()
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="2082502c220fe543" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ToSingle</a>()
         &lbrace;
             <b>return</b> <b>new</b> <span class="t constructor">Vector3</span>((<b>float</b>)<a href="#4eba41a04a572c38" class="i field">X</a>, (<b>float</b>)<a href="#327fd4ce411f4368" class="i field">Y</a>, (<b>float</b>)<a href="#873c2346f7027519" class="i field">Z</a>);
         &rbrace;
  
-        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <a id="83171d2c4537d5e2" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Zero</a> =&gt; <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(0, 0, 0);
-        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <a id="5efd95ca26998c59" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">One</a> =&gt; <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(1, 1, 1);
+        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <a id="83171d2c4537d5e2" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Zero</a> =&gt; <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(0, 0, 0);
+        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <a id="5efd95ca26998c59" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">One</a> =&gt; <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(1, 1, 1);
  
  
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">summary</span><span class="c">&gt;</span>
@@ -43,8 +43,8 @@
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r4 r">position</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The source vector.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r5 r">matrix</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The transformation matrix.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">returns</span><span class="c">&gt;</span><span class="c">The transformed vector.</span><span class="c">&lt;/</span><span class="c">returns</span><span class="c">&gt;</span>
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <a id="0dfc99c581e2d73f" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Transform</a>(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r4 rd" class="r4 r">position</span>, <span class="t t">Matrix4x4</span> <span id="r5 rd" class="r5 r">matrix</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <a id="0dfc99c581e2d73f" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Transform</a>(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r4 rd" class="r4 r">position</span>, <span class="t valueType">Matrix4x4</span> <span id="r5 rd" class="r5 r">matrix</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(
                 <span class="r4 r">position</span>.<a href="#4eba41a04a572c38" class="i field">X</a> * <span class="r5 r">matrix</span>.<span class="i field">M11</span> + <span class="r4 r">position</span>.<a href="#327fd4ce411f4368" class="i field">Y</a> * <span class="r5 r">matrix</span>.<span class="i field">M21</span> + <span class="r4 r">position</span>.<a href="#873c2346f7027519" class="i field">Z</a> * <span class="r5 r">matrix</span>.<span class="i field">M31</span> + <span class="r5 r">matrix</span>.<span class="i field">M41</span>,
@@ -58,8 +58,8 @@
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r6 r">vector1</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The first vector.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r7 r">vector2</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The second vector.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">returns</span><span class="c">&gt;</span><span class="c">The cross product.</span><span class="c">&lt;/</span><span class="c">returns</span><span class="c">&gt;</span>
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <a id="f4292c8c579172b6" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Cross</a>(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r6 rd" class="r6 r">vector1</span>, <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r7 rd" class="r7 r">vector2</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <a id="f4292c8c579172b6" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Cross</a>(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r6 rd" class="r6 r">vector1</span>, <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r7 rd" class="r7 r">vector2</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(
                 <span class="r6 r">vector1</span>.<a href="#327fd4ce411f4368" class="i field">Y</a> * <span class="r7 r">vector2</span>.<a href="#873c2346f7027519" class="i field">Z</a> - <span class="r6 r">vector1</span>.<a href="#873c2346f7027519" class="i field">Z</a> * <span class="r7 r">vector2</span>.<a href="#327fd4ce411f4368" class="i field">Y</a>,
@@ -73,8 +73,8 @@
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r8 r">vector1</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The first vector.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r9 r">vector2</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The second vector.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">returns</span><span class="c">&gt;</span><span class="c">The dot product.</span><span class="c">&lt;/</span><span class="c">returns</span><span class="c">&gt;</span>
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
-        <b>public static double</b> <a id="6cdabce3798f440f" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Dot</a>(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r8 rd" class="r8 r">vector1</span>, <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r9 rd" class="r9 r">vector2</span>)
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        <b>public static double</b> <a id="6cdabce3798f440f" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Dot</a>(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r8 rd" class="r8 r">vector1</span>, <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r9 rd" class="r9 r">vector2</span>)
         &lbrace;
             <b>return</b> <span class="r8 r">vector1</span>.<a href="#4eba41a04a572c38" class="i field">X</a> * <span class="r9 r">vector2</span>.<a href="#4eba41a04a572c38" class="i field">X</a> +
                    <span class="r8 r">vector1</span>.<a href="#327fd4ce411f4368" class="i field">Y</a> * <span class="r9 r">vector2</span>.<a href="#327fd4ce411f4368" class="i field">Y</a> +
@@ -98,37 +98,37 @@
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;/</span><span class="c">summary</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">param</span><span class="c"> </span><span class="c">name</span><span class="c">=</span><span class="c">&quot;</span><span class="r11 r">obj</span><span class="c">&quot;</span><span class="c">&gt;</span><span class="c">The Object to compare against.</span><span class="c">&lt;/</span><span class="c">param</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">returns</span><span class="c">&gt;</span><span class="c">True if the Object is equal to this Vector3; False otherwise.</span><span class="c">&lt;/</span><span class="c">returns</span><span class="c">&gt;</span>
-        [<span class="t constructor">MethodImpl</span>(<span class="t t">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
+        [<span class="t constructor">MethodImpl</span>(<span class="t valueType">MethodImplOptions</span>.<span class="i field">AggressiveInlining</span>)]
         <b>public override bool</b> <a id="eb966e76b95740f5" href="../R/eb966e76b95740f5.html" target="n" data-glyph="72,1" class="i method">Equals</a>(<b>object</b> <span id="r11 rd" class="r11 r">obj</span>)
         &lbrace;
-            <b>if</b> (!(<span class="r11 r">obj</span> <b>is</b> <span class="t t">Vector3</span>))
+            <b>if</b> (!(<span class="r11 r">obj</span> <b>is</b> <span class="t valueType">Vector3</span>))
                 <b>return</b> <b>false</b>;
-            <b>return</b> <a href="#eb966e76b95740f5" class="i method">Equals</a>((<span class="t t">Vector3</span>)<span class="r11 r">obj</span>);
+            <b>return</b> <a href="#eb966e76b95740f5" class="i method">Equals</a>((<span class="t valueType">Vector3</span>)<span class="r11 r">obj</span>);
         &rbrace;
  
-        <b>public bool</b> <a id="5cf6ec57a3acb5f5" href="../R/5cf6ec57a3acb5f5.html" target="n" data-glyph="72,1" class="i method">Equals</a>(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r12 rd" class="r12 r">other</span>)
+        <b>public bool</b> <a id="5cf6ec57a3acb5f5" href="../R/5cf6ec57a3acb5f5.html" target="n" data-glyph="72,1" class="i method">Equals</a>(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r12 rd" class="r12 r">other</span>)
         &lbrace;
             <b>return</b> <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#4eba41a04a572c38" class="i field">X</a> == <span class="r12 r">other</span>.<a href="#4eba41a04a572c38" class="i field">X</a>
                 &amp;&amp; <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#327fd4ce411f4368" class="i field">Y</a> == <span class="r12 r">other</span>.<a href="#327fd4ce411f4368" class="i field">Y</a>
                 &amp;&amp; <a href="#1a9cde4d8fc3d4ab" class="k">this</a>.<a href="#873c2346f7027519" class="i field">Z</a> == <span class="r12 r">other</span>.<a href="#873c2346f7027519" class="i field">Z</a>;
         &rbrace;
  
-        <b>public static bool operator</b> ==(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r13 rd" class="r13 r">v1</span>, <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r14 rd" class="r14 r">v2</span>)
+        <b>public static bool operator</b> ==(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r13 rd" class="r13 r">v1</span>, <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r14 rd" class="r14 r">v2</span>)
         &lbrace;
             <b>return</b> <span class="r13 r">v1</span>.<a href="#5cf6ec57a3acb5f5" class="i method">Equals</a>(<span class="r14 r">v2</span>);
         &rbrace;
  
-        <b>public static bool operator</b> !=(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r15 rd" class="r15 r">v1</span>, <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r16 rd" class="r16 r">v2</span>)
+        <b>public static bool operator</b> !=(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r15 rd" class="r15 r">v1</span>, <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r16 rd" class="r16 r">v2</span>)
         &lbrace;
             <b>return</b> !<span class="r15 r">v1</span>.<a href="#5cf6ec57a3acb5f5" class="i method">Equals</a>(<span class="r16 r">v2</span>);
         &rbrace;
  
-        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <b>operator</b> -(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r17 rd" class="r17 r">v1</span>, <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r18 rd" class="r18 r">v2</span>)
+        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <b>operator</b> -(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r17 rd" class="r17 r">v1</span>, <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r18 rd" class="r18 r">v2</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(<span class="r17 r">v1</span>.<a href="#4eba41a04a572c38" class="i field">X</a> - <span class="r18 r">v2</span>.<a href="#4eba41a04a572c38" class="i field">X</a>, <span class="r17 r">v1</span>.<a href="#327fd4ce411f4368" class="i field">Y</a> - <span class="r18 r">v2</span>.<a href="#327fd4ce411f4368" class="i field">Y</a>, <span class="r17 r">v1</span>.<a href="#873c2346f7027519" class="i field">Z</a> - <span class="r18 r">v2</span>.<a href="#873c2346f7027519" class="i field">Z</a>);
         &rbrace;
  
-        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <b>operator</b> -(<a href="#1a9cde4d8fc3d4ab" class="t t">VectorD3</a> <span id="r19 rd" class="r19 r">v</span>)
+        <b>public static</b> <a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <b>operator</b> -(<a href="#1a9cde4d8fc3d4ab" class="t valueType">VectorD3</a> <span id="r19 rd" class="r19 r">v</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="#ea113f858e46f26b" class="t constructor">VectorD3</a>(-<span class="r19 r">v</span>.<a href="#4eba41a04a572c38" class="i field">X</a>, -<span class="r19 r">v</span>.<a href="#327fd4ce411f4368" class="i field">Y</a>, -<span class="r19 r">v</span>.<a href="#873c2346f7027519" class="i field">Z</a>);
         &rbrace;

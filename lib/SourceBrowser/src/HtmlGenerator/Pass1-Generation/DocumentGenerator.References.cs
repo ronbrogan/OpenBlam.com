@@ -41,7 +41,16 @@ namespace Microsoft.SourceBrowser.HtmlGenerator
                     break;
                 case SymbolKind.Alias:
                 case SymbolKind.NamedType:
-                    result = Constants.ClassificationTypeName;
+                    var tSymbol = symbol as ITypeSymbol;
+                    if(tSymbol != null && tSymbol.IsValueType)
+                    {
+                        result = Constants.ClassificationValueType;
+                    }
+                    else
+                    {
+                        result = Constants.ClassificationTypeName;
+                    }
+                    
                     break;
                 default:
                     return currentClass;

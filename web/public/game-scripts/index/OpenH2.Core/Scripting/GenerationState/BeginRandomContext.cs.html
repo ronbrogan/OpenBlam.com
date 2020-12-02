@@ -12,7 +12,7 @@
 &lbrace;
     <b>public class</b> <a id="b00a66d1ea9ae2c7" href="../../R/b00a66d1ea9ae2c7.html" target="n" data-glyph="0,0" class="t t">BeginRandomContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>, <a href="IStatementContext.cs.html#fffbb44acf3718f5" class="t t">IStatementContext</a>
     &lbrace;
-        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="c56927b3722d2239" href="../../R/c56927b3722d2239.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>? <a id="c56927b3722d2239" href="../../R/c56927b3722d2239.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
         <b>public override bool</b> <a id="0b5277b64dacdfbb" href="../../R/0b5277b64dacdfbb.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> =&gt; <b>true</b>;
  
         <b>private</b> <span class="t t">List</span>&lt;<span class="t t">ExpressionSyntax</span>&gt; <a id="41a9861d99549673" href="../../R/41a9861d99549673.html" target="n" data-glyph="46,1" class="i field">subexpressions</a> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">ExpressionSyntax</span>&gt;();
@@ -24,7 +24,7 @@
  
         <b>private static</b> <span class="t t">TypeSyntax</span> <a id="1a72605f3edbb592" href="../../R/1a72605f3edbb592.html" target="n" data-glyph="46,1" class="i field">BaseFuncType</a> = <span class="t t">SyntaxFactory</span>.<span class="i method">GenericName</span>(<span class="s">&quot;Func&quot;</span>);
  
-        <b>public</b> <a id="893e61f173596214" href="../../R/893e61f173596214.html" target="n" data-glyph="72,1" class="t constructor">BeginRandomContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r1 rd" class="r1 r">type</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
+        <b>public</b> <a id="893e61f173596214" href="../../R/893e61f173596214.html" target="n" data-glyph="72,1" class="t constructor">BeginRandomContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r1 rd" class="r1 r">type</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
         &lbrace;
             <a href="#b00a66d1ea9ae2c7" class="k">this</a>.<a href="#c56927b3722d2239" class="i property">OwnDataType</a> = <span class="r1 r">type</span>;
         &rbrace;
@@ -60,11 +60,11 @@
                 &rbrace;
                 
                 <span class="r4 r">lambdas</span>.<span class="i method">Add</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">ParenthesizedLambdaExpression</span>(<span class="r5 r">exp</span>)
-                    .<span class="i method">WithAsyncKeyword</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">AsyncKeyword</span>)));
+                    .<span class="i method">WithAsyncKeyword</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">AsyncKeyword</span>)));
             &rbrace;
  
             <span class="r3 r">scope</span>.<a href="Scope.cs.html#25936af8934a3201" class="i property">Context</a>.<a href="IGenerationContext.cs.html#bcfc3bffb115f977" class="i method">AddExpression</a>(<span class="t t">SyntaxFactory</span>.<span class="i method">InvocationExpression</span>(
-                <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;Engine&quot;</span>),
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;begin_random&quot;</span>)))
                 .<span class="i method">AddArgumentListArguments</span>(<span class="r4 r">lambdas</span>.<span class="i method">Select</span>(<span class="t t">SyntaxFactory</span>.<span class="i method">Argument</span>).<span class="i method">ToArray</span>()));
@@ -78,13 +78,13 @@
             &rbrace;
             <b>else</b>
             &lbrace;
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="k">var</a> <span id="r12 rd" class="r12 r">returnType</span> = <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>;
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="k">var</a> <span id="r12 rd" class="r12 r">returnType</span> = <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>;
  
                 <b>var</b> <span id="r13 rd" class="r13 r">annotations</span> = <span class="r10 r">statement</span>.<span class="i method">GetAnnotations</span>(<a href="../Generation/ScriptGenAnnotations.cs.html#f7f0cad0236f94b5" class="t t">ScriptGenAnnotations</a>.<a href="../Generation/ScriptGenAnnotations.cs.html#e9c0c01d4e80afaa" class="i field">TypeAnnotationKind</a>);
  
                 <b>if</b> (<span class="r13 r">annotations</span>.<span class="i method">Any</span>())
                 &lbrace;
-                    <span class="r12 r">returnType</span> = (<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>)<b>int</b>.<span class="i method">Parse</span>(<span class="r13 r">annotations</span>.<span class="i method">First</span>().<span class="i property">Data</span>);
+                    <span class="r12 r">returnType</span> = (<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>)<b>int</b>.<span class="i method">Parse</span>(<span class="r13 r">annotations</span>.<span class="i method">First</span>().<span class="i property">Data</span>);
                 &rbrace;
  
                 <a href="#41a9861d99549673" class="i field">subexpressions</a>.<span class="i method">Add</span>(<a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#1e01863d1cb7c372" class="i method">CreateImmediatelyInvokedFunction</a>(<span class="r12 r">returnType</span>, <b>new</b>[] &lbrace; <span class="r10 r">statement</span> &rbrace;));
@@ -95,7 +95,7 @@
  
         <b>public bool</b> <a id="9097a1c243e1e85d" href="../../R/9097a1c243e1e85d.html" target="n" data-glyph="72,1" class="i method">TryCreateResultStatement</a>(<span class="t t">ExpressionSyntax</span> <span id="r14 rd" class="r14 r">resultValue</span>, <b>out</b> <span class="t t">StatementSyntax</span> <span id="r15 rd" class="r15 r">statement</span>)
         &lbrace;
-            <b>if</b> (<a href="#b00a66d1ea9ae2c7" class="k">this</a>.<a href="#c56927b3722d2239" class="i property">OwnDataType</a> == <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>)
+            <b>if</b> (<a href="#b00a66d1ea9ae2c7" class="k">this</a>.<a href="#c56927b3722d2239" class="i property">OwnDataType</a> == <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>)
             &lbrace;
                 <span class="r15 r">statement</span> = <b>default</b>;
                 <b>return</b> <b>false</b>;

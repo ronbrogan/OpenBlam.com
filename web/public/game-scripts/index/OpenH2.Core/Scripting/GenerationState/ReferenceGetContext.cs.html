@@ -13,13 +13,13 @@
     <b>public class</b> <a id="cf7b3d3673672790" href="../../R/cf7b3d3673672790.html" target="n" data-glyph="0,0" class="t t">ReferenceGetContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>
     &lbrace;
         <b>private readonly</b> <span class="t t">InvocationExpressionSyntax</span> <a id="8d2f6e6a2faabdde" href="../../R/8d2f6e6a2faabdde.html" target="n" data-glyph="46,1" class="i field">invocation</a>;
-        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="26932632ebc986f9" href="../../R/26932632ebc986f9.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>? <a id="26932632ebc986f9" href="../../R/26932632ebc986f9.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
  
         <b>public</b> <a id="25b5feff012a3e88" href="../../R/25b5feff012a3e88.html" target="n" data-glyph="72,1" class="t constructor">ReferenceGetContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r0 rd" class="r0 r">scenario</span>, <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r1 rd" class="r1 r">node</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r1 r">node</span>)
         &lbrace;
             <a href="#cf7b3d3673672790" class="k">this</a>.<a href="#26932632ebc986f9" class="i property">OwnDataType</a> = <span class="r1 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a>;
  
-            <a href="#8d2f6e6a2faabdde" class="i field">invocation</a> = <span class="i method">InvocationExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+            <a href="#8d2f6e6a2faabdde" class="i field">invocation</a> = <span class="i method">InvocationExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                     <span class="i method">IdentifierName</span>(<span class="s">&quot;Engine&quot;</span>),
                     <span class="i method">GenericName</span>(<span class="i method">Identifier</span>(<b>nameof</b>(<a href="../IScriptEngine.cs.html#31075aae0960da14" class="t t">IScriptEngine</a>.<span class="i">GetReference</span>)))
                 .<span class="i method">WithTypeArgumentList</span>(<span class="i method">TypeArgumentList</span>(<span class="i method">SingletonSeparatedList</span>(

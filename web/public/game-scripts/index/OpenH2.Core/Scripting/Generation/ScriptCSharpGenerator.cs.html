@@ -42,14 +42,14 @@
             <a href="#72ac4bb281d6b80d" class="k">this</a>.<a href="#97135c1259818ca8" class="i field">scenario</a> = <span class="r1 r">scnr</span>;
             <a href="#72ac4bb281d6b80d" class="k">this</a>.<a href="#4e77ee2c8db583a7" class="i field">nameRepo</a> = <span class="r2 r">nameRepo</span>;
  
-            <b>var</b> <span id="r5 rd" class="r5 r">scenarioParts</span> = <span class="r1 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#98daa8a43f9d49ee" class="i property">Name</a>.<span class="i method">Split</span>(<span class="s">&#39;\\&#39;</span>, <span class="t t">StringSplitOptions</span>.<span class="i field">RemoveEmptyEntries</span>);
+            <b>var</b> <span id="r5 rd" class="r5 r">scenarioParts</span> = <span class="r1 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#98daa8a43f9d49ee" class="i property">Name</a>.<span class="i method">Split</span>(<span class="s">&#39;\\&#39;</span>, <span class="t valueType">StringSplitOptions</span>.<span class="i field">RemoveEmptyEntries</span>);
  
             <b>var</b> <span id="r6 rd" class="r6 r">ns</span> = <span class="s">&quot;OpenH2.Scripts.Generated&quot;</span> + <b>string</b>.<span class="i method">Join</span>(<span class="s">&quot;.&quot;</span>, <span class="r5 r">scenarioParts</span>.<span class="i method">Take</span>(2));
  
             <a href="#72ac4bb281d6b80d" class="k">this</a>.<a href="#f6a880c907d80441" class="i field">nsDecl</a> = <span class="i method">NamespaceDeclaration</span>(<span class="i method">ParseName</span>(<span class="r6 r">ns</span>));
  
-            <b>var</b> <span id="r7 rd" class="r7 r">classModifiers</span> = <span class="t t">SyntaxTokenList</span>.<span class="i method">Create</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
-                .<span class="i method">Add</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PartialKeyword</span>));
+            <b>var</b> <span id="r7 rd" class="r7 r">classModifiers</span> = <span class="t valueType">SyntaxTokenList</span>.<span class="i method">Create</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
+                .<span class="i method">Add</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PartialKeyword</span>));
  
             <a href="#72ac4bb281d6b80d" class="k">this</a>.<a href="#e7874201cf5a829e" class="i field">classDecl</a> = <span class="i method">ClassDeclaration</span>(<span class="s">&quot;scnr_&quot;</span> + <span class="r5 r">scenarioParts</span>.<span class="i method">Last</span>())
                 .<span class="i method">WithModifiers</span>(<span class="r7 r">classModifiers</span>);
@@ -69,7 +69,7 @@
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#c5f58866aa21404d" class="k">var</a> <span id="r11 rd" class="r11 r">externalRef</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#dbd16c8c33f34180" class="i property">WellKnownItems</a>[<span class="r10 r">i</span>];
  
-                <b>if</b> (<span class="r11 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d9775f53799d3f81" class="i property">ItemType</a> == <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#18700bbd50ddd2b7" class="i field">Undef</a>)
+                <b>if</b> (<span class="r11 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d9775f53799d3f81" class="i property">ItemType</a> == <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#18700bbd50ddd2b7" class="i field">Undef</a>)
                     <b>continue</b>;
  
                 <b>var</b> <span id="r12 rd" class="r12 r">varType</span> = <a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#b6cbce936940b5f3" class="i method">WellKnownTypeSyntax</a>(<span class="r11 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d9775f53799d3f81" class="i property">ItemType</a>);
@@ -80,7 +80,7 @@
             <b>for</b> (<b>int</b> <span id="r13 rd" class="r13 r">i</span> = 0; <span class="r13 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#ca11d946b239e33a" class="i property">CameraPathTargets</a>.<span class="i property">Length</span>; <span class="r13 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#427af9c7af610e46" class="k">var</a> <span id="r14 rd" class="r14 r">cam</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#ca11d946b239e33a" class="i property">CameraPathTargets</a>[<span class="r13 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#5ef498bb487cd72e" class="i field">CameraPathTarget</a>, <span class="r14 r">cam</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#2474a14432231952" class="i property">Description</a>, <span class="r13 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#5ef498bb487cd72e" class="i field">CameraPathTarget</a>, <span class="r14 r">cam</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#2474a14432231952" class="i property">Description</a>, <span class="r13 r">i</span>);
             &rbrace;
  
             <a href="#4280391a363eaf7b" class="i method">CreateNestedSquadClasses</a>(<span class="r9 r">scnr</span>);
@@ -88,43 +88,43 @@
             <b>for</b> (<b>int</b> <span id="r15 rd" class="r15 r">i</span> = 0; <span class="r15 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#11855953a044d71c" class="i property">AiSquadGroupDefinitions</a>.<span class="i property">Length</span>; <span class="r15 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioScripting.cs.html#dcbb679bd56ec498" class="k">var</a> <span id="r16 rd" class="r16 r">ai</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#11855953a044d71c" class="i property">AiSquadGroupDefinitions</a>[<span class="r15 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>, <span class="r16 r">ai</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#f389b6d264b7ff08" class="i property">Description</a>, <span class="r15 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>, <span class="r16 r">ai</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#f389b6d264b7ff08" class="i property">Description</a>, <span class="r15 r">i</span>);
             &rbrace;
  
             <b>for</b> (<b>int</b> <span id="r17 rd" class="r17 r">i</span> = 0; <span class="r17 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#8a1e2f3306b5796f" class="i property">AiOrderDefinitions</a>.<span class="i property">Length</span>; <span class="r17 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#0b75cb8c57cb6f73" class="k">var</a> <span id="r18 rd" class="r18 r">order</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#8a1e2f3306b5796f" class="i property">AiOrderDefinitions</a>[<span class="r17 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#12270201d791781f" class="i field">AIOrders</a>, <span class="r18 r">order</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d37b247302830082" class="i property">Description</a>, <span class="r17 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#12270201d791781f" class="i field">AIOrders</a>, <span class="r18 r">order</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d37b247302830082" class="i property">Description</a>, <span class="r17 r">i</span>);
             &rbrace;
  
             <b>for</b> (<b>int</b> <span id="r19 rd" class="r19 r">i</span> = 0; <span class="r19 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#a4636dc754bd3207" class="i property">LocationFlagDefinitions</a>.<span class="i property">Length</span>; <span class="r19 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#fa9dee816b4f8630" class="k">var</a> <span id="r20 rd" class="r20 r">flag</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#a4636dc754bd3207" class="i property">LocationFlagDefinitions</a>[<span class="r19 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2354d66bc071ce48" class="i field">LocationFlag</a>, <span class="r20 r">flag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#39889bb072fe838f" class="i property">Description</a>, <span class="r19 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2354d66bc071ce48" class="i field">LocationFlag</a>, <span class="r20 r">flag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#39889bb072fe838f" class="i property">Description</a>, <span class="r19 r">i</span>);
             &rbrace;
  
             <b>for</b> (<b>int</b> <span id="r21 rd" class="r21 r">i</span> = 0; <span class="r21 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#490105a4bc2826f8" class="i property">CinematicTitleDefinitions</a>.<span class="i property">Length</span>; <span class="r21 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#a36ea554e772942d" class="k">var</a> <span id="r22 rd" class="r22 r">title</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#490105a4bc2826f8" class="i property">CinematicTitleDefinitions</a>[<span class="r21 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9c6b4388c53948c" class="i field">CinematicTitle</a>, <span class="r22 r">title</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#e2784110f7946f30" class="i property">Title</a>, <span class="r21 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9c6b4388c53948c" class="i field">CinematicTitle</a>, <span class="r22 r">title</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#e2784110f7946f30" class="i property">Title</a>, <span class="r21 r">i</span>);
             &rbrace;
  
             <b>for</b> (<b>int</b> <span id="r23 rd" class="r23 r">i</span> = 0; <span class="r23 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6515602dbd347d81" class="i property">TriggerVolumes</a>.<span class="i property">Length</span>; <span class="r23 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#01a8e6af1cf6085c" class="k">var</a> <span id="r24 rd" class="r24 r">tv</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6515602dbd347d81" class="i property">TriggerVolumes</a>[<span class="r23 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#9aec2f4da6cbeaca" class="i field">Trigger</a>, <span class="r24 r">tv</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#81066af541877c43" class="i property">Description</a>, <span class="r23 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#9aec2f4da6cbeaca" class="i field">Trigger</a>, <span class="r24 r">tv</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#81066af541877c43" class="i property">Description</a>, <span class="r23 r">i</span>);
             &rbrace;
  
             <b>for</b> (<b>int</b> <span id="r25 rd" class="r25 r">i</span> = 0; <span class="r25 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#023ddc6c7694a5a3" class="i property">StartingProfileDefinitions</a>.<span class="i property">Length</span>; <span class="r25 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioGameplay.cs.html#368568e1c03f3dca" class="k">var</a> <span id="r26 rd" class="r26 r">profile</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#023ddc6c7694a5a3" class="i property">StartingProfileDefinitions</a>[<span class="r25 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#eb0d8f70f1ad8261" class="i field">StartingProfile</a>, <span class="r26 r">profile</span>.<a href="../../Tags/Scenario/ScenarioGameplay.cs.html#0adcac0bb4086990" class="i property">Description</a>, <span class="r25 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#eb0d8f70f1ad8261" class="i field">StartingProfile</a>, <span class="r26 r">profile</span>.<a href="../../Tags/Scenario/ScenarioGameplay.cs.html#0adcac0bb4086990" class="i property">Description</a>, <span class="r25 r">i</span>);
             &rbrace;
  
             <b>for</b> (<b>int</b> <span id="r27 rd" class="r27 r">i</span> = 0; <span class="r27 r">i</span> &lt; <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6a58133990788163" class="i property">DeviceGroupDefinitions</a>.<span class="i property">Length</span>; <span class="r27 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioEnvironment.cs.html#f318521d61108588" class="k">var</a> <span id="r28 rd" class="r28 r">group</span> = <span class="r9 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6a58133990788163" class="i property">DeviceGroupDefinitions</a>[<span class="r27 r">i</span>];
-                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ca2e3e6aa86b2401" class="i field">DeviceGroup</a>, <span class="r28 r">group</span>.<a href="../../Tags/Scenario/ScenarioEnvironment.cs.html#c524babde3589a5b" class="i property">Description</a>, <span class="r27 r">i</span>);
+                <a href="#882e4ea3e78c1cbf" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ca2e3e6aa86b2401" class="i field">DeviceGroup</a>, <span class="r28 r">group</span>.<a href="../../Tags/Scenario/ScenarioEnvironment.cs.html#c524babde3589a5b" class="i property">Description</a>, <span class="r27 r">i</span>);
             &rbrace;
         &rbrace;
  
@@ -135,7 +135,7 @@
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioScripting.cs.html#e3ff411e1c283154" class="k">var</a> <span id="r31 rd" class="r31 r">squad</span> = <span class="r29 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35719038c8b8dd7c" class="i property">AiSquadDefinitions</a>[<span class="r30 r">i</span>];
  
-                <b>var</b> <span id="r32 rd" class="r32 r">squadPropName</span> = <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r31 r">squad</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#8714222338842db5" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>.<span class="i method">ToString</span>(), <span class="r30 r">i</span>);
+                <b>var</b> <span id="r32 rd" class="r32 r">squadPropName</span> = <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r31 r">squad</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#8714222338842db5" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>.<span class="i method">ToString</span>(), <span class="r30 r">i</span>);
  
                 <b>var</b> <span id="r33 rd" class="r33 r">dataClassProps</span> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">PropertyDeclarationSyntax</span>&gt;();
                 <span class="r33 r">dataClassProps</span>.<span class="i method">Add</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#3dead2b894cbef45" class="i method">CreateProperty</a>(<span class="i method">ParseTypeName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>)), <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>)));
@@ -145,50 +145,50 @@
                 <b>var</b> <span id="r35 rd" class="r35 r">m</span> = 0;
                 <b>foreach</b> (<a href="../../Tags/Scenario/ScenarioScripting.cs.html#bec4fe40712d3a55" class="k">var</a> <span id="r36 rd" class="r36 r">ai</span> <b>in</b> <span class="r31 r">squad</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#eae902ae40ee369c" class="i property">StartingLocations</a>)
                 &lbrace;
-                    <b>var</b> <span id="r37 rd" class="r37 r">propName</span> = <span class="r34 r">nestedRepo</span>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r36 r">ai</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#c9c649812467a207" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>.<span class="i method">ToString</span>(), <span class="r35 r">m</span>++);
+                    <b>var</b> <span id="r37 rd" class="r37 r">propName</span> = <span class="r34 r">nestedRepo</span>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r36 r">ai</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#c9c649812467a207" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>.<span class="i method">ToString</span>(), <span class="r35 r">m</span>++);
  
                     <span class="t t">ExpressionSyntax</span> <span id="r38 rd" class="r38 r">startingLocationAccess</span> = <span class="i method">ElementAccessExpression</span>(
-                        <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                        <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                             <span class="i method">ElementAccessExpression</span>(
-                                <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                                <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                                     <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>)),
                                     <span class="i method">IdentifierName</span>(<b>nameof</b>(<span class="r29 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35719038c8b8dd7c" class="i property">AiSquadDefinitions</a>))))
                             .<span class="i method">AddArgumentListArguments</span>(<span class="i method">Argument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r30 r">i</span>))),
                             <span class="i method">IdentifierName</span>(<b>nameof</b>(<span class="r31 r">squad</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#eae902ae40ee369c" class="i property">StartingLocations</a>))))
                         .<span class="i method">AddArgumentListArguments</span>(<span class="i method">Argument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r35 r">m</span>)));
  
-                    <span class="r33 r">dataClassProps</span>.<span class="i method">Add</span>(<span class="i method">PropertyDeclaration</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>), <span class="r37 r">propName</span>)
-                        .<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>)))
+                    <span class="r33 r">dataClassProps</span>.<span class="i method">Add</span>(<span class="i method">PropertyDeclaration</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>), <span class="r37 r">propName</span>)
+                        .<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>)))
                         .<span class="i method">WithExpressionBody</span>(<span class="i method">ArrowExpressionClause</span>(<span class="r38 r">startingLocationAccess</span>))
-                        .<span class="i method">WithSemicolonToken</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SemicolonToken</span>)));
+                        .<span class="i method">WithSemicolonToken</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SemicolonToken</span>)));
                 &rbrace;
  
                 <span class="t t">ExpressionSyntax</span> <span id="r39 rd" class="r39 r">squadAccess</span> = <span class="i method">ElementAccessExpression</span>(
-                    <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                    <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                         <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>)),
                         <span class="i method">IdentifierName</span>(<b>nameof</b>(<span class="r29 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35719038c8b8dd7c" class="i property">AiSquadDefinitions</a>))))
                     .<span class="i method">AddArgumentListArguments</span>(<span class="i method">Argument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r30 r">i</span>)));
  
                 <span class="c">// This is so the script can reference the squad itself, need special init handling</span>
-                <span class="r33 r">dataClassProps</span>.<span class="i method">Add</span>(<span class="i method">PropertyDeclaration</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>), <span class="s">&quot;Squad&quot;</span>)
-                    .<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>)))
+                <span class="r33 r">dataClassProps</span>.<span class="i method">Add</span>(<span class="i method">PropertyDeclaration</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>), <span class="s">&quot;Squad&quot;</span>)
+                    .<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>)))
                     .<span class="i method">WithExpressionBody</span>(<span class="i method">ArrowExpressionClause</span>(<span class="r39 r">squadAccess</span>))
-                    .<span class="i method">WithSemicolonToken</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SemicolonToken</span>)));
+                    .<span class="i method">WithSemicolonToken</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SemicolonToken</span>)));
  
                 <b>var</b> <span id="r40 rd" class="r40 r">squadTypeName</span> = <span class="s">&quot;Squad_&quot;</span> + <span class="r32 r">squadPropName</span>;
  
                 <b>var</b> <span id="r41 rd" class="r41 r">cls</span> = <span class="i method">ClassDeclaration</span>(<span class="r40 r">squadTypeName</span>)
-                    .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
+                    .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
                     .<span class="i method">WithMembers</span>(<b>new</b> <span class="t constructor">SyntaxList</span>&lt;<span class="t t">MemberDeclarationSyntax</span>&gt;(<span class="r33 r">dataClassProps</span>))
                     .<span class="i method">AddMembers</span>(<span class="i method">ConstructorDeclaration</span>(<span class="r40 r">squadTypeName</span>)
-                        .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
+                        .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
                         .<span class="i method">AddParameterListParameters</span>(
                             <span class="i method">Parameter</span>(<span class="i method">Identifier</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>)))
                                 .<span class="i method">WithType</span>(<span class="i method">ParseTypeName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>))))
                         .<span class="i method">WithBody</span>(<span class="i method">Block</span>(<b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">StatementSyntax</span>&gt;()
                         &lbrace;
-                            <span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
-                                <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                            <span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                                <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                                     <span class="i method">ThisExpression</span>(),
                                     <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>))),
                                 <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>))))
@@ -198,7 +198,7 @@
                 <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#236c12388650bf00" class="i field">NestedRepos</a>.<span class="i method">Add</span>(<span class="r32 r">squadPropName</span>, <span class="r34 r">nestedRepo</span>);
  
                 <a href="#5e1db6fc3dfb9673" class="i field">properties</a>.<span class="i method">Add</span>(<span class="i method">PropertyDeclaration</span>(<span class="i method">ParseTypeName</span>(<span class="r40 r">squadTypeName</span>), <span class="r32 r">squadPropName</span>)
-                    .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
+                    .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
                     .<span class="i method">WithAccessorList</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#0292e76f40e172e7" class="i method">AutoPropertyAccessorList</a>()));
             &rbrace;
         &rbrace;
@@ -210,15 +210,15 @@
  
             <b>var</b> <span id="r45 rd" class="r45 r">statements</span> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">StatementSyntax</span>&gt;();
  
-            <span class="r45 r">statements</span>.<span class="i method">Add</span>(<span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
-                <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>, <span class="i method">ThisExpression</span>(), <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../ScenarioScriptBase.cs.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a>.<a href="../ScenarioScriptBase.cs.html#c14f3a895756ce9a" class="i property">Scenario</a>))),
+            <span class="r45 r">statements</span>.<span class="i method">Add</span>(<span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>, <span class="i method">ThisExpression</span>(), <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../ScenarioScriptBase.cs.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a>.<a href="../ScenarioScriptBase.cs.html#c14f3a895756ce9a" class="i property">Scenario</a>))),
                 <span class="i method">IdentifierName</span>(<span class="r43 r">scenarioParam</span>))));
  
             <b>for</b> (<b>int</b> <span id="r46 rd" class="r46 r">i</span> = 0; <span class="r46 r">i</span> &lt; <span class="r42 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#dbd16c8c33f34180" class="i property">WellKnownItems</a>.<span class="i property">Length</span>; <span class="r46 r">i</span>++)
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioTag.cs.html#c5f58866aa21404d" class="k">var</a> <span id="r47 rd" class="r47 r">externalRef</span> = <span class="r42 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#dbd16c8c33f34180" class="i property">WellKnownItems</a>[<span class="r46 r">i</span>];
  
-                <b>if</b> (<span class="r47 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d9775f53799d3f81" class="i property">ItemType</a> != <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35688e6afe7691a6" class="t t">WellKnownVarType</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#18700bbd50ddd2b7" class="i field">Undef</a> &amp;&amp; <span class="r47 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#07878d855c4d7f8a" class="i property">Index</a> != <b>ushort</b>.<span class="i field">MaxValue</span>)
+                <b>if</b> (<span class="r47 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d9775f53799d3f81" class="i property">ItemType</a> != <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35688e6afe7691a6" class="t valueType">WellKnownVarType</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#18700bbd50ddd2b7" class="i field">Undef</a> &amp;&amp; <span class="r47 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#07878d855c4d7f8a" class="i property">Index</a> != <b>ushort</b>.<span class="i field">MaxValue</span>)
                 &lbrace;
                     <b>var</b> <span id="r48 rd" class="r48 r">varType</span> = <a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#b6cbce936940b5f3" class="i method">WellKnownTypeSyntax</a>(<span class="r47 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#d9775f53799d3f81" class="i property">ItemType</a>);
                     <span class="r45 r">statements</span>.<span class="i method">Add</span>(<a href="#573f9949659079c3" class="i method">CreateWellKnownAssignment</a>(<span class="r48 r">varType</span>, <span class="r47 r">externalRef</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#4059206696131aaa" class="i property">Identifier</a>, <span class="r46 r">i</span>));
@@ -229,12 +229,12 @@
  
             <a href="#72ac4bb281d6b80d" class="k">this</a>.<a href="#a13ac11d0fb4a8e1" class="i field">methods</a>.<span class="i method">Add</span>(
                 <span class="i method">MethodDeclaration</span>(
-                    <span class="i method">PredefinedType</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">VoidKeyword</span>)),
+                    <span class="i method">PredefinedType</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">VoidKeyword</span>)),
                     <b>nameof</b>(<a href="../ScenarioScriptBase.cs.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a>.<span class="i">InitializeData</span>))
                 .<span class="i method">AddParameterListParameters</span>(
                     <span class="i method">Parameter</span>(<span class="r43 r">scenarioParam</span>).<span class="i method">WithType</span>(<span class="i method">ParseTypeName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>))),
                     <span class="i method">Parameter</span>(<span class="r44 r">sceneParam</span>).<span class="i method">WithType</span>(<span class="i method">ParseTypeName</span>(<b>nameof</b>(<a href="../../Architecture/Scene.cs.html#52c4221f58d292a5" class="t t">Scene</a>))))
-                .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>), <span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">OverrideKeyword</span>))
+                .<span class="i method">AddModifiers</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>), <span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">OverrideKeyword</span>))
                 .<span class="i method">WithBody</span>(<span class="i method">Block</span>(<span class="r45 r">statements</span>)));
         &rbrace;
  
@@ -244,7 +244,7 @@
             &lbrace;
                 <a href="../../Tags/Scenario/ScenarioScripting.cs.html#e3ff411e1c283154" class="k">var</a> <span id="r52 rd" class="r52 r">squad</span> = <span class="r50 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#35719038c8b8dd7c" class="i property">AiSquadDefinitions</a>[<span class="r51 r">i</span>];
  
-                <b>if</b> (<a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#c2836ac8b6910019" class="i method">TryGetName</a>(<span class="r52 r">squad</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#8714222338842db5" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>.<span class="i method">ToString</span>(), <span class="r51 r">i</span>, <b>out</b> <b>var</b> <span id="r53 rd" class="r53 r">squadPropName</span>) == <b>false</b>)
+                <b>if</b> (<a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#c2836ac8b6910019" class="i method">TryGetName</a>(<span class="r52 r">squad</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#8714222338842db5" class="i property">Description</a>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>.<span class="i method">ToString</span>(), <span class="r51 r">i</span>, <b>out</b> <b>var</b> <span id="r53 rd" class="r53 r">squadPropName</span>) == <b>false</b>)
                 &lbrace;
                     <b>return</b>;
                 &rbrace;
@@ -253,7 +253,7 @@
  
                 <b>var</b> <span id="r55 rd" class="r55 r">squadItem</span> = <span class="i method">ObjectCreationExpression</span>(<span class="i method">ParseTypeName</span>(<span class="r54 r">squadTypeName</span>))
                     .<span class="i method">AddArgumentListArguments</span>(<span class="i method">Argument</span>(<span class="i method">IdentifierName</span>(<span class="s">&quot;scenarioTag&quot;</span>)));
-                <b>var</b> <span id="r56 rd" class="r56 r">squadItemAssignment</span> = <span class="i method">AssignmentExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                <b>var</b> <span id="r56 rd" class="r56 r">squadItemAssignment</span> = <span class="i method">AssignmentExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
                     <span class="i method">IdentifierName</span>(<span class="r53 r">squadPropName</span>),
                     <span class="r55 r">squadItem</span>);
                 <span class="r49 r">statements</span>.<span class="i method">Add</span>(<span class="i method">ExpressionStatement</span>(<span class="r56 r">squadItemAssignment</span>));
@@ -264,33 +264,33 @@
         &lbrace;
             <b>var</b> <span id="r60 rd" class="r60 r">propName</span> = <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r58 r">name</span>, <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#c5f58866aa21404d" class="t t">EntityReference</a>), <span class="r59 r">itemIndex</span>);
  
-            <b>var</b> <span id="r61 rd" class="r61 r">propType</span> = <span class="i method">GenericName</span>(<b>nameof</b>(<a href="../Types.cs.html#43713fb07584f5f5" class="t t">ScenarioEntity</a>&lt;<b>object</b>&gt;))
+            <b>var</b> <span id="r61 rd" class="r61 r">propType</span> = <span class="i method">GenericName</span>(<b>nameof</b>(<a href="../Types.cs.html#43713fb07584f5f5" class="t valueType">ScenarioEntity</a>&lt;<b>object</b>&gt;))
                 .<span class="i method">AddTypeArgumentListArguments</span>(<span class="r57 r">type</span>);
  
             <b>var</b> <span id="r62 rd" class="r62 r">prop</span> = <span class="i method">PropertyDeclaration</span>(<span class="r61 r">propType</span>, <span class="r60 r">propName</span>)
                 .<span class="i method">WithAccessorList</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#0292e76f40e172e7" class="i method">AutoPropertyAccessorList</a>());
  
-            <a href="#5e1db6fc3dfb9673" class="i field">properties</a>.<span class="i method">Add</span>(<span class="r62 r">prop</span>.<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))));
+            <a href="#5e1db6fc3dfb9673" class="i field">properties</a>.<span class="i method">Add</span>(<span class="r62 r">prop</span>.<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))));
         &rbrace;
  
-        <b>private void</b> <a id="882e4ea3e78c1cbf" href="../../R/882e4ea3e78c1cbf.html" target="n" data-glyph="76,1" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r63 rd" class="r63 r">type</span>, <b>string</b> <span id="r64 rd" class="r64 r">name</span>, <b>int</b> <span id="r65 rd" class="r65 r">itemIndex</span>)
+        <b>private void</b> <a id="882e4ea3e78c1cbf" href="../../R/882e4ea3e78c1cbf.html" target="n" data-glyph="76,1" class="i method">AddPublicProperty</a>(<a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r63 rd" class="r63 r">type</span>, <b>string</b> <span id="r64 rd" class="r64 r">name</span>, <b>int</b> <span id="r65 rd" class="r65 r">itemIndex</span>)
         &lbrace;
             <b>var</b> <span id="r66 rd" class="r66 r">propName</span> = <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>.<a href="MemberNameRepository.cs.html#78a976992deb0e14" class="i method">RegisterName</a>(<span class="r64 r">name</span>, <span class="r63 r">type</span>.<span class="i method">ToString</span>(), <span class="r65 r">itemIndex</span>);
  
             <b>var</b> <span id="r67 rd" class="r67 r">scnrPropName</span> = <span class="r63 r">type</span> <b>switch</b>
             &lbrace;
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#5ef498bb487cd72e" class="i field">CameraPathTarget</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#ca11d946b239e33a" class="i property">CameraPathTargets</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2354d66bc071ce48" class="i field">LocationFlag</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#a4636dc754bd3207" class="i property">LocationFlagDefinitions</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9c6b4388c53948c" class="i field">CinematicTitle</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#490105a4bc2826f8" class="i property">CinematicTitleDefinitions</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#9aec2f4da6cbeaca" class="i field">Trigger</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6515602dbd347d81" class="i property">TriggerVolumes</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#eb0d8f70f1ad8261" class="i field">StartingProfile</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#023ddc6c7694a5a3" class="i property">StartingProfileDefinitions</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ca2e3e6aa86b2401" class="i field">DeviceGroup</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6a58133990788163" class="i property">DeviceGroupDefinitions</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#11855953a044d71c" class="i property">AiSquadGroupDefinitions</a>),
-                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#12270201d791781f" class="i field">AIOrders</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#8a1e2f3306b5796f" class="i property">AiOrderDefinitions</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#5ef498bb487cd72e" class="i field">CameraPathTarget</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#ca11d946b239e33a" class="i property">CameraPathTargets</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2354d66bc071ce48" class="i field">LocationFlag</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#a4636dc754bd3207" class="i property">LocationFlagDefinitions</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9c6b4388c53948c" class="i field">CinematicTitle</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#490105a4bc2826f8" class="i property">CinematicTitleDefinitions</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#9aec2f4da6cbeaca" class="i field">Trigger</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6515602dbd347d81" class="i property">TriggerVolumes</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#eb0d8f70f1ad8261" class="i field">StartingProfile</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#023ddc6c7694a5a3" class="i property">StartingProfileDefinitions</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ca2e3e6aa86b2401" class="i field">DeviceGroup</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#6a58133990788163" class="i property">DeviceGroupDefinitions</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#11855953a044d71c" class="i property">AiSquadGroupDefinitions</a>),
+                <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#12270201d791781f" class="i field">AIOrders</a> =&gt; <b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#8a1e2f3306b5796f" class="i property">AiOrderDefinitions</a>),
                 <b>_</b> =&gt; <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">&quot;Not support!&quot;</span>)
             &rbrace;;
  
-            <span class="t t">ExpressionSyntax</span> <span id="r68 rd" class="r68 r">access</span> = <span class="i method">ElementAccessExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+            <span class="t t">ExpressionSyntax</span> <span id="r68 rd" class="r68 r">access</span> = <span class="i method">ElementAccessExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                         <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../ScenarioScriptBase.cs.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a>.<a href="../ScenarioScriptBase.cs.html#c14f3a895756ce9a" class="i property">Scenario</a>)),
                         <span class="i method">IdentifierName</span>(<span class="r67 r">scnrPropName</span>)))
                     .<span class="i method">AddArgumentListArguments</span>(<span class="i method">Argument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r65 r">itemIndex</span>)));
@@ -300,17 +300,17 @@
                 <span class="r69 r">scnrProp</span>.<span class="i property">PropertyType</span>.<span class="i method">GetElementType</span>().<span class="i method">GetInterfaces</span>().<span class="i method">Any</span>(<span id="r70 rd" class="r70 r">i</span> =&gt; 
                     <span class="r70 r">i</span>.<span class="i property">IsGenericType</span> &amp;&amp; <span class="r70 r">i</span>.<span class="i method">GetGenericTypeDefinition</span>() == <b>typeof</b>(<a href="../Types.cs.html#52407372da9d64da" class="t t">IGameObjectDefinition</a>&lt;&gt;)))
             &lbrace;
-                <span class="r68 r">access</span> = <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                <span class="r68 r">access</span> = <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                     <span class="r68 r">access</span>,
                     <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../Types.cs.html#52407372da9d64da" class="t t">IGameObjectDefinition</a>&lt;<b>object</b>&gt;.<a href="../Types.cs.html#ba48ff71070cc854" class="i property">GameObject</a>)));
             &rbrace;
  
             <b>var</b> <span id="r71 rd" class="r71 r">prop</span> = <span class="i method">PropertyDeclaration</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<span class="r63 r">type</span>), <span class="r66 r">propName</span>)
                 .<span class="i method">WithExpressionBody</span>(<span class="i method">ArrowExpressionClause</span>(<span class="r68 r">access</span>))
-                .<span class="i method">WithSemicolonToken</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SemicolonToken</span>));
+                .<span class="i method">WithSemicolonToken</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SemicolonToken</span>));
             
  
-            <a href="#5e1db6fc3dfb9673" class="i field">properties</a>.<span class="i method">Add</span>(<span class="r71 r">prop</span>.<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))));
+            <a href="#5e1db6fc3dfb9673" class="i field">properties</a>.<span class="i method">Add</span>(<span class="r71 r">prop</span>.<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))));
         &rbrace;
  
         <b>public</b> <span class="t t">StatementSyntax</span> <a id="573f9949659079c3" href="../../R/573f9949659079c3.html" target="n" data-glyph="72,1" class="i method">CreateWellKnownAssignment</a>(<span class="t t">TypeSyntax</span> <span id="r72 rd" class="r72 r">type</span>,
@@ -322,19 +322,19 @@
                 <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">&quot;Unable to find property name&quot;</span>);
             &rbrace;
  
-            <span class="t t">ExpressionSyntax</span> <span id="r76 rd" class="r76 r">access</span> = <span class="i method">ElementAccessExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+            <span class="t t">ExpressionSyntax</span> <span id="r76 rd" class="r76 r">access</span> = <span class="i method">ElementAccessExpression</span>(<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                             <span class="i method">IdentifierName</span>(<span class="s">&quot;scenarioTag&quot;</span>),
                             <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#dbd16c8c33f34180" class="i property">WellKnownItems</a>))))
                         .<span class="i method">AddArgumentListArguments</span>(<span class="i method">Argument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r74 r">itemIndex</span>)));
  
             <span class="r76 r">access</span> = <span class="i method">ObjectCreationExpression</span>(
-                <span class="i method">GenericName</span>(<b>nameof</b>(<a href="../Types.cs.html#43713fb07584f5f5" class="t t">ScenarioEntity</a>&lt;<b>object</b>&gt;))
+                <span class="i method">GenericName</span>(<b>nameof</b>(<a href="../Types.cs.html#43713fb07584f5f5" class="t valueType">ScenarioEntity</a>&lt;<b>object</b>&gt;))
                     .<span class="i method">AddTypeArgumentListArguments</span>(<span class="r72 r">type</span>))
                 .<span class="i method">AddArgumentListArguments</span>(
                     <span class="i method">Argument</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#014234da9421596a" class="i method">LiteralExpression</a>(<span class="r74 r">itemIndex</span>)),
                     <span class="i method">Argument</span>(<span class="r76 r">access</span>));
  
-            <b>var</b> <span id="r77 rd" class="r77 r">exp</span> = <span class="i method">AssignmentExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+            <b>var</b> <span id="r77 rd" class="r77 r">exp</span> = <span class="i method">AssignmentExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
                 <span class="i method">IdentifierName</span>(<span class="r75 r">name</span>),
                 <span class="r76 r">access</span>);
  
@@ -358,9 +358,9 @@
             <a href="#d0c63a150dea6e96" class="i field">fields</a>.<span class="i method">Add</span>(<span class="r83 r">field</span>);
  
             <b>var</b> <span id="r84 rd" class="r84 r">assignment</span> = <span class="i method">AssignmentExpression</span>(
-                <span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
                 <span class="i method">MemberAccessExpression</span>(
-                    <span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                    <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                     <span class="i method">ThisExpression</span>(),
                     <span class="i method">IdentifierName</span>(<span class="r83 r">field</span>.<span class="i property">Declaration</span>.<span class="i property">Variables</span>.<span class="i method">First</span>().<span class="i property">Identifier</span>.<span class="i method">ToString</span>())),
                 <span class="r80 r">expressionContext</span>.<a href="../GenerationState/SingleExpressionContext.cs.html#355b7d940e8cb951" class="i method">GetInnerExpression</a>());
@@ -370,12 +370,12 @@
  
         <b>public void</b> <a id="beb520b889a4603d" href="../../R/beb520b889a4603d.html" target="n" data-glyph="72,1" class="i method">AddMethod</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#5c25ea3a03f33243" class="t t">ScriptMethodDefinition</a> <span id="r85 rd" class="r85 r">scriptMethod</span>)
         &lbrace;
-            <b>var</b> <span id="r86 rd" class="r86 r">modifiers</span> = <span class="t t">SyntaxTokenList</span>.<span class="i method">Create</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
-                .<span class="i method">Add</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">AsyncKeyword</span>));
+            <b>var</b> <span id="r86 rd" class="r86 r">modifiers</span> = <span class="t valueType">SyntaxTokenList</span>.<span class="i method">Create</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>))
+                .<span class="i method">Add</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">AsyncKeyword</span>));
  
             <span class="t t">TypeSyntax</span> <span id="r87 rd" class="r87 r">returnType</span> = <span class="i method">ParseTypeName</span>(<span class="s">&quot;Task&quot;</span>);
  
-            <b>if</b> (<span class="r85 r">scriptMethod</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#9cf9fba4e01ed5f6" class="i property">ReturnType</a> != <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>)
+            <b>if</b> (<span class="r85 r">scriptMethod</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#9cf9fba4e01ed5f6" class="i property">ReturnType</a> != <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>)
             &lbrace;
                 <span class="r87 r">returnType</span> = <span class="i method">GenericName</span>(<span class="s">&quot;Task&quot;</span>).<span class="i method">AddTypeArgumentListArguments</span>(<a href="SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="SyntaxUtil.cs.html#cb69d9c69834e342" class="i method">ScriptTypeSyntax</a>(<span class="r85 r">scriptMethod</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#9cf9fba4e01ed5f6" class="i property">ReturnType</a>));
             &rbrace;
@@ -396,8 +396,8 @@
                 .<span class="i method">AddAttributeLists</span>(<span class="i method">AttributeList</span>(<span class="i method">SeparatedList</span>(<b>new</b>[] &lbrace;
                     <span class="i method">Attribute</span>(<span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../ScriptMethodAttribute.cs.html#0ab010ef821e91b8" class="t t">ScriptMethodAttribute</a>).<span class="i method">Replace</span>(<span class="s">&quot;Attribute&quot;</span>, <span class="s">&quot;&quot;</span>)))
                         .<span class="i method">AddArgumentListArguments</span>(<span class="i method">AttributeArgument</span>(<span class="i method">MemberAccessExpression</span>(
-                            <span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
-                            <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t t">Lifecycle</a>)),
+                            <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                            <span class="i method">IdentifierName</span>(<b>nameof</b>(<a href="../ScriptMethodAttribute.cs.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>)),
                             <span class="i method">IdentifierName</span>(<span class="r85 r">scriptMethod</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#abae68f20cc4e3e9" class="i property">Lifecycle</a>.<span class="i method">ToString</span>()))))
                 &rbrace;))));
         &rbrace;
@@ -453,10 +453,10 @@
         &lbrace;
             <b>return</b> <span class="r101 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> <b>switch</b>
             &lbrace;
-                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#62ae5683baf036d6" class="i field">Scope</a> =&gt; <a href="#ff34cd30fce2b1ea" class="i method">HandleScopeStart</a>(<span class="r101 r">node</span>),
-                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#f1797570697868e2" class="i field">Expression</a> =&gt; <a href="#9d6d5a3bbec16f55" class="i method">HandleExpression</a>(<span class="r101 r">node</span>),
-                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a> =&gt; <a href="#53b4612319b40b25" class="i method">HandleScriptInvocation</a>(<span class="r101 r">node</span>),
-                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#2975779735805f36" class="i field">VariableAccess</a> =&gt; <a href="#aec2c181a085119b" class="i method">HandleVariableAccess</a>(<span class="r101 r">node</span>),
+                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#62ae5683baf036d6" class="i field">Scope</a> =&gt; <a href="#ff34cd30fce2b1ea" class="i method">HandleScopeStart</a>(<span class="r101 r">node</span>),
+                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#f1797570697868e2" class="i field">Expression</a> =&gt; <a href="#9d6d5a3bbec16f55" class="i method">HandleExpression</a>(<span class="r101 r">node</span>),
+                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a> =&gt; <a href="#53b4612319b40b25" class="i method">HandleScriptInvocation</a>(<span class="r101 r">node</span>),
+                <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#2975779735805f36" class="i field">VariableAccess</a> =&gt; <a href="#aec2c181a085119b" class="i method">HandleVariableAccess</a>(<span class="r101 r">node</span>),
                 <b>_</b> =&gt; <b>throw</b> <b>new</b> <span class="t constructor">NotSupportedException</span>(<span class="s">$&quot;</span><span class="s">Node type </span>&lbrace;<span class="r101 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a>&rbrace;<span class="s"> is not yet supported</span><span class="s">&quot;</span>)
             &rbrace;;
         &rbrace;
@@ -501,55 +501,55 @@
  
             <b>switch</b> (<span class="r106 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a>)
             &lbrace;
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>:
                     <span class="c">// TODO: void expressions?</span>
                     <b>return</b> <a href="../GenerationState/IGenerationContext.cs.html#c09d258f5a881b15" class="t t">NullGenerationContext</a>.<a href="../GenerationState/IGenerationContext.cs.html#bb6408edb538fde6" class="i property">Instance</a>;
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8198f93650892f6d" class="i field">MethodOrOperator</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8198f93650892f6d" class="i field">MethodOrOperator</a>:
                     <b>return</b> <a href="#5af0bd8e650b616c" class="i method">GetMethodState</a>(<span class="r106 r">node</span>);
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c7aeffea3b52eb38" class="i field">Sound</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#dbc0e8b041dafcf3" class="i field">Animation</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#887b0ece90409f94" class="i field">TagReference</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#82782c9f14690c35" class="i field">Model</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#601528123b5133a6" class="i field">LoopingSound</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#3f8c9a04e4c014a9" class="i field">Effect</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#e7b4e1227452d8ff" class="i field">DamageEffect</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c7aeffea3b52eb38" class="i field">Sound</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#dbc0e8b041dafcf3" class="i field">Animation</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#887b0ece90409f94" class="i field">TagReference</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#82782c9f14690c35" class="i field">Model</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#601528123b5133a6" class="i field">LoopingSound</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#3f8c9a04e4c014a9" class="i field">Effect</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#e7b4e1227452d8ff" class="i field">DamageEffect</a>:
                     <b>return</b> <b>new</b> <a href="../GenerationState/TagGetContext.cs.html#42e44248fdc843f9" class="t constructor">TagGetContext</a>(<a href="#97135c1259818ca8" class="i field">scenario</a>, <span class="r106 r">node</span>);
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#0c0d79bebea8c8dc" class="i field">Bsp</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#17a7661336f3ec0a" class="i field">SpatialPoint</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#4c60670758848a47" class="i field">WeaponReference</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#0c0d79bebea8c8dc" class="i field">Bsp</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#17a7661336f3ec0a" class="i field">SpatialPoint</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#4c60670758848a47" class="i field">WeaponReference</a>:
                     <b>return</b> <b>new</b> <a href="../GenerationState/ReferenceGetContext.cs.html#25b5feff012a3e88" class="t constructor">ReferenceGetContext</a>(<a href="#97135c1259818ca8" class="i field">scenario</a>, <span class="r106 r">node</span>);
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>:
                     <b>return</b> <b>new</b> <a href="../GenerationState/AiGetContext.cs.html#615b142789e89cce" class="t constructor">AiGetContext</a>(<a href="#97135c1259818ca8" class="i field">scenario</a>, <span class="r106 r">node</span>, <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>);
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#e9ec0cac69776f74" class="i field">EntityIdentifier</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#a2b7fab434df3505" class="i field">Entity</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#328e264b085d0e18" class="i field">Unit</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#0ec73e0d39821260" class="i field">Scenery</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#25daf33cddf9bc52" class="i field">Device</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#b1b6247e6ca35858" class="i field">Vehicle</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#58c166c1df6421a5" class="i field">List</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#e9ec0cac69776f74" class="i field">EntityIdentifier</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#a2b7fab434df3505" class="i field">Entity</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#328e264b085d0e18" class="i field">Unit</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#0ec73e0d39821260" class="i field">Scenery</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#25daf33cddf9bc52" class="i field">Device</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#b1b6247e6ca35858" class="i field">Vehicle</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#58c166c1df6421a5" class="i field">List</a>:
                     <b>return</b> <b>new</b> <a href="../GenerationState/EntityGetContext.cs.html#37ebb51b694e4f4b" class="t constructor">EntityGetContext</a>(<a href="#97135c1259818ca8" class="i field">scenario</a>, <span class="r106 r">node</span>, <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>);
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9ed9d2b8df9f9f9" class="i field">AIScript</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c5c2395f738d5aaf" class="i field">ScriptReference</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#9aec2f4da6cbeaca" class="i field">Trigger</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2354d66bc071ce48" class="i field">LocationFlag</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ca2e3e6aa86b2401" class="i field">DeviceGroup</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#12270201d791781f" class="i field">AIOrders</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#eb0d8f70f1ad8261" class="i field">StartingProfile</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#4e5d24bf87658d79" class="i field">Team</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#5ef498bb487cd72e" class="i field">CameraPathTarget</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9c6b4388c53948c" class="i field">CinematicTitle</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2139d5ac3c38fd87" class="i field">AIBehavior</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#fc16c85218af5e6c" class="i field">DamageState</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ff15c358d05da22e" class="i field">NavigationPoint</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9ed9d2b8df9f9f9" class="i field">AIScript</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c5c2395f738d5aaf" class="i field">ScriptReference</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#9aec2f4da6cbeaca" class="i field">Trigger</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2354d66bc071ce48" class="i field">LocationFlag</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ca2e3e6aa86b2401" class="i field">DeviceGroup</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#12270201d791781f" class="i field">AIOrders</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#eb0d8f70f1ad8261" class="i field">StartingProfile</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#4e5d24bf87658d79" class="i field">Team</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#5ef498bb487cd72e" class="i field">CameraPathTarget</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9c6b4388c53948c" class="i field">CinematicTitle</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2139d5ac3c38fd87" class="i field">AIBehavior</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#fc16c85218af5e6c" class="i field">DamageState</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#ff15c358d05da22e" class="i field">NavigationPoint</a>:
                     <b>return</b> <b>new</b> <a href="../GenerationState/FieldGetContext.cs.html#71f99088108abdc5" class="t constructor">FieldGetContext</a>(<a href="#97135c1259818ca8" class="i field">scenario</a>, <span class="r106 r">node</span>, <a href="#4e77ee2c8db583a7" class="i field">nameRepo</a>);
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#f4d953e7c8e72390" class="i field">Float</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#f9ba24584ba3989b" class="i field">Int</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8f82b823a50be8be" class="i field">String</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2076accd58d4cd52" class="i field">Short</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#6736b05b6705faed" class="i field">Boolean</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#a77226460ccbb413" class="i field">StringId</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#b7b259a7afce99dd" class="i field">GameDifficulty</a>:
-                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#545dc85414841ee4" class="i field">VehicleSeat</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#f4d953e7c8e72390" class="i field">Float</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#f9ba24584ba3989b" class="i field">Int</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8f82b823a50be8be" class="i field">String</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2076accd58d4cd52" class="i field">Short</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#6736b05b6705faed" class="i field">Boolean</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#a77226460ccbb413" class="i field">StringId</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#b7b259a7afce99dd" class="i field">GameDifficulty</a>:
+                <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#545dc85414841ee4" class="i field">VehicleSeat</a>:
                     <b>return</b> <b>new</b> <a href="../GenerationState/LiteralContext.cs.html#4cce464c0b207449" class="t constructor">LiteralContext</a>(<a href="#97135c1259818ca8" class="i field">scenario</a>, <span class="r106 r">node</span>, <a href="#9c9b89974f8fbc8d" class="i property">currentScope</a>);
                 <b>default</b>:
                     <span class="c">// TODO: hack until everything is tracked down, populating string as value if exists</span>
@@ -578,26 +578,26 @@
  
         <b>private</b> <a href="../GenerationState/IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a> <a id="3b4cf6c34f0bc09b" href="../../R/3b4cf6c34f0bc09b.html" target="n" data-glyph="76,1" class="i method">GetMethodState</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r111 rd" class="r111 r">node</span>, <b>string</b> <span id="r112 rd" class="r112 r">methodName</span>)
         &lbrace;
-            <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r113 rd" class="r113 r">rt</span> = <a href="#9c9b89974f8fbc8d" class="i property">currentScope</a>.<a href="../GenerationState/Scope.cs.html#78ebb21d8a8f6d98" class="i property">Type</a>;
+            <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r113 rd" class="r113 r">rt</span> = <a href="#9c9b89974f8fbc8d" class="i property">currentScope</a>.<a href="../GenerationState/Scope.cs.html#78ebb21d8a8f6d98" class="i property">Type</a>;
  
             <b>return</b> <span class="r112 r">methodName</span> <b>switch</b>
             &lbrace;
                 <span class="s">&quot;begin&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BeginCallContext.cs.html#7722ee2f15e60d1d" class="t constructor">BeginCallContext</a>(<span class="r111 r">node</span>, <a href="#9c9b89974f8fbc8d" class="i property">currentScope</a>, <span class="r113 r">rt</span>),
                 <span class="s">&quot;begin_random&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BeginRandomContext.cs.html#893e61f173596214" class="t constructor">BeginRandomContext</a>(<span class="r111 r">node</span>, <span class="r113 r">rt</span>),
                 <span class="s">&quot;sleep_until&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/SleepUntilContext.cs.html#3098be91e0d9ba85" class="t constructor">SleepUntilContext</a>(<span class="r111 r">node</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;-&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">SubtractExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;+&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">AddExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;*&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">MultiplyExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;/&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">DivideExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;%&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">ModuloExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;=&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">EqualsExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;&lt;&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">LessThanExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;&gt;&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">GreaterThanExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;&lt;=&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">LessThanOrEqualExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;&gt;=&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">GreaterThanOrEqualExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;or&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">LogicalOrExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;and&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">LogicalAndExpression</span>, <span class="r113 r">rt</span>),
-                <span class="s">&quot;not&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/UnaryOperatorContext.cs.html#7c09701898780827" class="t constructor">UnaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t t">SyntaxKind</span>.<span class="i field">LogicalNotExpression</span>),
+                <span class="s">&quot;-&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">SubtractExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;+&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">AddExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;*&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">MultiplyExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;/&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">DivideExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;%&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">ModuloExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;=&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">EqualsExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;&lt;&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">LessThanExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;&gt;&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">GreaterThanExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;&lt;=&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">LessThanOrEqualExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;&gt;=&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">GreaterThanOrEqualExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;or&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">LogicalOrExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;and&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/BinaryOperatorContext.cs.html#43f7f835592c654c" class="t constructor">BinaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">LogicalAndExpression</span>, <span class="r113 r">rt</span>),
+                <span class="s">&quot;not&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/UnaryOperatorContext.cs.html#7c09701898780827" class="t constructor">UnaryOperatorContext</a>(<span class="r111 r">node</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">LogicalNotExpression</span>),
                 <span class="s">&quot;if&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/IfStatementContext.cs.html#f01fc27d1600f542" class="t constructor">IfStatementContext</a>(<span class="r111 r">node</span>, <a href="#9c9b89974f8fbc8d" class="i property">currentScope</a>),
                 <span class="s">&quot;set&quot;</span> =&gt; <b>new</b> <a href="../GenerationState/FieldSetContext.cs.html#f70186f8fb234752" class="t constructor">FieldSetContext</a>(<span class="r111 r">node</span>),
                 <b>_</b> =&gt; <b>new</b> <a href="../GenerationState/MethodCallContext.cs.html#8ac56bbf8e54fd21" class="t constructor">MethodCallContext</a>(<span class="r111 r">node</span>, <span class="r112 r">methodName</span>, <span class="r113 r">rt</span>),
@@ -630,7 +630,7 @@
                     <b>var</b> <span id="r121 rd" class="r121 r">regionToken</span> = <span class="i method">Trivia</span>(
                                 <span class="i method">RegionDirectiveTrivia</span>(<b>false</b>).<span class="i method">WithEndOfDirectiveToken</span>(
                                     <span class="i method">Token</span>(<span class="i method">TriviaList</span>(<span class="i method">PreprocessingMessage</span>(<span class="s">&quot;Fields&quot;</span>)),
-                                        <span class="t t">SyntaxKind</span>.<span class="i field">EndOfDirectiveToken</span>,
+                                        <span class="t valueType">SyntaxKind</span>.<span class="i field">EndOfDirectiveToken</span>,
                                         <span class="i method">TriviaList</span>())));
  
                     <span class="r120 r">f</span> = <span class="r120 r">f</span>.<span class="i method">InsertTriviaBefore</span>(<span class="r120 r">f</span>.<span class="i method">GetLeadingTrivia</span>().<span class="i method">First</span>(), <b>new</b>[] &lbrace; <span class="r121 r">regionToken</span> &rbrace;);
@@ -648,8 +648,8 @@
             <b>if</b> (<a href="#085f21ab37d2011c" class="i field">constructorStatements</a>.<span class="i method">Any</span>())
             &lbrace;
                 <a href="#085f21ab37d2011c" class="i field">constructorStatements</a>.<span class="i method">Insert</span>(0, <span class="i method">ExpressionStatement</span>(<span class="i method">AssignmentExpression</span>(
-                   <span class="t t">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
-                   <span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                   <span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleAssignmentExpression</span>,
+                   <span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                        <span class="i method">ThisExpression</span>(),
                        <span class="i method">IdentifierName</span>(<span class="s">&quot;Engine&quot;</span>)),
                    <span class="i method">IdentifierName</span>(<span class="s">&quot;scriptEngine&quot;</span>)
@@ -657,7 +657,7 @@
  
  
                 <span class="r116 r">cls</span> = <span class="r116 r">cls</span>.<span class="i method">AddMembers</span>(<span class="i method">ConstructorDeclaration</span>(<span class="r116 r">cls</span>.<span class="i property">Identifier</span>)
-                    .<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t t">SyntaxKind</span>.<span class="i field">PublicKeyword</span>)))
+                    .<span class="i method">WithModifiers</span>(<span class="i method">TokenList</span>(<span class="i method">Token</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">PublicKeyword</span>)))
                     .<span class="i method">AddParameterListParameters</span>(<span class="i method">Parameter</span>(<span class="i method">Identifier</span>(<span class="s">&quot;scriptEngine&quot;</span>)).<span class="i method">WithType</span>(<span class="i method">ParseName</span>(<span class="s">&quot;IScriptEngine&quot;</span>)))
                     .<span class="i method">WithBody</span>(<span class="i method">Block</span>(<a href="#085f21ab37d2011c" class="i field">constructorStatements</a>)));
             &rbrace;
@@ -702,7 +702,7 @@
  
         <b>private string</b> <a id="001b2413be42a16f" href="../../R/001b2413be42a16f.html" target="n" data-glyph="76,1" class="i method">GetScriptString</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r127 rd" class="r127 r">node</span>)
         &lbrace;
-            <b>return</b> ((<span class="t t">Span</span>&lt;<b>byte</b>&gt;)<a href="#97135c1259818ca8" class="i field">scenario</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#2c72d58d6e7d85d5" class="i property">ScriptStrings</a>).<a href="../../Extensions/SpanByteExtensions.cs.html#c937f1ca592e8fde" class="i method">ReadStringStarting</a>(<span class="r127 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#0d44c23c5e3af99b" class="i property">NodeString</a>);
+            <b>return</b> ((<span class="t valueType">Span</span>&lt;<b>byte</b>&gt;)<a href="#97135c1259818ca8" class="i field">scenario</a>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#2c72d58d6e7d85d5" class="i property">ScriptStrings</a>).<a href="../../Extensions/SpanByteExtensions.cs.html#c937f1ca592e8fde" class="i method">ReadStringStarting</a>(<span class="r127 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#0d44c23c5e3af99b" class="i property">NodeString</a>);
         &rbrace;
     &rbrace;
 &rbrace;

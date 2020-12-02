@@ -54,9 +54,7 @@ export default class SourceBrowserFixup {
             if(href != null) {
                 loc = createLocation(href, null, undefined, this.location);
             }
-
-            console.log("Navigating: ");
-            console.log(loc);
+            
             this.history.push(loc);
           }
     }

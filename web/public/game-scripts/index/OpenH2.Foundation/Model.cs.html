@@ -9,30 +9,30 @@
     &lbrace;
         <b>public</b> <a href="Mesh.cs.html#be491be8a8b0ec17" class="t t">Mesh</a>&lt;<span class="r0 r t">TTexture</span>&gt;[] <a id="1e2a35583670a05f" href="R/1e2a35583670a05f.html" target="n" data-glyph="102,1" class="i property">Meshes</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
-        <b>public</b> <span class="t t">Vector3</span> <a id="0b90177790796ba6" href="R/0b90177790796ba6.html" target="n" data-glyph="102,1" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t t">Vector3</span>.<span class="i property">Zero</span>;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="0b90177790796ba6" href="R/0b90177790796ba6.html" target="n" data-glyph="102,1" class="i property">Position</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t valueType">Vector3</span>.<span class="i property">Zero</span>;
  
-        <b>public</b> <span class="t t">Quaternion</span> <a id="c5ec973375d6756c" href="R/c5ec973375d6756c.html" target="n" data-glyph="102,1" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t t">Quaternion</span>.<span class="i property">Identity</span>;
+        <b>public</b> <span class="t valueType">Quaternion</span> <a id="c5ec973375d6756c" href="R/c5ec973375d6756c.html" target="n" data-glyph="102,1" class="i property">Orientation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t valueType">Quaternion</span>.<span class="i property">Identity</span>;
  
-        <b>public</b> <span class="t t">Vector3</span> <a id="654bed7118cfa078" href="R/654bed7118cfa078.html" target="n" data-glyph="102,1" class="i property">Scale</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t t">Vector3</span>.<span class="i property">One</span>;
+        <b>public</b> <span class="t valueType">Vector3</span> <a id="654bed7118cfa078" href="R/654bed7118cfa078.html" target="n" data-glyph="102,1" class="i property">Scale</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace; = <span class="t valueType">Vector3</span>.<span class="i property">One</span>;
  
         <b>public string</b> <a id="318e36c1db805f4d" href="R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Note</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
-        <b>public</b> <a href="#6b70698c43b4bd7a" class="t t">ModelFlags</a> <a id="d27fb02d681eb922" href="R/d27fb02d681eb922.html" target="n" data-glyph="102,1" class="i property">Flags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="#6b70698c43b4bd7a" class="t valueType">ModelFlags</a> <a id="d27fb02d681eb922" href="R/d27fb02d681eb922.html" target="n" data-glyph="102,1" class="i property">Flags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
-        <b>public</b> <span class="t t">Matrix4x4</span> <a id="a385030c3d91a855" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">CreateTransformationMatrix</a>()
+        <b>public</b> <span class="t valueType">Matrix4x4</span> <a id="a385030c3d91a855" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">CreateTransformationMatrix</a>()
         &lbrace;
-            <b>var</b> <span id="r1 rd" class="r1 r">translate</span> = <span class="t t">Matrix4x4</span>.<span class="i method">CreateTranslation</span>(<a href="#0b90177790796ba6" class="i property">Position</a>);
-            <b>var</b> <span id="r2 rd" class="r2 r">rotate</span> = <span class="t t">Matrix4x4</span>.<span class="i method">CreateFromQuaternion</span>(<a href="#c5ec973375d6756c" class="i property">Orientation</a>);
-            <b>var</b> <span id="r3 rd" class="r3 r">scale</span> = <span class="t t">Matrix4x4</span>.<span class="i method">CreateScale</span>(<a href="#654bed7118cfa078" class="i property">Scale</a>);
+            <b>var</b> <span id="r1 rd" class="r1 r">translate</span> = <span class="t valueType">Matrix4x4</span>.<span class="i method">CreateTranslation</span>(<a href="#0b90177790796ba6" class="i property">Position</a>);
+            <b>var</b> <span id="r2 rd" class="r2 r">rotate</span> = <span class="t valueType">Matrix4x4</span>.<span class="i method">CreateFromQuaternion</span>(<a href="#c5ec973375d6756c" class="i property">Orientation</a>);
+            <b>var</b> <span id="r3 rd" class="r3 r">scale</span> = <span class="t valueType">Matrix4x4</span>.<span class="i method">CreateScale</span>(<a href="#654bed7118cfa078" class="i property">Scale</a>);
  
-            <b>var</b> <span id="r4 rd" class="r4 r">scaleRotate</span> = <span class="t t">Matrix4x4</span>.<span class="i method">Multiply</span>(<span class="r3 r">scale</span>, <span class="r2 r">rotate</span>);
+            <b>var</b> <span id="r4 rd" class="r4 r">scaleRotate</span> = <span class="t valueType">Matrix4x4</span>.<span class="i method">Multiply</span>(<span class="r3 r">scale</span>, <span class="r2 r">rotate</span>);
  
-            <b>return</b> <span class="t t">Matrix4x4</span>.<span class="i method">Multiply</span>(<span class="r4 r">scaleRotate</span>, <span class="r1 r">translate</span>);
+            <b>return</b> <span class="t valueType">Matrix4x4</span>.<span class="i method">Multiply</span>(<span class="r4 r">scaleRotate</span>, <span class="r1 r">translate</span>);
         &rbrace;
     &rbrace;
  
     [<span class="t constructor">Flags</span>]
-    <b>public enum</b> <a id="6b70698c43b4bd7a" href="R/6b70698c43b4bd7a.html" target="n" data-glyph="18,0" class="t t"><span id="aa052834ad6ea263">ModelFlags</span></a>
+    <b>public enum</b> <a id="6b70698c43b4bd7a" href="R/6b70698c43b4bd7a.html" target="n" data-glyph="18,0" class="t valueType"><span id="aa052834ad6ea263">ModelFlags</span></a>
     &lbrace;
         <a id="6175fd54c5a9c5fa" href="R/6175fd54c5a9c5fa.html" target="n" data-glyph="24,1" class="i field">Diffuse</a>         = 1 &lt;&lt; 0,
         <a id="4897a06b0025392f" href="R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">CastsShadows</a>    = 1 &lt;&lt; 1,

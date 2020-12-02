@@ -84,7 +84,7 @@
             <b>throw</b> <b>new</b> <span class="t constructor">Exception</span>(<span class="s">$&quot;</span><span class="s">Unable to find tag </span>&lbrace;<span class="r14 r">id</span>&rbrace;<span class="s">&quot;</span>);
         &rbrace;
         
-        <b>public</b> <span class="r16 r t">T</span> <a id="a2fd6a02f56123eb" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetTag</a>&lt;<span id="r16 rd t" class="r16 r t">T</span>&gt;(<a href="TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r16 r t">T</span>&gt; <span id="r17 rd" class="r17 r">tagref</span>) <b>where</b> <span class="r16 r t">T</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
+        <b>public</b> <span class="r16 r t">T</span> <a id="a2fd6a02f56123eb" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetTag</a>&lt;<span id="r16 rd t" class="r16 r t">T</span>&gt;(<a href="TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r16 r t">T</span>&gt; <span id="r17 rd" class="r17 r">tagref</span>) <b>where</b> <span class="r16 r t">T</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
         &lbrace;
             <b>if</b> (<a href="#21ea82a966df4ce2" class="i method">TryGetTag</a>(<span class="r17 r">tagref</span>, <b>out</b> <span class="r16 r t">var</span> <span id="r18 rd" class="r18 r">t</span>))
             &lbrace;
@@ -132,7 +132,7 @@
             <b>return</b> <b>false</b>;
         &rbrace;
  
-        <b>public bool</b> <a id="21ea82a966df4ce2" href="../R/21ea82a966df4ce2.html" target="n" data-glyph="72,1" class="i method">TryGetTag</a>&lt;<span id="r23 rd t" class="r23 r t">T</span>&gt;(<a href="TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r23 r t">T</span>&gt; <span id="r24 rd" class="r24 r">tagref</span>, <b>out</b> <span class="r23 r t">T</span> <span id="r25 rd" class="r25 r">tag</span>) <b>where</b> <span class="r23 r t">T</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
+        <b>public bool</b> <a id="21ea82a966df4ce2" href="../R/21ea82a966df4ce2.html" target="n" data-glyph="72,1" class="i method">TryGetTag</a>&lt;<span id="r23 rd t" class="r23 r t">T</span>&gt;(<a href="TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r23 r t">T</span>&gt; <span id="r24 rd" class="r24 r">tagref</span>, <b>out</b> <span class="r23 r t">T</span> <span id="r25 rd" class="r25 r">tag</span>) <b>where</b> <span class="r23 r t">T</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
         &lbrace;
             <b>if</b> (<span class="r24 r">tagref</span>.<a href="TagRef.cs.html#a57f6d61bd4f1b00" class="i property">IsInvalid</a>)
             &lbrace;
@@ -149,18 +149,18 @@
             <b>return</b> <b>false</b>;
         &rbrace;
  
-        <b>public</b> <a href="../Offsets/SecondaryOffset.cs.html#d0a739bb64e6b298" class="t t">SecondaryOffset</a> <a id="ddf5eab71c530982" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetSecondaryOffset</a>(<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a> <span id="r26 rd" class="r26 r">source</span>, <b>int</b> <span id="r27 rd" class="r27 r">rawOffset</span>)
+        <b>public</b> <a href="../Offsets/SecondaryOffset.cs.html#d0a739bb64e6b298" class="t t">SecondaryOffset</a> <a id="ddf5eab71c530982" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetSecondaryOffset</a>(<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a> <span id="r26 rd" class="r26 r">source</span>, <b>int</b> <span id="r27 rd" class="r27 r">rawOffset</span>)
         &lbrace;
             <b>return</b> <span class="r26 r">source</span> <b>switch</b> &lbrace;
-                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#923b4d21c6a7e78e" class="i field">Local</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>, <span class="r27 r">rawOffset</span>),
-                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#3b08c613f9520e98" class="i field">MainMenu</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>.<a href="#737a4169efa8f542" class="i field">mainMenu</a>, <span class="r27 r">rawOffset</span>),
-                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#042d7203a6c57d6d" class="i field">Shared</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>.<a href="#c7ab123a9244f1e8" class="i field">mpShared</a>, <span class="r27 r">rawOffset</span>),
-                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#44d3e2a70067bf1c" class="i field">SinglePlayerShared</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>.<a href="#9a7d3f5f196b33b6" class="i field">spShared</a>, <span class="r27 r">rawOffset</span>),
+                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#923b4d21c6a7e78e" class="i field">Local</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>, <span class="r27 r">rawOffset</span>),
+                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#3b08c613f9520e98" class="i field">MainMenu</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>.<a href="#737a4169efa8f542" class="i field">mainMenu</a>, <span class="r27 r">rawOffset</span>),
+                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#042d7203a6c57d6d" class="i field">Shared</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>.<a href="#c7ab123a9244f1e8" class="i field">mpShared</a>, <span class="r27 r">rawOffset</span>),
+                <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#44d3e2a70067bf1c" class="i field">SinglePlayerShared</a> =&gt; <b>new</b> <a href="../Offsets/SecondaryOffset.cs.html#223b6f6d9e5ea109" class="t constructor">SecondaryOffset</a>(<a href="#18847cc088e9eaef" class="k">this</a>.<a href="#9a7d3f5f196b33b6" class="i field">spShared</a>, <span class="r27 r">rawOffset</span>),
                 <b>_</b> =&gt; <b>throw</b> <b>new</b> <span class="t constructor">NotSupportedException</span>()
             &rbrace;;
         &rbrace;
  
-        <b>public</b> <span class="t t">Memory</span>&lt;<b>byte</b>&gt; <a id="2fcd67a8d400ffb5" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ReadData</a>(<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a> <span id="r28 rd" class="r28 r">source</span>, <a href="../Offsets/IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a> <span id="r29 rd" class="r29 r">offset</span>, <b>int</b> <span id="r30 rd" class="r30 r">length</span>)
+        <b>public</b> <span class="t valueType">Memory</span>&lt;<b>byte</b>&gt; <a id="2fcd67a8d400ffb5" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">ReadData</a>(<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a> <span id="r28 rd" class="r28 r">source</span>, <a href="../Offsets/IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a> <span id="r29 rd" class="r29 r">offset</span>, <b>int</b> <span id="r30 rd" class="r30 r">length</span>)
         &lbrace;
             <a href="../Parsing/TrackingReader.cs.html#0d0452fc4b38ca34" class="k">var</a> <span id="r31 rd" class="r31 r">reader</span> = <a href="#18847cc088e9eaef" class="k">this</a>.<a href="#076987dcb7a0a984" class="i field">reader</a>.<a href="../Parsing/H2MapReader.cs.html#4400d3b0367b99db" class="i method">GetReader</a>(<span class="r28 r">source</span>);
  
@@ -169,7 +169,7 @@
             <b>return</b> <span class="r32 r">chunk</span>.<a href="../Parsing/TrackingChunk.cs.html#f3f5ca1db6f801b9" class="i method">ReadArray</a>(0, <span class="r30 r">length</span>);
         &rbrace;
  
-        <b>public static int</b> <a id="5eadf9dbb4519b93" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">CalculateSignature</a>(<span class="t t">Memory</span>&lt;<b>byte</b>&gt; <span id="r33 rd" class="r33 r">sceneData</span>)
+        <b>public static int</b> <a id="5eadf9dbb4519b93" href="../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">CalculateSignature</a>(<span class="t valueType">Memory</span>&lt;<b>byte</b>&gt; <span id="r33 rd" class="r33 r">sceneData</span>)
         &lbrace;
             <b>var</b> <span id="r34 rd" class="r34 r">sig</span> = 0;
             <b>var</b> <span id="r35 rd" class="r35 r">span</span> = <span class="r33 r">sceneData</span>.<span class="i property">Span</span>;

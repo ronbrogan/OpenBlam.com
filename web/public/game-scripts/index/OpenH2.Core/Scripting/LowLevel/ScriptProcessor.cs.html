@@ -15,11 +15,11 @@
     &lbrace;
         <b>public static</b> <a href="ScriptTreeNode.cs.html#c63b594f4e67063d" class="t t">ScriptTreeNode</a> <a id="dee412d55c21b754" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">GetScriptTree</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r0 rd" class="r0 r">tag</span>, <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#5c25ea3a03f33243" class="t t">ScriptMethodDefinition</a> <span id="r1 rd" class="r1 r">method</span>, <b>int</b> <span id="r2 rd" class="r2 r">methodIndex</span>)
         &lbrace;
-            <b>var</b> <span id="r3 rd" class="r3 r">strings</span> = (<span class="t t">Span</span>&lt;<b>byte</b>&gt;)<span class="r0 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#2c72d58d6e7d85d5" class="i property">ScriptStrings</a>;
+            <b>var</b> <span id="r3 rd" class="r3 r">strings</span> = (<span class="t valueType">Span</span>&lt;<b>byte</b>&gt;)<span class="r0 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#2c72d58d6e7d85d5" class="i property">ScriptStrings</a>;
  
             <a href="ScriptTreeNode.cs.html#c63b594f4e67063d" class="k">var</a> <span id="r4 rd" class="r4 r">root</span> = <b>new</b> <a href="ScriptTreeNode.cs.html#c63b594f4e67063d" class="t constructor">ScriptTreeNode</a>()
             &lbrace;
-                <a href="ScriptTreeNode.cs.html#e8811c22da94c127" class="i property">Type</a> = <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#34546ad118d30da2" class="i field">MethodDecl</a>,
+                <a href="ScriptTreeNode.cs.html#e8811c22da94c127" class="i property">Type</a> = <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#34546ad118d30da2" class="i field">MethodDecl</a>,
                 <a href="ScriptTreeNode.cs.html#5359e2bf431e1cb3" class="i property">Value</a> = <span class="r1 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#08a9a7cabc3b1ec3" class="i property">Description</a>,
                 <a href="ScriptTreeNode.cs.html#80d25c5b4692d1b6" class="i property">DataType</a> = <span class="r1 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#9cf9fba4e01ed5f6" class="i property">ReturnType</a>,
                 <a href="ScriptTreeNode.cs.html#51f3367352cf1360" class="i property">Index</a> = <span class="r2 r">methodIndex</span>,
@@ -27,7 +27,7 @@
                 &lbrace;
                     <a href="../../Tags/Scenario/ScenarioScripting.cs.html#8cf401dd9de9daf8" class="i property">NextIndex</a> = <span class="r1 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#d77ed682273ed9c1" class="i property">SyntaxNodeIndex</a>,
                     <a href="../../Tags/Scenario/ScenarioScripting.cs.html#526181d39c4ff6bb" class="i property">NextCheckval</a> = <span class="r1 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#b1f7d47c069a3c98" class="i property">ValueB</a>,
-                    <a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> = <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#34546ad118d30da2" class="i field">MethodDecl</a>,
+                    <a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> = <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#34546ad118d30da2" class="i field">MethodDecl</a>,
                     <a href="../../Tags/Scenario/ScenarioScripting.cs.html#0d44c23c5e3af99b" class="i property">NodeString</a> = (<b>ushort</b>)<a href="#9ff88029e3b82c92" class="i method">FindStringIndex</a>(<span class="r1 r">method</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#08a9a7cabc3b1ec3" class="i property">Description</a>, <span class="r3 r">strings</span>)
                 &rbrace;
             &rbrace;;
@@ -45,29 +45,29 @@
  
                 <b>object</b> <span id="r10 rd" class="r10 r">value</span> = <span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#2ec6ccd125ab1330" class="i property">NodeData_32</a>;
  
-                <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#f1797570697868e2" class="i field">Expression</a>)
+                <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#f1797570697868e2" class="i field">Expression</a>)
                 &lbrace;
                     <b>switch</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#d34c2ea6c2b74f26" class="i property">DataType</a>)
                     &lbrace;
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#6736b05b6705faed" class="i field">Boolean</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#6736b05b6705faed" class="i field">Boolean</a>:
                             <span class="r10 r">value</span> = <span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#567543939d777a03" class="i property">NodeData_B3</a> == 1;
                             <b>break</b>;
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2076accd58d4cd52" class="i field">Short</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2076accd58d4cd52" class="i field">Short</a>:
                             <span class="r10 r">value</span> = <span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#ca410aedf4a62935" class="i property">NodeData_H16</a>;
                             <b>break</b>;
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#f4d953e7c8e72390" class="i field">Float</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#f4d953e7c8e72390" class="i field">Float</a>:
                             <span class="r10 r">value</span> = <span class="t t">BitConverter</span>.<span class="i method">Int32BitsToSingle</span>((<b>int</b>)<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#2ec6ccd125ab1330" class="i property">NodeData_32</a>);
                             <b>break</b>;
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8f82b823a50be8be" class="i field">String</a>:
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8198f93650892f6d" class="i field">MethodOrOperator</a>:
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>:
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9ed9d2b8df9f9f9" class="i field">AIScript</a>:
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c7aeffea3b52eb38" class="i field">Sound</a>:
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#25daf33cddf9bc52" class="i field">Device</a>:
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#e9ec0cac69776f74" class="i field">EntityIdentifier</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8f82b823a50be8be" class="i field">String</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#8198f93650892f6d" class="i field">MethodOrOperator</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#92ef018c4d01bca3" class="i field">AI</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c9ed9d2b8df9f9f9" class="i field">AIScript</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#c7aeffea3b52eb38" class="i field">Sound</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#25daf33cddf9bc52" class="i field">Device</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#e9ec0cac69776f74" class="i field">EntityIdentifier</a>:
                             <span class="r10 r">value</span> = <span class="r3 r">strings</span>.<a href="../../Extensions/SpanByteExtensions.cs.html#c937f1ca592e8fde" class="i method">ReadStringStarting</a>(<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#0d44c23c5e3af99b" class="i property">NodeString</a>);
                             <b>break</b>;
-                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#a2b7fab434df3505" class="i field">Entity</a>:
+                        <b>case</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#a2b7fab434df3505" class="i field">Entity</a>:
                             <b>break</b>;
                         <b>default</b>:
                             <span class="c">// TODO: hack until everything is tracked down, populating string as value if exists</span>
@@ -79,11 +79,11 @@
                             <b>break</b>;
                     &rbrace;
                 &rbrace;
-                <b>else</b> <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#2975779735805f36" class="i field">VariableAccess</a>)
+                <b>else</b> <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#2975779735805f36" class="i field">VariableAccess</a>)
                 &lbrace;
                     <span class="r10 r">value</span> = <span class="r3 r">strings</span>.<a href="../../Extensions/SpanByteExtensions.cs.html#c937f1ca592e8fde" class="i method">ReadStringStarting</a>(<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#0d44c23c5e3af99b" class="i property">NodeString</a>);
                 &rbrace;
-                <b>else</b> <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a>)
+                <b>else</b> <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a>)
                 &lbrace;
                     <span class="r10 r">value</span> = <span class="r0 r">tag</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#296f9ff33e79186d" class="i property">ScriptMethods</a>[<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#b26e451b424788d7" class="i property">ScriptIndex</a>].<a href="../../Tags/Scenario/ScenarioScripting.cs.html#08a9a7cabc3b1ec3" class="i property">Description</a>;
                 &rbrace;
@@ -101,7 +101,7 @@
                 <span class="c">// Expression scope seems to use NodeData to specify what is inside the scope</span>
                 <span class="c">// and the Next value is used to specify the scope&#39;s next sibling instead</span>
                 <span class="c">// This is how the linear-ish node structure can expand into a more traditional AST</span>
-                <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#62ae5683baf036d6" class="i field">Scope</a> || <span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t t">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a>)
+                <b>if</b> (<span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#62ae5683baf036d6" class="i field">Scope</a> || <span class="r8 r">node</span>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#aaebf99bdf5931b9" class="i property">NodeType</a> == <a href="../NodeType.cs.html#4d5148c10b057a29" class="t valueType">NodeType</a>.<a href="../NodeType.cs.html#d99801ccb16e33a6" class="i field">ScriptInvocation</a>)
                 &lbrace;
                     <span class="c">// Use scope&#39;s parent as next node&#39;s parent instead of the scope</span>
                     <span class="c">// This makes the &#39;next&#39; into a &#39;sibling&#39;</span>
@@ -122,7 +122,7 @@
             <b>return</b> <span class="r4 r">root</span>;
         &rbrace;
  
-        <b>private static int</b> <a id="9ff88029e3b82c92" href="../../R/9ff88029e3b82c92.html" target="n" data-glyph="76,1" class="i method">FindStringIndex</a>(<b>string</b> <span id="r12 rd" class="r12 r">value</span>, <span class="t t">Span</span>&lt;<b>byte</b>&gt; <span id="r13 rd" class="r13 r">internedStrings</span>)
+        <b>private static int</b> <a id="9ff88029e3b82c92" href="../../R/9ff88029e3b82c92.html" target="n" data-glyph="76,1" class="i method">FindStringIndex</a>(<b>string</b> <span id="r12 rd" class="r12 r">value</span>, <span class="t valueType">Span</span>&lt;<b>byte</b>&gt; <span id="r13 rd" class="r13 r">internedStrings</span>)
         &lbrace;
             <b>var</b> <span id="r14 rd" class="r14 r">searchBytes</span> = <span class="t t">Encoding</span>.<span class="i property">UTF8</span>.<span class="i method">GetBytes</span>(<span class="r12 r">value</span>);
  

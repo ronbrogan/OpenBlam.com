@@ -27,9 +27,9 @@
             &rbrace;;
  
             <span class="c">//watcher.Changed += this.W_Changed;</span>
-            <a href="#4578a2d8d94cd500" class="i field">watcher</a>.<span class="i property">NotifyFilter</span> = <span class="t t">NotifyFilters</span>.<span class="i field">LastWrite</span>;
+            <a href="#4578a2d8d94cd500" class="i field">watcher</a>.<span class="i property">NotifyFilter</span> = <span class="t valueType">NotifyFilters</span>.<span class="i field">LastWrite</span>;
             <span class="t t">Observable</span>.<span class="i method">FromEventPattern</span>&lt;<span class="t t">FileSystemEventHandler</span>, <span class="t t">FileSystemEventArgs</span>&gt;(<span id="r1 rd" class="r1 r">h</span> =&gt; <a href="#4578a2d8d94cd500" class="i field">watcher</a>.<span class="i">Changed</span> += <span class="r1 r">h</span>, <span id="r2 rd" class="r2 r">h</span> =&gt; <a href="#4578a2d8d94cd500" class="i field">watcher</a>.<span class="i">Changed</span> -= <span class="r2 r">h</span>)
-                .<span class="i method">Throttle</span>(<span class="t t">TimeSpan</span>.<span class="i method">FromMilliseconds</span>(300))
+                .<span class="i method">Throttle</span>(<span class="t valueType">TimeSpan</span>.<span class="i method">FromMilliseconds</span>(300))
                 .<span class="i method">Subscribe</span>(<span id="r3 rd" class="r3 r">a</span> =&gt; <a href="#71a9f5f8ea55e770" class="i method">W_Changed</a>(<span class="r3 r">a</span>.<span class="i property">Sender</span>, <span class="r3 r">a</span>.<span class="i property">EventArgs</span>));
  
             <a href="#4578a2d8d94cd500" class="i field">watcher</a>.<span class="i property">EnableRaisingEvents</span> = <b>true</b>;

@@ -1,6 +1,7 @@
 ﻿.gameScriptView {
   .solutionExplorer img {
     display: inline;
+    padding: 0 3px;
   }
 
   h1 {
@@ -16,11 +17,22 @@
     font-size: 12pt;
     line-height: 125%;
     tab-size: 4;
+    background: none;
   }
 
   pre a:focus {
     color: inherit;
     background-color: lime;
+  }
+
+  pre#ln {
+    border-right: 1px solid #333;
+    padding-right: 5px;
+    padding-left: 10px;
+  }
+
+  pre#code {
+    padding-left: 10px;
   }
 
   pre b {
@@ -29,6 +41,7 @@
   }
 
   a:link {
+    font-family: Consolas, 'Courier New', 'Andale Mono', 'Lucida Console', monospace;
     text-decoration: none;
     color: inherit;
   }
@@ -40,6 +53,7 @@
   a:hover {
     color: inherit;
     text-decoration: underline;
+    font-weight: bold;
   }
 
   a:active {
@@ -234,6 +248,7 @@
   .namespaceExplorerBody,
   .solutionExplorerBody {
     cursor: default;
+    padding: 5px 0 0 5px;
   }
 
   .reference {
@@ -543,11 +558,7 @@
   }
 
   .rA {
-    background-color: #123;
-  }
-
-  .rA:hover {
-    background-color: #123;
+    background-color: #3c80bc;
   }
 
   .resultGroupProjectPath {
@@ -670,7 +681,7 @@
   }
 
   .rH {
-    background-color: #39487d;
+    background-color: #39f;
     color: white;
   }
 
@@ -729,6 +740,7 @@
 
   .r {
     border-color: transparent;
+    color: #9cdcfe;
   }
 
   .unknownClassification {
@@ -740,11 +752,27 @@
     color: #569cd6;
   }
 
+  .k.preprocess {
+    color: #666;
+  }
+
   .t,
   a.t,
   .l,
   .lineNumber {
     color: #4ec9b0;
+  }
+
+  .t.valueType {
+    color: #b5cea8;
+  }
+
+  a.i.method {
+    color: #dcdcaa;
+  }
+
+  a.field {
+    color: #9cdcfe;
   }
 
   .c {
@@ -757,7 +785,7 @@
   }
 
   .s {
-    color: #8c6a5c;
+    color: #ce9178;
   }
 
   .xd {

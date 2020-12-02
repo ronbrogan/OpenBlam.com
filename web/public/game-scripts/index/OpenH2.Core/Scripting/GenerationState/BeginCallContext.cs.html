@@ -11,13 +11,13 @@
 &lbrace;
     <b>public class</b> <a id="cdfeb07f2316643c" href="../../R/cdfeb07f2316643c.html" target="n" data-glyph="0,0" class="t t">BeginCallContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>, <a href="IStatementContext.cs.html#fffbb44acf3718f5" class="t t">IStatementContext</a>
     &lbrace;
-        <b>private readonly</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <a id="b184b47ad348f321" href="../../R/b184b47ad348f321.html" target="n" data-glyph="46,1" class="i field">returnType</a>;
+        <b>private readonly</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <a id="b184b47ad348f321" href="../../R/b184b47ad348f321.html" target="n" data-glyph="46,1" class="i field">returnType</a>;
  
         <b>public override bool</b> <a id="7f1b8905f20fabae" href="../../R/7f1b8905f20fabae.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> =&gt; <b>true</b>;
  
         <b>public</b> <span class="t t">List</span>&lt;<span class="t t">StatementSyntax</span>&gt; <a id="258b673c374bd0ec" href="../../R/258b673c374bd0ec.html" target="n" data-glyph="102,1" class="i property">Body</a> &lbrace; <b>get</b>; &rbrace; = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">StatementSyntax</span>&gt;();
  
-        <b>public</b> <a id="7722ee2f15e60d1d" href="../../R/7722ee2f15e60d1d.html" target="n" data-glyph="72,1" class="t constructor">BeginCallContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <a href="Scope.cs.html#1566133395e6730d" class="t t">Scope</a> <span id="r1 rd" class="r1 r">context</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r2 rd" class="r2 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
+        <b>public</b> <a id="7722ee2f15e60d1d" href="../../R/7722ee2f15e60d1d.html" target="n" data-glyph="72,1" class="t constructor">BeginCallContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <a href="Scope.cs.html#1566133395e6730d" class="t t">Scope</a> <span id="r1 rd" class="r1 r">context</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r2 rd" class="r2 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
         &lbrace;
             <a href="#cdfeb07f2316643c" class="k">this</a>.<a href="#b184b47ad348f321" class="i field">returnType</a> = <span class="r2 r">returnType</span>;
         &rbrace;
@@ -71,7 +71,7 @@
  
         <b>public bool</b> <a id="0c32420246e7a229" href="../../R/0c32420246e7a229.html" target="n" data-glyph="72,1" class="i method">TryCreateResultStatement</a>(<span class="t t">ExpressionSyntax</span> <span id="r11 rd" class="r11 r">resultValue</span>, <b>out</b> <span class="t t">StatementSyntax</span> <span id="r12 rd" class="r12 r">statement</span>)
         &lbrace;
-            <b>if</b>(<a href="#cdfeb07f2316643c" class="k">this</a>.<a href="BaseGenerationContext.cs.html#a2fdd63e74536ee7" class="i property">OwnDataType</a> == <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>)
+            <b>if</b>(<a href="#cdfeb07f2316643c" class="k">this</a>.<a href="BaseGenerationContext.cs.html#a2fdd63e74536ee7" class="i property">OwnDataType</a> == <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>.<a href="../ScriptDataType.cs.html#2a4c1b8dbaa7d072" class="i field">Void</a>)
             &lbrace;
                 <span class="r12 r">statement</span> = <b>default</b>;
                 <b>return</b> <b>false</b>;

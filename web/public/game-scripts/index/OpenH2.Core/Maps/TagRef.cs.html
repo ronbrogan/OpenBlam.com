@@ -11,7 +11,7 @@
         <b>bool</b> <a id="926c2a9f114b1c23" href="../R/926c2a9f114b1c23.html" target="n" data-glyph="102,1" class="i property">IsInvalid</a> &lbrace; <b>get</b>; &rbrace;
     &rbrace;
  
-    <b>public readonly struct</b> <a id="d13c6819f256d499" href="../R/d13c6819f256d499.html" target="n" data-glyph="108,0" class="t t"><span id="0dd653490881a0ba">TagRef</span></a> : <a href="#f0f089f664ff3920" class="t t">ITagRef</a>
+    <b>public readonly struct</b> <a id="d13c6819f256d499" href="../R/d13c6819f256d499.html" target="n" data-glyph="108,0" class="t valueType"><span id="0dd653490881a0ba">TagRef</span></a> : <a href="#f0f089f664ff3920" class="t t">ITagRef</a>
     &lbrace;
         <b>public</b> <a id="4e4a0a337482a131" href="../R/4e4a0a337482a131.html" target="n" data-glyph="72,1" class="t constructor">TagRef</a>(<b>uint</b> <span id="r0 rd" class="r0 r">id</span>)
         &lbrace;
@@ -21,13 +21,13 @@
         <b>public uint</b> <a id="f4da314d67c96a22" href="../R/f4da314d67c96a22.html" target="n" data-glyph="102,1" class="i property">Id</a> &lbrace; <b>get</b>; &rbrace;
         <b>public bool</b> <a id="14b5d4032cb5b900" href="../R/14b5d4032cb5b900.html" target="n" data-glyph="102,1" class="i property">IsInvalid</a> =&gt; <a href="#d13c6819f256d499" class="k">this</a>.<a href="#f4da314d67c96a22" class="i property">Id</a> == <b>uint</b>.<span class="i field">MaxValue</span>;
  
-        <b>public static implicit operator uint</b>(<a href="#d13c6819f256d499" class="t t">TagRef</a> <span id="r1 rd" class="r1 r">tagref</span>)
+        <b>public static implicit operator uint</b>(<a href="#d13c6819f256d499" class="t valueType">TagRef</a> <span id="r1 rd" class="r1 r">tagref</span>)
         &lbrace;
             <b>return</b> <span class="r1 r">tagref</span>.<a href="#f4da314d67c96a22" class="i property">Id</a>;
         &rbrace;
     &rbrace;
  
-    <b>public readonly struct</b> <a id="c9ea8e3a759f346e" href="../R/c9ea8e3a759f346e.html" target="n" data-glyph="108,0" class="t t"><span id="e2b36e4a11f65c0d">TagRef</span></a>&lt;<span id="r2 rd t" class="r2 r t">TTag</span>&gt; : <a href="#f0f089f664ff3920" class="t t">ITagRef</a> <b>where</b> <span class="r2 r t">TTag</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a> 
+    <b>public readonly struct</b> <a id="c9ea8e3a759f346e" href="../R/c9ea8e3a759f346e.html" target="n" data-glyph="108,0" class="t valueType"><span id="e2b36e4a11f65c0d">TagRef</span></a>&lt;<span id="r2 rd t" class="r2 r t">TTag</span>&gt; : <a href="#f0f089f664ff3920" class="t t">ITagRef</a> <b>where</b> <span class="r2 r t">TTag</span> : <a href="../Tags/BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a> 
     &lbrace;
         <b>public</b> <a id="d77e1c92ea585dce" href="../R/d77e1c92ea585dce.html" target="n" data-glyph="72,1" class="t constructor">TagRef</a>(<b>uint</b> <span id="r3 rd" class="r3 r">id</span>)
         &lbrace;
@@ -37,17 +37,17 @@
         <b>public uint</b> <a id="9b2dd9411cc0061f" href="../R/9b2dd9411cc0061f.html" target="n" data-glyph="102,1" class="i property">Id</a> &lbrace; <b>get</b>; &rbrace;
         <b>public bool</b> <a id="a57f6d61bd4f1b00" href="../R/a57f6d61bd4f1b00.html" target="n" data-glyph="102,1" class="i property">IsInvalid</a> =&gt; <a href="#c9ea8e3a759f346e" class="k">this</a>.<a href="#9b2dd9411cc0061f" class="i property">Id</a> == <b>uint</b>.<span class="i field">MaxValue</span>;
  
-        <b>public static implicit operator uint</b>(<a href="#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt; <span id="r4 rd" class="r4 r">tagref</span>)
+        <b>public static implicit operator uint</b>(<a href="#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt; <span id="r4 rd" class="r4 r">tagref</span>)
         &lbrace;
             <b>return</b> <span class="r4 r">tagref</span>.<a href="#9b2dd9411cc0061f" class="i property">Id</a>;
         &rbrace;
  
-        <b>public static implicit operator</b> <a href="#d13c6819f256d499" class="t t">TagRef</a>(<a href="#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt; <span id="r5 rd" class="r5 r">tagref</span>)
+        <b>public static implicit operator</b> <a href="#d13c6819f256d499" class="t valueType">TagRef</a>(<a href="#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt; <span id="r5 rd" class="r5 r">tagref</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="#4e4a0a337482a131" class="t constructor">TagRef</a>(<span class="r5 r">tagref</span>.<a href="#9b2dd9411cc0061f" class="i property">Id</a>);
         &rbrace;
  
-        <b>public static implicit operator</b> <a href="#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt;(<a href="#d13c6819f256d499" class="t t">TagRef</a> <span id="r6 rd" class="r6 r">tagref</span>)
+        <b>public static implicit operator</b> <a href="#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt;(<a href="#d13c6819f256d499" class="t valueType">TagRef</a> <span id="r6 rd" class="r6 r">tagref</span>)
         &lbrace;
             <b>return</b> <b>new</b> <a href="#d77e1c92ea585dce" class="t constructor">TagRef</a>&lt;<span class="r2 r t">TTag</span>&gt;(<span class="r6 r">tagref</span>.<a href="#f4da314d67c96a22" class="i property">Id</a>);
         &rbrace;

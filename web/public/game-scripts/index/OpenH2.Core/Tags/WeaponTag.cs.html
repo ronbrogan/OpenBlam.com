@@ -7,7 +7,7 @@
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>
 &lbrace;
-    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="TagName.cs.html#eec111b6c1995f3f" class="i field">weap</a>)]
+    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>.<a href="TagName.cs.html#eec111b6c1995f3f" class="i field">weap</a>)]
     <b>public class</b> <a id="919a462c13452636" href="../R/919a462c13452636.html" target="n" data-glyph="0,0" class="t t">WeaponTag</a> : <a href="BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
     &lbrace;
         <b>public override string</b> <a id="4da811e8e82d9480" href="../R/4da811e8e82d9480.html" target="n" data-glyph="102,1" class="i property">Name</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -16,7 +16,7 @@
         &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(56)]
-        <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="HaloModelTag.cs.html#c2bf16b550191baa" class="t t">HaloModelTag</a>&gt; <a id="9429074bc3accb8a" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Hlmt</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="HaloModelTag.cs.html#c2bf16b550191baa" class="t t">HaloModelTag</a>&gt; <a id="9429074bc3accb8a" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Hlmt</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">PrimitiveArray</span>(108, 9)]
         <b>public float</b>[] <a id="fedd7175edf42c9f" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">RotationMatrix</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -25,7 +25,7 @@
         <b>public</b> <a href="#901d4ec45594e18c" class="t t">BitmapWrapper</a>[] <a id="23b36b6289ebae3f" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Bitmaps</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(300)]
-        <b>public</b> <a href="#fed8d9045d529499" class="t t">WeaponFlags</a> <a id="75d111a7ee3125f7" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Flags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="#fed8d9045d529499" class="t valueType">WeaponFlags</a> <a id="75d111a7ee3125f7" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Flags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(520)]
         <span class="c">// When set to zero, sword reticle never changed to red</span>
@@ -41,20 +41,20 @@
         <b>public class</b> <a id="901d4ec45594e18c" href="../R/901d4ec45594e18c.html" target="n" data-glyph="0,1" class="t t"><span id="a3b3fc79aac52e9a">BitmapWrapper</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="c3748feacdf7adf3" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Bitmap</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="c3748feacdf7adf3" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Bitmap</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
         [<span class="t constructor">FixedLength</span>(16)]
         <b>public class</b> <a id="e3086bd1e20efa48" href="../R/e3086bd1e20efa48.html" target="n" data-glyph="0,1" class="t t"><span id="7b1933e0bc745c3a">FirstPersonAnimation</span></a>
         &lbrace;
             [<span class="t constructor">PrimitiveValue</span>(4)]
-            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="RenderModelTag.cs.html#d8330311d2d1360a" class="t t">RenderModelTag</a>&gt; <a id="49af16d413d17abd" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Model</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="RenderModelTag.cs.html#d8330311d2d1360a" class="t t">RenderModelTag</a>&gt; <a id="49af16d413d17abd" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Model</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
             [<span class="t constructor">PrimitiveValue</span>(12)]
-            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="AnimationGraphTag.cs.html#1245f2fb6f6d346d" class="t t">AnimationGraphTag</a>&gt; <a id="85b8242bb155c1ca" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Animation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+            <b>public</b> <a href="../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="AnimationGraphTag.cs.html#1245f2fb6f6d346d" class="t t">AnimationGraphTag</a>&gt; <a id="85b8242bb155c1ca" href="../R/../../0000000000.html" target="n" data-glyph="102,2" class="i property">Animation</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
         &rbrace;
  
-        <b>public enum</b> <a id="fed8d9045d529499" href="../R/fed8d9045d529499.html" target="n" data-glyph="18,1" class="t t"><span id="f12d98a5b3333017">WeaponFlags</span></a> : <b>uint</b>
+        <b>public enum</b> <a id="fed8d9045d529499" href="../R/fed8d9045d529499.html" target="n" data-glyph="18,1" class="t valueType"><span id="f12d98a5b3333017">WeaponFlags</span></a> : <b>uint</b>
         &lbrace;
             <a id="f6484bc53745caef" href="../R/../../0000000000.html" target="n" data-glyph="24,2" class="i field">KillConsumesDurability</a> = 1 &lt;&lt; 26
         &rbrace;

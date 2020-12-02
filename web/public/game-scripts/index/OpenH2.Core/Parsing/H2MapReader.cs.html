@@ -28,17 +28,17 @@
             <a href="#f578fb67d304902b" class="k">this</a>.<a href="#361ca199379b6909" class="i property">SpShared</a> = <span class="r4 r">baseReader</span>.<a href="#361ca199379b6909" class="i property">SpShared</a>;
         &rbrace;
  
-        <b>public</b> <a href="TrackingReader.cs.html#0d0452fc4b38ca34" class="t t">TrackingReader</a> <a id="4400d3b0367b99db" href="../R/4400d3b0367b99db.html" target="n" data-glyph="72,1" class="i method">GetReader</a>(<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a> <span id="r5 rd" class="r5 r">source</span>)
+        <b>public</b> <a href="TrackingReader.cs.html#0d0452fc4b38ca34" class="t t">TrackingReader</a> <a id="4400d3b0367b99db" href="../R/4400d3b0367b99db.html" target="n" data-glyph="72,1" class="i method">GetReader</a>(<a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a> <span id="r5 rd" class="r5 r">source</span>)
         &lbrace;
             <b>switch</b> (<span class="r5 r">source</span>)
             &lbrace;
-                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#923b4d21c6a7e78e" class="i field">Local</a>:
+                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#923b4d21c6a7e78e" class="i field">Local</a>:
                     <b>return</b> <a href="#9380cb3047d1f5ad" class="i property">MapReader</a>;
-                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#3b08c613f9520e98" class="i field">MainMenu</a>:
+                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#3b08c613f9520e98" class="i field">MainMenu</a>:
                     <b>return</b> <a href="#9d3ae696bd323c61" class="i property">MainMenu</a>;
-                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#042d7203a6c57d6d" class="i field">Shared</a>:
+                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#042d7203a6c57d6d" class="i field">Shared</a>:
                     <b>return</b> <a href="#3604fb8fe8d8d73b" class="i property">MpShared</a>;
-                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#44d3e2a70067bf1c" class="i field">SinglePlayerShared</a>:
+                <b>case</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#44d3e2a70067bf1c" class="i field">SinglePlayerShared</a>:
                     <b>return</b> <a href="#361ca199379b6909" class="i property">SpShared</a>;
                 <b>default</b>:
                     <b>return</b> <a href="#9380cb3047d1f5ad" class="i property">MapReader</a>;
@@ -50,24 +50,24 @@
             <b>return</b> <a href="#4400d3b0367b99db" class="i method">GetReader</a>(<span class="r6 r">offset</span>.<a href="../Offsets/NormalOffset.cs.html#9521f8bc1465e0e2" class="i property">Location</a>);   
         &rbrace;
  
-        <b>public</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a> <a id="08e9f96a9043cf18" href="../R/08e9f96a9043cf18.html" target="n" data-glyph="72,1" class="i method">GetPrimaryDataFile</a>()
+        <b>public</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a> <a id="08e9f96a9043cf18" href="../R/08e9f96a9043cf18.html" target="n" data-glyph="72,1" class="i method">GetPrimaryDataFile</a>()
         &lbrace;
             <b>if</b>(<a href="#f578fb67d304902b" class="k">this</a>.<a href="#9380cb3047d1f5ad" class="i property">MapReader</a> == <a href="#f578fb67d304902b" class="k">this</a>.<a href="#361ca199379b6909" class="i property">SpShared</a>)
             &lbrace;
-                <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#44d3e2a70067bf1c" class="i field">SinglePlayerShared</a>;
+                <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#44d3e2a70067bf1c" class="i field">SinglePlayerShared</a>;
             &rbrace; 
  
             <b>if</b>(<a href="#f578fb67d304902b" class="k">this</a>.<a href="#9380cb3047d1f5ad" class="i property">MapReader</a> == <a href="#f578fb67d304902b" class="k">this</a>.<a href="#3604fb8fe8d8d73b" class="i property">MpShared</a>)
             &lbrace;
-                <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#042d7203a6c57d6d" class="i field">Shared</a>;
+                <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#042d7203a6c57d6d" class="i field">Shared</a>;
             &rbrace;
  
             <b>if</b>(<a href="#f578fb67d304902b" class="k">this</a>.<a href="#9380cb3047d1f5ad" class="i property">MapReader</a> == <a href="#f578fb67d304902b" class="k">this</a>.<a href="#9d3ae696bd323c61" class="i property">MainMenu</a>)
             &lbrace;
-                <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#3b08c613f9520e98" class="i field">MainMenu</a>;
+                <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#3b08c613f9520e98" class="i field">MainMenu</a>;
             &rbrace;
  
-            <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t t">DataFile</a>.<a href="../Enums/DataFile.cs.html#923b4d21c6a7e78e" class="i field">Local</a>;
+            <b>return</b> <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a>.<a href="../Enums/DataFile.cs.html#923b4d21c6a7e78e" class="i field">Local</a>;
         &rbrace;
  
         <b>public</b> <a href="TrackingChunk.cs.html#bd8c85ba37ddc5a8" class="t t">TrackingChunk</a> <a id="63ce2b3ffe08f5ff" href="../R/63ce2b3ffe08f5ff.html" target="n" data-glyph="72,1" class="i method">Chunk</a>(<a href="../Offsets/NormalOffset.cs.html#35b3860c9fcb5eaf" class="t t">NormalOffset</a> <span id="r7 rd" class="r7 r">offset</span>, <b>int</b> <span id="r8 rd" class="r8 r">size</span>, <b>string</b> <span id="r9 rd" class="r9 r">label</span> = <b>null</b>)

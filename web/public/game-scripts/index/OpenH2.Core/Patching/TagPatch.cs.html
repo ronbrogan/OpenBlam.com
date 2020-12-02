@@ -18,7 +18,7 @@
     &lbrace;
         <b>public string</b> <a id="3bfa874893529a9c" href="../R/3bfa874893529a9c.html" target="n" data-glyph="102,1" class="i property">PropertySelector</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
-        <b>public</b> <span class="t t">JsonElement</span> <a id="546d556038efcd7f" href="../R/546d556038efcd7f.html" target="n" data-glyph="102,1" class="i property">Value</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <span class="t valueType">JsonElement</span> <a id="546d556038efcd7f" href="../R/546d556038efcd7f.html" target="n" data-glyph="102,1" class="i property">Value</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
     &rbrace;
  
     <b>public class</b> <a id="24f076df9de7369f" href="../R/24f076df9de7369f.html" target="n" data-glyph="0,0" class="t t"><span id="c098cba94bfb6856">TagBinaryPatch</span></a>
@@ -41,7 +41,7 @@
                 <b>return</b> <span class="r0 r">typeToConvert</span> == <b>typeof</b>(<b>byte</b>[]);
             &rbrace;
  
-            <b>public override byte</b>[] <a id="a3f4f973d43f89ab" href="../R/a3f4f973d43f89ab.html" target="n" data-glyph="72,2" class="i method">Read</a>(<b>ref</b> <span class="t t">Utf8JsonReader</span> <span id="r1 rd" class="r1 r">reader</span>, <span class="t t">Type</span> <span id="r2 rd" class="r2 r">typeToConvert</span>, <span class="t t">JsonSerializerOptions</span> <span id="r3 rd" class="r3 r">options</span>)
+            <b>public override byte</b>[] <a id="a3f4f973d43f89ab" href="../R/a3f4f973d43f89ab.html" target="n" data-glyph="72,2" class="i method">Read</a>(<b>ref</b> <span class="t valueType">Utf8JsonReader</span> <span id="r1 rd" class="r1 r">reader</span>, <span class="t t">Type</span> <span id="r2 rd" class="r2 r">typeToConvert</span>, <span class="t t">JsonSerializerOptions</span> <span id="r3 rd" class="r3 r">options</span>)
             &lbrace;
                 <b>var</b> <span id="r4 rd" class="r4 r">hex</span> = <span class="r1 r">reader</span>.<span class="i method">GetString</span>();
  

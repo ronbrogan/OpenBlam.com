@@ -8,7 +8,7 @@
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>
 &lbrace;
     [<span class="t constructor">JsonConverter</span>(<b>typeof</b>(<span class="t t">JsonStringEnumConverter</span>))]
-    <b>public enum</b> <a id="e8678961cf647187" href="../R/e8678961cf647187.html" target="n" data-glyph="18,0" class="t t"><span id="a9772464dfae4aad">EncodingType</span></a> : <b>byte</b>
+    <b>public enum</b> <a id="e8678961cf647187" href="../R/e8678961cf647187.html" target="n" data-glyph="18,0" class="t valueType"><span id="a9772464dfae4aad">EncodingType</span></a> : <b>byte</b>
     &lbrace;
         <a id="ac68ef2d7033df5e" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">ImaAdpcmMono</a> = 0,
         <a id="29a5873f907f4155" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">ImaAdpcmStereo</a> = 1,
@@ -16,13 +16,13 @@
     &rbrace;
  
     [<span class="t constructor">JsonConverter</span>(<b>typeof</b>(<span class="t t">JsonStringEnumConverter</span>))]
-    <b>public enum</b> <a id="bccaafe5ef17d278" href="../R/bccaafe5ef17d278.html" target="n" data-glyph="18,0" class="t t"><span id="de2945f02554db4c">SampleRate</span></a> : <b>byte</b>
+    <b>public enum</b> <a id="bccaafe5ef17d278" href="../R/bccaafe5ef17d278.html" target="n" data-glyph="18,0" class="t valueType"><span id="de2945f02554db4c">SampleRate</span></a> : <b>byte</b>
     &lbrace;
         <a id="7a4dab9256bd9234" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">hz22k05</a> = 0,
         <a id="457baaea2071f63d" href="../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">hz44k1</a> = 1
     &rbrace;
  
-    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t t">TagName</a>.<a href="TagName.cs.html#a179cb099e6f2aa2" class="i field">snd</a>)] <span class="c">// snd!</span>
+    [<a href="Layout/TagLabelAttribute.cs.html#7365d77795319db6" class="t constructor">TagLabel</a>(<a href="TagName.cs.html#3da49de9ed337f9c" class="t valueType">TagName</a>.<a href="TagName.cs.html#a179cb099e6f2aa2" class="i field">snd</a>)] <span class="c">// snd!</span>
     <b>public class</b> <a id="fe4b8e460b3b6175" href="../R/fe4b8e460b3b6175.html" target="n" data-glyph="0,0" class="t t">SoundTag</a> : <a href="BaseTag.cs.html#f7ad3f703a9ca352" class="t t">BaseTag</a>
     &lbrace;
         <b>public override string</b> <a id="c30e3330532ffca7" href="../R/c30e3330532ffca7.html" target="n" data-glyph="102,1" class="i property">Name</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -40,10 +40,10 @@
         <b>public byte</b> <a id="0444e9e6904ab88b" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Option3</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(3)]
-        <b>public</b> <a href="#bccaafe5ef17d278" class="t t">SampleRate</a> <a id="fc6c2bf1df692a4d" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">SampleRate</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="#bccaafe5ef17d278" class="t valueType">SampleRate</a> <a id="fc6c2bf1df692a4d" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">SampleRate</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(4)]
-        <b>public</b> <a href="#e8678961cf647187" class="t t">EncodingType</a> <a id="f962e084cb9a4f81" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Encoding</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="#e8678961cf647187" class="t valueType">EncodingType</a> <a id="f962e084cb9a4f81" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Encoding</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         [<span class="t constructor">PrimitiveValue</span>(5)]
         <b>public byte</b> <a id="78194af5126c9d2c" href="../R/../../0000000000.html" target="n" data-glyph="102,1" class="i property">Format2</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;

@@ -14,17 +14,17 @@
     <b>public class</b> <a id="dd4a9f1458f93be0" href="../../R/dd4a9f1458f93be0.html" target="n" data-glyph="0,0" class="t t">BinaryOperatorContext</a> : <a href="BaseGenerationContext.cs.html#9e17a948a101b7c6" class="t t">BaseGenerationContext</a>, <a href="IGenerationContext.cs.html#7daf434dd77ce6e6" class="t t">IGenerationContext</a>
     &lbrace;
         <b>private readonly</b> <span class="t t">List</span>&lt;<span class="t t">ExpressionSyntax</span>&gt; <a id="ae9975944718eb28" href="../../R/ae9975944718eb28.html" target="n" data-glyph="46,1" class="i field">operands</a> = <b>new</b> <span class="t constructor">List</span>&lt;<span class="t t">ExpressionSyntax</span>&gt;();
-        <b>private readonly</b> <span class="t t">SyntaxKind</span> <a id="c10ead2e15afd458" href="../../R/c10ead2e15afd458.html" target="n" data-glyph="46,1" class="i field">operatorSyntaxKind</a>;
+        <b>private readonly</b> <span class="t valueType">SyntaxKind</span> <a id="c10ead2e15afd458" href="../../R/c10ead2e15afd458.html" target="n" data-glyph="46,1" class="i field">operatorSyntaxKind</a>;
  
         <b>public override bool</b> <a id="34cc7513d8fcbd0b" href="../../R/34cc7513d8fcbd0b.html" target="n" data-glyph="102,1" class="i property">CreatesScope</a> =&gt; <b>true</b>;
-        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="efc4ace529e2a64f" href="../../R/efc4ace529e2a64f.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>? <a id="efc4ace529e2a64f" href="../../R/efc4ace529e2a64f.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
  
-        <b>private</b> <span class="t t">HashSet</span>&lt;<span class="t t">SyntaxKind</span>&gt; <a id="0a660bfbe8f4f54b" href="../../R/0a660bfbe8f4f54b.html" target="n" data-glyph="46,1" class="i field">numericPromotionOperators</a> = <b>new</b> <span class="t constructor">HashSet</span>&lt;<span class="t t">SyntaxKind</span>&gt;()
+        <b>private</b> <span class="t t">HashSet</span>&lt;<span class="t valueType">SyntaxKind</span>&gt; <a id="0a660bfbe8f4f54b" href="../../R/0a660bfbe8f4f54b.html" target="n" data-glyph="46,1" class="i field">numericPromotionOperators</a> = <b>new</b> <span class="t constructor">HashSet</span>&lt;<span class="t valueType">SyntaxKind</span>&gt;()
         &lbrace;
-            <span class="t t">SyntaxKind</span>.<span class="i field">AddExpression</span>, <span class="t t">SyntaxKind</span>.<span class="i field">SubtractExpression</span>, <span class="t t">SyntaxKind</span>.<span class="i field">MultiplyExpression</span>, <span class="t t">SyntaxKind</span>.<span class="i field">DivideExpression</span>, <span class="t t">SyntaxKind</span>.<span class="i field">ModuloExpression</span>
+            <span class="t valueType">SyntaxKind</span>.<span class="i field">AddExpression</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">SubtractExpression</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">MultiplyExpression</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">DivideExpression</span>, <span class="t valueType">SyntaxKind</span>.<span class="i field">ModuloExpression</span>
         &rbrace;;
  
-        <b>public</b> <a id="43f7f835592c654c" href="../../R/43f7f835592c654c.html" target="n" data-glyph="72,1" class="t constructor">BinaryOperatorContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <span class="t t">SyntaxKind</span> <span id="r1 rd" class="r1 r">operatorSyntaxKind</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a> <span id="r2 rd" class="r2 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
+        <b>public</b> <a id="43f7f835592c654c" href="../../R/43f7f835592c654c.html" target="n" data-glyph="72,1" class="t constructor">BinaryOperatorContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r0 rd" class="r0 r">node</span>, <span class="t valueType">SyntaxKind</span> <span id="r1 rd" class="r1 r">operatorSyntaxKind</span>, <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a> <span id="r2 rd" class="r2 r">returnType</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r0 r">node</span>)
         &lbrace;
             <a href="#dd4a9f1458f93be0" class="k">this</a>.<a href="#c10ead2e15afd458" class="i field">operatorSyntaxKind</a> = <span class="r1 r">operatorSyntaxKind</span>;
             <a href="#dd4a9f1458f93be0" class="k">this</a>.<a href="#efc4ace529e2a64f" class="i property">OwnDataType</a> = <span class="r2 r">returnType</span>;
@@ -42,7 +42,7 @@
             &rbrace;
  
             <b>var</b> <span id="r6 rd" class="r6 r">left</span> = <span class="r4 r">ops</span>.<span class="i method">Dequeue</span>();
-            <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <span id="r7 rd" class="r7 r">topType</span> = <a href="#dd4a9f1458f93be0" class="k">this</a>.<a href="#efc4ace529e2a64f" class="i property">OwnDataType</a>;
+            <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>? <span id="r7 rd" class="r7 r">topType</span> = <a href="#dd4a9f1458f93be0" class="k">this</a>.<a href="#efc4ace529e2a64f" class="i property">OwnDataType</a>;
  
             <b>while</b>(<span class="r4 r">ops</span>.<span class="i method">Any</span>())
             &lbrace;

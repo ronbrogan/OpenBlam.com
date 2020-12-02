@@ -13,7 +13,7 @@
     &lbrace;
         <b>private readonly</b> <span class="t t">ExpressionSyntax</span> <a id="abe94dc7ef1896cd" href="../../R/abe94dc7ef1896cd.html" target="n" data-glyph="46,1" class="i field">accessor</a>;
  
-        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t t">ScriptDataType</a>? <a id="9d555be403802f9b" href="../../R/9d555be403802f9b.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public override</b> <a href="../ScriptDataType.cs.html#866fa5fa2c3ada44" class="t valueType">ScriptDataType</a>? <a id="9d555be403802f9b" href="../../R/9d555be403802f9b.html" target="n" data-glyph="102,1" class="i property">OwnDataType</a> &lbrace; <b>get</b>; &rbrace;
  
         <b>public</b> <a id="505b1ba0e3f9c0ac" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="t constructor">NavigationPointContext</a>(<a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r0 rd" class="r0 r">scenario</span>, <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../../Tags/Scenario/ScenarioScripting.cs.html#3b015c6707b00db4" class="t t">ScriptSyntaxNode</a> <span id="r1 rd" class="r1 r">node</span>) : <a href="BaseGenerationContext.cs.html#86e5f0edf0083093" class="k">base</a>(<span class="r1 r">node</span>)
         &lbrace;
@@ -27,8 +27,8 @@
             &lbrace;
                 <b>var</b> <span id="r2 rd" class="r2 r">stringVal</span> = <a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#af996a91b55a4aee" class="i method">GetScriptString</a>(<span class="r0 r">scenario</span>, <span class="r1 r">node</span>);
  
-                <a href="#abe94dc7ef1896cd" class="i field">accessor</a> = <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
-                    <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t t">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                <a href="#abe94dc7ef1896cd" class="i field">accessor</a> = <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
+                    <span class="t t">SyntaxFactory</span>.<span class="i method">MemberAccessExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">SimpleMemberAccessExpression</span>,
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;ScriptEngine&quot;</span>),
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<span class="s">&quot;NavigationPoints&quot;</span>)),
                     <span class="t t">SyntaxFactory</span>.<span class="i method">IdentifierName</span>(<a href="../Generation/SyntaxUtil.cs.html#9bb096197e67b95e" class="t t">SyntaxUtil</a>.<a href="../Generation/SyntaxUtil.cs.html#6c6a20a78a45084a" class="i method">SanitizeIdentifier</a>(<span class="r2 r">stringVal</span>)));

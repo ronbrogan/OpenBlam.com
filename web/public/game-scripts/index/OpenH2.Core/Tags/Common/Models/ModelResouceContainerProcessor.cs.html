@@ -10,9 +10,9 @@
 &lbrace;
     <b>public static class</b> <a id="ddc2cfa5e30341bf" href="../../../R/ddc2cfa5e30341bf.html" target="n" data-glyph="0,0" class="t t">ModelResouceContainerProcessor</a>
     &lbrace;
-        <b>private struct</b> <a id="a357f39c5d054824" href="../../../R/a357f39c5d054824.html" target="n" data-glyph="112,1" class="t t"><span id="edab3827521a406e">PartDescription</span></a>
+        <b>private struct</b> <a id="a357f39c5d054824" href="../../../R/a357f39c5d054824.html" target="n" data-glyph="112,1" class="t valueType"><span id="edab3827521a406e">PartDescription</span></a>
         &lbrace;
-            <b>public</b> <a id="93c5227f73a099ee" href="../../../R/93c5227f73a099ee.html" target="n" data-glyph="72,2" class="t constructor">PartDescription</a>(<b>int</b> <span id="r0 rd" class="r0 r">indexStart</span>, <b>int</b> <span id="r1 rd" class="r1 r">indexCount</span>, <a href="../../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../../ShaderTag.cs.html#e6d7cc959d02ba84" class="t t">ShaderTag</a>&gt; <span id="r2 rd" class="r2 r">shader</span>, <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a> <span id="r3 rd" class="r3 r">elementType</span>)
+            <b>public</b> <a id="93c5227f73a099ee" href="../../../R/93c5227f73a099ee.html" target="n" data-glyph="72,2" class="t constructor">PartDescription</a>(<b>int</b> <span id="r0 rd" class="r0 r">indexStart</span>, <b>int</b> <span id="r1 rd" class="r1 r">indexCount</span>, <a href="../../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../../ShaderTag.cs.html#e6d7cc959d02ba84" class="t t">ShaderTag</a>&gt; <span id="r2 rd" class="r2 r">shader</span>, <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a> <span id="r3 rd" class="r3 r">elementType</span>)
             &lbrace;
                 <a href="#81b619f5b877339b" class="i field">IndexStart</a> = <span class="r0 r">indexStart</span>;
                 <a href="#ed3bf2c765d3ad16" class="i field">IndexCount</a> = <span class="r1 r">indexCount</span>;
@@ -22,16 +22,16 @@
  
             <b>public int</b> <a id="81b619f5b877339b" href="../../../R/81b619f5b877339b.html" target="n" data-glyph="42,2" class="i field">IndexStart</a>;
             <b>public int</b> <a id="ed3bf2c765d3ad16" href="../../../R/ed3bf2c765d3ad16.html" target="n" data-glyph="42,2" class="i field">IndexCount</a>;
-            <b>public</b> <a href="../../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t t">TagRef</a>&lt;<a href="../../ShaderTag.cs.html#e6d7cc959d02ba84" class="t t">ShaderTag</a>&gt; <a id="3c95876ae08ded9e" href="../../../R/3c95876ae08ded9e.html" target="n" data-glyph="42,2" class="i field">Shader</a>;
-            <b>public</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a> <a id="71397d5334b4fcc7" href="../../../R/71397d5334b4fcc7.html" target="n" data-glyph="42,2" class="i field">ElementType</a>;
+            <b>public</b> <a href="../../../Maps/TagRef.cs.html#c9ea8e3a759f346e" class="t valueType">TagRef</a>&lt;<a href="../../ShaderTag.cs.html#e6d7cc959d02ba84" class="t t">ShaderTag</a>&gt; <a id="3c95876ae08ded9e" href="../../../R/3c95876ae08ded9e.html" target="n" data-glyph="42,2" class="i field">Shader</a>;
+            <b>public</b> <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a> <a id="71397d5334b4fcc7" href="../../../R/71397d5334b4fcc7.html" target="n" data-glyph="42,2" class="i field">ElementType</a>;
         &rbrace;
  
         <b>public static</b> <a href="ModelMesh.cs.html#8e1a179f8ba71c70" class="t t">ModelMesh</a>[] <a id="af05f444557f0a2a" href="../../../R/af05f444557f0a2a.html" target="n" data-glyph="72,1" class="i method">ProcessContainer</a>(<a href="IModelResourceContainer.cs.html#1e57445f6fe458d9" class="t t">IModelResourceContainer</a> <span id="r4 rd" class="r4 r">container</span>, <a href="ModelShaderReference.cs.html#594adb9985376c7a" class="t t">ModelShaderReference</a>[] <span id="r5 rd" class="r5 r">shaders</span>, <b>string</b> <span id="r6 rd" class="r6 r">note</span> = <b>null</b>)
         &lbrace;
-            <b>var</b> <span id="r7 rd" class="r7 r">parts</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="#a357f39c5d054824" class="t t">PartDescription</a>&gt;((<b>int</b>)<span class="r4 r">container</span>.<a href="IModelResourceContainer.cs.html#72d294f6908e9cf2" class="i property">Header</a>.<a href="ModelResourceBlockHeader.cs.html#122cb219607cbe77" class="i property">PartInfoCount</a>);
+            <b>var</b> <span id="r7 rd" class="r7 r">parts</span> = <b>new</b> <span class="t constructor">List</span>&lt;<a href="#a357f39c5d054824" class="t valueType">PartDescription</a>&gt;((<b>int</b>)<span class="r4 r">container</span>.<a href="IModelResourceContainer.cs.html#72d294f6908e9cf2" class="i property">Header</a>.<a href="ModelResourceBlockHeader.cs.html#122cb219607cbe77" class="i property">PartInfoCount</a>);
  
-            <b>var</b> <span id="r8 rd" class="r8 r">verts</span> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t t">VertexFormat</a>[<span class="r4 r">container</span>.<a href="IModelResourceContainer.cs.html#b754929eedae6912" class="i property">VertexCount</a>];
-            <span class="t t">Span</span>&lt;<b>int</b>&gt; <span id="r9 rd" class="r9 r">indices</span> = <b>new</b> <b>int</b>[<span class="r4 r">container</span>.<a href="IModelResourceContainer.cs.html#72d294f6908e9cf2" class="i property">Header</a>.<a href="ModelResourceBlockHeader.cs.html#5b9fec43c5edaf74" class="i property">IndexCount</a>];
+            <b>var</b> <span id="r8 rd" class="r8 r">verts</span> = <b>new</b> <a href="/OpenH2.Foundation/A.html#bd15aecb4fc5f3a4" class="t valueType">VertexFormat</a>[<span class="r4 r">container</span>.<a href="IModelResourceContainer.cs.html#b754929eedae6912" class="i property">VertexCount</a>];
+            <span class="t valueType">Span</span>&lt;<b>int</b>&gt; <span id="r9 rd" class="r9 r">indices</span> = <b>new</b> <b>int</b>[<span class="r4 r">container</span>.<a href="IModelResourceContainer.cs.html#72d294f6908e9cf2" class="i property">Header</a>.<a href="ModelResourceBlockHeader.cs.html#5b9fec43c5edaf74" class="i property">IndexCount</a>];
  
             <b>var</b> <span id="r10 rd" class="r10 r">currentResource</span> = 0;
  
@@ -44,7 +44,7 @@
                 &lbrace;
                     <b>var</b> <span id="r13 rd" class="r13 r">start</span> = <span class="r12 r">i</span> * 72;
  
-                    <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="k">var</a> <span id="r14 rd" class="r14 r">elementType</span> = (<a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t t">MeshElementType</a>)<span class="r11 r">partData</span>.<a href="../../../Extensions/SpanByteExtensions.cs.html#da47b1ab06f188ad" class="i method">ReadUInt16At</a>(<span class="r13 r">start</span> + 2);
+                    <a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="k">var</a> <span id="r14 rd" class="r14 r">elementType</span> = (<a href="/OpenH2.Foundation/A.html#ff0e5b2b351e661b" class="t valueType">MeshElementType</a>)<span class="r11 r">partData</span>.<a href="../../../Extensions/SpanByteExtensions.cs.html#da47b1ab06f188ad" class="i method">ReadUInt16At</a>(<span class="r13 r">start</span> + 2);
                     <b>var</b> <span id="r15 rd" class="r15 r">matId</span> = <span class="r11 r">partData</span>.<a href="../../../Extensions/SpanByteExtensions.cs.html#da47b1ab06f188ad" class="i method">ReadUInt16At</a>(<span class="r13 r">start</span> + 4);
                     <b>var</b> <span id="r16 rd" class="r16 r">indexStart</span> = <span class="r11 r">partData</span>.<a href="../../../Extensions/SpanByteExtensions.cs.html#da47b1ab06f188ad" class="i method">ReadUInt16At</a>(<span class="r13 r">start</span> + 6);
                     <b>var</b> <span id="r17 rd" class="r17 r">indexCount</span> = <span class="r11 r">partData</span>.<a href="../../../Extensions/SpanByteExtensions.cs.html#da47b1ab06f188ad" class="i method">ReadUInt16At</a>(<span class="r13 r">start</span> + 8);

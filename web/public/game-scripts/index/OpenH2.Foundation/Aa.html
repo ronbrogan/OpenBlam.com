@@ -1,15 +1,12 @@
-﻿<!DOCTYPE html>
-<html><head><title>Redirecting...</title><script src="../scripts.js"></script>
-<script>
-
+﻿(function(){
 var f = [
-"FileSystem/FileWatcher.cs",
-"Logging/Logger.cs",
-"Material.cs",
-"Model.cs",
-"Numerics/VectorD3.cs",
-"Physics/ICollider.cs",
-"Physics/ITransform.cs",
+"OpenH2.Foundation/FileSystem/FileWatcher.cs",
+"OpenH2.Foundation/Logging/Logger.cs",
+"OpenH2.Foundation/Material.cs",
+"OpenH2.Foundation/Model.cs",
+"OpenH2.Foundation/Numerics/VectorD3.cs",
+"OpenH2.Foundation/Physics/ICollider.cs",
+"OpenH2.Foundation/Physics/ITransform.cs",
 ];
 var m = new Object();
 m["255c4c9"]=f[5];
@@ -23,9 +20,5 @@ m["b5da158"]=f[1];
 m["d62ec72"]=f[2];
 m["e2487d5"]=f[2];
 m["fbd06bc"]=f[6];
-redirect(m, 8);
-
-</script>
-</head><body>
-Don't use this page directly, pass #symbolId to get redirected.
-</body></html>
+return {map: m, bytes: 8 };
+})();
