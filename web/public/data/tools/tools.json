@@ -1,0 +1,47 @@
+{
+    "tools": [
+        {
+            "name": "Game Script Explorer",
+            "location": "/tools/game-scripts",
+            "thumb": "/assets/tools/game-scripts_200.png",
+            "description": "View and navigate game scripts that have been transpiled into plain C#",
+            "sourceLocation": "https://github.com/ronbrogan/halo-scripts",
+            "contributors": [{ "alias": "Ron Brogan", "github": "https://github.com/ronbrogan" }]
+        },
+        {
+            "name": "OpenH2",
+            "location": "https://github.com/ronbrogan/openh2",
+            "thumb": "/assets/tools/openh2_200.png",
+            "description": "An open source engine (and tools) for Halo 2",
+            "sourceLocation": "https://github.com/ronbrogan/OpenH2",
+            "contributors": [{ "alias": "Ron Brogan", "github": "https://github.com/ronbrogan" }]
+        },
+        {
+            "name": "Halo Checkpoint Manager",
+            "location": "https://github.com/Burnt-o/HaloCheckpointManager/releases",
+            "thumb": "https://cdn.discordapp.com/attachments/293842240529235968/784653379527376916/hcm_h2preview.png",
+            "description": "A tool for saving/loading checkpoints in MCC games",
+            "sourceLocation": "https://github.com/Burnt-o/HaloCheckpointManager",
+            "contributors": [
+                { "alias": "Burnt", "github": "https://github.com/Burnt-o" },
+                { "alias": "Scaless", "github": "https://github.com/Scaless" }
+            ]
+        },
+        {
+            "name": "OpenBlam.Serialization Package",
+            "location": "https://www.nuget.org/packages/OpenBlam.Serialization/",
+            "thumb": "/assets/logo_200.png",
+            "description": "Binary deserialization package to read map data structures",
+            "sourceLocation": "https://github.com/ronbrogan/OpenBlam/tree/master/src/OpenBlam.Serialization",
+            "contributors": [{ "alias": "Ron Brogan", "github": "https://github.com/ronbrogan" }]
+        },
+        {
+            "name": "OpenBlam.Core Package",
+            "location": "https://www.nuget.org/packages/OpenBlam.Core/",
+            "thumb": "/assets/logo_200.png",
+            "description": "Core library for OpenBlam projects",
+            "sourceLocation": "https://github.com/ronbrogan/OpenBlam/tree/master/src/OpenBlam.Core",
+            "contributors": [{ "alias": "Ron Brogan", "github": "https://github.com/ronbrogan" }]
+        }
+    ]
+}

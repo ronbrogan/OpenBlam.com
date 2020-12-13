@@ -1,18 +1,22 @@
 import React from 'react';
-import { NavLink, withRouter, Switch, Route, RouteComponentProps, Redirect } from 'react-router-dom';
+import {  Switch, Route } from 'react-router-dom';
 import GameScriptView from './GameScriptView/GameScriptView';
+import { ManifestProps, withManifest } from '../Core/withManifest';
+import ToolEntry from './ToolEntry/ToolEntry';
+import { ToolsManifest } from './ToolData';
+import './Tools.scss';
 
-export default class Tools extends React.Component {
+export class Tools extends React.Component<ManifestProps<ToolsManifest>, any, any> {
     getToolsListing() {
-        return (<section>
+        return (<section className="tools">
             <h1>
                 Tools
             </h1>
-            <ul>
-                <li><a href="/tools/game-scripts">Game Script Explorer</a></li>
-                <li><a href="https://www.nuget.org/packages/OpenBlam.Serialization/">OpenBlam.Serialization</a><sup><a href="https://github.com/ronbrogan/OpenBlam/tree/master/src/OpenBlam.Serialization">[source]</a></sup></li>
-                <li><a href="https://github.com/ronbrogan/openh2">OpenH2</a></li>
-            </ul>
+            <div className="tools-list">
+                {this.props.manifest?.tools.map(t => {
+                    return (<ToolEntry {...t} key={t.location} />)
+                })}
+            </div>
         </section>);
     }
 
@@ -29,3 +33,5 @@ export default class Tools extends React.Component {
         )
     }
 }
+
+export default withManifest(Tools, "/data/tools/tools.json");

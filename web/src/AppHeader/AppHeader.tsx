@@ -7,7 +7,7 @@ export default class AppHeader extends React.Component {
         return (
             <header>
                 <div className="logo">
-                    <img src="/assets/logo.png" width="48" height="48" />
+                    <img src="/assets/logo_48.png" width="48" height="48" />
                     <div className="text">
                         <p className="maintext"><span>Open</span><span className="blam">Blam</span></p>
                         <p className="subtext">The home of technical Halo info</p>

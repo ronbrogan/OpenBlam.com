@@ -1,0 +1,53 @@
+$padding: 15px;
+
+.tool-widget {
+    background-color: #4a4a4a;
+    width: 285px;
+    padding: $padding;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .tool-content {
+        position: relative;
+
+
+        $sourceLinkSize: 35px;
+        .source-link {
+            position: absolute;
+            top: -$padding;
+            right: -$padding;
+            width: 0;
+            height: 0;
+            border-left: $sourceLinkSize*2 solid transparent;
+            border-top: $sourceLinkSize*2 solid #3681c3;
+            
+            a {
+                width: 20px;
+                font-weight: bold;
+                bottom: 39px;
+                right: 10px;
+                position: absolute;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    
+        img {
+            height: 150px;
+        }
+    }
+
+    .contributor-list {
+        margin-top: 15px;
+        direction: rtl;
+    }
+}
