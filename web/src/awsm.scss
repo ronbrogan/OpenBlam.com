@@ -689,6 +689,9 @@ $color-map: (
  code, kbd, var, samp {
    font-family: font('mono');
    font-style: normal;
+   background-color: rgba(128, 128, 128, 0.4);
+   padding: 5px;
+   border-radius: 4px;
  }
  
  pre {

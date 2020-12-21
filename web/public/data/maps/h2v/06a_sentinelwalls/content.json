@@ -1,0 +1,9 @@
+{
+    "mechanics": [
+        {
+            "title": "End Fight",
+            "stub": "endFight",
+            "contentPath": "end-condition.md"
+        }
+    ]
+}

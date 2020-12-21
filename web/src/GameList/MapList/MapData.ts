@@ -35,3 +35,16 @@ export interface WeaponInfo
     position: number[];
     byDefault: boolean;
 }
+
+export interface MapContent 
+{
+    mechanics: MapMechanic[];
+}
+
+export interface MapMechanic
+{
+    title: string,
+    stub: string,
+    contentPath: string,
+    content: string
+}

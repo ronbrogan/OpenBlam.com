@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route, RouteComponentProps, withRouter } from 'react-router-dom';
-import { MapSummary } from '../MapData';
+import { MapContent, MapSummary } from '../MapData';
 import './MapDetails.scss';
 
 interface MapDetailProps {
@@ -10,10 +10,12 @@ interface MapDetailProps {
 
 interface MapDetailState {
     mapData: MapSummary;
+    mapContent: MapContent;
 }
 
 export class MapDetails extends React.Component<RouteComponentProps<MapDetailProps>, MapDetailState, any>{
     static detailCache: { [key: string]: MapSummary } = {};
+    static contentCache: { [key: string]: MapContent } = {};
 
     mapName: string = "";
     gameIdentifier: string = "";
@@ -26,14 +28,46 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
     async componentDidMount() {
         this.gameIdentifier = this.props.match.params.gameIdentifier;
         this.mapName = this.props.match.params.mapName;
+
+        if(MapDetails.contentCache[this.mapName] === undefined) {
+            fetch(`/data/maps/${this.gameIdentifier}/${this.mapName}/content.json`)
+                .then(r => r.json())
+                .then(j => {
+                    MapDetails.contentCache[this.mapName] = j as MapContent;
+                    this.populateContent();
+                    this.setState({mapContent: MapDetails.contentCache[this.mapName]});        
+                });
+        }
+        else {
+            this.setState({mapContent: MapDetails.contentCache[this.mapName]});
+        }
+
         if (MapDetails.detailCache[this.mapName] == undefined) {
-            const resp = await fetch(`/data/maps/${this.gameIdentifier}/${this.mapName}/details.json`);
-            MapDetails.detailCache[this.mapName] = (await resp.json()) as MapSummary;
-            this.setState({ mapData: MapDetails.detailCache[this.mapName] });
+            fetch(`/data/maps/${this.gameIdentifier}/${this.mapName}/details.json`)
+                .then(r => r.json())
+                .then(j => {
+                    MapDetails.detailCache[this.mapName] = j as MapSummary;
+                    this.setState({ mapData: MapDetails.detailCache[this.mapName] });
+                });
         }
         else {
             this.setState({ mapData: MapDetails.detailCache[this.mapName] });
         }
+    }
+
+    async populateContent() {
+        
+        const tasks = MapDetails.contentCache[this.mapName].mechanics
+            .map(m => fetch(`/data/maps/${this.gameIdentifier}/${this.mapName}/${m.contentPath}`)
+            .then(r => r.text())
+            .then(t =>{
+                // @ts-ignore
+                m.content = marked(t);
+            }));
+
+        await Promise.all(tasks);
+
+        this.setState({mapContent: MapDetails.contentCache[this.mapName]});    
     }
 
     getMainSection() {
@@ -54,7 +88,16 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
                 <ol>
                     <li><Link to="#aboutSection">About</Link></li>
                     <li><Link to="#dialogSection">Dialog</Link></li>
-                    <li><Link to="#triviaSection">Trivia</Link></li>
+                    <li><Link to="#mechanicsSection">Mechanics</Link>
+                        {this.state?.mapContent?.mechanics ?
+                        (<ol>
+                            {
+                                this.state.mapContent?.mechanics.map(m => 
+                                    (<li><Link to={"#mechanicsSection_" + m.stub}>{m.title}</Link></li>))
+                            }
+                        </ol>)
+                        : null}
+                    </li>
                 </ol>
             </nav>
         )
@@ -88,11 +131,21 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
         );
     }
 
-    getTrivia() {
+    getMechanics() {
         return (
             <section>
-                <h1 id="triviaSection">Trivia</h1>
-                <em>nothing to see here</em>
+                <h1 id="mechanicsSection">Mechanics</h1>
+                {this.state.mapContent?.mechanics?.length ? null : (<em>nothing to see here</em>)}
+                {
+                    this.state.mapContent?.mechanics?.map(m => 
+                        (
+                            <article>
+                                <h3 id={"mechanicsSection_" + m.stub}>{m.title}</h3>
+                                <p dangerouslySetInnerHTML={{__html: m.content}}></p>
+                            </article>
+                        )
+                    )
+                }
             </section>
         );
     }
@@ -105,7 +158,7 @@ export class MapDetails extends React.Component<RouteComponentProps<MapDetailPro
             <div className="mapDetails">
                 {this.getMainSection()}
                 {this.getDialog()}
-                {this.getTrivia()}
+                {this.getMechanics()}
             </div>
         );
     }
