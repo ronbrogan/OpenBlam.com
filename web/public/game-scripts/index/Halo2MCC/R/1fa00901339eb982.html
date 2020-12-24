@@ -9,11 +9,11 @@
 <a href="../01b_spacestation.cs.html#3530"><b>3530</b>Engine.object_create_anew(<i>carrier_02</i>);</a>
 <a href="../01b_spacestation.cs.html#3538"><b>3538</b>Engine.object_cinematic_lod(<i>carrier_02</i>.Entity, true);</a>
 <a href="../01b_spacestation.cs.html#3568"><b>3568</b>Engine.scenery_animation_start_relative(<i>carrier_02</i>.Entity, Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;scenarios\\objects\\covenant\\military\\capital_ship\\01_outro\\01_outro&quot;, 4097839648U), &quot;capship02_07&quot;, anchor_outro2.Entity);</a>
-<a href="../01b_spacestation.cs.html#5881"><b>5881</b>Engine.object_create(<i>carrier_02</i>);</a>
-<a href="../01b_spacestation.cs.html#5882"><b>5882</b>Engine.scenery_animation_start_relative(<i>carrier_02</i>.Entity, Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;scenarios\\objects\\covenant\\military\\capital_ship\\spacestation\\spacestation&quot;, 4112978695U), &quot;capital_ship_02&quot;, anchor_outro1.Entity);</a>
-<a href="../01b_spacestation.cs.html#5883"><b>5883</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\scenery\\solids\\human_fleet_ships_attack_carrier&quot;, 4112257788U), <i>carrier_02</i>.Entity, &quot;bow&quot;);</a>
-<a href="../01b_spacestation.cs.html#5886"><b>5886</b>await Engine.sleep_until(async () =&gt; Engine.scenery_get_animation_time(<i>carrier_02</i>.Entity) == 0, 1);</a>
-<a href="../01b_spacestation.cs.html#5887"><b>5887</b>Engine.object_destroy(<i>carrier_02</i>.Entity);</a>
+<a href="../01b_spacestation.cs.html#5882"><b>5882</b>Engine.object_create(<i>carrier_02</i>);</a>
+<a href="../01b_spacestation.cs.html#5883"><b>5883</b>Engine.scenery_animation_start_relative(<i>carrier_02</i>.Entity, Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;scenarios\\objects\\covenant\\military\\capital_ship\\spacestation\\spacestation&quot;, 4112978695U), &quot;capital_ship_02&quot;, anchor_outro1.Entity);</a>
+<a href="../01b_spacestation.cs.html#5884"><b>5884</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\scenery\\solids\\human_fleet_ships_attack_carrier&quot;, 4112257788U), <i>carrier_02</i>.Entity, &quot;bow&quot;);</a>
+<a href="../01b_spacestation.cs.html#5887"><b>5887</b>await Engine.sleep_until(async () =&gt; Engine.scenery_get_animation_time(<i>carrier_02</i>.Entity) == 0, 1);</a>
+<a href="../01b_spacestation.cs.html#5888"><b>5888</b>Engine.object_destroy(<i>carrier_02</i>.Entity);</a>
 </div>
 </div>
 </div>

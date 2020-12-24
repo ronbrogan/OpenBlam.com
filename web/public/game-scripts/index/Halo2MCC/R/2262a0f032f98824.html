@@ -3,7 +3,7 @@
 <a href="../05b_deltatowers.Data.cs.html#847"><b>847</b><i>gondola_02_a</i> = new ScenarioEntity&lt;IDevice&gt;(87, scenarioTag.WellKnownItems[87]);</a>
 </div>
 </div>
-<div class="rH">34 references to gondola_02_a</div><div class="rA">Halo2MCC (34)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (34)</div>
+<div class="rH">45 references to gondola_02_a</div><div class="rA">Halo2MCC (45)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (45)</div>
 <a href="../05b_deltatowers.cs.html#4019"><b>4019</b>Engine.objects_attach(<i>gondola_02_a</i>.Entity, &quot;control_front&quot;, gondola_02_switch_front.Entity, &quot;&quot;);</a>
 <a href="../05b_deltatowers.cs.html#4192"><b>4192</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), <i>gondola_02_a</i>.Entity, 30F) == true || Engine.volume_test_objects(vol_gondola_02, Engine.players()) == true);</a>
 <a href="../05b_deltatowers.cs.html#4210"><b>4210</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) &gt; 0F, 30, 1800);</a>
@@ -32,6 +32,17 @@
 <a href="../05b_deltatowers.cs.html#4629"><b>4629</b>Engine.device_set_position(<i>gondola_02_a</i>.Entity, 1F);</a>
 <a href="../05b_deltatowers.cs.html#4634"><b>4634</b>Engine.device_set_position(<i>gondola_02_a</i>.Entity, 0.54F);</a>
 <a href="../05b_deltatowers.cs.html#4638"><b>4638</b>return Engine.device_get_position(<i>gondola_02_a</i>.Entity) &gt; 0.6F;</a>
+<a href="../05b_deltatowers.cs.html#4701"><b>4701</b>Engine.object_dynamic_simulation_disable(<i>gondola_02_a</i>.Entity, false);</a>
+<a href="../05b_deltatowers.cs.html#4706"><b>4706</b>Engine.device_set_position(<i>gondola_02_a</i>.Entity, 0.54F);</a>
+<a href="../05b_deltatowers.cs.html#4712"><b>4712</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) &gt;= 0.25F);</a>
+<a href="../05b_deltatowers.cs.html#4719"><b>4719</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) &gt;= 0.43F);</a>
+<a href="../05b_deltatowers.cs.html#4723"><b>4723</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) == 0.54F);</a>
+<a href="../05b_deltatowers.cs.html#4724"><b>4724</b>Engine.object_dynamic_simulation_disable(<i>gondola_02_a</i>.Entity, true);</a>
+<a href="../05b_deltatowers.cs.html#4729"><b>4729</b>Engine.object_dynamic_simulation_disable(<i>gondola_02_a</i>.Entity, false);</a>
+<a href="../05b_deltatowers.cs.html#4733"><b>4733</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) &gt; 0.75F);</a>
+<a href="../05b_deltatowers.cs.html#4740"><b>4740</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) &gt; 0.9F);</a>
+<a href="../05b_deltatowers.cs.html#4744"><b>4744</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_02_a</i>.Entity) == 1F);</a>
+<a href="../05b_deltatowers.cs.html#4745"><b>4745</b>Engine.object_dynamic_simulation_disable(<i>gondola_02_a</i>.Entity, true);</a>
 </div>
 </div>
 </div>

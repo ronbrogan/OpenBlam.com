@@ -6,7 +6,7 @@
 <div class="rH">3 references to e7_pro_inf0</div><div class="rA">Halo2MCC (3)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08b_deltacontrol.cs (3)</div>
 <a href="../08b_deltacontrol.cs.html#5785"><b>5785</b>await Engine.sleep(Engine.ai_play_line(<i>e7_pro_inf0</i>.guard0, &quot;0090&quot;));</a>
 <a href="../08b_deltacontrol.cs.html#5828"><b>5828</b>Engine.ai_place(<i>e7_pro_inf0</i>.Squad);</a>
-<a href="../08b_deltacontrol.cs.html#5878"><b>5878</b>return (short)Engine.structure_bsp_index() == 0 &amp;&amp; !(Engine.volume_test_objects(tv_e7_brute_area, Engine.ai_actors(<i>e7_pro_inf0</i>.Squad)));</a>
+<a href="../08b_deltacontrol.cs.html#5878"><b>5878</b>return (short)Engine.structure_bsp_index() == 0 &amp;&amp; !(Engine.volume_test_objects(tv_e7_brute_area, Engine.ai_actors(<i>e7_pro_inf0</i>.Squad))) &amp;&amp; (bool)Engine.game_safe_to_save();</a>
 </div>
 </div>
 </div>

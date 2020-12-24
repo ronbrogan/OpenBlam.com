@@ -14,82 +14,82 @@
 <div class="rF"><div class="rN">03a_oldmombasa.cs (4)</div>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#136"><b>136</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 0));</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#142"><b>142</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 1));</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3800"><b>3800</b>Engine.ai_attach_units(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(e6_mars_inf0.Squad), 0)), e7_mars_inf0.Squad);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3872"><b>3872</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(e6_cov_inf0), (short)Engine.random_range(0, Engine.list_count(Engine.ai_actors(e6_cov_inf0)))));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3906"><b>3906</b>Engine.ai_attach_units(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(e6_mars_inf0.Squad), 0)), e7_mars_inf0.Squad);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3978"><b>3978</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(e6_cov_inf0), (short)Engine.random_range(0, Engine.list_count(Engine.ai_actors(e6_cov_inf0)))));</a>
 </div>
 <div class="rF"><div class="rN">03b_newmombasa.cs (5)</div>
 <a href="../../Halo2MCC/03b_newmombasa.cs.html#126"><b>126</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 0));</a>
 <a href="../../Halo2MCC/03b_newmombasa.cs.html#132"><b>132</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 1));</a>
 <a href="../../Halo2MCC/03b_newmombasa.cs.html#2828"><b>2828</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(e23_cov_inf0), (short)Engine.random_range(0, Engine.list_count(Engine.ai_actors(e23_cov_inf0)))));</a>
 <a href="../../Halo2MCC/03b_newmombasa.cs.html#2842"><b>2842</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(e23_cov_inf0), (short)Engine.random_range(0, Engine.list_count(Engine.ai_actors(e23_cov_inf0)))));</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#3704"><b>3704</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(tv_e22_street_cleanup, 2), 0));</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#3707"><b>3707</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(tv_e22_street_cleanup, 2), 0));</a>
 </div>
 <div class="rF"><div class="rN">04a_gasgiant.cs (72)</div>
 <a href="../../Halo2MCC/04a_gasgiant.cs.html#94"><b>94</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 0));</a>
 <a href="../../Halo2MCC/04a_gasgiant.cs.html#100"><b>100</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 1));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3152"><b>3152</b>Engine.unit_stop_custom_animation(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3225"><b>3225</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\elite\\elite&quot;, 3890546287U), &quot;uplink_station&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3235"><b>3235</b>await Engine.sleep_until(async () =&gt; this.open_rec_center == true || Engine.object_get_health(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0)) &lt;= 0F, 30, 360);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3299"><b>3299</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_recycling_pit), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3301"><b>3301</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_recycling_pit, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3360"><b>3360</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(rec_center_heretic_03.Squad), 0)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\elite\\elite&quot;, 3890546287U), &quot;uplink_station&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3362"><b>3362</b>Engine.unit_stop_custom_animation(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(rec_center_heretic_03.Squad), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3599"><b>3599</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_01), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3601"><b>3601</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_01, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3603"><b>3603</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_02), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3605"><b>3605</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_02, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3607"><b>3607</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_03), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3609"><b>3609</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_03, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3611"><b>3611</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_04), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3613"><b>3613</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_04, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3625"><b>3625</b>Engine.objects_attach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0), &quot;primary_trigger&quot;, help_can_01.Entity, &quot;top&quot;);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3629"><b>3629</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0), help_can_01.Entity);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3641"><b>3641</b>Engine.objects_attach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0), &quot;primary_trigger&quot;, help_can_02.Entity, &quot;top&quot;);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3644"><b>3644</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0), help_can_02.Entity);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3998"><b>3998</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0)), swap, true, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#3999"><b>3999</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0)), swap, true, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4000"><b>4000</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_03.Squad), 0)), swap, true, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4001"><b>4001</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0), help_can_01.Entity);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4002"><b>4002</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0), help_can_02.Entity);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4057"><b>4057</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 3)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 3), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4059"><b>4059</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 3));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4062"><b>4062</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4064"><b>4064</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4067"><b>4067</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4069"><b>4069</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4072"><b>4072</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4074"><b>4074</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4093"><b>4093</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4095"><b>4095</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4098"><b>4098</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4100"><b>4100</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4103"><b>4103</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0), 45F) == false)</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4105"><b>4105</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4703"><b>4703</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_underhangar_pit_01), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4705"><b>4705</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_underhangar_pit_01, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4707"><b>4707</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_underhangar_pit_02), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4709"><b>4709</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_underhangar_pit_02, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4722"><b>4722</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_hangar_can_all, 1), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4944"><b>4944</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_bottling_pit_01), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4946"><b>4946</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_bottling_pit_01, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4948"><b>4948</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_bottling_pit_02), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4950"><b>4950</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_bottling_pit_02, 1), 0)));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#4973"><b>4973</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_underhangar_can_all, 1), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#5262"><b>5262</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 0)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#5263"><b>5263</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 1)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#5264"><b>5264</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 2)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#5265"><b>5265</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 3)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#5266"><b>5266</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 4)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#5267"><b>5267</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 5)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#6760"><b>6760</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_stuck_01, 2), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#6777"><b>6777</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_stuck_10, 2), 0));</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#6809"><b>6809</b>Engine.activate_team_nav_point_object(_default, player, Engine.<i>list_get</i>(Engine.ai_actors(allied_phantom_01.Squad), 0), 3F);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#7701"><b>7701</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_01.Squad), 0), hangar_top_ally01);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#7702"><b>7702</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0), hangar_top_ally02);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#7703"><b>7703</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_grunts_01.Squad), 0), hangar_top_ally03);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#7753"><b>7753</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_01.Squad), 0), underhangar_ally01);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#7754"><b>7754</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0), underhangar_ally02);</a>
-<a href="../../Halo2MCC/04a_gasgiant.cs.html#7797"><b>7797</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_01.Squad), 0), bottling_ally01);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3172"><b>3172</b>Engine.unit_stop_custom_animation(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3245"><b>3245</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\elite\\elite&quot;, 3890546287U), &quot;uplink_station&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3255"><b>3255</b>await Engine.sleep_until(async () =&gt; this.open_rec_center == true || Engine.object_get_health(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0)) &lt;= 0F, 30, 360);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3319"><b>3319</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_recycling_pit), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3321"><b>3321</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_recycling_pit, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3380"><b>3380</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(rec_center_heretic_03.Squad), 0)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\elite\\elite&quot;, 3890546287U), &quot;uplink_station&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3382"><b>3382</b>Engine.unit_stop_custom_animation(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(rec_center_heretic_03.Squad), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3619"><b>3619</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_01), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3621"><b>3621</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_01, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3623"><b>3623</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_02), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3625"><b>3625</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_02, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3627"><b>3627</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_03), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3629"><b>3629</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_03, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3631"><b>3631</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_hangar_pit_04), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3633"><b>3633</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_hangar_pit_04, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3645"><b>3645</b>Engine.objects_attach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0), &quot;primary_trigger&quot;, help_can_01.Entity, &quot;top&quot;);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3649"><b>3649</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0), help_can_01.Entity);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3661"><b>3661</b>Engine.objects_attach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0), &quot;primary_trigger&quot;, help_can_02.Entity, &quot;top&quot;);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3664"><b>3664</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0), help_can_02.Entity);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4018"><b>4018</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0)), swap, true, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4019"><b>4019</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0)), swap, true, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4020"><b>4020</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_03.Squad), 0)), swap, true, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4021"><b>4021</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_01.Squad), 0), help_can_01.Entity);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4022"><b>4022</b>Engine.objects_detach(Engine.<i>list_get</i>(Engine.ai_actors(hangar_helper_02.Squad), 0), help_can_02.Entity);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4077"><b>4077</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 3)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 3), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4079"><b>4079</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 3));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4082"><b>4082</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4084"><b>4084</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4087"><b>4087</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4089"><b>4089</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4092"><b>4092</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4094"><b>4094</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4113"><b>4113</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4115"><b>4115</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4118"><b>4118</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4120"><b>4120</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4123"><b>4123</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0), 45F) == false)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4125"><b>4125</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4723"><b>4723</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_underhangar_pit_01), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4725"><b>4725</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_underhangar_pit_01, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4727"><b>4727</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_underhangar_pit_02), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4729"><b>4729</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_underhangar_pit_02, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4742"><b>4742</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_hangar_can_all, 1), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4964"><b>4964</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_bottling_pit_01), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4966"><b>4966</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_bottling_pit_01, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4968"><b>4968</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(kill_bottling_pit_02), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4970"><b>4970</b>Engine.unit_kill_silent(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(kill_bottling_pit_02, 1), 0)));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4993"><b>4993</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_underhangar_can_all, 1), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5294"><b>5294</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 0)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5295"><b>5295</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 1)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5296"><b>5296</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 2)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5297"><b>5297</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 3)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5298"><b>5298</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 4)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5299"><b>5299</b>Engine.custom_animation_loop(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(bday_party.Squad), 5)), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\grunt\\grunt&quot;, 3959622285U), &quot;combat:pistol:cheer&quot;, true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#6792"><b>6792</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_stuck_01, 2), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#6809"><b>6809</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_stuck_10, 2), 0));</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#6841"><b>6841</b>Engine.activate_team_nav_point_object(_default, player, Engine.<i>list_get</i>(Engine.ai_actors(allied_phantom_01.Squad), 0), 3F);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7733"><b>7733</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_01.Squad), 0), hangar_top_ally01);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7734"><b>7734</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0), hangar_top_ally02);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7735"><b>7735</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_grunts_01.Squad), 0), hangar_top_ally03);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7785"><b>7785</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_01.Squad), 0), underhangar_ally01);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7786"><b>7786</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(hacker.Squad), 0), underhangar_ally02);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7829"><b>7829</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_01.Squad), 0), bottling_ally01);</a>
 </div>
 <div class="rF"><div class="rN">04b_floodlab.cs (62)</div>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#144"><b>144</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 0));</a>
@@ -118,42 +118,42 @@
 <a href="../../Halo2MCC/04b_floodlab.cs.html#2878"><b>2878</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1));</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#2882"><b>2882</b>if (Engine.volume_test_object(trans_3_0, Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0)) == false)</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#2884"><b>2884</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#3195"><b>3195</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(lab_heretics_above.Squad), 0), 60F) == true, 30, 450);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#4079"><b>4079</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(vol_cableroom_suck_kill), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#4081"><b>4081</b>Engine.unit_kill(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_cableroom_suck_kill, 1), 0)));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#5149"><b>5149</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(vol_cableroom_suck_kill), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6295"><b>6295</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(heretic_leader_04.Squad), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6297"><b>6297</b>Engine.cs_shoot(false, Engine.<i>list_get</i>(Engine.ai_actors(heretic_leader_04.Squad), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6314"><b>6314</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6316"><b>6316</b>Engine.cs_shoot(false, Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0));</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6331"><b>6331</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), rifle, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6337"><b>6337</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), carbine, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6343"><b>6343</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), sniper, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6349"><b>6349</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), needler, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6355"><b>6355</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), pistol, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6361"><b>6361</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), flak, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6367"><b>6367</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), beam, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6403"><b>6403</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0))) == true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6588"><b>6588</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), rifle, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6594"><b>6594</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), carbine, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6600"><b>6600</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), sniper, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6606"><b>6606</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), needler, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6612"><b>6612</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), pistol, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6618"><b>6618</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), flak, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6624"><b>6624</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), beam, true, true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6648"><b>6648</b>Engine.object_hide(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0), true);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6649"><b>6649</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0), dervish_sticks_landing);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#6652"><b>6652</b>Engine.object_hide(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0), false);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#8595"><b>8595</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\scenarios\\objects\\solo\\alphagasgiant\\holo_drone\\drone_death&quot;, 3919382567U), Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0), &quot;&quot;);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#8596"><b>8596</b>Engine.object_set_scale(Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0), 0.1F, 30);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#8662"><b>8662</b>await Engine.sleep_until(async () =&gt; Engine.object_get_shield(Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0)) &lt;= 0F);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#8672"><b>8672</b>this.heretic_leader = Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#9915"><b>9915</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03a.Squad), 0), silo_ally01);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#9916"><b>9916</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03b.Squad), 0), silo_ally02);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#9948"><b>9948</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03a.Squad), 0), lab_ally01);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#9981"><b>9981</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03a.Squad), 0), wraparound_player1);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#10013"><b>10013</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_04.Squad), 0), control_ally01);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#10014"><b>10014</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_grunts_04.Squad), 0), control_ally02);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3215"><b>3215</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(lab_heretics_above.Squad), 0), 60F) == true, 30, 450);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#4105"><b>4105</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(vol_cableroom_suck_kill), 0));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#4107"><b>4107</b>Engine.unit_kill(Engine.unit(Engine.<i>list_get</i>(Engine.volume_return_objects_by_type(vol_cableroom_suck_kill, 1), 0)));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#5175"><b>5175</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.volume_return_objects(vol_cableroom_suck_kill), 0));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6321"><b>6321</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(heretic_leader_04.Squad), 0));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6323"><b>6323</b>Engine.cs_shoot(false, Engine.<i>list_get</i>(Engine.ai_actors(heretic_leader_04.Squad), 0));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6340"><b>6340</b>Engine.cs_shoot(true, Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6342"><b>6342</b>Engine.cs_shoot(false, Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0));</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6357"><b>6357</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), rifle, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6363"><b>6363</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), carbine, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6369"><b>6369</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), sniper, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6375"><b>6375</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), needler, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6381"><b>6381</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), pistol, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6387"><b>6387</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), flak, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6393"><b>6393</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0)), beam, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6429"><b>6429</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_01.Squad), 0))) == true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6614"><b>6614</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), rifle, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6620"><b>6620</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), carbine, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6626"><b>6626</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), sniper, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6632"><b>6632</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), needler, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6638"><b>6638</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), pistol, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6644"><b>6644</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), flak, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6650"><b>6650</b>Engine.unit_add_equipment(Engine.unit(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0)), beam, true, true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6674"><b>6674</b>Engine.object_hide(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0), true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6675"><b>6675</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0), dervish_sticks_landing);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6678"><b>6678</b>Engine.object_hide(Engine.<i>list_get</i>(Engine.ai_actors(dervish_031.Squad), 0), false);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#8621"><b>8621</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\scenarios\\objects\\solo\\alphagasgiant\\holo_drone\\drone_death&quot;, 3919382567U), Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0), &quot;&quot;);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#8622"><b>8622</b>Engine.object_set_scale(Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0), 0.1F, 30);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#8688"><b>8688</b>await Engine.sleep_until(async () =&gt; Engine.object_get_shield(Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0)) &lt;= 0F);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#8698"><b>8698</b>this.heretic_leader = Engine.<i>list_get</i>(Engine.ai_actors(hl_boss_random.Squad), 0);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#9942"><b>9942</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03a.Squad), 0), silo_ally01);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#9943"><b>9943</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03b.Squad), 0), silo_ally02);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#9975"><b>9975</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03a.Squad), 0), lab_ally01);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#10008"><b>10008</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_03a.Squad), 0), wraparound_player1);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#10040"><b>10040</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_elites_04.Squad), 0), control_ally01);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#10041"><b>10041</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(allies_grunts_04.Squad), 0), control_ally02);</a>
 </div>
 <div class="rF"><div class="rN">05a_deltaapproach.cs (57)</div>
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#110"><b>110</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 0));</a>
@@ -285,51 +285,51 @@
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#4549"><b>4549</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 1));</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#4553"><b>4553</b>if (Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2), 45F) == false &amp;&amp; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2)) &gt; 30F)</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#4555"><b>4555</b>Engine.object_destroy(Engine.<i>list_get</i>(Engine.ai_actors(all_allies), 2));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#4889"><b>4889</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 15F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0), 30F) == true);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5314"><b>5314</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5315"><b>5315</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5353"><b>5353</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5354"><b>5354</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5381"><b>5381</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5382"><b>5382</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5411"><b>5411</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5412"><b>5412</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5419"><b>5419</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F)</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5442"><b>5442</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5443"><b>5443</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5466"><b>5466</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5467"><b>5467</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5495"><b>5495</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5496"><b>5496</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5527"><b>5527</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F)</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5551"><b>5551</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5552"><b>5552</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5571"><b>5571</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5572"><b>5572</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5601"><b>5601</b>this.regret_corpse = this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#5602"><b>5602</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6482"><b>6482</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), bridges_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6483"><b>6483</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), bridges_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6532"><b>6532</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), tower2_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6533"><b>6533</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), tower2_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6581"><b>6581</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), center_plat_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6582"><b>6582</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), center_plat_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6628"><b>6628</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), gondola_01_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6629"><b>6629</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), gondola_01_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6676"><b>6676</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), tower3_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6677"><b>6677</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), tower3_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6722"><b>6722</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 0), tunnel_01_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6723"><b>6723</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 1), tunnel_01_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6765"><b>6765</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 0), sunken_chamber_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6766"><b>6766</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 1), sunken_chamber_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6807"><b>6807</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 0), tunnel_02_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6808"><b>6808</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 1), tunnel_02_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6848"><b>6848</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 0), island_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6849"><b>6849</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 1), island_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6887"><b>6887</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 0), gondola_02_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6888"><b>6888</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 1), gondola_02_ally2);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6923"><b>6923</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 0), temple_ext_ally1);</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#6924"><b>6924</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 1), temple_ext_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#4937"><b>4937</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 15F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0), 30F) == true);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5362"><b>5362</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5363"><b>5363</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5401"><b>5401</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5402"><b>5402</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5429"><b>5429</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5430"><b>5430</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5459"><b>5459</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5460"><b>5460</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5467"><b>5467</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F)</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5490"><b>5490</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5491"><b>5491</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5514"><b>5514</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5515"><b>5515</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5543"><b>5543</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5544"><b>5544</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5575"><b>5575</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0)) &lt; 5F)</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5599"><b>5599</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5600"><b>5600</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5619"><b>5619</b>this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5620"><b>5620</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5649"><b>5649</b>this.regret_corpse = this.regret_corpse = Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5650"><b>5650</b>this.regret_throne = Engine.object_get_parent(Engine.<i>list_get</i>(Engine.ai_actors(regret1.Squad), 0));</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6530"><b>6530</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), bridges_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6531"><b>6531</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), bridges_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6580"><b>6580</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), tower2_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6581"><b>6581</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), tower2_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6629"><b>6629</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), center_plat_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6630"><b>6630</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), center_plat_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6676"><b>6676</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), gondola_01_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6677"><b>6677</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), gondola_01_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6724"><b>6724</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 0), tower3_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6725"><b>6725</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(initial_allies.Squad), 1), tower3_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6770"><b>6770</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 0), tunnel_01_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6771"><b>6771</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 1), tunnel_01_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6813"><b>6813</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 0), sunken_chamber_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6814"><b>6814</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 1), sunken_chamber_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6855"><b>6855</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 0), tunnel_02_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6856"><b>6856</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp2_allies.Squad), 1), tunnel_02_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6896"><b>6896</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 0), island_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6897"><b>6897</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 1), island_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6935"><b>6935</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 0), gondola_02_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6936"><b>6936</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 1), gondola_02_ally2);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6971"><b>6971</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 0), temple_ext_ally1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#6972"><b>6972</b>Engine.object_teleport(Engine.<i>list_get</i>(Engine.ai_actors(temp_bsp3_allies.Squad), 1), temple_ext_ally2);</a>
 </div>
 <div class="rF"><div class="rN">06a_sentinelwalls.cs (2)</div>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#262"><b>262</b>return Engine.unit(Engine.<i>list_get</i>(Engine.players(), 0));</a>

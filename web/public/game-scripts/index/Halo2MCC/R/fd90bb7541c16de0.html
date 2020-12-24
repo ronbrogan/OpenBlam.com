@@ -6,11 +6,11 @@
 <a href="../04b_floodlab.cs.html#2224"><b>2224</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_after_scene&quot;, hologram_ally_04, all_allies) || (short)Engine.ai_living_count(disposal_commander.Squad) == 0 || (short)Engine.ai_living_count(<i>allies_elites</i>) == 0, 30, 150);</a>
 <a href="../04b_floodlab.cs.html#2229"><b>2229</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;disposal_post_scene&quot;, disposal_after_react, all_allies) || (short)Engine.ai_living_count(<i>allies_elites</i>) == 0, 30, 150);</a>
 <a href="../04b_floodlab.cs.html#2806"><b>2806</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_hall_to_lab, Engine.ai_actors(<i>allies_elites</i>)) == true || (short)Engine.ai_living_count(<i>allies_elites</i>) == 0);</a>
-<a href="../04b_floodlab.cs.html#2852"><b>2852</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(vol_research_arm_swap, Engine.ai_actors(<i>allies_elites</i>)) == true &amp;&amp; await this.player_count() &gt; 0, 30, 30);</a>
-<a href="../04b_floodlab.cs.html#3196"><b>3196</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>allies_elites</i>) == 0 || Engine.ai_scene(&quot;lab_heretic_ally_scene&quot;, lab_heretics_ally, all_allies), 30, 300);</a>
-<a href="../04b_floodlab.cs.html#3365"><b>3365</b>Engine.ai_place(allies_elites_04.Squad, (short)(2 - (float)Engine.ai_living_count(<i>allies_elites</i>)));</a>
-<a href="../04b_floodlab.cs.html#3819"><b>3819</b>Engine.ai_migrate(<i>allies_elites</i>, allies_elites_04.Squad);</a>
-<a href="../04b_floodlab.cs.html#3846"><b>3846</b>Engine.ai_erase(<i>allies_elites</i>);</a>
+<a href="../04b_floodlab.cs.html#2852"><b>2852</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(vol_research_arm_swap, Engine.ai_actors(<i>allies_elites</i>)) == true &amp;&amp; await this.player_count() &gt; 0, 30, 300);</a>
+<a href="../04b_floodlab.cs.html#3216"><b>3216</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>allies_elites</i>) == 0 || Engine.ai_scene(&quot;lab_heretic_ally_scene&quot;, lab_heretics_ally, all_allies), 30, 300);</a>
+<a href="../04b_floodlab.cs.html#3385"><b>3385</b>Engine.ai_place(allies_elites_04.Squad, (short)(2 - (float)Engine.ai_living_count(<i>allies_elites</i>)));</a>
+<a href="../04b_floodlab.cs.html#3839"><b>3839</b>Engine.ai_migrate(<i>allies_elites</i>, allies_elites_04.Squad);</a>
+<a href="../04b_floodlab.cs.html#3866"><b>3866</b>Engine.ai_erase(<i>allies_elites</i>);</a>
 </div>
 </div>
 </div>

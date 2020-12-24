@@ -1,45 +1,46 @@
 ﻿<div class="referenceBody">
-<div class="rH">179 references to ai_current_squad</div><div class="rA">Halo2MCC (89)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (37)</div>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2030"><b>2030</b>Engine.ai_set_orders(this.<i>ai_current_squad</i>, e13_cov_creep0_defend);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2056"><b>2056</b>Engine.ai_set_orders(this.<i>ai_current_squad</i>, e13_cov_creep0_defend);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2082"><b>2082</b>Engine.ai_set_orders(this.<i>ai_current_squad</i>, e13_cov_creep0_defend);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2123"><b>2123</b>return Engine.volume_test_objects(tv_e13_waypoint1, Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2129"><b>2129</b>return Engine.volume_test_objects(tv_e13_waypoint0, Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2135"><b>2135</b>Engine.cs_run_command_script(this.<i>ai_current_squad</i>, cs_e13_mars_continue);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2556"><b>2556</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2959"><b>2959</b>return (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.65F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.5F;</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3155"><b>3155</b>return (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.65F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.5F;</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3175"><b>3175</b>if ((short)Engine.ai_combat_status(this.<i>ai_current_squad</i>) &lt; this.ai_combat_status_active)</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3182"><b>3182</b>if ((short)Engine.ai_combat_status(this.<i>ai_current_squad</i>) &gt;= this.ai_combat_status_active)</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3464"><b>3464</b>Engine.object_cannot_take_damage(Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3469"><b>3469</b>Engine.object_can_take_damage(Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3508"><b>3508</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3528"><b>3528</b>Engine.ai_magically_see(this.<i>ai_current_squad</i>, e8_cov_phantom0.Squad);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4182"><b>4182</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;e5_cov_inf0_ambush_sprung&quot;, this.<i>ai_current_squad</i>), 5);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4486"><b>4486</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(this.<i>ai_current_squad</i>) &gt;= this.ai_combat_status_clear_los || Engine.volume_test_objects(tv_e4_cov_inf2_begin, Engine.players()), 15);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4697"><b>4697</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4920"><b>4920</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 3F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 3F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 0.98F, 5, 120);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4921"><b>4921</b>if (!(await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 3F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 3F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 0.98F))</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4927"><b>4927</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 4F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 4F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 0.98F, 5, 120);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4941"><b>4941</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 4F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 4F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 1F, 5, 240);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5142"><b>5142</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5199"><b>5199</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5234"><b>5234</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<div class="rH">180 references to ai_current_squad</div><div class="rA">Halo2MCC (90)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (37)</div>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2136"><b>2136</b>Engine.ai_set_orders(this.<i>ai_current_squad</i>, e13_cov_creep0_defend);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2162"><b>2162</b>Engine.ai_set_orders(this.<i>ai_current_squad</i>, e13_cov_creep0_defend);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2188"><b>2188</b>Engine.ai_set_orders(this.<i>ai_current_squad</i>, e13_cov_creep0_defend);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2229"><b>2229</b>return Engine.volume_test_objects(tv_e13_waypoint1, Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2235"><b>2235</b>return Engine.volume_test_objects(tv_e13_waypoint0, Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2241"><b>2241</b>Engine.cs_run_command_script(this.<i>ai_current_squad</i>, cs_e13_mars_continue);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2662"><b>2662</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3065"><b>3065</b>return (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.65F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.5F;</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3261"><b>3261</b>return (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.65F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.5F;</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3281"><b>3281</b>if ((short)Engine.ai_combat_status(this.<i>ai_current_squad</i>) &lt; this.ai_combat_status_active)</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3288"><b>3288</b>if ((short)Engine.ai_combat_status(this.<i>ai_current_squad</i>) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3570"><b>3570</b>Engine.object_cannot_take_damage(Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3575"><b>3575</b>Engine.object_can_take_damage(Engine.ai_actors(this.<i>ai_current_squad</i>));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3614"><b>3614</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3634"><b>3634</b>Engine.ai_magically_see(this.<i>ai_current_squad</i>, e8_cov_phantom0.Squad);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4288"><b>4288</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;e5_cov_inf0_ambush_sprung&quot;, this.<i>ai_current_squad</i>), 5);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4592"><b>4592</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(this.<i>ai_current_squad</i>) &gt;= this.ai_combat_status_clear_los || Engine.volume_test_objects(tv_e4_cov_inf2_begin, Engine.players()), 15);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4803"><b>4803</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5026"><b>5026</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 3F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 3F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 0.98F, 5, 120);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5027"><b>5027</b>if (!(await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 3F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 3F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 0.98F))</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5033"><b>5033</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 4F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 4F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 0.98F, 5, 120);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5047"><b>5047</b>await Engine.sleep_until(async () =&gt; await this.player_in_vehicle() || Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player0()) &lt;= 4F || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_distance_to_object(Engine.ai_actors(this.<i>ai_current_squad</i>), await this.player1()) &lt;= 4F || (bool)Engine.ai_trigger_test(&quot;generic_player_fired&quot;, this.<i>ai_current_squad</i>) &amp;&amp; Engine.objects_can_see_flag(Engine.players(), e2_cov_hunters0_entry, 20F) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 1F, 5, 240);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5248"><b>5248</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5305"><b>5305</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5340"><b>5340</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
 </div>
-<div class="rF"><div class="rN">03b_newmombasa.cs (13)</div>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#3928"><b>3928</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#3948"><b>3948</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#4595"><b>4595</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_object(tv_e17_section3, Engine.ai_get_object(this.ai_current_actor)) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 1F, 10);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#4822"><b>4822</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.ai_get_object(this.ai_current_actor)) &lt;= 12F || (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.9F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.5F);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#4840"><b>4840</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5032"><b>5032</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5072"><b>5072</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5080"><b>5080</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5124"><b>5124</b>Engine.ai_set_blind(this.<i>ai_current_squad</i>, true);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5125"><b>5125</b>Engine.ai_set_deaf(this.<i>ai_current_squad</i>, true);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5131"><b>5131</b>Engine.ai_set_blind(this.<i>ai_current_squad</i>, false);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5132"><b>5132</b>Engine.ai_set_deaf(this.<i>ai_current_squad</i>, false);</a>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#5312"><b>5312</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<div class="rF"><div class="rN">03b_newmombasa.cs (14)</div>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#3931"><b>3931</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#3951"><b>3951</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4557"><b>4557</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.ai_get_object(this.ai_current_actor)) &lt; 10F || (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.5F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.75F || Engine.volume_test_objects(tv_e17_first_wall_approach, Engine.players()), 15, 600);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4619"><b>4619</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_object(tv_e17_section3, Engine.ai_get_object(this.ai_current_actor)) || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt; 1F, 10);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4834"><b>4834</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.players(), Engine.ai_get_object(this.ai_current_actor)) &lt;= 12F || (float)Engine.ai_strength(this.ai_current_actor) &lt;= 0.9F || (float)Engine.ai_strength(this.<i>ai_current_squad</i>) &lt;= 0.5F);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4852"><b>4852</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5044"><b>5044</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5084"><b>5084</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5092"><b>5092</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5136"><b>5136</b>Engine.ai_set_blind(this.<i>ai_current_squad</i>, true);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5137"><b>5137</b>Engine.ai_set_deaf(this.<i>ai_current_squad</i>, true);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5143"><b>5143</b>Engine.ai_set_blind(this.<i>ai_current_squad</i>, false);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5144"><b>5144</b>Engine.ai_set_deaf(this.<i>ai_current_squad</i>, false);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5324"><b>5324</b>Engine.ai_erase(this.<i>ai_current_squad</i>);</a>
 </div>
 <div class="rF"><div class="rN">06a_sentinelwalls.cs (5)</div>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#1943"><b>1943</b>Engine.ai_kill_silent(this.<i>ai_current_squad</i>);</a>
