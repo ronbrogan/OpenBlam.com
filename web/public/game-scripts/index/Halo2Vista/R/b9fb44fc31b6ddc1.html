@@ -12,13 +12,13 @@
 <a href="../05a_deltaapproach.cs.html#4842"><b>4842</b>Engine.ai_place(<i>old_temple_pelican1</i>.Squad);</a>
 <a href="../05a_deltaapproach.cs.html#4843"><b>4843</b>Engine.object_cannot_take_damage(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_pelican1</i>.pilot));</a>
 <a href="../05a_deltaapproach.cs.html#4845"><b>4845</b>Engine.objects_attach(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_pelican1</i>.pilot), &quot;pelican_sc_01&quot;, rack.Entity, &quot;pin&quot;);</a>
-<a href="../05a_deltaapproach.cs.html#4858"><b>4858</b>Engine.cs_run_command_script(<i>old_temple_pelican1</i>.pilot, old_temple_pelican_arrives);</a>
+<a href="../05a_deltaapproach.cs.html#4858"><b>4858</b>Engine.cs_run_command_script(<i>old_temple_pelican1</i>.pilot, new ScriptMethodReference(old_temple_pelican_arrives));</a>
 <a href="../05a_deltaapproach.cs.html#4914"><b>4914</b>Engine.ai_place(<i>old_temple_pelican1</i>.Squad);</a>
 <a href="../05a_deltaapproach.cs.html#4915"><b>4915</b>Engine.object_cannot_take_damage(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_pelican1</i>.pilot));</a>
 <a href="../05a_deltaapproach.cs.html#4916"><b>4916</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_pelican1</i>.pilot), &quot;pelican_p&quot;, Engine.ai_actors(allies_old_temple_pelican.Squad));</a>
 <a href="../05a_deltaapproach.cs.html#4917"><b>4917</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_pelican1</i>.pilot), true);</a>
 <a href="../05a_deltaapproach.cs.html#4919"><b>4919</b>Engine.objects_attach(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_pelican1</i>.pilot), &quot;pelican_sc_01&quot;, rack.Entity, &quot;pin&quot;);</a>
-<a href="../05a_deltaapproach.cs.html#4932"><b>4932</b>Engine.cs_run_command_script(<i>old_temple_pelican1</i>.pilot, old_temple_pelican_arrives);</a>
+<a href="../05a_deltaapproach.cs.html#4932"><b>4932</b>Engine.cs_run_command_script(<i>old_temple_pelican1</i>.pilot, new ScriptMethodReference(old_temple_pelican_arrives));</a>
 <a href="../05a_deltaapproach.cs.html#5070"><b>5070</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_pelican1</i>.Squad) &lt; 1);</a>
 <a href="../05a_deltaapproach.cs.html#5092"><b>5092</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_pelican1</i>.Squad) &lt; 1);</a>
 <a href="../05a_deltaapproach.cs.html#5114"><b>5114</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_pelican1</i>.Squad) &lt; 1);</a>

@@ -1,7 +1,7 @@
 ProjectSourcePath=h2v\Halo2Vista.csproj
 DocumentCount=86
 LinesOfCode=141359
-BytesOfCode=8838954
+BytesOfCode=8856797
 DeclaredSymbols=27606
 DeclaredTypes=1849
 PublicTypes=1849

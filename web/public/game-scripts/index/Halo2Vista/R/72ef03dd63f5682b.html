@@ -7,13 +7,13 @@
 <a href="../04b_floodlab.cs.html#8602"><b>8602</b>Engine.ai_erase(hl_boss_random.<i>Squad</i>);</a>
 <a href="../04b_floodlab.cs.html#8664"><b>8664</b>await Engine.sleep_until(async () =&gt; Engine.object_get_shield(Engine.list_get(Engine.ai_actors(hl_boss_random.<i>Squad</i>), 0)) &lt;= 0F);</a>
 <a href="../04b_floodlab.cs.html#8667"><b>8667</b>Engine.ai_set_orders(hl_boss_random.<i>Squad</i>, hole_up);</a>
-<a href="../04b_floodlab.cs.html#8668"><b>8668</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, hack);</a>
+<a href="../04b_floodlab.cs.html#8668"><b>8668</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, new ScriptMethodReference(hack));</a>
 <a href="../04b_floodlab.cs.html#8672"><b>8672</b>Engine.ai_place(hl_boss_random.<i>Squad</i>, 1);</a>
 <a href="../04b_floodlab.cs.html#8673"><b>8673</b>Engine.ai_cannot_die(hl_boss_random.<i>Squad</i>, true);</a>
 <a href="../04b_floodlab.cs.html#8674"><b>8674</b>this.heretic_leader = Engine.list_get(Engine.ai_actors(hl_boss_random.<i>Squad</i>), 0);</a>
-<a href="../04b_floodlab.cs.html#8686"><b>8686</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, hl_boss_chat_01);</a>
-<a href="../04b_floodlab.cs.html#8691"><b>8691</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, hl_boss_chat_02);</a>
-<a href="../04b_floodlab.cs.html#8696"><b>8696</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, hl_boss_chat_03);</a>
+<a href="../04b_floodlab.cs.html#8686"><b>8686</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, new ScriptMethodReference(hl_boss_chat_01));</a>
+<a href="../04b_floodlab.cs.html#8691"><b>8691</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, new ScriptMethodReference(hl_boss_chat_02));</a>
+<a href="../04b_floodlab.cs.html#8696"><b>8696</b>Engine.cs_run_command_script(hl_boss_random.<i>Squad</i>, new ScriptMethodReference(hl_boss_chat_03));</a>
 <a href="../04b_floodlab.cs.html#8731"><b>8731</b>Engine.ai_set_orders(hl_boss_random.<i>Squad</i>, boss_fight_hl_center);</a>
 <a href="../04b_floodlab.cs.html#8831"><b>8831</b>Engine.ai_migrate(boss_fight_heretic_leader.Squad, hl_boss_random.<i>Squad</i>);</a>
 <a href="../04b_floodlab.cs.html#8832"><b>8832</b>Engine.ai_cannot_die(hl_boss_random.<i>Squad</i>, true);</a>

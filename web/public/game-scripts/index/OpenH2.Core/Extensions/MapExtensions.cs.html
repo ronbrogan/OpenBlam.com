@@ -1,15 +1,28 @@
 ﻿
-        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/></pre></td><td valign="top" align="left"><pre id="code">
 <b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Offsets</span>;
 <b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">IO</span>;
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Core</span>.<span class="i n">MapLoading</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Enums</span>;
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Extensions</span>
 &lbrace;
     <b>public static class</b> <a id="0f5b099b6d3260bf" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">MapExtensions</a>
     &lbrace;
-        <b>public static</b> <a href="../Offsets/PrimaryOffset.cs.html#a9a667c4dc1e8804" class="t t">PrimaryOffset</a> <a id="f6ff57ec92b866e1" href="../R/f6ff57ec92b866e1.html" target="n" data-glyph="220,1" class="i method">PrimaryOffset</a>(<b>this</b> <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">value</span>)
+        <b>public static</b> <a href="../Offsets/PrimaryOffset.cs.html#a9a667c4dc1e8804" class="t t">PrimaryOffset</a> <a id="24c0963f16b773ee" href="../R/24c0963f16b773ee.html" target="n" data-glyph="220,1" class="i method">PrimaryOffset</a>(<b>this</b> <a href="../Maps/IH2Map.cs.html#b46cdc0344d6ab9d" class="t t">IH2Map</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">value</span>)
         &lbrace;
-            <b>return</b> <b>new</b> <a href="../Offsets/PrimaryOffset.cs.html#30b6fe56642f7d10" class="t constructor">PrimaryOffset</a>(<span class="r0 r">scene</span>, <span class="r1 r">value</span>);
+            <b>return</b> <b>new</b> <a href="../Offsets/PrimaryOffset.cs.html#33cf414a732ebaf1" class="t constructor">PrimaryOffset</a>(<span class="r0 r">scene</span>, <span class="r1 r">value</span>);
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">Stream</span> <a id="c991be87fe0ca4a5" href="../R/c991be87fe0ca4a5.html" target="n" data-glyph="220,1" class="i method">GetStream</a>(<b>this</b> <span class="t t">MapStream</span> <span id="r2 rd" class="r2 r">mapStream</span>, <a href="../Enums/DataFile.cs.html#0a06039b87c46f5a" class="t valueType">DataFile</a> <span id="r3 rd" class="r3 r">location</span>)
+        &lbrace;
+            <b>return</b> <span class="r2 r">mapStream</span>.<span class="i method">GetStream</span>((<b>byte</b>)<span class="r3 r">location</span>);
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">Stream</span> <a id="c8d6ad4b85f8bf5c" href="../R/c8d6ad4b85f8bf5c.html" target="n" data-glyph="220,1" class="i method">GetStream</a>(<b>this</b> <span class="t t">MapStream</span> <span id="r4 rd" class="r4 r">mapStream</span>, <a href="../Offsets/NormalOffset.cs.html#35b3860c9fcb5eaf" class="t t">NormalOffset</a> <span id="r5 rd" class="r5 r">offset</span>)
+        &lbrace;
+            <b>return</b> <span class="r4 r">mapStream</span>.<span class="i method">GetStream</span>((<b>byte</b>)<span class="r5 r">offset</span>.<a href="../Offsets/NormalOffset.cs.html#9521f8bc1465e0e2" class="i property">Location</a>);
         &rbrace;
     &rbrace;
 &rbrace;</pre></td></tr></table></div></div>

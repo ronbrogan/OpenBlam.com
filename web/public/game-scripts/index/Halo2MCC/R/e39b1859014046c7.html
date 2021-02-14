@@ -7,8 +7,8 @@
 <a href="../03a_oldmombasa.cs.html#4807"><b>4807</b>Engine.cs_face_object(true, Engine.ai_get_object(<i>e3_mars_pelican0</i>.pelican0));</a>
 <a href="../03a_oldmombasa.cs.html#4824"><b>4824</b>Engine.ai_vehicle_enter_immediate(this.ai_current_actor, Engine.ai_vehicle_get(<i>e3_mars_pelican0</i>.pelican0), &quot;pelican_e&quot;);</a>
 <a href="../03a_oldmombasa.cs.html#4882"><b>4882</b>Engine.ai_place(<i>e3_mars_pelican0</i>.Squad);</a>
-<a href="../03a_oldmombasa.cs.html#4883"><b>4883</b>Engine.cs_run_command_script(<i>e3_mars_pelican0</i>.pelican0, cs_e3_mars_pelican0_entry);</a>
-<a href="../03a_oldmombasa.cs.html#4885"><b>4885</b>Engine.cs_run_command_script(<i>e3_mars_pelican0</i>.pelican0, cs_e3_mars_pelican0_exit);</a>
+<a href="../03a_oldmombasa.cs.html#4883"><b>4883</b>Engine.cs_run_command_script(<i>e3_mars_pelican0</i>.pelican0, new ScriptMethodReference(cs_e3_mars_pelican0_entry));</a>
+<a href="../03a_oldmombasa.cs.html#4885"><b>4885</b>Engine.cs_run_command_script(<i>e3_mars_pelican0</i>.pelican0, new ScriptMethodReference(cs_e3_mars_pelican0_exit));</a>
 <a href="../03a_oldmombasa.cs.html#4891"><b>4891</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_spawn_count(<i>e3_mars_pelican0</i>.Squad) &gt; 0);</a>
 <a href="../03a_oldmombasa.cs.html#4893"><b>4893</b>Engine.ai_vehicle_enter_immediate(e3_mars_inf1.Squad, Engine.ai_vehicle_get(<i>e3_mars_pelican0</i>.pelican0), &quot;pelican_p_r&quot;);</a>
 <a href="../03a_oldmombasa.cs.html#4915"><b>4915</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_spawn_count(<i>e3_mars_pelican0</i>.Squad) &gt; 0, 15);</a>

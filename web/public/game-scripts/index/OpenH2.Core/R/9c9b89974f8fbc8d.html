@@ -1,16 +1,17 @@
 ﻿<div class="referenceBody">
-<div class="rH">11 references to currentScope</div><div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (11)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#420"><b>420</b>var newScope = <i>currentScope</i>.CreateChild(newContext);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#425"><b>425</b>newContext.GenerateInto(<i>currentScope</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#486"><b>486</b>if (<i>currentScope</i>.IsInStatementContext)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#488"><b>488</b>return new ScopeGenerationContext.StatementContext(node, <i>currentScope</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#492"><b>492</b>return new ScopeGenerationContext(node, <i>currentScope</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#551"><b>551</b>return new LiteralContext(scenario, node, <i>currentScope</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#579"><b>579</b>ScriptDataType rt = <i>currentScope</i>.Type;</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#583"><b>583</b>&quot;begin&quot; =&gt; new BeginCallContext(node, <i>currentScope</i>, rt),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#599"><b>599</b>&quot;if&quot; =&gt; new IfStatementContext(node, <i>currentScope</i>),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#608"><b>608</b>if (node == <i>currentScope</i>.Context.OriginalNode)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#612"><b>612</b>endingScope.GenerateInto(<i>currentScope</i>);</a>
+<div class="rH">12 references to currentScope</div><div class="rA">OpenH2.Core (12)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (12)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#424"><b>424</b>var newScope = <i>currentScope</i>.CreateChild(newContext);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#429"><b>429</b>newContext.GenerateInto(<i>currentScope</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#490"><b>490</b>if (<i>currentScope</i>.IsInStatementContext)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#492"><b>492</b>return new ScopeGenerationContext.StatementContext(node, <i>currentScope</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#496"><b>496</b>return new ScopeGenerationContext(node, <i>currentScope</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#555"><b>555</b>return new LiteralContext(scenario, node, <i>currentScope</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#557"><b>557</b>return new GameDifficultyContext(scenario, node, <i>currentScope</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#585"><b>585</b>ScriptDataType rt = <i>currentScope</i>.Type;</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#589"><b>589</b>&quot;begin&quot; =&gt; new BeginCallContext(node, <i>currentScope</i>, rt),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#605"><b>605</b>&quot;if&quot; =&gt; new IfStatementContext(node, <i>currentScope</i>),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#614"><b>614</b>if (node == <i>currentScope</i>.Context.OriginalNode)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#618"><b>618</b>endingScope.GenerateInto(<i>currentScope</i>);</a>
 </div>
 </div>
 </div>

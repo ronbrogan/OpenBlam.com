@@ -4,8 +4,8 @@
 <a href="../08a_deltacliffs.cs.html#2527"><b>2527</b>Engine.ai_migrate(e1_cov_inf1.<i>Squad</i>, e2_cov_inf0.Squad);</a>
 <a href="../08a_deltacliffs.cs.html#2949"><b>2949</b>await Engine.sleep_until(async () =&gt; this.g_e1_stealth_major_done || (short)Engine.ai_spawn_count(e1_cov_inf1.<i>Squad</i>) &gt; 0 &amp;&amp; (short)Engine.ai_living_count(e1_cov_inf1.<i>Squad</i>) &lt;= 0);</a>
 <a href="../08a_deltacliffs.cs.html#2982"><b>2982</b>Engine.ai_place(e1_cov_inf1.<i>Squad</i>);</a>
-<a href="../08a_deltacliffs.cs.html#2984"><b>2984</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e1_stealth_major_scene&quot;, cs_e1_stealth_major_scene, e1_cov_inf1.<i>Squad</i>) || (short)Engine.ai_spawn_count(e1_cov_inf2.Squad) &gt; 0, 10);</a>
-<a href="../08a_deltacliffs.cs.html#2986"><b>2986</b>Engine.cs_run_command_script(e1_cov_inf1.<i>Squad</i>, cs_e1_watch_pods);</a>
+<a href="../08a_deltacliffs.cs.html#2984"><b>2984</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e1_stealth_major_scene&quot;, new ScriptMethodReference(cs_e1_stealth_major_scene), e1_cov_inf1.<i>Squad</i>) || (short)Engine.ai_spawn_count(e1_cov_inf2.Squad) &gt; 0, 10);</a>
+<a href="../08a_deltacliffs.cs.html#2986"><b>2986</b>Engine.cs_run_command_script(e1_cov_inf1.<i>Squad</i>, new ScriptMethodReference(cs_e1_watch_pods));</a>
 </div>
 </div>
 </div>

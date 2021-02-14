@@ -1,0 +1,60 @@
+﻿<div class="referenceBody">
+<div class="rH">1 instantiation of InterpreterState</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterState.cs (1)</div>
+<a href="../Scripting/Execution/InterpreterState.cs.html#37"><b>37</b>var s = new <i>InterpreterState</i>();</a>
+</div>
+</div>
+<div class="rH">45 references to InterpreterState</div><div class="rA">OpenH2.Core (45)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Exceptions\Throw.cs (1)</div>
+<a href="../Exceptions/Throw.cs.html#13"><b>13</b>public static Exception InterpreterException(string description, <i>InterpreterState</i> state)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\InterpreterState.cs (2)</div>
+<a href="../Scripting/Execution/InterpreterState.cs.html#35"><b>35</b>public static <i>InterpreterState</i> Create(int nodeIndex)</a>
+<a href="../Scripting/Execution/InterpreterState.cs.html#37"><b>37</b><i>var</i> s = new InterpreterState();</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\InterpretingScriptExecutor.cs (2)</div>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#35"><b>35</b>this.interpreter.CreateState(method.SyntaxNodeIndex, out <i>var</i> interpreterState);</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#115"><b>115</b>public <i>InterpreterState</i> InterpreterState;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (40)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#9"><b>9</b>using State = OpenH2.Core.Scripting.Execution.<i>InterpreterState</i>;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#67"><b>67</b>var completed = Interpret(variable.Value_H16, out <i>var</i> state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#81"><b>81</b>public void CreateState(int nodeIndex, out <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#83"><b>83</b>state = <i>State</i>.Create(nodeIndex);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#91"><b>91</b>public void ResetState(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#100"><b>100</b>private void PushFrame(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#135"><b>135</b>public bool Interpret(int nodeIndex, out <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#147"><b>147</b>public bool Interpret(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#159"><b>159</b>private void InterpretFrame(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#169"><b>169</b>private void InterpretBuiltinFrame(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#186"><b>186</b>private void InterpretScriptFrame(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#210"><b>210</b>private void Interpret(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#222"><b>222</b>private void PushInvocation(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#246"><b>246</b>private void InterpretExpression(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#330"><b>330</b>private void InterpretVariableAccess(ScenarioTag.ScriptSyntaxNode node, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#347"><b>347</b>private void InterpretBuiltinInvocation(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#398"><b>398</b>private void Sleep(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#406"><b>406</b>private void SleepUntil(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#445"><b>445</b>private void Begin(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#470"><b>470</b>private void BeginRandom(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#475"><b>475</b>private void If(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#530"><b>530</b>private void Set(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#553"><b>553</b>private void Not(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#565"><b>565</b>private void And(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#589"><b>589</b>private void Or(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#613"><b>613</b>private void Add(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#629"><b>629</b>private void Subtract(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#645"><b>645</b>private void Multiply(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#661"><b>661</b>private void Divide(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#677"><b>677</b>private void Min(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#693"><b>693</b>private void Max(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#709"><b>709</b>private void ValueEquals(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#730"><b>730</b>private void GreaterThan(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#748"><b>748</b>private void GreaterThanOrEquals(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#766"><b>766</b>private void LessThan(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#784"><b>784</b>private void LessThanOrEquals(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#802"><b>802</b>private bool PrepareNextArgument(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#816"><b>816</b>private void CompleteFrame(InterpreterResult value, ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#861"><b>861</b>private void CompleteFrame(ref <i>State</i> state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#875"><b>875</b>private partial void DispatchMethod(ref <i>State</i> state);</a>
+</div>
+</div>
+</div>

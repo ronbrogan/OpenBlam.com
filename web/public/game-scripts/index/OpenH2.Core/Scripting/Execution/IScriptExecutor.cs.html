@@ -1,21 +1,30 @@
 ﻿
-        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/></pre></td><td valign="top" align="left"><pre id="code">
 <b>using</b> <span class="i n">System</span>;
 <b>using</b> <span class="i n">System</span>.<span class="i n">Threading</span>.<span class="i n">Tasks</span>;
  
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">Execution</span>
 &lbrace;
+    <b>public enum</b> <a id="7422dd1f0686b7a9" href="../../R/7422dd1f0686b7a9.html" target="n" data-glyph="18,0" class="t valueType"><span id="2091de435a36c72b">ScriptExecutionMetric</span></a>
+    &lbrace;
+        <a id="d002b36d5c3bcca2" href="../../R/d002b36d5c3bcca2.html" target="n" data-glyph="24,1" class="i field">MethodTiming</a>,
+    &rbrace;
+ 
     <b>public interface</b> <a id="f2da735ca27aa204" href="../../R/f2da735ca27aa204.html" target="n" data-glyph="48,0" class="t t">IScriptExecutor</a>
     &lbrace;
         <b>void</b> <a id="70db09ff990be411" href="../../R/70db09ff990be411.html" target="n" data-glyph="72,1" class="i method">Execute</a>();
  
-        <b>void</b> <a id="33699476c7ec10a4" href="../../R/33699476c7ec10a4.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<b>string</b> <span id="r0 rd" class="r0 r">methodName</span>, <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <span id="r1 rd" class="r1 r">desiredStatus</span>);
-        <b>void</b> <a id="3a1ac8534bb3e44d" href="../../R/3a1ac8534bb3e44d.html" target="n" data-glyph="72,1" class="i method">SleepUntil</a>(<b>string</b> <span id="r2 rd" class="r2 r">methodName</span>, <span class="t valueType">DateTimeOffset</span> <span id="r3 rd" class="r3 r">offset</span>);
+        <b>void</b> <a id="d9a0ec3990a64701" href="../../R/d9a0ec3990a64701.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <span id="r0 rd" class="r0 r">desiredStatus</span>);
+        <b>void</b> <a id="48c55ba747571012" href="../../R/48c55ba747571012.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<b>ushort</b> <span id="r1 rd" class="r1 r">methodId</span>, <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <span id="r2 rd" class="r2 r">desiredStatus</span>);
  
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;</span><span class="c">summary</span><span class="c">&gt;</span>
         <span class="c">///</span><span class="c"> Creates a task that will take the specified number of updates to complete</span>
         <span class="c">///</span><span class="c"> </span><span class="c">&lt;/</span><span class="c">summary</span><span class="c">&gt;</span>
-        <span class="t t">Task</span> <a id="9dbb971ca343eac5" href="../../R/9dbb971ca343eac5.html" target="n" data-glyph="72,1" class="i method">Delay</a>(<b>int</b> <span id="r4 rd" class="r4 r">ticks</span>);
+        <span class="t valueType">ValueTask</span> <a id="9dbb971ca343eac5" href="../../R/9dbb971ca343eac5.html" target="n" data-glyph="72,1" class="i method">Delay</a>(<b>int</b> <span id="r3 rd" class="r3 r">ticks</span>);
+ 
+        <span class="t valueType">ValueTask</span> <a id="b7d0de82dfad1dfc" href="../../R/b7d0de82dfad1dfc.html" target="n" data-glyph="72,1" class="i method">Delay</a>(<b>ushort</b> <span id="r4 rd" class="r4 r">methodId</span>, <b>int</b> <span id="r5 rd" class="r5 r">ticks</span>);
+ 
+        <b>void</b> <a id="b7ad92061a7f2f39" href="../../R/b7ad92061a7f2f39.html" target="n" data-glyph="72,1" class="i method">RecordMetric</a>(<a href="#7422dd1f0686b7a9" class="t valueType">ScriptExecutionMetric</a> <span id="r6 rd" class="r6 r">metric</span>, <b>string</b> <span id="r7 rd" class="r7 r">dimension</span>, <b>long</b> <span id="r8 rd" class="r8 r">value</span>);
     &rbrace;
 &rbrace;
 </pre></td></tr></table></div></div>

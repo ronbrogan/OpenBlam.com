@@ -8,12 +8,12 @@
 <a href="../04b_floodlab.cs.html#2168"><b>2168</b>Engine.ai_place(hl_hologram.<i>Squad</i>);</a>
 <a href="../04b_floodlab.cs.html#2169"><b>2169</b>Engine.unit_impervious(Engine.ai_actors(hl_hologram.<i>Squad</i>), true);</a>
 <a href="../04b_floodlab.cs.html#2170"><b>2170</b>Engine.ai_cannot_die(hl_hologram.<i>Squad</i>, true);</a>
-<a href="../04b_floodlab.cs.html#2171"><b>2171</b>Engine.cs_run_command_script(hl_hologram.<i>Squad</i>, forever_pause);</a>
+<a href="../04b_floodlab.cs.html#2171"><b>2171</b>Engine.cs_run_command_script(hl_hologram.<i>Squad</i>, new ScriptMethodReference(forever_pause));</a>
 <a href="../04b_floodlab.cs.html#2173"><b>2173</b>Engine.ai_disregard(Engine.ai_actors(hl_hologram.<i>Squad</i>), true);</a>
 <a href="../04b_floodlab.cs.html#2175"><b>2175</b>Engine.object_dynamic_simulation_disable(Engine.list_get(Engine.ai_actors(hl_hologram.<i>Squad</i>), 0), true);</a>
-<a href="../04b_floodlab.cs.html#2184"><b>2184</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_hl_scene&quot;, hologram_ally_02, hl_hologram.<i>Squad</i>) || (short)Engine.ai_living_count(hl_hologram.<i>Squad</i>) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2184"><b>2184</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_hl_scene&quot;, new ScriptMethodReference(hologram_ally_02), hl_hologram.<i>Squad</i>) || (short)Engine.ai_living_count(hl_hologram.<i>Squad</i>) == 0, 30, 150);</a>
 <a href="../04b_floodlab.cs.html#2188"><b>2188</b>await Engine.sleep_until(async () =&gt; this.holo_ally_02_done == true || (short)Engine.ai_living_count(hl_hologram.<i>Squad</i>) == 0, 30, 300);</a>
-<a href="../04b_floodlab.cs.html#2191"><b>2191</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_react_scene&quot;, hologram_ally_03, disposal_commander.Squad, hl_hologram.<i>Squad</i>) || (short)Engine.ai_living_count(disposal_commander.Squad) == 0 || (short)Engine.ai_living_count(hl_hologram.<i>Squad</i>) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2191"><b>2191</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_react_scene&quot;, new ScriptMethodReference(hologram_ally_03), disposal_commander.Squad, hl_hologram.<i>Squad</i>) || (short)Engine.ai_living_count(disposal_commander.Squad) == 0 || (short)Engine.ai_living_count(hl_hologram.<i>Squad</i>) == 0, 30, 150);</a>
 <a href="../04b_floodlab.cs.html#2198"><b>2198</b>Engine.unit_doesnt_drop_items(Engine.ai_actors(hl_hologram.<i>Squad</i>));</a>
 <a href="../04b_floodlab.cs.html#2199"><b>2199</b>Engine.ai_cannot_die(hl_hologram.<i>Squad</i>, false);</a>
 <a href="../04b_floodlab.cs.html#2200"><b>2200</b>Engine.ai_kill_silent(hl_hologram.<i>Squad</i>);</a>

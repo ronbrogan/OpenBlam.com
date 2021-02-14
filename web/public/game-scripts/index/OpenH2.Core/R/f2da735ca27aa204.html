@@ -1,6 +1,14 @@
 ﻿<div class="referenceBody">
-<div class="rH">1 implementation of IScriptExecutor</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptTaskExecutor.cs (1)</div>
-<a href="../Scripting/Execution/ScriptTaskExecutor.cs.html#11"><b>11</b>public class ScriptTaskExecutor : <i>IScriptExecutor</i></a>
+<div class="rH">1 implementation of IScriptExecutor</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\BaseScriptExecutor.cs (1)</div>
+<a href="../Scripting/Execution/BaseScriptExecutor.cs.html#7"><b>7</b>public abstract class BaseScriptExecutor : <i>IScriptExecutor</i>, IMetricSource</a>
+</div>
+</div>
+<div class="rH">3 references to IScriptExecutor</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\BaseScriptExecutor.cs (1)</div>
+<a href="../Scripting/Execution/BaseScriptExecutor.cs.html#23"><b>23</b>metricSink.Write(nameof(<i>IScriptExecutor</i>), $&quot;{metric},{dimension},{value}&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#26"><b>26</b>private readonly <i>IScriptExecutor</i> executor;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#35"><b>35</b><i>IScriptExecutor</i> executor)</a>
 </div>
 </div>
 </div>

@@ -1,0 +1,60 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/><a id="54" href="#54" target="_top">54</a><br/><a id="55" href="#55" target="_top">55</a><br/><a id="56" href="#56" target="_top">56</a><br/><a id="57" href="#57" target="_top">57</a><br/><a id="58" href="#58" target="_top">58</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>;
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>.<span class="i n">CSharp</span>;
+<b>using</b> <span class="i n">Microsoft</span>.<span class="i n">CodeAnalysis</span>.<span class="i n">CSharp</span>.<span class="i n">Syntax</span>;
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Linq</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Generators</span>.<span class="i n">Extensions</span>
+&lbrace;
+    <b>internal static class</b> <a id="43939e064f60def6" href="../R/43939e064f60def6.html" target="n" data-glyph="2,0" class="t t">SyntaxUtilities</a>
+    &lbrace;
+        <b>public static</b> <span class="t t">INamedTypeSymbol</span> <a id="0c0ef9bae64133fa" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">GetTypeSymbol</a>&lt;<span id="r0 rd t" class="r0 r t">T</span>&gt;(<b>this</b> <span class="t t">Compilation</span> <span id="r1 rd" class="r1 r">compilation</span>)
+        &lbrace;
+            <b>return</b> <span class="r1 r">compilation</span>.<a href="#f5bed68a0c60d3d8" class="i method">GetTypeSymbol</a>(<b>typeof</b>(<span class="r0 r t">T</span>));
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">INamedTypeSymbol</span> <a id="f5bed68a0c60d3d8" href="../R/f5bed68a0c60d3d8.html" target="n" data-glyph="220,1" class="i method">GetTypeSymbol</a>(<b>this</b> <span class="t t">Compilation</span> <span id="r2 rd" class="r2 r">compilation</span>, <span class="t t">Type</span> <span id="r3 rd" class="r3 r">t</span>)
+        &lbrace;
+            <span class="t t">Type</span>[] <span id="r4 rd" class="r4 r">genericArgs</span> = <b>null</b>;
+ 
+            <b>if</b> (<span class="r3 r">t</span>.<span class="i property">IsGenericType</span>)
+            &lbrace;
+                <span class="r4 r">genericArgs</span> = <span class="r3 r">t</span>.<span class="i method">GetGenericArguments</span>();
+                <span class="r3 r">t</span> = <span class="r3 r">t</span>.<span class="i method">GetGenericTypeDefinition</span>();
+            &rbrace;
+ 
+            <b>var</b> <span id="r5 rd" class="r5 r">found</span> = <span class="r2 r">compilation</span>.<span class="i property">References</span>.<span class="i method">Select</span>(<span class="r2 r">compilation</span>.<span class="i method">GetAssemblyOrModuleSymbol</span>)
+                .<span class="i method">OfType</span>&lt;<span class="t t">IAssemblySymbol</span>&gt;()
+                .<span class="i method">Select</span>(<span id="r6 rd" class="r6 r">a</span> =&gt; <span class="r6 r">a</span>.<span class="i method">GetTypeByMetadataName</span>(<span class="r3 r">t</span>.<span class="i property">FullName</span>))
+                .<span class="i method">Single</span>(<span id="r7 rd" class="r7 r">a</span> =&gt; <span class="r7 r">a</span> != <b>null</b>);
+ 
+            <b>if</b> (<span class="r4 r">genericArgs</span>?.<span class="i property">Length</span> &gt; 0)
+            &lbrace;
+                <b>var</b> <span id="r8 rd" class="r8 r">genericSymbols</span> = <span class="r4 r">genericArgs</span>.<span class="i method">Select</span>(<span id="r9 rd" class="r9 r">a</span> =&gt; <a href="#f5bed68a0c60d3d8" class="i method">GetTypeSymbol</a>(<span class="r2 r">compilation</span>, <span class="r9 r">a</span>)).<span class="i method">ToArray</span>();
+                <span class="r5 r">found</span> = <span class="r5 r">found</span>.<span class="i method">Construct</span>(<span class="r8 r">genericSymbols</span>);
+            &rbrace;
+ 
+            <b>return</b> <span class="r5 r">found</span>;
+        &rbrace;
+ 
+        <b>public static</b> <span class="t t">LiteralExpressionSyntax</span> <a id="39e08f3769c9939f" href="../R/39e08f3769c9939f.html" target="n" data-glyph="72,1" class="i method">LiteralExpression</a>(<b>object</b> <span id="r10 rd" class="r10 r">value</span>)
+        &lbrace;
+            <b>return</b> <span class="r10 r">value</span> <b>switch</b>
+            &lbrace;
+                <b>int</b> <span id="r11 rd" class="r11 r">i</span> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">NumericLiteralExpression</span>, <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r11 r">i</span>)),
+                <b>uint</b> <span id="r12 rd" class="r12 r">i</span> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">NumericLiteralExpression</span>, <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r12 r">i</span>)),
+                <b>short</b> <span id="r13 rd" class="r13 r">s</span> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">NumericLiteralExpression</span>, <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r13 r">s</span>)),
+                <b>ushort</b> <span id="r14 rd" class="r14 r">s</span> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">NumericLiteralExpression</span>, <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r14 r">s</span>)),
+                <b>float</b> <span id="r15 rd" class="r15 r">f</span> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">NumericLiteralExpression</span>, <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r15 r">f</span>)),
+                <b>string</b> <span id="r16 rd" class="r16 r">s</span> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">StringLiteralExpression</span>, <span class="t t">SyntaxFactory</span>.<span class="i method">Literal</span>(<span class="r16 r">s</span>)),
+                <b>true</b> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">TrueLiteralExpression</span>),
+                <b>false</b> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">FalseLiteralExpression</span>),
+ 
+                <b>_</b> =&gt; <span class="t t">SyntaxFactory</span>.<span class="i method">LiteralExpression</span>(<span class="t valueType">SyntaxKind</span>.<span class="i field">NullLiteralExpression</span>)
+            &rbrace;;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

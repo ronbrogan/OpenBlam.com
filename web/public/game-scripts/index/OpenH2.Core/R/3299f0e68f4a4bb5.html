@@ -5279,10 +5279,10 @@
 <a href="../../Halo2MCC/06b_floodzone.cs.html#4487"><b>4487</b>Engine.device_set_position(qz_door_a.<i>Entity</i>, 1F);</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#4519"><b>4519</b>Engine.device_operates_automatically_set(veh_int_door_a.<i>Entity</i>, true);</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#4555"><b>4555</b>Engine.device_set_position(qz_dam_door_a.<i>Entity</i>, 1F);</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4870"><b>4870</b>Engine.device_set_position(qz_door_a.<i>Entity</i>, 1F);</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4871"><b>4871</b>Engine.device_set_position(veh_int_door_a.<i>Entity</i>, 1F);</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4872"><b>4872</b>Engine.device_set_position(veh_int_door_b.<i>Entity</i>, 1F);</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4873"><b>4873</b>Engine.device_set_position(qz_dam_door_a.<i>Entity</i>, 1F);</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4837"><b>4837</b>Engine.device_set_position(qz_door_a.<i>Entity</i>, 1F);</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4838"><b>4838</b>Engine.device_set_position(veh_int_door_a.<i>Entity</i>, 1F);</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4839"><b>4839</b>Engine.device_set_position(veh_int_door_b.<i>Entity</i>, 1F);</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4840"><b>4840</b>Engine.device_set_position(qz_dam_door_a.<i>Entity</i>, 1F);</a>
 </div>
 <div class="rF"><div class="rN">07a_highcharity.cs (992)</div>
 <a href="../../Halo2MCC/07a_highcharity.cs.html#653"><b>653</b>Engine.object_uses_cinematic_lighting(chief.<i>Entity</i>, true);</a>
@@ -7062,9 +7062,9 @@
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#6053"><b>6053</b>await Engine.sleep_until(async () =&gt; !((bool)Engine.cs_moving()) || Engine.object_get_health(e6_jail_shield5.<i>Entity</i>) &lt; 0F, 15);</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#6054"><b>6054</b>if (Engine.object_get_health(e6_jail_shield5.<i>Entity</i>) &gt;= 0F)</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#6059"><b>6059</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(e6_jail_shield5.<i>Entity</i>) &lt; 0F, 15, 150);</a>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6068"><b>6068</b>if (Engine.object_get_health(e6_jail_shield4.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door4)))</a>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6074"><b>6074</b>if (Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door1)))</a>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6080"><b>6080</b>if (Engine.object_get_health(e6_jail_shield2.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door2)))</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6068"><b>6068</b>if (Engine.object_get_health(e6_jail_shield4.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door4))))</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6074"><b>6074</b>if (Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door1))))</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6080"><b>6080</b>if (Engine.object_get_health(e6_jail_shield2.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door2))))</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#6108"><b>6108</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(e6_pro) &gt;= this.ai_combat_status_active || Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &lt; 0F, 15);</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#6116"><b>6116</b>if (Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &gt;= 0F)</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#6120"><b>6120</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &lt; 0F, 10, (int)Engine.random_range(90, 150));</a>
@@ -14193,9 +14193,9 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6051"><b>6051</b>await Engine.sleep_until(async () =&gt; !((bool)Engine.cs_moving()) || Engine.object_get_health(e6_jail_shield5.<i>Entity</i>) &lt; 0F, 15);</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6052"><b>6052</b>if (Engine.object_get_health(e6_jail_shield5.<i>Entity</i>) &gt;= 0F)</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6057"><b>6057</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(e6_jail_shield5.<i>Entity</i>) &lt; 0F, 15, 150);</a>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6066"><b>6066</b>if (Engine.object_get_health(e6_jail_shield4.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door4)))</a>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6072"><b>6072</b>if (Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door1)))</a>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6078"><b>6078</b>if (Engine.object_get_health(e6_jail_shield2.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door2)))</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6066"><b>6066</b>if (Engine.object_get_health(e6_jail_shield4.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door4))))</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6072"><b>6072</b>if (Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door1))))</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6078"><b>6078</b>if (Engine.object_get_health(e6_jail_shield2.<i>Entity</i>) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door2))))</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6106"><b>6106</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(e6_pro) &gt;= this.ai_combat_status_active || Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &lt; 0F, 15);</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6114"><b>6114</b>if (Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &gt;= 0F)</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6118"><b>6118</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(e6_jail_shield1.<i>Entity</i>) &lt; 0F, 10, (int)Engine.random_range(90, 150));</a>
@@ -14270,7 +14270,7 @@
 <a href="../Scripting/GenerationState/EntityGetContext.cs.html#48"><b>48</b>SyntaxFactory.IdentifierName(nameof(ScenarioEntity&lt;object&gt;.<i>Entity</i>)));</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Types.cs (1)</div>
-<a href="../Scripting/Types.cs.html#83"><b>83</b>public static implicit operator TItem(ScenarioEntity&lt;TItem&gt; scenarioItem) =&gt; scenarioItem.<i>Entity</i>;</a>
+<a href="../Scripting/Types.cs.html#144"><b>144</b>public static implicit operator TItem(ScenarioEntity&lt;TItem&gt; scenarioItem) =&gt; scenarioItem.<i>Entity</i>;</a>
 </div>
 </div>
 </div>

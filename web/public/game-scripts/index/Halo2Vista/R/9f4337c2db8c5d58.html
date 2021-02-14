@@ -7,7 +7,7 @@
 <a href="../06b_floodzone.cs.html#1979"><b>1979</b>await Engine.sleep(Engine.ai_play_line(<i>covenant1</i>, &quot;0620&quot;));</a>
 <a href="../06b_floodzone.cs.html#1986"><b>1986</b>await Engine.sleep(Engine.ai_play_line(<i>covenant1</i>, &quot;0640&quot;));</a>
 <a href="../06b_floodzone.cs.html#1993"><b>1993</b>await Engine.sleep(Engine.ai_play_line(<i>covenant1</i>, &quot;0650&quot;));</a>
-<a href="../06b_floodzone.cs.html#2001"><b>2001</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;sc_qz_veh_int&quot;, cs_sc_qz_veh_int, <i>covenant1</i>));</a>
+<a href="../06b_floodzone.cs.html#2001"><b>2001</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;sc_qz_veh_int&quot;, new ScriptMethodReference(cs_sc_qz_veh_int), <i>covenant1</i>));</a>
 <a href="../06b_floodzone.cs.html#2031"><b>2031</b>await Engine.sleep(Engine.ai_play_line(<i>covenant1</i>, &quot;0250&quot;));</a>
 <a href="../06b_floodzone.cs.html#2056"><b>2056</b>await Engine.sleep(Engine.ai_play_line(<i>covenant1</i>, &quot;0270&quot;));</a>
 <a href="../06b_floodzone.cs.html#2063"><b>2063</b>await Engine.sleep(Engine.ai_play_line(<i>covenant1</i>, &quot;0280&quot;));</a>
@@ -47,7 +47,7 @@
 <a href="../06b_floodzone.cs.html#2526"><b>2526</b>return Engine.volume_test_objects(tv_ext_a_f, Engine.players()) &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>covenant1</i>) || Engine.volume_test_objects(tv_ext_a_f, Engine.players()) &amp;&amp; (short)Engine.ai_living_count(ext_a_sen_f) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(ext_a_flood_f) &lt;= 0 || this.g_ext_a_fact_ent_migrate;</a>
 <a href="../06b_floodzone.cs.html#2543"><b>2543</b>Engine.ai_set_orders(<i>covenant1</i>, cov_follow_ext_a_fact_ent);</a>
 <a href="../06b_floodzone.cs.html#2546"><b>2546</b>return (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>covenant1</i>) &amp;&amp; this.g_fact_ent_sen_spawn || (short)Engine.ai_living_count(fact_ent_sentinels) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(fact_ent_flood) &lt;= 0 &amp;&amp; this.g_fact_ent_sen_spawn || Engine.volume_test_objects(tv_fact_ent_follow, Engine.players());</a>
-<a href="../06b_floodzone.cs.html#2549"><b>2549</b>Engine.cs_run_command_script(<i>covenant1</i>, cs_fact_ent_exit_veh);</a>
+<a href="../06b_floodzone.cs.html#2549"><b>2549</b>Engine.cs_run_command_script(<i>covenant1</i>, new ScriptMethodReference(cs_fact_ent_exit_veh));</a>
 <a href="../06b_floodzone.cs.html#2559"><b>2559</b>Engine.ai_set_orders(<i>covenant1</i>, cov_ext_b_exit);</a>
 <a href="../06b_floodzone.cs.html#2561"><b>2561</b>Engine.ai_vehicle_exit(<i>covenant1</i>);</a>
 <a href="../06b_floodzone.cs.html#2581"><b>2581</b>Engine.ai_set_orders(<i>covenant1</i>, cov_follow_ext_b);</a>
@@ -60,7 +60,7 @@
 <a href="../06b_floodzone.cs.html#2647"><b>2647</b>Engine.ai_magically_see(<i>covenant1</i>, ext_b_flood);</a>
 <a href="../06b_floodzone.cs.html#2665"><b>2665</b>Engine.ai_set_orders(<i>covenant1</i>, cov_follow_ext_b_bk);</a>
 <a href="../06b_floodzone.cs.html#2668"><b>2668</b>Engine.ai_magically_see(<i>covenant1</i>, ext_b_flood);</a>
-<a href="../06b_floodzone.cs.html#2672"><b>2672</b>Engine.cs_run_command_script(<i>covenant1</i>, cs_ext_b_exit);</a>
+<a href="../06b_floodzone.cs.html#2672"><b>2672</b>Engine.cs_run_command_script(<i>covenant1</i>, new ScriptMethodReference(cs_ext_b_exit));</a>
 <a href="../06b_floodzone.cs.html#2674"><b>2674</b>Engine.ai_migrate(<i>covenant1</i>, key_cov_dump.Squad);</a>
 <a href="../06b_floodzone.cs.html#2678"><b>2678</b>Engine.ai_set_orders(<i>covenant1</i>, cov_follow_key_ent);</a>
 <a href="../06b_floodzone.cs.html#3182"><b>3182</b>Engine.ai_renew(<i>covenant1</i>);</a>

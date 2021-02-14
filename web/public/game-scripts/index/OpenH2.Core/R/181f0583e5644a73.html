@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">5135 references to players</div><div class="rA">Halo2MCC (2572)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (5)</div>
+<div class="rH">5134 references to players</div><div class="rA">Halo2MCC (2571)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (5)</div>
 <a href="../../Halo2MCC/00a_introduction.cs.html#30"><b>30</b>return Engine.unit(Engine.list_get(Engine.<i>players</i>(), 0));</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#36"><b>36</b>return Engine.unit(Engine.list_get(Engine.<i>players</i>(), 1));</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#42"><b>42</b>return Engine.list_count(Engine.<i>players</i>());</a>
@@ -198,7 +198,7 @@
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#4028"><b>4028</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.<i>players</i>(), Engine.ai_get_object(this.ai_current_actor)) &lt;= 7F, 15);</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#4062"><b>4062</b>if (!(Engine.volume_test_objects(tv_e6_main_begin2, Engine.<i>players</i>())))</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#4083"><b>4083</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_hotel_vicinity, Engine.<i>players</i>()) || await this.e6_cov_inf0_not_a_threat(), 10);</a>
-<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4084"><b>4084</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_hotel_greeting_scene&quot;, cs_e6_hotel_greeting_scene, e6_mars_inf1.marine0) || (short)Engine.ai_living_count(e6_mars_inf1.marine0) &lt;= 0 || Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.<i>players</i>()), 5);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4084"><b>4084</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_hotel_greeting_scene&quot;, new ScriptMethodReference(cs_e6_hotel_greeting_scene), e6_mars_inf1.marine0) || (short)Engine.ai_living_count(e6_mars_inf1.marine0) &lt;= 0 || Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.<i>players</i>()), 5);</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#4088"><b>4088</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.<i>players</i>()), 15);</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#4108"><b>4108</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_main_begin0, Engine.<i>players</i>()) || Engine.volume_test_objects(tv_e6_main_begin1, Engine.<i>players</i>()) || Engine.volume_test_objects(tv_e6_main_begin2, Engine.<i>players</i>()), 15);</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#4242"><b>4242</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e5b_main, Engine.<i>players</i>()), 15);</a>
@@ -750,7 +750,7 @@
 <a href="../../Halo2MCC/04b_floodlab.cs.html#5089"><b>5089</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_near_shield, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#5133"><b>5133</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_power_core_enter, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#5146"><b>5146</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_power_core_midway, Engine.<i>players</i>()) == true || (short)Engine.ai_living_count(power_core_heretics) &lt; 2);</a>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#5154"><b>5154</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;power_core_scene&quot;, power_core_heretic, power_core_heretics) || Engine.volume_test_objects(vol_power_core_bottom, Engine.<i>players</i>()) == true);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#5154"><b>5154</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;power_core_scene&quot;, new ScriptMethodReference(power_core_heretic), power_core_heretics) || Engine.volume_test_objects(vol_power_core_bottom, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#5155"><b>5155</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_power_core_bottom, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#5184"><b>5184</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_plummet_fl, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/04b_floodlab.cs.html#5455"><b>5455</b>return Engine.volume_test_objects(vol_arm_01_return, Engine.<i>players</i>()) == true;</a>
@@ -847,7 +847,7 @@
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#3173"><b>3173</b>if (Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#3264"><b>3264</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_overlook_pause, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#3265"><b>3265</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(overlook_jackals) &lt; 1 || Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == true);</a>
-<a href="../../Halo2MCC/05a_deltaapproach.cs.html#3266"><b>3266</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == true || Engine.ai_scene(&quot;overlook_remark_scene&quot;, overlook_remark, all_allies) || (short)Engine.ai_living_count(all_allies) &lt; 1, 30, 300);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#3266"><b>3266</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == true || Engine.ai_scene(&quot;overlook_remark_scene&quot;, new ScriptMethodReference(overlook_remark), all_allies) || (short)Engine.ai_living_count(all_allies) &lt; 1, 30, 300);</a>
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#3281"><b>3281</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_near_bunker, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#3536"><b>3536</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(bridge_vehicles_all) &lt; 1 || Engine.volume_test_objects(vol_bridge_ghost_spawn, Engine.<i>players</i>()) == true || Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2MCC/05a_deltaapproach.cs.html#3537"><b>3537</b>if (Engine.volume_test_objects(vol_bridge_ghost_spawn, Engine.<i>players</i>()) == true || Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.<i>players</i>()) == true)</a>
@@ -1479,7 +1479,7 @@
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6938"><b>6938</b>await Engine.sleep_until(async () =&gt; this.g_qz_initial || Engine.volume_test_objects(tv_qz_initial, Engine.<i>players</i>()), 10);</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6941"><b>6941</b>await Engine.sleep_until(async () =&gt; this.g_cov_defense || Engine.volume_test_objects(tv_cov_defense, Engine.<i>players</i>()), 10);</a>
 </div>
-<div class="rF"><div class="rN">06b_floodzone.cs (176)</div>
+<div class="rF"><div class="rN">06b_floodzone.cs (175)</div>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#184"><b>184</b>return Engine.unit(Engine.list_get(Engine.<i>players</i>(), 0));</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#190"><b>190</b>return Engine.unit(Engine.list_get(Engine.<i>players</i>(), 1));</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#196"><b>196</b>return Engine.list_count(Engine.<i>players</i>());</a>
@@ -1582,28 +1582,27 @@
 <a href="../../Halo2MCC/06b_floodzone.cs.html#4723"><b>4723</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_ext_b_exit, Engine.<i>players</i>()), 5);</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#4732"><b>4732</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(ext_b_flood_d) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(ext_b_sentinels_d) &lt;= 0 || Engine.volume_test_objects(tv_ext_b_exit_door, Engine.<i>players</i>()), 5);</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#4747"><b>4747</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride_cinematic, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4819"><b>4819</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_vehicle_int, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4821"><b>4821</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_a, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4823"><b>4823</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_factory, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4825"><b>4825</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4827"><b>4827</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#4829"><b>4829</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5761"><b>5761</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_a, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5763"><b>5763</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_factory, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5765"><b>5765</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5767"><b>5767</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5769"><b>5769</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5800"><b>5800</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_factory, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5802"><b>5802</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5804"><b>5804</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5806"><b>5806</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5837"><b>5837</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4796"><b>4796</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_vehicle_int, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4798"><b>4798</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_a, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4800"><b>4800</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_factory, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4802"><b>4802</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()), 5);</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#4804"><b>4804</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride_cinematic, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5728"><b>5728</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_a, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5730"><b>5730</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_factory, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5732"><b>5732</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5734"><b>5734</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5736"><b>5736</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5767"><b>5767</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_factory, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5769"><b>5769</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5771"><b>5771</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5773"><b>5773</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5804"><b>5804</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_qz_ext_b, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5806"><b>5806</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5808"><b>5808</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#5839"><b>5839</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
 <a href="../../Halo2MCC/06b_floodzone.cs.html#5841"><b>5841</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5872"><b>5872</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_key_ride, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5874"><b>5874</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5905"><b>5905</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
-<a href="../../Halo2MCC/06b_floodzone.cs.html#5935"><b>5935</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5872"><b>5872</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#5902"><b>5902</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_x07, Engine.<i>players</i>()));</a>
 </div>
 <div class="rF"><div class="rN">07a_highcharity.cs (191)</div>
 <a href="../../Halo2MCC/07a_highcharity.cs.html#194"><b>194</b>return Engine.unit(Engine.list_get(Engine.<i>players</i>(), 0));</a>
@@ -2395,7 +2394,7 @@
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#4014"><b>4014</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.<i>players</i>(), Engine.ai_get_object(this.ai_current_actor)) &lt;= 7F, 15);</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#4048"><b>4048</b>if (!(Engine.volume_test_objects(tv_e6_main_begin2, Engine.<i>players</i>())))</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#4069"><b>4069</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_hotel_vicinity, Engine.<i>players</i>()) || await this.e6_cov_inf0_not_a_threat(), 10);</a>
-<a href="../../Halo2Vista/03a_oldmombasa.cs.html#4070"><b>4070</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_hotel_greeting_scene&quot;, cs_e6_hotel_greeting_scene, e6_mars_inf1.marine0) || (short)Engine.ai_living_count(e6_mars_inf1.marine0) &lt;= 0 || Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.<i>players</i>()), 5);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#4070"><b>4070</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_hotel_greeting_scene&quot;, new ScriptMethodReference(cs_e6_hotel_greeting_scene), e6_mars_inf1.marine0) || (short)Engine.ai_living_count(e6_mars_inf1.marine0) &lt;= 0 || Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.<i>players</i>()), 5);</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#4074"><b>4074</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.<i>players</i>()), 15);</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#4094"><b>4094</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_main_begin0, Engine.<i>players</i>()) || Engine.volume_test_objects(tv_e6_main_begin1, Engine.<i>players</i>()) || Engine.volume_test_objects(tv_e6_main_begin2, Engine.<i>players</i>()), 15);</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#4228"><b>4228</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e5b_main, Engine.<i>players</i>()), 15);</a>
@@ -2947,7 +2946,7 @@
 <a href="../../Halo2Vista/04b_floodlab.cs.html#5070"><b>5070</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_near_shield, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/04b_floodlab.cs.html#5114"><b>5114</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_power_core_enter, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/04b_floodlab.cs.html#5127"><b>5127</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_power_core_midway, Engine.<i>players</i>()) == true || (short)Engine.ai_living_count(power_core_heretics) &lt; 2);</a>
-<a href="../../Halo2Vista/04b_floodlab.cs.html#5135"><b>5135</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;power_core_scene&quot;, power_core_heretic, power_core_heretics) || Engine.volume_test_objects(vol_power_core_bottom, Engine.<i>players</i>()) == true);</a>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#5135"><b>5135</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;power_core_scene&quot;, new ScriptMethodReference(power_core_heretic), power_core_heretics) || Engine.volume_test_objects(vol_power_core_bottom, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/04b_floodlab.cs.html#5136"><b>5136</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_power_core_bottom, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/04b_floodlab.cs.html#5165"><b>5165</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_plummet_fl, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/04b_floodlab.cs.html#5436"><b>5436</b>return Engine.volume_test_objects(vol_arm_01_return, Engine.<i>players</i>()) == true;</a>
@@ -3044,7 +3043,7 @@
 <a href="../../Halo2Vista/05a_deltaapproach.cs.html#3171"><b>3171</b>if (Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
 <a href="../../Halo2Vista/05a_deltaapproach.cs.html#3262"><b>3262</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_overlook_pause, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/05a_deltaapproach.cs.html#3263"><b>3263</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(overlook_jackals) &lt; 1 || Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == true);</a>
-<a href="../../Halo2Vista/05a_deltaapproach.cs.html#3264"><b>3264</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == true || Engine.ai_scene(&quot;overlook_remark_scene&quot;, overlook_remark, all_allies) || (short)Engine.ai_living_count(all_allies) &lt; 1, 30, 300);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#3264"><b>3264</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_all, Engine.<i>players</i>()) == true || Engine.ai_scene(&quot;overlook_remark_scene&quot;, new ScriptMethodReference(overlook_remark), all_allies) || (short)Engine.ai_living_count(all_allies) &lt; 1, 30, 300);</a>
 <a href="../../Halo2Vista/05a_deltaapproach.cs.html#3279"><b>3279</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_near_bunker, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/05a_deltaapproach.cs.html#3534"><b>3534</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(bridge_vehicles_all) &lt; 1 || Engine.volume_test_objects(vol_bridge_ghost_spawn, Engine.<i>players</i>()) == true || Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.<i>players</i>()) == true);</a>
 <a href="../../Halo2Vista/05a_deltaapproach.cs.html#3535"><b>3535</b>if (Engine.volume_test_objects(vol_bridge_ghost_spawn, Engine.<i>players</i>()) == true || Engine.volume_test_objects(vol_bridge_inside_bunker, Engine.<i>players</i>()) == true)</a>

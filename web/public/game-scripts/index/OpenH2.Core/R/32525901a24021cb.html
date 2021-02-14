@@ -1,0 +1,42 @@
+﻿<div class="referenceBody">
+<div class="rH">33 references to From</div><div class="rA">OpenH2.Core (33)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (5)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#133"><b>133</b>ScriptDataType.String =&gt; Result.<i>From</i>(SpanByteExtensions.ReadStringStarting(this.scenario.ScriptStrings, node.NodeString)),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#136"><b>136</b>ScriptDataType.Trigger =&gt; Result.<i>From</i>(this.scenario.TriggerVolumes[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#137"><b>137</b>ScriptDataType.LocationFlag =&gt; Result.<i>From</i>(this.scenario.LocationFlagDefinitions[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#144"><b>144</b>ScriptDataType.AIOrders =&gt; Result.<i>From</i>(this.scenario.AiOrderDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#145"><b>145</b>ScriptDataType.StartingProfile =&gt; Result.<i>From</i>(this.scenario.StartingProfileDefinitions[node.NodeData_H16].GameObject),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (26)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#258"><b>258</b>ScriptDataType.String =&gt; Result.<i>From</i>(SpanByteExtensions.ReadStringStarting(this.scenario.ScriptStrings, node.NodeString)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#259"><b>259</b>ScriptDataType.ScriptReference =&gt; Result.<i>From</i>(new ScriptMethodReference(node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#261"><b>261</b>ScriptDataType.Trigger =&gt; Result.<i>From</i>(this.scenario.TriggerVolumes[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#262"><b>262</b>ScriptDataType.LocationFlag =&gt; Result.<i>From</i>(this.scenario.LocationFlagDefinitions[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#263"><b>263</b>ScriptDataType.CameraPathTarget =&gt; Result.<i>From</i>(this.scenario.CameraPathTargets[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#264"><b>264</b>ScriptDataType.CinematicTitle =&gt; Result.<i>From</i>(this.scenario.CinematicTitleDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#265"><b>265</b>ScriptDataType.DeviceGroup =&gt; Result.<i>From</i>(this.scenario.DeviceGroupDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#267"><b>267</b>ScriptDataType.AIScript =&gt; Result.<i>From</i>(new ScriptMethodReference(node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#269"><b>269</b>ScriptDataType.AIOrders =&gt; Result.<i>From</i>(this.scenario.AiOrderDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#270"><b>270</b>ScriptDataType.StartingProfile =&gt; Result.<i>From</i>(this.scenario.StartingProfileDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#271"><b>271</b>ScriptDataType.Bsp =&gt; Result.<i>From</i>(this.scenario.Terrains[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#273"><b>273</b>ScriptDataType.SpatialPoint =&gt; Result.<i>From</i>(this.scenario.SpatialPointStuffs[0].SpatialPointCollections[node.NodeData_L16].SpatialPoints[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#274"><b>274</b>ScriptDataType.List =&gt; Result.<i>From</i>(new GameObjectList(new[] { (IGameObject?)GetEntityResult(node).Object })),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#275"><b>275</b>ScriptDataType.Sound =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;SoundTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#276"><b>276</b>ScriptDataType.Effect =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;EffectTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#277"><b>277</b>ScriptDataType.DamageEffect =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;DamageEffectTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#278"><b>278</b>ScriptDataType.LoopingSound =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;LoopingSoundTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#279"><b>279</b>ScriptDataType.TagReference =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;BaseTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#280"><b>280</b>ScriptDataType.Animation =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;AnimationGraphTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#281"><b>281</b>ScriptDataType.Model =&gt; Result.<i>From</i>(this.scriptEngine.GetTag&lt;RenderModelTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#291"><b>291</b>ScriptDataType.EntityIdentifier =&gt; Result.<i>From</i>(new EntityIdentifier(node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#305"><b>305</b>return Result.<i>From</i>(this.scenario.AiSquadDefinitions[node.NodeData_B1].StartingLocations[node.NodeData_H16]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#309"><b>309</b>return Result.<i>From</i>(this.scenario.AiSquadGroupDefinitions[node.NodeData_H16]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#313"><b>313</b>return Result.<i>From</i>(this.scenario.AiSquadDefinitions[node.NodeData_H16]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#321"><b>321</b>return Result.<i>From</i>(null);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#325"><b>325</b>return Result.<i>From</i>(this.scenario.WellKnownItems[node.NodeData_H16].GameObject);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GlobalVariableSet.cs (2)</div>
+<a href="../Scripting/GlobalVariableSet.cs.html#35"><b>35</b>33563 =&gt; Result.<i>From</i>(this.ai_current_squad, ScriptDataType.AI),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#36"><b>36</b>33564 =&gt; Result.<i>From</i>(this.ai_current_actor, ScriptDataType.AI),</a>
+</div>
+</div>
+</div>

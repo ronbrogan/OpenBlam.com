@@ -1,21 +1,22 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 implementations of IH2MapHeader</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2vMapHeader.cs (1)</div>
-<a href="../Maps/H2vMapHeader.cs.html#8"><b>8</b>public class H2vMapHeader : <i>IH2MapHeader</i></a>
-</div>
-<div class="rF"><div class="rN">Maps\MCC\H2mccMapHeader.cs (1)</div>
+<div class="rH">2 implementations of IH2MapHeader</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\MCC\H2mccMapHeader.cs (1)</div>
 <a href="../Maps/MCC/H2mccMapHeader.cs.html#11"><b>11</b>public class H2mccMapHeader : <i>IH2MapHeader</i></a>
 </div>
+<div class="rF"><div class="rN">Maps\Vista\H2vMapHeader.cs (1)</div>
+<a href="../Maps/Vista/H2vMapHeader.cs.html#8"><b>8</b>public class H2vMapHeader : <i>IH2MapHeader</i></a>
 </div>
-<div class="rH">5 references to IH2MapHeader</div><div class="rA">OpenH2.Core (5)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (2)</div>
-<a href="../Factories/MapFactory.cs.html#195"><b>195</b><i>var</i> header = scene.Header;</a>
-<a href="../Factories/MapFactory.cs.html#246"><b>246</b>public int CalculateSecondaryMagic(<i>IH2MapHeader</i> header, int firstObjOffset)</a>
 </div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (2)</div>
-<a href="../Factories/MccMapFactory.cs.html#145"><b>145</b><i>var</i> header = scene.Header;</a>
-<a href="../Factories/MccMapFactory.cs.html#196"><b>196</b>public int CalculateSecondaryMagic(<i>IH2MapHeader</i> header, int firstObjOffset)</a>
+<div class="rH">6 references to IH2MapHeader</div><div class="rA">OpenH2.Core (6)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (2)</div>
+<a href="../Factories/MapFactory.cs.html#98"><b>98</b><i>var</i> header = scene.Header;</a>
+<a href="../Factories/MapFactory.cs.html#148"><b>148</b>public static int CalculateSecondaryMagic(<i>IH2MapHeader</i> header, int firstObjOffset)</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
-<a href="../Maps/H2BaseMap.cs.html#15"><b>15</b>public <i>IH2MapHeader</i> Header { get; set; }</a>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (2)</div>
+<a href="../Maps/H2BaseMap.cs.html#33"><b>33</b>public abstract class H2BaseMap&lt;THeader&gt; : HaloMap&lt;THeader&gt;, IH2Map where THeader : <i>IH2MapHeader</i></a>
+<a href="../Maps/H2BaseMap.cs.html#48"><b>48</b><i>IH2MapHeader</i> IH2Map.Header =&gt; this.Header;</a>
+</div>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
+<a href="../Maps/IH2Map.cs.html#19"><b>19</b><i>IH2MapHeader</i> Header { get; }</a>
+<a href="../Maps/IH2Map.cs.html#44"><b>44</b>public <i>IH2MapHeader</i> Header =&gt; null;</a>
 </div>
 </div>
 </div>

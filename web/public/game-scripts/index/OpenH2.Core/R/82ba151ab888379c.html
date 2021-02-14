@@ -1,0 +1,19 @@
+﻿<div class="referenceBody">
+<div class="rH">12 references to Throw</div><div class="rA">OpenH2.Core (12)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterState.cs (1)</div>
+<a href="../Scripting/Execution/InterpreterState.cs.html#62"><b>62</b><i>Throw</i>.InterpreterException(&quot;Interpreter CallStack has exceeded the allowed depth&quot;, this);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (11)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#165"><b>165</b>default: <i>Throw</i>.InterpreterException(&quot;Non-invocation node provided to InterpretInvocation&quot;, state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#218"><b>218</b>default: <i>Throw</i>.InterpreterException($&quot;NodeType {node.NodeType} is not supported&quot;, state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#227"><b>227</b>if (invocationNode.NodeType != NodeType.Expression) <i>Throw</i>.InterpreterException(&quot;Invocation&#39;s first child must be an expression&quot;, state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#228"><b>228</b>if (invocationNode.DataType != ScriptDataType.MethodOrOperator) <i>Throw</i>.InterpreterException($&quot;Invocation&#39;s first child must be of type {ScriptDataType.MethodOrOperator}&quot;, state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#229"><b>229</b>if (node.OperationId != invocationNode.OperationId) <i>Throw</i>.InterpreterException($&quot;Invocation&#39;s OperationId must match the OperationId of its first child&quot;, state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#292"><b>292</b>_ =&gt; throw <i>Throw</i>.InterpreterException(&quot;Expression type not supported&quot;, state),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#724"><b>724</b>_ =&gt; throw <i>Throw</i>.InterpreterException($&quot;Equality comparison for {left.DataType} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#742"><b>742</b>_ =&gt; throw <i>Throw</i>.InterpreterException($&quot;Equality comparison for {left.DataType} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#760"><b>760</b>_ =&gt; throw <i>Throw</i>.InterpreterException($&quot;Equality comparison for {left.DataType} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#778"><b>778</b>_ =&gt; throw <i>Throw</i>.InterpreterException($&quot;Equality comparison for {left.DataType} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#796"><b>796</b>_ =&gt; throw <i>Throw</i>.InterpreterException($&quot;Equality comparison for {left.DataType} is not supported&quot;, state)</a>
+</div>
+</div>
+</div>

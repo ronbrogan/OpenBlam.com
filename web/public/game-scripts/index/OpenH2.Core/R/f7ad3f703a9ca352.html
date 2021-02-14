@@ -1,18 +1,18 @@
 ﻿<div class="referenceBody">
 <div class="rH">33 types derived from BaseTag</div><div class="rA">OpenH2.Core (33)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Tags\AnimationGraphTag.cs (1)</div>
-<a href="../Tags/AnimationGraphTag.cs.html#12"><b>12</b>public class AnimationGraphTag : <i>BaseTag</i></a>
+<a href="../Tags/AnimationGraphTag.cs.html#15"><b>15</b>public class AnimationGraphTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\BipedTag.cs (1)</div>
 <a href="../Tags/BipedTag.cs.html#9"><b>9</b>public class BipedTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\BitmapTag.cs (1)</div>
-<a href="../Tags/BitmapTag.cs.html#15"><b>15</b>public class BitmapTag : <i>BaseTag</i>, IEquatable&lt;BitmapTag&gt;</a>
+<a href="../Tags/BitmapTag.cs.html#18"><b>18</b>public class BitmapTag : <i>BaseTag</i>, IEquatable&lt;BitmapTag&gt;</a>
 </div>
 <div class="rF"><div class="rN">Tags\BlocTag.cs (1)</div>
 <a href="../Tags/BlocTag.cs.html#8"><b>8</b>public class BlocTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (1)</div>
-<a href="../Tags/BspTag.cs.html#15"><b>15</b>public partial class BspTag : <i>BaseTag</i></a>
+<a href="../Tags/BspTag.cs.html#21"><b>21</b>public partial class BspTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\CharacterTag.cs (1)</div>
 <a href="../Tags/CharacterTag.cs.html#8"><b>8</b>public class CharacterTag : <i>BaseTag</i></a>
@@ -54,13 +54,13 @@
 <a href="../Tags/PhysicsModelTag.cs.html#9"><b>9</b>public class PhysicsModelTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
-<a href="../Tags/RenderModelTag.cs.html#14"><b>14</b>public class RenderModelTag : <i>BaseTag</i></a>
+<a href="../Tags/RenderModelTag.cs.html#19"><b>19</b>public class RenderModelTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (1)</div>
 <a href="../Tags/Scenario/ScenarioTag.cs.html#13"><b>13</b>public partial class ScenarioTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\SceneryTag.cs (1)</div>
-<a href="../Tags/SceneryTag.cs.html#9"><b>9</b>public class SceneryTag : <i>BaseTag</i></a>
+<a href="../Tags/SceneryTag.cs.html#11"><b>11</b>public class SceneryTag : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Tags\ShaderPassTag.cs (1)</div>
 <a href="../Tags/ShaderPassTag.cs.html#8"><b>8</b>public class ShaderPassTag : <i>BaseTag</i></a>
@@ -99,7 +99,7 @@
 <a href="../Tags/WeaponTag.cs.html#9"><b>9</b>public class WeaponTag : <i>BaseTag</i></a>
 </div>
 </div>
-<div class="rH">200 references to BaseTag</div><div class="rA">Halo2MCC (76)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (2)</div>
+<div class="rH">184 references to BaseTag</div><div class="rA">Halo2MCC (76)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (2)</div>
 <a href="../../Halo2MCC/01a_tutorial.cs.html#1165"><b>1165</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.player0()), Engine.GetTag&lt;<i>BaseTag</i>&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 3826516638U)) || Engine.unit_has_weapon(Engine.unit(await this.player1()), Engine.GetTag&lt;<i>BaseTag</i>&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 3826516638U)), 1);</a>
 </div>
 <div class="rF"><div class="rN">01b_spacestation.cs (11)</div>
@@ -273,72 +273,55 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#7095"><b>7095</b>Engine.object_type_predict(Engine.GetTag&lt;<i>BaseTag</i>&gt;(&quot;objects\\vehicles\\spectre\\spectre&quot;, 4259650652U));</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (48)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
-<a href="../Extensions/SpanByteExtensions.cs.html#170"><b>170</b>where T : <i>BaseTag</i></a>
+<div class="rA">OpenH2.Core (32)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
+<a href="../Extensions/SpanByteExtensions.cs.html#22"><b>22</b>where T : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Extensions\StreamExtensions.cs (1)</div>
 <a href="../Extensions/StreamExtensions.cs.html#444"><b>444</b>where T : <i>BaseTag</i></a>
 </div>
-<div class="rF"><div class="rN">Factories\MapFactory.cs (3)</div>
-<a href="../Factories/MapFactory.cs.html#161"><b>161</b>private Dictionary&lt;uint, <i>BaseTag</i>&gt; GetTags(H2vMap scene, H2MapReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#163"><b>163</b>var dict = new Dictionary&lt;uint, <i>BaseTag</i>&gt;();</a>
-<a href="../Factories/MapFactory.cs.html#177"><b>177</b>public static <i>BaseTag</i> GetTag(H2BaseMap scene, TagIndexEntry entry, H2MapReader reader)</a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (3)</div>
-<a href="../Factories/MccMapFactory.cs.html#111"><b>111</b>private Dictionary&lt;uint, <i>BaseTag</i>&gt; GetTags(H2mccMap scene, H2MapReader reader)</a>
-<a href="../Factories/MccMapFactory.cs.html#113"><b>113</b>var dict = new Dictionary&lt;uint, <i>BaseTag</i>&gt;();</a>
-<a href="../Factories/MccMapFactory.cs.html#127"><b>127</b>public static <i>BaseTag</i> GetTag(H2mccMap scene, TagIndexEntry entry, H2MapReader reader)</a>
-</div>
 <div class="rF"><div class="rN">Factories\TagFactory.cs (8)</div>
-<a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static <i>BaseTag</i> CreateTag(uint id, string name, TagIndexEntry index, H2BaseMap map, H2MapReader reader)</a>
+<a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static <i>BaseTag</i> CreateTag(uint id, string name, TagIndexEntry index, IH2Map map, MapStream reader)</a>
 <a href="../Factories/TagFactory.cs.html#21"><b>21</b><i>BaseTag</i> tag;</a>
-<a href="../Factories/TagFactory.cs.html#40"><b>40</b><i>BaseTag</i> instance;</a>
-<a href="../Factories/TagFactory.cs.html#47"><b>47</b>instance = Activator.CreateInstance(tagType, new object[] { id }) as <i>BaseTag</i>;</a>
-<a href="../Factories/TagFactory.cs.html#51"><b>51</b>instance = (<i>BaseTag</i>)FormatterServices.GetUninitializedObject(tagType);</a>
-<a href="../Factories/TagFactory.cs.html#54"><b>54</b>tag = (<i>BaseTag</i>)BlamSerializer.DeserializeInto(instance,</a>
-<a href="../Factories/TagFactory.cs.html#76"><b>76</b>cachedTagTypes = Assembly.GetAssembly(typeof(<i>BaseTag</i>)).GetTypes()</a>
-<a href="../Factories/TagFactory.cs.html#77"><b>77</b>.Where(t =&gt; t.IsClass &amp;&amp; t.IsSubclassOf(typeof(<i>BaseTag</i>)))</a>
+<a href="../Factories/TagFactory.cs.html#35"><b>35</b><i>BaseTag</i> instance;</a>
+<a href="../Factories/TagFactory.cs.html#42"><b>42</b>instance = Activator.CreateInstance(tagType, new object[] { id }) as <i>BaseTag</i>;</a>
+<a href="../Factories/TagFactory.cs.html#46"><b>46</b>instance = (<i>BaseTag</i>)FormatterServices.GetUninitializedObject(tagType);</a>
+<a href="../Factories/TagFactory.cs.html#49"><b>49</b>tag = (<i>BaseTag</i>)BlamSerializer.DeserializeInto(instance,</a>
+<a href="../Factories/TagFactory.cs.html#71"><b>71</b>cachedTagTypes = Assembly.GetAssembly(typeof(<i>BaseTag</i>)).GetTypes()</a>
+<a href="../Factories/TagFactory.cs.html#72"><b>72</b>.Where(t =&gt; t.IsClass &amp;&amp; t.IsSubclassOf(typeof(<i>BaseTag</i>)))</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2vLazyLoadingMap.cs (4)</div>
-<a href="../Maps/H2vLazyLoadingMap.cs.html#11"><b>11</b>private Dictionary&lt;uint, <i>BaseTag</i>&gt; Tags = new Dictionary&lt;uint, <i>BaseTag</i>&gt;();</a>
-<a href="../Maps/H2vLazyLoadingMap.cs.html#18"><b>18</b>public bool TryGetTag&lt;T&gt;(uint id, out T tag) where T : <i>BaseTag</i></a>
-<a href="../Maps/H2vLazyLoadingMap.cs.html#20"><b>20</b>if(Tags.TryGetValue(id, out <i>var</i> baseTag))</a>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (9)</div>
+<a href="../Maps/H2BaseMap.cs.html#75"><b>75</b>public IEnumerable&lt;T&gt; GetLocalTagsOfType&lt;T&gt;() where T : <i>BaseTag</i></a>
+<a href="../Maps/H2BaseMap.cs.html#86"><b>86</b>public T GetTag&lt;T&gt;(TagRef&lt;T&gt; tagref) where T : <i>BaseTag</i></a>
+<a href="../Maps/H2BaseMap.cs.html#96"><b>96</b>public bool TryGetTag&lt;T&gt;(TagRef&lt;T&gt; tagref, out T tag) where T : <i>BaseTag</i></a>
+<a href="../Maps/H2BaseMap.cs.html#113"><b>113</b>public T GetTag&lt;T&gt;(uint id) where T : <i>BaseTag</i></a>
+<a href="../Maps/H2BaseMap.cs.html#123"><b>123</b>public bool TryGetTag&lt;T&gt;(uint id, out T tag) where T : <i>BaseTag</i></a>
+<a href="../Maps/H2BaseMap.cs.html#131"><b>131</b>if (this.tags.TryGetValue(id, out <i>var</i> t))</a>
+<a href="../Maps/H2BaseMap.cs.html#233"><b>233</b>protected Dictionary&lt;uint, <i>BaseTag</i>&gt; tags = new();</a>
+<a href="../Maps/H2BaseMap.cs.html#234"><b>234</b>protected <i>BaseTag</i> GetTag(TagIndexEntry entry)</a>
+<a href="../Maps/H2BaseMap.cs.html#236"><b>236</b>if(tags.TryGetValue(entry.ID, out <i>var</i> tag))</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2vMap.cs (11)</div>
-<a href="../Maps/H2vMap.cs.html#23"><b>23</b>private Dictionary&lt;uint, <i>BaseTag</i>&gt; Tags = new Dictionary&lt;uint, <i>BaseTag</i>&gt;();</a>
-<a href="../Maps/H2vMap.cs.html#38"><b>38</b>internal void SetTags(Dictionary&lt;uint, <i>BaseTag</i>&gt; tags)</a>
-<a href="../Maps/H2vMap.cs.html#42"><b>42</b>if (this.Tags.TryGetValue(this.IndexHeader.Scenario.Id, out <i>var</i> scnr))</a>
-<a href="../Maps/H2vMap.cs.html#47"><b>47</b>if (this.Tags.TryGetValue(this.Header.LocalSounds.Id, out <i>var</i> ugh))</a>
-<a href="../Maps/H2vMap.cs.html#70"><b>70</b>public IEnumerable&lt;T&gt; GetLocalTagsOfType&lt;T&gt;() where T : <i>BaseTag</i></a>
-<a href="../Maps/H2vMap.cs.html#75"><b>75</b>public T GetTag&lt;T&gt;(uint id) where T: <i>BaseTag</i></a>
-<a href="../Maps/H2vMap.cs.html#85"><b>85</b>public T GetTag&lt;T&gt;(TagRef&lt;T&gt; tagref) where T : <i>BaseTag</i></a>
-<a href="../Maps/H2vMap.cs.html#95"><b>95</b>public bool TryGetTag&lt;T&gt;(uint id, out T tag) where T : <i>BaseTag</i></a>
-<a href="../Maps/H2vMap.cs.html#103"><b>103</b>if (this.Tags.TryGetValue(id, out <i>var</i> t))</a>
-<a href="../Maps/H2vMap.cs.html#133"><b>133</b>public bool TryGetTag&lt;T&gt;(TagRef&lt;T&gt; tagref, out T tag) where T : <i>BaseTag</i></a>
-</div>
-<div class="rF"><div class="rN">Maps\MCC\H2mccMap.cs (11)</div>
-<a href="../Maps/MCC/H2mccMap.cs.html#15"><b>15</b>private Dictionary&lt;uint, <i>BaseTag</i>&gt; Tags = new Dictionary&lt;uint, <i>BaseTag</i>&gt;();</a>
-<a href="../Maps/MCC/H2mccMap.cs.html#26"><b>26</b>internal void SetTags(Dictionary&lt;uint, <i>BaseTag</i>&gt; tags)</a>
-<a href="../Maps/MCC/H2mccMap.cs.html#30"><b>30</b>if (this.Tags.TryGetValue(this.IndexHeader.Scenario.Id, out <i>var</i> scnr))</a>
-<a href="../Maps/MCC/H2mccMap.cs.html#35"><b>35</b>if (this.Tags.TryGetValue(this.Header.LocalSounds.Id, out <i>var</i> ugh))</a>
-<a href="../Maps/MCC/H2mccMap.cs.html#47"><b>47</b>public IEnumerable&lt;T&gt; GetLocalTagsOfType&lt;T&gt;() where T : <i>BaseTag</i></a>
-<a href="../Maps/MCC/H2mccMap.cs.html#52"><b>52</b>public T GetTag&lt;T&gt;(uint id) where T : <i>BaseTag</i></a>
-<a href="../Maps/MCC/H2mccMap.cs.html#62"><b>62</b>public T GetTag&lt;T&gt;(TagRef&lt;T&gt; tagref) where T : <i>BaseTag</i></a>
-<a href="../Maps/MCC/H2mccMap.cs.html#72"><b>72</b>public bool TryGetTag&lt;T&gt;(uint id, out T tag) where T : <i>BaseTag</i></a>
-<a href="../Maps/MCC/H2mccMap.cs.html#80"><b>80</b>if (this.Tags.TryGetValue(id, out <i>var</i> t))</a>
-<a href="../Maps/MCC/H2mccMap.cs.html#110"><b>110</b>public bool TryGetTag&lt;T&gt;(TagRef&lt;T&gt; tagref, out T tag) where T : <i>BaseTag</i></a>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (6)</div>
+<a href="../Maps/IH2Map.cs.html#27"><b>27</b>bool TryGetTag&lt;T&gt;(uint id, out T? tag) where T : <i>BaseTag</i>;</a>
+<a href="../Maps/IH2Map.cs.html#28"><b>28</b>bool TryGetTag&lt;T&gt;(TagRef&lt;T&gt; tagref, out T? tag) where T : <i>BaseTag</i>;</a>
+<a href="../Maps/IH2Map.cs.html#29"><b>29</b>T GetTag&lt;T&gt;(TagRef&lt;T&gt; tagref) where T : <i>BaseTag</i>;</a>
+<a href="../Maps/IH2Map.cs.html#57"><b>57</b>public bool TryGetTag&lt;T&gt;(uint id, out T? tag) where T : <i>BaseTag</i></a>
+<a href="../Maps/IH2Map.cs.html#63"><b>63</b>public T GetTag&lt;T&gt;(TagRef&lt;T&gt; tagref) where T : <i>BaseTag</i></a>
+<a href="../Maps/IH2Map.cs.html#68"><b>68</b>public bool TryGetTag&lt;T&gt;(TagRef&lt;T&gt; tagref, out T? tag) where T : <i>BaseTag</i></a>
 </div>
 <div class="rF"><div class="rN">Maps\TagRef.cs (1)</div>
 <a href="../Maps/TagRef.cs.html#28"><b>28</b>public readonly struct TagRef&lt;TTag&gt; : ITagRef where TTag : <i>BaseTag</i></a>
 </div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#279"><b>279</b>ScriptDataType.TagReference =&gt; Result.From(this.scriptEngine.GetTag&lt;<i>BaseTag</i>&gt;(null, node.NodeData_32)),</a>
+</div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#52"><b>52</b>ScriptDataType.TagReference =&gt; ParseTypeName(nameof(<i>BaseTag</i>)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#53"><b>53</b>ScriptDataType.TagReference =&gt; ParseTypeName(nameof(<i>BaseTag</i>)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\IScriptEngine.cs (4)</div>
-<a href="../Scripting/IScriptEngine.cs.html#689"><b>689</b>T GetTag&lt;T&gt;(string name, uint id) where T: <i>BaseTag</i>;</a>
-<a href="../Scripting/IScriptEngine.cs.html#902"><b>902</b>void object_type_predict(<i>BaseTag</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#905"><b>905</b>void object_type_predict_high(<i>BaseTag</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1154"><b>1154</b>bool unit_has_weapon(IUnit unit, <i>BaseTag</i> weapon);</a>
+<a href="../Scripting/IScriptEngine.cs.html#861"><b>861</b>T GetTag&lt;T&gt;(string? name, uint id) where T : <i>BaseTag</i>;</a>
+<a href="../Scripting/IScriptEngine.cs.html#1134"><b>1134</b>void object_type_predict(<i>BaseTag</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1138"><b>1138</b>void object_type_predict_high(<i>BaseTag</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1460"><b>1460</b>bool unit_has_weapon(IUnit unit, <i>BaseTag</i> weapon);</a>
 </div>
 </div>
 </div>

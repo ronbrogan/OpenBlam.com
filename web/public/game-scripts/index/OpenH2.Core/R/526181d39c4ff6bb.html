@@ -1,20 +1,23 @@
 ﻿<div class="referenceBody">
 <div class="rH">3 writes to NextCheckval</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#27"><b>27</b><i>NextCheckval</i> = method.ValueB,</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#28"><b>28</b><i>NextCheckval</i> = method.ValueB,</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (2)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#37"><b>37</b>patch.NodeData.<i>NextCheckval</i> = ushort.MaxValue;</a>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#42"><b>42</b>patch.NodeData.<i>NextCheckval</i> = nextNode.Checkval;</a>
 </div>
 </div>
-<div class="rH">4 references to NextCheckval</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#445"><b>445</b>Debug.Assert(scenario.ScriptSyntaxNodes[node.NextIndex].Checkval == node.<i>NextCheckval</i>, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<div class="rH">5 references to NextCheckval</div><div class="rA">OpenH2.Core (5)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#181"><b>181</b>Debug.Assert(invocationNode.<i>NextCheckval</i> == ushort.MaxValue);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#449"><b>449</b>Debug.Assert(scenario.ScriptSyntaxNodes[node.NextIndex].Checkval == node.<i>NextCheckval</i>, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#115"><b>115</b>Debug.Assert(tag.ScriptSyntaxNodes[node.NextIndex].Checkval == node.<i>NextCheckval</i>, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#116"><b>116</b>Debug.Assert(tag.ScriptSyntaxNodes[node.NextIndex].Checkval == node.<i>NextCheckval</i>, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.<i>NextCheckval</i>},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.<i>NextCheckval</i>},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#64"><b>64</b>map.WriteUInt16At(patchStart + 10, patch.NodeData.<i>NextCheckval</i>);</a>

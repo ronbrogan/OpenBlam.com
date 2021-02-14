@@ -1,0 +1,35 @@
+﻿<div class="referenceBody">
+<div class="rH">8 writes to PreviousEdge</div><div class="rA">OpenH2.Foundation (8)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (8)</div>
+<a href="../3D/QuickHull.cs.html#265"><b>265</b>he0.<i>PreviousEdge</i> = he2;</a>
+<a href="../3D/QuickHull.cs.html#267"><b>267</b>he1.<i>PreviousEdge</i> = he0;</a>
+<a href="../3D/QuickHull.cs.html#269"><b>269</b>he2.<i>PreviousEdge</i> = he1;</a>
+<a href="../3D/QuickHull.cs.html#403"><b>403</b>hedgeOpp.<i>PreviousEdge</i> = hedgeOpp.PreviousEdge.PreviousEdge;</a>
+<a href="../3D/QuickHull.cs.html#406"><b>406</b>hedge.<i>PreviousEdge</i> = hedgePrev.PreviousEdge;</a>
+<a href="../3D/QuickHull.cs.html#418"><b>418</b>hedge.<i>PreviousEdge</i> = hedgePrev;</a>
+<a href="../3D/QuickHull.cs.html#584"><b>584</b>hedge.<i>PreviousEdge</i> = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#588"><b>588</b>hedge.NextEdge.<i>PreviousEdge</i> = hedge;</a>
+</div>
+</div>
+<div class="rH">22 references to PreviousEdge</div><div class="rA">OpenH2.Foundation (22)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (22)</div>
+<a href="../3D/QuickHull.cs.html#27"><b>27</b>public Vertex TailVertex =&gt; <i>PreviousEdge</i> != null ? <i>PreviousEdge</i>.HeadVertex : null;</a>
+<a href="../3D/QuickHull.cs.html#296"><b>296</b>he = he.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#390"><b>390</b>hedgeOpp = hedge.OppositeEdge.<i>PreviousEdge</i>.OppositeEdge;</a>
+<a href="../3D/QuickHull.cs.html#399"><b>399</b>if (oppFace.HalfEdge == hedgeOpp.<i>PreviousEdge</i>)</a>
+<a href="../3D/QuickHull.cs.html#403"><b>403</b>hedgeOpp.PreviousEdge = hedgeOpp.<i>PreviousEdge</i>.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#404"><b>404</b>hedgeOpp.<i>PreviousEdge</i>.NextEdge = hedgeOpp;</a>
+<a href="../3D/QuickHull.cs.html#406"><b>406</b>hedge.PreviousEdge = hedgePrev.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#407"><b>407</b>hedge.<i>PreviousEdge</i>.NextEdge = hedge;</a>
+<a href="../3D/QuickHull.cs.html#500"><b>500</b>HalfEdge hedgeAdjPrev = hedgeAdj.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#502"><b>502</b>HalfEdge hedgeOppPrev = hedgeOpp.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#507"><b>507</b>hedgeAdjPrev = hedgeAdjPrev.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#513"><b>513</b>hedgeOppPrev = hedgeOppPrev.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#568"><b>568</b>for (hedge = hedge.NextEdge; hedge != HalfEdge.<i>PreviousEdge</i>; hedge = hedge.NextEdge)</a>
+<a href="../3D/QuickHull.cs.html#571"><b>571</b>CreateTriangle(v0, hedge.<i>PreviousEdge</i>.HeadVertex, hedge.HeadVertex, minArea);</a>
+<a href="../3D/QuickHull.cs.html#573"><b>573</b>face.HalfEdge.<i>PreviousEdge</i>.SetOpposite(hedge.OppositeEdge);</a>
+<a href="../3D/QuickHull.cs.html#581"><b>581</b>hedge = new HalfEdge(HalfEdge.<i>PreviousEdge</i>.<i>PreviousEdge</i>.HeadVertex, this);</a>
+<a href="../3D/QuickHull.cs.html#585"><b>585</b>hedge.<i>PreviousEdge</i>.NextEdge = hedge;</a>
+<a href="../3D/QuickHull.cs.html#587"><b>587</b>hedge.NextEdge = HalfEdge.<i>PreviousEdge</i>;</a>
+<a href="../3D/QuickHull.cs.html#1055"><b>1055</b>hedge = (ccw ? hedge.NextEdge : hedge.<i>PreviousEdge</i>);</a>
+</div>
+</div>
+</div>

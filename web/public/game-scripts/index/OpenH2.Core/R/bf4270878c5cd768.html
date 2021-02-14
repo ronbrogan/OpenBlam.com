@@ -1,22 +1,22 @@
 ﻿<div class="referenceBody">
 <div class="rH">9 references to NormalOffset</div><div class="rA">OpenH2.Core (9)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
-<a href="../Extensions/SpanByteExtensions.cs.html#179"><b>179</b>return new <i>NormalOffset</i>(data.ReadInt32At(offset));</a>
+<a href="../Extensions/SpanByteExtensions.cs.html#31"><b>31</b>return new <i>NormalOffset</i>(data.ReadInt32At(offset));</a>
 </div>
 <div class="rF"><div class="rN">Extensions\StreamExtensions.cs (1)</div>
 <a href="../Extensions/StreamExtensions.cs.html#453"><b>453</b>return new <i>NormalOffset</i>(data.ReadInt32At(offset));</a>
 </div>
 <div class="rF"><div class="rN">Tags\BitmapTag.cs (1)</div>
-<a href="../Tags/BitmapTag.cs.html#147"><b>147</b>Offset = new <i>NormalOffset</i>((int)info.LodOffsets[i]),</a>
+<a href="../Tags/BitmapTag.cs.html#150"><b>150</b>Offset = new <i>NormalOffset</i>((int)info.LodOffsets[i]),</a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (4)</div>
-<a href="../Tags/BspTag.cs.html#145"><b>145</b>var headerData = sceneReader.Chunk(new <i>NormalOffset</i>((int)part.DataBlockRawOffset), (int)part.DataPreambleSize, &quot;ModelMeshHeader&quot;);</a>
-<a href="../Tags/BspTag.cs.html#161"><b>161</b>resource.Data = sceneReader.Chunk(new <i>NormalOffset</i>((int)dataOffset), resource.Size, &quot;Bsp Render Data&quot;).ReadArray(0, resource.Size);</a>
-<a href="../Tags/BspTag.cs.html#177"><b>177</b>var headerData = sceneReader.Chunk(new <i>NormalOffset</i>((int)def.DataBlockRawOffset), (int)def.DataPreambleSize, &quot;InstancedGeometryMeshHeader&quot;);</a>
-<a href="../Tags/BspTag.cs.html#193"><b>193</b>resource.Data = sceneReader.Chunk(new <i>NormalOffset</i>((int)dataOffset), resource.Size, &quot;InstancedGeometry Render Data&quot;).ReadArray(0, resource.Size);</a>
+<a href="../Tags/BspTag.cs.html#153"><b>153</b>var headerOffset = new <i>NormalOffset</i>((int)part.DataBlockRawOffset);</a>
+<a href="../Tags/BspTag.cs.html#160"><b>160</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
+<a href="../Tags/BspTag.cs.html#182"><b>182</b>var headerOffset = new <i>NormalOffset</i>((int)def.DataBlockRawOffset);</a>
+<a href="../Tags/BspTag.cs.html#189"><b>189</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (2)</div>
-<a href="../Tags/RenderModelTag.cs.html#50"><b>50</b>var headerData = sceneReader.Chunk(new <i>NormalOffset</i>((int)part.DataBlockRawOffset), 120, &quot;ModelMeshHeader&quot;);</a>
-<a href="../Tags/RenderModelTag.cs.html#66"><b>66</b>resource.Data = sceneReader.Chunk(new <i>NormalOffset</i>((int)dataOffset), resource.Size, &quot;ModelMesh&quot;).ReadArray(0, resource.Size);</a>
+<a href="../Tags/RenderModelTag.cs.html#56"><b>56</b>var headerOffset = new <i>NormalOffset</i>((int)part.DataBlockRawOffset);</a>
+<a href="../Tags/RenderModelTag.cs.html#63"><b>63</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
 </div>
 </div>
 </div>

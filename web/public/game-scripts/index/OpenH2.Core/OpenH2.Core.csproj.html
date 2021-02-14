@@ -14,9 +14,21 @@
     &lt;</span><span class="xn"><a href="/MSBuildProperties/R/GenerateSerializersInto.html" target="n" class="msbuildlink">GenerateSerializersInto</a></span><span class="xd">&gt;</span>$(<a href="/MSBuildProperties/R/MSBuildProjectDirectory.html" target="n" class="msbuildlink">MSBuildProjectDirectory</a>)\$(<a href="/MSBuildProperties/R/BaseIntermediateOutputPath.html" target="n" class="msbuildlink">BaseIntermediateOutputPath</a>)\GeneratedSerializers<span class="xd">&lt;/</span><span class="xn">GenerateSerializersInto</span><span class="xd">&gt;</span><span class="xd">
     &lt;</span><span class="xn"><a href="/MSBuildProperties/R/Nullable.html" target="n" class="msbuildlink">Nullable</a></span><span class="xd">&gt;</span>enable<span class="xd">&lt;/</span><span class="xn">Nullable</span><span class="xd">&gt;</span><span class="xd">
   &lt;/</span><span class="xn">PropertyGroup</span><span class="xd">&gt;</span><span class="xd">
-  
+ 
   &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
-    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">OpenBlam.Serialization</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">1.0.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/AssemblyAttribute.html" target="n" class="msbuildlink">AssemblyAttribute</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Runtime.CompilerServices.InternalsVisibleTo</span>&quot;<span class="xd">&gt;</span><span class="xd">
+      &lt;</span><span class="xn">_Parameter1</span><span class="xd">&gt;</span>OpenH2.Core.CodeGenTests<span class="xd">&lt;/</span><span class="xn">_Parameter1</span><span class="xd">&gt;</span><span class="xd">
+    &lt;/</span><span class="xn">AssemblyAttribute</span><span class="xd">&gt;</span><span class="xd">
+  &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+  &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/AssemblyAttribute.html" target="n" class="msbuildlink">AssemblyAttribute</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Runtime.CompilerServices.InternalsVisibleTo</span>&quot;<span class="xd">&gt;</span><span class="xd">
+      &lt;</span><span class="xn">_Parameter1</span><span class="xd">&gt;</span>OpenH2.Core.Tests<span class="xd">&lt;/</span><span class="xn">_Parameter1</span><span class="xd">&gt;</span><span class="xd">
+    &lt;/</span><span class="xn">AssemblyAttribute</span><span class="xd">&gt;</span><span class="xd">
+  &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+ 
+  &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">OpenBlam.Core</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">1.1.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">OpenBlam.Serialization</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">1.2.1</span>&quot; <span class="xd">/&gt;</span><span class="xd">
     &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Text.Json</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">5.0.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
     &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Numerics.Vectors</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">4.5.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
     &lt;</span><span class="xn"><a href="/MSBuildItems/R/PackageReference.html" target="n" class="msbuildlink">PackageReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">System.Runtime.Numerics</span>&quot; <span class="xan">Version</span><span class="xd">=</span>&quot;<span class="xav">4.3.0</span>&quot; <span class="xd">/&gt;</span><span class="xd">
@@ -24,6 +36,9 @@
   &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
  
   &lt;</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
+    &lt;</span><span class="xn"><a href="/MSBuildItems/R/ProjectReference.html" target="n" class="msbuildlink">ProjectReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">..\OpenH2.Core.Generators\OpenH2.Core.Generators.csproj</span>&quot; <span class="xan">OutputItemType</span><span class="xd">=</span>&quot;<span class="xav">Analyzer</span>&quot;<span class="xd">&gt;</span><span class="xd">
+      &lt;</span><span class="xn">PrivateAssets</span><span class="xd">&gt;</span>none<span class="xd">&lt;/</span><span class="xn">PrivateAssets</span><span class="xd">&gt;</span><span class="xd">
+    &lt;/</span><span class="xn">ProjectReference</span><span class="xd">&gt;</span><span class="xd">
     &lt;</span><span class="xn"><a href="/MSBuildItems/R/ProjectReference.html" target="n" class="msbuildlink">ProjectReference</a> </span><span class="xan">Include</span><span class="xd">=</span>&quot;<span class="xav">..\OpenH2.Foundation\OpenH2.Foundation.csproj</span>&quot; <span class="xd">/&gt;</span><span class="xd">
   &lt;/</span><span class="xn">ItemGroup</span><span class="xd">&gt;</span><span class="xd">
  

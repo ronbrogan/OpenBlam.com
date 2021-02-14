@@ -1,5 +1,6 @@
-mscorlib;4
-netstandard;4
+mscorlib;5
+netstandard;5
+OpenH2.Core.Generators;3
 OpenH2.Foundation;3
 OpenH2.Core;2
 Halo2MCC;0

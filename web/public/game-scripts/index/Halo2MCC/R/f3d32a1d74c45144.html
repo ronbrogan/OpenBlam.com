@@ -13,45 +13,45 @@
 <a href="../01a_tutorial.cs.html#1133"><b>1133</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_1690_jon&quot;, 3864069339U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
 <a href="../01a_tutorial.cs.html#1709"><b>1709</b>Engine.ai_place(johnson.<i>Squad</i>);</a>
 <a href="../01a_tutorial.cs.html#1710"><b>1710</b>Engine.ai_cannot_die(johnson.<i>Squad</i>, true);</a>
-<a href="../01a_tutorial.cs.html#1711"><b>1711</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_elevator);</a>
-<a href="../01a_tutorial.cs.html#1714"><b>1714</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_start);</a>
+<a href="../01a_tutorial.cs.html#1711"><b>1711</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_elevator));</a>
+<a href="../01a_tutorial.cs.html#1714"><b>1714</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_start));</a>
 <a href="../01a_tutorial.cs.html#1726"><b>1726</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0970_jon&quot;, 3866297597U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1731"><b>1731</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_glanceat_guns);</a>
+<a href="../01a_tutorial.cs.html#1731"><b>1731</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_glanceat_guns));</a>
 <a href="../01a_tutorial.cs.html#1732"><b>1732</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(await this.player0(), Engine.ai_get_object(johnson.<i>Squad</i>), 40F), 1, 90);</a>
 <a href="../01a_tutorial.cs.html#1733"><b>1733</b>Engine.unit_set_emotional_state(Engine.ai_get_unit(johnson.<i>Squad</i>), &quot;inquisitive&quot;, 0.5F, 1);</a>
 <a href="../01a_tutorial.cs.html#1735"><b>1735</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_1000_jon&quot;, 3866363134U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1737"><b>1737</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_lookat_player);</a>
+<a href="../01a_tutorial.cs.html#1737"><b>1737</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_lookat_player));</a>
 <a href="../01a_tutorial.cs.html#1744"><b>1744</b>Engine.unit_set_emotional_state(Engine.ai_get_unit(johnson.<i>Squad</i>), &quot;inquisitive&quot;, 0F, 1);</a>
-<a href="../01a_tutorial.cs.html#1750"><b>1750</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_lookat_player);</a>
-<a href="../01a_tutorial.cs.html#1799"><b>1799</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_lookat_guns);</a>
+<a href="../01a_tutorial.cs.html#1750"><b>1750</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_lookat_player));</a>
+<a href="../01a_tutorial.cs.html#1799"><b>1799</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_lookat_guns));</a>
 <a href="../01a_tutorial.cs.html#1801"><b>1801</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_1040_jon&quot;, 3866625282U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1803"><b>1803</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_elevator);</a>
+<a href="../01a_tutorial.cs.html#1803"><b>1803</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_elevator));</a>
 <a href="../01a_tutorial.cs.html#1807"><b>1807</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(tv_elevator_tram_bot, Engine.ai_get_object(johnson.<i>Squad</i>)), 1, (int)(30 * this.seconds));</a>
 <a href="../01a_tutorial.cs.html#1808"><b>1808</b>if (!(Engine.volume_test_objects_all(tv_elevator_tram_bot, Engine.ai_get_object(johnson.<i>Squad</i>))))</a>
 <a href="../01a_tutorial.cs.html#1810"><b>1810</b>Engine.object_teleport(Engine.ai_get_object(johnson.<i>Squad</i>), tram_flag);</a>
-<a href="../01a_tutorial.cs.html#1833"><b>1833</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_elevator_face_guns);</a>
+<a href="../01a_tutorial.cs.html#1833"><b>1833</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_elevator_face_guns));</a>
 <a href="../01a_tutorial.cs.html#1838"><b>1838</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0990_jon&quot;, 3866756356U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
 <a href="../01a_tutorial.cs.html#1852"><b>1852</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_1810_jon&quot;, 3866887430U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1861"><b>1861</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_tram);</a>
+<a href="../01a_tutorial.cs.html#1861"><b>1861</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_tram));</a>
 <a href="../01a_tutorial.cs.html#1863"><b>1863</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(tv_tram, Engine.players()) &amp;&amp; Engine.volume_test_objects(tv_tram, Engine.ai_get_object(johnson.<i>Squad</i>)), 1);</a>
-<a href="../01a_tutorial.cs.html#1866"><b>1866</b>await Engine.sleep_until(async () =&gt; !(Engine.cs_command_script_running(johnson.<i>Squad</i>, cs_johnson_tram)), 1, 150);</a>
+<a href="../01a_tutorial.cs.html#1866"><b>1866</b>await Engine.sleep_until(async () =&gt; !(Engine.cs_command_script_running(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_tram))), 1, 150);</a>
 <a href="../01a_tutorial.cs.html#1868"><b>1868</b>Engine.custom_animation(Engine.ai_get_unit(johnson.<i>Squad</i>), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\marine\\tutorial\\tutorial&quot;, 3862561988U), &quot;l01_0010_jon&quot;, true);</a>
 <a href="../01a_tutorial.cs.html#1872"><b>1872</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0010_jon&quot;, 3866952967U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
 <a href="../01a_tutorial.cs.html#1879"><b>1879</b>Engine.custom_animation(Engine.ai_get_unit(johnson.<i>Squad</i>), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\marine\\tutorial\\tutorial&quot;, 3862561988U), &quot;l01_0020_jon&quot;, true);</a>
 <a href="../01a_tutorial.cs.html#1881"><b>1881</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0020_jon&quot;, 3867280652U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1884"><b>1884</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_lookat_macgun);</a>
+<a href="../01a_tutorial.cs.html#1884"><b>1884</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_lookat_macgun));</a>
 <a href="../01a_tutorial.cs.html#1886"><b>1886</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0021_jon&quot;, 3867346189U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
 <a href="../01a_tutorial.cs.html#1889"><b>1889</b>Engine.custom_animation(Engine.ai_get_unit(johnson.<i>Squad</i>), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\marine\\tutorial\\tutorial&quot;, 3862561988U), &quot;l01_0030_jon&quot;, true);</a>
 <a href="../01a_tutorial.cs.html#1892"><b>1892</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0030_jon&quot;, 3867411726U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1895"><b>1895</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_lookat_malta);</a>
+<a href="../01a_tutorial.cs.html#1895"><b>1895</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_lookat_malta));</a>
 <a href="../01a_tutorial.cs.html#1898"><b>1898</b>Engine.custom_animation(Engine.ai_get_unit(johnson.<i>Squad</i>), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\marine\\tutorial\\tutorial&quot;, 3862561988U), &quot;l01_0040_jon&quot;, true);</a>
 <a href="../01a_tutorial.cs.html#1900"><b>1900</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0040_jon&quot;, 3867477263U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
 <a href="../01a_tutorial.cs.html#1904"><b>1904</b>Engine.custom_animation(Engine.ai_get_unit(johnson.<i>Squad</i>), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\marine\\tutorial\\tutorial&quot;, 3862561988U), &quot;l01_0050_jon&quot;, true);</a>
 <a href="../01a_tutorial.cs.html#1906"><b>1906</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0050_jon&quot;, 3867542800U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
 <a href="../01a_tutorial.cs.html#1911"><b>1911</b>Engine.custom_animation(Engine.ai_get_unit(johnson.<i>Squad</i>), Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\marine\\tutorial\\tutorial&quot;, 3862561988U), &quot;l01_0051_jon&quot;, true);</a>
 <a href="../01a_tutorial.cs.html#1913"><b>1913</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\dialog\\levels\\01_spacestation\\mission\\l01_0051_jon&quot;, 3867608337U), Engine.ai_get_object(johnson.<i>Squad</i>), 1F);</a>
-<a href="../01a_tutorial.cs.html#1915"><b>1915</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_lookat_station);</a>
-<a href="../01a_tutorial.cs.html#1918"><b>1918</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, cs_johnson_station);</a>
+<a href="../01a_tutorial.cs.html#1915"><b>1915</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_lookat_station));</a>
+<a href="../01a_tutorial.cs.html#1918"><b>1918</b>Engine.cs_run_command_script(johnson.<i>Squad</i>, new ScriptMethodReference(cs_johnson_station));</a>
 </div>
 </div>
 </div>

@@ -1,0 +1,83 @@
+﻿<div class="referenceBody">
+<div class="rH">21 writes to DataType</div><div class="rA">OpenH2.Core (21)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (8)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#112"><b>112</b>public static InterpreterResult From(bool v, ScriptDataType t = ScriptDataType.Boolean) =&gt; new InterpreterResult() { Boolean = v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#113"><b>113</b>public static InterpreterResult From(int v, ScriptDataType t = ScriptDataType.Int) =&gt; new InterpreterResult() { Int = v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#114"><b>114</b>public static InterpreterResult From(uint v, ScriptDataType t = ScriptDataType.Int) =&gt; new InterpreterResult() { Int = (int)v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#115"><b>115</b>public static InterpreterResult From(short v, ScriptDataType t = ScriptDataType.Short) =&gt; new InterpreterResult() { Short = v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#116"><b>116</b>public static InterpreterResult From(ushort v, ScriptDataType t = ScriptDataType.Short) =&gt; new InterpreterResult() { Short = (short)v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#117"><b>117</b>public static InterpreterResult From(float v, ScriptDataType t = ScriptDataType.Float) =&gt; new InterpreterResult() { Float = v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#118"><b>118</b>public static InterpreterResult From(object? v, ScriptDataType t = ScriptDataType.Entity) =&gt; new InterpreterResult() { Object = v, <i>DataType</i> = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#119"><b>119</b>public static InterpreterResult From() =&gt; new InterpreterResult() { <i>DataType</i> = ScriptDataType.Void };</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (7)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#94"><b>94</b>value.<i>DataType</i> = ScriptDataType.Float;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#98"><b>98</b>value.<i>DataType</i> = ScriptDataType.Int;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#102"><b>102</b>value.<i>DataType</i> = ScriptDataType.Short;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#170"><b>170</b>result.<i>DataType</i> = node.DataType;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#194"><b>194</b>value.<i>DataType</i> = ScriptDataType.Float;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#198"><b>198</b>value.<i>DataType</i> = ScriptDataType.Int;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#202"><b>202</b>value.<i>DataType</i> = ScriptDataType.Short;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (6)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#295"><b>295</b>result.<i>DataType</i> = node.DataType;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#828"><b>828</b>value.<i>DataType</i> = ScriptDataType.Float;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#832"><b>832</b>value.<i>DataType</i> = ScriptDataType.Int;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#836"><b>836</b>value.<i>DataType</i> = ScriptDataType.Short;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#840"><b>840</b>value.<i>DataType</i> = ScriptDataType.List;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#843"><b>843</b>value.<i>DataType</i> = ScriptDataType.Entity;</a>
+</div>
+</div>
+<div class="rH">47 references to DataType</div><div class="rA">OpenH2.Core (47)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (10)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#34"><b>34</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#43"><b>43</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#52"><b>52</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#60"><b>60</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#68"><b>68</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#76"><b>76</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#84"><b>84</b>if (<i>DataType</i> == ScriptDataType.Float)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#92"><b>92</b>Debug.Assert(left.<i>DataType</i> == ScriptDataType.Float);</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#99"><b>99</b>Debug.Assert(left.<i>DataType</i> == ScriptDataType.Float);</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#107"><b>107</b>Debug.Assert(left.<i>DataType</i> == ScriptDataType.Float);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (21)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#88"><b>88</b>if (value.<i>DataType</i> != destType)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#105"><b>105</b>Debug.Fail($&quot;No configured cast from {value.<i>DataType</i>} to {destType}&quot;);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#188"><b>188</b>if (value.<i>DataType</i> != destType)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#205"><b>205</b>Debug.Fail($&quot;No configured cast from {value.<i>DataType</i>} to {destType}&quot;);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#270"><b>270</b>Debug.Assert(condition.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#292"><b>292</b>Debug.Assert(variable.<i>DataType</i> == valueExp.DataType);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#296"><b>296</b>Debug.Assert(value.<i>DataType</i> == variable.<i>DataType</i>);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#311"><b>311</b>Debug.Assert(operand.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#331"><b>331</b>Debug.Assert(operand.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#350"><b>350</b>Debug.Assert(operand.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#462"><b>462</b>return left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#469"><b>469</b>_ =&gt; throw new InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#481"><b>481</b>return left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#485"><b>485</b>_ =&gt; throw new InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#497"><b>497</b>return left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#501"><b>501</b>_ =&gt; throw new InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#513"><b>513</b>return left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#517"><b>517</b>_ =&gt; throw new InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#529"><b>529</b>return left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#533"><b>533</b>_ =&gt; throw new InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (16)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#487"><b>487</b>Debug.Assert(condition.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#560"><b>560</b>Debug.Assert(operand.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#574"><b>574</b>Debug.Assert(operand.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#598"><b>598</b>Debug.Assert(operand.<i>DataType</i> == ScriptDataType.Boolean);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#717"><b>717</b>var result = left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#724"><b>724</b>_ =&gt; throw Throw.InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#738"><b>738</b>var result = left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#742"><b>742</b>_ =&gt; throw Throw.InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#756"><b>756</b>var result = left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#760"><b>760</b>_ =&gt; throw Throw.InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#774"><b>774</b>var result = left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#778"><b>778</b>_ =&gt; throw Throw.InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#792"><b>792</b>var result = left.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#796"><b>796</b>_ =&gt; throw Throw.InterpreterException($&quot;Equality comparison for {left.<i>DataType</i>} is not supported&quot;, state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#822"><b>822</b>if (value.<i>DataType</i> != destType)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#846"><b>846</b>Debug.Fail($&quot;No configured cast from {value.<i>DataType</i>} to {destType}&quot;);</a>
+</div>
+</div>
+</div>

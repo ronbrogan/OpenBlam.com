@@ -1,14 +1,26 @@
 ﻿<div class="referenceBody">
-<div class="rH">5 references to ScriptMethods</div><div class="rA">OpenH2.Core (5)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptLoader.cs (3)</div>
+<div class="rH">11 references to ScriptMethods</div><div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpretingScriptExecutor.cs (3)</div>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#18"><b>18</b>this.executionStates = new ExecutionState[scenario.<i>ScriptMethods</i>.Length];</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#21"><b>21</b>for (int i = 0; i &lt; scenario.<i>ScriptMethods</i>.Length; i++)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#23"><b>23</b>var method = scenario.<i>ScriptMethods</i>[i];</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#183"><b>183</b>var methodToInvoke = this.scenario.<i>ScriptMethods</i>[invocationNode.OperationId];</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#192"><b>192</b>var method = this.scenario.<i>ScriptMethods</i>[state.TopFrame.Current.OperationId];</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptLoader.cs (4)</div>
 <a href="../Scripting/Generation/ScriptLoader.cs.html#100"><b>100</b>for (var i = 0; i &lt; scnr.<i>ScriptMethods</i>.Length; i++)</a>
 <a href="../Scripting/Generation/ScriptLoader.cs.html#102"><b>102</b>var method = scnr.<i>ScriptMethods</i>[i];</a>
-<a href="../Scripting/Generation/ScriptLoader.cs.html#141"><b>141</b>foreach (var script in scnr.<i>ScriptMethods</i>)</a>
+<a href="../Scripting/Generation/ScriptLoader.cs.html#141"><b>141</b>for (int i = 0; i &lt; scnr.<i>ScriptMethods</i>.Length; i++)</a>
+<a href="../Scripting/Generation/ScriptLoader.cs.html#143"><b>143</b>classGen.AddMethod(i, scnr.<i>ScriptMethods</i>[i]);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\ScriptInvocationContext.cs (1)</div>
-<a href="../Scripting/GenerationState/ScriptInvocationContext.cs.html#16"><b>16</b>var method = scenario.<i>ScriptMethods</i>[node.ScriptIndex];</a>
+<a href="../Scripting/GenerationState/ScriptInvocationContext.cs.html#16"><b>16</b>var method = scenario.<i>ScriptMethods</i>[node.OperationId];</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#86"><b>86</b>value = tag.<i>ScriptMethods</i>[node.ScriptIndex].Description;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#87"><b>87</b>value = tag.<i>ScriptMethods</i>[node.OperationId].Description;</a>
 </div>
 </div>
 </div>

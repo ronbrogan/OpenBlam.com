@@ -1,6 +1,6 @@
 ﻿<div class="referenceBody">
 <div class="rH">4 references to Squad</div><div class="rA">Halo2MCC (4)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08b_deltacontrol.cs (4)</div>
-<a href="../08b_deltacontrol.cs.html#4631"><b>4631</b>return Engine.cs_command_script_queued(e11_pro_ghosts0.<i>Squad</i>, cs_e11_ghost_door0_entry) || Engine.cs_command_script_queued(e11_pro_spectres0.Squad, cs_e11_spectre_door0_entry);</a>
+<a href="../08b_deltacontrol.cs.html#4631"><b>4631</b>return Engine.cs_command_script_queued(e11_pro_ghosts0.<i>Squad</i>, new ScriptMethodReference(cs_e11_ghost_door0_entry)) || Engine.cs_command_script_queued(e11_pro_spectres0.Squad, new ScriptMethodReference(cs_e11_spectre_door0_entry));</a>
 <a href="../08b_deltacontrol.cs.html#4705"><b>4705</b>if ((short)Engine.ai_living_count(e11_pro_ghosts0.<i>Squad</i>) &lt; 3 &amp;&amp; Engine.objects_distance_to_object(Engine.players(), e11_door0.Entity) &gt; 50F)</a>
 <a href="../08b_deltacontrol.cs.html#4710"><b>4710</b>Engine.ai_place(e11_pro_ghosts0.<i>Squad</i>, 1);</a>
 <a href="../08b_deltacontrol.cs.html#4714"><b>4714</b>return (short)Engine.ai_spawn_count(e11_pro_ghosts0.<i>Squad</i>) &gt;= 16;</a>

@@ -7,11 +7,11 @@
 <a href="../04a_gasgiant.cs.html#3655"><b>3655</b>Engine.objects_attach(Engine.list_get(Engine.ai_actors(<i>hangar_helper_02</i>.Squad), 0), &quot;primary_trigger&quot;, help_can_02.Entity, &quot;top&quot;);</a>
 <a href="../04a_gasgiant.cs.html#3658"><b>3658</b>Engine.objects_detach(Engine.list_get(Engine.ai_actors(<i>hangar_helper_02</i>.Squad), 0), help_can_02.Entity);</a>
 <a href="../04a_gasgiant.cs.html#4005"><b>4005</b>Engine.ai_place(<i>hangar_helper_02</i>.Squad);</a>
-<a href="../04a_gasgiant.cs.html#4006"><b>4006</b>Engine.cs_run_command_script(<i>hangar_helper_02</i>.Squad, hangar_help_02);</a>
-<a href="../04a_gasgiant.cs.html#4007"><b>4007</b>Engine.cs_queue_command_script(<i>hangar_helper_02</i>.Squad, hangar_help_03);</a>
+<a href="../04a_gasgiant.cs.html#4006"><b>4006</b>Engine.cs_run_command_script(<i>hangar_helper_02</i>.Squad, new ScriptMethodReference(hangar_help_02));</a>
+<a href="../04a_gasgiant.cs.html#4007"><b>4007</b>Engine.cs_queue_command_script(<i>hangar_helper_02</i>.Squad, new ScriptMethodReference(hangar_help_03));</a>
 <a href="../04a_gasgiant.cs.html#4013"><b>4013</b>Engine.unit_add_equipment(Engine.unit(Engine.list_get(Engine.ai_actors(<i>hangar_helper_02</i>.Squad), 0)), swap, true, true);</a>
 <a href="../04a_gasgiant.cs.html#4016"><b>4016</b>Engine.objects_detach(Engine.list_get(Engine.ai_actors(<i>hangar_helper_02</i>.Squad), 0), help_can_02.Entity);</a>
-<a href="../04a_gasgiant.cs.html#4018"><b>4018</b>Engine.cs_run_command_script(<i>hangar_helper_02</i>.Squad, abort);</a>
+<a href="../04a_gasgiant.cs.html#4018"><b>4018</b>Engine.cs_run_command_script(<i>hangar_helper_02</i>.Squad, new ScriptMethodReference(abort));</a>
 </div>
 </div>
 </div>

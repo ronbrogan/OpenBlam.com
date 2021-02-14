@@ -1,20 +1,30 @@
 ﻿<div class="referenceBody">
-<div class="rH">11 references to AI</div><div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (8)</div>
+<div class="rH">15 references to AI</div><div class="rA">OpenH2.Core (15)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#141"><b>141</b>ScriptDataType.<i>AI</i> =&gt; new Result(),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#266"><b>266</b>ScriptDataType.<i>AI</i> =&gt; GetAiResult(node),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (8)</div>
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#89"><b>89</b>AddPublicProperty(ScriptDataType.<i>AI</i>, ai.Description, i);</a>
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#136"><b>136</b>var squadPropName = nameRepo.RegisterName(squad.Description, ScriptDataType.<i>AI</i>.ToString(), i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#146"><b>146</b>var propName = nestedRepo.RegisterName(ai.Description, ScriptDataType.<i>AI</i>.ToString(), m++);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#146"><b>146</b>var propName = nestedRepo.RegisterName(ai.Description, ScriptDataType.<i>AI</i>.ToString(), m);</a>
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#158"><b>158</b>dataClassProps.Add(PropertyDeclaration(SyntaxUtil.ScriptTypeSyntax(ScriptDataType.<i>AI</i>), propName)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#171"><b>171</b>dataClassProps.Add(PropertyDeclaration(SyntaxUtil.ScriptTypeSyntax(ScriptDataType.<i>AI</i>), &quot;Squad&quot;)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#245"><b>245</b>if (nameRepo.TryGetName(squad.Description, ScriptDataType.<i>AI</i>.ToString(), i, out var squadPropName) == false)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#286"><b>286</b>ScriptDataType.<i>AI</i> =&gt; nameof(ScenarioTag.AiSquadGroupDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#519"><b>519</b>case ScriptDataType.<i>AI</i>:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#173"><b>173</b>dataClassProps.Add(PropertyDeclaration(SyntaxUtil.ScriptTypeSyntax(ScriptDataType.<i>AI</i>), &quot;Squad&quot;)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#247"><b>247</b>if (nameRepo.TryGetName(squad.Description, ScriptDataType.<i>AI</i>.ToString(), i, out var squadPropName) == false)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#288"><b>288</b>ScriptDataType.<i>AI</i> =&gt; nameof(ScenarioTag.AiSquadGroupDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#523"><b>523</b>case ScriptDataType.<i>AI</i>:</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#46"><b>46</b>ScriptDataType.<i>AI</i> =&gt; ParseTypeName(nameof(IAiActorDefinition)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#108"><b>108</b>{ typeof(IAiActorDefinition), ScriptDataType.<i>AI</i> },</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#47"><b>47</b>ScriptDataType.<i>AI</i> =&gt; ParseTypeName(nameof(IAiActorDefinition)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#110"><b>110</b>{ typeof(IAiActorDefinition), ScriptDataType.<i>AI</i> },</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GlobalVariableSet.cs (2)</div>
+<a href="../Scripting/GlobalVariableSet.cs.html#35"><b>35</b>33563 =&gt; Result.From(this.ai_current_squad, ScriptDataType.<i>AI</i>),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#36"><b>36</b>33564 =&gt; Result.From(this.ai_current_actor, ScriptDataType.<i>AI</i>),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#61"><b>61</b>case ScriptDataType.<i>AI</i>:</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#62"><b>62</b>case ScriptDataType.<i>AI</i>:</a>
 </div>
 </div>
 </div>

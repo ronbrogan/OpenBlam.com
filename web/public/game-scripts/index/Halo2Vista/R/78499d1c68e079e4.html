@@ -6,9 +6,9 @@
 <div class="rH">7 references to intro_phantom</div><div class="rA">Halo2Vista (7)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04a_gasgiant.cs (7)</div>
 <a href="../04a_gasgiant.cs.html#2910"><b>2910</b>Engine.ai_place(<i>intro_phantom</i>.Squad);</a>
 <a href="../04a_gasgiant.cs.html#3182"><b>3182</b>Engine.ai_erase(<i>intro_phantom</i>.Squad);</a>
-<a href="../04a_gasgiant.cs.html#3241"><b>3241</b>Engine.cs_run_command_script(<i>intro_phantom</i>._01, lz_phantom_01_away);</a>
-<a href="../04a_gasgiant.cs.html#3242"><b>3242</b>Engine.cs_run_command_script(<i>intro_phantom</i>._02, lz_phantom_02_away);</a>
-<a href="../04a_gasgiant.cs.html#3243"><b>3243</b>Engine.cs_run_command_script(<i>intro_phantom</i>._03, lz_phantom_03_away);</a>
+<a href="../04a_gasgiant.cs.html#3241"><b>3241</b>Engine.cs_run_command_script(<i>intro_phantom</i>._01, new ScriptMethodReference(lz_phantom_01_away));</a>
+<a href="../04a_gasgiant.cs.html#3242"><b>3242</b>Engine.cs_run_command_script(<i>intro_phantom</i>._02, new ScriptMethodReference(lz_phantom_02_away));</a>
+<a href="../04a_gasgiant.cs.html#3243"><b>3243</b>Engine.cs_run_command_script(<i>intro_phantom</i>._03, new ScriptMethodReference(lz_phantom_03_away));</a>
 <a href="../04a_gasgiant.cs.html#3251"><b>3251</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(vol_phantom_kill, Engine.ai_actors(<i>intro_phantom</i>.Squad)) == true || Engine.volume_test_objects_all(vol_recycling_all, Engine.players()) == true &amp;&amp; await this.player_count() &gt; 0);</a>
 <a href="../04a_gasgiant.cs.html#3252"><b>3252</b>Engine.ai_erase(<i>intro_phantom</i>.Squad);</a>
 </div>

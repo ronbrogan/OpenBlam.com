@@ -8,7 +8,7 @@
 <a href="../03a_oldmombasa.cs.html#3457"><b>3457</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_spawn_count(<i>e8_mars_warthog0</i>.Squad) &gt; 0, 30);</a>
 <a href="../03a_oldmombasa.cs.html#3458"><b>3458</b>Engine.ai_migrate(<i>e8_mars_warthog0</i>.Squad, e9_mars_warthog0.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#3579"><b>3579</b>Engine.ai_vehicle_reserve_seat(Engine.ai_vehicle_get_from_starting_location(<i>e8_mars_warthog0</i>.warthog0), &quot;warthog_d&quot;, true);</a>
-<a href="../03a_oldmombasa.cs.html#3680"><b>3680</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e8_warthog_intro_scene&quot;, cs_e8_warthog_intro_scene, <i>e8_mars_warthog0</i>.warthog0) || (short)Engine.ai_living_count(<i>e8_mars_warthog0</i>.warthog0) &lt;= 0, 5, this.two_minutes);</a>
+<a href="../03a_oldmombasa.cs.html#3680"><b>3680</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e8_warthog_intro_scene&quot;, new ScriptMethodReference(cs_e8_warthog_intro_scene), <i>e8_mars_warthog0</i>.warthog0) || (short)Engine.ai_living_count(<i>e8_mars_warthog0</i>.warthog0) &lt;= 0, 5, this.two_minutes);</a>
 <a href="../03a_oldmombasa.cs.html#3686"><b>3686</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_spawn_count(<i>e8_mars_warthog0</i>.Squad) &gt; 0, 15);</a>
 <a href="../03a_oldmombasa.cs.html#3728"><b>3728</b>Engine.ai_place(<i>e8_mars_warthog0</i>.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#3730"><b>3730</b>this.g_e8_warthog = Engine.ai_vehicle_get_from_starting_location(<i>e8_mars_warthog0</i>.warthog0);</a>

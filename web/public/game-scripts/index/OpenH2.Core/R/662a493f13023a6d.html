@@ -2,14 +2,12 @@
 <div class="rH">4 references to ReadInt32At</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\StreamExtensions.cs (1)</div>
 <a href="../Extensions/StreamExtensions.cs.html#453"><b>453</b>return new NormalOffset(data.<i>ReadInt32At</i>(offset));</a>
 </div>
-<div class="rF"><div class="rN">Maps\MCC\H2mccMap.cs (1)</div>
-<a href="../Maps/MCC/H2mccMap.cs.html#135"><b>135</b>sig ^= sceneData.<i>ReadInt32At</i>(i);</a>
-</div>
-<div class="rF"><div class="rN">Parsing\TrackingReader.cs (1)</div>
-<a href="../Parsing/TrackingReader.cs.html#153"><b>153</b>return Data.<i>ReadInt32At</i>(offset);</a>
+<div class="rF"><div class="rN">Factories\MapFactory.cs (2)</div>
+<a href="../Factories/MapFactory.cs.html#127"><b>127</b>Offset = new SecondaryOffset(scene, reader.<i>ReadInt32At</i>(entryBase + 8)),</a>
+<a href="../Factories/MapFactory.cs.html#128"><b>128</b>DataSize = reader.<i>ReadInt32At</i>(entryBase + 12)</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (1)</div>
-<a href="../Patching/TagPatcher.cs.html#119"><b>119</b>var baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.<i>ReadInt32At</i>(tagInfo.Offset.Value + offset + startsAt + 4));</a>
+<a href="../Patching/TagPatcher.cs.html#121"><b>121</b>var baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.<i>ReadInt32At</i>(tagInfo.Offset.Value + offset + startsAt + 4));</a>
 </div>
 </div>
 </div>

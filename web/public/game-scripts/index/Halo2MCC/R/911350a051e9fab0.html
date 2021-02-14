@@ -33,8 +33,8 @@
 <a href="../08b_deltacontrol.cs.html#852"><b>852</b>Engine.unit_set_maximum_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 350F, 1000F);</a>
 <a href="../08b_deltacontrol.cs.html#856"><b>856</b>Engine.unit_set_maximum_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 300F, 1000F);</a>
 <a href="../08b_deltacontrol.cs.html#859"><b>859</b>Engine.unit_set_current_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 50F, 1000F);</a>
-<a href="../08b_deltacontrol.cs.html#860"><b>860</b>Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_stunned);</a>
-<a href="../08b_deltacontrol.cs.html#899"><b>899</b>Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_jump);</a>
+<a href="../08b_deltacontrol.cs.html#860"><b>860</b>Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_stunned));</a>
+<a href="../08b_deltacontrol.cs.html#899"><b>899</b>Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_jump));</a>
 <a href="../08b_deltacontrol.cs.html#904"><b>904</b>Engine.unit_impervious(Engine.ai_get_object(<i>boss_tartarus</i>.Squad), false);</a>
 <a href="../08b_deltacontrol.cs.html#908"><b>908</b>Engine.unit_set_current_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 50F, 1000F);</a>
 <a href="../08b_deltacontrol.cs.html#927"><b>927</b>else if (!(Engine.volume_test_objects(tv_boss_platform, Engine.ai_get_object(<i>boss_tartarus</i>.Squad))) &amp;&amp; !(Engine.volume_test_objects(tv_boss_ledge, Engine.ai_get_object(<i>boss_tartarus</i>.Squad))) &amp;&amp; await this.player_count() &gt; 0)</a>
@@ -46,10 +46,10 @@
 <a href="../08b_deltacontrol.cs.html#958"><b>958</b>Engine.unit_set_maximum_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 400F, 1000F);</a>
 <a href="../08b_deltacontrol.cs.html#962"><b>962</b>Engine.unit_set_maximum_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 350F, 1000F);</a>
 <a href="../08b_deltacontrol.cs.html#966"><b>966</b>Engine.unit_set_maximum_vitality(Engine.ai_get_unit(<i>boss_tartarus</i>.Squad), 300F, 1000F);</a>
-<a href="../08b_deltacontrol.cs.html#971"><b>971</b>Engine.begin_random(async () =&gt; Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_taunt),</a>
-<a href="../08b_deltacontrol.cs.html#972"><b>972</b>async () =&gt; Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_cheer),</a>
-<a href="../08b_deltacontrol.cs.html#973"><b>973</b>async () =&gt; Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_shakefist));</a>
-<a href="../08b_deltacontrol.cs.html#974"><b>974</b>await Engine.sleep_until(async () =&gt; !(Engine.cs_command_script_running(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_taunt)) &amp;&amp; !(Engine.cs_command_script_running(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_cheer)) &amp;&amp; !(Engine.cs_command_script_running(<i>boss_tartarus</i>.Squad, cs_boss_tartarus_shakefist)), 1);</a>
+<a href="../08b_deltacontrol.cs.html#971"><b>971</b>Engine.begin_random(async () =&gt; Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_taunt)),</a>
+<a href="../08b_deltacontrol.cs.html#972"><b>972</b>async () =&gt; Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_cheer)),</a>
+<a href="../08b_deltacontrol.cs.html#973"><b>973</b>async () =&gt; Engine.cs_run_command_script(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_shakefist)));</a>
+<a href="../08b_deltacontrol.cs.html#974"><b>974</b>await Engine.sleep_until(async () =&gt; !(Engine.cs_command_script_running(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_taunt))) &amp;&amp; !(Engine.cs_command_script_running(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_cheer))) &amp;&amp; !(Engine.cs_command_script_running(<i>boss_tartarus</i>.Squad, new ScriptMethodReference(cs_boss_tartarus_shakefist))), 1);</a>
 <a href="../08b_deltacontrol.cs.html#983"><b>983</b>else if (!(Engine.volume_test_objects(tv_boss_platform, Engine.players())) &amp;&amp; !((bool)Engine.ai_vitality_pinned(<i>boss_tartarus</i>.Squad)) &amp;&amp; await this.player_count() &gt; 0)</a>
 <a href="../08b_deltacontrol.cs.html#990"><b>990</b>Engine.ai_magically_see_object(<i>boss_tartarus</i>.Squad, await this.player0());</a>
 <a href="../08b_deltacontrol.cs.html#991"><b>991</b>Engine.ai_magically_see_object(<i>boss_tartarus</i>.Squad, await this.player1());</a>

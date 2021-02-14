@@ -9,7 +9,7 @@
 <a href="../08b_deltacontrol.cs.html#6034"><b>6034</b>await Engine.sleep_until(async () =&gt; !((bool)Engine.cs_moving()) || Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &lt; 0F, 15);</a>
 <a href="../08b_deltacontrol.cs.html#6035"><b>6035</b>if (Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &gt;= 0F)</a>
 <a href="../08b_deltacontrol.cs.html#6040"><b>6040</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &lt; 0F, 15, 150);</a>
-<a href="../08b_deltacontrol.cs.html#6068"><b>6068</b>if (Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, cs_e6_destroy_door4)))</a>
+<a href="../08b_deltacontrol.cs.html#6068"><b>6068</b>if (Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &gt;= 0F &amp;&amp; !(Engine.cs_command_script_queued(this.ai_current_squad, new ScriptMethodReference(cs_e6_destroy_door4))))</a>
 <a href="../08b_deltacontrol.cs.html#6214"><b>6214</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;generic_player_sighted&quot;, this.ai_current_squad) || Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &lt; 0F, 15);</a>
 <a href="../08b_deltacontrol.cs.html#6216"><b>6216</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e6_jail_shield4</i>.Entity) &lt; 0F, 15);</a>
 </div>

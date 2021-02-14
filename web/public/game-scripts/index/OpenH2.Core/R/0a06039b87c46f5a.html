@@ -1,29 +1,39 @@
 ﻿<div class="referenceBody">
-<div class="rH">19 references to DataFile</div><div class="rA">OpenH2.Core (19)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2vMap.cs (6)</div>
-<a href="../Maps/H2vMap.cs.html#150"><b>150</b>public SecondaryOffset GetSecondaryOffset(<i>DataFile</i> source, int rawOffset)</a>
-<a href="../Maps/H2vMap.cs.html#153"><b>153</b><i>DataFile</i>.Local =&gt; new SecondaryOffset(this, rawOffset),</a>
-<a href="../Maps/H2vMap.cs.html#154"><b>154</b><i>DataFile</i>.MainMenu =&gt; new SecondaryOffset(this.mainMenu, rawOffset),</a>
-<a href="../Maps/H2vMap.cs.html#155"><b>155</b><i>DataFile</i>.Shared =&gt; new SecondaryOffset(this.mpShared, rawOffset),</a>
-<a href="../Maps/H2vMap.cs.html#156"><b>156</b><i>DataFile</i>.SinglePlayerShared =&gt; new SecondaryOffset(this.spShared, rawOffset),</a>
-<a href="../Maps/H2vMap.cs.html#161"><b>161</b>public Memory&lt;byte&gt; ReadData(<i>DataFile</i> source, IOffset offset, int length)</a>
+<div class="rH">26 references to DataFile</div><div class="rA">OpenH2.Core (26)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\MapExtensions.cs (1)</div>
+<a href="../Extensions/MapExtensions.cs.html#16"><b>16</b>public static Stream GetStream(this MapStream mapStream, <i>DataFile</i> location)</a>
+</div>
+<div class="rF"><div class="rN">Factories\MapFactory.cs (3)</div>
+<a href="../Factories/MapFactory.cs.html#30"><b>30</b>.UseAncillaryMap((byte)<i>DataFile</i>.MainMenu, MainMenuName)</a>
+<a href="../Factories/MapFactory.cs.html#31"><b>31</b>.UseAncillaryMap((byte)<i>DataFile</i>.SinglePlayerShared, SinglePlayerSharedName)</a>
+<a href="../Factories/MapFactory.cs.html#32"><b>32</b>.UseAncillaryMap((byte)<i>DataFile</i>.Shared, MultiPlayerSharedName)</a>
+</div>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (12)</div>
+<a href="../Maps/H2BaseMap.cs.html#40"><b>40</b>public <i>DataFile</i> OriginFile { get; private set; }</a>
+<a href="../Maps/H2BaseMap.cs.html#58"><b>58</b>switch ((<i>DataFile</i>)identifier)</a>
+<a href="../Maps/H2BaseMap.cs.html#60"><b>60</b>case <i>DataFile</i>.MainMenu: this.mainMenu = h2ancillaryMap; break;</a>
+<a href="../Maps/H2BaseMap.cs.html#61"><b>61</b>case <i>DataFile</i>.Shared: this.mpShared = h2ancillaryMap; break;</a>
+<a href="../Maps/H2BaseMap.cs.html#62"><b>62</b>case <i>DataFile</i>.SinglePlayerShared: this.spShared = h2ancillaryMap; break;</a>
+<a href="../Maps/H2BaseMap.cs.html#71"><b>71</b>OriginFile = (<i>DataFile</i>)selfIdentifier;</a>
+<a href="../Maps/H2BaseMap.cs.html#197"><b>197</b>public SecondaryOffset GetSecondaryOffset(<i>DataFile</i> source, int rawOffset)</a>
+<a href="../Maps/H2BaseMap.cs.html#201"><b>201</b><i>DataFile</i>.Local =&gt; new SecondaryOffset(this, rawOffset),</a>
+<a href="../Maps/H2BaseMap.cs.html#202"><b>202</b><i>DataFile</i>.MainMenu =&gt; new SecondaryOffset(this.mainMenu, rawOffset),</a>
+<a href="../Maps/H2BaseMap.cs.html#203"><b>203</b><i>DataFile</i>.Shared =&gt; new SecondaryOffset(this.mpShared, rawOffset),</a>
+<a href="../Maps/H2BaseMap.cs.html#204"><b>204</b><i>DataFile</i>.SinglePlayerShared =&gt; new SecondaryOffset(this.spShared, rawOffset),</a>
+<a href="../Maps/H2BaseMap.cs.html#209"><b>209</b>public Memory&lt;byte&gt; ReadData(<i>DataFile</i> source, IOffset offset, int length)</a>
+</div>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (7)</div>
+<a href="../Maps/IH2Map.cs.html#21"><b>21</b><i>DataFile</i> OriginFile { get; }</a>
+<a href="../Maps/IH2Map.cs.html#24"><b>24</b>Memory&lt;byte&gt; ReadData(<i>DataFile</i> source, IOffset offset, int length);</a>
+<a href="../Maps/IH2Map.cs.html#25"><b>25</b>SecondaryOffset GetSecondaryOffset(<i>DataFile</i> source, int rawOffset);</a>
+<a href="../Maps/IH2Map.cs.html#51"><b>51</b>public <i>DataFile</i> OriginFile =&gt; <i>DataFile</i>.Local;</a>
+<a href="../Maps/IH2Map.cs.html#92"><b>92</b>public Memory&lt;byte&gt; ReadData(<i>DataFile</i> source, IOffset offset, int length)</a>
+<a href="../Maps/IH2Map.cs.html#97"><b>97</b>public SecondaryOffset GetSecondaryOffset(<i>DataFile</i> source, int rawOffset)</a>
 </div>
 <div class="rF"><div class="rN">Offsets\NormalOffset.cs (2)</div>
 <a href="../Offsets/NormalOffset.cs.html#18"><b>18</b>public <i>DataFile</i> Location =&gt; (<i>DataFile</i>)((this.offset &amp; 0xC0000000) &gt;&gt; 28);</a>
 </div>
-<div class="rF"><div class="rN">Parsing\H2MapReader.cs (10)</div>
-<a href="../Parsing/H2MapReader.cs.html#29"><b>29</b>public TrackingReader GetReader(<i>DataFile</i> source)</a>
-<a href="../Parsing/H2MapReader.cs.html#33"><b>33</b>case <i>DataFile</i>.Local:</a>
-<a href="../Parsing/H2MapReader.cs.html#35"><b>35</b>case <i>DataFile</i>.MainMenu:</a>
-<a href="../Parsing/H2MapReader.cs.html#37"><b>37</b>case <i>DataFile</i>.Shared:</a>
-<a href="../Parsing/H2MapReader.cs.html#39"><b>39</b>case <i>DataFile</i>.SinglePlayerShared:</a>
-<a href="../Parsing/H2MapReader.cs.html#51"><b>51</b>public <i>DataFile</i> GetPrimaryDataFile()</a>
-<a href="../Parsing/H2MapReader.cs.html#55"><b>55</b>return <i>DataFile</i>.SinglePlayerShared;</a>
-<a href="../Parsing/H2MapReader.cs.html#60"><b>60</b>return <i>DataFile</i>.Shared;</a>
-<a href="../Parsing/H2MapReader.cs.html#65"><b>65</b>return <i>DataFile</i>.MainMenu;</a>
-<a href="../Parsing/H2MapReader.cs.html#68"><b>68</b>return <i>DataFile</i>.Local;</a>
-</div>
 <div class="rF"><div class="rN">Tags\BaseTag.cs (1)</div>
-<a href="../Tags/BaseTag.cs.html#21"><b>21</b>public <i>DataFile</i> DataFile { get; set; }</a>
+<a href="../Tags/BaseTag.cs.html#22"><b>22</b>public <i>DataFile</i> DataFile { get; set; }</a>
 </div>
 </div>
 </div>

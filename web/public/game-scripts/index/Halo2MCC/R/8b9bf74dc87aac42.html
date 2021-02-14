@@ -8,8 +8,8 @@
 <a href="../08a_deltacliffs.cs.html#2491"><b>2491</b>Engine.ai_disregard(Engine.ai_actors(<i>e2_cov_grunts0</i>.Squad), true);</a>
 <a href="../08a_deltacliffs.cs.html#2492"><b>2492</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;generic_player_sighted&quot;, <i>e2_cov_grunts0</i>.Squad), 5);</a>
 <a href="../08a_deltacliffs.cs.html#2493"><b>2493</b>await Engine.sleep(Engine.ai_play_line_at_player(<i>e2_cov_grunts0</i>.grunt0, &quot;0330&quot;));</a>
-<a href="../08a_deltacliffs.cs.html#2494"><b>2494</b>Engine.cs_run_command_script(<i>e2_cov_grunts0</i>.Squad, cs_e2_cov_grunts0_flee);</a>
-<a href="../08a_deltacliffs.cs.html#2497"><b>2497</b>Engine.cs_run_command_script(<i>e2_cov_grunts0</i>.Squad, cs_e2_cov_grunts0_abort);</a>
+<a href="../08a_deltacliffs.cs.html#2494"><b>2494</b>Engine.cs_run_command_script(<i>e2_cov_grunts0</i>.Squad, new ScriptMethodReference(cs_e2_cov_grunts0_flee));</a>
+<a href="../08a_deltacliffs.cs.html#2497"><b>2497</b>Engine.cs_run_command_script(<i>e2_cov_grunts0</i>.Squad, new ScriptMethodReference(cs_e2_cov_grunts0_abort));</a>
 <a href="../08a_deltacliffs.cs.html#2498"><b>2498</b>Engine.ai_disregard(Engine.ai_actors(<i>e2_cov_grunts0</i>.Squad), false);</a>
 <a href="../08a_deltacliffs.cs.html#2499"><b>2499</b>Engine.ai_migrate(<i>e2_cov_grunts0</i>.Squad, e2_cov_inf0.Squad);</a>
 </div>

@@ -10,7 +10,7 @@
 <a href="../04b_floodlab.cs.html#6384"><b>6384</b>Engine.unit_add_equipment(Engine.unit(Engine.list_get(Engine.ai_actors(dervish_01.<i>Squad</i>), 0)), flak, true, true);</a>
 <a href="../04b_floodlab.cs.html#6390"><b>6390</b>Engine.unit_add_equipment(Engine.unit(Engine.list_get(Engine.ai_actors(dervish_01.<i>Squad</i>), 0)), beam, true, true);</a>
 <a href="../04b_floodlab.cs.html#6416"><b>6416</b>Engine.ai_place(dervish_01.<i>Squad</i>);</a>
-<a href="../04b_floodlab.cs.html#6418"><b>6418</b>Engine.cs_run_command_script(dervish_01.<i>Squad</i>, dervish_chase_01);</a>
+<a href="../04b_floodlab.cs.html#6418"><b>6418</b>Engine.cs_run_command_script(dervish_01.<i>Squad</i>, new ScriptMethodReference(dervish_chase_01));</a>
 <a href="../04b_floodlab.cs.html#6426"><b>6426</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(Engine.unit(Engine.list_get(Engine.ai_actors(dervish_01.<i>Squad</i>), 0))) == true);</a>
 <a href="../04b_floodlab.cs.html#6431"><b>6431</b>Engine.ai_erase(dervish_01.<i>Squad</i>);</a>
 <a href="../04b_floodlab.cs.html#6435"><b>6435</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(heretic_leader_04.Squad) == 0 &amp;&amp; (short)Engine.ai_living_count(dervish_01.<i>Squad</i>) == 0);</a>

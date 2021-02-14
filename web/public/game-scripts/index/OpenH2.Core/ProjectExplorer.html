@@ -11,7 +11,9 @@
 <span class="referenceDisabled">Microsoft.Win32.Primitives</span>
 <span class="referenceDisabled">mscorlib</span>
 <span class="referenceDisabled">netstandard</span>
+<span class="referenceDisabled">OpenBlam.Core</span>
 <span class="referenceDisabled">OpenBlam.Serialization</span>
+<span class="referenceDisabled">OpenH2.Core.Generators</span>
 <a class="reference" href="/#OpenH2.Foundation" target="_top">OpenH2.Foundation</a>
 <span class="referenceDisabled">System</span>
 <span class="referenceDisabled">System.AppContext</span>
@@ -148,6 +150,7 @@
 <a href="Animation/Animation.cs.html"></a>
 <a href="Animation/AnimationFrame.cs.html"></a>
 <a href="Animation/IAnimationProcessor.cs.html"></a>
+<a href="Animation/JmadDataHeader.cs.html"></a>
 <a href="Animation/JmadDataProcessor.cs.html"></a>
 </div>
 <div class="folderTitle">Architecture</div><div class="folder">
@@ -169,13 +172,17 @@
 <div class="folderTitle">Enums</div><div class="folder">
 <div class="folderTitle">Texture</div><div class="folder">
 <a href="Enums/Texture/TextureCompressionFormat.cs.html"></a>
-<a href="Enums/Texture/TextureFormat.cs.html"></a>
 <a href="Enums/Texture/TextureProperties.cs.html"></a>
 <a href="Enums/Texture/TextureType.cs.html"></a>
 <a href="Enums/Texture/TextureUsage.cs.html"></a>
 </div>
+<a href="Enums/ColorChangeFlags.cs.html"></a>
 <a href="Enums/DataFile.cs.html"></a>
 <a href="Enums/PlacementFlags.cs.html"></a>
+</div>
+<div class="folderTitle">Exceptions</div><div class="folder">
+<a href="Exceptions/InterpreterException.cs.html"></a>
+<a href="Exceptions/Throw.cs.html"></a>
 </div>
 <div class="folderTitle">Extensions</div><div class="folder">
 <a href="Extensions/MapExtensions.cs.html"></a>
@@ -187,14 +194,12 @@
 <a href="Extensions/VectorExtensions.cs.html"></a>
 </div>
 <div class="folderTitle">ExternalFormats</div><div class="folder">
-<a href="ExternalFormats/ImaAdpcmAudio.cs.html"></a>
 <a href="ExternalFormats/WavefrontObjWriter.cs.html"></a>
 </div>
 <div class="folderTitle">Factories</div><div class="folder">
 <a href="Factories/IMaterialFactory.cs.html"></a>
 <a href="Factories/MapFactory.cs.html"></a>
 <a href="Factories/MaterialFactory.cs.html"></a>
-<a href="Factories/MccMapFactory.cs.html"></a>
 <a href="Factories/ModelFactory.cs.html"></a>
 <a href="Factories/TagFactory.cs.html"></a>
 </div>
@@ -228,17 +233,25 @@
 <a href="Maps/MCC/H2mccMap.cs.html"></a>
 <a href="Maps/MCC/H2mccMapHeader.cs.html"></a>
 </div>
+<div class="folderTitle">Vista</div><div class="folder">
+<a href="Maps/Vista/H2vMap.cs.html"></a>
+<a href="Maps/Vista/H2vMapHeader.cs.html"></a>
+</div>
 <a href="Maps/H2BaseMap.cs.html"></a>
 <a href="Maps/H2HeaderBase.cs.html"></a>
-<a href="Maps/H2vLazyLoadingMap.cs.html"></a>
-<a href="Maps/H2vMap.cs.html"></a>
-<a href="Maps/H2vMapHeader.cs.html"></a>
+<a href="Maps/IH2Map.cs.html"></a>
 <a href="Maps/IH2MapHeader.cs.html"></a>
 <a href="Maps/IndexHeader.cs.html"></a>
+<a href="Maps/MapVersion.cs.html"></a>
 <a href="Maps/TagIndexEntry.cs.html"></a>
 <a href="Maps/TagListEntry.cs.html"></a>
 <a href="Maps/TagRef.cs.html"></a>
 <a href="Maps/TagTree.cs.html"></a>
+</div>
+<div class="folderTitle">Metrics</div><div class="folder">
+<a href="Metrics/FlatFileMetricSink.cs.html"></a>
+<a href="Metrics/IMetricSink.cs.html"></a>
+<a href="Metrics/IMetricSource.cs.html"></a>
 </div>
 <div class="folderTitle">obj</div><div class="folder">
 <div class="folderTitle">Debug</div><div class="folder">
@@ -255,11 +268,7 @@
 <a href="Offsets/SecondaryOffset.cs.html"></a>
 </div>
 <div class="folderTitle">Parsing</div><div class="folder">
-<a href="Parsing/CoverageReport.cs.html"></a>
-<a href="Parsing/H2MapReader.cs.html"></a>
 <a href="Parsing/PropertyAccessorParser.cs.html"></a>
-<a href="Parsing/TrackingChunk.cs.html"></a>
-<a href="Parsing/TrackingReader.cs.html"></a>
 </div>
 <div class="folderTitle">Patching</div><div class="folder">
 <a href="Patching/TagPatch.cs.html"></a>
@@ -267,7 +276,14 @@
 </div>
 <div class="folderTitle">Scripting</div><div class="folder">
 <div class="folderTitle">Execution</div><div class="folder">
+<a href="Scripting/Execution/BaseScriptExecutor.cs.html"></a>
+<a href="Scripting/Execution/InterpreterResult.cs.html"></a>
+<a href="Scripting/Execution/InterpreterState.cs.html"></a>
+<a href="Scripting/Execution/InterpretingScriptExecutor.cs.html"></a>
 <a href="Scripting/Execution/IScriptExecutor.cs.html"></a>
+<a href="Scripting/Execution/IScriptMethodReference.cs.html"></a>
+<a href="Scripting/Execution/ScriptInterpreter.cs.html"></a>
+<a href="Scripting/Execution/ScriptIterativeInterpreter.cs.html"></a>
 <a href="Scripting/Execution/ScriptStatus.cs.html"></a>
 <a href="Scripting/Execution/ScriptTaskExecutor.cs.html"></a>
 </div>
@@ -287,6 +303,7 @@
 <a href="Scripting/GenerationState/EntityGetContext.cs.html"></a>
 <a href="Scripting/GenerationState/FieldGetContext.cs.html"></a>
 <a href="Scripting/GenerationState/FieldSetContext.cs.html"></a>
+<a href="Scripting/GenerationState/GameDifficultyContext.cs.html"></a>
 <a href="Scripting/GenerationState/IfStatementContext.cs.html"></a>
 <a href="Scripting/GenerationState/IGenerationContext.cs.html"></a>
 <a href="Scripting/GenerationState/IStatementContext.cs.html"></a>
@@ -297,6 +314,7 @@
 <a href="Scripting/GenerationState/Scope.cs.html"></a>
 <a href="Scripting/GenerationState/ScopeGenerationContext.cs.html"></a>
 <a href="Scripting/GenerationState/ScriptInvocationContext.cs.html"></a>
+<a href="Scripting/GenerationState/ScriptMethodReferenceContext.cs.html"></a>
 <a href="Scripting/GenerationState/SingleExpressionContext.cs.html"></a>
 <a href="Scripting/GenerationState/SleepUntilContext.cs.html"></a>
 <a href="Scripting/GenerationState/StatementBlockContext.cs.html"></a>
@@ -310,12 +328,15 @@
 <a href="Scripting/LowLevel/ScriptTreeNode.cs.html"></a>
 <a href="Scripting/LowLevel/ScriptTreePatcher.cs.html"></a>
 </div>
+<a href="Scripting/GlobalVariableSet.cs.html"></a>
 <a href="Scripting/IScriptEngine.cs.html"></a>
 <a href="Scripting/NodeType.cs.html"></a>
 <a href="Scripting/OriginScenarioAttribute.cs.html"></a>
 <a href="Scripting/ScenarioScriptBase.cs.html"></a>
 <a href="Scripting/ScriptDataType.cs.html"></a>
+<a href="Scripting/ScriptImplementationAttribute.cs.html"></a>
 <a href="Scripting/ScriptMethodAttribute.cs.html"></a>
+<a href="Scripting/ScriptOps.cs.html"></a>
 <a href="Scripting/Types.cs.html"></a>
 </div>
 <div class="folderTitle">Tags</div><div class="folder">
@@ -335,9 +356,9 @@
 <a href="Tags/Common/Models/IModelResourceContainer.cs.html"></a>
 <a href="Tags/Common/Models/MeshCollection.cs.html"></a>
 <a href="Tags/Common/Models/ModelMesh.cs.html"></a>
-<a href="Tags/Common/Models/ModelResouceContainerProcessor.cs.html"></a>
 <a href="Tags/Common/Models/ModelResource.cs.html"></a>
 <a href="Tags/Common/Models/ModelResourceBlockHeader.cs.html"></a>
+<a href="Tags/Common/Models/ModelResourceContainerProcessor.cs.html"></a>
 <a href="Tags/Common/Models/ModelShaderReference.cs.html"></a>
 </div>
 </div>
@@ -386,21 +407,16 @@
 <a href="Tags/VertexShaderTag.cs.html"></a>
 <a href="Tags/WeaponTag.cs.html"></a>
 </div>
-<div class="folderTitle">Types</div><div class="folder">
-<a href="Types/ModeMesh.cs.html"></a>
-<a href="Types/Vertex.cs.html"></a>
-</div>
-<a href="Assembly.cs.html"></a>
 <a href="OpenH2.Core.csproj.html"></a>
 </div>
 <p class="projectInfo">
 Project&nbsp;path:&nbsp;OpenH2\src\OpenH2.Core\OpenH2.Core.csproj<br>
-Files:&nbsp;189<br>
-Lines&nbsp;of&nbsp;code:&nbsp;16,301<br>
-Bytes:&nbsp;560,029<br>
-Declared&nbsp;symbols:&nbsp;3,065<br>
-Declared&nbsp;types:&nbsp;440<br>
-Public&nbsp;types:&nbsp;423<br>
+Files:&nbsp;199<br>
+Lines&nbsp;of&nbsp;code:&nbsp;18,091<br>
+Bytes:&nbsp;628,995<br>
+Declared&nbsp;symbols:&nbsp;3,248<br>
+Declared&nbsp;types:&nbsp;458<br>
+Public&nbsp;types:&nbsp;443<br>
 Indexed&nbsp;on:&nbsp;February 13
 </p>
 <script>initializeProjectExplorer();</script></body></html>

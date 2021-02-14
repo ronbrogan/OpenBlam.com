@@ -1,0 +1,52 @@
+﻿<div class="referenceBody">
+<div class="rH">1 write to scenario</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#21"><b>21</b>this.<i>scenario</i> = scenario;</a>
+</div>
+</div>
+<div class="rH">43 references to scenario</div><div class="rA">OpenH2.Core (43)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (43)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#38"><b>38</b>for (int i = 0; i &lt; this.<i>scenario</i>.ScriptVariables.Length; i++)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#40"><b>40</b>var variable = this.<i>scenario</i>.ScriptVariables[i];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#42"><b>42</b>variables[i] = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[variable.Value_H16], out var next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#85"><b>85</b>value = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[node.NodeData_H16], out innerNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#133"><b>133</b>ScriptDataType.String =&gt; Result.From(SpanByteExtensions.ReadStringStarting(this.<i>scenario</i>.ScriptStrings, node.NodeString)),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#136"><b>136</b>ScriptDataType.Trigger =&gt; Result.From(this.<i>scenario</i>.TriggerVolumes[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#137"><b>137</b>ScriptDataType.LocationFlag =&gt; Result.From(this.<i>scenario</i>.LocationFlagDefinitions[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#144"><b>144</b>ScriptDataType.AIOrders =&gt; Result.From(this.<i>scenario</i>.AiOrderDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#145"><b>145</b>ScriptDataType.StartingProfile =&gt; Result.From(this.<i>scenario</i>.StartingProfileDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#178"><b>178</b>var invocationNode = this.<i>scenario</i>.ScriptSyntaxNodes[node.NodeData_H16];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#183"><b>183</b>var methodToInvoke = this.<i>scenario</i>.ScriptMethods[invocationNode.OperationId];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#185"><b>185</b>var value = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[methodToInvoke.SyntaxNodeIndex], out next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#253"><b>253</b>result = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[next], out next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#269"><b>269</b>var condition = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#272"><b>272</b>var trueExp = this.<i>scenario</i>.ScriptSyntaxNodes[argNext];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#280"><b>280</b>var falseExp = this.<i>scenario</i>.ScriptSyntaxNodes[trueExp.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#287"><b>287</b>var variableAccess = this.<i>scenario</i>.ScriptSyntaxNodes[node.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#289"><b>289</b>var valueExp = this.<i>scenario</i>.ScriptSyntaxNodes[variableAccess.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#310"><b>310</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#330"><b>330</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#348"><b>348</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#362"><b>362</b>var firstOp = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#366"><b>366</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#378"><b>378</b>var firstOp = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#382"><b>382</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#394"><b>394</b>var firstOp = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#398"><b>398</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#410"><b>410</b>var firstOp = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#414"><b>414</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#426"><b>426</b>var firstOp = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#430"><b>430</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#442"><b>442</b>var firstOp = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#446"><b>446</b>var operand = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#458"><b>458</b>var left = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#459"><b>459</b>var right = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#477"><b>477</b>var left = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#478"><b>478</b>var right = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#493"><b>493</b>var left = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#494"><b>494</b>var right = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#509"><b>509</b>var left = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#510"><b>510</b>var right = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#525"><b>525</b>var left = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#526"><b>526</b>var right = Interpret(this.<i>scenario</i>.ScriptSyntaxNodes[argNext], out argNext);</a>
+</div>
+</div>
+</div>

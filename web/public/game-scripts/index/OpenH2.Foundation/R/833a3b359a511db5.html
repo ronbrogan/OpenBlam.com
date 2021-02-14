@@ -3,7 +3,7 @@
 <a href="../../OpenH2.Core/Factories/IMaterialFactory.cs.html#21"><b>21</b>public Material&lt;BitmapTag&gt; CreateMaterial(H2vMap map, ModelMesh mesh) =&gt; new <i>Material</i>&lt;BitmapTag&gt;();</a>
 </div>
 <div class="rF"><div class="rN">Factories\MaterialFactory.cs (1)</div>
-<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#54"><b>54</b>mat = new <i>Material</i>&lt;BitmapTag&gt;</a>
+<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#52"><b>52</b>mat = new <i>Material</i>&lt;BitmapTag&gt;</a>
 </div>
 <div class="rF"><div class="rN">Factories\ModelFactory.cs (3)</div>
 <a href="../../OpenH2.Core/Factories/ModelFactory.cs.html#38"><b>38</b>Material = new <i>Material</i>&lt;BitmapTag&gt;() { DiffuseColor = color }</a>
@@ -16,14 +16,14 @@
 <a href="../../OpenH2.Core/Factories/IMaterialFactory.cs.html#21"><b>21</b>public <i>Material</i>&lt;BitmapTag&gt; CreateMaterial(H2vMap map, ModelMesh mesh) =&gt; new Material&lt;BitmapTag&gt;();</a>
 </div>
 <div class="rF"><div class="rN">Factories\MaterialFactory.cs (6)</div>
-<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#25"><b>25</b>private Dictionary&lt;uint, <i>Material</i>&lt;BitmapTag&gt;&gt; createdMaterials = new Dictionary&lt;uint, <i>Material</i>&lt;BitmapTag&gt;&gt;();</a>
-<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#47"><b>47</b>public <i>Material</i>&lt;BitmapTag&gt; CreateMaterial(H2vMap map, ModelMesh mesh)</a>
-<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#49"><b>49</b>if (createdMaterials.TryGetValue(mesh.Shader.Id, out <i>var</i> mat))</a>
-<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#92"><b>92</b><i>Material</i>&lt;BitmapTag&gt; mat,</a>
-<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#125"><b>125</b>private static void PopulateFromHeuristic(H2vMap map, <i>Material</i>&lt;BitmapTag&gt; mat, ShaderTag shader)</a>
+<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#23"><b>23</b>private Dictionary&lt;uint, <i>Material</i>&lt;BitmapTag&gt;&gt; createdMaterials = new Dictionary&lt;uint, <i>Material</i>&lt;BitmapTag&gt;&gt;();</a>
+<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#45"><b>45</b>public <i>Material</i>&lt;BitmapTag&gt; CreateMaterial(H2vMap map, ModelMesh mesh)</a>
+<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#47"><b>47</b>if (createdMaterials.TryGetValue(mesh.Shader.Id, out <i>var</i> mat))</a>
+<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#90"><b>90</b><i>Material</i>&lt;BitmapTag&gt; mat,</a>
+<a href="../../OpenH2.Core/Factories/MaterialFactory.cs.html#126"><b>126</b>private static void PopulateFromHeuristic(H2vMap map, <i>Material</i>&lt;BitmapTag&gt; mat, ShaderTag shader)</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
-<a href="../../OpenH2.Core/Maps/H2vMap.cs.html#65"><b>65</b>public <i>Material</i>&lt;BitmapTag&gt; CreateMaterial(ModelMesh mesh)</a>
+<div class="rF"><div class="rN">Maps\Vista\H2vMap.cs (1)</div>
+<a href="../../OpenH2.Core/Maps/Vista/H2vMap.cs.html#48"><b>48</b>public <i>Material</i>&lt;BitmapTag&gt; CreateMaterial(ModelMesh mesh)</a>
 </div>
 </div>
 </div>

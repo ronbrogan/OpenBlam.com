@@ -1,0 +1,77 @@
+﻿<div class="referenceBody">
+<div class="rH">1 instantiation of Face</div><div class="rA">OpenH2.Foundation (1)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (1)</div>
+<a href="../3D/QuickHull.cs.html#260"><b>260</b>Face face = new <i>Face</i>();</a>
+</div>
+</div>
+<div class="rH">72 references to Face</div><div class="rA">OpenH2.Foundation (72)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (72)</div>
+<a href="../3D/QuickHull.cs.html#16"><b>16</b>public <i>Face</i> Face { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#32"><b>32</b>public <i>Face</i> Face { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#37"><b>37</b>public <i>Face</i> OppositeFace =&gt; OppositeEdge != null ? OppositeEdge.Face : null;</a>
+<a href="../3D/QuickHull.cs.html#58"><b>58</b>public HalfEdge(Vertex v, <i>Face</i> f)</a>
+<a href="../3D/QuickHull.cs.html#124"><b>124</b>public <i>Face</i> Next { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#253"><b>253</b>public static <i>Face</i> CreateTriangle(Vertex v0, Vertex v1, Vertex v2)</a>
+<a href="../3D/QuickHull.cs.html#258"><b>258</b>public static <i>Face</i> CreateTriangle(Vertex v0, Vertex v1, Vertex v2, double minArea)</a>
+<a href="../3D/QuickHull.cs.html#260"><b>260</b><i>Face</i> face = new Face();</a>
+<a href="../3D/QuickHull.cs.html#374"><b>374</b>private <i>Face</i> ConnectHalfEdges(HalfEdge hedgePrev, HalfEdge hedge)</a>
+<a href="../3D/QuickHull.cs.html#376"><b>376</b><i>Face</i> discardedFace = null;</a>
+<a href="../3D/QuickHull.cs.html#381"><b>381</b><i>Face</i> oppFace = hedge.OppositeFace;</a>
+<a href="../3D/QuickHull.cs.html#459"><b>459</b><i>Face</i> oppFace = hedgeOpp.Face;</a>
+<a href="../3D/QuickHull.cs.html#490"><b>490</b>public int MergeAdjacentFace(HalfEdge hedgeAdj, <i>Face</i>[] discarded)</a>
+<a href="../3D/QuickHull.cs.html#492"><b>492</b><i>Face</i> oppFace = hedgeAdj.OppositeFace;</a>
+<a href="../3D/QuickHull.cs.html#530"><b>530</b><i>Face</i> discardedFace;</a>
+<a href="../3D/QuickHull.cs.html#562"><b>562</b><i>Face</i> prevFace = null;</a>
+<a href="../3D/QuickHull.cs.html#566"><b>566</b><i>Face</i> face0 = null;</a>
+<a href="../3D/QuickHull.cs.html#570"><b>570</b><i>Face</i> face =</a>
+<a href="../3D/QuickHull.cs.html#593"><b>593</b>for (<i>Face</i> face = face0; face != null; face = face.Next)</a>
+<a href="../3D/QuickHull.cs.html#612"><b>612</b>private readonly List&lt;<i>Face</i>&gt; faces = new List&lt;<i>Face</i>&gt;(16);</a>
+<a href="../3D/QuickHull.cs.html#624"><b>624</b>private <i>Face</i>[] discardedFaces = new <i>Face</i>[3];</a>
+<a href="../3D/QuickHull.cs.html#708"><b>708</b>foreach (<i>var</i> face in faces)</a>
+<a href="../3D/QuickHull.cs.html#710"><b>710</b>if (face.Mark == <i>Face</i>.VISIBLE)</a>
+<a href="../3D/QuickHull.cs.html#716"><b>716</b>for (<i>Face</i> face = newFaces.First(); face != null; face = face.Next)</a>
+<a href="../3D/QuickHull.cs.html#781"><b>781</b>foreach (<i>var</i> face in faces)</a>
+<a href="../3D/QuickHull.cs.html#908"><b>908</b>var tris = new <i>Face</i>[4];</a>
+<a href="../3D/QuickHull.cs.html#912"><b>912</b>tris[0] = <i>Face</i>.CreateTriangle(vtx[0], vtx[1], vtx[2]);</a>
+<a href="../3D/QuickHull.cs.html#913"><b>913</b>tris[1] = <i>Face</i>.CreateTriangle(vtx[3], vtx[1], vtx[0]);</a>
+<a href="../3D/QuickHull.cs.html#914"><b>914</b>tris[2] = <i>Face</i>.CreateTriangle(vtx[3], vtx[2], vtx[1]);</a>
+<a href="../3D/QuickHull.cs.html#915"><b>915</b>tris[3] = <i>Face</i>.CreateTriangle(vtx[3], vtx[0], vtx[2]);</a>
+<a href="../3D/QuickHull.cs.html#926"><b>926</b>tris[0] = <i>Face</i>.CreateTriangle(vtx[0], vtx[2], vtx[1]);</a>
+<a href="../3D/QuickHull.cs.html#927"><b>927</b>tris[1] = <i>Face</i>.CreateTriangle(vtx[3], vtx[0], vtx[1]);</a>
+<a href="../3D/QuickHull.cs.html#928"><b>928</b>tris[2] = <i>Face</i>.CreateTriangle(vtx[3], vtx[1], vtx[2]);</a>
+<a href="../3D/QuickHull.cs.html#929"><b>929</b>tris[3] = <i>Face</i>.CreateTriangle(vtx[3], vtx[2], vtx[0]);</a>
+<a href="../3D/QuickHull.cs.html#954"><b>954</b><i>Face</i> maxFace = null;</a>
+<a href="../3D/QuickHull.cs.html#1040"><b>1040</b>private void GetFaceIndices(int[] indices, <i>Face</i> face, int flags)</a>
+<a href="../3D/QuickHull.cs.html#1068"><b>1068</b><i>Face</i> maxFace = null;</a>
+<a href="../3D/QuickHull.cs.html#1069"><b>1069</b>for (<i>Face</i> newFace = newFaces.First(); newFace != null;</a>
+<a href="../3D/QuickHull.cs.html#1072"><b>1072</b>if (newFace.Mark == <i>Face</i>.VISIBLE)</a>
+<a href="../3D/QuickHull.cs.html#1093"><b>1093</b>private void DeleteFacePoints(<i>Face</i> face, <i>Face</i> absorbingFace)</a>
+<a href="../3D/QuickHull.cs.html#1122"><b>1122</b>private void AddPointToFace(Vertex vtx, <i>Face</i> face)</a>
+<a href="../3D/QuickHull.cs.html#1138"><b>1138</b>private void RemovePointFromFace(Vertex vtx, <i>Face</i> face)</a>
+<a href="../3D/QuickHull.cs.html#1154"><b>1154</b>private Vertex RemoveAllPointsFromFace(<i>Face</i> face)</a>
+<a href="../3D/QuickHull.cs.html#1183"><b>1183</b><i>Face</i> eyeFace = claimed.First().Face;</a>
+<a href="../3D/QuickHull.cs.html#1204"><b>1204</b>foreach (<i>var</i> face in faces)</a>
+<a href="../3D/QuickHull.cs.html#1224"><b>1224</b>private bool DoAdjacentMerge(<i>Face</i> face, int mergeType)</a>
+<a href="../3D/QuickHull.cs.html#1231"><b>1231</b><i>Face</i> oppFace = hedge.OppositeFace;</a>
+<a href="../3D/QuickHull.cs.html#1291"><b>1291</b>face.Mark = <i>Face</i>.NON_CONVEX;</a>
+<a href="../3D/QuickHull.cs.html#1297"><b>1297</b>private void CalculateHorizon(Vector3 eyePnt, HalfEdge edge0, <i>Face</i> face)</a>
+<a href="../3D/QuickHull.cs.html#1300"><b>1300</b>face.Mark = <i>Face</i>.DELETED;</a>
+<a href="../3D/QuickHull.cs.html#1315"><b>1315</b><i>Face</i> oppFace = edge.OppositeFace;</a>
+<a href="../3D/QuickHull.cs.html#1316"><b>1316</b>if (oppFace.Mark == <i>Face</i>.VISIBLE)</a>
+<a href="../3D/QuickHull.cs.html#1334"><b>1334</b><i>var</i> face = <i>Face</i>.CreateTriangle(eyeVtx, he.TailVertex, he.HeadVertex);</a>
+<a href="../3D/QuickHull.cs.html#1379"><b>1379</b>for (<i>Face</i> face = newFaces.First(); face != null; face = face.Next)</a>
+<a href="../3D/QuickHull.cs.html#1381"><b>1381</b>if (face.Mark == <i>Face</i>.VISIBLE)</a>
+<a href="../3D/QuickHull.cs.html#1390"><b>1390</b>for (<i>Face</i> face = newFaces.First(); face != null; face = face.Next)</a>
+<a href="../3D/QuickHull.cs.html#1392"><b>1392</b>if (face.Mark == <i>Face</i>.NON_CONVEX)</a>
+<a href="../3D/QuickHull.cs.html#1394"><b>1394</b>face.Mark = <i>Face</i>.VISIBLE;</a>
+<a href="../3D/QuickHull.cs.html#1418"><b>1418</b>private void MarkFaceVertices(<i>Face</i> face, int mark)</a>
+<a href="../3D/QuickHull.cs.html#1441"><b>1441</b><i>Face</i> face = faces[i];</a>
+<a href="../3D/QuickHull.cs.html#1442"><b>1442</b>if (face.Mark != <i>Face</i>.VISIBLE)</a>
+<a href="../3D/QuickHull.cs.html#1467"><b>1467</b>private bool CheckFaceConvexity(<i>Face</i> face, double tol, StringBuilder ps)</a>
+<a href="../3D/QuickHull.cs.html#1515"><b>1515</b>foreach (<i>var</i> face in faces)</a>
+<a href="../3D/QuickHull.cs.html#1517"><b>1517</b>if (face.Mark == <i>Face</i>.VISIBLE)</a>
+<a href="../3D/QuickHull.cs.html#1689"><b>1689</b>private <i>Face</i> head;</a>
+<a href="../3D/QuickHull.cs.html#1690"><b>1690</b>private <i>Face</i> tail;</a>
+<a href="../3D/QuickHull.cs.html#1704"><b>1704</b>public void Add(<i>Face</i> vtx)</a>
+<a href="../3D/QuickHull.cs.html#1718"><b>1718</b>public <i>Face</i> First()</a>
+</div>
+</div>
+</div>

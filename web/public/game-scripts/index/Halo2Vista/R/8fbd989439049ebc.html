@@ -19,21 +19,21 @@
 <a href="../05a_deltaapproach.cs.html#5074"><b>5074</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot), &quot;phantom_lc&quot;, Engine.ai_vehicle_get_from_starting_location(old_temple_ghosts_air._1));</a>
 <a href="../05a_deltaapproach.cs.html#5075"><b>5075</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot), &quot;phantom_lc&quot;, Engine.ai_vehicle_get_from_starting_location(old_temple_ghosts_air._2));</a>
 <a href="../05a_deltaapproach.cs.html#5077"><b>5077</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot), true);</a>
-<a href="../05a_deltaapproach.cs.html#5078"><b>5078</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.pilot, old_temple_ph_01_arrives);</a>
+<a href="../05a_deltaapproach.cs.html#5078"><b>5078</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.pilot, new ScriptMethodReference(old_temple_ph_01_arrives));</a>
 <a href="../05a_deltaapproach.cs.html#5079"><b>5079</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_phantom</i>.Squad) &lt; 1 || (short)Engine.ai_living_count(old_temple_ghosts_air.Squad) &lt; 1);</a>
-<a href="../05a_deltaapproach.cs.html#5082"><b>5082</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.Squad, old_temple_abort);</a>
+<a href="../05a_deltaapproach.cs.html#5082"><b>5082</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.Squad, new ScriptMethodReference(old_temple_abort));</a>
 <a href="../05a_deltaapproach.cs.html#5085"><b>5085</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_phantom</i>.Squad) &lt; 1, 30, 8000);</a>
 <a href="../05a_deltaapproach.cs.html#5086"><b>5086</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot));</a>
 <a href="../05a_deltaapproach.cs.html#5093"><b>5093</b>Engine.ai_place(<i>old_temple_phantom</i>.Squad);</a>
 <a href="../05a_deltaapproach.cs.html#5096"><b>5096</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot), &quot;phantom_lc&quot;, Engine.ai_vehicle_get_from_starting_location(old_temple_ghosts_air._1));</a>
 <a href="../05a_deltaapproach.cs.html#5097"><b>5097</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot), &quot;phantom_lc&quot;, Engine.ai_vehicle_get_from_starting_location(old_temple_ghosts_air._2));</a>
 <a href="../05a_deltaapproach.cs.html#5099"><b>5099</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot), true);</a>
-<a href="../05a_deltaapproach.cs.html#5100"><b>5100</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.pilot, old_temple_ph_02_arrives);</a>
+<a href="../05a_deltaapproach.cs.html#5100"><b>5100</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.pilot, new ScriptMethodReference(old_temple_ph_02_arrives));</a>
 <a href="../05a_deltaapproach.cs.html#5101"><b>5101</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_phantom</i>.Squad) &lt; 1 || (short)Engine.ai_living_count(old_temple_ghosts_air.Squad) &lt; 1);</a>
-<a href="../05a_deltaapproach.cs.html#5104"><b>5104</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.Squad, old_temple_abort);</a>
+<a href="../05a_deltaapproach.cs.html#5104"><b>5104</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.Squad, new ScriptMethodReference(old_temple_abort));</a>
 <a href="../05a_deltaapproach.cs.html#5107"><b>5107</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>old_temple_phantom</i>.Squad) &lt; 1, 30, 8000);</a>
 <a href="../05a_deltaapproach.cs.html#5108"><b>5108</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>old_temple_phantom</i>.pilot));</a>
-<a href="../05a_deltaapproach.cs.html#5445"><b>5445</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.Squad, old_temple_abort);</a>
+<a href="../05a_deltaapproach.cs.html#5445"><b>5445</b>Engine.cs_run_command_script(<i>old_temple_phantom</i>.Squad, new ScriptMethodReference(old_temple_abort));</a>
 </div>
 </div>
 </div>

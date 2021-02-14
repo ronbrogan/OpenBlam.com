@@ -8,14 +8,14 @@
 <a href="../Factories/IMaterialFactory.cs.html#21"><b>21</b>public Material&lt;<i>BitmapTag</i>&gt; CreateMaterial(H2vMap map, ModelMesh mesh) =&gt; new Material&lt;<i>BitmapTag</i>&gt;();</a>
 </div>
 <div class="rF"><div class="rN">Factories\MaterialFactory.cs (9)</div>
-<a href="../Factories/MaterialFactory.cs.html#25"><b>25</b>private Dictionary&lt;uint, Material&lt;<i>BitmapTag</i>&gt;&gt; createdMaterials = new Dictionary&lt;uint, Material&lt;<i>BitmapTag</i>&gt;&gt;();</a>
-<a href="../Factories/MaterialFactory.cs.html#47"><b>47</b>public Material&lt;<i>BitmapTag</i>&gt; CreateMaterial(H2vMap map, ModelMesh mesh)</a>
-<a href="../Factories/MaterialFactory.cs.html#54"><b>54</b>mat = new Material&lt;<i>BitmapTag</i>&gt;</a>
-<a href="../Factories/MaterialFactory.cs.html#92"><b>92</b>Material&lt;<i>BitmapTag</i>&gt; mat,</a>
-<a href="../Factories/MaterialFactory.cs.html#125"><b>125</b>private static void PopulateFromHeuristic(H2vMap map, Material&lt;<i>BitmapTag</i>&gt; mat, ShaderTag shader)</a>
-<a href="../Factories/MaterialFactory.cs.html#131"><b>131</b>map.TryGetTag(info.AlphaBitmap, out <i>var</i> alpha);</a>
-<a href="../Factories/MaterialFactory.cs.html#137"><b>137</b>map.TryGetTag(info.DiffuseBitmap, out <i>var</i> diff);</a>
-<a href="../Factories/MaterialFactory.cs.html#149"><b>149</b>if (map.TryGetTag(bitmRef.Bitmap, out <i>var</i> bitm) == false)</a>
+<a href="../Factories/MaterialFactory.cs.html#23"><b>23</b>private Dictionary&lt;uint, Material&lt;<i>BitmapTag</i>&gt;&gt; createdMaterials = new Dictionary&lt;uint, Material&lt;<i>BitmapTag</i>&gt;&gt;();</a>
+<a href="../Factories/MaterialFactory.cs.html#45"><b>45</b>public Material&lt;<i>BitmapTag</i>&gt; CreateMaterial(H2vMap map, ModelMesh mesh)</a>
+<a href="../Factories/MaterialFactory.cs.html#52"><b>52</b>mat = new Material&lt;<i>BitmapTag</i>&gt;</a>
+<a href="../Factories/MaterialFactory.cs.html#90"><b>90</b>Material&lt;<i>BitmapTag</i>&gt; mat,</a>
+<a href="../Factories/MaterialFactory.cs.html#126"><b>126</b>private static void PopulateFromHeuristic(H2vMap map, Material&lt;<i>BitmapTag</i>&gt; mat, ShaderTag shader)</a>
+<a href="../Factories/MaterialFactory.cs.html#132"><b>132</b>map.TryGetTag(info.AlphaBitmap, out <i>var</i> alpha);</a>
+<a href="../Factories/MaterialFactory.cs.html#138"><b>138</b>map.TryGetTag(info.DiffuseBitmap, out <i>var</i> diff);</a>
+<a href="../Factories/MaterialFactory.cs.html#150"><b>150</b>if (map.TryGetTag(bitmRef.Bitmap, out <i>var</i> bitm) == false)</a>
 </div>
 <div class="rF"><div class="rN">Factories\ModelFactory.cs (12)</div>
 <a href="../Factories/ModelFactory.cs.html#9"><b>9</b>public static Model&lt;<i>BitmapTag</i>&gt; Cuboid(Vector3 lower, Vector3 upper, Vector4 color)</a>
@@ -31,20 +31,20 @@
 <a href="../Factories/ModelFactory.cs.html#93"><b>93</b>Material = new Material&lt;<i>BitmapTag</i>&gt;() { DiffuseColor = color }</a>
 <a href="../Factories/ModelFactory.cs.html#96"><b>96</b>return new Model&lt;<i>BitmapTag</i>&gt;()</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
-<a href="../Maps/H2vMap.cs.html#65"><b>65</b>public Material&lt;<i>BitmapTag</i>&gt; CreateMaterial(ModelMesh mesh)</a>
+<div class="rF"><div class="rN">Maps\Vista\H2vMap.cs (1)</div>
+<a href="../Maps/Vista/H2vMap.cs.html#48"><b>48</b>public Material&lt;<i>BitmapTag</i>&gt; CreateMaterial(ModelMesh mesh)</a>
 </div>
 <div class="rF"><div class="rN">Tags\BitmapTag.cs (3)</div>
-<a href="../Tags/BitmapTag.cs.html#15"><b>15</b>public class BitmapTag : BaseTag, IEquatable&lt;<i>BitmapTag</i>&gt;</a>
-<a href="../Tags/BitmapTag.cs.html#187"><b>187</b>return this.Equals(obj as <i>BitmapTag</i>);</a>
-<a href="../Tags/BitmapTag.cs.html#190"><b>190</b>public bool Equals(<i>BitmapTag</i> other)</a>
+<a href="../Tags/BitmapTag.cs.html#18"><b>18</b>public class BitmapTag : BaseTag, IEquatable&lt;<i>BitmapTag</i>&gt;</a>
+<a href="../Tags/BitmapTag.cs.html#189"><b>189</b>return this.Equals(obj as <i>BitmapTag</i>);</a>
+<a href="../Tags/BitmapTag.cs.html#192"><b>192</b>public bool Equals(<i>BitmapTag</i> other)</a>
 </div>
 <div class="rF"><div class="rN">Tags\LensFlareTag.cs (1)</div>
 <a href="../Tags/LensFlareTag.cs.html#17"><b>17</b>public TagRef&lt;<i>BitmapTag</i>&gt; Bitmap { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (2)</div>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#675"><b>675</b>public TagRef&lt;<i>BitmapTag</i>&gt; BitmapRef { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#691"><b>691</b>public TagRef&lt;<i>BitmapTag</i>&gt; BitmapRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#672"><b>672</b>public TagRef&lt;<i>BitmapTag</i>&gt; BitmapRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#688"><b>688</b>public TagRef&lt;<i>BitmapTag</i>&gt; BitmapRef { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\ShaderTag.cs (4)</div>
 <a href="../Tags/ShaderTag.cs.html#40"><b>40</b>public TagRef&lt;<i>BitmapTag</i>&gt; DiffuseBitmap { get; set; }</a>

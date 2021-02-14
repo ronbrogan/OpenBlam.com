@@ -1,40 +1,6 @@
 ﻿<div class="referenceBody">
-<div class="rH">3 types derived from H2BaseMap</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2vLazyLoadingMap.cs (1)</div>
-<a href="../Maps/H2vLazyLoadingMap.cs.html#8"><b>8</b>public class H2vLazyLoadingMap : <i>H2BaseMap</i></a>
-</div>
-<div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
-<a href="../Maps/H2vMap.cs.html#17"><b>17</b>public class H2vMap : <i>H2BaseMap</i></a>
-</div>
-<div class="rF"><div class="rN">Maps\MCC\H2mccMap.cs (1)</div>
-<a href="../Maps/MCC/H2mccMap.cs.html#13"><b>13</b>public class H2mccMap : <i>H2BaseMap</i></a>
-</div>
-</div>
-<div class="rH">15 references to H2BaseMap</div><div class="rA">OpenH2.Core (15)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\MapExtensions.cs (1)</div>
-<a href="../Extensions/MapExtensions.cs.html#8"><b>8</b>public static PrimaryOffset PrimaryOffset(this <i>H2BaseMap</i> scene, int value)</a>
-</div>
-<div class="rF"><div class="rN">Factories\MapFactory.cs (7)</div>
-<a href="../Factories/MapFactory.cs.html#104"><b>104</b>private void LoadMetadata(<i>H2BaseMap</i> scene, H2MapReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#117"><b>117</b>private Dictionary&lt;int, string&gt; GetAllStrings(<i>H2BaseMap</i> scene, H2MapReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#134"><b>134</b>private Dictionary&lt;uint, string&gt; GetTagNames(<i>H2BaseMap</i> scene, H2MapReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#177"><b>177</b>public static BaseTag GetTag(<i>H2BaseMap</i> scene, TagIndexEntry entry, H2MapReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#184"><b>184</b>private H2vMapHeader GetSceneHeader(<i>H2BaseMap</i> scene, TrackingReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#193"><b>193</b>public IndexHeader GetIndexHeader(<i>H2BaseMap</i> scene, TrackingReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#204"><b>204</b>public Dictionary&lt;uint, TagIndexEntry&gt; GetTagIndex(<i>H2BaseMap</i> scene, TrackingReader reader, out int firstEntryOffset)</a>
-</div>
-<div class="rF"><div class="rN">Factories\TagFactory.cs (1)</div>
-<a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static BaseTag CreateTag(uint id, string name, TagIndexEntry index, <i>H2BaseMap</i> map, H2MapReader reader)</a>
-</div>
-<div class="rF"><div class="rN">Offsets\PrimaryOffset.cs (2)</div>
-<a href="../Offsets/PrimaryOffset.cs.html#7"><b>7</b>private <i>H2BaseMap</i> scene;</a>
-<a href="../Offsets/PrimaryOffset.cs.html#10"><b>10</b>public PrimaryOffset(<i>H2BaseMap</i> scene, int offsetValue)</a>
-</div>
-<div class="rF"><div class="rN">Offsets\SecondaryOffset.cs (2)</div>
-<a href="../Offsets/SecondaryOffset.cs.html#7"><b>7</b>private <i>H2BaseMap</i> scene;</a>
-<a href="../Offsets/SecondaryOffset.cs.html#10"><b>10</b>public SecondaryOffset(<i>H2BaseMap</i> scene, int offsetValue)</a>
-</div>
-<div class="rF"><div class="rN">Patching\TagPatcher.cs (2)</div>
-<a href="../Patching/TagPatcher.cs.html#21"><b>21</b>private readonly <i>H2BaseMap</i> originalMap;</a>
-<a href="../Patching/TagPatcher.cs.html#34"><b>34</b>public TagPatcher(<i>H2BaseMap</i> originalMap, Stream mapToPatch)</a>
+<div class="rH">1 reference to H2BaseMap</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
+<a href="../Maps/H2BaseMap.cs.html#229"><b>229</b>return <i>H2BaseMap</i>.CalculateSignature(this.localStream);</a>
 </div>
 </div>
 </div>

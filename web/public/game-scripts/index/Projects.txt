@@ -1,4 +1,5 @@
 ﻿h2mcc\Halo2MCC.csproj
 h2v\Halo2Vista.csproj
+OpenH2\src\OpenH2.Core.Generators\OpenH2.Core.Generators.csproj
 OpenH2\src\OpenH2.Core\OpenH2.Core.csproj
 OpenH2\src\OpenH2.Foundation\OpenH2.Foundation.csproj

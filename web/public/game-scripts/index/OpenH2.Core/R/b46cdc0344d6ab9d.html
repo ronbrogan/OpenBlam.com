@@ -1,0 +1,42 @@
+﻿<div class="referenceBody">
+<div class="rH">2 implementations of IH2Map</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
+<a href="../Maps/H2BaseMap.cs.html#33"><b>33</b>public abstract class H2BaseMap&lt;THeader&gt; : HaloMap&lt;THeader&gt;, <i>IH2Map</i> where THeader : IH2MapHeader</a>
+</div>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (1)</div>
+<a href="../Maps/IH2Map.cs.html#33"><b>33</b>public class NullH2Map : <i>IH2Map</i></a>
+</div>
+</div>
+<div class="rH">18 references to IH2Map</div><div class="rA">OpenH2.Core (18)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\MapExtensions.cs (1)</div>
+<a href="../Extensions/MapExtensions.cs.html#11"><b>11</b>public static PrimaryOffset PrimaryOffset(this <i>IH2Map</i> scene, int value)</a>
+</div>
+<div class="rF"><div class="rN">Factories\MapFactory.cs (5)</div>
+<a href="../Factories/MapFactory.cs.html#37"><b>37</b>public <i>IH2Map</i> Load(string mapFileName)</a>
+<a href="../Factories/MapFactory.cs.html#55"><b>55</b>public <i>IH2Map</i> LoadH2Map(string mapFileName, Span&lt;byte&gt; headerData)</a>
+<a href="../Factories/MapFactory.cs.html#83"><b>83</b>if(map is not <i>IH2Map</i> h2map)</a>
+<a href="../Factories/MapFactory.cs.html#96"><b>96</b>public static IndexHeader DeserializeIndexHeader(<i>IH2Map</i> scene, Stream reader)</a>
+<a href="../Factories/MapFactory.cs.html#107"><b>107</b>public static Dictionary&lt;uint, TagIndexEntry&gt; BuildTagIndex(<i>IH2Map</i> scene, Stream reader, out int firstEntryOffset)</a>
+</div>
+<div class="rF"><div class="rN">Factories\TagFactory.cs (1)</div>
+<a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static BaseTag CreateTag(uint id, string name, TagIndexEntry index, <i>IH2Map</i> map, MapStream reader)</a>
+</div>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (5)</div>
+<a href="../Maps/H2BaseMap.cs.html#36"><b>36</b>private <i>IH2Map</i> mainMenu = NullH2Map.Instance;</a>
+<a href="../Maps/H2BaseMap.cs.html#37"><b>37</b>private <i>IH2Map</i> spShared = NullH2Map.Instance;</a>
+<a href="../Maps/H2BaseMap.cs.html#38"><b>38</b>private <i>IH2Map</i> mpShared = NullH2Map.Instance;</a>
+<a href="../Maps/H2BaseMap.cs.html#48"><b>48</b>IH2MapHeader <i>IH2Map</i>.Header =&gt; this.Header;</a>
+<a href="../Maps/H2BaseMap.cs.html#53"><b>53</b>if (ancillaryMap is not <i>IH2Map</i> h2ancillaryMap)</a>
+</div>
+<div class="rF"><div class="rN">Offsets\PrimaryOffset.cs (2)</div>
+<a href="../Offsets/PrimaryOffset.cs.html#7"><b>7</b>private <i>IH2Map</i> scene;</a>
+<a href="../Offsets/PrimaryOffset.cs.html#10"><b>10</b>public PrimaryOffset(<i>IH2Map</i> scene, int offsetValue)</a>
+</div>
+<div class="rF"><div class="rN">Offsets\SecondaryOffset.cs (2)</div>
+<a href="../Offsets/SecondaryOffset.cs.html#7"><b>7</b>private <i>IH2Map</i> scene;</a>
+<a href="../Offsets/SecondaryOffset.cs.html#10"><b>10</b>public SecondaryOffset(<i>IH2Map</i> scene, int offsetValue)</a>
+</div>
+<div class="rF"><div class="rN">Patching\TagPatcher.cs (2)</div>
+<a href="../Patching/TagPatcher.cs.html#22"><b>22</b>private readonly <i>IH2Map</i> originalMap;</a>
+<a href="../Patching/TagPatcher.cs.html#35"><b>35</b>public TagPatcher(<i>IH2Map</i> originalMap, Stream mapToPatch)</a>
+</div>
+</div>
+</div>

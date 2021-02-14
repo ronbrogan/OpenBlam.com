@@ -58,7 +58,7 @@
 <a href="../05b_deltatowers.cs.html#5513"><b>5513</b>if ((bool)Engine.ai_vitality_pinned(<i>regret1</i>.Squad) == false)</a>
 <a href="../05b_deltatowers.cs.html#5524"><b>5524</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
 <a href="../05b_deltatowers.cs.html#5525"><b>5525</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
-<a href="../05b_deltatowers.cs.html#5526"><b>5526</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, reserve_throne);</a>
+<a href="../05b_deltatowers.cs.html#5526"><b>5526</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, new ScriptMethodReference(reserve_throne));</a>
 <a href="../05b_deltatowers.cs.html#5529"><b>5529</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
 <a href="../05b_deltatowers.cs.html#5534"><b>5534</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
 <a href="../05b_deltatowers.cs.html#5537"><b>5537</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
@@ -68,7 +68,7 @@
 <a href="../05b_deltatowers.cs.html#5569"><b>5569</b>else if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0)) &lt; 5F)</a>
 <a href="../05b_deltatowers.cs.html#5580"><b>5580</b>Engine.ai_place(<i>regret1</i>.Squad, 1);</a>
 <a href="../05b_deltatowers.cs.html#5581"><b>5581</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
-<a href="../05b_deltatowers.cs.html#5582"><b>5582</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, reserve_throne);</a>
+<a href="../05b_deltatowers.cs.html#5582"><b>5582</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, new ScriptMethodReference(reserve_throne));</a>
 <a href="../05b_deltatowers.cs.html#5585"><b>5585</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_02);</a>
 <a href="../05b_deltatowers.cs.html#5590"><b>5590</b>Engine.ai_set_orders(<i>regret1</i>.Squad, regret_03);</a>
 <a href="../05b_deltatowers.cs.html#5593"><b>5593</b>this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
@@ -78,7 +78,7 @@
 <a href="../05b_deltatowers.cs.html#5614"><b>5614</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
 <a href="../05b_deltatowers.cs.html#5640"><b>5640</b>Engine.ai_place(<i>regret1</i>._1);</a>
 <a href="../05b_deltatowers.cs.html#5641"><b>5641</b>Engine.ai_cannot_die(<i>regret1</i>.Squad, true);</a>
-<a href="../05b_deltatowers.cs.html#5642"><b>5642</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, regret_pause);</a>
+<a href="../05b_deltatowers.cs.html#5642"><b>5642</b>Engine.cs_run_command_script(<i>regret1</i>.Squad, new ScriptMethodReference(regret_pause));</a>
 <a href="../05b_deltatowers.cs.html#5643"><b>5643</b>this.regret_corpse = this.regret_corpse = Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0);</a>
 <a href="../05b_deltatowers.cs.html#5644"><b>5644</b>this.regret_throne = Engine.object_get_parent(Engine.list_get(Engine.ai_actors(<i>regret1</i>.Squad), 0));</a>
 </div>

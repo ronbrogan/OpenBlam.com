@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">416 references to begin_random</div><div class="rA">Halo2MCC (208)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (10)</div>
+<div class="rH">418 references to begin_random</div><div class="rA">Halo2MCC (209)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (10)</div>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#3052"><b>3052</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;e10_cov_guntower/p0&quot;)),</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#3248"><b>3248</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;e9_cov_guntower/p0&quot;)),</a>
 <a href="../../Halo2MCC/03a_oldmombasa.cs.html#3640"><b>3640</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_go_to(Engine.GetReference&lt;ISpatialPoint&gt;(&quot;e8_patrol/p2&quot;)),</a>
@@ -130,19 +130,20 @@
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#3905"><b>3905</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#4102"><b>4102</b>Engine.<i>begin_random</i>(async () =&gt; Engine.objects_detach(rack2.Entity, bomb07.Entity),</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#4142"><b>4142</b>Engine.<i>begin_random</i>(async () =&gt; Engine.objects_detach(rack2.Entity, bomb07.Entity),</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#4858"><b>4858</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.left, temple_deploy_l),</a>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#4864"><b>4864</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.Squad, temple_deploy_l),</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#4858"><b>4858</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.left, new ScriptMethodReference(temple_deploy_l)),</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#4864"><b>4864</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.Squad, new ScriptMethodReference(temple_deploy_l)),</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#5202"><b>5202</b>Engine.<i>begin_random</i>(async () =&gt; await this.regret_taunt_01(),</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#5216"><b>5216</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 <a href="../../Halo2MCC/05b_deltatowers.cs.html#5306"><b>5306</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 </div>
-<div class="rF"><div class="rN">06a_sentinelwalls.cs (7)</div>
+<div class="rF"><div class="rN">06a_sentinelwalls.cs (8)</div>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3684"><b>3684</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_place(cond_a_sen_b.j),</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#4396"><b>4396</b>Engine.<i>begin_random</i>(async () =&gt; await Engine.sleep((short)Engine.random_range(0, 10)),</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5021"><b>5021</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_kill(hall_c_marines.a),</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5454"><b>5454</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_kill(cond_b_humans.a),</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5780"><b>5780</b>Engine.<i>begin_random</i>(async () =&gt; Engine.effect_new(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\design\\mortar_emitter\\mortar_emitter&quot;, 2192449652U), mortar_a),</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5801"><b>5801</b>Engine.<i>begin_random</i>(async () =&gt; Engine.effect_new(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\design\\mortar_emitter\\mortar_emitter&quot;, 2192449652U), mortar_a),</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5928"><b>5928</b>Engine.<i>begin_random</i>(async () =&gt; Engine.wake(new ScriptMethodReference(ai_cov_ins_pod_a)),</a>
 <a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6132"><b>6132</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 </div>
 <div class="rF"><div class="rN">06b_floodzone.cs (1)</div>
@@ -218,7 +219,7 @@
 <a href="../../Halo2MCC/08a_deltacliffs.cs.html#2370"><b>2370</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_renew(this.ai_current_actor),</a>
 </div>
 <div class="rF"><div class="rN">08b_deltacontrol.cs (6)</div>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#971"><b>971</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(boss_tartarus.Squad, cs_boss_tartarus_taunt),</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#971"><b>971</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(boss_tartarus.Squad, new ScriptMethodReference(cs_boss_tartarus_taunt)),</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#4427"><b>4427</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;scarab_air/joint0&quot;)),</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#4463"><b>4463</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;scarab_air/joint0&quot;)),</a>
 <a href="../../Halo2MCC/08b_deltacontrol.cs.html#5434"><b>5434</b>Engine.<i>begin_random</i>(async () =&gt;</a>
@@ -229,7 +230,7 @@
 <a href="../../Halo2MCC/backwash.cs.html#314"><b>314</b>Engine.<i>begin_random</i>(async () =&gt; Engine.print(&quot;stopping&quot;),</a>
 </div>
 </div>
-<div class="rA">Halo2Vista (208)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03a_oldmombasa.cs (10)</div>
+<div class="rA">Halo2Vista (209)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03a_oldmombasa.cs (10)</div>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#3038"><b>3038</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;e10_cov_guntower/p0&quot;)),</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#3234"><b>3234</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;e9_cov_guntower/p0&quot;)),</a>
 <a href="../../Halo2Vista/03a_oldmombasa.cs.html#3626"><b>3626</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_go_to(Engine.GetReference&lt;ISpatialPoint&gt;(&quot;e8_patrol/p2&quot;)),</a>
@@ -360,19 +361,20 @@
 <a href="../../Halo2Vista/05b_deltatowers.cs.html#3902"><b>3902</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 <a href="../../Halo2Vista/05b_deltatowers.cs.html#4099"><b>4099</b>Engine.<i>begin_random</i>(async () =&gt; Engine.objects_detach(rack2.Entity, bomb07.Entity),</a>
 <a href="../../Halo2Vista/05b_deltatowers.cs.html#4139"><b>4139</b>Engine.<i>begin_random</i>(async () =&gt; Engine.objects_detach(rack2.Entity, bomb07.Entity),</a>
-<a href="../../Halo2Vista/05b_deltatowers.cs.html#4855"><b>4855</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.left, temple_deploy_l),</a>
-<a href="../../Halo2Vista/05b_deltatowers.cs.html#4861"><b>4861</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.Squad, temple_deploy_l),</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#4855"><b>4855</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.left, new ScriptMethodReference(temple_deploy_l)),</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#4861"><b>4861</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(temple_heavies.Squad, new ScriptMethodReference(temple_deploy_l)),</a>
 <a href="../../Halo2Vista/05b_deltatowers.cs.html#5199"><b>5199</b>Engine.<i>begin_random</i>(async () =&gt; await this.regret_taunt_01(),</a>
 <a href="../../Halo2Vista/05b_deltatowers.cs.html#5213"><b>5213</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 <a href="../../Halo2Vista/05b_deltatowers.cs.html#5303"><b>5303</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 </div>
-<div class="rF"><div class="rN">06a_sentinelwalls.cs (7)</div>
+<div class="rF"><div class="rN">06a_sentinelwalls.cs (8)</div>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3680"><b>3680</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_place(cond_a_sen_b.j),</a>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#4390"><b>4390</b>Engine.<i>begin_random</i>(async () =&gt; await Engine.sleep((short)Engine.random_range(0, 10)),</a>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5015"><b>5015</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_kill(hall_c_marines.a),</a>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5448"><b>5448</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_kill(cond_b_humans.a),</a>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5774"><b>5774</b>Engine.<i>begin_random</i>(async () =&gt; Engine.effect_new(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\design\\mortar_emitter\\mortar_emitter&quot;, 4268694588U), mortar_a),</a>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5795"><b>5795</b>Engine.<i>begin_random</i>(async () =&gt; Engine.effect_new(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\design\\mortar_emitter\\mortar_emitter&quot;, 4268694588U), mortar_a),</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5922"><b>5922</b>Engine.<i>begin_random</i>(async () =&gt; Engine.wake(new ScriptMethodReference(ai_cov_ins_pod_a)),</a>
 <a href="../../Halo2Vista/06a_sentinelwalls.cs.html#6126"><b>6126</b>Engine.<i>begin_random</i>(async () =&gt;</a>
 </div>
 <div class="rF"><div class="rN">06b_floodzone.cs (1)</div>
@@ -448,7 +450,7 @@
 <a href="../../Halo2Vista/08a_deltacliffs.cs.html#2368"><b>2368</b>Engine.<i>begin_random</i>(async () =&gt; Engine.ai_renew(this.ai_current_actor),</a>
 </div>
 <div class="rF"><div class="rN">08b_deltacontrol.cs (6)</div>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#971"><b>971</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(boss_tartarus.Squad, cs_boss_tartarus_taunt),</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#971"><b>971</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_run_command_script(boss_tartarus.Squad, new ScriptMethodReference(cs_boss_tartarus_taunt)),</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#4426"><b>4426</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;scarab_air/joint0&quot;)),</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#4462"><b>4462</b>Engine.<i>begin_random</i>(async () =&gt; Engine.cs_shoot_point(true, Engine.GetReference&lt;ISpatialPoint&gt;(&quot;scarab_air/joint0&quot;)),</a>
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#5432"><b>5432</b>Engine.<i>begin_random</i>(async () =&gt;</a>

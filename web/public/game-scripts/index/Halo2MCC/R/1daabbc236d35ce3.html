@@ -2,8 +2,8 @@
 <div class="rH">7 references to Squad</div><div class="rA">Halo2MCC (7)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08b_deltacontrol.cs (7)</div>
 <a href="../08b_deltacontrol.cs.html#6266"><b>6266</b>Engine.ai_migrate(e5_cov_inf0.Squad, e6_cov_inf0.<i>Squad</i>);</a>
 <a href="../08b_deltacontrol.cs.html#6267"><b>6267</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e6_main_room, Engine.ai_actors(e6_cov_inf0.<i>Squad</i>)));</a>
-<a href="../08b_deltacontrol.cs.html#6268"><b>6268</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_jailbreak_scene&quot;, cs_e6_jailbreak_scene, e6_cov_inf0.<i>Squad</i>), 30, 300);</a>
-<a href="../08b_deltacontrol.cs.html#6270"><b>6270</b>Engine.cs_run_command_script(e6_cov_inf0.<i>Squad</i>, cs_e6_jailbreak_behavior);</a>
+<a href="../08b_deltacontrol.cs.html#6268"><b>6268</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_jailbreak_scene&quot;, new ScriptMethodReference(cs_e6_jailbreak_scene), e6_cov_inf0.<i>Squad</i>), 30, 300);</a>
+<a href="../08b_deltacontrol.cs.html#6270"><b>6270</b>Engine.cs_run_command_script(e6_cov_inf0.<i>Squad</i>, new ScriptMethodReference(cs_e6_jailbreak_behavior));</a>
 <a href="../08b_deltacontrol.cs.html#6273"><b>6273</b>Engine.ai_migrate(e6_cov_inf1, e6_cov_inf0.<i>Squad</i>);</a>
 <a href="../08b_deltacontrol.cs.html#6274"><b>6274</b>Engine.ai_set_orders(e6_cov_inf0.<i>Squad</i>, e6_cov_inf0_continue);</a>
 <a href="../08b_deltacontrol.cs.html#6305"><b>6305</b>Engine.ai_place(e6_cov_inf0.<i>Squad</i>);</a>

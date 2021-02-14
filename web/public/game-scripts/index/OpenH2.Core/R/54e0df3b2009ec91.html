@@ -9,31 +9,22 @@
 <a href="../Offsets/SecondaryOffset.cs.html#24"><b>24</b>public int <i>Value</i> =&gt; precalculatedValue ?? this.offset - this.scene.SecondaryMagic;</a>
 </div>
 </div>
-<div class="rH">15 references to Value</div><div class="rA">OpenH2.Core (15)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (2)</div>
-<a href="../Factories/MapFactory.cs.html#137"><b>137</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.Offset.<i>Value</i>);</a>
-<a href="../Factories/MapFactory.cs.html#164"><b>164</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.Offset.<i>Value</i>);</a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (2)</div>
-<a href="../Factories/MccMapFactory.cs.html#87"><b>87</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.Offset.<i>Value</i>);</a>
-<a href="../Factories/MccMapFactory.cs.html#114"><b>114</b>var index = scene.TagIndex.Values.OrderBy(i =&gt; i.Offset.<i>Value</i>);</a>
-</div>
-<div class="rF"><div class="rN">Factories\TagFactory.cs (4)</div>
+<div class="rH">10 references to Value</div><div class="rA">OpenH2.Core (10)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\TagFactory.cs (3)</div>
 <a href="../Factories/TagFactory.cs.html#29"><b>29</b>Offset = (uint)index.Offset.<i>Value</i>,</a>
 <a href="../Factories/TagFactory.cs.html#30"><b>30</b>InternalSecondaryMagic = map.SecondaryMagic + index.Offset.<i>Value</i></a>
-<a href="../Factories/TagFactory.cs.html#38"><b>38</b>mapData.Preload(index.Offset.<i>Value</i>, index.DataSize);</a>
-<a href="../Factories/TagFactory.cs.html#57"><b>57</b>index.Offset.<i>Value</i>,</a>
+<a href="../Factories/TagFactory.cs.html#52"><b>52</b>index.Offset.<i>Value</i>,</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2vMap.cs (1)</div>
-<a href="../Maps/H2vMap.cs.html#165"><b>165</b>var chunk = reader.Chunk(offset.<i>Value</i>, length);</a>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
+<a href="../Maps/H2BaseMap.cs.html#214"><b>214</b>reader.Position = offset.<i>Value</i>;</a>
 </div>
 <div class="rF"><div class="rN">Maps\TagIndexEntry.cs (1)</div>
 <a href="../Maps/TagIndexEntry.cs.html#21"><b>21</b>return TagName + &quot; &quot; + ID + &quot;, &quot; + DataSize + &quot;B @ &quot; + Offset.<i>Value</i>;</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (4)</div>
-<a href="../Patching/TagPatcher.cs.html#63"><b>63</b>var patchOffset = tagInfo.Offset.<i>Value</i> + bin.RelativeOffset;</a>
-<a href="../Patching/TagPatcher.cs.html#119"><b>119</b>var baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.Offset.<i>Value</i> + offset + startsAt + 4));</a>
-<a href="../Patching/TagPatcher.cs.html#122"><b>122</b>offset += baseOffset.Value - tagInfo.Offset.<i>Value</i> - offset + elementOffset;</a>
-<a href="../Patching/TagPatcher.cs.html#165"><b>165</b>writer(this.mapToPatch, tagInfo.Offset.<i>Value</i> + info.RelativeOffset, patch.Value);</a>
+<a href="../Patching/TagPatcher.cs.html#65"><b>65</b>var patchOffset = tagInfo.Offset.<i>Value</i> + bin.RelativeOffset;</a>
+<a href="../Patching/TagPatcher.cs.html#121"><b>121</b>var baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.Offset.<i>Value</i> + offset + startsAt + 4));</a>
+<a href="../Patching/TagPatcher.cs.html#124"><b>124</b>offset += baseOffset.Value - tagInfo.Offset.<i>Value</i> - offset + elementOffset;</a>
+<a href="../Patching/TagPatcher.cs.html#167"><b>167</b>writer(this.mapToPatch, tagInfo.Offset.<i>Value</i> + info.RelativeOffset, patch.Value);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#14"><b>14</b>var scenarioStart = scene.TagIndex[scene.IndexHeader.Scenario].Offset.<i>Value</i>;</a>

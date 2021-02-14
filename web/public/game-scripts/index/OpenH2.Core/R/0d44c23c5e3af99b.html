@@ -1,16 +1,22 @@
 ﻿<div class="referenceBody">
 <div class="rH">2 writes to NodeString</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#29"><b>29</b><i>NodeString</i> = (ushort)FindStringIndex(method.Description, strings)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#30"><b>30</b><i>NodeString</i> = (ushort)FindStringIndex(method.Description, strings)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#94"><b>94</b><i>NodeString</i> = ParseFrom(line, &quot;str:&quot;),</a>
 </div>
 </div>
-<div class="rH">20 references to NodeString</div><div class="rA">OpenH2.Core (20)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#703"><b>703</b>return ((Span&lt;byte&gt;)scenario.ScriptStrings).ReadStringStarting(node.<i>NodeString</i>);</a>
+<div class="rH">23 references to NodeString</div><div class="rA">OpenH2.Core (23)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#133"><b>133</b>ScriptDataType.String =&gt; Result.From(SpanByteExtensions.ReadStringStarting(this.scenario.ScriptStrings, node.<i>NodeString</i>)),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#258"><b>258</b>ScriptDataType.String =&gt; Result.From(SpanByteExtensions.ReadStringStarting(this.scenario.ScriptStrings, node.<i>NodeString</i>)),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#709"><b>709</b>return ((Span&lt;byte&gt;)scenario.ScriptStrings).ReadStringStarting(node.<i>NodeString</i>);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#240"><b>240</b>return ((Span&lt;byte&gt;)tag.ScriptStrings).ReadStringStarting(node.<i>NodeString</i>);</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#241"><b>241</b>return ((Span&lt;byte&gt;)tag.ScriptStrings).ReadStringStarting(node.<i>NodeString</i>);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\AiGetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/AiGetContext.cs.html#21"><b>21</b>if (node.<i>NodeString</i> == 0)</a>
@@ -24,20 +30,23 @@
 <div class="rF"><div class="rN">Scripting\GenerationState\NavigationPointContext.cs (1)</div>
 <a href="../Scripting/GenerationState/NavigationPointContext.cs.html#20"><b>20</b>if (node.<i>NodeString</i> == 0)</a>
 </div>
+<div class="rF"><div class="rN">Scripting\GenerationState\ScriptMethodReferenceContext.cs (1)</div>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#21"><b>21</b>if (node.<i>NodeString</i> == 0)</a>
+</div>
 <div class="rF"><div class="rN">Scripting\GenerationState\UnknownContext.cs (3)</div>
 <a href="../Scripting/GenerationState/UnknownContext.cs.html#20"><b>20</b>if (node.<i>NodeString</i> &gt; 0 &amp;&amp; node.<i>NodeString</i> &lt; scenario.ScriptStrings.Length</a>
 <a href="../Scripting/GenerationState/UnknownContext.cs.html#21"><b>21</b>&amp;&amp; scenario.ScriptStrings[node.<i>NodeString</i> - 1] == 0)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (6)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#66"><b>66</b>value = strings.ReadStringStarting(node.<i>NodeString</i>);</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#72"><b>72</b>if (node.<i>NodeString</i> &gt; 0 &amp;&amp; node.<i>NodeString</i> &lt; tag.ScriptStrings.Length</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#73"><b>73</b>&amp;&amp; tag.ScriptStrings[node.<i>NodeString</i> - 1] == 0)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#75"><b>75</b>value = SpanByteExtensions.ReadStringStarting(tag.ScriptStrings, node.<i>NodeString</i>);</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#82"><b>82</b>value = strings.ReadStringStarting(node.<i>NodeString</i>);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#67"><b>67</b>value = strings.ReadStringStarting(node.<i>NodeString</i>);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#73"><b>73</b>if (node.<i>NodeString</i> &gt; 0 &amp;&amp; node.<i>NodeString</i> &lt; tag.ScriptStrings.Length</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#74"><b>74</b>&amp;&amp; tag.ScriptStrings[node.<i>NodeString</i> - 1] == 0)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#76"><b>76</b>value = OpenBlam.Core.Extensions.SpanByteExtensions.ReadStringStarting(tag.ScriptStrings, node.<i>NodeString</i>);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#83"><b>83</b>value = strings.ReadStringStarting(node.<i>NodeString</i>);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (2)</div>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.<i>NodeString</i>},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},str:{orig?.<i>NodeString</i>},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.<i>NodeString</i>},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},str:{orig?.<i>NodeString</i>},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (3)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#65"><b>65</b>map.WriteUInt16At(patchStart + 12, patch.NodeData.<i>NodeString</i>);</a>

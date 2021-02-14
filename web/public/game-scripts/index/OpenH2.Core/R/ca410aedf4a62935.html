@@ -1,10 +1,51 @@
 ﻿<div class="referenceBody">
-<div class="rH">16 references to NodeData_H16</div><div class="rA">OpenH2.Core (16)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (2)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#483"><b>483</b>Debug.Assert(scenario.ScriptSyntaxNodes[node.<i>NodeData_H16</i>].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#484"><b>484</b>childIndices.PushFull(node.<i>NodeData_H16</i>);</a>
+<div class="rH">55 references to NodeData_H16</div><div class="rA">OpenH2.Core (55)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (11)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#56"><b>56</b>NodeType.VariableAccess =&gt; this.variables[node.<i>NodeData_H16</i>],</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#81"><b>81</b>ushort innerNext = node.<i>NodeData_H16</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#85"><b>85</b>value = Interpret(this.scenario.ScriptSyntaxNodes[node.<i>NodeData_H16</i>], out innerNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#130"><b>130</b>ScriptDataType.Short =&gt; Result.From(node.<i>NodeData_H16</i>),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#136"><b>136</b>ScriptDataType.Trigger =&gt; Result.From(this.scenario.TriggerVolumes[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#137"><b>137</b>ScriptDataType.LocationFlag =&gt; Result.From(this.scenario.LocationFlagDefinitions[node.<i>NodeData_H16</i>]),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#144"><b>144</b>ScriptDataType.AIOrders =&gt; Result.From(this.scenario.AiOrderDefinitions[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#145"><b>145</b>ScriptDataType.StartingProfile =&gt; Result.From(this.scenario.StartingProfileDefinitions[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#178"><b>178</b>var invocationNode = this.scenario.ScriptSyntaxNodes[node.<i>NodeData_H16</i>];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#291"><b>291</b>var variable = this.variables[variableAccess.<i>NodeData_H16</i>];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#298"><b>298</b>this.variables[variableAccess.<i>NodeData_H16</i>] = value;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (26)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#226"><b>226</b>var invocationNode = this.scenario.ScriptSyntaxNodes[node.<i>NodeData_H16</i>];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#255"><b>255</b>ScriptDataType.Short =&gt; Result.From(node.<i>NodeData_H16</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#259"><b>259</b>ScriptDataType.ScriptReference =&gt; Result.From(new ScriptMethodReference(node.<i>NodeData_H16</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#261"><b>261</b>ScriptDataType.Trigger =&gt; Result.From(this.scenario.TriggerVolumes[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#262"><b>262</b>ScriptDataType.LocationFlag =&gt; Result.From(this.scenario.LocationFlagDefinitions[node.<i>NodeData_H16</i>]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#263"><b>263</b>ScriptDataType.CameraPathTarget =&gt; Result.From(this.scenario.CameraPathTargets[node.<i>NodeData_H16</i>]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#264"><b>264</b>ScriptDataType.CinematicTitle =&gt; Result.From(this.scenario.CinematicTitleDefinitions[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#265"><b>265</b>ScriptDataType.DeviceGroup =&gt; Result.From(this.scenario.DeviceGroupDefinitions[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#267"><b>267</b>ScriptDataType.AIScript =&gt; Result.From(new ScriptMethodReference(node.<i>NodeData_H16</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#268"><b>268</b>ScriptDataType.AIBehavior =&gt; Result.From(node.<i>NodeData_H16</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#269"><b>269</b>ScriptDataType.AIOrders =&gt; Result.From(this.scenario.AiOrderDefinitions[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#270"><b>270</b>ScriptDataType.StartingProfile =&gt; Result.From(this.scenario.StartingProfileDefinitions[node.<i>NodeData_H16</i>].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#271"><b>271</b>ScriptDataType.Bsp =&gt; Result.From(this.scenario.Terrains[node.<i>NodeData_H16</i>]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#272"><b>272</b>ScriptDataType.NavigationPoint =&gt; Result.From(node.<i>NodeData_H16</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#273"><b>273</b>ScriptDataType.SpatialPoint =&gt; Result.From(this.scenario.SpatialPointStuffs[0].SpatialPointCollections[node.NodeData_L16].SpatialPoints[node.<i>NodeData_H16</i>]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#282"><b>282</b>ScriptDataType.GameDifficulty =&gt; Result.From(new GameDifficulty((short)node.<i>NodeData_H16</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#283"><b>283</b>ScriptDataType.Team =&gt; Result.From(node.<i>NodeData_H16</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#284"><b>284</b>ScriptDataType.DamageState =&gt; Result.From(node.<i>NodeData_H16</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#291"><b>291</b>ScriptDataType.EntityIdentifier =&gt; Result.From(new EntityIdentifier(node.<i>NodeData_H16</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#305"><b>305</b>return Result.From(this.scenario.AiSquadDefinitions[node.NodeData_B1].StartingLocations[node.<i>NodeData_H16</i>]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#309"><b>309</b>return Result.From(this.scenario.AiSquadGroupDefinitions[node.<i>NodeData_H16</i>]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#313"><b>313</b>return Result.From(this.scenario.AiSquadDefinitions[node.<i>NodeData_H16</i>]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#319"><b>319</b>if (node.<i>NodeData_H16</i> == ushort.MaxValue)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#325"><b>325</b>return Result.From(this.scenario.WellKnownItems[node.<i>NodeData_H16</i>].GameObject);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#336"><b>336</b>result = this.GlobalVariableSet[node.<i>NodeData_H16</i>];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#340"><b>340</b>result = this.variables[node.<i>NodeData_H16</i>];</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (2)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#487"><b>487</b>Debug.Assert(scenario.ScriptSyntaxNodes[node.<i>NodeData_H16</i>].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#488"><b>488</b>childIndices.PushFull(node.<i>NodeData_H16</i>);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#219"><b>219</b>ScriptDataType.Short =&gt; (short)node.<i>NodeData_H16</i>,</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#220"><b>220</b>ScriptDataType.Short =&gt; (short)node.<i>NodeData_H16</i>,</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\AiGetContext.cs (2)</div>
 <a href="../Scripting/GenerationState/AiGetContext.cs.html#41"><b>41</b>&amp;&amp; nestedRepo.TryGetName(memberName, node.DataType.ToString(), node.<i>NodeData_H16</i>, out var finalProp))</a>
@@ -16,14 +57,20 @@
 <div class="rF"><div class="rN">Scripting\GenerationState\FieldGetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/FieldGetContext.cs.html#35"><b>35</b>if(nameRepo.TryGetName(stringVal, node.DataType.ToString(), node.<i>NodeData_H16</i>, out var finalName))</a>
 </div>
+<div class="rF"><div class="rN">Scripting\GenerationState\GameDifficultyContext.cs (1)</div>
+<a href="../Scripting/GenerationState/GameDifficultyContext.cs.html#19"><b>19</b>var difficulty = node.<i>NodeData_H16</i> switch</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\ScriptMethodReferenceContext.cs (1)</div>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#35"><b>35</b>if(nameRepo.TryGetName(stringVal, node.DataType.ToString(), node.<i>NodeData_H16</i>, out var finalName))</a>
+</div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (3)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#54"><b>54</b>value = node.<i>NodeData_H16</i>;</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#108"><b>108</b>Debug.Assert(tag.ScriptSyntaxNodes[node.<i>NodeData_H16</i>].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#109"><b>109</b>childIndices.Push((node.<i>NodeData_H16</i>, current));</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#55"><b>55</b>value = node.<i>NodeData_H16</i>;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#109"><b>109</b>Debug.Assert(tag.ScriptSyntaxNodes[node.<i>NodeData_H16</i>].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#110"><b>110</b>childIndices.Push((node.<i>NodeData_H16</i>, current));</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (2)</div>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.<i>NodeData_H16</i>},d1:{orig?.NodeData_L16};&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.<i>NodeData_H16</i>},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.<i>NodeData_H16</i>},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.<i>NodeData_H16</i>},d1:{orig?.NodeData_L16};&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (4)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#48"><b>48</b>if(patch.NodeData.<i>NodeData_H16</i> == ushort.MaxValue)</a>

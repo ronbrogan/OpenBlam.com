@@ -7,9 +7,9 @@
 <a href="../03a_oldmombasa.cs.html#3886"><b>3886</b>Engine.ai_migrate(<i>e6_mars_inf1</i>.marine0, e7_mars_inf0.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#3887"><b>3887</b>Engine.ai_migrate(<i>e6_mars_inf1</i>.marine1, e7_mars_inf0.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#4082"><b>4082</b>Engine.ai_place(<i>e6_mars_inf1</i>.Squad);</a>
-<a href="../03a_oldmombasa.cs.html#4084"><b>4084</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_hotel_greeting_scene&quot;, cs_e6_hotel_greeting_scene, <i>e6_mars_inf1</i>.marine0) || (short)Engine.ai_living_count(<i>e6_mars_inf1</i>.marine0) &lt;= 0 || Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.players()), 5);</a>
-<a href="../03a_oldmombasa.cs.html#4086"><b>4086</b>Engine.cs_run_command_script(<i>e6_mars_inf1</i>.marine1, cs_e6_mars_inf1_abort);</a>
-<a href="../03a_oldmombasa.cs.html#4089"><b>4089</b>Engine.cs_run_command_script(<i>e6_mars_inf1</i>.marine0, cs_e6_mars_inf1_abort);</a>
+<a href="../03a_oldmombasa.cs.html#4084"><b>4084</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;e6_hotel_greeting_scene&quot;, new ScriptMethodReference(cs_e6_hotel_greeting_scene), <i>e6_mars_inf1</i>.marine0) || (short)Engine.ai_living_count(<i>e6_mars_inf1</i>.marine0) &lt;= 0 || Engine.volume_test_objects(tv_e6_hotel_entrance, Engine.players()), 5);</a>
+<a href="../03a_oldmombasa.cs.html#4086"><b>4086</b>Engine.cs_run_command_script(<i>e6_mars_inf1</i>.marine1, new ScriptMethodReference(cs_e6_mars_inf1_abort));</a>
+<a href="../03a_oldmombasa.cs.html#4089"><b>4089</b>Engine.cs_run_command_script(<i>e6_mars_inf1</i>.marine0, new ScriptMethodReference(cs_e6_mars_inf1_abort));</a>
 </div>
 </div>
 </div>

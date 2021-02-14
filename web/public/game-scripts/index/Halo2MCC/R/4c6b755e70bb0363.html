@@ -22,12 +22,12 @@
 <a href="../05a_deltaapproach.cs.html#6541"><b>6541</b>Engine.ai_set_orders(<i>bridge_tank1</i>.Squad, allies_temple_ent_follow);</a>
 <a href="../05a_deltaapproach.cs.html#6556"><b>6556</b>Engine.ai_set_orders(<i>bridge_tank1</i>.Squad, allies_temple_ent_follow);</a>
 <a href="../05a_deltaapproach.cs.html#6571"><b>6571</b>Engine.ai_set_orders(<i>bridge_tank1</i>.Squad, allies_temple_ent_follow);</a>
-<a href="../05a_deltaapproach.cs.html#6583"><b>6583</b>Engine.cs_run_command_script(<i>bridge_tank1</i>.driver, temple_ent_go);</a>
+<a href="../05a_deltaapproach.cs.html#6583"><b>6583</b>Engine.cs_run_command_script(<i>bridge_tank1</i>.driver, new ScriptMethodReference(temple_ent_go));</a>
 <a href="../05a_deltaapproach.cs.html#6587"><b>6587</b>Engine.ai_set_orders(<i>bridge_tank1</i>.Squad, allies_tunnel_follow);</a>
 <a href="../05a_deltaapproach.cs.html#6602"><b>6602</b>Engine.ai_set_orders(<i>bridge_tank1</i>.Squad, allies_old_temple_follow);</a>
 <a href="../05a_deltaapproach.cs.html#6614"><b>6614</b>await Engine.sleep_until(async () =&gt; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(LZ_warthog_01.driver), &quot;warthog_d&quot;, await this.player0()) == false &amp;&amp; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(LZ_warthog_01.driver), &quot;warthog_d&quot;, await this.player1()) == false &amp;&amp; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(<i>bridge_tank1</i>.driver), &quot;scorpion_d&quot;, await this.player0()) == false &amp;&amp; Engine.vehicle_test_seat_list(Engine.ai_vehicle_get_from_starting_location(<i>bridge_tank1</i>.driver), &quot;scorpion_d&quot;, await this.player1()) == false);</a>
 <a href="../05a_deltaapproach.cs.html#6616"><b>6616</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>bridge_tank1</i>.driver), true);</a>
-<a href="../05a_deltaapproach.cs.html#6897"><b>6897</b>Engine.cs_run_command_script(<i>bridge_tank1</i>.driver, temple_ent_go);</a>
+<a href="../05a_deltaapproach.cs.html#6897"><b>6897</b>Engine.cs_run_command_script(<i>bridge_tank1</i>.driver, new ScriptMethodReference(temple_ent_go));</a>
 <a href="../05a_deltaapproach.cs.html#6936"><b>6936</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>bridge_tank1</i>.driver), true);</a>
 <a href="../05a_deltaapproach.cs.html#7510"><b>7510</b>Engine.ai_place(<i>bridge_tank1</i>.Squad);</a>
 <a href="../05a_deltaapproach.cs.html#7513"><b>7513</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>bridge_tank1</i>.driver), &quot;scorpion_d&quot;, await this.player0());</a>

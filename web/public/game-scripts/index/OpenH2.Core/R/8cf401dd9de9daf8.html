@@ -1,25 +1,59 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 writes to NextIndex</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#26"><b>26</b><i>NextIndex</i> = method.SyntaxNodeIndex,</a>
+<div class="rH">4 writes to NextIndex</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#114"><b>114</b><i>NextIndex</i> = ushort.MaxValue,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#122"><b>122</b><i>NextIndex</i> = (ushort)state.OriginalNodeIndex,</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#27"><b>27</b><i>NextIndex</i> = method.SyntaxNodeIndex,</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#92"><b>92</b><i>NextIndex</i> = ParseFrom(line, &quot;next:&quot;),</a>
 </div>
 </div>
-<div class="rH">14 references to NextIndex</div><div class="rA">OpenH2.Core (14)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (4)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#443"><b>443</b>if (node.<i>NextIndex</i> != ushort.MaxValue)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#445"><b>445</b>Debug.Assert(scenario.ScriptSyntaxNodes[node.<i>NextIndex</i>].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#446"><b>446</b>childIndices.PushFull(node.<i>NextIndex</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#467"><b>467</b>if (node.<i>NextIndex</i> != ushort.MaxValue)</a>
+<div class="rH">40 references to NextIndex</div><div class="rA">OpenH2.Core (40)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (22)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#77"><b>77</b>next = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#118"><b>118</b>next = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#210"><b>210</b>next = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#247"><b>247</b>next = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#267"><b>267</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#280"><b>280</b>var falseExp = this.scenario.ScriptSyntaxNodes[trueExp.<i>NextIndex</i>];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#287"><b>287</b>var variableAccess = this.scenario.ScriptSyntaxNodes[node.<i>NextIndex</i>];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#289"><b>289</b>var valueExp = this.scenario.ScriptSyntaxNodes[variableAccess.<i>NextIndex</i>];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#304"><b>304</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#324"><b>324</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#344"><b>344</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#360"><b>360</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#376"><b>376</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#392"><b>392</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#408"><b>408</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#424"><b>424</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#440"><b>440</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#456"><b>456</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#475"><b>475</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#491"><b>491</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#507"><b>507</b>var argNext = node.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#523"><b>523</b>var argNext = node.<i>NextIndex</i>;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (4)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#502"><b>502</b>if (trueExp.<i>NextIndex</i> != ushort.MaxValue)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#504"><b>504</b>state.TopFrame.Next = trueExp.<i>NextIndex</i>;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#805"><b>805</b>if (top.Current.<i>NextIndex</i> == ushort.MaxValue)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#811"><b>811</b>top.Next = top.Current.<i>NextIndex</i>;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (4)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#447"><b>447</b>if (node.<i>NextIndex</i> != ushort.MaxValue)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#449"><b>449</b>Debug.Assert(scenario.ScriptSyntaxNodes[node.<i>NextIndex</i>].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#450"><b>450</b>childIndices.PushFull(node.<i>NextIndex</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#471"><b>471</b>if (node.<i>NextIndex</i> != ushort.MaxValue)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (3)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#113"><b>113</b>if (node.<i>NextIndex</i> != ushort.MaxValue)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#115"><b>115</b>Debug.Assert(tag.ScriptSyntaxNodes[node.<i>NextIndex</i>].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#116"><b>116</b>childIndices.Push((node.<i>NextIndex</i>, nextNodeParent));</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#114"><b>114</b>if (node.<i>NextIndex</i> != ushort.MaxValue)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#116"><b>116</b>Debug.Assert(tag.ScriptSyntaxNodes[node.<i>NextIndex</i>].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#117"><b>117</b>childIndices.Push((node.<i>NextIndex</i>, nextNodeParent));</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (2)</div>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.<i>NextIndex</i>},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.<i>NextIndex</i>},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.<i>NextIndex</i>},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.NodeType},next:{orig?.<i>NextIndex</i>},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (5)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#35"><b>35</b>if (patch.NodeData.<i>NextIndex</i> == ushort.MaxValue)</a>

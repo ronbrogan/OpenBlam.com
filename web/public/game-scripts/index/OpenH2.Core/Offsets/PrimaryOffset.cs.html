@@ -6,16 +6,16 @@
 &lbrace;
     <b>public class</b> <a id="a9a667c4dc1e8804" href="../R/a9a667c4dc1e8804.html" target="n" data-glyph="0,0" class="t t">PrimaryOffset</a> : <a href="IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a>
     &lbrace;
-        <b>private</b> <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <a id="5a89a990f4305b42" href="../R/5a89a990f4305b42.html" target="n" data-glyph="46,1" class="i field">scene</a>;
+        <b>private</b> <a href="../Maps/IH2Map.cs.html#b46cdc0344d6ab9d" class="t t">IH2Map</a> <a id="5a89a990f4305b42" href="../R/5a89a990f4305b42.html" target="n" data-glyph="46,1" class="i field">scene</a>;
         <b>private int</b> <a id="1e4a1123ba4d5e27" href="../R/1e4a1123ba4d5e27.html" target="n" data-glyph="46,1" class="i field">offset</a>;
  
-        <b>public</b> <a id="30b6fe56642f7d10" href="../R/30b6fe56642f7d10.html" target="n" data-glyph="72,1" class="t constructor">PrimaryOffset</a>(<a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">offsetValue</span>)
+        <b>public</b> <a id="33cf414a732ebaf1" href="../R/33cf414a732ebaf1.html" target="n" data-glyph="72,1" class="t constructor">PrimaryOffset</a>(<a href="../Maps/IH2Map.cs.html#b46cdc0344d6ab9d" class="t t">IH2Map</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">offsetValue</span>)
         &lbrace;
             <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#5a89a990f4305b42" class="i field">scene</a> = <span class="r0 r">scene</span>;
             <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a> = <span class="r1 r">offsetValue</span>;
         &rbrace;
  
-        <b>public int</b> <a id="65c5848b66175eaf" href="../R/65c5848b66175eaf.html" target="n" data-glyph="102,1" class="i property">Value</a> =&gt; <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#5a89a990f4305b42" class="i field">scene</a>.<a href="../Maps/H2BaseMap.cs.html#8e53f6b1e4f3922d" class="i property">PrimaryMagic</a> + <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a>;
+        <b>public int</b> <a id="65c5848b66175eaf" href="../R/65c5848b66175eaf.html" target="n" data-glyph="102,1" class="i property">Value</a> =&gt; <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#5a89a990f4305b42" class="i field">scene</a>.<a href="../Maps/IH2Map.cs.html#2d178d8a8808103a" class="i property">PrimaryMagic</a> + <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a>;
  
         <b>public int</b> <a id="38695b68900a36de" href="../R/38695b68900a36de.html" target="n" data-glyph="102,1" class="i property">OriginalValue</a> =&gt; <a href="#a9a667c4dc1e8804" class="k">this</a>.<a href="#1e4a1123ba4d5e27" class="i field">offset</a>;
     &rbrace;

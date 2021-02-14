@@ -6,10 +6,10 @@
 &lbrace;
     <b>public class</b> <a id="d0a739bb64e6b298" href="../R/d0a739bb64e6b298.html" target="n" data-glyph="0,0" class="t t">SecondaryOffset</a> : <a href="IOffset.cs.html#9ae63d6c4fd9891d" class="t t">IOffset</a>
     &lbrace;
-        <b>private</b> <a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <a id="2f3536c2a8f2c70c" href="../R/2f3536c2a8f2c70c.html" target="n" data-glyph="46,1" class="i field">scene</a>;
+        <b>private</b> <a href="../Maps/IH2Map.cs.html#b46cdc0344d6ab9d" class="t t">IH2Map</a> <a id="2f3536c2a8f2c70c" href="../R/2f3536c2a8f2c70c.html" target="n" data-glyph="46,1" class="i field">scene</a>;
         <b>private int</b> <a id="d81e7c5647996d05" href="../R/d81e7c5647996d05.html" target="n" data-glyph="46,1" class="i field">offset</a>;
  
-        <b>public</b> <a id="223b6f6d9e5ea109" href="../R/223b6f6d9e5ea109.html" target="n" data-glyph="72,1" class="t constructor">SecondaryOffset</a>(<a href="../Maps/H2BaseMap.cs.html#44472dd6fa0c4669" class="t t">H2BaseMap</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">offsetValue</span>)
+        <b>public</b> <a id="193d807233557ae9" href="../R/193d807233557ae9.html" target="n" data-glyph="72,1" class="t constructor">SecondaryOffset</a>(<a href="../Maps/IH2Map.cs.html#b46cdc0344d6ab9d" class="t t">IH2Map</a> <span id="r0 rd" class="r0 r">scene</span>, <b>int</b> <span id="r1 rd" class="r1 r">offsetValue</span>)
         &lbrace;
             <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#d81e7c5647996d05" class="i field">offset</a> = <span class="r1 r">offsetValue</span>;
             <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#2f3536c2a8f2c70c" class="i field">scene</a> = <span class="r0 r">scene</span>;
@@ -23,7 +23,7 @@
  
         <span class="c">// TODO: remove reliance the reference here to late bind the secondary magic</span>
         <b>private int</b>? <a id="29d07bb41f2d73c0" href="../R/29d07bb41f2d73c0.html" target="n" data-glyph="46,1" class="i field">precalculatedValue</a> = <b>null</b>;
-        <b>public int</b> <a id="ad2e359f4fa222fb" href="../R/ad2e359f4fa222fb.html" target="n" data-glyph="102,1" class="i property">Value</a> =&gt; <a href="#29d07bb41f2d73c0" class="i field">precalculatedValue</a> ?? <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#d81e7c5647996d05" class="i field">offset</a> - <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#2f3536c2a8f2c70c" class="i field">scene</a>.<a href="../Maps/H2BaseMap.cs.html#1251705766d298e2" class="i property">SecondaryMagic</a>;
+        <b>public int</b> <a id="ad2e359f4fa222fb" href="../R/ad2e359f4fa222fb.html" target="n" data-glyph="102,1" class="i property">Value</a> =&gt; <a href="#29d07bb41f2d73c0" class="i field">precalculatedValue</a> ?? <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#d81e7c5647996d05" class="i field">offset</a> - <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#2f3536c2a8f2c70c" class="i field">scene</a>.<a href="../Maps/IH2Map.cs.html#6407ff1cf17bed7b" class="i property">SecondaryMagic</a>;
  
         <b>public int</b> <a id="863ee0ea584d362c" href="../R/863ee0ea584d362c.html" target="n" data-glyph="102,1" class="i property">OriginalValue</a> =&gt; <a href="#d0a739bb64e6b298" class="k">this</a>.<a href="#d81e7c5647996d05" class="i field">offset</a>;
     &rbrace;

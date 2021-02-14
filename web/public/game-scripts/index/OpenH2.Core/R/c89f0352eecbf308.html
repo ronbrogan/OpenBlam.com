@@ -1,5 +1,9 @@
 ﻿<div class="referenceBody">
-<div class="rH">3417 references to ISpatialPoint</div><div class="rA">Halo2MCC (1699)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (26)</div>
+<div class="rH">1 implementation of ISpatialPoint</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (1)</div>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#371"><b>371</b>public class SpatialPointDefinition : <i>ISpatialPoint</i></a>
+</div>
+</div>
+<div class="rH">3422 references to ISpatialPoint</div><div class="rA">Halo2MCC (1699)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (26)</div>
 <a href="../../Halo2MCC/01a_tutorial.cs.html#465"><b>465</b>Engine.cs_look(true, Engine.GetReference&lt;<i>ISpatialPoint</i>&gt;(&quot;guns_points/console_zapper&quot;));</a>
 <a href="../../Halo2MCC/01a_tutorial.cs.html#476"><b>476</b>Engine.cs_face(true, Engine.GetReference&lt;<i>ISpatialPoint</i>&gt;(&quot;guns_points/console_inhibitor&quot;));</a>
 <a href="../../Halo2MCC/01a_tutorial.cs.html#487"><b>487</b>Engine.cs_face(true, Engine.GetReference&lt;<i>ISpatialPoint</i>&gt;(&quot;guns_points/console_inhibitor&quot;));</a>
@@ -3215,22 +3219,26 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6999"><b>6999</b>Engine.cs_go_to(Engine.GetReference&lt;<i>ISpatialPoint</i>&gt;(&quot;e1_pro_ghosts0_entry/p3&quot;));</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (19)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (19)</div>
-<a href="../Scripting/IScriptEngine.cs.html#330"><b>330</b>void cs_aim(bool boolean, <i>ISpatialPoint</i> point);</a>
-<a href="../Scripting/IScriptEngine.cs.html#366"><b>366</b>void cs_deploy_turret(<i>ISpatialPoint</i> point);</a>
-<a href="../Scripting/IScriptEngine.cs.html#384"><b>384</b>void cs_face(bool boolean, <i>ISpatialPoint</i> point = null);</a>
-<a href="../Scripting/IScriptEngine.cs.html#396"><b>396</b>void cs_fly_by(<i>ISpatialPoint</i> point, float tolerance = 0);</a>
-<a href="../Scripting/IScriptEngine.cs.html#399"><b>399</b>void cs_fly_to(<i>ISpatialPoint</i> point, float tolerance = 0);</a>
-<a href="../Scripting/IScriptEngine.cs.html#402"><b>402</b>void cs_fly_to_and_face(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> face, float tolerance = 0);</a>
-<a href="../Scripting/IScriptEngine.cs.html#408"><b>408</b>void cs_go_by(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> planeP, float planeD = 0);</a>
-<a href="../Scripting/IScriptEngine.cs.html#411"><b>411</b>void cs_go_to(<i>ISpatialPoint</i> point, float tolerance = 1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#414"><b>414</b>void cs_go_to_and_face(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> faceTowards);</a>
-<a href="../Scripting/IScriptEngine.cs.html#417"><b>417</b>void cs_go_to_nearest(<i>ISpatialPoint</i> destination);</a>
-<a href="../Scripting/IScriptEngine.cs.html#426"><b>426</b>void cs_grenade(<i>ISpatialPoint</i> point, int action);</a>
-<a href="../Scripting/IScriptEngine.cs.html#438"><b>438</b>void cs_look(bool boolean, <i>ISpatialPoint</i> point = null);</a>
-<a href="../Scripting/IScriptEngine.cs.html#480"><b>480</b>void cs_shoot_point(bool boolean, <i>ISpatialPoint</i> point);</a>
-<a href="../Scripting/IScriptEngine.cs.html#492"><b>492</b>void cs_start_to(<i>ISpatialPoint</i> destination);</a>
-<a href="../Scripting/IScriptEngine.cs.html#503"><b>503</b>void cs_teleport(<i>ISpatialPoint</i> destination, <i>ISpatialPoint</i> facing);</a>
+<div class="rA">OpenH2.Core (24)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (24)</div>
+<a href="../Scripting/IScriptEngine.cs.html#407"><b>407</b>void cs_aim(bool boolean, <i>ISpatialPoint</i> point);</a>
+<a href="../Scripting/IScriptEngine.cs.html#447"><b>447</b>void cs_deploy_turret(<i>ISpatialPoint</i> point);</a>
+<a href="../Scripting/IScriptEngine.cs.html#471"><b>471</b>void cs_face(bool boolean, <i>ISpatialPoint</i> point = null);</a>
+<a href="../Scripting/IScriptEngine.cs.html#483"><b>483</b>void cs_fly_by(<i>ISpatialPoint</i> point);</a>
+<a href="../Scripting/IScriptEngine.cs.html#487"><b>487</b>void cs_fly_by(<i>ISpatialPoint</i> point, float tolerance);</a>
+<a href="../Scripting/IScriptEngine.cs.html#491"><b>491</b>void cs_fly_to(<i>ISpatialPoint</i> point);</a>
+<a href="../Scripting/IScriptEngine.cs.html#495"><b>495</b>void cs_fly_to(<i>ISpatialPoint</i> point, float tolerance);</a>
+<a href="../Scripting/IScriptEngine.cs.html#499"><b>499</b>void cs_fly_to_and_face(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> face);</a>
+<a href="../Scripting/IScriptEngine.cs.html#503"><b>503</b>void cs_fly_to_and_face(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> face, float tolerance);</a>
+<a href="../Scripting/IScriptEngine.cs.html#511"><b>511</b>void cs_go_by(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> planeP, float planeD = 0);</a>
+<a href="../Scripting/IScriptEngine.cs.html#515"><b>515</b>void cs_go_to(<i>ISpatialPoint</i> point);</a>
+<a href="../Scripting/IScriptEngine.cs.html#519"><b>519</b>void cs_go_to(<i>ISpatialPoint</i> point, float tolerance);</a>
+<a href="../Scripting/IScriptEngine.cs.html#523"><b>523</b>void cs_go_to_and_face(<i>ISpatialPoint</i> point, <i>ISpatialPoint</i> faceTowards);</a>
+<a href="../Scripting/IScriptEngine.cs.html#527"><b>527</b>void cs_go_to_nearest(<i>ISpatialPoint</i> destination);</a>
+<a href="../Scripting/IScriptEngine.cs.html#535"><b>535</b>void cs_grenade(<i>ISpatialPoint</i> point, int action);</a>
+<a href="../Scripting/IScriptEngine.cs.html#551"><b>551</b>void cs_look(bool boolean, <i>ISpatialPoint</i> point = null);</a>
+<a href="../Scripting/IScriptEngine.cs.html#603"><b>603</b>void cs_shoot_point(bool boolean, <i>ISpatialPoint</i> point);</a>
+<a href="../Scripting/IScriptEngine.cs.html#619"><b>619</b>void cs_start_to(<i>ISpatialPoint</i> destination);</a>
+<a href="../Scripting/IScriptEngine.cs.html#634"><b>634</b>void cs_teleport(<i>ISpatialPoint</i> destination, <i>ISpatialPoint</i> facing);</a>
 </div>
 </div>
 </div>

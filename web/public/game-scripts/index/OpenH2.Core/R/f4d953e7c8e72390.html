@@ -1,18 +1,53 @@
 ﻿<div class="referenceBody">
-<div class="rH">11 references to Float</div><div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#543"><b>543</b>case ScriptDataType.<i>Float</i>:</a>
+<div class="rH">40 references to Float</div><div class="rA">OpenH2.Core (40)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (11)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#34"><b>34</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#43"><b>43</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#52"><b>52</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#60"><b>60</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#68"><b>68</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#76"><b>76</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#84"><b>84</b>if (DataType == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#92"><b>92</b>Debug.Assert(left.DataType == ScriptDataType.<i>Float</i>);</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#99"><b>99</b>Debug.Assert(left.DataType == ScriptDataType.<i>Float</i>);</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#107"><b>107</b>Debug.Assert(left.DataType == ScriptDataType.<i>Float</i>);</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#117"><b>117</b>public static InterpreterResult From(float v, ScriptDataType t = ScriptDataType.<i>Float</i>) =&gt; new InterpreterResult() { Float = v, DataType = t };</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (10)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#92"><b>92</b>case ScriptDataType.<i>Float</i>:</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#94"><b>94</b>value.DataType = ScriptDataType.<i>Float</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#129"><b>129</b>ScriptDataType.<i>Float</i> =&gt; Result.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#192"><b>192</b>case ScriptDataType.<i>Float</i>:</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#194"><b>194</b>value.DataType = ScriptDataType.<i>Float</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#465"><b>465</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() == right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#483"><b>483</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &gt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#499"><b>499</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &gt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#515"><b>515</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &lt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#531"><b>531</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &lt;= right.GetFloat()),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (8)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#254"><b>254</b>ScriptDataType.<i>Float</i> =&gt; Result.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#720"><b>720</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() == right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#740"><b>740</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &gt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#758"><b>758</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &gt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#776"><b>776</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &lt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#794"><b>794</b>ScriptDataType.<i>Float</i> =&gt; Result.From(left.GetFloat() &lt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#826"><b>826</b>case ScriptDataType.<i>Float</i>:</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#828"><b>828</b>value.DataType = ScriptDataType.<i>Float</i>;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#548"><b>548</b>case ScriptDataType.<i>Float</i>:</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (8)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#25"><b>25</b>ScriptDataType.<i>Float</i> =&gt; PredefinedType(Token(SyntaxKind.FloatKeyword)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#104"><b>104</b>{ typeof(float), ScriptDataType.<i>Float</i> },</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#200"><b>200</b>ScriptDataType.<i>Float</i>,</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#216"><b>216</b>ScriptDataType.<i>Float</i> =&gt; BitConverter.ToSingle(BitConverter.GetBytes((int)node.NodeData_32), 0),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#227"><b>227</b>ScriptDataType.<i>Float</i> =&gt; LiteralExpression(Convert.ToSingle(nodeValue)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#369"><b>369</b>if (a == ScriptDataType.<i>Float</i> || b == ScriptDataType.<i>Float</i>)</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#370"><b>370</b>return ScriptDataType.<i>Float</i>;</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#26"><b>26</b>ScriptDataType.<i>Float</i> =&gt; PredefinedType(Token(SyntaxKind.FloatKeyword)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#105"><b>105</b>{ typeof(float), ScriptDataType.<i>Float</i> },</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#202"><b>202</b>ScriptDataType.<i>Float</i>,</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#217"><b>217</b>ScriptDataType.<i>Float</i> =&gt; BitConverter.Int32BitsToSingle((int)node.NodeData_32),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#228"><b>228</b>ScriptDataType.<i>Float</i> =&gt; LiteralExpression(Convert.ToSingle(nodeValue)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#370"><b>370</b>if (a == ScriptDataType.<i>Float</i> || b == ScriptDataType.<i>Float</i>)</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#371"><b>371</b>return ScriptDataType.<i>Float</i>;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#56"><b>56</b>case ScriptDataType.<i>Float</i>:</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#57"><b>57</b>case ScriptDataType.<i>Float</i>:</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#47"><b>47</b>else if (orig.DataType == ScriptDataType.<i>Float</i>)</a>

@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">3176 references to SoundTag</div><div class="rA">Halo2MCC (1587)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (60)</div>
+<div class="rH">3177 references to SoundTag</div><div class="rA">Halo2MCC (1587)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (60)</div>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1089"><b>1089</b>Engine.sound_impulse_start(Engine.GetTag&lt;<i>SoundTag</i>&gt;(&quot;sound\\cinematics\\01_spacestation\\x01\\music\\x01_01_mus&quot;, 3959556748U), default(IGameObject), 1F);</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1097"><b>1097</b>Engine.sound_impulse_start(Engine.GetTag&lt;<i>SoundTag</i>&gt;(&quot;sound\\cinematics\\01_spacestation\\x01\\foley\\x01_01a_fol&quot;, 3959622285U), default(IGameObject), 1F);</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1178"><b>1178</b>Engine.sound_impulse_predict(Engine.GetTag&lt;<i>SoundTag</i>&gt;(&quot;sound\\cinematics\\01_spacestation\\x01\\foley\\x01_01a_fol&quot;, 3959622285U));</a>
@@ -3220,19 +3220,22 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#3391"><b>3391</b>Engine.sound_impulse_start(Engine.GetTag&lt;<i>SoundTag</i>&gt;(&quot;sound\\dialog\\levels\\08_controlroom\\cinematic\\x10_0041_cor&quot;, 3833922319U), cortana.Entity, 1F);</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (15)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#49"><b>49</b>ScriptDataType.Sound =&gt; ParseTypeName(nameof(<i>SoundTag</i>)),</a>
+<div class="rA">OpenH2.Core (16)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#275"><b>275</b>ScriptDataType.Sound =&gt; Result.From(this.scriptEngine.GetTag&lt;<i>SoundTag</i>&gt;(null, node.NodeData_32)),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#50"><b>50</b>ScriptDataType.Sound =&gt; ParseTypeName(nameof(<i>SoundTag</i>)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\IScriptEngine.cs (6)</div>
-<a href="../Scripting/IScriptEngine.cs.html#1067"><b>1067</b>int sound_impulse_language_time(<i>SoundTag</i> soundRef);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1070"><b>1070</b>void sound_impulse_predict(<i>SoundTag</i> soundRef);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1073"><b>1073</b>void sound_impulse_start(<i>SoundTag</i> sound, IGameObject entity, float floatValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1076"><b>1076</b>void sound_impulse_start_effect(<i>SoundTag</i> sound, IGameObject entity, float floatValue, string effect);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1079"><b>1079</b>void sound_impulse_stop(<i>SoundTag</i> sound);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1082"><b>1082</b>void sound_impulse_trigger(<i>SoundTag</i> sound, IGameObject source, float floatValue, int intValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1344"><b>1344</b>int sound_impulse_language_time(<i>SoundTag</i> soundRef);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1348"><b>1348</b>void sound_impulse_predict(<i>SoundTag</i> soundRef);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1352"><b>1352</b>void sound_impulse_start(<i>SoundTag</i> sound, IGameObject entity, float floatValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1356"><b>1356</b>void sound_impulse_start_effect(<i>SoundTag</i> sound, IGameObject entity, float floatValue, string effect);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1360"><b>1360</b>void sound_impulse_stop(<i>SoundTag</i> sound);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1364"><b>1364</b>void sound_impulse_trigger(<i>SoundTag</i> sound, IGameObject source, float floatValue, int intValue);</a>
 </div>
 <div class="rF"><div class="rN">Tags\AnimationGraphTag.cs (1)</div>
-<a href="../Tags/AnimationGraphTag.cs.html#107"><b>107</b>public TagRef&lt;<i>SoundTag</i>&gt; SoundTag { get; set; }</a>
+<a href="../Tags/AnimationGraphTag.cs.html#110"><b>110</b>public TagRef&lt;<i>SoundTag</i>&gt; SoundTag { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\DialogMapTag.cs (1)</div>
 <a href="../Tags/DialogMapTag.cs.html#36"><b>36</b>public TagRef&lt;<i>SoundTag</i>&gt; Sound { get; set; }</a>
@@ -3247,7 +3250,7 @@
 <a href="../Tags/LoopingSoundTag.cs.html#35"><b>35</b>public TagRef&lt;<i>SoundTag</i>&gt; Sound { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (1)</div>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#350"><b>350</b>public TagRef&lt;<i>SoundTag</i>&gt; Sound { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#351"><b>351</b>public TagRef&lt;<i>SoundTag</i>&gt; Sound { get; set; }</a>
 </div>
 </div>
 </div>

@@ -4,7 +4,9 @@ Microsoft.CodeAnalysis.CSharp
 Microsoft.Win32.Primitives
 mscorlib
 netstandard
+OpenBlam.Core
 OpenBlam.Serialization
+OpenH2.Core.Generators
 OpenH2.Foundation
 System
 System.AppContext

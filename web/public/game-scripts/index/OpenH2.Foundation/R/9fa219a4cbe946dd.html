@@ -1,0 +1,54 @@
+﻿<div class="referenceBody">
+<div class="rH">1 instantiation of Vertex</div><div class="rA">OpenH2.Foundation (1)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (1)</div>
+<a href="../3D/QuickHull.cs.html#797"><b>797</b>newBuffer[i] = new <i>Vertex</i>();</a>
+</div>
+</div>
+<div class="rH">56 references to Vertex</div><div class="rA">OpenH2.Foundation (56)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (56)</div>
+<a href="../3D/QuickHull.cs.html#17"><b>17</b>public <i>Vertex</i> NextVertex { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#18"><b>18</b>public <i>Vertex</i> PreviousVertex { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#26"><b>26</b>public <i>Vertex</i> HeadVertex;</a>
+<a href="../3D/QuickHull.cs.html#27"><b>27</b>public <i>Vertex</i> TailVertex =&gt; PreviousEdge != null ? PreviousEdge.HeadVertex : null;</a>
+<a href="../3D/QuickHull.cs.html#58"><b>58</b>public HalfEdge(<i>Vertex</i> v, Face f)</a>
+<a href="../3D/QuickHull.cs.html#126"><b>126</b>public <i>Vertex</i> Outside { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#253"><b>253</b>public static Face CreateTriangle(<i>Vertex</i> v0, <i>Vertex</i> v1, <i>Vertex</i> v2)</a>
+<a href="../3D/QuickHull.cs.html#258"><b>258</b>public static Face CreateTriangle(<i>Vertex</i> v0, <i>Vertex</i> v1, <i>Vertex</i> v2, double minArea)</a>
+<a href="../3D/QuickHull.cs.html#315"><b>315</b>public HalfEdge FindEdge(<i>Vertex</i> vt, <i>Vertex</i> vh)</a>
+<a href="../3D/QuickHull.cs.html#561"><b>561</b><i>Vertex</i> v0 = HalfEdge.HeadVertex;</a>
+<a href="../3D/QuickHull.cs.html#609"><b>609</b>private readonly <i>Vertex</i>[] maxVtxs = new <i>Vertex</i>[3];</a>
+<a href="../3D/QuickHull.cs.html#610"><b>610</b>private readonly <i>Vertex</i>[] minVtxs = new <i>Vertex</i>[3];</a>
+<a href="../3D/QuickHull.cs.html#619"><b>619</b>private static ArrayPool&lt;<i>Vertex</i>&gt; pointPool = ArrayPool&lt;<i>Vertex</i>&gt;.Create();</a>
+<a href="../3D/QuickHull.cs.html#622"><b>622</b>private <i>Vertex</i>[] pointBuffer;</a>
+<a href="../3D/QuickHull.cs.html#792"><b>792</b><i>Vertex</i>[] newBuffer = pointPool.Rent(nump);</a>
+<a href="../3D/QuickHull.cs.html#810"><b>810</b><i>Vertex</i> vtx = pointBuffer[i];</a>
+<a href="../3D/QuickHull.cs.html#820"><b>820</b><i>Vertex</i> vtx = pointBuffer[i];</a>
+<a href="../3D/QuickHull.cs.html#849"><b>849</b>var vtx = new <i>Vertex</i>[4];</a>
+<a href="../3D/QuickHull.cs.html#946"><b>946</b><i>Vertex</i> v = pointBuffer[i];</a>
+<a href="../3D/QuickHull.cs.html#1062"><b>1062</b><i>Vertex</i> vtxNext = unclaimed.First();</a>
+<a href="../3D/QuickHull.cs.html#1063"><b>1063</b>for (<i>Vertex</i> vtx = vtxNext; vtx != null; vtx = vtxNext)</a>
+<a href="../3D/QuickHull.cs.html#1095"><b>1095</b><i>Vertex</i> faceVtxs = RemoveAllPointsFromFace(face);</a>
+<a href="../3D/QuickHull.cs.html#1104"><b>1104</b><i>Vertex</i> vtxNext = faceVtxs;</a>
+<a href="../3D/QuickHull.cs.html#1105"><b>1105</b>for (<i>Vertex</i> vtx = vtxNext; vtx != null; vtx = vtxNext)</a>
+<a href="../3D/QuickHull.cs.html#1122"><b>1122</b>private void AddPointToFace(<i>Vertex</i> vtx, Face face)</a>
+<a href="../3D/QuickHull.cs.html#1138"><b>1138</b>private void RemovePointFromFace(<i>Vertex</i> vtx, Face face)</a>
+<a href="../3D/QuickHull.cs.html#1154"><b>1154</b>private <i>Vertex</i> RemoveAllPointsFromFace(Face face)</a>
+<a href="../3D/QuickHull.cs.html#1158"><b>1158</b><i>Vertex</i> end = face.Outside;</a>
+<a href="../3D/QuickHull.cs.html#1175"><b>1175</b>private <i>Vertex</i> NextPointToAdd()</a>
+<a href="../3D/QuickHull.cs.html#1184"><b>1184</b><i>Vertex</i> eyeVtx = null;</a>
+<a href="../3D/QuickHull.cs.html#1186"><b>1186</b>for (<i>Vertex</i> vtx = eyeFace.Outside;</a>
+<a href="../3D/QuickHull.cs.html#1201"><b>1201</b>private HalfEdge FindHalfEdge(<i>Vertex</i> tail, <i>Vertex</i> head)</a>
+<a href="../3D/QuickHull.cs.html#1332"><b>1332</b>private HalfEdge AddAdjoiningFace(<i>Vertex</i> eyeVtx, HalfEdge he)</a>
+<a href="../3D/QuickHull.cs.html#1341"><b>1341</b>private void AddNewFaces(<i>Vertex</i> eyeVtx)</a>
+<a href="../3D/QuickHull.cs.html#1367"><b>1367</b>private void AddPointToHull(<i>Vertex</i> eyeVtx)</a>
+<a href="../3D/QuickHull.cs.html#1407"><b>1407</b><i>Vertex</i> eyeVtx;</a>
+<a href="../3D/QuickHull.cs.html#1458"><b>1458</b><i>Vertex</i> vtx = pointBuffer[i];</a>
+<a href="../3D/QuickHull.cs.html#1554"><b>1554</b>private <i>Vertex</i> head;</a>
+<a href="../3D/QuickHull.cs.html#1555"><b>1555</b>private <i>Vertex</i> tail;</a>
+<a href="../3D/QuickHull.cs.html#1568"><b>1568</b>public void Add(<i>Vertex</i> vtx)</a>
+<a href="../3D/QuickHull.cs.html#1586"><b>1586</b>public void AddAll(<i>Vertex</i> vtx)</a>
+<a href="../3D/QuickHull.cs.html#1607"><b>1607</b>public void Delete(<i>Vertex</i> vtx)</a>
+<a href="../3D/QuickHull.cs.html#1630"><b>1630</b>public void Delete(<i>Vertex</i> from, <i>Vertex</i> to)</a>
+<a href="../3D/QuickHull.cs.html#1653"><b>1653</b>public void InsertBefore(<i>Vertex</i> vtx, <i>Vertex</i> next)</a>
+<a href="../3D/QuickHull.cs.html#1672"><b>1672</b>public <i>Vertex</i> First()</a>
+</div>
+</div>
+</div>

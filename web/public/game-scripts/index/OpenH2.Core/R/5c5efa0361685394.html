@@ -1,0 +1,296 @@
+﻿<div class="referenceBody">
+<div class="rH">38 instantiations of InterpreterResult</div><div class="rA">OpenH2.Core (38)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (8)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#112"><b>112</b>public static InterpreterResult From(bool v, ScriptDataType t = ScriptDataType.Boolean) =&gt; new <i>InterpreterResult</i>() { Boolean = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#113"><b>113</b>public static InterpreterResult From(int v, ScriptDataType t = ScriptDataType.Int) =&gt; new <i>InterpreterResult</i>() { Int = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#114"><b>114</b>public static InterpreterResult From(uint v, ScriptDataType t = ScriptDataType.Int) =&gt; new <i>InterpreterResult</i>() { Int = (int)v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#115"><b>115</b>public static InterpreterResult From(short v, ScriptDataType t = ScriptDataType.Short) =&gt; new <i>InterpreterResult</i>() { Short = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#116"><b>116</b>public static InterpreterResult From(ushort v, ScriptDataType t = ScriptDataType.Short) =&gt; new <i>InterpreterResult</i>() { Short = (short)v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#117"><b>117</b>public static InterpreterResult From(float v, ScriptDataType t = ScriptDataType.Float) =&gt; new <i>InterpreterResult</i>() { Float = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#118"><b>118</b>public static InterpreterResult From(object? v, ScriptDataType t = ScriptDataType.Entity) =&gt; new <i>InterpreterResult</i>() { Object = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#119"><b>119</b>public static InterpreterResult From() =&gt; new <i>InterpreterResult</i>() { DataType = ScriptDataType.Void };</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (30)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#132"><b>132</b>ScriptDataType.VehicleSeat =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#134"><b>134</b>ScriptDataType.ScriptReference =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#135"><b>135</b>ScriptDataType.StringId =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#138"><b>138</b>ScriptDataType.CameraPathTarget =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#139"><b>139</b>ScriptDataType.CinematicTitle =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#140"><b>140</b>ScriptDataType.DeviceGroup =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#141"><b>141</b>ScriptDataType.AI =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#142"><b>142</b>ScriptDataType.AIScript =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#143"><b>143</b>ScriptDataType.AIBehavior =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#146"><b>146</b>ScriptDataType.Bsp =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#147"><b>147</b>ScriptDataType.NavigationPoint =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#148"><b>148</b>ScriptDataType.SpatialPoint =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#149"><b>149</b>ScriptDataType.List =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#150"><b>150</b>ScriptDataType.Sound =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#151"><b>151</b>ScriptDataType.Effect =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#152"><b>152</b>ScriptDataType.DamageEffect =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#153"><b>153</b>ScriptDataType.LoopingSound =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#154"><b>154</b>ScriptDataType.TagReference =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#155"><b>155</b>ScriptDataType.Animation =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#156"><b>156</b>ScriptDataType.Model =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#157"><b>157</b>ScriptDataType.GameDifficulty =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#158"><b>158</b>ScriptDataType.Team =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#159"><b>159</b>ScriptDataType.DamageState =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#160"><b>160</b>ScriptDataType.Entity =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#161"><b>161</b>ScriptDataType.Unit =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#162"><b>162</b>ScriptDataType.Vehicle =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#163"><b>163</b>ScriptDataType.WeaponReference =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#164"><b>164</b>ScriptDataType.Device =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#165"><b>165</b>ScriptDataType.Scenery =&gt; new <i>Result</i>(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#166"><b>166</b>ScriptDataType.EntityIdentifier =&gt; new <i>Result</i>(),</a>
+</div>
+</div>
+<div class="rH">248 references to InterpreterResult</div><div class="rA">OpenH2.Core (248)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (23)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#58"><b>58</b>public void Add(<i>InterpreterResult</i> operand)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#66"><b>66</b>public void Subtract(<i>InterpreterResult</i> operand)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#74"><b>74</b>public void Multiply(<i>InterpreterResult</i> operand)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#82"><b>82</b>public void Divide(<i>InterpreterResult</i> operand)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#90"><b>90</b>public static <i>InterpreterResult</i> Min(<i>InterpreterResult</i> left, <i>InterpreterResult</i> right)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#97"><b>97</b>public static <i>InterpreterResult</i> Max(<i>InterpreterResult</i> left, <i>InterpreterResult</i> right)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#105"><b>105</b>private static float Difference(<i>InterpreterResult</i> left, <i>InterpreterResult</i> right)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#112"><b>112</b>public static <i>InterpreterResult</i> From(bool v, ScriptDataType t = ScriptDataType.Boolean) =&gt; new InterpreterResult() { Boolean = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#113"><b>113</b>public static <i>InterpreterResult</i> From(int v, ScriptDataType t = ScriptDataType.Int) =&gt; new InterpreterResult() { Int = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#114"><b>114</b>public static <i>InterpreterResult</i> From(uint v, ScriptDataType t = ScriptDataType.Int) =&gt; new InterpreterResult() { Int = (int)v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#115"><b>115</b>public static <i>InterpreterResult</i> From(short v, ScriptDataType t = ScriptDataType.Short) =&gt; new InterpreterResult() { Short = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#116"><b>116</b>public static <i>InterpreterResult</i> From(ushort v, ScriptDataType t = ScriptDataType.Short) =&gt; new InterpreterResult() { Short = (short)v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#117"><b>117</b>public static <i>InterpreterResult</i> From(float v, ScriptDataType t = ScriptDataType.Float) =&gt; new InterpreterResult() { Float = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#118"><b>118</b>public static <i>InterpreterResult</i> From(object? v, ScriptDataType t = ScriptDataType.Entity) =&gt; new InterpreterResult() { Object = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#119"><b>119</b>public static <i>InterpreterResult</i> From() =&gt; new InterpreterResult() { DataType = ScriptDataType.Void };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#121"><b>121</b>public static implicit operator float(<i>InterpreterResult</i> r)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#126"><b>126</b>public static implicit operator int(<i>InterpreterResult</i> r)</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#131"><b>131</b>public static implicit operator short(<i>InterpreterResult</i> r)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\InterpreterState.cs (4)</div>
+<a href="../Scripting/Execution/InterpreterState.cs.html#11"><b>11</b>public Queue&lt;<i>InterpreterResult</i>&gt; Locals;</a>
+<a href="../Scripting/Execution/InterpreterState.cs.html#33"><b>33</b>public <i>InterpreterResult</i> Result;</a>
+<a href="../Scripting/Execution/InterpreterState.cs.html#41"><b>41</b>s.Result = <i>InterpreterResult</i>.From();</a>
+<a href="../Scripting/Execution/InterpreterState.cs.html#51"><b>51</b>this.Result = <i>InterpreterResult</i>.From();</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (93)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#6"><b>6</b>using Result = OpenH2.Core.Scripting.Execution.<i>InterpreterResult</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#14"><b>14</b>private readonly <i>Result</i>[] variables;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#26"><b>26</b>this.variables = new <i>Result</i>[scenario.ScriptVariables.Length];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#32"><b>32</b>this.variables = Array.Empty&lt;<i>Result</i>&gt;();</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#47"><b>47</b>public <i>Result</i> Interpret(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#61"><b>61</b>public <i>Result</i> GetVariable(int index)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#75"><b>75</b>private <i>Result</i> InterpretScope(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#80"><b>80</b><i>Result</i> value = default;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#116"><b>116</b>private <i>Result</i> InterpretExpression(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#125"><b>125</b><i>Result</i> result = node.DataType switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#127"><b>127</b>ScriptDataType.Void =&gt; <i>Result</i>.From(),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#128"><b>128</b>ScriptDataType.Boolean =&gt; <i>Result</i>.From(node.NodeData_B3 == 1 ? true : false),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#129"><b>129</b>ScriptDataType.Float =&gt; <i>Result</i>.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#130"><b>130</b>ScriptDataType.Short =&gt; <i>Result</i>.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#131"><b>131</b>ScriptDataType.Int =&gt; <i>Result</i>.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#133"><b>133</b>ScriptDataType.String =&gt; <i>Result</i>.From(SpanByteExtensions.ReadStringStarting(this.scenario.ScriptStrings, node.NodeString)),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#136"><b>136</b>ScriptDataType.Trigger =&gt; <i>Result</i>.From(this.scenario.TriggerVolumes[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#137"><b>137</b>ScriptDataType.LocationFlag =&gt; <i>Result</i>.From(this.scenario.LocationFlagDefinitions[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#144"><b>144</b>ScriptDataType.AIOrders =&gt; <i>Result</i>.From(this.scenario.AiOrderDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#145"><b>145</b>ScriptDataType.StartingProfile =&gt; <i>Result</i>.From(this.scenario.StartingProfileDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#174"><b>174</b>private <i>Result</i> InterpretScriptInvocation(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#185"><b>185</b><i>var</i> value = Interpret(this.scenario.ScriptSyntaxNodes[methodToInvoke.SyntaxNodeIndex], out next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#215"><b>215</b>private <i>Result</i> InterpretMethodOrOperator(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#245"><b>245</b>private <i>Result</i> Begin(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#249"><b>249</b><i>Result</i> result = default;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#260"><b>260</b>private <i>Result</i> BeginRandom(ScenarioTag.ScriptSyntaxNode node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#265"><b>265</b>private <i>Result</i> If(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#269"><b>269</b><i>var</i> condition = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#285"><b>285</b>private <i>Result</i> Set(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#291"><b>291</b><i>var</i> variable = this.variables[variableAccess.NodeData_H16];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#294"><b>294</b><i>var</i> value = Interpret(valueExp, out var argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#299"><b>299</b>return <i>Result</i>.From();</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#302"><b>302</b>private <i>Result</i> And(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#306"><b>306</b><i>var</i> result = <i>Result</i>.From(true);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#310"><b>310</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#322"><b>322</b>private <i>Result</i> Or(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#326"><b>326</b><i>var</i> result = <i>Result</i>.From(false);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#330"><b>330</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#342"><b>342</b>private <i>Result</i> Not(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#346"><b>346</b><i>var</i> result = <i>Result</i>.From(false);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#348"><b>348</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#358"><b>358</b>private <i>Result</i> Add(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#362"><b>362</b><i>var</i> firstOp = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#366"><b>366</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#374"><b>374</b>private <i>Result</i> Subtract(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#378"><b>378</b><i>var</i> firstOp = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#382"><b>382</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#390"><b>390</b>private <i>Result</i> Multiply(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#394"><b>394</b><i>var</i> firstOp = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#398"><b>398</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#406"><b>406</b>private <i>Result</i> Divide(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#410"><b>410</b><i>var</i> firstOp = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#414"><b>414</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#422"><b>422</b>private <i>Result</i> Min(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#426"><b>426</b><i>var</i> firstOp = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#430"><b>430</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#432"><b>432</b>firstOp = <i>Result</i>.Min(firstOp, operand);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#438"><b>438</b>private <i>Result</i> Max(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#442"><b>442</b><i>var</i> firstOp = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#446"><b>446</b><i>var</i> operand = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#448"><b>448</b>firstOp = <i>Result</i>.Max(firstOp, operand);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#454"><b>454</b>private <i>Result</i> ValueEquals(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#458"><b>458</b><i>var</i> left = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#459"><b>459</b><i>var</i> right = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#464"><b>464</b>ScriptDataType.Boolean =&gt; <i>Result</i>.From(left.Boolean == right.Boolean),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#465"><b>465</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() == right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#466"><b>466</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() == right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#467"><b>467</b>ScriptDataType.Int =&gt; <i>Result</i>.From(left.GetInt() == right.GetInt()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#468"><b>468</b>ScriptDataType.GameDifficulty =&gt; <i>Result</i>.From(left.GetShort() == right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#473"><b>473</b>private <i>Result</i> GreaterThan(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#477"><b>477</b><i>var</i> left = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#478"><b>478</b><i>var</i> right = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#483"><b>483</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &gt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#484"><b>484</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &gt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#489"><b>489</b>private <i>Result</i> GreaterThanOrEquals(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#493"><b>493</b><i>var</i> left = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#494"><b>494</b><i>var</i> right = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#499"><b>499</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &gt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#500"><b>500</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &gt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#505"><b>505</b>private <i>Result</i> LessThan(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#509"><b>509</b><i>var</i> left = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#510"><b>510</b><i>var</i> right = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#515"><b>515</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &lt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#516"><b>516</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &lt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#521"><b>521</b>private <i>Result</i> LessThanOrEquals(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#525"><b>525</b><i>var</i> left = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#526"><b>526</b><i>var</i> right = Interpret(this.scenario.ScriptSyntaxNodes[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#531"><b>531</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &lt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#532"><b>532</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &lt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#544"><b>544</b>private partial <i>Result</i> DispatchMethod(ScenarioTag.ScriptSyntaxNode node);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (108)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#8"><b>8</b>using Result = OpenH2.Core.Scripting.Execution.<i>InterpreterResult</i>;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#27"><b>27</b>private <i>Result</i>[] variables;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#47"><b>47</b>this.variables = new <i>Result</i>[this.scenario.ScriptVariables.Length];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#53"><b>53</b>this.variables = Array.Empty&lt;<i>Result</i>&gt;();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#57"><b>57</b>public <i>Result</i> GetVariable(int index)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#70"><b>70</b><i>var</i> result = state.Result;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#250"><b>250</b><i>Result</i> result = node.DataType switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#252"><b>252</b>ScriptDataType.Void =&gt; <i>Result</i>.From(),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#253"><b>253</b>ScriptDataType.Boolean =&gt; <i>Result</i>.From(node.NodeData_B3 == 1 ? true : false),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#254"><b>254</b>ScriptDataType.Float =&gt; <i>Result</i>.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#255"><b>255</b>ScriptDataType.Short =&gt; <i>Result</i>.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#256"><b>256</b>ScriptDataType.Int =&gt; <i>Result</i>.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#257"><b>257</b>ScriptDataType.VehicleSeat =&gt; <i>Result</i>.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#258"><b>258</b>ScriptDataType.String =&gt; <i>Result</i>.From(SpanByteExtensions.ReadStringStarting(this.scenario.ScriptStrings, node.NodeString)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#259"><b>259</b>ScriptDataType.ScriptReference =&gt; <i>Result</i>.From(new ScriptMethodReference(node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#260"><b>260</b>ScriptDataType.StringId =&gt; <i>Result</i>.From(node.NodeData_32),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#261"><b>261</b>ScriptDataType.Trigger =&gt; <i>Result</i>.From(this.scenario.TriggerVolumes[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#262"><b>262</b>ScriptDataType.LocationFlag =&gt; <i>Result</i>.From(this.scenario.LocationFlagDefinitions[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#263"><b>263</b>ScriptDataType.CameraPathTarget =&gt; <i>Result</i>.From(this.scenario.CameraPathTargets[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#264"><b>264</b>ScriptDataType.CinematicTitle =&gt; <i>Result</i>.From(this.scenario.CinematicTitleDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#265"><b>265</b>ScriptDataType.DeviceGroup =&gt; <i>Result</i>.From(this.scenario.DeviceGroupDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#267"><b>267</b>ScriptDataType.AIScript =&gt; <i>Result</i>.From(new ScriptMethodReference(node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#268"><b>268</b>ScriptDataType.AIBehavior =&gt; <i>Result</i>.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#269"><b>269</b>ScriptDataType.AIOrders =&gt; <i>Result</i>.From(this.scenario.AiOrderDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#270"><b>270</b>ScriptDataType.StartingProfile =&gt; <i>Result</i>.From(this.scenario.StartingProfileDefinitions[node.NodeData_H16].GameObject),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#271"><b>271</b>ScriptDataType.Bsp =&gt; <i>Result</i>.From(this.scenario.Terrains[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#272"><b>272</b>ScriptDataType.NavigationPoint =&gt; <i>Result</i>.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#273"><b>273</b>ScriptDataType.SpatialPoint =&gt; <i>Result</i>.From(this.scenario.SpatialPointStuffs[0].SpatialPointCollections[node.NodeData_L16].SpatialPoints[node.NodeData_H16]),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#274"><b>274</b>ScriptDataType.List =&gt; <i>Result</i>.From(new GameObjectList(new[] { (IGameObject?)GetEntityResult(node).Object })),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#275"><b>275</b>ScriptDataType.Sound =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;SoundTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#276"><b>276</b>ScriptDataType.Effect =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;EffectTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#277"><b>277</b>ScriptDataType.DamageEffect =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;DamageEffectTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#278"><b>278</b>ScriptDataType.LoopingSound =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;LoopingSoundTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#279"><b>279</b>ScriptDataType.TagReference =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;BaseTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#280"><b>280</b>ScriptDataType.Animation =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;AnimationGraphTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#281"><b>281</b>ScriptDataType.Model =&gt; <i>Result</i>.From(this.scriptEngine.GetTag&lt;RenderModelTag&gt;(null, node.NodeData_32)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#282"><b>282</b>ScriptDataType.GameDifficulty =&gt; <i>Result</i>.From(new GameDifficulty((short)node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#283"><b>283</b>ScriptDataType.Team =&gt; <i>Result</i>.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#284"><b>284</b>ScriptDataType.DamageState =&gt; <i>Result</i>.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#291"><b>291</b>ScriptDataType.EntityIdentifier =&gt; <i>Result</i>.From(new EntityIdentifier(node.NodeData_H16)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#301"><b>301</b><i>Result</i> GetAiResult(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#305"><b>305</b>return <i>Result</i>.From(this.scenario.AiSquadDefinitions[node.NodeData_B1].StartingLocations[node.NodeData_H16]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#309"><b>309</b>return <i>Result</i>.From(this.scenario.AiSquadGroupDefinitions[node.NodeData_H16]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#313"><b>313</b>return <i>Result</i>.From(this.scenario.AiSquadDefinitions[node.NodeData_H16]);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#317"><b>317</b><i>Result</i> GetEntityResult(ScenarioTag.ScriptSyntaxNode node)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#321"><b>321</b>return <i>Result</i>.From(null);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#325"><b>325</b>return <i>Result</i>.From(this.scenario.WellKnownItems[node.NodeData_H16].GameObject);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#332"><b>332</b><i>Result</i> result = default;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#400"><b>400</b><i>var</i> frequency = state.TopFrame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#416"><b>416</b><i>var</i> condition = args.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#449"><b>449</b><i>Result</i> result = default;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#486"><b>486</b><i>var</i> condition = state.TopFrame.Locals.Peek();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#495"><b>495</b>state.TopFrame.Locals.Enqueue(<i>Result</i>.From());</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#523"><b>523</b><i>var</i> condition = state.TopFrame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#524"><b>524</b><i>var</i> result = state.TopFrame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#538"><b>538</b><i>var</i> variableRef = state.TopFrame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#539"><b>539</b><i>var</i> value = state.TopFrame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#559"><b>559</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#562"><b>562</b>CompleteFrame(<i>Result</i>.From(!operand.Boolean), ref state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#573"><b>573</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#578"><b>578</b>CompleteFrame(<i>Result</i>.From(false), ref state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#585"><b>585</b>CompleteFrame(<i>Result</i>.From(true), ref state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#597"><b>597</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#602"><b>602</b>CompleteFrame(<i>Result</i>.From(true), ref state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#609"><b>609</b>CompleteFrame(<i>Result</i>.From(false), ref state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#617"><b>617</b><i>var</i> firstOp = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#621"><b>621</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#633"><b>633</b><i>var</i> firstOp = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#637"><b>637</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#649"><b>649</b><i>var</i> firstOp = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#653"><b>653</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#665"><b>665</b><i>var</i> firstOp = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#669"><b>669</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#681"><b>681</b><i>var</i> firstOp = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#685"><b>685</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#687"><b>687</b>firstOp = <i>Result</i>.Min(firstOp, operand);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#697"><b>697</b><i>var</i> firstOp = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#701"><b>701</b><i>var</i> operand = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#703"><b>703</b>firstOp = <i>Result</i>.Max(firstOp, operand);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#713"><b>713</b><i>var</i> left = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#714"><b>714</b><i>var</i> right = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#717"><b>717</b><i>var</i> result = left.DataType switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#719"><b>719</b>ScriptDataType.Boolean =&gt; <i>Result</i>.From(left.Boolean == right.Boolean),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#720"><b>720</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() == right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#721"><b>721</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() == right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#722"><b>722</b>ScriptDataType.Int =&gt; <i>Result</i>.From(left.GetInt() == right.GetInt()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#723"><b>723</b>ScriptDataType.GameDifficulty =&gt; <i>Result</i>.From(left.GetShort() == right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#734"><b>734</b><i>var</i> left = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#735"><b>735</b><i>var</i> right = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#738"><b>738</b><i>var</i> result = left.DataType switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#740"><b>740</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &gt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#741"><b>741</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &gt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#752"><b>752</b><i>var</i> left = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#753"><b>753</b><i>var</i> right = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#756"><b>756</b><i>var</i> result = left.DataType switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#758"><b>758</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &gt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#759"><b>759</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &gt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#770"><b>770</b><i>var</i> left = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#771"><b>771</b><i>var</i> right = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#774"><b>774</b><i>var</i> result = left.DataType switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#776"><b>776</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &lt; right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#777"><b>777</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &lt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#788"><b>788</b><i>var</i> left = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#789"><b>789</b><i>var</i> right = frame.Locals.Dequeue();</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#792"><b>792</b><i>var</i> result = left.DataType switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#794"><b>794</b>ScriptDataType.Float =&gt; <i>Result</i>.From(left.GetFloat() &lt;= right.GetFloat()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#795"><b>795</b>ScriptDataType.Short =&gt; <i>Result</i>.From(left.GetShort() &lt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#816"><b>816</b>private void CompleteFrame(<i>InterpreterResult</i> value, ref State state)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GlobalVariableSet.cs (20)</div>
+<a href="../Scripting/GlobalVariableSet.cs.html#3"><b>3</b>using Result = OpenH2.Core.Scripting.Execution.<i>InterpreterResult</i>;</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#25"><b>25</b>public <i>Result</i> this[ushort i]</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#31"><b>31</b>public <i>Result</i> Get(ushort id)</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#33"><b>33</b><i>var</i> result = id switch</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#35"><b>35</b>33563 =&gt; <i>Result</i>.From(this.ai_current_squad, ScriptDataType.AI),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#36"><b>36</b>33564 =&gt; <i>Result</i>.From(this.ai_current_actor, ScriptDataType.AI),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#37"><b>37</b>33572 =&gt; <i>Result</i>.From(this.ai_combat_status_idle),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#38"><b>38</b>33573 =&gt; <i>Result</i>.From(this.ai_combat_status_alert),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#39"><b>39</b>33574 =&gt; <i>Result</i>.From(this.ai_combat_status_active),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#40"><b>40</b>33575 =&gt; <i>Result</i>.From(this.ai_combat_status_uninspected),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#41"><b>41</b>33576 =&gt; <i>Result</i>.From(this.ai_combat_status_definite),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#42"><b>42</b>33577 =&gt; <i>Result</i>.From(this.ai_combat_status_certain),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#43"><b>43</b>33578 =&gt; <i>Result</i>.From(this.ai_combat_status_visible),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#44"><b>44</b>33579 =&gt; <i>Result</i>.From(this.ai_combat_status_clear_los),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#45"><b>45</b>33580 =&gt; <i>Result</i>.From(this.ai_combat_status_dangerous),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#46"><b>46</b>33581 =&gt; <i>Result</i>.From(this.ai_movement_patrol),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#47"><b>47</b>33583 =&gt; <i>Result</i>.From(this.ai_movement_combat),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#48"><b>48</b>33584 =&gt; <i>Result</i>.From(this.ai_movement_flee),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#49"><b>49</b>33754 =&gt; <i>Result</i>.From(this.cinematic_letterbox_style),</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#57"><b>57</b>public void Set(ushort id, <i>Result</i> value)</a>
+</div>
+</div>
+</div>

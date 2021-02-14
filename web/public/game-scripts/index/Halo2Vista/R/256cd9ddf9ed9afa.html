@@ -4,7 +4,7 @@
 <a href="../05b_deltatowers.cs.html#4716"><b>4716</b>Engine.ai_set_orders(gondola_02_jetpacks.<i>Squad</i>, gondola_02_jets);</a>
 <a href="../05b_deltatowers.cs.html#4720"><b>4720</b>await Engine.sleep_until(async () =&gt; (float)Engine.ai_living_count(gondola_02_grunts.Squad) + (float)Engine.ai_living_count(gondola_02_jetpacks.<i>Squad</i>) &lt; 1F, 30, 1800);</a>
 <a href="../05b_deltatowers.cs.html#4735"><b>4735</b>Engine.ai_set_orders(gondola_02_jetpacks.<i>Squad</i>, jetpacks_temple);</a>
-<a href="../05b_deltatowers.cs.html#4835"><b>4835</b>Engine.cs_run_command_script(gondola_02_jetpacks.<i>Squad</i>, abort);</a>
+<a href="../05b_deltatowers.cs.html#4835"><b>4835</b>Engine.cs_run_command_script(gondola_02_jetpacks.<i>Squad</i>, new ScriptMethodReference(abort));</a>
 <a href="../05b_deltatowers.cs.html#4877"><b>4877</b>Engine.ai_place(temple_halls_elites_01.Squad, (short)(2 - (float)Engine.ai_living_count(gondola_02_jetpacks.<i>Squad</i>)));</a>
 <a href="../05b_deltatowers.cs.html#4881"><b>4881</b>Engine.ai_place(temple_halls_elites_01.Squad, (short)(1 - (float)Engine.ai_living_count(gondola_02_jetpacks.<i>Squad</i>)));</a>
 </div>

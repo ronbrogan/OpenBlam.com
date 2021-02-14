@@ -1,5 +1,9 @@
 ﻿<div class="referenceBody">
-<div class="rH">1766 references to ILocationFlag</div><div class="rA">Halo2MCC (876)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.Data.cs (3)</div>
+<div class="rH">1 implementation of ILocationFlag</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (1)</div>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#389"><b>389</b>public class LocationFlagDefinition : <i>ILocationFlag</i></a>
+</div>
+</div>
+<div class="rH">1764 references to ILocationFlag</div><div class="rA">Halo2MCC (876)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.Data.cs (3)</div>
 <a href="../../Halo2MCC/00a_introduction.Data.cs.html#197"><b>197</b>public <i>ILocationFlag</i> anchor_flag_x01 =&gt; Scenario.LocationFlagDefinitions[0];</a>
 <a href="../../Halo2MCC/00a_introduction.Data.cs.html#198"><b>198</b>public <i>ILocationFlag</i> anchor_flag_x01b =&gt; Scenario.LocationFlagDefinitions[1];</a>
 <a href="../../Halo2MCC/00a_introduction.Data.cs.html#199"><b>199</b>public <i>ILocationFlag</i> anchor_flag_x01a =&gt; Scenario.LocationFlagDefinitions[2];</a>
@@ -1821,25 +1825,21 @@
 <a href="../../Halo2Vista/zanzibar.Data.cs.html#80"><b>80</b>public <i>ILocationFlag</i> e3_roost_destroy_04 =&gt; Scenario.LocationFlagDefinitions[5];</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (14)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#33"><b>33</b>ScriptDataType.LocationFlag =&gt; ParseTypeName(nameof(<i>ILocationFlag</i>)),</a>
+<div class="rA">OpenH2.Core (12)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#34"><b>34</b>ScriptDataType.LocationFlag =&gt; ParseTypeName(nameof(<i>ILocationFlag</i>)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\IScriptEngine.cs (11)</div>
-<a href="../Scripting/IScriptEngine.cs.html#14"><b>14</b>void activate_team_nav_point_flag(INavigationPoint navpoint, ITeam team, <i>ILocationFlag</i> cutscene_flag, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#222"><b>222</b>void camera_predict_resources_at_frame(AnimationGraphTag animation, string emotion, IUnit unit, <i>ILocationFlag</i> locationFlag, int intValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#231"><b>231</b>void camera_set_animation_relative(AnimationGraphTag animation, string id, IUnit unit, <i>ILocationFlag</i> locationFlag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#536"><b>536</b>void damage_new(DamageEffectTag damage, <i>ILocationFlag</i> cutscene_flag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#548"><b>548</b>void deactivate_team_nav_point_flag(ITeam team, <i>ILocationFlag</i> cutscene_flag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#610"><b>610</b>void effect_new(EffectTag effect, <i>ILocationFlag</i> cutscene_flag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#755"><b>755</b>bool objects_can_see_flag(GameObjectList list, <i>ILocationFlag</i> locationFlag, float floatValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#768"><b>768</b>float objects_distance_to_flag(IGameObject entity, <i>ILocationFlag</i> locationFlag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#771"><b>771</b>float objects_distance_to_flag(GameObjectList list, <i>ILocationFlag</i> locationFlag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#899"><b>899</b>void object_teleport(IGameObject entity, <i>ILocationFlag</i> cutscene_flag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1235"><b>1235</b>void volume_teleport_players_not_inside(ITriggerVolume trigger_volume, <i>ILocationFlag</i> cutscene_flag);</a>
-</div>
-<div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (2)</div>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#388"><b>388</b>public class LocationFlagDefinition : IGameObjectDefinition&lt;<i>ILocationFlag</i>&gt;</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#402"><b>402</b>public <i>ILocationFlag</i> GameObject { get; set; }</a>
+<a href="../Scripting/IScriptEngine.cs.html#15"><b>15</b>void activate_team_nav_point_flag(INavigationPoint navpoint, ITeam team, <i>ILocationFlag</i> cutscene_flag, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#267"><b>267</b>void camera_predict_resources_at_frame(AnimationGraphTag animation, string emotion, IUnit unit, <i>ILocationFlag</i> locationFlag, int intValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#279"><b>279</b>void camera_set_animation_relative(AnimationGraphTag animation, string id, IUnit unit, <i>ILocationFlag</i> locationFlag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#666"><b>666</b>void damage_new(DamageEffectTag damage, <i>ILocationFlag</i> cutscene_flag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#682"><b>682</b>void deactivate_team_nav_point_flag(ITeam team, <i>ILocationFlag</i> cutscene_flag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#761"><b>761</b>void effect_new(EffectTag effect, <i>ILocationFlag</i> cutscene_flag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#948"><b>948</b>bool objects_can_see_flag(GameObjectList list, <i>ILocationFlag</i> locationFlag, float floatValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#963"><b>963</b>float objects_distance_to_flag(IGameObject entity, <i>ILocationFlag</i> locationFlag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#967"><b>967</b>float objects_distance_to_flag(GameObjectList list, <i>ILocationFlag</i> locationFlag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1130"><b>1130</b>void object_teleport(IGameObject entity, <i>ILocationFlag</i> cutscene_flag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1555"><b>1555</b>void volume_teleport_players_not_inside(ITriggerVolume trigger_volume, <i>ILocationFlag</i> cutscene_flag);</a>
 </div>
 </div>
 </div>

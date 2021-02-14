@@ -10,12 +10,12 @@
 <a href="../03a_oldmombasa.cs.html#4899"><b>4899</b>Engine.ai_migrate(e2_mars_johnson.Squad, <i>e3_mars_johnson</i>.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#4900"><b>4900</b>Engine.ai_disposable(<i>e3_mars_johnson</i>.Squad, false);</a>
 <a href="../03a_oldmombasa.cs.html#4902"><b>4902</b>if (!(Engine.volume_test_objects(tv_e3_johnson_required, Engine.ai_actors(<i>e3_mars_johnson</i>.Squad))))</a>
-<a href="../03a_oldmombasa.cs.html#4905"><b>4905</b>Engine.cs_run_command_script(<i>e3_mars_johnson</i>.Squad, cs_e3_mars_johnson_teleport);</a>
-<a href="../03a_oldmombasa.cs.html#4910"><b>4910</b>Engine.cs_run_command_script(<i>e3_mars_johnson</i>.Squad, cs_e3_mars_johnson_exit);</a>
+<a href="../03a_oldmombasa.cs.html#4905"><b>4905</b>Engine.cs_run_command_script(<i>e3_mars_johnson</i>.Squad, new ScriptMethodReference(cs_e3_mars_johnson_teleport));</a>
+<a href="../03a_oldmombasa.cs.html#4910"><b>4910</b>Engine.cs_run_command_script(<i>e3_mars_johnson</i>.Squad, new ScriptMethodReference(cs_e3_mars_johnson_exit));</a>
 <a href="../03a_oldmombasa.cs.html#4913"><b>4913</b>await Engine.sleep(Engine.ai_play_line(<i>e3_mars_johnson</i>.Squad, &quot;0950&quot;));</a>
-<a href="../03a_oldmombasa.cs.html#4917"><b>4917</b>await Engine.sleep_until(async () =&gt; !(Engine.cs_command_script_queued(<i>e3_mars_johnson</i>.Squad, cs_e3_mars_johnson_exit)), 1);</a>
+<a href="../03a_oldmombasa.cs.html#4917"><b>4917</b>await Engine.sleep_until(async () =&gt; !(Engine.cs_command_script_queued(<i>e3_mars_johnson</i>.Squad, new ScriptMethodReference(cs_e3_mars_johnson_exit))), 1);</a>
 <a href="../03a_oldmombasa.cs.html#4918"><b>4918</b>Engine.ai_vehicle_enter(<i>e3_mars_johnson</i>.Squad, Engine.ai_vehicle_get(e3_mars_pelican0.pelican0), &quot;pelican_e&quot;);</a>
-<a href="../03a_oldmombasa.cs.html#4922"><b>4922</b>Engine.cs_run_command_script(<i>e3_mars_johnson</i>.Squad, cs_e3_mars_johnson_slam);</a>
+<a href="../03a_oldmombasa.cs.html#4922"><b>4922</b>Engine.cs_run_command_script(<i>e3_mars_johnson</i>.Squad, new ScriptMethodReference(cs_e3_mars_johnson_slam));</a>
 <a href="../03a_oldmombasa.cs.html#4963"><b>4963</b>Engine.ai_place(<i>e3_mars_johnson</i>.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#4964"><b>4964</b>Engine.object_cannot_take_damage(Engine.ai_actors(<i>e3_mars_johnson</i>.Squad));</a>
 </div>

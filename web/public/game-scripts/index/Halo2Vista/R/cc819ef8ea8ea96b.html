@@ -18,11 +18,11 @@
 <a href="../04a_gasgiant.cs.html#4054"><b>4054</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &lt; 2, 30, 900);</a>
 <a href="../04a_gasgiant.cs.html#4063"><b>4063</b>Engine.ai_erase(<i>hangar_phantom</i>.Squad);</a>
 <a href="../04a_gasgiant.cs.html#4093"><b>4093</b>Engine.ai_place(<i>hangar_phantom</i>.Squad);</a>
-<a href="../04a_gasgiant.cs.html#4094"><b>4094</b>Engine.cs_run_command_script(<i>hangar_phantom</i>.Squad, hangar_phantom_arrives);</a>
+<a href="../04a_gasgiant.cs.html#4094"><b>4094</b>Engine.cs_run_command_script(<i>hangar_phantom</i>.Squad, new ScriptMethodReference(hangar_phantom_arrives));</a>
 <a href="../04a_gasgiant.cs.html#4096"><b>4096</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &gt; 1);</a>
 <a href="../04a_gasgiant.cs.html#4097"><b>4097</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &lt; 2);</a>
 <a href="../04a_gasgiant.cs.html#4124"><b>4124</b>Engine.ai_place(<i>hangar_phantom</i>.Squad);</a>
-<a href="../04a_gasgiant.cs.html#4125"><b>4125</b>Engine.cs_run_command_script(<i>hangar_phantom</i>.Squad, hangar_phantom_arrives);</a>
+<a href="../04a_gasgiant.cs.html#4125"><b>4125</b>Engine.cs_run_command_script(<i>hangar_phantom</i>.Squad, new ScriptMethodReference(hangar_phantom_arrives));</a>
 <a href="../04a_gasgiant.cs.html#4129"><b>4129</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(reinforce_elites_01.Squad));</a>
 <a href="../04a_gasgiant.cs.html#4130"><b>4130</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>hangar_phantom</i>.pilot), &quot;phantom_p&quot;, Engine.ai_actors(reinforce_grunts_01.Squad));</a>
 <a href="../04a_gasgiant.cs.html#4131"><b>4131</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hangar_phantom</i>.Squad) &lt; 2);</a>

@@ -11,10 +11,10 @@
 <a href="../03a_oldmombasa.cs.html#3875"><b>3875</b>Engine.ai_disposable(<i>e7_mars_inf0</i>.Squad, false);</a>
 <a href="../03a_oldmombasa.cs.html#3878"><b>3878</b>if ((short)Engine.ai_living_count(e6_mars_inf0.Squad) &lt;= 0 || (short)Engine.ai_living_count(<i>e7_mars_inf0</i>.Squad) &gt;= 3)</a>
 <a href="../03a_oldmombasa.cs.html#3885"><b>3885</b>Engine.ai_attach_units(Engine.unit(Engine.list_get(Engine.ai_actors(e6_mars_inf0.Squad), 0)), <i>e7_mars_inf0</i>.Squad);</a>
-<a href="../03a_oldmombasa.cs.html#3890"><b>3890</b>Engine.cs_run_command_script(<i>e7_mars_inf0</i>.Squad, cs_e7_hide);</a>
+<a href="../03a_oldmombasa.cs.html#3890"><b>3890</b>Engine.cs_run_command_script(<i>e7_mars_inf0</i>.Squad, new ScriptMethodReference(cs_e7_hide));</a>
 <a href="../03a_oldmombasa.cs.html#3891"><b>3891</b>Engine.ai_disregard(Engine.ai_actors(<i>e7_mars_inf0</i>.Squad), true);</a>
-<a href="../03a_oldmombasa.cs.html#3892"><b>3892</b>Engine.ai_scene(&quot;e7_hotel_hall_scene0&quot;, cs_e7_hotel_hall_scene0, <i>e7_mars_inf0</i>.Squad) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
-<a href="../03a_oldmombasa.cs.html#3895"><b>3895</b>Engine.cs_run_command_script(<i>e7_mars_inf0</i>.Squad, cs_e7_abort);</a>
+<a href="../03a_oldmombasa.cs.html#3892"><b>3892</b>Engine.ai_scene(&quot;e7_hotel_hall_scene0&quot;, new ScriptMethodReference(cs_e7_hotel_hall_scene0), <i>e7_mars_inf0</i>.Squad) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../03a_oldmombasa.cs.html#3895"><b>3895</b>Engine.cs_run_command_script(<i>e7_mars_inf0</i>.Squad, new ScriptMethodReference(cs_e7_abort));</a>
 <a href="../03a_oldmombasa.cs.html#3896"><b>3896</b>Engine.ai_disregard(Engine.ai_actors(<i>e7_mars_inf0</i>.Squad), false);</a>
 <a href="../03a_oldmombasa.cs.html#3925"><b>3925</b>Engine.ai_place(<i>e7_mars_inf0</i>.Squad);</a>
 </div>

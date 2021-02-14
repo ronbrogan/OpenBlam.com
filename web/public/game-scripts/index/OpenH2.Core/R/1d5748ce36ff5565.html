@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">22 references to Entity</div><div class="rA">OpenH2.Core (22)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Component.cs (2)</div>
+<div class="rH">26 references to Entity</div><div class="rA">OpenH2.Core (26)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Component.cs (2)</div>
 <a href="../Architecture/Component.cs.html#5"><b>5</b>public <i>Entity</i> Parent { get; private set; }</a>
 <a href="../Architecture/Component.cs.html#7"><b>7</b>public Component(<i>Entity</i> parent)</a>
 </div>
@@ -16,12 +16,17 @@
 <a href="../Architecture/IEntityCreator.cs.html#18"><b>18</b><i>Entity</i> FromSquadStartingLocation(ScenarioTag.AiSquadDefinition.StartingLocation loc);</a>
 <a href="../Architecture/IEntityCreator.cs.html#19"><b>19</b><i>Entity</i> FromGlobals();</a>
 </div>
-<div class="rF"><div class="rN">Architecture\Scene.cs (6)</div>
-<a href="../Architecture/Scene.cs.html#21"><b>21</b>public Dictionary&lt;Guid, <i>Entity</i>&gt; Entities { get; private set; } = new Dictionary&lt;Guid, <i>Entity</i>&gt;();</a>
-<a href="../Architecture/Scene.cs.html#29"><b>29</b>public void AddEntity(<i>Entity</i> e)</a>
-<a href="../Architecture/Scene.cs.html#35"><b>35</b>public void RemoveEntity(<i>Entity</i> e)</a>
-<a href="../Architecture/Scene.cs.html#41"><b>41</b>public delegate void EntityEventHandler(<i>Entity</i> entity);</a>
-<a href="../Architecture/Scene.cs.html#113"><b>113</b><i>Entity</i>? newEntity = def.ItemType switch</a>
+<div class="rF"><div class="rN">Architecture\Scene.cs (10)</div>
+<a href="../Architecture/Scene.cs.html#22"><b>22</b>public Dictionary&lt;Guid, <i>Entity</i>&gt; Entities { get; private set; } = new();</a>
+<a href="../Architecture/Scene.cs.html#23"><b>23</b>private ConcurrentQueue&lt;<i>Entity</i>&gt; addedEntities = new();</a>
+<a href="../Architecture/Scene.cs.html#24"><b>24</b>private ConcurrentQueue&lt;<i>Entity</i>&gt; removedEntities = new();</a>
+<a href="../Architecture/Scene.cs.html#47"><b>47</b>public void AddEntity(<i>Entity</i> e)</a>
+<a href="../Architecture/Scene.cs.html#53"><b>53</b>public void RemoveEntity(<i>Entity</i> e)</a>
+<a href="../Architecture/Scene.cs.html#58"><b>58</b>public delegate void EntityEventHandler(<i>Entity</i> entity);</a>
+<a href="../Architecture/Scene.cs.html#87"><b>87</b>public void GatherPlacedEntities(int bspIndex, List&lt;<i>Entity</i>&gt; entities)</a>
+<a href="../Architecture/Scene.cs.html#113"><b>113</b>while (removedEntities.TryDequeue(out <i>var</i> e))</a>
+<a href="../Architecture/Scene.cs.html#122"><b>122</b>while (addedEntities.TryDequeue(out <i>var</i> e))</a>
+<a href="../Architecture/Scene.cs.html#133"><b>133</b><i>Entity</i>? newEntity = def.ItemType switch</a>
 </div>
 <div class="rF"><div class="rN">Architecture\World.cs (3)</div>
 <a href="../Architecture/World.cs.html#32"><b>32</b>foreach (<i>var</i> entity in this.Scene.Entities.Values)</a>

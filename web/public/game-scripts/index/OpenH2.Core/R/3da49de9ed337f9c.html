@@ -4,42 +4,43 @@
 <a href="../Extensions/StringExtensions.cs.html#22"><b>22</b>if (Enum.IsDefined(typeof(<i>TagName</i>), tag))</a>
 </div>
 <div class="rF"><div class="rN">Factories\MapFactory.cs (3)</div>
-<a href="../Factories/MapFactory.cs.html#216"><b>216</b><i>var</i> tag = (<i>TagName</i>)listBytes.ReadUInt32At(entryBase);</a>
-<a href="../Factories/MapFactory.cs.html#218"><b>218</b>if (tag == <i>TagName</i>.NULL)</a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (3)</div>
-<a href="../Factories/MccMapFactory.cs.html#166"><b>166</b><i>var</i> tag = (<i>TagName</i>)listBytes.ReadUInt32At(entryBase);</a>
-<a href="../Factories/MccMapFactory.cs.html#168"><b>168</b>if (tag == <i>TagName</i>.NULL)</a>
+<a href="../Factories/MapFactory.cs.html#118"><b>118</b><i>var</i> tag = (<i>TagName</i>)reader.ReadUInt32At(entryBase);</a>
+<a href="../Factories/MapFactory.cs.html#120"><b>120</b>if (tag == <i>TagName</i>.NULL)</a>
 </div>
 <div class="rF"><div class="rN">Factories\TagFactory.cs (3)</div>
-<a href="../Factories/TagFactory.cs.html#70"><b>70</b>private static Dictionary&lt;<i>TagName</i>, Type&gt; cachedTagTypes = null;</a>
-<a href="../Factories/TagFactory.cs.html#72"><b>72</b>public static Type GetTypeForTag(<i>TagName</i> tag)</a>
-<a href="../Factories/TagFactory.cs.html#83"><b>83</b>.Where(e =&gt; e != null &amp;&amp; Enum.IsDefined(typeof(<i>TagName</i>), e.Label.Value))</a>
+<a href="../Factories/TagFactory.cs.html#65"><b>65</b>private static Dictionary&lt;<i>TagName</i>, Type&gt; cachedTagTypes = null;</a>
+<a href="../Factories/TagFactory.cs.html#67"><b>67</b>public static Type GetTypeForTag(<i>TagName</i> tag)</a>
+<a href="../Factories/TagFactory.cs.html#78"><b>78</b>.Where(e =&gt; e != null &amp;&amp; Enum.IsDefined(typeof(<i>TagName</i>), e.Label.Value))</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
-<a href="../Maps/H2BaseMap.cs.html#23"><b>23</b>public Dictionary&lt;(<i>TagName</i>, string), uint&gt; TagNameLookup { get; set; }</a>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (2)</div>
+<a href="../Maps/H2BaseMap.cs.html#167"><b>167</b>public bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id)</a>
+<a href="../Maps/H2BaseMap.cs.html#171"><b>171</b>if (Enum.IsDefined(typeof(<i>TagName</i>), tag) == false)</a>
+</div>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
+<a href="../Maps/IH2Map.cs.html#30"><b>30</b>bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id);</a>
+<a href="../Maps/IH2Map.cs.html#74"><b>74</b>public bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id)</a>
 </div>
 <div class="rF"><div class="rN">Maps\TagIndexEntry.cs (1)</div>
 <a href="../Maps/TagIndexEntry.cs.html#9"><b>9</b>public <i>TagName</i> Tag { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (2)</div>
-<a href="../Patching/TagPatcher.cs.html#198"><b>198</b>if (Enum.TryParse(typeof(<i>TagName</i>), tagFourCc, out var tagType) == false)</a>
-<a href="../Patching/TagPatcher.cs.html#203"><b>203</b>if (originalMap.TagNameLookup.TryGetValue(((<i>TagName</i>)tagType, tagName), out var tagId) == false)</a>
+<a href="../Patching/TagPatcher.cs.html#255"><b>255</b>if (Enum.TryParse(typeof(<i>TagName</i>), tagFourCc, out var tagType) == false)</a>
+<a href="../Patching/TagPatcher.cs.html#260"><b>260</b>if (originalMap.TryFindTagId((<i>TagName</i>)tagType, tagName, out var tagId) == false)</a>
 </div>
 <div class="rF"><div class="rN">Tags\AnimationGraphTag.cs (1)</div>
-<a href="../Tags/AnimationGraphTag.cs.html#11"><b>11</b>[TagLabel(<i>TagName</i>.jmad)]</a>
+<a href="../Tags/AnimationGraphTag.cs.html#14"><b>14</b>[TagLabel(<i>TagName</i>.jmad)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BipedTag.cs (1)</div>
 <a href="../Tags/BipedTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.bipd)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BitmapTag.cs (1)</div>
-<a href="../Tags/BitmapTag.cs.html#14"><b>14</b>[TagLabel(<i>TagName</i>.bitm)]</a>
+<a href="../Tags/BitmapTag.cs.html#17"><b>17</b>[TagLabel(<i>TagName</i>.bitm)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BlocTag.cs (1)</div>
 <a href="../Tags/BlocTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.bloc)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (1)</div>
-<a href="../Tags/BspTag.cs.html#14"><b>14</b>[TagLabel(<i>TagName</i>.sbsp)]</a>
+<a href="../Tags/BspTag.cs.html#20"><b>20</b>[TagLabel(<i>TagName</i>.sbsp)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\CharacterTag.cs (1)</div>
 <a href="../Tags/CharacterTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.@char)]</a>
@@ -85,13 +86,13 @@
 <a href="../Tags/PhysicsModelTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.phmo)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
-<a href="../Tags/RenderModelTag.cs.html#13"><b>13</b>[TagLabel(<i>TagName</i>.mode)]</a>
+<a href="../Tags/RenderModelTag.cs.html#18"><b>18</b>[TagLabel(<i>TagName</i>.mode)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (1)</div>
 <a href="../Tags/Scenario/ScenarioTag.cs.html#12"><b>12</b>[TagLabel(<i>TagName</i>.scnr)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\SceneryTag.cs (1)</div>
-<a href="../Tags/SceneryTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.scen)]</a>
+<a href="../Tags/SceneryTag.cs.html#10"><b>10</b>[TagLabel(<i>TagName</i>.scen)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\ShaderPassTag.cs (1)</div>
 <a href="../Tags/ShaderPassTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.spas)]</a>

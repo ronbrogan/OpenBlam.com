@@ -3,10 +3,10 @@
 <a href="../08b_deltacontrol.cs.html#5582"><b>5582</b>Engine.ai_place(e8_mars_inf0.<i>Squad</i>);</a>
 <a href="../08b_deltacontrol.cs.html#5587"><b>5587</b>if ((short)Engine.ai_living_count(e8_mars_inf0.<i>Squad</i>) &lt;= 0)</a>
 <a href="../08b_deltacontrol.cs.html#5589"><b>5589</b>Engine.ai_place(e8_mars_inf0.<i>Squad</i>, this.g_e8_mars_inf0_living_count);</a>
-<a href="../08b_deltacontrol.cs.html#5593"><b>5593</b>Engine.cs_run_command_script(e8_mars_inf0.<i>Squad</i>, cs_e8_mars_inf0_emerge);</a>
+<a href="../08b_deltacontrol.cs.html#5593"><b>5593</b>Engine.cs_run_command_script(e8_mars_inf0.<i>Squad</i>, new ScriptMethodReference(cs_e8_mars_inf0_emerge));</a>
 <a href="../08b_deltacontrol.cs.html#5599"><b>5599</b>else if ((short)Engine.ai_living_count(e8_mars_inf0.<i>Squad</i>) &gt; 0)</a>
 <a href="../08b_deltacontrol.cs.html#5601"><b>5601</b>this.g_e8_mars_inf0_living_count = (short)Engine.ai_living_count(e8_mars_inf0.<i>Squad</i>);</a>
-<a href="../08b_deltacontrol.cs.html#5602"><b>5602</b>Engine.cs_run_command_script(e8_mars_inf0.<i>Squad</i>, cs_e8_mars_inf0_retreat);</a>
+<a href="../08b_deltacontrol.cs.html#5602"><b>5602</b>Engine.cs_run_command_script(e8_mars_inf0.<i>Squad</i>, new ScriptMethodReference(cs_e8_mars_inf0_retreat));</a>
 <a href="../08b_deltacontrol.cs.html#5603"><b>5603</b>await Engine.sleep_until(async () =&gt; await this.e8_mars_inf0_should_activate() || Engine.volume_test_objects_all(tv_scarab_interior, Engine.ai_actors(e8_mars_inf0.<i>Squad</i>)));</a>
 <a href="../08b_deltacontrol.cs.html#5606"><b>5606</b>Engine.ai_erase(e8_mars_inf0.<i>Squad</i>);</a>
 </div>

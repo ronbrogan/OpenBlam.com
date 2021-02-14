@@ -1,26 +1,18 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 writes to ID</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
-<a href="../Factories/MapFactory.cs.html#224"><b>224</b><i>ID</i> = listBytes.ReadUInt32At(entryBase + 4),</a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
-<a href="../Factories/MccMapFactory.cs.html#174"><b>174</b><i>ID</i> = listBytes.ReadUInt32At(entryBase + 4),</a>
+<div class="rH">1 write to ID</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#126"><b>126</b><i>ID</i> = reader.ReadUInt32At(entryBase + 4),</a>
 </div>
 </div>
-<div class="rH">13 references to ID</div><div class="rA">OpenH2.Core (13)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (6)</div>
-<a href="../Factories/MapFactory.cs.html#146"><b>146</b>var nameIndexOffset = (short)(item.<i>ID</i> &amp; 0x0000FFFF) * 4;</a>
-<a href="../Factories/MapFactory.cs.html#150"><b>150</b>dict[item.<i>ID</i>] = name;</a>
-<a href="../Factories/MapFactory.cs.html#171"><b>171</b>dict[item.<i>ID</i>] = GetTag(scene, item, reader);</a>
-<a href="../Factories/MapFactory.cs.html#179"><b>179</b>var name = scene.TagNames[entry.<i>ID</i>];</a>
-<a href="../Factories/MapFactory.cs.html#181"><b>181</b>return TagFactory.CreateTag(entry.<i>ID</i>, name, entry, scene, reader);</a>
-<a href="../Factories/MapFactory.cs.html#235"><b>235</b>entries[entry.<i>ID</i>] = entry;</a>
+<div class="rH">8 references to ID</div><div class="rA">OpenH2.Core (8)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#137"><b>137</b>entries[entry.<i>ID</i>] = entry;</a>
 </div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (6)</div>
-<a href="../Factories/MccMapFactory.cs.html#96"><b>96</b>var nameIndexOffset = (short)(item.<i>ID</i> &amp; 0x0000FFFF) * 4;</a>
-<a href="../Factories/MccMapFactory.cs.html#100"><b>100</b>dict[item.<i>ID</i>] = name;</a>
-<a href="../Factories/MccMapFactory.cs.html#121"><b>121</b>dict[item.<i>ID</i>] = GetTag(scene, item, reader);</a>
-<a href="../Factories/MccMapFactory.cs.html#129"><b>129</b>var name = scene.TagNames[entry.<i>ID</i>];</a>
-<a href="../Factories/MccMapFactory.cs.html#131"><b>131</b>return TagFactory.CreateTag(entry.<i>ID</i>, name, entry, scene, reader);</a>
-<a href="../Factories/MccMapFactory.cs.html#185"><b>185</b>entries[entry.<i>ID</i>] = entry;</a>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (6)</div>
+<a href="../Maps/H2BaseMap.cs.html#185"><b>185</b>var name = GetTagName(entry.<i>ID</i>);</a>
+<a href="../Maps/H2BaseMap.cs.html#188"><b>188</b>id = entry.<i>ID</i>;</a>
+<a href="../Maps/H2BaseMap.cs.html#236"><b>236</b>if(tags.TryGetValue(entry.<i>ID</i>, out var tag))</a>
+<a href="../Maps/H2BaseMap.cs.html#241"><b>241</b>var name = GetTagName(entry.<i>ID</i>);</a>
+<a href="../Maps/H2BaseMap.cs.html#245"><b>245</b>tag = TagFactory.CreateTag(entry.<i>ID</i>, name, entry, this, this.mapStream);</a>
+<a href="../Maps/H2BaseMap.cs.html#246"><b>246</b>tags[entry.<i>ID</i>] = tag;</a>
 </div>
 <div class="rF"><div class="rN">Maps\TagIndexEntry.cs (1)</div>
 <a href="../Maps/TagIndexEntry.cs.html#21"><b>21</b>return TagName + &quot; &quot; + <i>ID</i> + &quot;, &quot; + DataSize + &quot;B @ &quot; + Offset.Value;</a>

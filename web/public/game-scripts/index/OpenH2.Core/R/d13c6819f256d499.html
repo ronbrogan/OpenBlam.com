@@ -1,6 +1,6 @@
 ﻿<div class="referenceBody">
 <div class="rH">3 instantiations of TagRef</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
-<a href="../Extensions/SpanByteExtensions.cs.html#164"><b>164</b>return new <i>TagRef</i>(data.ReadUInt32At(offset));</a>
+<a href="../Extensions/SpanByteExtensions.cs.html#16"><b>16</b>return new <i>TagRef</i>(data.ReadUInt32At(offset));</a>
 </div>
 <div class="rF"><div class="rN">Extensions\StreamExtensions.cs (1)</div>
 <a href="../Extensions/StreamExtensions.cs.html#438"><b>438</b>return new <i>TagRef</i>(data.ReadUInt32At(offset));</a>
@@ -9,8 +9,8 @@
 <a href="../Maps/TagRef.cs.html#45"><b>45</b>return new <i>TagRef</i>(tagref.Id);</a>
 </div>
 </div>
-<div class="rH">42 references to TagRef</div><div class="rA">OpenH2.Core (42)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
-<a href="../Extensions/SpanByteExtensions.cs.html#162"><b>162</b>public static <i>TagRef</i> ReadTagRefAt(this Span&lt;byte&gt; data, int offset)</a>
+<div class="rH">41 references to TagRef</div><div class="rA">OpenH2.Core (41)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
+<a href="../Extensions/SpanByteExtensions.cs.html#14"><b>14</b>public static <i>TagRef</i> ReadTagRefAt(this Span&lt;byte&gt; data, int offset)</a>
 </div>
 <div class="rF"><div class="rN">Extensions\StreamExtensions.cs (1)</div>
 <a href="../Extensions/StreamExtensions.cs.html#436"><b>436</b>public static <i>TagRef</i> ReadTagRefAt(this Stream data, int offset)</a>
@@ -20,20 +20,15 @@
 <a href="../Maps/TagRef.cs.html#43"><b>43</b>public static implicit operator <i>TagRef</i>(TagRef&lt;TTag&gt; tagref)</a>
 <a href="../Maps/TagRef.cs.html#48"><b>48</b>public static implicit operator TagRef&lt;TTag&gt;(<i>TagRef</i> tagref)</a>
 </div>
-<div class="rF"><div class="rN">Parsing\TrackingChunk.cs (1)</div>
-<a href="../Parsing/TrackingChunk.cs.html#72"><b>72</b>public <i>TagRef</i> ReadTagRefAt(int offset)</a>
-</div>
-<div class="rF"><div class="rN">Parsing\TrackingReader.cs (1)</div>
-<a href="../Parsing/TrackingReader.cs.html#175"><b>175</b>public <i>TagRef</i> ReadTagRefAt(int offset)</a>
-</div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (1)</div>
-<a href="../Patching/TagPatcher.cs.html#40"><b>40</b>this.DataWriters.Add(typeof(<i>TagRef</i>), WriteTagRef);</a>
+<a href="../Patching/TagPatcher.cs.html#41"><b>41</b>this.DataWriters.Add(typeof(<i>TagRef</i>), WriteTagRef);</a>
 </div>
 <div class="rF"><div class="rN">Tags\BipedTag.cs (2)</div>
 <a href="../Tags/BipedTag.cs.html#51"><b>51</b>public <i>TagRef</i> SomeTagMaybe { get; set; }</a>
 <a href="../Tags/BipedTag.cs.html#65"><b>65</b>public <i>TagRef</i> SomeTagMaybe { get; set; }</a>
 </div>
-<div class="rF"><div class="rN">Tags\CharacterTag.cs (2)</div>
+<div class="rF"><div class="rN">Tags\CharacterTag.cs (3)</div>
+<a href="../Tags/CharacterTag.cs.html#18"><b>18</b>public <i>TagRef</i> Unit { get; set; }</a>
 <a href="../Tags/CharacterTag.cs.html#21"><b>21</b>public <i>TagRef</i> Creature { get; set; }</a>
 <a href="../Tags/CharacterTag.cs.html#24"><b>24</b>public <i>TagRef</i> Style { get; set; }</a>
 </div>
@@ -62,23 +57,23 @@
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioEnvironment.cs (5)</div>
 <a href="../Tags/Scenario/ScenarioEnvironment.cs.html#27"><b>27</b>public <i>TagRef</i> LightmapId { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#75"><b>75</b>public <i>TagRef</i> DecalReference { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#112"><b>112</b>public <i>TagRef</i> ControllerId { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#186"><b>186</b>public <i>TagRef</i> LightTag { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#202"><b>202</b>public <i>TagRef</i> FogRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#81"><b>81</b>public <i>TagRef</i> DecalReference { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#124"><b>124</b>public <i>TagRef</i> ControllerId { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#216"><b>216</b>public <i>TagRef</i> LightTag { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioEnvironment.cs.html#232"><b>232</b>public <i>TagRef</i> FogRef { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioItems.cs (2)</div>
-<a href="../Tags/Scenario/ScenarioItems.cs.html#62"><b>62</b>public <i>TagRef</i> ItemCollectionReference { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioItems.cs.html#109"><b>109</b>public <i>TagRef</i> Tag { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioItems.cs.html#68"><b>68</b>public <i>TagRef</i> ItemCollectionReference { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioItems.cs.html#137"><b>137</b>public <i>TagRef</i> Tag { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (7)</div>
 <a href="../Tags/Scenario/ScenarioTag.cs.html#116"><b>116</b>public <i>TagRef</i> Creature { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#296"><b>296</b>public <i>TagRef</i> StyleReference { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#462"><b>462</b>public <i>TagRef</i> Tag { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#559"><b>559</b>public <i>TagRef</i> SndeReference { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#617"><b>617</b>public <i>TagRef</i> FpchRef { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#626"><b>626</b>public <i>TagRef</i> DecrRef { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#657"><b>657</b>public <i>TagRef</i> DescriptionUnicode { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#297"><b>297</b>public <i>TagRef</i> StyleReference { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#459"><b>459</b>public <i>TagRef</i> Tag { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#556"><b>556</b>public <i>TagRef</i> SndeReference { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#614"><b>614</b>public <i>TagRef</i> FpchRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#623"><b>623</b>public <i>TagRef</i> DecrRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#654"><b>654</b>public <i>TagRef</i> DescriptionUnicode { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\SoundMappingTag.cs (1)</div>
 <a href="../Tags/SoundMappingTag.cs.html#235"><b>235</b>public <i>TagRef</i> UghRef { get; set; }</a>

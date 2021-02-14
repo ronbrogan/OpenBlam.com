@@ -4,7 +4,7 @@
 <a href="../04b_floodlab.cs.html#4953"><b>4953</b>return (short)Engine.ai_living_count(<i>control_return_heretics</i>) == 0 || (short)Engine.ai_spawn_count(control_return_flood) &gt; 10 || Engine.volume_test_objects(vol_control_return_middle, Engine.players()) == true;</a>
 <a href="../04b_floodlab.cs.html#5041"><b>5041</b>return (short)Engine.ai_living_count(<i>control_return_heretics</i>) == 0 || (short)Engine.ai_spawn_count(control_return_flood) &gt; 10 || Engine.volume_test_objects(vol_power_core_enter, Engine.players()) == true;</a>
 <a href="../04b_floodlab.cs.html#5085"><b>5085</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_control_return_middle, Engine.players()) == true || (short)Engine.ai_living_count(<i>control_return_heretics</i>) &lt; 3);</a>
-<a href="../04b_floodlab.cs.html#5090"><b>5090</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;control_return_scene&quot;, control_return_heretic, <i>control_return_heretics</i>) || (short)Engine.ai_living_count(<i>control_return_heretics</i>) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#5090"><b>5090</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;control_return_scene&quot;, new ScriptMethodReference(control_return_heretic), <i>control_return_heretics</i>) || (short)Engine.ai_living_count(<i>control_return_heretics</i>) == 0, 30, 150);</a>
 <a href="../04b_floodlab.cs.html#5091"><b>5091</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>control_return_heretics</i>) == 0);</a>
 <a href="../04b_floodlab.cs.html#5136"><b>5136</b>Engine.ai_disposable(<i>control_return_heretics</i>, true);</a>
 </div>

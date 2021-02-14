@@ -1,20 +1,17 @@
 ﻿<div class="referenceBody">
-<div class="rH">13 references to IndexHeader</div><div class="rA">OpenH2.Core (13)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (6)</div>
-<a href="../Factories/MapFactory.cs.html#193"><b>193</b>public <i>IndexHeader</i> GetIndexHeader(H2BaseMap scene, TrackingReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#197"><b>197</b><i>var</i> index = BlamSerializer.Deserialize&lt;<i>IndexHeader</i>&gt;(reader.Data, header.IndexOffset.Value);</a>
-<a href="../Factories/MapFactory.cs.html#207"><b>207</b><i>var</i> index = scene.IndexHeader;</a>
-<a href="../Factories/MapFactory.cs.html#241"><b>241</b>public int CalculatePrimaryMagic(<i>IndexHeader</i> index)</a>
-<a href="../Factories/MapFactory.cs.html#243"><b>243</b>return index.FileRawOffset.Value - index.PrimaryMagicConstant + <i>IndexHeader</i>.Length;</a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (6)</div>
-<a href="../Factories/MccMapFactory.cs.html#143"><b>143</b>public <i>IndexHeader</i> GetIndexHeader(H2mccMap scene, TrackingReader reader)</a>
-<a href="../Factories/MccMapFactory.cs.html#147"><b>147</b><i>var</i> index = BlamSerializer.Deserialize&lt;<i>IndexHeader</i>&gt;(reader.Data, header.IndexOffset.Value);</a>
-<a href="../Factories/MccMapFactory.cs.html#157"><b>157</b><i>var</i> index = scene.IndexHeader;</a>
-<a href="../Factories/MccMapFactory.cs.html#191"><b>191</b>public int CalculatePrimaryMagic(<i>IndexHeader</i> index)</a>
-<a href="../Factories/MccMapFactory.cs.html#193"><b>193</b>return index.FileRawOffset.Value - index.PrimaryMagicConstant + <i>IndexHeader</i>.Length;</a>
+<div class="rH">9 references to IndexHeader</div><div class="rA">OpenH2.Core (9)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (6)</div>
+<a href="../Factories/MapFactory.cs.html#96"><b>96</b>public static <i>IndexHeader</i> DeserializeIndexHeader(IH2Map scene, Stream reader)</a>
+<a href="../Factories/MapFactory.cs.html#100"><b>100</b><i>var</i> index = BlamSerializer.Deserialize&lt;<i>IndexHeader</i>&gt;(reader, header.IndexOffset.Value);</a>
+<a href="../Factories/MapFactory.cs.html#110"><b>110</b><i>var</i> index = scene.IndexHeader;</a>
+<a href="../Factories/MapFactory.cs.html#143"><b>143</b>public static int CalculatePrimaryMagic(<i>IndexHeader</i> index)</a>
+<a href="../Factories/MapFactory.cs.html#145"><b>145</b>return index.FileRawOffset.Value - index.PrimaryMagicConstant + <i>IndexHeader</i>.Length;</a>
 </div>
 <div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
-<a href="../Maps/H2BaseMap.cs.html#17"><b>17</b>public <i>IndexHeader</i> IndexHeader { get; set; }</a>
+<a href="../Maps/H2BaseMap.cs.html#43"><b>43</b>public <i>IndexHeader</i> IndexHeader { get; set; }</a>
+</div>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
+<a href="../Maps/IH2Map.cs.html#15"><b>15</b><i>IndexHeader</i> IndexHeader { get; set; }</a>
+<a href="../Maps/IH2Map.cs.html#37"><b>37</b>public <i>IndexHeader</i> IndexHeader { get; set; }</a>
 </div>
 </div>
 </div>

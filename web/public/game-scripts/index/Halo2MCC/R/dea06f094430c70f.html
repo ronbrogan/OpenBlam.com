@@ -9,7 +9,7 @@
 <a href="../04b_floodlab.cs.html#6320"><b>6320</b>Engine.cs_shoot(false, Engine.list_get(Engine.ai_actors(<i>heretic_leader_04</i>.Squad), 0));</a>
 <a href="../04b_floodlab.cs.html#6405"><b>6405</b>Engine.ai_erase(<i>heretic_leader_04</i>.Squad);</a>
 <a href="../04b_floodlab.cs.html#6412"><b>6412</b>Engine.ai_place(<i>heretic_leader_04</i>.Squad);</a>
-<a href="../04b_floodlab.cs.html#6413"><b>6413</b>Engine.cs_run_command_script(<i>heretic_leader_04</i>.Squad, hl_retreat_04);</a>
+<a href="../04b_floodlab.cs.html#6413"><b>6413</b>Engine.cs_run_command_script(<i>heretic_leader_04</i>.Squad, new ScriptMethodReference(hl_retreat_04));</a>
 <a href="../04b_floodlab.cs.html#6432"><b>6432</b>Engine.ai_erase(<i>heretic_leader_04</i>.Squad);</a>
 <a href="../04b_floodlab.cs.html#6435"><b>6435</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>heretic_leader_04</i>.Squad) == 0 &amp;&amp; (short)Engine.ai_living_count(dervish_01.Squad) == 0);</a>
 </div>

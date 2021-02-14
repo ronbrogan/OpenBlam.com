@@ -1,14 +1,40 @@
 ﻿<div class="referenceBody">
-<div class="rH">1 write to DataType</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
+<div class="rH">3 writes to DataType</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#112"><b>112</b><i>DataType</i> = node.DataType,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#120"><b>120</b><i>DataType</i> = ScriptDataType.MethodOrOperator,</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#90"><b>90</b><i>DataType</i> = (ScriptDataType)ParseFrom(line, &quot;dt:&quot;),</a>
 </div>
 </div>
-<div class="rH">43 references to DataType</div><div class="rA">OpenH2.Core (43)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#500"><b>500</b>switch (node.<i>DataType</i>)</a>
+<div class="rH">67 references to DataType</div><div class="rA">OpenH2.Core (67)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (7)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#78"><b>78</b>var destType = node.<i>DataType</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#120"><b>120</b>if (node.<i>DataType</i> == ScriptDataType.MethodOrOperator)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#125"><b>125</b>Result result = node.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#170"><b>170</b>result.DataType = node.<i>DataType</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#176"><b>176</b>var destType = node.<i>DataType</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#180"><b>180</b>Debug.Assert(invocationNode.<i>DataType</i> == ScriptDataType.MethodOrOperator);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#292"><b>292</b>Debug.Assert(variable.DataType == valueExp.<i>DataType</i>);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (11)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#112"><b>112</b>DataType = node.<i>DataType</i>,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#199"><b>199</b>if (state.TopFrame.OriginatingNode.<i>DataType</i> == ScriptDataType.Void)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#228"><b>228</b>if (invocationNode.<i>DataType</i> != ScriptDataType.MethodOrOperator) Throw.InterpreterException($&quot;Invocation&#39;s first child must be of type {ScriptDataType.MethodOrOperator}&quot;, state);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#248"><b>248</b>Debug.Assert(node.<i>DataType</i> != ScriptDataType.MethodOrOperator, &quot;MethodOrOperator should be handled by wrapping node&quot;);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#250"><b>250</b>Result result = node.<i>DataType</i> switch</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#295"><b>295</b>result.DataType = node.<i>DataType</i>;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#458"><b>458</b>if (state.TopFrame.OriginatingNode.<i>DataType</i> == ScriptDataType.Void)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#492"><b>492</b>if (state.TopFrame.OriginatingNode.<i>DataType</i> == ScriptDataType.Void)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#508"><b>508</b>Debug.Assert(state.TopFrame.OriginatingNode.<i>DataType</i> == ScriptDataType.Void, &quot;A non-void evaluating expression must have a false condition expression&quot;);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#517"><b>517</b>if (state.TopFrame.OriginatingNode.<i>DataType</i> == ScriptDataType.Void)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#820"><b>820</b>var destType = completedFrame.OriginatingNode.<i>DataType</i>;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#504"><b>504</b>switch (node.<i>DataType</i>)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#207"><b>207</b>if (StringLiteralTypes.Contains(node.<i>DataType</i>))</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#213"><b>213</b>object nodeValue = node.<i>DataType</i> switch</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#209"><b>209</b>if (StringLiteralTypes.Contains(node.<i>DataType</i>))</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#215"><b>215</b>object nodeValue = node.<i>DataType</i> switch</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\AiGetContext.cs (6)</div>
 <a href="../Scripting/GenerationState/AiGetContext.cs.html#19"><b>19</b>this.OwnDataType = node.<i>DataType</i>;</a>
@@ -32,6 +58,9 @@
 <a href="../Scripting/GenerationState/FieldGetContext.cs.html#35"><b>35</b>if(nameRepo.TryGetName(stringVal, node.<i>DataType</i>.ToString(), node.NodeData_H16, out var finalName))</a>
 <a href="../Scripting/GenerationState/FieldGetContext.cs.html#46"><b>46</b>accessor = accessor.WithAdditionalAnnotations(ScriptGenAnnotations.TypeAnnotation(node.<i>DataType</i>));</a>
 </div>
+<div class="rF"><div class="rN">Scripting\GenerationState\GameDifficultyContext.cs (1)</div>
+<a href="../Scripting/GenerationState/GameDifficultyContext.cs.html#17"><b>17</b>this.OwnDataType = node.<i>DataType</i>;</a>
+</div>
 <div class="rF"><div class="rN">Scripting\GenerationState\LiteralContext.cs (3)</div>
 <a href="../Scripting/GenerationState/LiteralContext.cs.html#17"><b>17</b>this.OwnDataType = node.<i>DataType</i>;</a>
 <a href="../Scripting/GenerationState/LiteralContext.cs.html#19"><b>19</b>var dest = node.<i>DataType</i>;</a>
@@ -49,6 +78,13 @@
 <div class="rF"><div class="rN">Scripting\GenerationState\ScopeGenerationContext.cs (1)</div>
 <a href="../Scripting/GenerationState/ScopeGenerationContext.cs.html#17"><b>17</b>this.OwnDataType = node.<i>DataType</i>;</a>
 </div>
+<div class="rF"><div class="rN">Scripting\GenerationState\ScriptMethodReferenceContext.cs (5)</div>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#19"><b>19</b>this.OwnDataType = node.<i>DataType</i>;</a>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#23"><b>23</b>accessor = SyntaxFactory.DefaultExpression(SyntaxUtil.ScriptTypeSyntax(node.<i>DataType</i>));</a>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#31"><b>31</b>accessor = SyntaxFactory.DefaultExpression(SyntaxUtil.ScriptTypeSyntax(node.<i>DataType</i>));</a>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#35"><b>35</b>if(nameRepo.TryGetName(stringVal, node.<i>DataType</i>.ToString(), node.NodeData_H16, out var finalName))</a>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#49"><b>49</b>accessor = accessor.WithAdditionalAnnotations(ScriptGenAnnotations.TypeAnnotation(node.<i>DataType</i>));</a>
+</div>
 <div class="rF"><div class="rN">Scripting\GenerationState\TagGetContext.cs (2)</div>
 <a href="../Scripting/GenerationState/TagGetContext.cs.html#18"><b>18</b>this.OwnDataType = node.<i>DataType</i>;</a>
 <a href="../Scripting/GenerationState/TagGetContext.cs.html#28"><b>28</b>.WithAdditionalAnnotations(ScriptGenAnnotations.TypeAnnotation(node.<i>DataType</i>));</a>
@@ -65,13 +101,13 @@
 <a href="../Scripting/GenerationState/VariableAccessContext.cs.html#25"><b>25</b>.WithAdditionalAnnotations(ScriptGenAnnotations.TypeAnnotation(node.<i>DataType</i>));</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (2)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#48"><b>48</b>switch (node.<i>DataType</i>)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#90"><b>90</b>current.DataType = node.<i>DataType</i>;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#49"><b>49</b>switch (node.<i>DataType</i>)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#91"><b>91</b>current.DataType = node.<i>DataType</i>;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (3)</div>
 <a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#47"><b>47</b>else if (orig.<i>DataType</i> == ScriptDataType.Float)</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.<i>DataType</i>},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.ScriptIndex},dt:{(ushort?)orig?.<i>DataType</i>},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.OperationId},dt:{(ushort?)orig?.<i>DataType</i>},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.OperationId},dt:{(ushort?)orig?.<i>DataType</i>},nt:{(ushort?)orig?.NodeType},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (3)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#61"><b>61</b>map.WriteUInt16At(patchStart + 4, (ushort)patch.NodeData.<i>DataType</i>);</a>

@@ -140,9 +140,9 @@
                 <span class="r28 r">classGen</span>.<a href="ScriptCSharpGenerator.cs.html#88c829b0716c57de" class="i method">AddGlobalVariable</a>(<span class="r30 r">variable</span>);
             &rbrace;
  
-            <b>foreach</b> (<a href="../../Tags/Scenario/ScenarioScripting.cs.html#5c25ea3a03f33243" class="k">var</a> <span id="r31 rd" class="r31 r">script</span> <b>in</b> <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#296f9ff33e79186d" class="i property">ScriptMethods</a>)
+            <b>for</b> (<b>int</b> <span id="r31 rd" class="r31 r">i</span> = 0; <span class="r31 r">i</span> &lt; <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#296f9ff33e79186d" class="i property">ScriptMethods</a>.<span class="i property">Length</span>; <span class="r31 r">i</span>++)
             &lbrace;
-                <span class="r28 r">classGen</span>.<a href="ScriptCSharpGenerator.cs.html#beb520b889a4603d" class="i method">AddMethod</a>(<span class="r31 r">script</span>);
+                <span class="r28 r">classGen</span>.<a href="ScriptCSharpGenerator.cs.html#ac72517248f7b295" class="i method">AddMethod</a>(<span class="r31 r">i</span>, <span class="r12 r">scnr</span>.<a href="../../Tags/Scenario/ScenarioTag.cs.html#296f9ff33e79186d" class="i property">ScriptMethods</a>[<span class="r31 r">i</span>]);
             &rbrace;
  
             <a href="#f48687b1b2252972" class="k">this</a>.<a href="#d47d439aa545768f" class="i method">AddCode</a>(<span class="s">$&quot;</span>&lbrace;<span class="r13 r">scenarioParts</span>.<span class="i method">Last</span>()&rbrace;<span class="s">.cs</span><span class="s">&quot;</span>, <span class="r28 r">classGen</span>.<a href="ScriptCSharpGenerator.cs.html#37fabb83b592c0ea" class="i method">Generate</a>());

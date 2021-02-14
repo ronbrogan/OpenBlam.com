@@ -1,28 +1,86 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 instantiations of ScriptSyntaxNode</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#24"><b>24</b>Original = new ScenarioTag.<i>ScriptSyntaxNode</i>()</a>
+<div class="rH">4 instantiations of ScriptSyntaxNode</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#109"><b>109</b>var invocation = new ScenarioTag.<i>ScriptSyntaxNode</i>()</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#117"><b>117</b>var begin = new ScenarioTag.<i>ScriptSyntaxNode</i>()</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#25"><b>25</b>Original = new ScenarioTag.<i>ScriptSyntaxNode</i>()</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#86"><b>86</b>NodeData = new ScenarioTag.<i>ScriptSyntaxNode</i></a>
 </div>
 </div>
-<div class="rH">48 references to ScriptSyntaxNode</div><div class="rA">OpenH2.Core (48)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (12)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#346"><b>346</b><i>var</i> node = scenario.ScriptSyntaxNodes[variable.Value_H16];</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#413"><b>413</b><i>var</i> node = scenario.ScriptSyntaxNodes[currentIndex];</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#441"><b>441</b>private void PushNext(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#450"><b>450</b>private IGenerationContext HandleNodeStart(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#465"><b>465</b>private IGenerationContext HandleScopeStart(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#496"><b>496</b>private IGenerationContext HandleExpression(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#558"><b>558</b>IGenerationContext HandleVariableAccess(ScenarioTag.<i>ScriptSyntaxNode</i> access)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#564"><b>564</b>IGenerationContext HandleScriptInvocation(ScenarioTag.<i>ScriptSyntaxNode</i> invocation)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#570"><b>570</b>private IGenerationContext GetMethodState(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#577"><b>577</b>private IGenerationContext GetMethodState(ScenarioTag.<i>ScriptSyntaxNode</i> node, string methodName)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#605"><b>605</b>private void HandleNodeEnd(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#701"><b>701</b>private string GetScriptString(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<div class="rH">98 references to ScriptSyntaxNode</div><div class="rA">OpenH2.Core (98)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterState.cs (2)</div>
+<a href="../Scripting/Execution/InterpreterState.cs.html#12"><b>12</b>public ScenarioTag.<i>ScriptSyntaxNode</i> OriginatingNode;</a>
+<a href="../Scripting/Execution/InterpreterState.cs.html#13"><b>13</b>public ScenarioTag.<i>ScriptSyntaxNode</i> Current;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (29)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#47"><b>47</b>public Result Interpret(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#75"><b>75</b>private Result InterpretScope(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#116"><b>116</b>private Result InterpretExpression(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#174"><b>174</b>private Result InterpretScriptInvocation(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#178"><b>178</b><i>var</i> invocationNode = this.scenario.ScriptSyntaxNodes[node.NodeData_H16];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#215"><b>215</b>private Result InterpretMethodOrOperator(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#245"><b>245</b>private Result Begin(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#260"><b>260</b>private Result BeginRandom(ScenarioTag.<i>ScriptSyntaxNode</i> node, out ushort next)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#265"><b>265</b>private Result If(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#272"><b>272</b><i>var</i> trueExp = this.scenario.ScriptSyntaxNodes[argNext];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#280"><b>280</b><i>var</i> falseExp = this.scenario.ScriptSyntaxNodes[trueExp.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#285"><b>285</b>private Result Set(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#287"><b>287</b><i>var</i> variableAccess = this.scenario.ScriptSyntaxNodes[node.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#289"><b>289</b><i>var</i> valueExp = this.scenario.ScriptSyntaxNodes[variableAccess.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#302"><b>302</b>private Result And(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#322"><b>322</b>private Result Or(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#342"><b>342</b>private Result Not(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#358"><b>358</b>private Result Add(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#374"><b>374</b>private Result Subtract(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#390"><b>390</b>private Result Multiply(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#406"><b>406</b>private Result Divide(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#422"><b>422</b>private Result Min(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#438"><b>438</b>private Result Max(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#454"><b>454</b>private Result ValueEquals(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#473"><b>473</b>private Result GreaterThan(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#489"><b>489</b>private Result GreaterThanOrEquals(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#505"><b>505</b>private Result LessThan(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#521"><b>521</b>private Result LessThanOrEquals(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#544"><b>544</b>private partial Result DispatchMethod(ScenarioTag.<i>ScriptSyntaxNode</i> node);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (17)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#95"><b>95</b><i>var</i> node = this.scenario.ScriptSyntaxNodes[state.OriginalNodeIndex];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#100"><b>100</b>private void PushFrame(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#109"><b>109</b><i>var</i> invocation = new ScenarioTag.ScriptSyntaxNode()</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#117"><b>117</b><i>var</i> begin = new ScenarioTag.ScriptSyntaxNode()</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#159"><b>159</b>private void InterpretFrame(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#175"><b>175</b><i>var</i> nextNode = this.scenario.ScriptSyntaxNodes[top.Next];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#186"><b>186</b>private void InterpretScriptFrame(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#193"><b>193</b><i>var</i> methodFirstNode = this.scenario.ScriptSyntaxNodes[method.SyntaxNodeIndex];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#210"><b>210</b>private void Interpret(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#222"><b>222</b>private void PushInvocation(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#226"><b>226</b><i>var</i> invocationNode = this.scenario.ScriptSyntaxNodes[node.NodeData_H16];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#246"><b>246</b>private void InterpretExpression(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#301"><b>301</b>Result GetAiResult(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#317"><b>317</b>Result GetEntityResult(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#330"><b>330</b>private void InterpretVariableAccess(ScenarioTag.<i>ScriptSyntaxNode</i> node, ref State state)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#433"><b>433</b><i>var</i> sleepUntilNode = state.TopFrame.OriginatingNode;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#501"><b>501</b><i>var</i> trueExp = this.scenario.ScriptSyntaxNodes[state.TopFrame.Next];</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (12)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#348"><b>348</b><i>var</i> node = scenario.ScriptSyntaxNodes[variable.Value_H16];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#417"><b>417</b><i>var</i> node = scenario.ScriptSyntaxNodes[currentIndex];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#445"><b>445</b>private void PushNext(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#454"><b>454</b>private IGenerationContext HandleNodeStart(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#469"><b>469</b>private IGenerationContext HandleScopeStart(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#500"><b>500</b>private IGenerationContext HandleExpression(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#564"><b>564</b>IGenerationContext HandleVariableAccess(ScenarioTag.<i>ScriptSyntaxNode</i> access)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#570"><b>570</b>IGenerationContext HandleScriptInvocation(ScenarioTag.<i>ScriptSyntaxNode</i> invocation)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#576"><b>576</b>private IGenerationContext GetMethodState(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#583"><b>583</b>private IGenerationContext GetMethodState(ScenarioTag.<i>ScriptSyntaxNode</i> node, string methodName)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#611"><b>611</b>private void HandleNodeEnd(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#707"><b>707</b>private string GetScriptString(ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#205"><b>205</b>public static LiteralExpressionSyntax LiteralExpression(ScenarioTag tag, ScenarioTag.<i>ScriptSyntaxNode</i> node, ScriptDataType destinationType)</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#238"><b>238</b>public static string GetScriptString(ScenarioTag tag, ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#207"><b>207</b>public static LiteralExpressionSyntax LiteralExpression(ScenarioTag tag, ScenarioTag.<i>ScriptSyntaxNode</i> node, ScriptDataType destinationType)</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#239"><b>239</b>public static string GetScriptString(ScenarioTag tag, ScenarioTag.<i>ScriptSyntaxNode</i> node)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\AiGetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/AiGetContext.cs.html#17"><b>17</b>public AiGetContext(ScenarioTag scenario, ScenarioTag.<i>ScriptSyntaxNode</i> node, MemberNameRepository nameRepo) : base(node)</a>
@@ -48,6 +106,9 @@
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\FieldSetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/FieldSetContext.cs.html#16"><b>16</b>public FieldSetContext(ScenarioTag.<i>ScriptSyntaxNode</i> node) : base(node)</a>
+</div>
+<div class="rF"><div class="rN">Scripting\GenerationState\GameDifficultyContext.cs (1)</div>
+<a href="../Scripting/GenerationState/GameDifficultyContext.cs.html#15"><b>15</b>public GameDifficultyContext(ScenarioTag scenario, ScenarioTag.<i>ScriptSyntaxNode</i> node, Scope containing) : base(node)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\IfStatementContext.cs (1)</div>
 <a href="../Scripting/GenerationState/IfStatementContext.cs.html#31"><b>31</b>public IfStatementContext(ScenarioTag.<i>ScriptSyntaxNode</i> node, Scope containingScope) : base(node)</a>
@@ -75,6 +136,9 @@
 <div class="rF"><div class="rN">Scripting\GenerationState\ScriptInvocationContext.cs (1)</div>
 <a href="../Scripting/GenerationState/ScriptInvocationContext.cs.html#14"><b>14</b>public ScriptInvocationContext(ScenarioTag scenario, ScenarioTag.<i>ScriptSyntaxNode</i> node) : base(node)</a>
 </div>
+<div class="rF"><div class="rN">Scripting\GenerationState\ScriptMethodReferenceContext.cs (1)</div>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#17"><b>17</b>public ScriptMethodReferenceContext(ScenarioTag scenario, ScenarioTag.<i>ScriptSyntaxNode</i> node, MemberNameRepository nameRepo) : base(node)</a>
+</div>
 <div class="rF"><div class="rN">Scripting\GenerationState\SingleExpressionContext.cs (1)</div>
 <a href="../Scripting/GenerationState/SingleExpressionContext.cs.html#15"><b>15</b>public SingleExpressionStatementContext(ScenarioTag.<i>ScriptSyntaxNode</i> node, ScriptDataType scopeType) : base(node)</a>
 </div>
@@ -94,7 +158,7 @@
 <a href="../Scripting/GenerationState/VariableAccessContext.cs.html#15"><b>15</b>public VariableAccessContext(ScenarioTag tag, ScenarioTag.<i>ScriptSyntaxNode</i> node) : base(node)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#40"><b>40</b><i>var</i> node = tag.ScriptSyntaxNodes[currentIndex];</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#41"><b>41</b><i>var</i> node = tag.ScriptSyntaxNodes[currentIndex];</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (2)</div>
 <a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#14"><b>14</b>public ScenarioTag.<i>ScriptSyntaxNode</i> Original { get; set; }</a>

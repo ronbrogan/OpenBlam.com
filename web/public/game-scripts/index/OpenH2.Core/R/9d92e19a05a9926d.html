@@ -1,47 +1,35 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 instantiations of TagIndexEntry</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
-<a href="../Factories/MapFactory.cs.html#221"><b>221</b>var entry = new <i>TagIndexEntry</i></a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (1)</div>
-<a href="../Factories/MccMapFactory.cs.html#171"><b>171</b>var entry = new <i>TagIndexEntry</i></a>
+<div class="rH">1 instantiation of TagIndexEntry</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
+<a href="../Factories/MapFactory.cs.html#123"><b>123</b>var entry = new <i>TagIndexEntry</i></a>
 </div>
 </div>
-<div class="rH">23 references to TagIndexEntry</div><div class="rA">OpenH2.Core (23)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (7)</div>
-<a href="../Factories/MapFactory.cs.html#141"><b>141</b>foreach (<i>var</i> item in index)</a>
-<a href="../Factories/MapFactory.cs.html#166"><b>166</b>foreach(<i>var</i> item in index)</a>
-<a href="../Factories/MapFactory.cs.html#177"><b>177</b>public static BaseTag GetTag(H2BaseMap scene, <i>TagIndexEntry</i> entry, H2MapReader reader)</a>
-<a href="../Factories/MapFactory.cs.html#204"><b>204</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; GetTagIndex(H2BaseMap scene, TrackingReader reader, out int firstEntryOffset)</a>
-<a href="../Factories/MapFactory.cs.html#208"><b>208</b>var listBytes = reader.Chunk(index.TagIndexOffset.Value, index.TagIndexCount * <i>TagIndexEntry</i>.Size, &quot;TagIndex&quot;);</a>
-<a href="../Factories/MapFactory.cs.html#210"><b>210</b>var entries = new Dictionary&lt;uint, <i>TagIndexEntry</i>&gt;(index.TagIndexCount);</a>
-<a href="../Factories/MapFactory.cs.html#221"><b>221</b><i>var</i> entry = new TagIndexEntry</a>
-</div>
-<div class="rF"><div class="rN">Factories\MccMapFactory.cs (7)</div>
-<a href="../Factories/MccMapFactory.cs.html#91"><b>91</b>foreach (<i>var</i> item in index)</a>
-<a href="../Factories/MccMapFactory.cs.html#116"><b>116</b>foreach (<i>var</i> item in index)</a>
-<a href="../Factories/MccMapFactory.cs.html#127"><b>127</b>public static BaseTag GetTag(H2mccMap scene, <i>TagIndexEntry</i> entry, H2MapReader reader)</a>
-<a href="../Factories/MccMapFactory.cs.html#154"><b>154</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; GetTagIndex(H2mccMap scene, TrackingReader reader, out int firstEntryOffset)</a>
-<a href="../Factories/MccMapFactory.cs.html#158"><b>158</b>var listBytes = reader.Chunk(index.TagIndexOffset.Value, index.TagIndexCount * <i>TagIndexEntry</i>.Size, &quot;TagIndex&quot;);</a>
-<a href="../Factories/MccMapFactory.cs.html#160"><b>160</b>var entries = new Dictionary&lt;uint, <i>TagIndexEntry</i>&gt;(index.TagIndexCount);</a>
-<a href="../Factories/MccMapFactory.cs.html#171"><b>171</b><i>var</i> entry = new TagIndexEntry</a>
+<div class="rH">16 references to TagIndexEntry</div><div class="rA">OpenH2.Core (16)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (3)</div>
+<a href="../Factories/MapFactory.cs.html#107"><b>107</b>public static Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; BuildTagIndex(IH2Map scene, Stream reader, out int firstEntryOffset)</a>
+<a href="../Factories/MapFactory.cs.html#112"><b>112</b>var entries = new Dictionary&lt;uint, <i>TagIndexEntry</i>&gt;(index.TagIndexCount);</a>
+<a href="../Factories/MapFactory.cs.html#123"><b>123</b><i>var</i> entry = new TagIndexEntry</a>
 </div>
 <div class="rF"><div class="rN">Factories\TagFactory.cs (1)</div>
-<a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static BaseTag CreateTag(uint id, string name, <i>TagIndexEntry</i> index, H2BaseMap map, H2MapReader reader)</a>
+<a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static BaseTag CreateTag(uint id, string name, <i>TagIndexEntry</i> index, IH2Map map, MapStream reader)</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
-<a href="../Maps/H2BaseMap.cs.html#19"><b>19</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; }</a>
+<div class="rF"><div class="rN">Maps\H2BaseMap.cs (4)</div>
+<a href="../Maps/H2BaseMap.cs.html#44"><b>44</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; }</a>
+<a href="../Maps/H2BaseMap.cs.html#137"><b>137</b>if (this.TagIndex.TryGetValue(id, out <i>var</i> indexEntry))</a>
+<a href="../Maps/H2BaseMap.cs.html#181"><b>181</b>foreach(<i>var</i> entry in this.TagIndex.Values)</a>
+<a href="../Maps/H2BaseMap.cs.html#234"><b>234</b>protected BaseTag GetTag(<i>TagIndexEntry</i> entry)</a>
 </div>
-<div class="rF"><div class="rN">Maps\H2vLazyLoadingMap.cs (1)</div>
-<a href="../Maps/H2vLazyLoadingMap.cs.html#26"><b>26</b>if(this.TagIndex.TryGetValue(id, out <i>var</i> entry))</a>
+<div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
+<a href="../Maps/IH2Map.cs.html#20"><b>20</b>Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; }</a>
+<a href="../Maps/IH2Map.cs.html#49"><b>49</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; } = new();</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (5)</div>
-<a href="../Patching/TagPatcher.cs.html#48"><b>48</b><i>var</i> tagInfo = originalMap.TagIndex[tagId];</a>
-<a href="../Patching/TagPatcher.cs.html#61"><b>61</b>public void PatchBinaryData(<i>TagIndexEntry</i> tagInfo, TagBinaryPatch bin)</a>
-<a href="../Patching/TagPatcher.cs.html#71"><b>71</b>public void PatchProperty(<i>TagIndexEntry</i> tagInfo, TagPropertyPatch patch)</a>
-<a href="../Patching/TagPatcher.cs.html#80"><b>80</b>private ResolvedTagPropertyInfo ResolvePropertyInfo(<i>TagIndexEntry</i> tagInfo, string propertyPath)</a>
-<a href="../Patching/TagPatcher.cs.html#144"><b>144</b>private void WritePropertyValue(<i>TagIndexEntry</i> tagInfo, ResolvedTagPropertyInfo info, TagPropertyPatch patch)</a>
+<a href="../Patching/TagPatcher.cs.html#50"><b>50</b><i>var</i> tagInfo = originalMap.TagIndex[tagId];</a>
+<a href="../Patching/TagPatcher.cs.html#63"><b>63</b>public void PatchBinaryData(<i>TagIndexEntry</i> tagInfo, TagBinaryPatch bin)</a>
+<a href="../Patching/TagPatcher.cs.html#73"><b>73</b>public void PatchProperty(<i>TagIndexEntry</i> tagInfo, TagPropertyPatch patch)</a>
+<a href="../Patching/TagPatcher.cs.html#82"><b>82</b>private ResolvedTagPropertyInfo ResolvePropertyInfo(<i>TagIndexEntry</i> tagInfo, string propertyPath)</a>
+<a href="../Patching/TagPatcher.cs.html#146"><b>146</b>private void WritePropertyValue(<i>TagIndexEntry</i> tagInfo, ResolvedTagPropertyInfo info, TagPropertyPatch patch)</a>
 </div>
 <div class="rF"><div class="rN">Tags\BaseTag.cs (1)</div>
-<a href="../Tags/BaseTag.cs.html#19"><b>19</b>public <i>TagIndexEntry</i> TagIndexEntry { get; set; }</a>
+<a href="../Tags/BaseTag.cs.html#20"><b>20</b>public <i>TagIndexEntry</i> TagIndexEntry { get; set; }</a>
 </div>
 </div>
 </div>

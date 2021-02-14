@@ -1,0 +1,35 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Metrics</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Collections</span>.<span class="i n">Generic</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Threading</span>.<span class="i n">Tasks</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>.<span class="i n">Execution</span>
+&lbrace;
+    <b>public abstract class</b> <a id="fa8e98978526f955" href="../../R/fa8e98978526f955.html" target="n" data-glyph="0,0" class="t t"><span id="e27297ecc979f063">BaseScriptExecutor</span></a> : <a href="IScriptExecutor.cs.html#f2da735ca27aa204" class="t t">IScriptExecutor</a>, <a href="../../Metrics/IMetricSource.cs.html#bbbcfb4cbaa34dd0" class="t t">IMetricSource</a>
+    &lbrace;
+        <b>private bool</b> <a id="02963534c1ed576b" href="../../R/02963534c1ed576b.html" target="n" data-glyph="46,1" class="i field">metricsEnabled</a> = <b>false</b>;
+        <b>private</b> <a href="../../Metrics/IMetricSink.cs.html#7dbde7638d3c0b35" class="t t">IMetricSink</a> <a id="2e0b09c1e2c3efb2" href="../../R/2e0b09c1e2c3efb2.html" target="n" data-glyph="46,1" class="i field">metricSink</a>;
+ 
+        <b>public abstract</b> <span class="t valueType">ValueTask</span> <a id="116e1abb19d8b753" href="../../R/116e1abb19d8b753.html" target="n" data-glyph="72,1" class="i method">Delay</a>(<b>int</b> <span id="r0 rd" class="r0 r">ticks</span>);
+        <b>public abstract</b> <span class="t valueType">ValueTask</span> <a id="82c7248ed5057436" href="../../R/82c7248ed5057436.html" target="n" data-glyph="72,1" class="i method">Delay</a>(<b>ushort</b> <span id="r1 rd" class="r1 r">methodId</span>, <b>int</b> <span id="r2 rd" class="r2 r">ticks</span>);
+        <b>public abstract void</b> <a id="7c118e2ff7ebda11" href="../../R/7c118e2ff7ebda11.html" target="n" data-glyph="72,1" class="i method">Execute</a>();
+        <b>public abstract void</b> <a id="412845ceb6c847fa" href="../../R/412845ceb6c847fa.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <span id="r3 rd" class="r3 r">desiredStatus</span>);
+        <b>public abstract void</b> <a id="4fe0e4855df59959" href="../../R/4fe0e4855df59959.html" target="n" data-glyph="72,1" class="i method">SetStatus</a>(<b>ushort</b> <span id="r4 rd" class="r4 r">methodId</span>, <a href="ScriptStatus.cs.html#dc7060952719c9be" class="t valueType">ScriptStatus</a> <span id="r5 rd" class="r5 r">desiredStatus</span>);
+ 
+ 
+        <b>public void</b> <a id="42bcff99416e527b" href="../../R/42bcff99416e527b.html" target="n" data-glyph="72,1" class="i method">RecordMetric</a>(<a href="IScriptExecutor.cs.html#7422dd1f0686b7a9" class="t valueType">ScriptExecutionMetric</a> <span id="r6 rd" class="r6 r">metric</span>, <b>string</b> <span id="r7 rd" class="r7 r">dimension</span>, <b>long</b> <span id="r8 rd" class="r8 r">value</span>)
+        &lbrace;
+            <b>if</b> (!<a href="#02963534c1ed576b" class="i field">metricsEnabled</a>) <b>return</b>;
+ 
+            <a href="#2e0b09c1e2c3efb2" class="i field">metricSink</a>.<a href="../../Metrics/IMetricSink.cs.html#320498096be188a3" class="i method">Write</a>(<b>nameof</b>(<a href="IScriptExecutor.cs.html#f2da735ca27aa204" class="t t">IScriptExecutor</a>), <span class="s">$&quot;</span>&lbrace;<span class="r6 r">metric</span>&rbrace;<span class="s">,</span>&lbrace;<span class="r7 r">dimension</span>&rbrace;<span class="s">,</span>&lbrace;<span class="r8 r">value</span>&rbrace;<span class="s">&quot;</span>);
+        &rbrace;
+ 
+        <b>public void</b> <a id="7c32d6d6c2c1c314" href="../../R/7c32d6d6c2c1c314.html" target="n" data-glyph="72,1" class="i method">Enable</a>(<a href="../../Metrics/IMetricSink.cs.html#7dbde7638d3c0b35" class="t t">IMetricSink</a> <span id="r9 rd" class="r9 r">destination</span>)
+        &lbrace;
+            <a href="#2e0b09c1e2c3efb2" class="i field">metricSink</a> = <span class="r9 r">destination</span>;
+            <a href="#02963534c1ed576b" class="i field">metricsEnabled</a> = <b>true</b>;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

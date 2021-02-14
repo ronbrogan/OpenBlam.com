@@ -7,7 +7,7 @@
 <a href="../03b_newmombasa.cs.html#3088"><b>3088</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(<i>e23_cov_inf1_0</i>.Squad) &gt;= this.ai_combat_status_clear_los);</a>
 <a href="../03b_newmombasa.cs.html#3089"><b>3089</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(<i>e23_cov_inf1_0</i>.Squad) &lt;= this.ai_combat_status_active);</a>
 <a href="../03b_newmombasa.cs.html#3098"><b>3098</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>e23_cov_inf1_0</i>.ultra0) &lt;= 0, 15);</a>
-<a href="../03b_newmombasa.cs.html#3140"><b>3140</b>Engine.cs_run_command_script(<i>e23_cov_inf1_0</i>.ultra0, cs_best_cs_ever);</a>
+<a href="../03b_newmombasa.cs.html#3140"><b>3140</b>Engine.cs_run_command_script(<i>e23_cov_inf1_0</i>.ultra0, new ScriptMethodReference(cs_best_cs_ever));</a>
 <a href="../03b_newmombasa.cs.html#3149"><b>3149</b>Engine.ai_place(<i>e23_cov_inf1_0</i>.Squad, (short)Engine.pin(4F - (float)Engine.ai_living_count(e23_cov_inf0), 1F, 3F));</a>
 </div>
 </div>

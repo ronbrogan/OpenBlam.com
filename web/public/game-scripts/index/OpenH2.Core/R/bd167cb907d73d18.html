@@ -1,10 +1,16 @@
 ﻿<div class="referenceBody">
-<div class="rH">6 references to Size</div><div class="rA">OpenH2.Core (6)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Tags\BspTag.cs (4)</div>
-<a href="../Tags/BspTag.cs.html#161"><b>161</b>resource.Data = sceneReader.Chunk(new NormalOffset((int)dataOffset), resource.<i>Size</i>, &quot;Bsp Render Data&quot;).ReadArray(0, resource.<i>Size</i>);</a>
-<a href="../Tags/BspTag.cs.html#193"><b>193</b>resource.Data = sceneReader.Chunk(new NormalOffset((int)dataOffset), resource.<i>Size</i>, &quot;InstancedGeometry Render Data&quot;).ReadArray(0, resource.<i>Size</i>);</a>
+<div class="rH">9 references to Size</div><div class="rA">OpenH2.Core (9)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Tags\BspTag.cs (6)</div>
+<a href="../Tags/BspTag.cs.html#161"><b>161</b>var resourceData = new byte[resource.<i>Size</i>];</a>
+<a href="../Tags/BspTag.cs.html#162"><b>162</b>var readCount = mapData.Read(resourceData, 0, resource.<i>Size</i>);</a>
+<a href="../Tags/BspTag.cs.html#164"><b>164</b>Debug.Assert(readCount == resource.<i>Size</i>);</a>
+<a href="../Tags/BspTag.cs.html#191"><b>191</b>var resourceData = new byte[resource.<i>Size</i>];</a>
+<a href="../Tags/BspTag.cs.html#192"><b>192</b>var readCount = mapData.Read(resourceData, 0, resource.<i>Size</i>);</a>
+<a href="../Tags/BspTag.cs.html#194"><b>194</b>Debug.Assert(readCount == resource.<i>Size</i>);</a>
 </div>
-<div class="rF"><div class="rN">Tags\RenderModelTag.cs (2)</div>
-<a href="../Tags/RenderModelTag.cs.html#66"><b>66</b>resource.Data = sceneReader.Chunk(new NormalOffset((int)dataOffset), resource.<i>Size</i>, &quot;ModelMesh&quot;).ReadArray(0, resource.<i>Size</i>);</a>
+<div class="rF"><div class="rN">Tags\RenderModelTag.cs (3)</div>
+<a href="../Tags/RenderModelTag.cs.html#65"><b>65</b>var resourceData = new byte[resource.<i>Size</i>];</a>
+<a href="../Tags/RenderModelTag.cs.html#66"><b>66</b>var readCount = mapData.Read(resourceData, 0, resource.<i>Size</i>);</a>
+<a href="../Tags/RenderModelTag.cs.html#68"><b>68</b>Debug.Assert(readCount == resource.<i>Size</i>);</a>
 </div>
 </div>
 </div>

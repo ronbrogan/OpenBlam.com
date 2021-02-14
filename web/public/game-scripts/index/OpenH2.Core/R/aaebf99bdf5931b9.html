@@ -1,32 +1,49 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 writes to NodeType</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#28"><b>28</b><i>NodeType</i> = NodeType.MethodDecl,</a>
+<div class="rH">4 writes to NodeType</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#111"><b>111</b><i>NodeType</i> = NodeType.BuiltinInvocation,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#119"><b>119</b><i>NodeType</i> = NodeType.Expression,</a>
+</div>
+<div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#29"><b>29</b><i>NodeType</i> = NodeType.MethodDecl,</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#91"><b>91</b><i>NodeType</i> = (NodeType)ParseFrom(line, &quot;nt:&quot;),</a>
 </div>
 </div>
-<div class="rH">18 references to NodeType</div><div class="rA">OpenH2.Core (18)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (2)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#452"><b>452</b>return node.<i>NodeType</i> switch</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#458"><b>458</b>_ =&gt; throw new NotSupportedException($&quot;Node type {node.<i>NodeType</i>} is not yet supported&quot;)</a>
+<div class="rH">29 references to NodeType</div><div class="rA">OpenH2.Core (29)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (3)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#51"><b>51</b>return node.<i>NodeType</i> switch</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#179"><b>179</b>Debug.Assert(invocationNode.<i>NodeType</i> == NodeType.Expression);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#288"><b>288</b>Debug.Assert(variableAccess.<i>NodeType</i> == NodeType.VariableAccess);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (8)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#102"><b>102</b>if (node.<i>NodeType</i> == NodeType.BuiltinInvocation || node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#161"><b>161</b>switch (node.<i>NodeType</i>)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#212"><b>212</b>switch (node.<i>NodeType</i>)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#218"><b>218</b>default: Throw.InterpreterException($&quot;NodeType {node.<i>NodeType</i>} is not supported&quot;, state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#224"><b>224</b>Debug.Assert(node.<i>NodeType</i> == NodeType.BuiltinInvocation || node.<i>NodeType</i> == NodeType.ScriptInvocation);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#227"><b>227</b>if (invocationNode.<i>NodeType</i> != NodeType.Expression) Throw.InterpreterException(&quot;Invocation&#39;s first child must be an expression&quot;, state);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (2)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#456"><b>456</b>return node.<i>NodeType</i> switch</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#462"><b>462</b>_ =&gt; throw new NotSupportedException($&quot;Node type {node.<i>NodeType</i>} is not yet supported&quot;)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\UnknownContext.cs (1)</div>
 <a href="../Scripting/GenerationState/UnknownContext.cs.html#26"><b>26</b>unknownDescription += $&quot; -{node.<i>NodeType</i>}&lt;{node.DataType}&gt;&quot;;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (6)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#46"><b>46</b>if (node.<i>NodeType</i> == NodeType.Expression)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#80"><b>80</b>else if (node.<i>NodeType</i> == NodeType.VariableAccess)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#84"><b>84</b>else if (node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#91"><b>91</b>current.Type = node.<i>NodeType</i>;</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#102"><b>102</b>if (node.<i>NodeType</i> == NodeType.Scope || node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#47"><b>47</b>if (node.<i>NodeType</i> == NodeType.Expression)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#81"><b>81</b>else if (node.<i>NodeType</i> == NodeType.VariableAccess)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#85"><b>85</b>else if (node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#92"><b>92</b>current.Type = node.<i>NodeType</i>;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#103"><b>103</b>if (node.<i>NodeType</i> == NodeType.BuiltinInvocation || node.<i>NodeType</i> == NodeType.ScriptInvocation)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (3)</div>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#51"><b>51</b>else if (orig.<i>NodeType</i> == NodeType.Scope)</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.<i>NodeType</i>},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.ScriptIndex},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.<i>NodeType</i>},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#51"><b>51</b>else if (orig.<i>NodeType</i> == NodeType.BuiltinInvocation)</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#62"><b>62</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} check:{orig?.Checkval},op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.<i>NodeType</i>},next:{orig?.NextIndex},nextCheck:{orig?.NextCheckval},str:{orig?.NodeString},h:{orig?.ValueH},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#66"><b>66</b>b.Append($&quot;, {current.node.Type}&lt;{current.node.DataType}&gt; @:{current.node.Index} op:{orig?.OperationId},dt:{(ushort?)orig?.DataType},nt:{(ushort?)orig?.<i>NodeType</i>},next:{orig?.NextIndex},str:{orig?.NodeString},d0:{orig?.NodeData_H16},d1:{orig?.NodeData_L16};&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (6)</div>
-<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#46"><b>46</b>if ((patch.NodeData.<i>NodeType</i> == NodeType.Scope || patch.NodeData.<i>NodeType</i> == NodeType.ScriptInvocation))</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#46"><b>46</b>if ((patch.NodeData.<i>NodeType</i> == NodeType.BuiltinInvocation || patch.NodeData.<i>NodeType</i> == NodeType.ScriptInvocation))</a>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#62"><b>62</b>map.WriteUInt16At(patchStart + 6, (ushort)patch.NodeData.<i>NodeType</i>);</a>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#100"><b>100</b>if (patch.NodeData.<i>NodeType</i> == NodeType.MethodDecl)</a>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#109"><b>109</b>|| node.<i>NodeType</i> != patch.NodeData.<i>NodeType</i></a>

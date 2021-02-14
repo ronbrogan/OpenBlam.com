@@ -8,7 +8,7 @@
 <a href="../03a_oldmombasa.cs.html#3846"><b>3846</b>Engine.ai_place(<i>e7_cov_inf0</i>.Squad);</a>
 <a href="../03a_oldmombasa.cs.html#3856"><b>3856</b>Engine.ai_set_blind(<i>e7_cov_inf0</i>.Squad, false);</a>
 <a href="../03a_oldmombasa.cs.html#3860"><b>3860</b>Engine.ai_set_blind(<i>e7_cov_inf0</i>.Squad, true);</a>
-<a href="../03a_oldmombasa.cs.html#3865"><b>3865</b>Engine.cs_run_command_script(<i>e7_cov_inf0</i>.Squad, cs_e7_abort);</a>
+<a href="../03a_oldmombasa.cs.html#3865"><b>3865</b>Engine.cs_run_command_script(<i>e7_cov_inf0</i>.Squad, new ScriptMethodReference(cs_e7_abort));</a>
 <a href="../03a_oldmombasa.cs.html#3866"><b>3866</b>Engine.ai_set_blind(<i>e7_cov_inf0</i>.Squad, false);</a>
 <a href="../03a_oldmombasa.cs.html#3889"><b>3889</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_spawn_count(<i>e7_cov_inf0</i>.Squad) &gt; 0, 10);</a>
 </div>

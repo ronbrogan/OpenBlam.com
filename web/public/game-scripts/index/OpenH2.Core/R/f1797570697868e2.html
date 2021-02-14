@@ -1,9 +1,18 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 references to Expression</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#455"><b>455</b>NodeType.<i>Expression</i> =&gt; HandleExpression(node),</a>
+<div class="rH">7 references to Expression</div><div class="rA">OpenH2.Core (7)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#54"><b>54</b>NodeType.<i>Expression</i> =&gt; InterpretExpression(node, out next),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#179"><b>179</b>Debug.Assert(invocationNode.NodeType == NodeType.<i>Expression</i>);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (3)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#119"><b>119</b>NodeType = NodeType.<i>Expression</i>,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#216"><b>216</b>case NodeType.<i>Expression</i>: InterpretExpression(node, ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#227"><b>227</b>if (invocationNode.NodeType != NodeType.<i>Expression</i>) Throw.InterpreterException(&quot;Invocation&#39;s first child must be an expression&quot;, state);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#459"><b>459</b>NodeType.<i>Expression</i> =&gt; HandleExpression(node),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#46"><b>46</b>if (node.NodeType == NodeType.<i>Expression</i>)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#47"><b>47</b>if (node.NodeType == NodeType.<i>Expression</i>)</a>
 </div>
 </div>
 </div>

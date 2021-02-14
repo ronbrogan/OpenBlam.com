@@ -1,15 +1,34 @@
 ﻿<div class="referenceBody">
-<div class="rH">6 references to Boolean</div><div class="rA">OpenH2.Core (6)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#547"><b>547</b>case ScriptDataType.<i>Boolean</i>:</a>
+<div class="rH">19 references to Boolean</div><div class="rA">OpenH2.Core (19)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (1)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#112"><b>112</b>public static InterpreterResult From(bool v, ScriptDataType t = ScriptDataType.<i>Boolean</i>) =&gt; new InterpreterResult() { Boolean = v, DataType = t };</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (6)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#128"><b>128</b>ScriptDataType.<i>Boolean</i> =&gt; Result.From(node.NodeData_B3 == 1 ? true : false),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#270"><b>270</b>Debug.Assert(condition.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#311"><b>311</b>Debug.Assert(operand.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#331"><b>331</b>Debug.Assert(operand.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#350"><b>350</b>Debug.Assert(operand.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#464"><b>464</b>ScriptDataType.<i>Boolean</i> =&gt; Result.From(left.Boolean == right.Boolean),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (6)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#253"><b>253</b>ScriptDataType.<i>Boolean</i> =&gt; Result.From(node.NodeData_B3 == 1 ? true : false),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#487"><b>487</b>Debug.Assert(condition.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#560"><b>560</b>Debug.Assert(operand.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#574"><b>574</b>Debug.Assert(operand.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#598"><b>598</b>Debug.Assert(operand.DataType == ScriptDataType.<i>Boolean</i>);</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#719"><b>719</b>ScriptDataType.<i>Boolean</i> =&gt; Result.From(left.Boolean == right.Boolean),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#552"><b>552</b>case ScriptDataType.<i>Boolean</i>:</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (4)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#27"><b>27</b>ScriptDataType.<i>Boolean</i> =&gt; PredefinedType(Token(SyntaxKind.BoolKeyword)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#106"><b>106</b>{ typeof(bool), ScriptDataType.<i>Boolean</i> },</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#218"><b>218</b>ScriptDataType.<i>Boolean</i> =&gt; node.NodeData_B3 == 1,</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#229"><b>229</b>ScriptDataType.<i>Boolean</i> =&gt; LiteralExpression(Convert.ToBoolean(nodeValue)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#28"><b>28</b>ScriptDataType.<i>Boolean</i> =&gt; PredefinedType(Token(SyntaxKind.BoolKeyword)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#107"><b>107</b>{ typeof(bool), ScriptDataType.<i>Boolean</i> },</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#219"><b>219</b>ScriptDataType.<i>Boolean</i> =&gt; node.NodeData_B3 == 1,</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#230"><b>230</b>ScriptDataType.<i>Boolean</i> =&gt; LiteralExpression(Convert.ToBoolean(nodeValue)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#50"><b>50</b>case ScriptDataType.<i>Boolean</i>:</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#51"><b>51</b>case ScriptDataType.<i>Boolean</i>:</a>
 </div>
 </div>
 </div>

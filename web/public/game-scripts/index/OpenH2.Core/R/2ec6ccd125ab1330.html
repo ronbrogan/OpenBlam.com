@@ -5,16 +5,33 @@
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#96"><b>96</b><i>NodeData_32</i> = ParseFrom(line, &quot;d0:&quot;) | ((uint)ParseFrom(line, &quot;d1:&quot;, &quot;;&quot;)) &lt;&lt; 16</a>
 </div>
 </div>
-<div class="rH">15 references to NodeData_32</div><div class="rA">OpenH2.Core (15)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#216"><b>216</b>ScriptDataType.Float =&gt; BitConverter.ToSingle(BitConverter.GetBytes((int)node.<i>NodeData_32</i>), 0),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#217"><b>217</b>ScriptDataType.Int =&gt; (int)node.<i>NodeData_32</i>,</a>
+<div class="rH">28 references to NodeData_32</div><div class="rA">OpenH2.Core (28)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#129"><b>129</b>ScriptDataType.Float =&gt; Result.From(node.<i>NodeData_32</i>),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#131"><b>131</b>ScriptDataType.Int =&gt; Result.From(node.<i>NodeData_32</i>),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (11)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#254"><b>254</b>ScriptDataType.Float =&gt; Result.From(node.<i>NodeData_32</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#256"><b>256</b>ScriptDataType.Int =&gt; Result.From(node.<i>NodeData_32</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#257"><b>257</b>ScriptDataType.VehicleSeat =&gt; Result.From(node.<i>NodeData_32</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#260"><b>260</b>ScriptDataType.StringId =&gt; Result.From(node.<i>NodeData_32</i>),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#275"><b>275</b>ScriptDataType.Sound =&gt; Result.From(this.scriptEngine.GetTag&lt;SoundTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#276"><b>276</b>ScriptDataType.Effect =&gt; Result.From(this.scriptEngine.GetTag&lt;EffectTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#277"><b>277</b>ScriptDataType.DamageEffect =&gt; Result.From(this.scriptEngine.GetTag&lt;DamageEffectTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#278"><b>278</b>ScriptDataType.LoopingSound =&gt; Result.From(this.scriptEngine.GetTag&lt;LoopingSoundTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#279"><b>279</b>ScriptDataType.TagReference =&gt; Result.From(this.scriptEngine.GetTag&lt;BaseTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#280"><b>280</b>ScriptDataType.Animation =&gt; Result.From(this.scriptEngine.GetTag&lt;AnimationGraphTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#281"><b>281</b>ScriptDataType.Model =&gt; Result.From(this.scriptEngine.GetTag&lt;RenderModelTag&gt;(null, node.<i>NodeData_32</i>)),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#217"><b>217</b>ScriptDataType.Float =&gt; BitConverter.Int32BitsToSingle((int)node.<i>NodeData_32</i>),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#218"><b>218</b>ScriptDataType.Int =&gt; (int)node.<i>NodeData_32</i>,</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\TagGetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/TagGetContext.cs.html#27"><b>27</b>Argument(SyntaxUtil.LiteralExpression(node.<i>NodeData_32</i>)))</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (2)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#44"><b>44</b>object value = node.<i>NodeData_32</i>;</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#57"><b>57</b>value = BitConverter.Int32BitsToSingle((int)node.<i>NodeData_32</i>);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#45"><b>45</b>object value = node.<i>NodeData_32</i>;</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#58"><b>58</b>value = BitConverter.Int32BitsToSingle((int)node.<i>NodeData_32</i>);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreeNode.cs (1)</div>
 <a href="../Scripting/LowLevel/ScriptTreeNode.cs.html#49"><b>49</b>b.Append(BitConverter.Int32BitsToSingle((int)orig.<i>NodeData_32</i>)).Append(&quot;f&quot;);</a>

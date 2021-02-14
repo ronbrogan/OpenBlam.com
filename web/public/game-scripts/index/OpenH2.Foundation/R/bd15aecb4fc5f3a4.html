@@ -18,14 +18,14 @@
 <a href="../../OpenH2.Core/Factories/ModelFactory.cs.html#90"><b>90</b>new <i>VertexFormat</i>(new Vector3(0.12f, 0.12f, 0.25f), new Vector2(), new Vector3()),</a>
 <a href="../../OpenH2.Core/Factories/ModelFactory.cs.html#91"><b>91</b>new <i>VertexFormat</i>(new Vector3(0.12f, 0.12f, -0.25f), new Vector2(), new Vector3())</a>
 </div>
-<div class="rF"><div class="rN">Tags\Common\Models\ModelResouceContainerProcessor.cs (1)</div>
-<a href="../../OpenH2.Core/Tags/Common/Models/ModelResouceContainerProcessor.cs.html#112"><b>112</b>var vert = new <i>VertexFormat</i>();</a>
+<div class="rF"><div class="rN">Tags\Common\Models\ModelResourceContainerProcessor.cs (1)</div>
+<a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#113"><b>113</b>var vert = new <i>VertexFormat</i>();</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
-<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#113"><b>113</b>var newVert = new <i>VertexFormat</i>(newPos,</a>
+<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#117"><b>117</b>var newVert = new <i>VertexFormat</i>(newPos,</a>
 </div>
 </div>
-<div class="rH">20 references to VertexFormat</div><div class="rA">OpenH2.Core (18)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">ExternalFormats\WavefrontObjWriter.cs (5)</div>
+<div class="rH">19 references to VertexFormat</div><div class="rA">OpenH2.Core (17)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">ExternalFormats\WavefrontObjWriter.cs (5)</div>
 <a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#17"><b>17</b>private Dictionary&lt;(<i>VertexFormat</i>[], Matrix4x4), int&gt; indexBasis = new Dictionary&lt;(<i>VertexFormat</i>[], Matrix4x4), int&gt;();</a>
 <a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#53"><b>53</b>foreach (<i>var</i> vert in verts)</a>
 <a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#60"><b>60</b>foreach (<i>var</i> vert in verts)</a>
@@ -41,18 +41,15 @@
 <a href="../../OpenH2.Core/Tags/Common/Models/ModelMesh.cs.html#36"><b>36</b>EqualityComparer&lt;<i>VertexFormat</i>[]&gt;.Default.Equals(this.Verticies, other.Verticies) &amp;&amp;</a>
 <a href="../../OpenH2.Core/Tags/Common/Models/ModelMesh.cs.html#48"><b>48</b>hashCode = hashCode * -1521134295 + EqualityComparer&lt;<i>VertexFormat</i>[]&gt;.Default.GetHashCode(this.Verticies);</a>
 </div>
-<div class="rF"><div class="rN">Tags\Common\Models\ModelResouceContainerProcessor.cs (4)</div>
-<a href="../../OpenH2.Core/Tags/Common/Models/ModelResouceContainerProcessor.cs.html#31"><b>31</b>var verts = new <i>VertexFormat</i>[container.VertexCount];</a>
-<a href="../../OpenH2.Core/Tags/Common/Models/ModelResouceContainerProcessor.cs.html#112"><b>112</b><i>var</i> vert = new VertexFormat();</a>
-<a href="../../OpenH2.Core/Tags/Common/Models/ModelResouceContainerProcessor.cs.html#128"><b>128</b><i>var</i> vert = verts[i];</a>
-<a href="../../OpenH2.Core/Tags/Common/Models/ModelResouceContainerProcessor.cs.html#144"><b>144</b><i>var</i> vert = verts[i];</a>
+<div class="rF"><div class="rN">Tags\Common\Models\ModelResourceContainerProcessor.cs (4)</div>
+<a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#32"><b>32</b>var verts = new <i>VertexFormat</i>[container.VertexCount];</a>
+<a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#113"><b>113</b><i>var</i> vert = new VertexFormat();</a>
+<a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#129"><b>129</b><i>var</i> vert = verts[i];</a>
+<a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#145"><b>145</b><i>var</i> vert = verts[i];</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (2)</div>
-<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#98"><b>98</b><i>var</i> vert = mesh.Verticies[i];</a>
-<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#113"><b>113</b><i>var</i> newVert = new VertexFormat(newPos,</a>
-</div>
-<div class="rF"><div class="rN">Types\ModeMesh.cs (1)</div>
-<a href="../../OpenH2.Core/Types/ModeMesh.cs.html#21"><b>21</b>public <i>VertexFormat</i>[] Verticies { get; set; }</a>
+<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#102"><b>102</b><i>var</i> vert = mesh.Verticies[i];</a>
+<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#117"><b>117</b><i>var</i> newVert = new VertexFormat(newPos,</a>
 </div>
 </div>
 <div class="rA">OpenH2.Foundation (2)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Mesh.cs (1)</div>

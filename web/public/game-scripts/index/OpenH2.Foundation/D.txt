@@ -1,26 +1,63 @@
-﻿action;22bc09502c7c556c;field;OpenH2.Foundation.FileSystem.FileWatcher.FileWatcherCallback.action;46
-AddListener;8b4c6dd4aa0953b4;method;OpenH2.Foundation.FileSystem.FileWatcher.AddListener(System.Action<System.String>);72
+﻿Add;b8d344f4a16ecffd;method;OpenH2.Foundation._3D.QuickHull.FaceList.Add(OpenH2.Foundation._3D.QuickHull.Face);72
+Add;be0ff17d4dae43a6;method;OpenH2.Foundation._3D.QuickHull.VertexList.Add(OpenH2.Foundation._3D.QuickHull.Vertex);72
+AddAdjoiningFace;81729076209dd7a8;method;OpenH2.Foundation._3D.QuickHull.AddAdjoiningFace(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.HalfEdge);76
+AddAll;724f796fd6424c5a;method;OpenH2.Foundation._3D.QuickHull.VertexList.AddAll(OpenH2.Foundation._3D.QuickHull.Vertex);72
+AddNewFaces;e9a5f54caa4dc29a;method;OpenH2.Foundation._3D.QuickHull.AddNewFaces(OpenH2.Foundation._3D.QuickHull.Vertex);76
+AddPointToFace;256c51c491d8214b;method;OpenH2.Foundation._3D.QuickHull.AddPointToFace(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Face);76
+AddPointToHull;b75051cc13cc7121;method;OpenH2.Foundation._3D.QuickHull.AddPointToHull(OpenH2.Foundation._3D.QuickHull.Vertex);76
+AlphaFromRed;78272c7ae3af1f4d;property;OpenH2.Foundation.IMaterial<TTexture>.AlphaFromRed;102
+AlphaFromRed;eefa3c07025e4e74;property;OpenH2.Foundation.Material<TTexture>.AlphaFromRed;102
 AlphaMap;02f84cf7d0d079f1;property;OpenH2.Foundation.Material<TTexture>.AlphaMap;102
 AlphaMap;b93cf4b610b5baaa;property;OpenH2.Foundation.IMaterial<TTexture>.AlphaMap;102
 AngularVelocity;8c75ed35e335fca3;property;OpenH2.Foundation.Physics.IRigidBody.AngularVelocity;102
 AnimationMap;9b1c01e7d14bb7a7;property;OpenH2.Foundation.Material<TTexture>.AnimationMap;102
 AnimationMap;f376f0cd4a8ae520;property;OpenH2.Foundation.IMaterial<TTexture>.AnimationMap;102
 ApplyScaledVector;bec6717504d4e2ab;method;OpenH2.Foundation.Extensions.IntegrationExtensions.ApplyScaledVector(System.Numerics.Quaternion, System.Numerics.Vector3, System.Single);220
+Area;42b8dfba2ac5c92f;property;OpenH2.Foundation._3D.QuickHull.Face.Area;102
+AUTOMATIC_TOLERANCE;e35eabea6b017d15;field;OpenH2.Foundation._3D.QuickHull.AUTOMATIC_TOLERANCE;10
 Bitangent;041386723de1d5ba;field;OpenH2.Foundation.VertexFormat.Bitangent;42
-callbacks;605c4dc85a396c34;field;OpenH2.Foundation.FileSystem.FileWatcher.callbacks;46
+BuildHull;f347444b88312934;method;OpenH2.Foundation._3D.QuickHull.BuildHull();75
+CalculateHorizon;16f27b90f816d253;method;OpenH2.Foundation._3D.QuickHull.CalculateHorizon(System.Numerics.Vector3, OpenH2.Foundation._3D.QuickHull.HalfEdge, OpenH2.Foundation._3D.QuickHull.Face);76
 CastsShadows;4897a06b0025392f;field;OpenH2.Foundation.ModelFlags.CastsShadows;24
-cbs;a4ba64ef5802edf6;field;OpenH2.Foundation.FileSystem.FileWatcher.FileWatcherCallback.cbs;46
 CenterOfMass;d65cce4932d5635b;property;OpenH2.Foundation.Physics.IRigidBody.CenterOfMass;102
+Centroid;8c0e3402b814579b;property;OpenH2.Foundation._3D.QuickHull.Face.Centroid;102
+charLength;74f055c0dcb2c462;field;OpenH2.Foundation._3D.QuickHull.charLength;46
+CheckConsistency;355c887cd6fc30a5;method;OpenH2.Foundation._3D.QuickHull.Face.CheckConsistency();72
+CheckFaceConvexity;7c69d83d88e5d2a8;method;OpenH2.Foundation._3D.QuickHull.CheckFaceConvexity(OpenH2.Foundation._3D.QuickHull.Face, System.Double, System.Text.StringBuilder);76
+CheckFaces;b8e2c46f27064db8;method;OpenH2.Foundation._3D.QuickHull.CheckFaces(System.Double, System.Text.StringBuilder);75
+claimed;5516f904027f1512;field;OpenH2.Foundation._3D.QuickHull.claimed;46
 Clamp;9887dfdd7aa1c08f;method;OpenH2.Foundation.Extensions.MathExt.Clamp(System.Single, System.Single, System.Single);72
+Clear;3d8e46bd5d032771;method;OpenH2.Foundation._3D.QuickHull.VertexList.Clear();72
+Clear;5699a67eecd3c590;method;OpenH2.Foundation._3D.QuickHull.FaceList.Clear();72
+CLOCKWISE;ed2c3024d8a0d07f;field;OpenH2.Foundation._3D.QuickHull.CLOCKWISE;6
 Collider;f6533662c928787a;property;OpenH2.Foundation.Physics.IBody.Collider;102
+Collision;8b8f13b48e73e50d;field;OpenH2.Foundation.RenderLayers.Collision;24
 Color;d56a203151a45eb8;class;OpenH2.Foundation.Logging.Logger.Color;0
 Color;f6ca566f4079b604;property;OpenH2.Foundation.PointLight.Color;102
+ColorChangeColor;8ce4b3d6760427ea;property;OpenH2.Foundation.Material<TTexture>.ColorChangeColor;102
+ColorChangeData;ff63d3b6299582d1;property;OpenH2.Foundation.Model<TTexture>.ColorChangeData;102
+ColorChangeMask;0b15cfffc8f2be7d;property;OpenH2.Foundation.Material<TTexture>.ColorChangeMask;102
+ColorChangeMask;a54d2be850fa6d7d;property;OpenH2.Foundation.IMaterial<TTexture>.ColorChangeMask;102
 Compressed;f9eebe4f68bfc1d9;property;OpenH2.Foundation.Mesh<TTexture>.Compressed;102
-ContinuationStack<T>;f8c75e129ae86fa9;class;OpenH2.Foundation.Collections.ContinuationStack<T>;0
+ComputeCentroid;0c02023e55e7d346;method;OpenH2.Foundation._3D.QuickHull.Face.ComputeCentroid();72
+ComputeMaxAndMin;f9da58f6fe5b5831;method;OpenH2.Foundation._3D.QuickHull.ComputeMaxAndMin();75
+ComputeNormal;028fd5ede830cffe;method;OpenH2.Foundation._3D.QuickHull.Face.ComputeNormal();72
+ComputeNormal;a767f744f1c77152;method;OpenH2.Foundation._3D.QuickHull.Face.ComputeNormal(System.Double);72
+ComputeNormalAndCentroid;a84ddceb7bc54311;method;OpenH2.Foundation._3D.QuickHull.Face.ComputeNormalAndCentroid();76
+ComputeNormalAndCentroid;fdf24b0532894374;method;OpenH2.Foundation._3D.QuickHull.Face.ComputeNormalAndCentroid(System.Double);76
+ConnectHalfEdges;cf605df9b5628e33;method;OpenH2.Foundation._3D.QuickHull.Face.ConnectHalfEdges(OpenH2.Foundation._3D.QuickHull.HalfEdge, OpenH2.Foundation._3D.QuickHull.HalfEdge);76
+CreateInitialSimplex;6fd2267808210e67;method;OpenH2.Foundation._3D.QuickHull.CreateInitialSimplex();75
+CreateTransformationMatrix;11a4cc66c311fb42;method;OpenH2.Foundation.Transform.CreateTransformationMatrix();76
 CreateTransformationMatrix;a385030c3d91a855;method;OpenH2.Foundation.Model<TTexture>.CreateTransformationMatrix();72
-Cross;f4292c8c579172b6;method;OpenH2.Foundation.Numerics.VectorD3.Cross(OpenH2.Foundation.Numerics.VectorD3, OpenH2.Foundation.Numerics.VectorD3);72
+CreateTriangle;17cc5346f14b6bda;method;OpenH2.Foundation._3D.QuickHull.Face.CreateTriangle(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex);72
+CreateTriangle;dd81895c30c4d0f4;method;OpenH2.Foundation._3D.QuickHull.Face.CreateTriangle(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex, System.Double);72
 Cyan;5a0d8b95cefa5d76;field;OpenH2.Foundation.Logging.Logger.Color.Cyan;42
+Debug;0df1453dd2d38aa2;field;OpenH2.Foundation.RenderLayers.Debug;24
 DebugViz;d56b70e40e14fd73;field;OpenH2.Foundation.ModelFlags.DebugViz;24
+Delete;ae88767cbf2d4f2a;method;OpenH2.Foundation._3D.QuickHull.VertexList.Delete(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex);72
+Delete;cdb7ff068bba3671;method;OpenH2.Foundation._3D.QuickHull.VertexList.Delete(OpenH2.Foundation._3D.QuickHull.Vertex);72
+DELETED;680786556bb404fa;field;OpenH2.Foundation._3D.QuickHull.Face.DELETED;6
+DeleteFacePoints;0d2d5ee6f79e2b54;method;OpenH2.Foundation._3D.QuickHull.DeleteFacePoints(OpenH2.Foundation._3D.QuickHull.Face, OpenH2.Foundation._3D.QuickHull.Face);76
 Detail1Scale;6eb3454005a20dd6;property;OpenH2.Foundation.IMaterial<TTexture>.Detail1Scale;102
 Detail1Scale;6fa0cf2247348814;property;OpenH2.Foundation.Material<TTexture>.Detail1Scale;102
 Detail2Scale;164cf449ee759db3;property;OpenH2.Foundation.IMaterial<TTexture>.Detail2Scale;102
@@ -37,9 +74,12 @@ DiffuseMap;8d5ec4720c7b845d;property;OpenH2.Foundation.Material<TTexture>.Diffus
 DiffuseMap;a8bb16167533d98f;property;OpenH2.Foundation.IMaterial<TTexture>.DiffuseMap;102
 Dirty;f2ebf5e16f1b95db;property;OpenH2.Foundation.Mesh<TTexture>.Dirty;102
 Disabled;8067e7ed81f40848;field;OpenH2.Foundation.EmissiveType.Disabled;24
-Dispose;0e0f1ba8a743b172;method;OpenH2.Foundation.FileSystem.FileWatcher.Dispose();72
-Dispose;1dc57053a93d9629;method;OpenH2.Foundation.FileSystem.FileWatcher.FileWatcherCallback.Dispose();72
-Dot;6cdabce3798f440f;method;OpenH2.Foundation.Numerics.VectorD3.Dot(OpenH2.Foundation.Numerics.VectorD3, OpenH2.Foundation.Numerics.VectorD3);72
+discardedFaces;78fc6ffb60155e8b;field;OpenH2.Foundation._3D.QuickHull.discardedFaces;46
+Dispose;166e3be486bd28af;method;OpenH2.Foundation._3D.QuickHull.Dispose();72
+Dispose;73a92cb305a84339;method;OpenH2.Foundation._3D.QuickHull.Dispose(System.Boolean);75
+disposedValue;bdbc18c5c2617004;field;OpenH2.Foundation._3D.QuickHull.disposedValue;46
+DistanceToPlane;717e7e629a3764fb;method;OpenH2.Foundation._3D.QuickHull.Face.DistanceToPlane(System.Numerics.Vector3);72
+DoAdjacentMerge;8e532f6537dc2c7a;method;OpenH2.Foundation._3D.QuickHull.DoAdjacentMerge(OpenH2.Foundation._3D.QuickHull.Face, System.Int32);76
 DoubleSided;cc0bf70e72e2b00c;field;OpenH2.Foundation.ModelFlags.DoubleSided;24
 ElementType;3487528321290e64;property;OpenH2.Foundation.Mesh<TTexture>.ElementType;102
 EmissiveArguments;6ef707bc93becc4b;property;OpenH2.Foundation.IMaterial<TTexture>.EmissiveArguments;102
@@ -50,16 +90,38 @@ EmissiveOnly;4f6c6189c48713bb;field;OpenH2.Foundation.EmissiveType.EmissiveOnly;
 EmissiveType;645bfce420c29ba9;enum;OpenH2.Foundation.EmissiveType;18
 EmissiveType;b10e5b21e9f8c7e5;property;OpenH2.Foundation.Material<TTexture>.EmissiveType;102
 EmissiveType;be82ec05ca517d4c;property;OpenH2.Foundation.IMaterial<TTexture>.EmissiveType;102
-Equals;5cf6ec57a3acb5f5;method;OpenH2.Foundation.Numerics.VectorD3.Equals(OpenH2.Foundation.Numerics.VectorD3);72
-Equals;eb966e76b95740f5;method;OpenH2.Foundation.Numerics.VectorD3.Equals(System.Object);72
+ExplicitTolerance;7ea8dbbd1e0ab7ea;property;OpenH2.Foundation._3D.QuickHull.ExplicitTolerance;102
+Face;b69e7f38bbdf29cd;property;OpenH2.Foundation._3D.QuickHull.HalfEdge.Face;102
 Face;e98fe820de159bab;class;OpenH2.Foundation.Face;0
-FileWatcher;87013e403ad14d31;class;OpenH2.Foundation.FileSystem.FileWatcher;0
-FileWatcherCallback;40888c9c5c1d1605;class;OpenH2.Foundation.FileSystem.FileWatcher.FileWatcherCallback;4
+Face;f0908e6922ce7530;class;OpenH2.Foundation._3D.QuickHull.Face;4
+Face;f4d660c024317ac6;property;OpenH2.Foundation._3D.QuickHull.Vertex.Face;102
+FaceList;2646d307e6553ee2;class;OpenH2.Foundation._3D.QuickHull.FaceList;4
+faces;ad89bba756c12b59;field;OpenH2.Foundation._3D.QuickHull.faces;46
+FindEdge;3d690d309ae46672;method;OpenH2.Foundation._3D.QuickHull.Face.FindEdge(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex);72
+FindHalfEdge;2d0441c989d164c4;method;OpenH2.Foundation._3D.QuickHull.FindHalfEdge(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex);76
+First;5885517d9f07239f;method;OpenH2.Foundation._3D.QuickHull.VertexList.First();72
+First;648733e5b6148929;method;OpenH2.Foundation._3D.QuickHull.FaceList.First();72
 Flags;d27fb02d681eb922;property;OpenH2.Foundation.Model<TTexture>.Flags;102
 foreground;ab5da158d01c237b;field;OpenH2.Foundation.Logging.Logger.Color.foreground;44
-GetHashCode;3aaa44919b6fcec7;method;OpenH2.Foundation.Numerics.VectorD3.GetHashCode();72
+Get;4833987ccd6e3b73;method;OpenH2.Foundation.Extensions.NumericsExtensions.Get(System.Numerics.Vector3, System.Int32);220
+GetEdge;9c1c701ff9cade2a;method;OpenH2.Foundation._3D.QuickHull.Face.GetEdge(System.Int32);72
+GetFaceIndices;04c6b24a5a572a30;method;OpenH2.Foundation._3D.QuickHull.GetFaceIndices(System.Int32[], OpenH2.Foundation._3D.QuickHull.Face, System.Int32);76
+GetFaces;8fb1354a2f6afe24;method;OpenH2.Foundation._3D.QuickHull.GetFaces();72
+GetFaces;e399e198dbfb63ff;method;OpenH2.Foundation._3D.QuickHull.GetFaces(System.Int32);72
+GetFirstEdge;7304675bd729cea4;method;OpenH2.Foundation._3D.QuickHull.Face.GetFirstEdge();72
+GetNumFaces;8263a4a18d6ce456;method;OpenH2.Foundation._3D.QuickHull.GetNumFaces();72
 GetTransformedVertices;5239972b30fcf53f;method;OpenH2.Foundation.Physics.IVertexBasedCollider.GetTransformedVertices();72
+GetVertexIndices;a957a9d393e3edbc;method;OpenH2.Foundation._3D.QuickHull.Face.GetVertexIndices(System.Int32[]);72
+GetVertexPointIndices;2f5ff8ba6c7d9171;method;OpenH2.Foundation._3D.QuickHull.GetVertexPointIndices();72
+getVertexString;c29a6266c6103a82;method;OpenH2.Foundation._3D.QuickHull.HalfEdge.getVertexString();72
+GetVertexString;97c7d58e0af3c0b1;method;OpenH2.Foundation._3D.QuickHull.Face.GetVertexString();72
 Gravity;c248d60371e335de;property;OpenH2.Foundation.Physics.IPhysicsWorld.Gravity;102
+HalfEdge;3b86e9c846537941;property;OpenH2.Foundation._3D.QuickHull.Face.HalfEdge;102
+HalfEdge;8f5ffef6cf1967ea;class;OpenH2.Foundation._3D.QuickHull.HalfEdge;4
+head;4d027dfae5ee9591;field;OpenH2.Foundation._3D.QuickHull.VertexList.head;46
+head;f8e80bf24c2214d9;field;OpenH2.Foundation._3D.QuickHull.FaceList.head;46
+HeadVertex;aec3529ec694edab;field;OpenH2.Foundation._3D.QuickHull.HalfEdge.HeadVertex;42
+horizon;73c06f786bfb57be;field;OpenH2.Foundation._3D.QuickHull.horizon;46
 IBody;f5098d88b6034a4b;interface;OpenH2.Foundation.Physics.IBody;48
 ICollider;0c61418aad251b6d;interface;OpenH2.Foundation.Physics.ICollider;48
 IdentityTransform;c1e0c3bdca571769;class;OpenH2.Foundation.IdentityTransform;0
@@ -67,34 +129,56 @@ IGameLoopSource;f19be2fcfb653e62;interface;OpenH2.Foundation.Engine.IGameLoopSou
 IKeyboardDevice;b1a521c26a32ac52;interface;OpenH2.Foundation.Engine.IKeyboardDevice;48
 IMaterial;633f5a2970cca921;interface;OpenH2.Foundation.IMaterial;48
 IMaterial<TTexture>;ad62ec72ae675202;interface;OpenH2.Foundation.IMaterial<TTexture>;48
+Index;27270731781ab5ba;property;OpenH2.Foundation._3D.QuickHull.Vertex.Index;102
+indexPool;020671c0d572c668;field;OpenH2.Foundation._3D.QuickHull.indexPool;46
 Indicies;b0c8c5384e040952;property;OpenH2.Foundation.Mesh<TTexture>.Indicies;102
 InertiaTensor;8d71abce067b2e92;property;OpenH2.Foundation.Physics.IRigidBody.InertiaTensor;102
+InitBuffers;59e0c02ec1b361db;method;OpenH2.Foundation._3D.QuickHull.InitBuffers(System.Int32);75
+InsertBefore;e5a5223110aa4c3c;method;OpenH2.Foundation._3D.QuickHull.VertexList.InsertBefore(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Vertex);72
 instance;7f28323fa65c4728;field;OpenH2.Foundation.IdentityTransform.instance;46
-Instance;789a3e9853f29402;method;OpenH2.Foundation.IdentityTransform.Instance();72
+Instance;1c53aa621b466717;property;OpenH2.Foundation.IdentityTransform.Instance;102
 IntegrationExtensions;10d59977bbf520a6;class;OpenH2.Foundation.Extensions.IntegrationExtensions;0
+Invalid;941a6a576e18ba0a;field;OpenH2.Foundation.RenderLayers.Invalid;24
 InverseMass;4d1a3875311b958d;property;OpenH2.Foundation.Physics.IRigidBody.InverseMass;102
-Invoke;16b49651501be6f8;method;OpenH2.Foundation.FileSystem.FileWatcher.FileWatcherCallback.Invoke(System.String);72
 IPhysicsWorld;db1b81cb395fb804;interface;OpenH2.Foundation.Physics.IPhysicsWorld;48
 IRigidBody;89ff50ae03a5ba55;interface;OpenH2.Foundation.Physics.IRigidBody;48
 IsDynamic;7fdd3fa78c244090;property;OpenH2.Foundation.Physics.IRigidBody.IsDynamic;102
+isEmpty;7e7e0eb1acc2cac1;method;OpenH2.Foundation._3D.QuickHull.VertexList.isEmpty();72
+IsEmpty;cb4796aaa4cef8ed;method;OpenH2.Foundation._3D.QuickHull.FaceList.IsEmpty();72
 IsSkybox;0aa0aa1b8303ae11;field;OpenH2.Foundation.ModelFlags.IsSkybox;24
 IsStatic;6067922ef3c50ba9;field;OpenH2.Foundation.ModelFlags.IsStatic;24
 IsTransparent;706adddb4596e8fd;field;OpenH2.Foundation.ModelFlags.IsTransparent;24
 ITransform;a9e4c4f27410f6c8;interface;OpenH2.Foundation.Physics.ITransform;48
 IVertexBasedCollider;76a5fc253281a8d4;interface;OpenH2.Foundation.Physics.IVertexBasedCollider;48
+LengthSquared;35625e41ede4eb59;method;OpenH2.Foundation._3D.QuickHull.HalfEdge.LengthSquared();72
 Log;3e174e1b224297de;method;OpenH2.Foundation.Logging.Logger.Log(System.String, OpenH2.Foundation.Logging.Logger.Color);72
 Logger;3f248a139f68cdb0;class;OpenH2.Foundation.Logging.Logger;0
 LogInfo;4c319781e6ec4572;method;OpenH2.Foundation.Logging.Logger.LogInfo(System.String);72
 Magenta;9775e30540dc668e;field;OpenH2.Foundation.Logging.Logger.Color.Magenta;42
+Mark;a616ac7723e8d6e4;property;OpenH2.Foundation._3D.QuickHull.Face.Mark;102
+MarkFaceVertices;f1c24af2a408246b;method;OpenH2.Foundation._3D.QuickHull.MarkFaceVertices(OpenH2.Foundation._3D.QuickHull.Face, System.Int32);76
 Mass;f5a45e797325efe7;property;OpenH2.Foundation.Physics.IRigidBody.Mass;102
 Material;2bda8fa55f01d0f9;property;OpenH2.Foundation.Mesh<TTexture>.Material;102
 MathExt;084191e5b5480ff6;class;OpenH2.Foundation.Extensions.MathExt;0
+maxVtxs;a049dcbe0ec3afb2;field;OpenH2.Foundation._3D.QuickHull.maxVtxs;46
+MergeAdjacentFace;c04b25d42dfea9ab;method;OpenH2.Foundation._3D.QuickHull.Face.MergeAdjacentFace(OpenH2.Foundation._3D.QuickHull.HalfEdge, OpenH2.Foundation._3D.QuickHull.Face[]);72
 Mesh<TTexture>;be491be8a8b0ec17;class;OpenH2.Foundation.Mesh<TTexture>;0
 MeshElementType;ff0e5b2b351e661b;enum;OpenH2.Foundation.MeshElementType;18
 Meshes;1e2a35583670a05f;property;OpenH2.Foundation.Model<TTexture>.Meshes;102
+minVtxs;cc8f4298f7dd6a68;field;OpenH2.Foundation._3D.QuickHull.minVtxs;46
 Model<TTexture>;d014a06270c8d5db;class;OpenH2.Foundation.Model<TTexture>;0
 ModelFlags;6b70698c43b4bd7a;enum;OpenH2.Foundation.ModelFlags;18
+newFaces;9dc0bac456a4c828;field;OpenH2.Foundation._3D.QuickHull.newFaces;46
+Next;dfc05caa628a36ba;property;OpenH2.Foundation._3D.QuickHull.Face.Next;102
+NextEdge;6d1eeb69d7be045f;property;OpenH2.Foundation._3D.QuickHull.HalfEdge.NextEdge;102
+NextPointToAdd;0ba9f18b6d80a4ed;method;OpenH2.Foundation._3D.QuickHull.NextPointToAdd();76
+NextVertex;0ceffc43aecc9bf0;property;OpenH2.Foundation._3D.QuickHull.Vertex.NextVertex;102
+NON_CONVEX;e8ec3ae250093414;field;OpenH2.Foundation._3D.QuickHull.Face.NON_CONVEX;6
+NONCONVEX;e7d9b03df4ea70bf;field;OpenH2.Foundation._3D.QuickHull.NONCONVEX;10
+NONCONVEX_WRT_LARGER_FACE;26811476054665d0;field;OpenH2.Foundation._3D.QuickHull.NONCONVEX_WRT_LARGER_FACE;10
+Normal;2f78fdea4ec612d8;property;OpenH2.Foundation._3D.QuickHull.Face.Normal;102
 Normal;9598386c391bd52b;property;OpenH2.Foundation.Face.Normal;102
+Normal;cc63732c0c6e7652;field;OpenH2.Foundation.RenderLayers.Normal;24
 Normal;f3180bc7d9ea26b8;field;OpenH2.Foundation.VertexFormat.Normal;42
 NormalMap;66463b36e45510c0;property;OpenH2.Foundation.IMaterial<TTexture>.NormalMap;102
 NormalMap;ae2487d596987c2c;property;OpenH2.Foundation.Material<TTexture>.NormalMap;102
@@ -102,33 +186,57 @@ NormalMapScale;26868d05b23d7bd9;property;OpenH2.Foundation.Material<TTexture>.No
 NormalMapScale;c764e55200bc1a14;property;OpenH2.Foundation.IMaterial<TTexture>.NormalMapScale;102
 Note;318e36c1db805f4d;property;OpenH2.Foundation.Model<TTexture>.Note;102
 Note;fe9ae3f2a7f13174;property;OpenH2.Foundation.Mesh<TTexture>.Note;102
-One;5efd95ca26998c59;property;OpenH2.Foundation.Numerics.VectorD3.One;102
+NumericsExtensions;d0ce9799d6a3cd01;class;OpenH2.Foundation.Extensions.NumericsExtensions;0
+numPoints;98a4743e3baac748;field;OpenH2.Foundation._3D.QuickHull.numPoints;46
+numVertices;2128d97731b90354;field;OpenH2.Foundation._3D.QuickHull.numVertices;46
+OppFaceDistance;7fab59ba1fc49c7b;method;OpenH2.Foundation._3D.QuickHull.OppFaceDistance(OpenH2.Foundation._3D.QuickHull.HalfEdge);76
+OppositeEdge;f7fdf61cfd41fb45;property;OpenH2.Foundation._3D.QuickHull.HalfEdge.OppositeEdge;102
+OppositeFace;3f2eca524482bd62;property;OpenH2.Foundation._3D.QuickHull.HalfEdge.OppositeFace;102
+Orientation;47b1dd01438da2b6;property;OpenH2.Foundation.Transform.Orientation;102
 Orientation;57a6bc3d585ba949;property;OpenH2.Foundation.IdentityTransform.Orientation;102
 Orientation;afbd06bceb1a3939;property;OpenH2.Foundation.Physics.ITransform.Orientation;102
 Orientation;c5ec973375d6756c;property;OpenH2.Foundation.Model<TTexture>.Orientation;102
-originalPath;7c2f8f4b97c1c9c2;field;OpenH2.Foundation.FileSystem.FileWatcher.originalPath;46
+Outside;2a13a5e04c555bd1;property;OpenH2.Foundation._3D.QuickHull.Face.Outside;102
 PhysicsMaterial;23a03b35c079f6a4;property;OpenH2.Foundation.Physics.ICollider.PhysicsMaterial;102
+planeOffset;54074f35cee1c17c;field;OpenH2.Foundation._3D.QuickHull.Face.planeOffset;46
+Point;27d2851a6fb06f21;property;OpenH2.Foundation._3D.QuickHull.Vertex.Point;102
 Point;c3b1b63265efeb92;field;OpenH2.Foundation.MeshElementType.Point;24
+POINT_RELATIVE;3a4f1b1c80b98f6c;field;OpenH2.Foundation._3D.QuickHull.POINT_RELATIVE;6
+pointBuffer;038010516aa99c13;field;OpenH2.Foundation._3D.QuickHull.pointBuffer;46
 PointLight;c2f26c8cf6601f69;class;OpenH2.Foundation.PointLight;0
+pointPool;561b192fcaf77394;field;OpenH2.Foundation._3D.QuickHull.pointPool;46
 Position;0b90177790796ba6;property;OpenH2.Foundation.Model<TTexture>.Position;102
+Position;60b801353bec9d7d;property;OpenH2.Foundation.Transform.Position;102
 Position;6558462f88f51b38;field;OpenH2.Foundation.VertexFormat.Position;42
 Position;7d8b42f2db0576e0;property;OpenH2.Foundation.IdentityTransform.Position;102
 Position;9aa1f111a20297f5;property;OpenH2.Foundation.Physics.ITransform.Position;102
 Position;c7ef3670e8b0ba81;property;OpenH2.Foundation.Face.Position;102
 Position;d4594385415f420a;property;OpenH2.Foundation.PointLight.Position;102
-PushFull;e206b587f90ec058;method;OpenH2.Foundation.Collections.ContinuationStack<T>.PushFull(T);72
-PushSeparate;62a9433bb9c06d8b;method;OpenH2.Foundation.Collections.ContinuationStack<T>.PushSeparate(T, System.Boolean);72
+PRECISION;11cd24f1695d1d4f;field;OpenH2.Foundation._3D.QuickHull.PRECISION;10
+PreviousEdge;9f7c0d8e3ec906e5;property;OpenH2.Foundation._3D.QuickHull.HalfEdge.PreviousEdge;102
+PreviousVertex;db5514d6de692e0f;property;OpenH2.Foundation._3D.QuickHull.Vertex.PreviousVertex;102
+QuickHull;6bfd3fb67f35acb2;class;OpenH2.Foundation._3D.QuickHull;0
 Radius;be88f873267785f2;property;OpenH2.Foundation.PointLight.Radius;102
 RawData;218ea191d0702fd7;property;OpenH2.Foundation.Mesh<TTexture>.RawData;102
 ReceivesShadows;e9497d10cc17b859;field;OpenH2.Foundation.ModelFlags.ReceivesShadows;24
 Red;f8e52b86deabc367;field;OpenH2.Foundation.Logging.Logger.Color.Red;42
 RegisterCallbacks;e8d965cae9696b03;method;OpenH2.Foundation.Engine.IGameLoopSource.RegisterCallbacks(System.Action<System.Double>, System.Action<System.Double>);72
+ReindexFacesAndVertices;746642a0ac2b0f21;method;OpenH2.Foundation._3D.QuickHull.ReindexFacesAndVertices();75
+RemoveAllPointsFromFace;b3b2243ae833ac45;method;OpenH2.Foundation._3D.QuickHull.RemoveAllPointsFromFace(OpenH2.Foundation._3D.QuickHull.Face);76
+RemovePointFromFace;61d26083bb410d02;method;OpenH2.Foundation._3D.QuickHull.RemovePointFromFace(OpenH2.Foundation._3D.QuickHull.Vertex, OpenH2.Foundation._3D.QuickHull.Face);76
+RenderLayer;e948fbaed2f7ec01;property;OpenH2.Foundation.Model<TTexture>.RenderLayer;102
+RenderLayers;1f0bde73fd95390c;enum;OpenH2.Foundation.RenderLayers;18
+ResolveUnclaimedPoints;5e005d3d8d94a25a;method;OpenH2.Foundation._3D.QuickHull.ResolveUnclaimedPoints(OpenH2.Foundation._3D.QuickHull.FaceList);76
 ScalarProduct;96514a34a7ef9b50;method;OpenH2.Foundation.Extensions.IntegrationExtensions.ScalarProduct(System.Numerics.Vector3, System.Numerics.Vector3);220
 Scale;3c0806497344e061;property;OpenH2.Foundation.IdentityTransform.Scale;102
 Scale;654bed7118cfa078;property;OpenH2.Foundation.Model<TTexture>.Scale;102
 Scale;726d2311f36fad34;property;OpenH2.Foundation.Physics.ITransform.Scale;102
-semaphore;412ca76c273d3d94;field;OpenH2.Foundation.FileSystem.FileWatcher.semaphore;46
+Scale;c1a931b489c5ee4c;property;OpenH2.Foundation.Transform.Scale;102
+Scripting;699d7b4b90092792;field;OpenH2.Foundation.RenderLayers.Scripting;24
 SetComponents;5da830e2c42035a2;method;OpenH2.Foundation.Extensions.IntegrationExtensions.SetComponents(System.Numerics.Matrix4x4, System.Numerics.Vector3, System.Numerics.Vector3, System.Numerics.Vector3);220
+SetOpposite;466069f5c9a2922a;method;OpenH2.Foundation._3D.QuickHull.HalfEdge.SetOpposite(OpenH2.Foundation._3D.QuickHull.HalfEdge);72
+SetPoints;415a92fce5f54a31;method;OpenH2.Foundation._3D.QuickHull.SetPoints(System.Double[], System.Int32);75
+SetPoints;a46d7fa080639f79;method;OpenH2.Foundation._3D.QuickHull.SetPoints(System.Numerics.Vector3[], System.Int32);75
 SetSkewSymmetric;e40d256294a1909e;method;OpenH2.Foundation.Extensions.IntegrationExtensions.SetSkewSymmetric(System.Numerics.Matrix4x4, System.Numerics.Vector3);220
 Size;41891c05ccca6676;field;OpenH2.Foundation.VertexFormat.Size;42
 SpecularColor;4b8740032f206f7c;property;OpenH2.Foundation.Material<TTexture>.SpecularColor;102
@@ -136,53 +244,58 @@ SpecularColor;fd29303bf920a47d;property;OpenH2.Foundation.IMaterial.SpecularColo
 SpecularMap;05587116a15d4a55;property;OpenH2.Foundation.Material<TTexture>.SpecularMap;102
 SpecularMap;7c69050276969c3e;property;OpenH2.Foundation.IMaterial<TTexture>.SpecularMap;102
 Start;c76991ef93128b5b;method;OpenH2.Foundation.Engine.IGameLoopSource.Start(System.Int32, System.Int32);72
-store;3d7de480ae70e620;field;OpenH2.Foundation.Collections.ContinuationStack<T>.store;46
+tail;b2edec05d6e47784;field;OpenH2.Foundation._3D.QuickHull.FaceList.tail;46
+tail;f9f963de4bdc6388;field;OpenH2.Foundation._3D.QuickHull.VertexList.tail;46
+TailVertex;57433f7030d44072;property;OpenH2.Foundation._3D.QuickHull.HalfEdge.TailVertex;102
 Tangent;6d0be76278dfde66;field;OpenH2.Foundation.VertexFormat.Tangent;42
 TexCoords;c6cb9aa8ce8faa5e;field;OpenH2.Foundation.VertexFormat.TexCoords;42
-this;5efc4587ec20e655;property;OpenH2.Foundation.Numerics.VectorD3.this[System.Int32];102
 ThreeChannel;c4e0f998ac174d2d;field;OpenH2.Foundation.EmissiveType.ThreeChannel;24
-ToSingle;2082502c220fe543;method;OpenH2.Foundation.Numerics.VectorD3.ToSingle();72
-Transform;0dfc99c581e2d73f;method;OpenH2.Foundation.Numerics.VectorD3.Transform(OpenH2.Foundation.Numerics.VectorD3, System.Numerics.Matrix4x4);72
+ToDegrees;912554cec0abfdfc;method;OpenH2.Foundation.Extensions.MathExt.ToDegrees(System.Double);72
+Tolerance;5a1a53f53e793abb;property;OpenH2.Foundation._3D.QuickHull.Tolerance;102
+ToRadians;0af07edfe89008e5;method;OpenH2.Foundation.Extensions.MathExt.ToRadians(System.Double);72
+Transform;6a8f0d697f435fab;class;OpenH2.Foundation.Transform;0
 Transform;c07b86483b75f3da;property;OpenH2.Foundation.Physics.IBody.Transform;102
 TransformationMatrix;2844f551e353968f;property;OpenH2.Foundation.Physics.ITransform.TransformationMatrix;102
 TransformationMatrix;5ab65b90f5876fed;property;OpenH2.Foundation.IdentityTransform.TransformationMatrix;102
+TransformationMatrix;ed607dbe89414aba;property;OpenH2.Foundation.Transform.TransformationMatrix;102
 TriangleList;bbbcf7180ef5a471;field;OpenH2.Foundation.MeshElementType.TriangleList;24
 TriangleStrip;221046bead31a386;field;OpenH2.Foundation.MeshElementType.TriangleStrip;24
 TriangleStripDecal;38079dec26b9b379;field;OpenH2.Foundation.MeshElementType.TriangleStripDecal;24
-TryPop;772d165dce0e9251;method;OpenH2.Foundation.Collections.ContinuationStack<T>.TryPop(out T, out System.Boolean);72
+Triangulate;aba45dbf34b7e3d1;method;OpenH2.Foundation._3D.QuickHull.Triangulate();72
+Triangulate;ecebb17991fd24bf;method;OpenH2.Foundation._3D.QuickHull.Face.Triangulate(OpenH2.Foundation._3D.QuickHull.FaceList, System.Double);72
+unclaimed;5cc4c45a3a107f9a;field;OpenH2.Foundation._3D.QuickHull.unclaimed;46
+UpdateDerivedData;b91d2f80d452abd8;method;OpenH2.Foundation.Transform.UpdateDerivedData();72
 UpdateDerivedData;bc50ad6b690e2e6b;method;OpenH2.Foundation.Physics.ITransform.UpdateDerivedData();72
 UpdateDerivedData;cdcf6577f9e633db;method;OpenH2.Foundation.IdentityTransform.UpdateDerivedData();72
 UseTransformationMatrix;3fa2378ecdfa6c52;method;OpenH2.Foundation.IdentityTransform.UseTransformationMatrix(System.Numerics.Matrix4x4);72
 UseTransformationMatrix;5c94167de0eb3184;method;OpenH2.Foundation.Physics.ITransform.UseTransformationMatrix(System.Numerics.Matrix4x4);72
-VectorD3;1a9cde4d8fc3d4ab;structure;OpenH2.Foundation.Numerics.VectorD3;108
+UseTransformationMatrix;fa45e1f5dce4a5b4;method;OpenH2.Foundation.Transform.UseTransformationMatrix(System.Numerics.Matrix4x4);72
 Velocity;5e1d954dc9452051;property;OpenH2.Foundation.Physics.IRigidBody.Velocity;102
+Vertex;9fa219a4cbe946dd;class;OpenH2.Foundation._3D.QuickHull.Vertex;4
+VertexCount;0557dc46ff88e135;property;OpenH2.Foundation._3D.QuickHull.Face.VertexCount;102
 VertexFormat;bd15aecb4fc5f3a4;structure;OpenH2.Foundation.VertexFormat;108
+VertexList;662975263c6dc5e3;class;OpenH2.Foundation._3D.QuickHull.VertexList;4
+vertexPointIndices;363abfd8c8862aef;field;OpenH2.Foundation._3D.QuickHull.vertexPointIndices;46
 Vertices;02cda344f9a01550;property;OpenH2.Foundation.Physics.IVertexBasedCollider.Vertices;102
 Vertices;b80889ebe4029c65;property;OpenH2.Foundation.Face.Vertices;102
 Verticies;7f695107e6b698e1;property;OpenH2.Foundation.Mesh<TTexture>.Verticies;102
-W_Changed;71a9f5f8ea55e770;method;OpenH2.Foundation.FileSystem.FileWatcher.W_Changed(System.Object, System.IO.FileSystemEventArgs);76
-watcher;4578a2d8d94cd500;field;OpenH2.Foundation.FileSystem.FileWatcher.watcher;46
+VISIBLE;c7f0a6295655367d;field;OpenH2.Foundation._3D.QuickHull.Face.VISIBLE;6
 White;71e99e9ab24bb5b5;field;OpenH2.Foundation.Logging.Logger.Color.White;42
 Wireframe;8e6701854910207d;field;OpenH2.Foundation.ModelFlags.Wireframe;24
-X;4eba41a04a572c38;field;OpenH2.Foundation.Numerics.VectorD3.X;46
-Y;327fd4ce411f4368;field;OpenH2.Foundation.Numerics.VectorD3.Y;46
-Z;873c2346f7027519;field;OpenH2.Foundation.Numerics.VectorD3.Z;46
-Zero;83171d2c4537d5e2;property;OpenH2.Foundation.Numerics.VectorD3.Zero;102
-ContinuationStack.cs;9e90c15fbee189f7;file;Collections\ContinuationStack.cs;196
+QuickHull.cs;a7e1a6a036ba7bd6;file;3D\QuickHull.cs;196
 EmissiveType.cs;bde9c25a3d516868;file;EmissiveType.cs;196
 IGameLoopSource.cs;48e75cc142563fcc;file;Engine\IGameLoopSource.cs;196
 IKeyboardDevice.cs;2a6a4124106425bd;file;Engine\IKeyboardDevice.cs;196
 IntegrationExtensions.cs;2eb41c037e114a64;file;Extensions\IntegrationExtensions.cs;196
 MathExt.cs;708c2c5c78bf49f5;file;Extensions\MathExt.cs;196
+NumericsExtensions.cs;29769c041ab459bf;file;Extensions\NumericsExtensions.cs;196
 Face.cs;8f1b07d807df9de7;file;Face.cs;196
-FileWatcher.cs;b66b2357b2fda20f;file;FileSystem\FileWatcher.cs;196
 IdentityTransform.cs;03c95a4d6149f8db;file;IdentityTransform.cs;196
 Logger.cs;7b48764640367c34;file;Logging\Logger.cs;196
 Material.cs;d438246861d9bdce;file;Material.cs;196
 Mesh.cs;feef0656d5cba030;file;Mesh.cs;196
 MeshElementType.cs;e525c9fb5b74d14e;file;MeshElementType.cs;196
 Model.cs;094699c18fea65ad;file;Model.cs;196
-VectorD3.cs;efef42860766ba5d;file;Numerics\VectorD3.cs;196
 .NETStandard,Version=v2.0.AssemblyAttributes.cs;074cf5e6461e8bd1;file;obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs;196
 OpenH2.Foundation.AssemblyInfo.cs;19a7b1d616339636;file;obj\Debug\netstandard2.0\OpenH2.Foundation.AssemblyInfo.cs;196
 OpenH2.Foundation.csproj;b2b718bb7dcee63a;file;OpenH2.Foundation.csproj;227
@@ -193,4 +306,5 @@ IRigidBody.cs;1abf204e5e0e3e4d;file;Physics\IRigidBody.cs;196
 ITransform.cs;42ea9195410c8eb7;file;Physics\ITransform.cs;196
 IVertexBasedCollider.cs;f6db6004d878fbdf;file;Physics\IVertexBasedCollider.cs;196
 PointLight.cs;1af908172eee4af7;file;PointLight.cs;196
+Transform.cs;86568b3aa337c9ed;file;Transform.cs;196
 VertexFormat.cs;22f2e66d8873f4d5;file;VertexFormat.cs;196

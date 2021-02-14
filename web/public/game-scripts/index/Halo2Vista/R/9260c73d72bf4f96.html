@@ -13,13 +13,13 @@
 <a href="../05b_deltatowers.cs.html#2120"><b>2120</b>Engine.ai_place(<i>central_platform_phantom</i>.Squad, 1);</a>
 <a href="../05b_deltatowers.cs.html#2121"><b>2121</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), &quot;phantom_p_a&quot;, Engine.ai_actors(central_platform_hunters.Squad));</a>
 <a href="../05b_deltatowers.cs.html#2122"><b>2122</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), true);</a>
-<a href="../05b_deltatowers.cs.html#2123"><b>2123</b>Engine.cs_run_command_script(<i>central_platform_phantom</i>.pilot, central_platform_dropship);</a>
+<a href="../05b_deltatowers.cs.html#2123"><b>2123</b>Engine.cs_run_command_script(<i>central_platform_phantom</i>.pilot, new ScriptMethodReference(central_platform_dropship));</a>
 <a href="../05b_deltatowers.cs.html#2125"><b>2125</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot));</a>
 <a href="../05b_deltatowers.cs.html#2195"><b>2195</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(central_platform_hunters.Squad) &gt; 0 || (short)Engine.ai_living_count(<i>central_platform_phantom</i>.Squad) &lt; 1);</a>
 <a href="../05b_deltatowers.cs.html#2244"><b>2244</b>Engine.ai_place(<i>central_platform_phantom</i>.Squad, 1);</a>
 <a href="../05b_deltatowers.cs.html#2245"><b>2245</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), &quot;phantom_p_a&quot;, Engine.ai_actors(central_platform_hunters.Squad));</a>
 <a href="../05b_deltatowers.cs.html#2246"><b>2246</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot), true);</a>
-<a href="../05b_deltatowers.cs.html#2247"><b>2247</b>Engine.cs_run_command_script(<i>central_platform_phantom</i>.pilot, central_platform_dropship);</a>
+<a href="../05b_deltatowers.cs.html#2247"><b>2247</b>Engine.cs_run_command_script(<i>central_platform_phantom</i>.pilot, new ScriptMethodReference(central_platform_dropship));</a>
 <a href="../05b_deltatowers.cs.html#2249"><b>2249</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>central_platform_phantom</i>.pilot));</a>
 </div>
 </div>

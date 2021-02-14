@@ -7,7 +7,7 @@
 <a href="../05a_deltaapproach.cs.html#3911"><b>3911</b>if (Engine.volume_test_objects(vol_bridge_farside_all, Engine.players()) == false &amp;&amp; (short)Engine.ai_living_count(<i>bridge_farside_wraiths</i>.Squad) &gt; 0 &amp;&amp; await this.player_count() &gt; 0)</a>
 <a href="../05a_deltaapproach.cs.html#4007"><b>4007</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>bridge_farside_wraiths</i>.Squad) &lt; 1 || Engine.volume_test_objects(vol_winding_path, Engine.players()) == true);</a>
 <a href="../05a_deltaapproach.cs.html#4142"><b>4142</b>Engine.ai_place(<i>bridge_farside_wraiths</i>.Squad, 1);</a>
-<a href="../05a_deltaapproach.cs.html#4143"><b>4143</b>Engine.cs_run_command_script(<i>bridge_farside_wraiths</i>.Squad, bridge_wraith_engage);</a>
+<a href="../05a_deltaapproach.cs.html#4143"><b>4143</b>Engine.cs_run_command_script(<i>bridge_farside_wraiths</i>.Squad, new ScriptMethodReference(bridge_wraith_engage));</a>
 <a href="../05a_deltaapproach.cs.html#4161"><b>4161</b>Engine.ai_place(<i>bridge_farside_wraiths</i>.Squad, (short)(2 - (float)Engine.ai_living_count(<i>bridge_farside_wraiths</i>.Squad)));</a>
 <a href="../05a_deltaapproach.cs.html#4165"><b>4165</b>Engine.ai_place(<i>bridge_farside_wraiths</i>.Squad, (short)(1 - (float)Engine.ai_living_count(<i>bridge_farside_wraiths</i>.Squad)));</a>
 </div>

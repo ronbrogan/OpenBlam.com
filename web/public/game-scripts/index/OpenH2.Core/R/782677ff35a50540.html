@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">464 references to LoopingSoundTag</div><div class="rA">Halo2MCC (233)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (2)</div>
+<div class="rH">465 references to LoopingSoundTag</div><div class="rA">Halo2MCC (233)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (2)</div>
 <a href="../../Halo2MCC/01a_tutorial.cs.html#1874"><b>1874</b>Engine.sound_looping_start(Engine.GetTag&lt;<i>LoopingSoundTag</i>&gt;(&quot;scenarios\\solo\\01a_tutorial\\01a_music\\01a_01&quot;, 3867018504U), default(IGameObject), 1F);</a>
 <a href="../../Halo2MCC/01a_tutorial.cs.html#1908"><b>1908</b>Engine.sound_looping_stop(Engine.GetTag&lt;<i>LoopingSoundTag</i>&gt;(&quot;scenarios\\solo\\01a_tutorial\\01a_music\\01a_01&quot;, 3867018504U));</a>
 </div>
@@ -512,13 +512,16 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#3787"><b>3787</b>Engine.sound_looping_start(Engine.GetTag&lt;<i>LoopingSoundTag</i>&gt;(&quot;scenarios\\solo\\08b_deltacontrol\\08b_music\\08b_10&quot;, 4259126356U), default(IGameObject), 1F);</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (9)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#53"><b>53</b>ScriptDataType.LoopingSound =&gt; ParseTypeName(nameof(<i>LoopingSoundTag</i>)),</a>
+<div class="rA">OpenH2.Core (10)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#278"><b>278</b>ScriptDataType.LoopingSound =&gt; Result.From(this.scriptEngine.GetTag&lt;<i>LoopingSoundTag</i>&gt;(null, node.NodeData_32)),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#54"><b>54</b>ScriptDataType.LoopingSound =&gt; ParseTypeName(nameof(<i>LoopingSoundTag</i>)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\IScriptEngine.cs (3)</div>
-<a href="../Scripting/IScriptEngine.cs.html#1085"><b>1085</b>void sound_looping_set_alternate(<i>LoopingSoundTag</i> looping_sound, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1088"><b>1088</b>void sound_looping_start(<i>LoopingSoundTag</i> looping_sound, IGameObject entity, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1091"><b>1091</b>void sound_looping_stop(<i>LoopingSoundTag</i> looping_sound);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1368"><b>1368</b>void sound_looping_set_alternate(<i>LoopingSoundTag</i> looping_sound, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1372"><b>1372</b>void sound_looping_start(<i>LoopingSoundTag</i> looping_sound, IGameObject entity, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1376"><b>1376</b>void sound_looping_stop(<i>LoopingSoundTag</i> looping_sound);</a>
 </div>
 <div class="rF"><div class="rN">Tags\GlobalsTag.cs (1)</div>
 <a href="../Tags/GlobalsTag.cs.html#60"><b>60</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; LoopingSoundTagA { get; set; }</a>
@@ -527,8 +530,8 @@
 <a href="../Tags/MachineryTag.cs.html#58"><b>58</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; Sound { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (2)</div>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#540"><b>540</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; LoopingSound1 { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#543"><b>543</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; LoopingSound2 { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#537"><b>537</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; LoopingSound1 { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#540"><b>540</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; LoopingSound2 { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\SoundSceneryTag.cs (1)</div>
 <a href="../Tags/SoundSceneryTag.cs.html#26"><b>26</b>public TagRef&lt;<i>LoopingSoundTag</i>&gt; Sound { get; set; }</a>

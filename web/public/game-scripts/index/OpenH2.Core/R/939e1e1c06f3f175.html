@@ -1,15 +1,59 @@
 ﻿<div class="referenceBody">
-<div class="rH">12 references to ScriptSyntaxNodes</div><div class="rA">OpenH2.Core (12)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (5)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#344"><b>344</b>Debug.Assert(variable.Value_H16 &lt; scenario.<i>ScriptSyntaxNodes</i>.Length, &quot;Variable expression is not valid&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#346"><b>346</b>var node = scenario.<i>ScriptSyntaxNodes</i>[variable.Value_H16];</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#413"><b>413</b>var node = scenario.<i>ScriptSyntaxNodes</i>[currentIndex];</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#445"><b>445</b>Debug.Assert(scenario.<i>ScriptSyntaxNodes</i>[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#483"><b>483</b>Debug.Assert(scenario.<i>ScriptSyntaxNodes</i>[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+<div class="rH">52 references to ScriptSyntaxNodes</div><div class="rA">OpenH2.Core (52)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (35)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#42"><b>42</b>variables[i] = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[variable.Value_H16], out var next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#85"><b>85</b>value = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[node.NodeData_H16], out innerNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#178"><b>178</b>var invocationNode = this.scenario.<i>ScriptSyntaxNodes</i>[node.NodeData_H16];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#185"><b>185</b>var value = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[methodToInvoke.SyntaxNodeIndex], out next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#253"><b>253</b>result = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[next], out next);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#269"><b>269</b>var condition = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#272"><b>272</b>var trueExp = this.scenario.<i>ScriptSyntaxNodes</i>[argNext];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#280"><b>280</b>var falseExp = this.scenario.<i>ScriptSyntaxNodes</i>[trueExp.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#287"><b>287</b>var variableAccess = this.scenario.<i>ScriptSyntaxNodes</i>[node.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#289"><b>289</b>var valueExp = this.scenario.<i>ScriptSyntaxNodes</i>[variableAccess.NextIndex];</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#310"><b>310</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#330"><b>330</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#348"><b>348</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#362"><b>362</b>var firstOp = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#366"><b>366</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#378"><b>378</b>var firstOp = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#382"><b>382</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#394"><b>394</b>var firstOp = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#398"><b>398</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#410"><b>410</b>var firstOp = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#414"><b>414</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#426"><b>426</b>var firstOp = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#430"><b>430</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#442"><b>442</b>var firstOp = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#446"><b>446</b>var operand = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#458"><b>458</b>var left = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#459"><b>459</b>var right = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#477"><b>477</b>var left = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#478"><b>478</b>var right = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#493"><b>493</b>var left = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#494"><b>494</b>var right = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#509"><b>509</b>var left = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#510"><b>510</b>var right = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#525"><b>525</b>var left = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#526"><b>526</b>var right = Interpret(this.scenario.<i>ScriptSyntaxNodes</i>[argNext], out argNext);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (5)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#95"><b>95</b>var node = this.scenario.<i>ScriptSyntaxNodes</i>[state.OriginalNodeIndex];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#175"><b>175</b>var nextNode = this.scenario.<i>ScriptSyntaxNodes</i>[top.Next];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#193"><b>193</b>var methodFirstNode = this.scenario.<i>ScriptSyntaxNodes</i>[method.SyntaxNodeIndex];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#226"><b>226</b>var invocationNode = this.scenario.<i>ScriptSyntaxNodes</i>[node.NodeData_H16];</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#501"><b>501</b>var trueExp = this.scenario.<i>ScriptSyntaxNodes</i>[state.TopFrame.Next];</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (5)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#346"><b>346</b>Debug.Assert(variable.Value_H16 &lt; scenario.<i>ScriptSyntaxNodes</i>.Length, &quot;Variable expression is not valid&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#348"><b>348</b>var node = scenario.<i>ScriptSyntaxNodes</i>[variable.Value_H16];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#417"><b>417</b>var node = scenario.<i>ScriptSyntaxNodes</i>[currentIndex];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#449"><b>449</b>Debug.Assert(scenario.<i>ScriptSyntaxNodes</i>[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#487"><b>487</b>Debug.Assert(scenario.<i>ScriptSyntaxNodes</i>[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (3)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#40"><b>40</b>var node = tag.<i>ScriptSyntaxNodes</i>[currentIndex];</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#108"><b>108</b>Debug.Assert(tag.<i>ScriptSyntaxNodes</i>[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#115"><b>115</b>Debug.Assert(tag.<i>ScriptSyntaxNodes</i>[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#41"><b>41</b>var node = tag.<i>ScriptSyntaxNodes</i>[currentIndex];</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#109"><b>109</b>Debug.Assert(tag.<i>ScriptSyntaxNodes</i>[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#116"><b>116</b>Debug.Assert(tag.<i>ScriptSyntaxNodes</i>[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (4)</div>
 <a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#15"><b>15</b>var nodesStart = BlamSerializer.StartsAt&lt;ScenarioTag&gt;(s =&gt; s.<i>ScriptSyntaxNodes</i>);</a>

@@ -9,7 +9,7 @@
 <a href="../GameObjects/IVehicle.cs.html#3"><b>3</b>public interface IVehicle : <i>IUnit</i></a>
 </div>
 </div>
-<div class="rH">1854 references to IUnit</div><div class="rA">Halo2MCC (909)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (15)</div>
+<div class="rH">1850 references to IUnit</div><div class="rA">Halo2MCC (909)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (15)</div>
 <a href="../../Halo2MCC/00a_introduction.cs.html#28"><b>28</b>public async Task&lt;<i>IUnit</i>&gt; player0()</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#34"><b>34</b>public async Task&lt;<i>IUnit</i>&gt; player1()</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1183"><b>1183</b>Engine.camera_set_animation_relative(Engine.GetTag&lt;AnimationGraphTag&gt;(&quot;objects\\characters\\cinematic_camera\\x01\\x01&quot;, 3959687822U), &quot;x01_01&quot;, default(<i>IUnit</i>), anchor_flag_x01a);</a>
@@ -1996,50 +1996,46 @@
 <a href="../../Halo2Vista/zanzibar.Data.cs.html#96"><b>96</b>chief = new ScenarioEntity&lt;<i>IUnit</i>&gt;(10, scenarioTag.WellKnownItems[10]);</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (39)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#44"><b>44</b>ScriptDataType.Unit =&gt; ParseTypeName(nameof(<i>IUnit</i>)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#68"><b>68</b>ScenarioTag.WellKnownVarType.Biped =&gt; ParseTypeName(nameof(<i>IUnit</i>)),</a>
+<div class="rA">OpenH2.Core (35)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#45"><b>45</b>ScriptDataType.Unit =&gt; ParseTypeName(nameof(<i>IUnit</i>)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#69"><b>69</b>ScenarioTag.WellKnownVarType.Biped =&gt; ParseTypeName(nameof(<i>IUnit</i>)),</a>
 </div>
-<div class="rF"><div class="rN">Scripting\IScriptEngine.cs (35)</div>
-<a href="../Scripting/IScriptEngine.cs.html#29"><b>29</b>void ai_attach_units(<i>IUnit</i> unit, IAiActorDefinition ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#77"><b>77</b><i>IUnit</i> ai_get_unit(IAiActorDefinition ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#179"><b>179</b>void ai_vehicle_enter(IAiActorDefinition ai, <i>IUnit</i> unit, string unit_seat_mapping = null);</a>
-<a href="../Scripting/IScriptEngine.cs.html#182"><b>182</b>void ai_vehicle_enter_immediate(IAiActorDefinition ai, <i>IUnit</i> unit, string seat = null);</a>
-<a href="../Scripting/IScriptEngine.cs.html#213"><b>213</b>void biped_ragdoll(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#222"><b>222</b>void camera_predict_resources_at_frame(AnimationGraphTag animation, string emotion, <i>IUnit</i> unit, ILocationFlag locationFlag, int intValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#231"><b>231</b>void camera_set_animation_relative(AnimationGraphTag animation, string id, <i>IUnit</i> unit, ILocationFlag locationFlag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#515"><b>515</b>void custom_animation(<i>IUnit</i> unit, AnimationGraphTag animation, string stringid, bool interpolate);</a>
-<a href="../Scripting/IScriptEngine.cs.html#518"><b>518</b>void custom_animation(<i>IUnit</i> unit, string emotion, bool interpolate);</a>
-<a href="../Scripting/IScriptEngine.cs.html#524"><b>524</b>void custom_animation_loop(<i>IUnit</i> unit, AnimationGraphTag animation1, string emotion, bool interpolate);</a>
-<a href="../Scripting/IScriptEngine.cs.html#527"><b>527</b>void custom_animation_relative(<i>IUnit</i> entity, AnimationGraphTag animation, string emotion, bool boolean, IGameObject other);</a>
-<a href="../Scripting/IScriptEngine.cs.html#530"><b>530</b>void custom_animation_relative(<i>IUnit</i> unit, string emotion, bool interpolate, IGameObject entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#533"><b>533</b>void custom_animation_relative_loop(<i>IUnit</i> unit, AnimationGraphTag animation2, string emotion, bool boolean, IGameObject entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#794"><b>794</b>void object_cannot_die(<i>IUnit</i> entity, IGameObject vehicle, string seat);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1124"><b>1124</b><i>IUnit</i> unit(IGameObject entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1133"><b>1133</b>void unit_add_equipment(<i>IUnit</i> unit, IStartingProfile starting_profile, bool reset, bool isGarbage);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1136"><b>1136</b>void unit_add_equipment(<i>IUnit</i> unit, IEquipment equipment, bool reset, bool isGarbage);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1142"><b>1142</b>void unit_exit_vehicle(<i>IUnit</i> unit, short value);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1145"><b>1145</b>short unit_get_custom_animation_time(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1148"><b>1148</b>float unit_get_health(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1151"><b>1151</b>float unit_get_shield(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1154"><b>1154</b>bool unit_has_weapon(<i>IUnit</i> unit, BaseTag weapon);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1172"><b>1172</b>bool unit_in_vehicle(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1175"><b>1175</b>bool unit_is_emitting(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1181"><b>1181</b>void unit_kill(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1184"><b>1184</b>void unit_kill_silent(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1187"><b>1187</b>void unit_only_takes_damage_from_players_team(<i>IUnit</i> unit, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1190"><b>1190</b>void unit_set_active_camo(<i>IUnit</i> unit, bool boolean, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1193"><b>1193</b>void unit_set_current_vitality(<i>IUnit</i> unit, float body, float shield);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1196"><b>1196</b>void unit_set_emotional_state(<i>IUnit</i> unit, string string_id, float weight, short transitionTime);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1199"><b>1199</b>void unit_set_enterable_by_player(<i>IUnit</i> unit, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1202"><b>1202</b>void unit_set_maximum_vitality(<i>IUnit</i> unit, float real, float real1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1205"><b>1205</b>void unit_stop_custom_animation(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1208"><b>1208</b>IGameObject vehicle_driver(<i>IUnit</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1217"><b>1217</b>bool vehicle_test_seat(IVehicle vehicle, string seat, <i>IUnit</i> unit);</a>
+<div class="rF"><div class="rN">Scripting\IScriptEngine.cs (31)</div>
+<a href="../Scripting/IScriptEngine.cs.html#34"><b>34</b>void ai_attach_units(<i>IUnit</i> unit, IAiActorDefinition ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#95"><b>95</b><i>IUnit</i> ai_get_unit(IAiActorDefinition ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#215"><b>215</b>void ai_vehicle_enter(IAiActorDefinition ai, <i>IUnit</i> unit, string unit_seat_mapping = null);</a>
+<a href="../Scripting/IScriptEngine.cs.html#219"><b>219</b>void ai_vehicle_enter_immediate(IAiActorDefinition ai, <i>IUnit</i> unit, string seat = null);</a>
+<a href="../Scripting/IScriptEngine.cs.html#255"><b>255</b>void biped_ragdoll(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#267"><b>267</b>void camera_predict_resources_at_frame(AnimationGraphTag animation, string emotion, <i>IUnit</i> unit, ILocationFlag locationFlag, int intValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#279"><b>279</b>void camera_set_animation_relative(AnimationGraphTag animation, string id, <i>IUnit</i> unit, ILocationFlag locationFlag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#650"><b>650</b>void custom_animation(<i>IUnit</i> unit, AnimationGraphTag animation, string stringid, bool interpolate);</a>
+<a href="../Scripting/IScriptEngine.cs.html#654"><b>654</b>void custom_animation_loop(<i>IUnit</i> unit, AnimationGraphTag animation1, string emotion, bool interpolate);</a>
+<a href="../Scripting/IScriptEngine.cs.html#658"><b>658</b>void custom_animation_relative(<i>IUnit</i> entity, AnimationGraphTag animation, string emotion, bool boolean, IGameObject other);</a>
+<a href="../Scripting/IScriptEngine.cs.html#662"><b>662</b>void custom_animation_relative_loop(<i>IUnit</i> unit, AnimationGraphTag animation2, string emotion, bool boolean, IGameObject entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1420"><b>1420</b><i>IUnit</i> unit(IGameObject entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1432"><b>1432</b>void unit_add_equipment(<i>IUnit</i> unit, IStartingProfile starting_profile, bool reset, bool isGarbage);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1444"><b>1444</b>void unit_exit_vehicle(<i>IUnit</i> unit, short value);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1448"><b>1448</b>short unit_get_custom_animation_time(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1452"><b>1452</b>float unit_get_health(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1456"><b>1456</b>float unit_get_shield(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1460"><b>1460</b>bool unit_has_weapon(<i>IUnit</i> unit, BaseTag weapon);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1477"><b>1477</b>bool unit_in_vehicle(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1481"><b>1481</b>bool unit_is_emitting(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1485"><b>1485</b>void unit_kill(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1489"><b>1489</b>void unit_kill_silent(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1493"><b>1493</b>void unit_only_takes_damage_from_players_team(<i>IUnit</i> unit, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1497"><b>1497</b>void unit_set_active_camo(<i>IUnit</i> unit, bool boolean, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1501"><b>1501</b>void unit_set_current_vitality(<i>IUnit</i> unit, float body, float shield);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1505"><b>1505</b>void unit_set_emotional_state(<i>IUnit</i> unit, string string_id, float weight, short transitionTime);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1509"><b>1509</b>void unit_set_enterable_by_player(<i>IUnit</i> unit, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1513"><b>1513</b>void unit_set_maximum_vitality(<i>IUnit</i> unit, float real, float real1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1517"><b>1517</b>void unit_stop_custom_animation(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1521"><b>1521</b>IGameObject vehicle_driver(<i>IUnit</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1532"><b>1532</b>bool vehicle_test_seat(IVehicle vehicle, string seat, <i>IUnit</i> unit);</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (2)</div>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#208"><b>208</b>public class BipedInstance : IGameObjectDefinition&lt;<i>IUnit</i>&gt;</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#228"><b>228</b>public <i>IUnit</i> GameObject { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#209"><b>209</b>public class BipedInstance : IGameObjectDefinition&lt;<i>IUnit</i>&gt;</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#229"><b>229</b>public <i>IUnit</i>? GameObject { get; set; }</a>
 </div>
 </div>
 </div>

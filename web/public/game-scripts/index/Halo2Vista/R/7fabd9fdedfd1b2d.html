@@ -7,9 +7,9 @@
 <a href="../03b_newmombasa.cs.html#4001"><b>4001</b>Engine.ai_place(<i>e21_cov_phantom1</i>.Squad);</a>
 <a href="../03b_newmombasa.cs.html#4004"><b>4004</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>e21_cov_phantom1</i>.phantom0), &quot;phantom_sc01&quot;, Engine.ai_vehicle_get_from_starting_location(e21_cov_ghosts0_0.ghost0));</a>
 <a href="../03b_newmombasa.cs.html#4005"><b>4005</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>e21_cov_phantom1</i>.phantom0), &quot;phantom_sc02&quot;, Engine.ai_vehicle_get_from_starting_location(e21_cov_ghosts0_0.ghost1));</a>
-<a href="../03b_newmombasa.cs.html#4006"><b>4006</b>Engine.cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, cs_e21_cov_phantom1_entry);</a>
+<a href="../03b_newmombasa.cs.html#4006"><b>4006</b>Engine.cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, new ScriptMethodReference(cs_e21_cov_phantom1_entry));</a>
 <a href="../03b_newmombasa.cs.html#4007"><b>4007</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(Engine.ai_vehicle_get(<i>e21_cov_phantom1</i>.phantom0)) &lt;= 0.05F || Engine.object_model_targets_destroyed(Engine.ai_vehicle_get(<i>e21_cov_phantom1</i>.phantom0), &quot;target_front&quot;) &gt;= 3, 10, this.one_minute);</a>
-<a href="../03b_newmombasa.cs.html#4009"><b>4009</b>Engine.cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, cs_e21_cov_phantom_exit);</a>
+<a href="../03b_newmombasa.cs.html#4009"><b>4009</b>Engine.cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, new ScriptMethodReference(cs_e21_cov_phantom_exit));</a>
 <a href="../03b_newmombasa.cs.html#4122"><b>4122</b>Engine.ai_disposable(<i>e21_cov_phantom1</i>.Squad, false);</a>
 </div>
 </div>

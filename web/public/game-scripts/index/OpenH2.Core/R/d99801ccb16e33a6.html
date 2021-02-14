@@ -1,13 +1,22 @@
 ﻿<div class="referenceBody">
-<div class="rH">4 references to ScriptInvocation</div><div class="rA">OpenH2.Core (4)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#456"><b>456</b>NodeType.<i>ScriptInvocation</i> =&gt; HandleScriptInvocation(node),</a>
+<div class="rH">9 references to ScriptInvocation</div><div class="rA">OpenH2.Core (9)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#55"><b>55</b>NodeType.<i>ScriptInvocation</i> =&gt; InterpretScriptInvocation(node, out next),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (4)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#102"><b>102</b>if (node.NodeType == NodeType.BuiltinInvocation || node.NodeType == NodeType.<i>ScriptInvocation</i>)</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#164"><b>164</b>case NodeType.<i>ScriptInvocation</i>: InterpretScriptFrame(node, ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#215"><b>215</b>case NodeType.<i>ScriptInvocation</i>: PushInvocation(node, ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#224"><b>224</b>Debug.Assert(node.NodeType == NodeType.BuiltinInvocation || node.NodeType == NodeType.<i>ScriptInvocation</i>);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#460"><b>460</b>NodeType.<i>ScriptInvocation</i> =&gt; HandleScriptInvocation(node),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (2)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#84"><b>84</b>else if (node.NodeType == NodeType.<i>ScriptInvocation</i>)</a>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#102"><b>102</b>if (node.NodeType == NodeType.Scope || node.NodeType == NodeType.<i>ScriptInvocation</i>)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#85"><b>85</b>else if (node.NodeType == NodeType.<i>ScriptInvocation</i>)</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#103"><b>103</b>if (node.NodeType == NodeType.BuiltinInvocation || node.NodeType == NodeType.<i>ScriptInvocation</i>)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptTreePatcher.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#46"><b>46</b>if ((patch.NodeData.NodeType == NodeType.Scope || patch.NodeData.NodeType == NodeType.<i>ScriptInvocation</i>))</a>
+<a href="../Scripting/LowLevel/ScriptTreePatcher.cs.html#46"><b>46</b>if ((patch.NodeData.NodeType == NodeType.BuiltinInvocation || patch.NodeData.NodeType == NodeType.<i>ScriptInvocation</i>))</a>
 </div>
 </div>
 </div>

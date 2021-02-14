@@ -2,7 +2,7 @@
 <div class="rH">108 references to all_allies</div><div class="rA">Halo2MCC (108)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (108)</div>
 <a href="../05b_deltatowers.cs.html#1721"><b>1721</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#1784"><b>1784</b>Engine.ai_set_orders(<i>all_allies</i>, tower1_ext_allies);</a>
-<a href="../05b_deltatowers.cs.html#1785"><b>1785</b>Engine.cs_run_command_script(<i>all_allies</i>, tower1_escape);</a>
+<a href="../05b_deltatowers.cs.html#1785"><b>1785</b>Engine.cs_run_command_script(<i>all_allies</i>, new ScriptMethodReference(tower1_escape));</a>
 <a href="../05b_deltatowers.cs.html#1812"><b>1812</b>Engine.ai_set_orders(<i>all_allies</i>, bridge_allies);</a>
 <a href="../05b_deltatowers.cs.html#1827"><b>1827</b>Engine.ai_set_orders(<i>all_allies</i>, tower2_ext_allies_01);</a>
 <a href="../05b_deltatowers.cs.html#1858"><b>1858</b>Engine.ai_renew(<i>all_allies</i>);</a>
@@ -10,7 +10,7 @@
 <a href="../05b_deltatowers.cs.html#2174"><b>2174</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#2187"><b>2187</b>Engine.ai_set_orders(<i>all_allies</i>, tower2_ext_allies_02);</a>
 <a href="../05b_deltatowers.cs.html#2191"><b>2191</b>Engine.ai_set_orders(<i>all_allies</i>, central_platform_allies);</a>
-<a href="../05b_deltatowers.cs.html#2230"><b>2230</b>Engine.ai_scene(&quot;gondola_01_allies_scene&quot;, gondola_01_ally_comment, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05b_deltatowers.cs.html#2230"><b>2230</b>Engine.ai_scene(&quot;gondola_01_allies_scene&quot;, new ScriptMethodReference(gondola_01_ally_comment), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
 <a href="../05b_deltatowers.cs.html#2232"><b>2232</b>Engine.ai_set_orders(<i>all_allies</i>, gondola_01_allies);</a>
 <a href="../05b_deltatowers.cs.html#2522"><b>2522</b>if (Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0), 45F) == false &amp;&amp; Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0)) &gt; 30F)</a>
 <a href="../05b_deltatowers.cs.html#2524"><b>2524</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0));</a>
@@ -52,12 +52,12 @@
 <a href="../05b_deltatowers.cs.html#3075"><b>3075</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4));</a>
 <a href="../05b_deltatowers.cs.html#3104"><b>3104</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#3134"><b>3134</b>if ((short)Engine.ai_living_count(<i>all_allies</i>) &lt; 2)</a>
-<a href="../05b_deltatowers.cs.html#3146"><b>3146</b>Engine.ai_scene(&quot;tower3_ally_scene&quot;, tower3_ally_warn, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05b_deltatowers.cs.html#3146"><b>3146</b>Engine.ai_scene(&quot;tower3_ally_scene&quot;, new ScriptMethodReference(tower3_ally_warn), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
 <a href="../05b_deltatowers.cs.html#3153"><b>3153</b>Engine.ai_set_orders(<i>all_allies</i>, tower3_on_elev);</a>
 <a href="../05b_deltatowers.cs.html#3177"><b>3177</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#3180"><b>3180</b>Engine.ai_set_orders(<i>all_allies</i>, tunnel_01_suppress);</a>
 <a href="../05b_deltatowers.cs.html#3187"><b>3187</b>Engine.ai_set_orders(<i>all_allies</i>, tunnel_01_allies);</a>
-<a href="../05b_deltatowers.cs.html#3327"><b>3327</b>Engine.ai_scene(&quot;sunken_holo_ally_scene&quot;, sunken_holo_ally_react, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05b_deltatowers.cs.html#3327"><b>3327</b>Engine.ai_scene(&quot;sunken_holo_ally_scene&quot;, new ScriptMethodReference(sunken_holo_ally_react), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
 <a href="../05b_deltatowers.cs.html#3549"><b>3549</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#3578"><b>3578</b>Engine.ai_set_orders(<i>all_allies</i>, sunken_chamber_allies);</a>
 <a href="../05b_deltatowers.cs.html#3746"><b>3746</b>Engine.ai_set_orders(<i>all_allies</i>, tunnel_02_allies);</a>
@@ -89,13 +89,13 @@
 <a href="../05b_deltatowers.cs.html#4552"><b>4552</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2));</a>
 <a href="../05b_deltatowers.cs.html#4683"><b>4683</b>Engine.ai_set_orders(<i>all_allies</i>, gondola_02_allies);</a>
 <a href="../05b_deltatowers.cs.html#4688"><b>4688</b>Engine.ai_set_orders(<i>all_allies</i>, gondola_02_allies);</a>
-<a href="../05b_deltatowers.cs.html#4689"><b>4689</b>Engine.ai_scene(&quot;gondola_02_ally_scene&quot;, gondola_02_ally_comment, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05b_deltatowers.cs.html#4689"><b>4689</b>Engine.ai_scene(&quot;gondola_02_ally_scene&quot;, new ScriptMethodReference(gondola_02_ally_comment), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
 <a href="../05b_deltatowers.cs.html#4694"><b>4694</b>Engine.ai_renew(<i>all_allies</i>);</a>
-<a href="../05b_deltatowers.cs.html#4823"><b>4823</b>Engine.cs_run_command_script(<i>all_allies</i>, temple_hunker);</a>
-<a href="../05b_deltatowers.cs.html#4839"><b>4839</b>Engine.cs_run_command_script(<i>all_allies</i>, abort);</a>
+<a href="../05b_deltatowers.cs.html#4823"><b>4823</b>Engine.cs_run_command_script(<i>all_allies</i>, new ScriptMethodReference(temple_hunker));</a>
+<a href="../05b_deltatowers.cs.html#4839"><b>4839</b>Engine.cs_run_command_script(<i>all_allies</i>, new ScriptMethodReference(abort));</a>
 <a href="../05b_deltatowers.cs.html#4848"><b>4848</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#4851"><b>4851</b>Engine.ai_set_orders(<i>all_allies</i>, temple_ent_allies);</a>
-<a href="../05b_deltatowers.cs.html#4852"><b>4852</b>Engine.ai_scene(&quot;temple_ent_ally_scene&quot;, high_charity_ally_comment, <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05b_deltatowers.cs.html#4852"><b>4852</b>Engine.ai_scene(&quot;temple_ent_ally_scene&quot;, new ScriptMethodReference(high_charity_ally_comment), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
 <a href="../05b_deltatowers.cs.html#4910"><b>4910</b>Engine.ai_renew(<i>all_allies</i>);</a>
 <a href="../05b_deltatowers.cs.html#4912"><b>4912</b>Engine.ai_set_orders(<i>all_allies</i>, temple_halls_allies);</a>
 <a href="../05b_deltatowers.cs.html#5641"><b>5641</b>Engine.ai_renew(<i>all_allies</i>);</a>

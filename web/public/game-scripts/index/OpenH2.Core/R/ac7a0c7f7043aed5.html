@@ -5,7 +5,7 @@
 <a href="../Tags/Scenario/ScenarioScripting.cs.html#99"><b>99</b>public class StartingLocation : <i>IAiActorDefinition</i></a>
 </div>
 </div>
-<div class="rH">16565 references to IAiActorDefinition</div><div class="rA">Halo2MCC (8249)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.Data.cs (33)</div>
+<div class="rH">16567 references to IAiActorDefinition</div><div class="rA">Halo2MCC (8249)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.Data.cs (33)</div>
 <a href="../../Halo2MCC/01a_tutorial.Data.cs.html#131"><b>131</b>public <i>IAiActorDefinition</i> guns =&gt; ScenarioTag.AiSquadDefinitions[0].StartingLocations[0];</a>
 <a href="../../Halo2MCC/01a_tutorial.Data.cs.html#132"><b>132</b>public <i>IAiActorDefinition</i> Squad =&gt; ScenarioTag.AiSquadDefinitions[0];</a>
 <a href="../../Halo2MCC/01a_tutorial.Data.cs.html#142"><b>142</b>public <i>IAiActorDefinition</i> johnson =&gt; ScenarioTag.AiSquadDefinitions[1].StartingLocations[0];</a>
@@ -16561,72 +16561,76 @@
 <a href="../../Halo2Vista/08b_deltacontrol.Data.cs.html#2214"><b>2214</b>public <i>IAiActorDefinition</i> Squad =&gt; ScenarioTag.AiSquadDefinitions[111];</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (67)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">GameObjects\IGameObject.cs (1)</div>
+<div class="rA">OpenH2.Core (69)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">GameObjects\IGameObject.cs (1)</div>
 <a href="../GameObjects/IGameObject.cs.html#15"><b>15</b><i>IAiActorDefinition</i>? Ai { get; }</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (2)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#46"><b>46</b>ScriptDataType.AI =&gt; ParseTypeName(nameof(<i>IAiActorDefinition</i>)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#108"><b>108</b>{ typeof(<i>IAiActorDefinition</i>), ScriptDataType.AI },</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#47"><b>47</b>ScriptDataType.AI =&gt; ParseTypeName(nameof(<i>IAiActorDefinition</i>)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#110"><b>110</b>{ typeof(<i>IAiActorDefinition</i>), ScriptDataType.AI },</a>
 </div>
-<div class="rF"><div class="rN">Scripting\IScriptEngine.cs (62)</div>
-<a href="../Scripting/IScriptEngine.cs.html#20"><b>20</b>GameObjectList ai_actors(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#26"><b>26</b>void ai_attach_units(GameObjectList units, <i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#29"><b>29</b>void ai_attach_units(IUnit unit, <i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#32"><b>32</b>void ai_berserk(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#35"><b>35</b>void ai_braindead(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#38"><b>38</b>void ai_cannot_die(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#41"><b>41</b>short ai_combat_status(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#47"><b>47</b>void ai_disposable(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#56"><b>56</b>void ai_disregard(<i>IAiActorDefinition</i> actor, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#62"><b>62</b>void ai_enter_squad_vehicles(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#65"><b>65</b>void ai_erase(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#71"><b>71</b>short ai_fighting_count(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#74"><b>74</b>IGameObject ai_get_object(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#77"><b>77</b>IUnit ai_get_unit(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#80"><b>80</b>void ai_kill(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#83"><b>83</b>void ai_kill_silent(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#86"><b>86</b>short ai_living_count(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#89"><b>89</b>void ai_magically_see(<i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#92"><b>92</b>void ai_magically_see_object(<i>IAiActorDefinition</i> ai, IGameObject value);</a>
-<a href="../Scripting/IScriptEngine.cs.html#95"><b>95</b>void ai_migrate(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#98"><b>98</b>void ai_migrate(<i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#101"><b>101</b>short ai_nonswarm_count(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#104"><b>104</b>void ai_overcomes_oversteer(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#107"><b>107</b>void ai_place(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#110"><b>110</b>void ai_place(<i>IAiActorDefinition</i> ai, int value);</a>
-<a href="../Scripting/IScriptEngine.cs.html#113"><b>113</b>void ai_place_in_vehicle(<i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#116"><b>116</b>short ai_play_line(<i>IAiActorDefinition</i> ai, string string_id);</a>
-<a href="../Scripting/IScriptEngine.cs.html#119"><b>119</b>short ai_play_line_at_player(<i>IAiActorDefinition</i> ai, string string_id);</a>
-<a href="../Scripting/IScriptEngine.cs.html#131"><b>131</b>void ai_renew(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#137"><b>137</b>bool ai_scene(string string_id, AIScript ai_command_script, <i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#140"><b>140</b>bool ai_scene(string string_id, AIScript ai_command_script, <i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#143"><b>143</b>void ai_set_active_camo(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#146"><b>146</b>void ai_set_blind(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#149"><b>149</b>void ai_set_deaf(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#152"><b>152</b>void ai_set_orders(<i>IAiActorDefinition</i> ai, IAiOrders ai_orders);</a>
-<a href="../Scripting/IScriptEngine.cs.html#155"><b>155</b>short ai_spawn_count(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#158"><b>158</b>float ai_strength(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#161"><b>161</b>void ai_suppress_combat(<i>IAiActorDefinition</i> ai, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#164"><b>164</b>short ai_swarm_count(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#167"><b>167</b>void ai_teleport_to_starting_location_if_outside_bsp(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#170"><b>170</b>bool ai_trigger_test(string value, <i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#173"><b>173</b>void ai_vehicle_enter(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#176"><b>176</b>void ai_vehicle_enter(<i>IAiActorDefinition</i> ai, string unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#179"><b>179</b>void ai_vehicle_enter(<i>IAiActorDefinition</i> ai, IUnit unit, string unit_seat_mapping = null);</a>
-<a href="../Scripting/IScriptEngine.cs.html#182"><b>182</b>void ai_vehicle_enter_immediate(<i>IAiActorDefinition</i> ai, IUnit unit, string seat = null);</a>
-<a href="../Scripting/IScriptEngine.cs.html#185"><b>185</b>void ai_vehicle_exit(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#189"><b>189</b>IVehicle ai_vehicle_get(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#192"><b>192</b>IVehicle ai_vehicle_get_from_starting_location(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#204"><b>204</b>bool ai_vitality_pinned(<i>IAiActorDefinition</i> ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#354"><b>354</b>bool cs_command_script_queued(<i>IAiActorDefinition</i> ai, AIScript ai_command_script);</a>
-<a href="../Scripting/IScriptEngine.cs.html#357"><b>357</b>bool cs_command_script_running(<i>IAiActorDefinition</i> ai, AIScript ai_command_script);</a>
-<a href="../Scripting/IScriptEngine.cs.html#465"><b>465</b>void cs_queue_command_script(<i>IAiActorDefinition</i> ai, AIScript ai_command_script);</a>
-<a href="../Scripting/IScriptEngine.cs.html#468"><b>468</b>void cs_run_command_script(<i>IAiActorDefinition</i> ai, AIScript ai_command_script);</a>
-<a href="../Scripting/IScriptEngine.cs.html#483"><b>483</b>void cs_stack_command_script(<i>IAiActorDefinition</i> ai, AIScript ai_command_script);</a>
-<a href="../Scripting/IScriptEngine.cs.html#851"><b>851</b><i>IAiActorDefinition</i> object_get_ai(IGameObject entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1163"><b>1163</b>void unit_impervious(<i>IAiActorDefinition</i> actor, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1247"><b>1247</b>bool volume_test_objects(ITriggerVolume trigger, <i>IAiActorDefinition</i> actor);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1256"><b>1256</b>bool volume_test_objects_all(ITriggerVolume trigger, <i>IAiActorDefinition</i> actor);</a>
+<div class="rF"><div class="rN">Scripting\GlobalVariableSet.cs (4)</div>
+<a href="../Scripting/GlobalVariableSet.cs.html#9"><b>9</b>public <i>IAiActorDefinition</i>? ai_current_actor;</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#10"><b>10</b>public <i>IAiActorDefinition</i>? ai_current_squad;</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#63"><b>63</b>case 33563: this.ai_current_squad = value.Object as <i>IAiActorDefinition</i>; break;</a>
+<a href="../Scripting/GlobalVariableSet.cs.html#64"><b>64</b>case 33564: this.ai_current_actor = value.Object as <i>IAiActorDefinition</i>; break;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\IScriptEngine.cs (60)</div>
+<a href="../Scripting/IScriptEngine.cs.html#23"><b>23</b>GameObjectList ai_actors(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#31"><b>31</b>void ai_attach_units(GameObjectList units, <i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#34"><b>34</b>void ai_attach_units(IUnit unit, <i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#38"><b>38</b>void ai_berserk(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#42"><b>42</b>void ai_braindead(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#46"><b>46</b>void ai_cannot_die(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#50"><b>50</b>short ai_combat_status(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#58"><b>58</b>void ai_disposable(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#67"><b>67</b>void ai_disregard(<i>IAiActorDefinition</i> actor, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#75"><b>75</b>void ai_enter_squad_vehicles(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#79"><b>79</b>void ai_erase(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#87"><b>87</b>short ai_fighting_count(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#91"><b>91</b>IGameObject ai_get_object(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#95"><b>95</b>IUnit ai_get_unit(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#99"><b>99</b>void ai_kill(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#103"><b>103</b>void ai_kill_silent(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#107"><b>107</b>short ai_living_count(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#111"><b>111</b>void ai_magically_see(<i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#115"><b>115</b>void ai_magically_see_object(<i>IAiActorDefinition</i> ai, IGameObject value);</a>
+<a href="../Scripting/IScriptEngine.cs.html#119"><b>119</b>void ai_migrate(<i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#123"><b>123</b>short ai_nonswarm_count(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#127"><b>127</b>void ai_overcomes_oversteer(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#131"><b>131</b>void ai_place(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#135"><b>135</b>void ai_place(<i>IAiActorDefinition</i> ai, int value);</a>
+<a href="../Scripting/IScriptEngine.cs.html#139"><b>139</b>void ai_place_in_vehicle(<i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#143"><b>143</b>short ai_play_line(<i>IAiActorDefinition</i> ai, string string_id);</a>
+<a href="../Scripting/IScriptEngine.cs.html#147"><b>147</b>short ai_play_line_at_player(<i>IAiActorDefinition</i> ai, string string_id);</a>
+<a href="../Scripting/IScriptEngine.cs.html#159"><b>159</b>void ai_renew(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#163"><b>163</b>bool ai_scene(string scene_name, IScriptMethodReference ai_command_script, <i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#167"><b>167</b>bool ai_scene(string scene_name, IScriptMethodReference ai_command_script, <i>IAiActorDefinition</i> ai, <i>IAiActorDefinition</i> ai1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#171"><b>171</b>void ai_set_active_camo(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#175"><b>175</b>void ai_set_blind(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#179"><b>179</b>void ai_set_deaf(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#183"><b>183</b>void ai_set_orders(<i>IAiActorDefinition</i> ai, IAiOrders ai_orders);</a>
+<a href="../Scripting/IScriptEngine.cs.html#187"><b>187</b>short ai_spawn_count(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#191"><b>191</b>float ai_strength(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#195"><b>195</b>void ai_suppress_combat(<i>IAiActorDefinition</i> ai, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#199"><b>199</b>short ai_swarm_count(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#203"><b>203</b>void ai_teleport_to_starting_location_if_outside_bsp(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#207"><b>207</b>bool ai_trigger_test(string value, <i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#211"><b>211</b>void ai_vehicle_enter(<i>IAiActorDefinition</i> ai, string unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#215"><b>215</b>void ai_vehicle_enter(<i>IAiActorDefinition</i> ai, IUnit unit, string unit_seat_mapping = null);</a>
+<a href="../Scripting/IScriptEngine.cs.html#219"><b>219</b>void ai_vehicle_enter_immediate(<i>IAiActorDefinition</i> ai, IUnit unit, string seat = null);</a>
+<a href="../Scripting/IScriptEngine.cs.html#223"><b>223</b>void ai_vehicle_exit(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#228"><b>228</b>IVehicle ai_vehicle_get(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#232"><b>232</b>IVehicle ai_vehicle_get_from_starting_location(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#244"><b>244</b>bool ai_vitality_pinned(<i>IAiActorDefinition</i> ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#431"><b>431</b>bool cs_command_script_queued(<i>IAiActorDefinition</i> ai, IScriptMethodReference ai_command_script);</a>
+<a href="../Scripting/IScriptEngine.cs.html#435"><b>435</b>bool cs_command_script_running(<i>IAiActorDefinition</i> ai, IScriptMethodReference ai_command_script);</a>
+<a href="../Scripting/IScriptEngine.cs.html#583"><b>583</b>void cs_queue_command_script(<i>IAiActorDefinition</i> ai, IScriptMethodReference ai_command_script);</a>
+<a href="../Scripting/IScriptEngine.cs.html#587"><b>587</b>void cs_run_command_script(<i>IAiActorDefinition</i> ai, IScriptMethodReference ai_command_script);</a>
+<a href="../Scripting/IScriptEngine.cs.html#607"><b>607</b>void cs_stack_command_script(<i>IAiActorDefinition</i> ai, IScriptMethodReference ai_command_script);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1066"><b>1066</b><i>IAiActorDefinition</i> object_get_ai(IGameObject entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1469"><b>1469</b>void unit_impervious(<i>IAiActorDefinition</i> actor, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1568"><b>1568</b>bool volume_test_objects(ITriggerVolume trigger, <i>IAiActorDefinition</i> actor);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1578"><b>1578</b>bool volume_test_objects_all(ITriggerVolume trigger, <i>IAiActorDefinition</i> actor);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (2)</div>
 <a href="../Scripting/ScenarioScriptBase.cs.html#18"><b>18</b>public <i>IAiActorDefinition</i> ai_current_actor;</a>

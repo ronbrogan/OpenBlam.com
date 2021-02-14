@@ -1,16 +1,42 @@
 ﻿<div class="referenceBody">
-<div class="rH">7 references to Short</div><div class="rA">OpenH2.Core (7)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#546"><b>546</b>case ScriptDataType.<i>Short</i>:</a>
+<div class="rH">27 references to Short</div><div class="rA">OpenH2.Core (27)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (2)</div>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#115"><b>115</b>public static InterpreterResult From(short v, ScriptDataType t = ScriptDataType.<i>Short</i>) =&gt; new InterpreterResult() { Short = v, DataType = t };</a>
+<a href="../Scripting/Execution/InterpreterResult.cs.html#116"><b>116</b>public static InterpreterResult From(ushort v, ScriptDataType t = ScriptDataType.<i>Short</i>) =&gt; new InterpreterResult() { Short = (short)v, DataType = t };</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (10)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#100"><b>100</b>case ScriptDataType.<i>Short</i>:</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#102"><b>102</b>value.DataType = ScriptDataType.<i>Short</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#130"><b>130</b>ScriptDataType.<i>Short</i> =&gt; Result.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#200"><b>200</b>case ScriptDataType.<i>Short</i>:</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#202"><b>202</b>value.DataType = ScriptDataType.<i>Short</i>;</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#466"><b>466</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() == right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#484"><b>484</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &gt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#500"><b>500</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &gt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#516"><b>516</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &lt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#532"><b>532</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &lt;= right.GetShort()),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (8)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#255"><b>255</b>ScriptDataType.<i>Short</i> =&gt; Result.From(node.NodeData_H16),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#721"><b>721</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() == right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#741"><b>741</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &gt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#759"><b>759</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &gt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#777"><b>777</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &lt; right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#795"><b>795</b>ScriptDataType.<i>Short</i> =&gt; Result.From(left.GetShort() &lt;= right.GetShort()),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#834"><b>834</b>case ScriptDataType.<i>Short</i>:</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#836"><b>836</b>value.DataType = ScriptDataType.<i>Short</i>;</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (1)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#551"><b>551</b>case ScriptDataType.<i>Short</i>:</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (5)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#28"><b>28</b>ScriptDataType.<i>Short</i> =&gt; PredefinedType(Token(SyntaxKind.IntKeyword)),</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#103"><b>103</b>{ typeof(short), ScriptDataType.<i>Short</i> },</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#202"><b>202</b>ScriptDataType.<i>Short</i></a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#219"><b>219</b>ScriptDataType.<i>Short</i> =&gt; (short)node.NodeData_H16,</a>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#230"><b>230</b>ScriptDataType.<i>Short</i> =&gt; LiteralExpression(Convert.ToInt16(nodeValue)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#29"><b>29</b>ScriptDataType.<i>Short</i> =&gt; PredefinedType(Token(SyntaxKind.IntKeyword)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#104"><b>104</b>{ typeof(short), ScriptDataType.<i>Short</i> },</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#204"><b>204</b>ScriptDataType.<i>Short</i></a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#220"><b>220</b>ScriptDataType.<i>Short</i> =&gt; (short)node.NodeData_H16,</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#231"><b>231</b>ScriptDataType.<i>Short</i> =&gt; LiteralExpression(Convert.ToInt16(nodeValue)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\LowLevel\ScriptProcessor.cs (1)</div>
-<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#53"><b>53</b>case ScriptDataType.<i>Short</i>:</a>
+<a href="../Scripting/LowLevel/ScriptProcessor.cs.html#54"><b>54</b>case ScriptDataType.<i>Short</i>:</a>
 </div>
 </div>
 </div>

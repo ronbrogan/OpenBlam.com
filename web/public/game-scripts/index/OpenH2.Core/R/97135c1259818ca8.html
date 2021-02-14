@@ -3,22 +3,24 @@
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#40"><b>40</b>this.<i>scenario</i> = scnr;</a>
 </div>
 </div>
-<div class="rH">15 references to scenario</div><div class="rA">OpenH2.Core (15)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (15)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#344"><b>344</b>Debug.Assert(variable.Value_H16 &lt; <i>scenario</i>.ScriptSyntaxNodes.Length, &quot;Variable expression is not valid&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#346"><b>346</b>var node = <i>scenario</i>.ScriptSyntaxNodes[variable.Value_H16];</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#413"><b>413</b>var node = <i>scenario</i>.ScriptSyntaxNodes[currentIndex];</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#445"><b>445</b>Debug.Assert(<i>scenario</i>.ScriptSyntaxNodes[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#483"><b>483</b>Debug.Assert(<i>scenario</i>.ScriptSyntaxNodes[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#514"><b>514</b>return new TagGetContext(<i>scenario</i>, node);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#518"><b>518</b>return new ReferenceGetContext(<i>scenario</i>, node);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#520"><b>520</b>return new AiGetContext(<i>scenario</i>, node, nameRepo);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#528"><b>528</b>return new EntityGetContext(<i>scenario</i>, node, nameRepo);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#542"><b>542</b>return new FieldGetContext(<i>scenario</i>, node, nameRepo);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#551"><b>551</b>return new LiteralContext(<i>scenario</i>, node, currentScope);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#554"><b>554</b>return new UnknownContext(<i>scenario</i>, node);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#561"><b>561</b>return new VariableAccessContext(<i>scenario</i>, access);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#567"><b>567</b>return new ScriptInvocationContext(<i>scenario</i>, invocation);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#703"><b>703</b>return ((Span&lt;byte&gt;)<i>scenario</i>.ScriptStrings).ReadStringStarting(node.NodeString);</a>
+<div class="rH">17 references to scenario</div><div class="rA">OpenH2.Core (17)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (17)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#346"><b>346</b>Debug.Assert(variable.Value_H16 &lt; <i>scenario</i>.ScriptSyntaxNodes.Length, &quot;Variable expression is not valid&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#348"><b>348</b>var node = <i>scenario</i>.ScriptSyntaxNodes[variable.Value_H16];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#417"><b>417</b>var node = <i>scenario</i>.ScriptSyntaxNodes[currentIndex];</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#449"><b>449</b>Debug.Assert(<i>scenario</i>.ScriptSyntaxNodes[node.NextIndex].Checkval == node.NextCheckval, &quot;Node&#39;s next checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#487"><b>487</b>Debug.Assert(<i>scenario</i>.ScriptSyntaxNodes[node.NodeData_H16].Checkval == node.NodeData_L16, &quot;Scope&#39;s next node checkval didn&#39;t match&quot;);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#518"><b>518</b>return new TagGetContext(<i>scenario</i>, node);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#522"><b>522</b>return new ReferenceGetContext(<i>scenario</i>, node);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#524"><b>524</b>return new AiGetContext(<i>scenario</i>, node, nameRepo);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#532"><b>532</b>return new EntityGetContext(<i>scenario</i>, node, nameRepo);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#534"><b>534</b>return new ScriptMethodReferenceContext(<i>scenario</i>, node, nameRepo);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#547"><b>547</b>return new FieldGetContext(<i>scenario</i>, node, nameRepo);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#555"><b>555</b>return new LiteralContext(<i>scenario</i>, node, currentScope);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#557"><b>557</b>return new GameDifficultyContext(<i>scenario</i>, node, currentScope);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#560"><b>560</b>return new UnknownContext(<i>scenario</i>, node);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#567"><b>567</b>return new VariableAccessContext(<i>scenario</i>, access);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#573"><b>573</b>return new ScriptInvocationContext(<i>scenario</i>, invocation);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#709"><b>709</b>return ((Span&lt;byte&gt;)<i>scenario</i>.ScriptStrings).ReadStringStarting(node.NodeString);</a>
 </div>
 </div>
 </div>

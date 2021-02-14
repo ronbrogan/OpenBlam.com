@@ -30,12 +30,12 @@
 <a href="../GameObjects/IWeapon.cs.html#3"><b>3</b>public interface IWeapon : <i>IGameObject</i></a>
 </div>
 <div class="rF"><div class="rN">Scripting\Types.cs (3)</div>
-<a href="../Scripting/Types.cs.html#41"><b>41</b>public interface IStartingProfile : <i>IGameObject</i> { }</a>
-<a href="../Scripting/Types.cs.html#45"><b>45</b>public interface ILoopingSound : <i>IGameObject</i> { }</a>
-<a href="../Scripting/Types.cs.html#54"><b>54</b>public interface ISound : <i>IGameObject</i> { }</a>
+<a href="../Scripting/Types.cs.html#60"><b>60</b>public interface IStartingProfile : <i>IGameObject</i> { }</a>
+<a href="../Scripting/Types.cs.html#64"><b>64</b>public interface ILoopingSound : <i>IGameObject</i> { }</a>
+<a href="../Scripting/Types.cs.html#77"><b>77</b>public interface ISound : <i>IGameObject</i> { }</a>
 </div>
 </div>
-<div class="rH">1822 references to IGameObject</div><div class="rA">Halo2MCC (873)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (27)</div>
+<div class="rH">1825 references to IGameObject</div><div class="rA">Halo2MCC (873)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (27)</div>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1089"><b>1089</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\cinematics\\01_spacestation\\x01\\music\\x01_01_mus&quot;, 3959556748U), default(<i>IGameObject</i>), 1F);</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1097"><b>1097</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\cinematics\\01_spacestation\\x01\\foley\\x01_01a_fol&quot;, 3959622285U), default(<i>IGameObject</i>), 1F);</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1212"><b>1212</b>Engine.sound_impulse_start(Engine.GetTag&lt;SoundTag&gt;(&quot;sound\\cinematics\\01_spacestation\\x01\\foley\\x01_01b_fol&quot;, 3960212118U), default(<i>IGameObject</i>), 1F);</a>
@@ -1823,7 +1823,7 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#5768"><b>5768</b>await Engine.sleep(Engine.ai_play_line_on_object(default(<i>IGameObject</i>), &quot;0050&quot;));</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (96)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">GameObjects\IGameObject.cs (3)</div>
+<div class="rA">OpenH2.Core (99)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">GameObjects\IGameObject.cs (3)</div>
 <a href="../GameObjects/IGameObject.cs.html#14"><b>14</b><i>IGameObject</i> Parent { get; }</a>
 <a href="../GameObjects/IGameObject.cs.html#23"><b>23</b>void Attach(<i>IGameObject</i> entity);</a>
 <a href="../GameObjects/IGameObject.cs.html#24"><b>24</b>void Detach(<i>IGameObject</i> child);</a>
@@ -1835,95 +1835,102 @@
 <div class="rF"><div class="rN">GameObjects\IUnit.cs (1)</div>
 <a href="../GameObjects/IUnit.cs.html#9"><b>9</b>public <i>IGameObject</i> Driver { get; }</a>
 </div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (2)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#274"><b>274</b>ScriptDataType.List =&gt; Result.From(new GameObjectList(new[] { (<i>IGameObject</i>?)GetEntityResult(node).Object })),</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#839"><b>839</b>value.Object = new GameObjectList(new[] { (<i>IGameObject</i>?)value.Object });</a>
+</div>
 <div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#43"><b>43</b>ScriptDataType.Entity =&gt; ParseTypeName(nameof(<i>IGameObject</i>)),</a>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#44"><b>44</b>ScriptDataType.Entity =&gt; ParseTypeName(nameof(<i>IGameObject</i>)),</a>
 </div>
-<div class="rF"><div class="rN">Scripting\IScriptEngine.cs (83)</div>
-<a href="../Scripting/IScriptEngine.cs.html#17"><b>17</b>void activate_team_nav_point_object(INavigationPoint navpoint, ITeam team, <i>IGameObject</i> entity, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#53"><b>53</b>void ai_disregard(<i>IGameObject</i> unit, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#74"><b>74</b><i>IGameObject</i> ai_get_object(IAiActorDefinition ai);</a>
-<a href="../Scripting/IScriptEngine.cs.html#92"><b>92</b>void ai_magically_see_object(IAiActorDefinition ai, <i>IGameObject</i> value);</a>
-<a href="../Scripting/IScriptEngine.cs.html#125"><b>125</b>short ai_play_line_on_object(<i>IGameObject</i> entity, string string_id);</a>
-<a href="../Scripting/IScriptEngine.cs.html#243"><b>243</b>void cinematic_clone_players_weapon(<i>IGameObject</i> entity, string string_id, string string_id1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#336"><b>336</b>void cs_aim_object(bool boolean, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#342"><b>342</b>void cs_approach(<i>IGameObject</i> entity, float real, float real1, float real12);</a>
-<a href="../Scripting/IScriptEngine.cs.html#387"><b>387</b>void cs_face_object(bool boolean, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#444"><b>444</b>void cs_look_object(bool boolean, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#477"><b>477</b>void cs_shoot(bool boolean, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#486"><b>486</b>void cs_start_approach(<i>IGameObject</i> entity, float real, float real1, float real12);</a>
-<a href="../Scripting/IScriptEngine.cs.html#527"><b>527</b>void custom_animation_relative(IUnit entity, AnimationGraphTag animation, string emotion, bool boolean, <i>IGameObject</i> other);</a>
-<a href="../Scripting/IScriptEngine.cs.html#530"><b>530</b>void custom_animation_relative(IUnit unit, string emotion, bool interpolate, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#533"><b>533</b>void custom_animation_relative_loop(IUnit unit, AnimationGraphTag animation2, string emotion, bool boolean, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#539"><b>539</b>void damage_object(DamageEffectTag damage, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#554"><b>554</b>void deactivate_team_nav_point_object(ITeam team, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#613"><b>613</b>void effect_new_on_object_marker(EffectTag effect, <i>IGameObject</i> entity, string string_id);</a>
-<a href="../Scripting/IScriptEngine.cs.html#719"><b>719</b>short list_count(<i>IGameObject</i> e);</a>
-<a href="../Scripting/IScriptEngine.cs.html#728"><b>728</b><i>IGameObject</i> list_get(GameObjectList object_list, int index);</a>
-<a href="../Scripting/IScriptEngine.cs.html#752"><b>752</b>void objects_attach(<i>IGameObject</i> entity, string string_id, <i>IGameObject</i> entity1, string string_id1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#759"><b>759</b>bool objects_can_see_object(<i>IGameObject</i> entity, <i>IGameObject</i> target, float degrees);</a>
-<a href="../Scripting/IScriptEngine.cs.html#762"><b>762</b>bool objects_can_see_object(GameObjectList list, <i>IGameObject</i> target, float degrees);</a>
-<a href="../Scripting/IScriptEngine.cs.html#765"><b>765</b>void objects_detach(<i>IGameObject</i> entity, <i>IGameObject</i> entity1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#768"><b>768</b>float objects_distance_to_flag(<i>IGameObject</i> entity, ILocationFlag locationFlag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#774"><b>774</b>float objects_distance_to_object(GameObjectList list, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#777"><b>777</b>void objects_predict(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#783"><b>783</b>void objects_predict_high(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#785"><b>785</b><i>IGameObject</i> object_at_marker(<i>IGameObject</i> entity, string stringId);</a>
-<a href="../Scripting/IScriptEngine.cs.html#788"><b>788</b>void object_cannot_die(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#794"><b>794</b>void object_cannot_die(IUnit entity, <i>IGameObject</i> vehicle, string seat);</a>
-<a href="../Scripting/IScriptEngine.cs.html#797"><b>797</b>void object_cannot_take_damage(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#803"><b>803</b>void object_can_take_damage(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#809"><b>809</b>void object_cinematic_lod(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#812"><b>812</b>void object_cinematic_visibility(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#815"><b>815</b>void object_clear_all_function_variables(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#818"><b>818</b>void object_clear_function_variable(<i>IGameObject</i> entity, string string_id);</a>
-<a href="../Scripting/IScriptEngine.cs.html#836"><b>836</b>void object_damage_damage_section(<i>IGameObject</i> entity, string string_id, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#839"><b>839</b>void object_destroy(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#848"><b>848</b>void object_dynamic_simulation_disable(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#851"><b>851</b>IAiActorDefinition object_get_ai(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#854"><b>854</b>float object_get_health(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#857"><b>857</b><i>IGameObject</i> object_get_parent(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#860"><b>860</b>float object_get_shield(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#863"><b>863</b>void object_hide(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#866"><b>866</b>short object_model_targets_destroyed(<i>IGameObject</i> entity, string target);</a>
-<a href="../Scripting/IScriptEngine.cs.html#869"><b>869</b>void object_set_deleted_when_deactivated(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#872"><b>872</b>void object_set_function_variable(<i>IGameObject</i> entity, string string_id, float real, float real1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#875"><b>875</b>void object_set_permutation(<i>IGameObject</i> entity, string string_id, string string_id1);</a>
-<a href="../Scripting/IScriptEngine.cs.html#878"><b>878</b>void object_set_phantom_power(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#881"><b>881</b>void object_set_region_state(<i>IGameObject</i> entity, string string_id, IDamageState model_state);</a>
-<a href="../Scripting/IScriptEngine.cs.html#884"><b>884</b>void object_set_scale(<i>IGameObject</i> entity, float real, short value);</a>
-<a href="../Scripting/IScriptEngine.cs.html#887"><b>887</b>void object_set_shield(<i>IGameObject</i> entity, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#890"><b>890</b>void object_set_shield_stun_infinite(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#893"><b>893</b>void object_set_velocity(<i>IGameObject</i> entity, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#896"><b>896</b>void object_set_velocity(<i>IGameObject</i> entity, float real, float real1, float real12);</a>
-<a href="../Scripting/IScriptEngine.cs.html#899"><b>899</b>void object_teleport(<i>IGameObject</i> entity, ILocationFlag cutscene_flag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#908"><b>908</b>void object_uses_cinematic_lighting(<i>IGameObject</i> entity, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1013"><b>1013</b>void pvs_set_object(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1031"><b>1031</b>void render_lights_enable_cinematic_shadow(bool boolean, <i>IGameObject</i> entity, string string_id, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1037"><b>1037</b>void scenery_animation_start_relative(IScenery scenery, AnimationGraphTag animation, string emotion, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1040"><b>1040</b>void scenery_animation_start_relative(IScenery scenery, string emotion, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1073"><b>1073</b>void sound_impulse_start(SoundTag sound, <i>IGameObject</i> entity, float floatValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1076"><b>1076</b>void sound_impulse_start_effect(SoundTag sound, <i>IGameObject</i> entity, float floatValue, string effect);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1082"><b>1082</b>void sound_impulse_trigger(SoundTag sound, <i>IGameObject</i> source, float floatValue, int intValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1088"><b>1088</b>void sound_looping_start(LoopingSoundTag looping_sound, <i>IGameObject</i> entity, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1112"><b>1112</b>void texture_camera_set_object_marker(<i>IGameObject</i> entity, string string_id, float real);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1124"><b>1124</b>IUnit unit(<i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1160"><b>1160</b>void unit_impervious(<i>IGameObject</i> unit, bool boolean);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1208"><b>1208</b><i>IGameObject</i> vehicle_driver(IUnit unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1211"><b>1211</b>void vehicle_load_magic(<i>IGameObject</i> vehicle, string vehicleSeat, <i>IGameObject</i> unit);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1214"><b>1214</b>void vehicle_load_magic(<i>IGameObject</i> vehicle, string vehicleSeat, GameObjectList units);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1220"><b>1220</b>bool vehicle_test_seat_list(IVehicle vehicle, string seat, <i>IGameObject</i> subject);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1226"><b>1226</b>void vehicle_unload(<i>IGameObject</i> entity, string unit_seat_mapping);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1238"><b>1238</b>bool volume_test_object(ITriggerVolume trigger_volume, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1244"><b>1244</b>bool volume_test_objects(ITriggerVolume trigger, <i>IGameObject</i> entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1253"><b>1253</b>bool volume_test_objects_all(ITriggerVolume trigger, <i>IGameObject</i> entity);</a>
+<div class="rF"><div class="rN">Scripting\IScriptEngine.cs (80)</div>
+<a href="../Scripting/IScriptEngine.cs.html#19"><b>19</b>void activate_team_nav_point_object(INavigationPoint navpoint, ITeam team, <i>IGameObject</i> entity, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#64"><b>64</b>void ai_disregard(<i>IGameObject</i> unit, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#91"><b>91</b><i>IGameObject</i> ai_get_object(IAiActorDefinition ai);</a>
+<a href="../Scripting/IScriptEngine.cs.html#115"><b>115</b>void ai_magically_see_object(IAiActorDefinition ai, <i>IGameObject</i> value);</a>
+<a href="../Scripting/IScriptEngine.cs.html#151"><b>151</b>short ai_play_line_on_object(<i>IGameObject</i> entity, string string_id);</a>
+<a href="../Scripting/IScriptEngine.cs.html#295"><b>295</b>void cinematic_clone_players_weapon(<i>IGameObject</i> entity, string string_id, string string_id1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#411"><b>411</b>void cs_aim_object(bool boolean, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#419"><b>419</b>void cs_approach(<i>IGameObject</i> entity, float real, float real1, float real12);</a>
+<a href="../Scripting/IScriptEngine.cs.html#475"><b>475</b>void cs_face_object(bool boolean, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#555"><b>555</b>void cs_look_object(bool boolean, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#599"><b>599</b>void cs_shoot(bool boolean, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#611"><b>611</b>void cs_start_approach(<i>IGameObject</i> entity, float real, float real1, float real12);</a>
+<a href="../Scripting/IScriptEngine.cs.html#658"><b>658</b>void custom_animation_relative(IUnit entity, AnimationGraphTag animation, string emotion, bool boolean, <i>IGameObject</i> other);</a>
+<a href="../Scripting/IScriptEngine.cs.html#662"><b>662</b>void custom_animation_relative_loop(IUnit unit, AnimationGraphTag animation2, string emotion, bool boolean, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#670"><b>670</b>void damage_object(DamageEffectTag damage, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#686"><b>686</b>void deactivate_team_nav_point_object(ITeam team, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#765"><b>765</b>void effect_new_on_object_marker(EffectTag effect, <i>IGameObject</i> entity, string string_id);</a>
+<a href="../Scripting/IScriptEngine.cs.html#900"><b>900</b>short list_count(<i>IGameObject</i> e);</a>
+<a href="../Scripting/IScriptEngine.cs.html#912"><b>912</b><i>IGameObject</i> list_get(GameObjectList object_list, int index);</a>
+<a href="../Scripting/IScriptEngine.cs.html#944"><b>944</b>void objects_attach(<i>IGameObject</i> entity, string string_id, <i>IGameObject</i> entity1, string string_id1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#952"><b>952</b>bool objects_can_see_object(<i>IGameObject</i> entity, <i>IGameObject</i> target, float degrees);</a>
+<a href="../Scripting/IScriptEngine.cs.html#956"><b>956</b>bool objects_can_see_object(GameObjectList list, <i>IGameObject</i> target, float degrees);</a>
+<a href="../Scripting/IScriptEngine.cs.html#960"><b>960</b>void objects_detach(<i>IGameObject</i> entity, <i>IGameObject</i> entity1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#963"><b>963</b>float objects_distance_to_flag(<i>IGameObject</i> entity, ILocationFlag locationFlag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#971"><b>971</b>float objects_distance_to_object(GameObjectList list, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#974"><b>974</b>void objects_predict(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#985"><b>985</b>void objects_predict_high(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#988"><b>988</b><i>IGameObject</i> object_at_marker(<i>IGameObject</i> entity, string stringId);</a>
+<a href="../Scripting/IScriptEngine.cs.html#992"><b>992</b>void object_cannot_die(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#995"><b>995</b>void object_cannot_take_damage(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1002"><b>1002</b>void object_can_take_damage(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1010"><b>1010</b>void object_cinematic_lod(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1014"><b>1014</b>void object_cinematic_visibility(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1018"><b>1018</b>void object_clear_all_function_variables(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1022"><b>1022</b>void object_clear_function_variable(<i>IGameObject</i> entity, string string_id);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1046"><b>1046</b>void object_damage_damage_section(<i>IGameObject</i> entity, string string_id, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1050"><b>1050</b>void object_destroy(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1062"><b>1062</b>void object_dynamic_simulation_disable(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1066"><b>1066</b>IAiActorDefinition object_get_ai(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1070"><b>1070</b>float object_get_health(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1074"><b>1074</b><i>IGameObject</i> object_get_parent(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1078"><b>1078</b>float object_get_shield(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1082"><b>1082</b>void object_hide(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1086"><b>1086</b>short object_model_targets_destroyed(<i>IGameObject</i> entity, string target);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1090"><b>1090</b>void object_set_deleted_when_deactivated(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1094"><b>1094</b>void object_set_function_variable(<i>IGameObject</i> entity, string string_id, float real, float real1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1098"><b>1098</b>void object_set_permutation(<i>IGameObject</i> entity, string string_id, string string_id1);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1102"><b>1102</b>void object_set_phantom_power(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1106"><b>1106</b>void object_set_region_state(<i>IGameObject</i> entity, string string_id, IDamageState model_state);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1110"><b>1110</b>void object_set_scale(<i>IGameObject</i> entity, float real, short value);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1114"><b>1114</b>void object_set_shield(<i>IGameObject</i> entity, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1118"><b>1118</b>void object_set_shield_stun_infinite(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1122"><b>1122</b>void object_set_velocity(<i>IGameObject</i> entity, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1126"><b>1126</b>void object_set_velocity(<i>IGameObject</i> entity, float real, float real1, float real12);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1130"><b>1130</b>void object_teleport(<i>IGameObject</i> entity, ILocationFlag cutscene_flag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1142"><b>1142</b>void object_uses_cinematic_lighting(<i>IGameObject</i> entity, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1282"><b>1282</b>void pvs_set_object(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1306"><b>1306</b>void render_lights_enable_cinematic_shadow(bool boolean, <i>IGameObject</i> entity, string string_id, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1314"><b>1314</b>void scenery_animation_start_relative(IScenery scenery, AnimationGraphTag animation, string emotion, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1352"><b>1352</b>void sound_impulse_start(SoundTag sound, <i>IGameObject</i> entity, float floatValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1356"><b>1356</b>void sound_impulse_start_effect(SoundTag sound, <i>IGameObject</i> entity, float floatValue, string effect);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1364"><b>1364</b>void sound_impulse_trigger(SoundTag sound, <i>IGameObject</i> source, float floatValue, int intValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1372"><b>1372</b>void sound_looping_start(LoopingSoundTag looping_sound, <i>IGameObject</i> entity, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1404"><b>1404</b>void texture_camera_set_object_marker(<i>IGameObject</i> entity, string string_id, float real);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1420"><b>1420</b>IUnit unit(<i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1466"><b>1466</b>void unit_impervious(<i>IGameObject</i> unit, bool boolean);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1521"><b>1521</b><i>IGameObject</i> vehicle_driver(IUnit unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1524"><b>1524</b>void vehicle_load_magic(<i>IGameObject</i> vehicle, string vehicleSeat, <i>IGameObject</i> unit);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1528"><b>1528</b>void vehicle_load_magic(<i>IGameObject</i> vehicle, string vehicleSeat, GameObjectList units);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1535"><b>1535</b>bool vehicle_test_seat_list(IVehicle vehicle, string seat, <i>IGameObject</i> subject);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1543"><b>1543</b>void vehicle_unload(<i>IGameObject</i> entity, string unit_seat_mapping);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1559"><b>1559</b>bool volume_test_object(ITriggerVolume trigger_volume, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1565"><b>1565</b>bool volume_test_objects(ITriggerVolume trigger, <i>IGameObject</i> entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1575"><b>1575</b>bool volume_test_objects_all(ITriggerVolume trigger, <i>IGameObject</i> entity);</a>
 </div>
-<div class="rF"><div class="rN">Scripting\Types.cs (6)</div>
-<a href="../Scripting/Types.cs.html#19"><b>19</b>public class GameObjectList : IEnumerable&lt;<i>IGameObject</i>&gt;</a>
-<a href="../Scripting/Types.cs.html#21"><b>21</b>public static GameObjectList Empty =&gt; new GameObjectList(Array.Empty&lt;<i>IGameObject</i>&gt;());</a>
-<a href="../Scripting/Types.cs.html#23"><b>23</b>public GameObjectList(<i>IGameObject</i>[] objects)</a>
-<a href="../Scripting/Types.cs.html#28"><b>28</b>public <i>IGameObject</i>[] Objects { get; set; }</a>
-<a href="../Scripting/Types.cs.html#30"><b>30</b>public IEnumerator&lt;<i>IGameObject</i>&gt; GetEnumerator()</a>
-<a href="../Scripting/Types.cs.html#32"><b>32</b>return ((IEnumerable&lt;<i>IGameObject</i>&gt;)this.Objects).GetEnumerator();</a>
+<div class="rF"><div class="rN">Scripting\Types.cs (8)</div>
+<a href="../Scripting/Types.cs.html#38"><b>38</b>public class GameObjectList : IEnumerable&lt;<i>IGameObject</i>&gt;</a>
+<a href="../Scripting/Types.cs.html#40"><b>40</b>public static GameObjectList Empty =&gt; new GameObjectList(Array.Empty&lt;<i>IGameObject</i>&gt;());</a>
+<a href="../Scripting/Types.cs.html#42"><b>42</b>public GameObjectList(<i>IGameObject</i>?[] objects)</a>
+<a href="../Scripting/Types.cs.html#47"><b>47</b>public <i>IGameObject</i>?[] Objects { get; set; }</a>
+<a href="../Scripting/Types.cs.html#49"><b>49</b>public IEnumerator&lt;<i>IGameObject</i>&gt; GetEnumerator()</a>
+<a href="../Scripting/Types.cs.html#51"><b>51</b>return ((IEnumerable&lt;<i>IGameObject</i>&gt;)this.Objects).GetEnumerator();</a>
+<a href="../Scripting/Types.cs.html#129"><b>129</b>public ScenarioEntity(int id, IGameObjectDefinition&lt;<i>IGameObject</i>&gt; item)</a>
+<a href="../Scripting/Types.cs.html#137"><b>137</b>private IGameObjectDefinition&lt;<i>IGameObject</i>&gt; reference;</a>
+</div>
+<div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (2)</div>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#127"><b>127</b>public class EntityReference : IGameObjectDefinition&lt;<i>IGameObject</i>&gt;</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#139"><b>139</b>public <i>IGameObject</i>? GameObject =&gt; this.ItemType switch</a>
 </div>
 </div>
 </div>

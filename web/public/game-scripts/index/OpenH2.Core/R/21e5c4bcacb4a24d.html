@@ -1,0 +1,51 @@
+﻿<div class="referenceBody">
+<div class="rH">43 references to ScriptOps</div><div class="rA">OpenH2.Core (43)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterState.cs (2)</div>
+<a href="../Scripting/Execution/InterpreterState.cs.html#87"><b>87</b>sb.AppendLine($&quot;  At Op:{<i>ScriptOps</i>.GetName(frame.OriginatingNode.OperationId)} consuming Op:{<i>ScriptOps</i>.GetName(frame.Current.OperationId)} and next of {frame.Next}&quot;);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (18)</div>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#222"><b>222</b><i>ScriptOps</i>.Begin =&gt; this.Begin(node, out next),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#223"><b>223</b><i>ScriptOps</i>.BeginRandom =&gt; this.BeginRandom(node, out next),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#224"><b>224</b><i>ScriptOps</i>.If =&gt; this.If(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#225"><b>225</b><i>ScriptOps</i>.Set =&gt; this.Set(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#226"><b>226</b><i>ScriptOps</i>.And =&gt; this.And(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#227"><b>227</b><i>ScriptOps</i>.Or =&gt; this.Or(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#228"><b>228</b><i>ScriptOps</i>.Add =&gt; this.Add(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#229"><b>229</b><i>ScriptOps</i>.Subtract =&gt; this.Subtract(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#230"><b>230</b><i>ScriptOps</i>.Multiply =&gt; this.Multiply(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#231"><b>231</b><i>ScriptOps</i>.Divide =&gt; this.Divide(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#232"><b>232</b><i>ScriptOps</i>.Min =&gt; this.Min(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#233"><b>233</b><i>ScriptOps</i>.Max =&gt; this.Max(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#234"><b>234</b><i>ScriptOps</i>.Equals =&gt; this.ValueEquals(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#235"><b>235</b><i>ScriptOps</i>.GreaterThan =&gt; this.GreaterThan(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#236"><b>236</b><i>ScriptOps</i>.LessThan =&gt; this.LessThan(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#237"><b>237</b><i>ScriptOps</i>.GreaterThanOrEqual =&gt; this.GreaterThanOrEquals(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#238"><b>238</b><i>ScriptOps</i>.LessThanOrEqual =&gt; this.LessThanOrEquals(node),</a>
+<a href="../Scripting/Execution/ScriptInterpreter.cs.html#239"><b>239</b><i>ScriptOps</i>.Not =&gt; this.Not(node),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (23)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#113"><b>113</b>OperationId = <i>ScriptOps</i>.Begin,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#121"><b>121</b>OperationId = <i>ScriptOps</i>.Begin,</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#355"><b>355</b>case <i>ScriptOps</i>.Begin: this.Begin(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#356"><b>356</b>case <i>ScriptOps</i>.BeginRandom: this.BeginRandom(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#357"><b>357</b>case <i>ScriptOps</i>.If: this.If(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#358"><b>358</b>case <i>ScriptOps</i>.And: this.And(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#359"><b>359</b>case <i>ScriptOps</i>.Or: this.Or(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#360"><b>360</b>case <i>ScriptOps</i>.Set: this.Set(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#361"><b>361</b>case <i>ScriptOps</i>.SleepUntil: this.SleepUntil(ref state); return;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#376"><b>376</b>case <i>ScriptOps</i>.Sleep: this.Sleep(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#377"><b>377</b>case <i>ScriptOps</i>.Not: this.Not(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#378"><b>378</b>case <i>ScriptOps</i>.Equals: this.ValueEquals(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#379"><b>379</b>case <i>ScriptOps</i>.GreaterThan: this.GreaterThan(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#380"><b>380</b>case <i>ScriptOps</i>.LessThan: this.LessThan(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#381"><b>381</b>case <i>ScriptOps</i>.GreaterThanOrEqual: this.GreaterThanOrEquals(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#382"><b>382</b>case <i>ScriptOps</i>.LessThanOrEqual: this.LessThanOrEquals(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#384"><b>384</b>case <i>ScriptOps</i>.Add: this.Add(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#385"><b>385</b>case <i>ScriptOps</i>.Subtract: this.Subtract(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#386"><b>386</b>case <i>ScriptOps</i>.Multiply: this.Multiply(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#387"><b>387</b>case <i>ScriptOps</i>.Divide: this.Divide(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#388"><b>388</b>case <i>ScriptOps</i>.Min: this.Min(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#389"><b>389</b>case <i>ScriptOps</i>.Max: this.Max(ref state); break;</a>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#394"><b>394</b>this.executor.RecordMetric(ScriptExecutionMetric.MethodTiming, $&quot;{<i>ScriptOps</i>.GetName(opId)} [{opId}]&quot;, ((long)methodStopwatch.ElapsedTicks * 1000000 / Stopwatch.Frequency));</a>
+</div>
+</div>
+</div>

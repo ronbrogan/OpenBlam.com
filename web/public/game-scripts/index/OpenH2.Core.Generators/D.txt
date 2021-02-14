@@ -1,0 +1,29 @@
+﻿CreateDispatchImplementation;9234d05d30a4c8f6;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.CreateDispatchImplementation(System.Collections.Generic.List<(System.Int32, System.String)>);76
+CreateDispatchImplementation;d276bd96319999e8;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.CreateDispatchImplementation(System.Collections.Generic.List<(System.Int32, System.String)>);76
+CreateInterpreterResult;890ee01a7ed8f9fa;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.CreateInterpreterResult(Microsoft.CodeAnalysis.ITypeSymbol);76
+Execute;7eb56a57c7414e88;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.Execute(Microsoft.CodeAnalysis.GeneratorExecutionContext);72
+Execute;e38d7c3cfaf565dc;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.Execute(Microsoft.CodeAnalysis.GeneratorExecutionContext);72
+GeneratePartialClass;346e935fb81aaf7e;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.GeneratePartialClass(Microsoft.CodeAnalysis.INamedTypeSymbol);76
+GeneratePartialClass;5d05d0c9172b6228;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.GeneratePartialClass(Microsoft.CodeAnalysis.INamedTypeSymbol);76
+GetType;a1b742024cc1d523;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.GetType(Microsoft.CodeAnalysis.Compilation, System.String);76
+GetType;ecb02e63e57798bd;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.GetType(Microsoft.CodeAnalysis.Compilation, System.String);76
+GetTypeSymbol;f5bed68a0c60d3d8;method;OpenH2.Core.Generators.Extensions.SyntaxUtilities.GetTypeSymbol(Microsoft.CodeAnalysis.Compilation, System.Type);220
+GetTypeSymbol<T>;0c0ef9bae64133fa;method;OpenH2.Core.Generators.Extensions.SyntaxUtilities.GetTypeSymbol<T>(Microsoft.CodeAnalysis.Compilation);220
+GetValueForParam;76b10d9b383d1591;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.GetValueForParam(Microsoft.CodeAnalysis.IParameterSymbol);76
+GetValueForParam;bfe215301b4709b9;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.GetValueForParam(Microsoft.CodeAnalysis.IParameterSymbol);76
+ImplementationToScriptDataType;94d8347fdaa986ec;field;OpenH2.Core.Generators.Scripting.TypeMapping.ImplementationToScriptDataType;42
+Initialize;541d60dc8fe7670e;method;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator.Initialize(Microsoft.CodeAnalysis.GeneratorInitializationContext);72
+Initialize;edd0be10d4322cd1;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.Initialize(Microsoft.CodeAnalysis.GeneratorInitializationContext);72
+InterpreterMethodGenerator;0516fb31ebb317d1;class;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator;0
+IterativeInterpreterMethodGenerator;3b695a00084e742c;class;OpenH2.Core.Generators.Scripting.IterativeInterpreterMethodGenerator;0
+LiteralExpression;39e08f3769c9939f;method;OpenH2.Core.Generators.Extensions.SyntaxUtilities.LiteralExpression(System.Object);72
+SyntaxUtilities;43939e064f60def6;class;OpenH2.Core.Generators.Extensions.SyntaxUtilities;2
+TypeMapping;a1220b98349667b8;class;OpenH2.Core.Generators.Scripting.TypeMapping;2
+WrapReturnValue;c0dd082f227fe90b;method;OpenH2.Core.Generators.Scripting.InterpreterMethodGenerator.WrapReturnValue(Microsoft.CodeAnalysis.ITypeSymbol);76
+SyntaxUtilities.cs;c56098ae3e56bd3e;file;Extensions\SyntaxUtilities.cs;196
+.NETStandard,Version=v2.0.AssemblyAttributes.cs;074cf5e6461e8bd1;file;obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs;196
+OpenH2.Core.Generators.AssemblyInfo.cs;8001a107b6b64311;file;obj\Debug\netstandard2.0\OpenH2.Core.Generators.AssemblyInfo.cs;196
+OpenH2.Core.Generators.csproj;f2efa4c706095590;file;OpenH2.Core.Generators.csproj;227
+InterpreterMethodGenerator.cs;83eda12f51029872;file;Scripting\InterpreterMethodGenerator.cs;196
+IterativeInterpreterMethodGenerator.cs;d4244d8fb6250cdf;file;Scripting\IterativeInterpreterMethodGenerator.cs;196
+TypeMapping.cs;f615ede059361615;file;Scripting\TypeMapping.cs;196

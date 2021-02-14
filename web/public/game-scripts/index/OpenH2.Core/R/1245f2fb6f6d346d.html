@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">3017 references to AnimationGraphTag</div><div class="rA">Halo2MCC (1502)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (127)</div>
+<div class="rH">3018 references to AnimationGraphTag</div><div class="rA">Halo2MCC (1502)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (127)</div>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1183"><b>1183</b>Engine.camera_set_animation_relative(Engine.GetTag&lt;<i>AnimationGraphTag</i>&gt;(&quot;objects\\characters\\cinematic_camera\\x01\\x01&quot;, 3959687822U), &quot;x01_01&quot;, default(IUnit), anchor_flag_x01a);</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1185"><b>1185</b>Engine.scenery_animation_start_relative(carrier_01.Entity, Engine.GetTag&lt;<i>AnimationGraphTag</i>&gt;(&quot;scenarios\\objects\\covenant\\military\\capital_ship\\x01\\x01&quot;, 3959753359U), &quot;01_capital_ship_01&quot;, anchor_x01a.Entity);</a>
 <a href="../../Halo2MCC/00a_introduction.cs.html#1186"><b>1186</b>Engine.scenery_animation_start_relative(cruiser_01.Entity, Engine.GetTag&lt;<i>AnimationGraphTag</i>&gt;(&quot;scenarios\\objects\\covenant\\military\\battle_cruiser\\x01\\x01&quot;, 3959818896U), &quot;01_ship01&quot;, anchor_x01a.Entity);</a>
@@ -3065,22 +3065,25 @@
 <a href="../../Halo2Vista/08b_deltacontrol.cs.html#6196"><b>6196</b>Engine.custom_animation(Engine.ai_get_unit(this.ai_current_actor), Engine.GetTag&lt;<i>AnimationGraphTag</i>&gt;(&quot;objects\\characters\\elite\\elite&quot;, 4058845303U), &quot;combat:pistol:wave&quot;, true);</a>
 </div>
 </div>
-<div class="rA">OpenH2.Core (13)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
-<a href="../Scripting/Generation/SyntaxUtil.cs.html#51"><b>51</b>ScriptDataType.Animation =&gt; ParseTypeName(nameof(<i>AnimationGraphTag</i>)),</a>
+<div class="rA">OpenH2.Core (14)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (1)</div>
+<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#280"><b>280</b>ScriptDataType.Animation =&gt; Result.From(this.scriptEngine.GetTag&lt;<i>AnimationGraphTag</i>&gt;(null, node.NodeData_32)),</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
+<a href="../Scripting/Generation/SyntaxUtil.cs.html#52"><b>52</b>ScriptDataType.Animation =&gt; ParseTypeName(nameof(<i>AnimationGraphTag</i>)),</a>
 </div>
 <div class="rF"><div class="rN">Scripting\IScriptEngine.cs (9)</div>
-<a href="../Scripting/IScriptEngine.cs.html#222"><b>222</b>void camera_predict_resources_at_frame(<i>AnimationGraphTag</i> animation, string emotion, IUnit unit, ILocationFlag locationFlag, int intValue);</a>
-<a href="../Scripting/IScriptEngine.cs.html#231"><b>231</b>void camera_set_animation_relative(<i>AnimationGraphTag</i> animation, string id, IUnit unit, ILocationFlag locationFlag);</a>
-<a href="../Scripting/IScriptEngine.cs.html#363"><b>363</b>void cs_custom_animation(<i>AnimationGraphTag</i> animation, string emotion, float floatValue, bool interpolate);</a>
-<a href="../Scripting/IScriptEngine.cs.html#515"><b>515</b>void custom_animation(IUnit unit, <i>AnimationGraphTag</i> animation, string stringid, bool interpolate);</a>
-<a href="../Scripting/IScriptEngine.cs.html#524"><b>524</b>void custom_animation_loop(IUnit unit, <i>AnimationGraphTag</i> animation1, string emotion, bool interpolate);</a>
-<a href="../Scripting/IScriptEngine.cs.html#527"><b>527</b>void custom_animation_relative(IUnit entity, <i>AnimationGraphTag</i> animation, string emotion, bool boolean, IGameObject other);</a>
-<a href="../Scripting/IScriptEngine.cs.html#533"><b>533</b>void custom_animation_relative_loop(IUnit unit, <i>AnimationGraphTag</i> animation2, string emotion, bool boolean, IGameObject entity);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1034"><b>1034</b>void scenery_animation_start_loop(IScenery scenery, <i>AnimationGraphTag</i> animation, string emotion);</a>
-<a href="../Scripting/IScriptEngine.cs.html#1037"><b>1037</b>void scenery_animation_start_relative(IScenery scenery, <i>AnimationGraphTag</i> animation, string emotion, IGameObject entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#267"><b>267</b>void camera_predict_resources_at_frame(<i>AnimationGraphTag</i> animation, string emotion, IUnit unit, ILocationFlag locationFlag, int intValue);</a>
+<a href="../Scripting/IScriptEngine.cs.html#279"><b>279</b>void camera_set_animation_relative(<i>AnimationGraphTag</i> animation, string id, IUnit unit, ILocationFlag locationFlag);</a>
+<a href="../Scripting/IScriptEngine.cs.html#443"><b>443</b>void cs_custom_animation(<i>AnimationGraphTag</i> animation, string emotion, float floatValue, bool interpolate);</a>
+<a href="../Scripting/IScriptEngine.cs.html#650"><b>650</b>void custom_animation(IUnit unit, <i>AnimationGraphTag</i> animation, string stringid, bool interpolate);</a>
+<a href="../Scripting/IScriptEngine.cs.html#654"><b>654</b>void custom_animation_loop(IUnit unit, <i>AnimationGraphTag</i> animation1, string emotion, bool interpolate);</a>
+<a href="../Scripting/IScriptEngine.cs.html#658"><b>658</b>void custom_animation_relative(IUnit entity, <i>AnimationGraphTag</i> animation, string emotion, bool boolean, IGameObject other);</a>
+<a href="../Scripting/IScriptEngine.cs.html#662"><b>662</b>void custom_animation_relative_loop(IUnit unit, <i>AnimationGraphTag</i> animation2, string emotion, bool boolean, IGameObject entity);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1310"><b>1310</b>void scenery_animation_start_loop(IScenery scenery, <i>AnimationGraphTag</i> animation, string emotion);</a>
+<a href="../Scripting/IScriptEngine.cs.html#1314"><b>1314</b>void scenery_animation_start_relative(IScenery scenery, <i>AnimationGraphTag</i> animation, string emotion, IGameObject entity);</a>
 </div>
 <div class="rF"><div class="rN">Tags\AnimationGraphTag.cs (1)</div>
-<a href="../Tags/AnimationGraphTag.cs.html#19"><b>19</b>public TagRef&lt;<i>AnimationGraphTag</i>&gt; Unknown { get; set; }</a>
+<a href="../Tags/AnimationGraphTag.cs.html#22"><b>22</b>public TagRef&lt;<i>AnimationGraphTag</i>&gt; Unknown { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\HaloModelTag.cs (1)</div>
 <a href="../Tags/HaloModelTag.cs.html#23"><b>23</b>public TagRef&lt;<i>AnimationGraphTag</i>&gt; AnimationGraph { get; set; }</a>

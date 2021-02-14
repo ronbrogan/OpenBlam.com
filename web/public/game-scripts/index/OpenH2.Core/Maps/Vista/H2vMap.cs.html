@@ -1,0 +1,55 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/><a id="46" href="#46" target="_top">46</a><br/><a id="47" href="#47" target="_top">47</a><br/><a id="48" href="#48" target="_top">48</a><br/><a id="49" href="#49" target="_top">49</a><br/><a id="50" href="#50" target="_top">50</a><br/><a id="51" href="#51" target="_top">51</a><br/><a id="52" href="#52" target="_top">52</a><br/><a id="53" href="#53" target="_top">53</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Core</span>.<span class="i n">MapLoading</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Factories</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Common</span>.<span class="i n">Models</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Scenario</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>.<span class="i n">Vista</span>
+&lbrace;
+    <span class="c">///</span><span class="c"> This class is the in-memory representation of a .map file</span>
+    <b>public class</b> <a id="5aedb8c77d779f1a" href="../../R/5aedb8c77d779f1a.html" target="n" data-glyph="0,0" class="t t"><span id="8d471f7d902e68d1">H2vMap</span></a> : <a href="../H2BaseMap.cs.html#a479324a9f965213" class="t t">H2BaseMap</a>&lt;<a href="H2vMapHeader.cs.html#872c828c5ea4322c" class="t t">H2vMapHeader</a>&gt;
+    &lbrace;
+        <b>private</b> <a href="../../Factories/IMaterialFactory.cs.html#538806c41fbc1d21" class="t t">IMaterialFactory</a> <a id="b4e98cbb31209b30" href="../../R/b4e98cbb31209b30.html" target="n" data-glyph="46,1" class="i field">materialFactory</a> = <a href="../../Factories/IMaterialFactory.cs.html#d5f5fd2e17e7f116" class="t t">NullMaterialFactory</a>.<a href="../../Factories/IMaterialFactory.cs.html#acd6e9bec1c9e1c0" class="i field">Instance</a>;
+ 
+        <b>public</b> <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <a id="c42b2729b7b2df75" href="../../R/c42b2729b7b2df75.html" target="n" data-glyph="102,1" class="i property">Scenario</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+        <b>public</b> <a href="../../Tags/SoundMappingTag.cs.html#4cc6e15060c37997" class="t t">SoundMappingTag</a> <a id="07fa2fad8b9bad99" href="../../R/07fa2fad8b9bad99.html" target="n" data-glyph="102,1" class="i property">LocalSounds</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public</b> <a href="../../Tags/GlobalsTag.cs.html#9bf6699e642fe700" class="t t">GlobalsTag</a> <a id="1785d498c7c7d533" href="../../R/1785d498c7c7d533.html" target="n" data-glyph="102,1" class="i property">Globals</a> &lbrace; <b>get</b>; <b>private set</b>; &rbrace;
+ 
+        <b>public override void</b> <a id="84072c8f1e46b0fa" href="../../R/84072c8f1e46b0fa.html" target="n" data-glyph="72,1" class="i method">Load</a>(<b>byte</b> <span id="r0 rd" class="r0 r">selfIdentifier</span>, <span class="t t">MapStream</span> <span id="r1 rd" class="r1 r">mapStream</span>)
+        &lbrace;
+            <a href="../H2BaseMap.cs.html#a479324a9f965213" class="k">base</a>.<a href="../H2BaseMap.cs.html#d55f90427290640c" class="i method">Load</a>(<span class="r0 r">selfIdentifier</span>, <span class="r1 r">mapStream</span>);
+        &rbrace;
+ 
+        <b>public override void</b> <a id="c3a945f8cd81024b" href="../../R/c3a945f8cd81024b.html" target="n" data-glyph="72,1" class="i method">LoadWellKnownTags</a>()
+        &lbrace;
+            <b>if</b> (<a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="../H2BaseMap.cs.html#9f5ce539a3731f8a" class="i method">TryGetTag</a>(<a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="../H2BaseMap.cs.html#33be0689a423919a" class="i property">IndexHeader</a>.<a href="../IndexHeader.cs.html#5c2ae379c788c63a" class="i property">Scenario</a>, <b>out</b> <a href="../../P/d8117f600839b8fd.html#d8117f600839b8fd" class="k">var</a> <span id="r2 rd" class="r2 r">scnr</span>))
+            &lbrace;
+                <a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="#c42b2729b7b2df75" class="i property">Scenario</a> = <span class="r2 r">scnr</span>;
+            &rbrace;
+ 
+            <b>if</b> (<a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="../H2BaseMap.cs.html#9f5ce539a3731f8a" class="i method">TryGetTag</a>(<a href="#5aedb8c77d779f1a" class="k">this</a>.<span class="i property">Header</span>.<a href="H2vMapHeader.cs.html#42d2a01fc943924f" class="i property">LocalSounds</a>, <b>out</b> <a href="../../Tags/SoundMappingTag.cs.html#4cc6e15060c37997" class="k">var</a> <span id="r3 rd" class="r3 r">ugh</span>))
+            &lbrace;
+                <a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="#07fa2fad8b9bad99" class="i property">LocalSounds</a> = <span class="r3 r">ugh</span>;
+            &rbrace;
+ 
+            <b>if</b> (<a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="../H2BaseMap.cs.html#9f5ce539a3731f8a" class="i method">TryGetTag</a>(<a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="../H2BaseMap.cs.html#33be0689a423919a" class="i property">IndexHeader</a>.<a href="../IndexHeader.cs.html#1b73808afcde0b4b" class="i property">Globals</a>, <b>out</b> <a href="../../Tags/GlobalsTag.cs.html#9bf6699e642fe700" class="k">var</a> <span id="r4 rd" class="r4 r">globals</span>))
+            &lbrace;
+                <a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="#1785d498c7c7d533" class="i property">Globals</a> = <span class="r4 r">globals</span>;
+            &rbrace;
+        &rbrace;
+ 
+        <span class="c">// TODO: consider if material construction belongs here</span>
+        <b>public void</b> <a id="1715c0150470c84e" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">UseMaterialFactory</a>(<a href="../../Factories/IMaterialFactory.cs.html#538806c41fbc1d21" class="t t">IMaterialFactory</a> <span id="r5 rd" class="r5 r">materialFactory</span>)
+        &lbrace;
+            <a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="#b4e98cbb31209b30" class="i field">materialFactory</a> = <span class="r5 r">materialFactory</span>;
+        &rbrace;
+ 
+        <b>public</b> <a href="/OpenH2.Foundation/A.html#833a3b359a511db5" class="t t">Material</a>&lt;<a href="../../Tags/BitmapTag.cs.html#3c85ac159fab1459" class="t t">BitmapTag</a>&gt; <a id="ba764ff7e1c09656" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">CreateMaterial</a>(<a href="../../Tags/Common/Models/ModelMesh.cs.html#8e1a179f8ba71c70" class="t t">ModelMesh</a> <span id="r6 rd" class="r6 r">mesh</span>)
+        &lbrace;
+            <b>return</b> <a href="#5aedb8c77d779f1a" class="k">this</a>.<a href="#b4e98cbb31209b30" class="i field">materialFactory</a>.<a href="../../Factories/IMaterialFactory.cs.html#9bc1af3f3609e772" class="i method">CreateMaterial</a>(<a href="#5aedb8c77d779f1a" class="k">this</a>, <span class="r6 r">mesh</span>);
+        &rbrace;
+    &rbrace;
+&rbrace;</pre></td></tr></table></div></div>

@@ -3,8 +3,9 @@ Halo2Vista;1;0
 MSBuildFiles;-1;0
 MSBuildItems;-1;0
 MSBuildProperties;-1;0
-mscorlib;-1;4
-netstandard;-1;4
-OpenH2.Core;2;2
-OpenH2.Foundation;3;3
+mscorlib;-1;5
+netstandard;-1;5
+OpenH2.Core;3;2
+OpenH2.Core.Generators;2;3
+OpenH2.Foundation;4;3
 TypeScriptFiles;-1;0

@@ -5,11 +5,11 @@
 </div>
 <div class="rH">12 references to allies_elites_01</div><div class="rA">Halo2Vista (12)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04a_gasgiant.cs (12)</div>
 <a href="../04a_gasgiant.cs.html#2914"><b>2914</b>Engine.ai_place(<i>allies_elites_01</i>.Squad);</a>
-<a href="../04a_gasgiant.cs.html#3068"><b>3068</b>Engine.cs_run_command_script(<i>allies_elites_01</i>.Squad, inner_aim_elites);</a>
+<a href="../04a_gasgiant.cs.html#3068"><b>3068</b>Engine.cs_run_command_script(<i>allies_elites_01</i>.Squad, new ScriptMethodReference(inner_aim_elites));</a>
 <a href="../04a_gasgiant.cs.html#3070"><b>3070</b>Engine.ai_set_orders(<i>allies_elites_01</i>.Squad, allies_enter);</a>
-<a href="../04a_gasgiant.cs.html#3107"><b>3107</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;lz_active_camo_scene&quot;, lz_active_camo_call, all_allies) || (short)Engine.ai_living_count(hacker.Squad) &lt; 0 &amp;&amp; (short)Engine.ai_living_count(<i>allies_elites_01</i>.Squad) &lt; 1, 30, 150);</a>
-<a href="../04a_gasgiant.cs.html#3245"><b>3245</b>Engine.cs_run_command_script(<i>allies_elites_01</i>.Squad, swat_aim);</a>
-<a href="../04a_gasgiant.cs.html#3552"><b>3552</b>Engine.cs_run_command_script(<i>allies_elites_01</i>.Squad, get_on_e2);</a>
+<a href="../04a_gasgiant.cs.html#3107"><b>3107</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;lz_active_camo_scene&quot;, new ScriptMethodReference(lz_active_camo_call), all_allies) || (short)Engine.ai_living_count(hacker.Squad) &lt; 0 &amp;&amp; (short)Engine.ai_living_count(<i>allies_elites_01</i>.Squad) &lt; 1, 30, 150);</a>
+<a href="../04a_gasgiant.cs.html#3245"><b>3245</b>Engine.cs_run_command_script(<i>allies_elites_01</i>.Squad, new ScriptMethodReference(swat_aim));</a>
+<a href="../04a_gasgiant.cs.html#3552"><b>3552</b>Engine.cs_run_command_script(<i>allies_elites_01</i>.Squad, new ScriptMethodReference(get_on_e2));</a>
 <a href="../04a_gasgiant.cs.html#7715"><b>7715</b>Engine.ai_place(<i>allies_elites_01</i>.Squad);</a>
 <a href="../04a_gasgiant.cs.html#7721"><b>7721</b>Engine.object_teleport(Engine.list_get(Engine.ai_actors(<i>allies_elites_01</i>.Squad), 0), hangar_top_ally01);</a>
 <a href="../04a_gasgiant.cs.html#7768"><b>7768</b>Engine.ai_place(<i>allies_elites_01</i>.Squad);</a>

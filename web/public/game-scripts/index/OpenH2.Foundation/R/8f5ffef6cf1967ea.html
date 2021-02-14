@@ -1,0 +1,62 @@
+﻿<div class="referenceBody">
+<div class="rH">4 instantiations of HalfEdge</div><div class="rA">OpenH2.Foundation (4)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (4)</div>
+<a href="../3D/QuickHull.cs.html#261"><b>261</b>HalfEdge he0 = new <i>HalfEdge</i>(v0, face);</a>
+<a href="../3D/QuickHull.cs.html#262"><b>262</b>HalfEdge he1 = new <i>HalfEdge</i>(v1, face);</a>
+<a href="../3D/QuickHull.cs.html#263"><b>263</b>HalfEdge he2 = new <i>HalfEdge</i>(v2, face);</a>
+<a href="../3D/QuickHull.cs.html#581"><b>581</b>hedge = new <i>HalfEdge</i>(HalfEdge.PreviousEdge.PreviousEdge.HeadVertex, this);</a>
+</div>
+</div>
+<div class="rH">53 references to HalfEdge</div><div class="rA">OpenH2.Foundation (53)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">3D\QuickHull.cs (53)</div>
+<a href="../3D/QuickHull.cs.html#42"><b>42</b>public <i>HalfEdge</i> NextEdge { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#47"><b>47</b>public <i>HalfEdge</i> PreviousEdge { get; set; }</a>
+<a href="../3D/QuickHull.cs.html#52"><b>52</b>public <i>HalfEdge</i> OppositeEdge { get; private set; }</a>
+<a href="../3D/QuickHull.cs.html#68"><b>68</b>public void SetOpposite(<i>HalfEdge</i> edge)</a>
+<a href="../3D/QuickHull.cs.html#122"><b>122</b>public <i>HalfEdge</i> HalfEdge { get; private set; }</a>
+<a href="../3D/QuickHull.cs.html#136"><b>136</b><i>HalfEdge</i> he = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#155"><b>155</b><i>HalfEdge</i> hedgeMax = null;</a>
+<a href="../3D/QuickHull.cs.html#157"><b>157</b><i>HalfEdge</i> hedge = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#189"><b>189</b><i>HalfEdge</i> he1 = HalfEdge.NextEdge;</a>
+<a href="../3D/QuickHull.cs.html#190"><b>190</b><i>HalfEdge</i> he2 = he1.NextEdge;</a>
+<a href="../3D/QuickHull.cs.html#233"><b>233</b><i>HalfEdge</i> he = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#261"><b>261</b><i>HalfEdge</i> he0 = new HalfEdge(v0, face);</a>
+<a href="../3D/QuickHull.cs.html#262"><b>262</b><i>HalfEdge</i> he1 = new HalfEdge(v1, face);</a>
+<a href="../3D/QuickHull.cs.html#263"><b>263</b><i>HalfEdge</i> he2 = new HalfEdge(v2, face);</a>
+<a href="../3D/QuickHull.cs.html#286"><b>286</b>public <i>HalfEdge</i> GetEdge(int i)</a>
+<a href="../3D/QuickHull.cs.html#288"><b>288</b><i>HalfEdge</i> he = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#302"><b>302</b>public <i>HalfEdge</i> GetFirstEdge()</a>
+<a href="../3D/QuickHull.cs.html#315"><b>315</b>public <i>HalfEdge</i> FindEdge(Vertex vt, Vertex vh)</a>
+<a href="../3D/QuickHull.cs.html#317"><b>317</b><i>HalfEdge</i> he = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#345"><b>345</b><i>HalfEdge</i> he = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#364"><b>364</b><i>HalfEdge</i> he = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#374"><b>374</b>private Face ConnectHalfEdges(<i>HalfEdge</i> hedgePrev, <i>HalfEdge</i> hedge)</a>
+<a href="../3D/QuickHull.cs.html#382"><b>382</b><i>HalfEdge</i> hedgeOpp;</a>
+<a href="../3D/QuickHull.cs.html#426"><b>426</b><i>HalfEdge</i> hedge = HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#436"><b>436</b><i>HalfEdge</i> hedgeOpp = hedge.OppositeEdge;</a>
+<a href="../3D/QuickHull.cs.html#490"><b>490</b>public int MergeAdjacentFace(<i>HalfEdge</i> hedgeAdj, Face[] discarded)</a>
+<a href="../3D/QuickHull.cs.html#498"><b>498</b><i>HalfEdge</i> hedgeOpp = hedgeAdj.OppositeEdge;</a>
+<a href="../3D/QuickHull.cs.html#500"><b>500</b><i>HalfEdge</i> hedgeAdjPrev = hedgeAdj.PreviousEdge;</a>
+<a href="../3D/QuickHull.cs.html#501"><b>501</b><i>HalfEdge</i> hedgeAdjNext = hedgeAdj.NextEdge;</a>
+<a href="../3D/QuickHull.cs.html#502"><b>502</b><i>HalfEdge</i> hedgeOppPrev = hedgeOpp.PreviousEdge;</a>
+<a href="../3D/QuickHull.cs.html#503"><b>503</b><i>HalfEdge</i> hedgeOppNext = hedgeOpp.NextEdge;</a>
+<a href="../3D/QuickHull.cs.html#517"><b>517</b><i>HalfEdge</i> hedge;</a>
+<a href="../3D/QuickHull.cs.html#554"><b>554</b><i>HalfEdge</i> hedge;</a>
+<a href="../3D/QuickHull.cs.html#565"><b>565</b><i>HalfEdge</i> oppPrev = hedge.OppositeEdge;</a>
+<a href="../3D/QuickHull.cs.html#613"><b>613</b>private readonly List&lt;<i>HalfEdge</i>&gt; horizon = new List&lt;<i>HalfEdge</i>&gt;(16);</a>
+<a href="../3D/QuickHull.cs.html#1045"><b>1045</b><i>HalfEdge</i> hedge = face.HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#1201"><b>1201</b>private <i>HalfEdge</i> FindHalfEdge(Vertex tail, Vertex head)</a>
+<a href="../3D/QuickHull.cs.html#1206"><b>1206</b><i>HalfEdge</i> he = face.FindEdge(tail, head);</a>
+<a href="../3D/QuickHull.cs.html#1219"><b>1219</b>private double OppFaceDistance(<i>HalfEdge</i> he)</a>
+<a href="../3D/QuickHull.cs.html#1226"><b>1226</b><i>HalfEdge</i> hedge = face.HalfEdge;</a>
+<a href="../3D/QuickHull.cs.html#1297"><b>1297</b>private void CalculateHorizon(Vector3 eyePnt, <i>HalfEdge</i> edge0, Face face)</a>
+<a href="../3D/QuickHull.cs.html#1302"><b>1302</b><i>HalfEdge</i> edge;</a>
+<a href="../3D/QuickHull.cs.html#1332"><b>1332</b>private <i>HalfEdge</i> AddAdjoiningFace(Vertex eyeVtx, <i>HalfEdge</i> he)</a>
+<a href="../3D/QuickHull.cs.html#1345"><b>1345</b><i>HalfEdge</i> hedgeSidePrev = null;</a>
+<a href="../3D/QuickHull.cs.html#1346"><b>1346</b><i>HalfEdge</i> hedgeSideBegin = null;</a>
+<a href="../3D/QuickHull.cs.html#1348"><b>1348</b>foreach (<i>var</i> horizonHe in horizon)</a>
+<a href="../3D/QuickHull.cs.html#1350"><b>1350</b><i>HalfEdge</i> hedgeSide = AddAdjoiningFace(eyeVtx, horizonHe);</a>
+<a href="../3D/QuickHull.cs.html#1420"><b>1420</b><i>HalfEdge</i> he0 = face.GetFirstEdge();</a>
+<a href="../3D/QuickHull.cs.html#1421"><b>1421</b><i>HalfEdge</i> he = he0;</a>
+<a href="../3D/QuickHull.cs.html#1470"><b>1470</b><i>HalfEdge</i> he = face.HalfEdge;</a>
+</div>
+</div>
+</div>
