@@ -13,7 +13,7 @@
     [<a href="/OpenH2.Core/A.html#b958d5fcf510bb59" class="t constructor">OriginScenario</a>(<span class="s">&quot;scenarios\\ui\\mainmenu\\mainmenu&quot;</span>)]
     <b>public</b> <a href="P/35311987b7d03c3b.html" target="s" class="k">partial</a> <b>class</b> <a id="35311987b7d03c3b" href="R/../../0000000000.html" target="n" data-glyph="0,0" class="t t"><span id="f3e3662aee81e09e">scnr_mainmenu</span></a> : <a href="/OpenH2.Core/A.html#1bd62336659f46c0" class="t t">ScenarioScriptBase</a>
     &lbrace;
-        [<a href="/OpenH2.Core/A.html#370307c26fbe0484" class="t constructor">ScriptMethod</a>(<a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#989025355133af52" class="i field">Startup</a>)]
+        [<span class="t">ScriptMethod</span>(0, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#989025355133af52" class="i field">Startup</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="912864c90b84b5c6" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">mainmenu_initialize</a>()
         &lbrace;
             <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#3804ccab49085062" class="i method">cinematic_start</a>();
@@ -37,7 +37,7 @@
             <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#2b17cc132863f4ee" class="i method">object_set_function_variable</a>(<a href="mainmenu.Data.cs.html#37a39408f8c42cc7" class="i property">ui_carrier</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>, <span class="s">&quot;grav_lift_control&quot;</span>, 1F, 0F);
         &rbrace;
  
-        [<a href="/OpenH2.Core/A.html#370307c26fbe0484" class="t constructor">ScriptMethod</a>(<a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#436787a911bc5594" class="i field">Continuous</a>)]
+        [<span class="t">ScriptMethod</span>(1, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#436787a911bc5594" class="i field">Continuous</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="d19ad28c6a0e001c" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">mainmenu_flythrough</a>()
         &lbrace;
             <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>true</b>);
