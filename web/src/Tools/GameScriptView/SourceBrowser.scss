@@ -1,4 +1,9 @@
-﻿.gameScriptView {
+﻿body main {
+  width: 100%;
+  max-width: 100% !important;
+}
+
+.gameScriptView {
   .solutionExplorer img {
     display: inline;
     padding: 0 3px;
