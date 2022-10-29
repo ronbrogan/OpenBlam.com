@@ -1,17 +1,17 @@
 ﻿<div class="referenceBody">
 <div class="rH">9 references to IndexHeader</div><div class="rA">OpenH2.Core (9)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (6)</div>
-<a href="../Factories/MapFactory.cs.html#96"><b>96</b>public static <i>IndexHeader</i> DeserializeIndexHeader(IH2Map scene, Stream reader)</a>
-<a href="../Factories/MapFactory.cs.html#100"><b>100</b><i>var</i> index = BlamSerializer.Deserialize&lt;<i>IndexHeader</i>&gt;(reader, header.IndexOffset.Value);</a>
-<a href="../Factories/MapFactory.cs.html#110"><b>110</b><i>var</i> index = scene.IndexHeader;</a>
-<a href="../Factories/MapFactory.cs.html#143"><b>143</b>public static int CalculatePrimaryMagic(<i>IndexHeader</i> index)</a>
-<a href="../Factories/MapFactory.cs.html#145"><b>145</b>return index.FileRawOffset.Value - index.PrimaryMagicConstant + <i>IndexHeader</i>.Length;</a>
+<a href="../Factories/MapFactory.cs.html#125"><b>125</b>public static <i>IndexHeader</i> DeserializeIndexHeader(IH2Map scene, Stream reader)</a>
+<a href="../Factories/MapFactory.cs.html#129"><b>129</b><i>var</i> index = BlamSerializer.Deserialize&lt;<i>IndexHeader</i>&gt;(reader, header.IndexOffset.Value);</a>
+<a href="../Factories/MapFactory.cs.html#139"><b>139</b><i>var</i> index = scene.IndexHeader;</a>
+<a href="../Factories/MapFactory.cs.html#172"><b>172</b>public static int CalculatePrimaryMagic(<i>IndexHeader</i> index)</a>
+<a href="../Factories/MapFactory.cs.html#174"><b>174</b>return index.FileRawOffset.Value - index.PrimaryMagicConstant + <i>IndexHeader</i>.Length;</a>
 </div>
 <div class="rF"><div class="rN">Maps\H2BaseMap.cs (1)</div>
 <a href="../Maps/H2BaseMap.cs.html#43"><b>43</b>public <i>IndexHeader</i> IndexHeader { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
-<a href="../Maps/IH2Map.cs.html#15"><b>15</b><i>IndexHeader</i> IndexHeader { get; set; }</a>
-<a href="../Maps/IH2Map.cs.html#37"><b>37</b>public <i>IndexHeader</i> IndexHeader { get; set; }</a>
+<a href="../Maps/IH2Map.cs.html#14"><b>14</b><i>IndexHeader</i> IndexHeader { get; set; }</a>
+<a href="../Maps/IH2Map.cs.html#36"><b>36</b>public <i>IndexHeader</i> IndexHeader { get; set; }</a>
 </div>
 </div>
 </div>

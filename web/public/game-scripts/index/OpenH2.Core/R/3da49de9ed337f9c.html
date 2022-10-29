@@ -1,11 +1,11 @@
 ﻿<div class="referenceBody">
-<div class="rH">50 references to TagName</div><div class="rA">OpenH2.Core (50)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\StringExtensions.cs (2)</div>
+<div class="rH">51 references to TagName</div><div class="rA">OpenH2.Core (51)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\StringExtensions.cs (2)</div>
 <a href="../Extensions/StringExtensions.cs.html#20"><b>20</b>public static string ToTagString(this <i>TagName</i> tag)</a>
 <a href="../Extensions/StringExtensions.cs.html#22"><b>22</b>if (Enum.IsDefined(typeof(<i>TagName</i>), tag))</a>
 </div>
 <div class="rF"><div class="rN">Factories\MapFactory.cs (3)</div>
-<a href="../Factories/MapFactory.cs.html#118"><b>118</b><i>var</i> tag = (<i>TagName</i>)reader.ReadUInt32At(entryBase);</a>
-<a href="../Factories/MapFactory.cs.html#120"><b>120</b>if (tag == <i>TagName</i>.NULL)</a>
+<a href="../Factories/MapFactory.cs.html#147"><b>147</b><i>var</i> tag = (<i>TagName</i>)reader.ReadUInt32At(entryBase);</a>
+<a href="../Factories/MapFactory.cs.html#149"><b>149</b>if (tag == <i>TagName</i>.NULL)</a>
 </div>
 <div class="rF"><div class="rN">Factories\TagFactory.cs (3)</div>
 <a href="../Factories/TagFactory.cs.html#65"><b>65</b>private static Dictionary&lt;<i>TagName</i>, Type&gt; cachedTagTypes = null;</a>
@@ -17,8 +17,8 @@
 <a href="../Maps/H2BaseMap.cs.html#171"><b>171</b>if (Enum.IsDefined(typeof(<i>TagName</i>), tag) == false)</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
-<a href="../Maps/IH2Map.cs.html#30"><b>30</b>bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id);</a>
-<a href="../Maps/IH2Map.cs.html#74"><b>74</b>public bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id)</a>
+<a href="../Maps/IH2Map.cs.html#29"><b>29</b>bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id);</a>
+<a href="../Maps/IH2Map.cs.html#73"><b>73</b>public bool TryFindTagId(<i>TagName</i> tag, string fullName, out uint id)</a>
 </div>
 <div class="rF"><div class="rN">Maps\TagIndexEntry.cs (1)</div>
 <a href="../Maps/TagIndexEntry.cs.html#9"><b>9</b>public <i>TagName</i> Tag { get; set; }</a>
@@ -28,37 +28,40 @@
 <a href="../Patching/TagPatcher.cs.html#260"><b>260</b>if (originalMap.TryFindTagId((<i>TagName</i>)tagType, tagName, out var tagId) == false)</a>
 </div>
 <div class="rF"><div class="rN">Tags\AnimationGraphTag.cs (1)</div>
-<a href="../Tags/AnimationGraphTag.cs.html#14"><b>14</b>[TagLabel(<i>TagName</i>.jmad)]</a>
+<a href="../Tags/AnimationGraphTag.cs.html#64"><b>64</b>[TagLabel(<i>TagName</i>.jmad)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BipedTag.cs (1)</div>
-<a href="../Tags/BipedTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.bipd)]</a>
+<a href="../Tags/BipedTag.cs.html#10"><b>10</b>[TagLabel(<i>TagName</i>.bipd)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BitmapTag.cs (1)</div>
 <a href="../Tags/BitmapTag.cs.html#17"><b>17</b>[TagLabel(<i>TagName</i>.bitm)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BlocTag.cs (1)</div>
-<a href="../Tags/BlocTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.bloc)]</a>
+<a href="../Tags/BlocTag.cs.html#9"><b>9</b>[TagLabel(<i>TagName</i>.bloc)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (1)</div>
-<a href="../Tags/BspTag.cs.html#20"><b>20</b>[TagLabel(<i>TagName</i>.sbsp)]</a>
+<a href="../Tags/BspTag.cs.html#17"><b>17</b>[TagLabel(<i>TagName</i>.sbsp)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\CharacterTag.cs (1)</div>
 <a href="../Tags/CharacterTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.@char)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\ColliderTag.cs (1)</div>
-<a href="../Tags/ColliderTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.coll)]</a>
+<a href="../Tags/ColliderTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.coll)]</a>
+</div>
+<div class="rF"><div class="rN">Tags\CreatureTag.cs (1)</div>
+<a href="../Tags/CreatureTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.crea)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\DamageEffectTag.cs (1)</div>
-<a href="../Tags/DamageEffectTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.jpt)]</a>
+<a href="../Tags/DamageEffectTag.cs.html#5"><b>5</b>[TagLabel(<i>TagName</i>.jpt)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\DialogMapTag.cs (1)</div>
 <a href="../Tags/DialogMapTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.mdlg)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\EffectTag.cs (1)</div>
-<a href="../Tags/EffectTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.effe)]</a>
+<a href="../Tags/EffectTag.cs.html#5"><b>5</b>[TagLabel(<i>TagName</i>.effe)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\EquipmentTag.cs (1)</div>
-<a href="../Tags/EquipmentTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.eqip)]</a>
+<a href="../Tags/EquipmentTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.eqip)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\GlobalsTag.cs (1)</div>
 <a href="../Tags/GlobalsTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.matg)]</a>
@@ -67,7 +70,7 @@
 <a href="../Tags/HaloModelTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.hlmt)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\ItemCollectionTag.cs (1)</div>
-<a href="../Tags/ItemCollectionTag.cs.html#10"><b>10</b>[TagLabel(<i>TagName</i>.itmc)]</a>
+<a href="../Tags/ItemCollectionTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.itmc)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\Layout\TagLabelAttribute.cs (2)</div>
 <a href="../Tags/Layout/TagLabelAttribute.cs.html#7"><b>7</b>public <i>TagName</i> Label { get; set; }</a>
@@ -77,22 +80,22 @@
 <a href="../Tags/LensFlareTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.lens)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\LoopingSoundTag.cs (1)</div>
-<a href="../Tags/LoopingSoundTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.lsnd)]</a>
+<a href="../Tags/LoopingSoundTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.lsnd)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\MachineryTag.cs (1)</div>
 <a href="../Tags/MachineryTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.mach)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\PhysicsModelTag.cs (1)</div>
-<a href="../Tags/PhysicsModelTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.phmo)]</a>
+<a href="../Tags/PhysicsModelTag.cs.html#64"><b>64</b>[TagLabel(<i>TagName</i>.phmo)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
-<a href="../Tags/RenderModelTag.cs.html#18"><b>18</b>[TagLabel(<i>TagName</i>.mode)]</a>
+<a href="../Tags/RenderModelTag.cs.html#15"><b>15</b>[TagLabel(<i>TagName</i>.mode)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (1)</div>
 <a href="../Tags/Scenario/ScenarioTag.cs.html#12"><b>12</b>[TagLabel(<i>TagName</i>.scnr)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\SceneryTag.cs (1)</div>
-<a href="../Tags/SceneryTag.cs.html#10"><b>10</b>[TagLabel(<i>TagName</i>.scen)]</a>
+<a href="../Tags/SceneryTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.scen)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\ShaderPassTag.cs (1)</div>
 <a href="../Tags/ShaderPassTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.spas)]</a>
@@ -110,16 +113,16 @@
 <a href="../Tags/SoundMappingTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.ugh)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\SoundSceneryTag.cs (1)</div>
-<a href="../Tags/SoundSceneryTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.ssce)]</a>
+<a href="../Tags/SoundSceneryTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.ssce)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\SoundTag.cs (1)</div>
-<a href="../Tags/SoundTag.cs.html#23"><b>23</b>[TagLabel(<i>TagName</i>.snd)] // snd!</a>
+<a href="../Tags/SoundTag.cs.html#24"><b>24</b>[TagLabel(<i>TagName</i>.snd)] // snd!</a>
 </div>
 <div class="rF"><div class="rN">Tags\UnknownTag.cs (1)</div>
-<a href="../Tags/UnknownTag.cs.html#9"><b>9</b>[TagLabel(<i>TagName</i>.NULL)]</a>
+<a href="../Tags/UnknownTag.cs.html#5"><b>5</b>[TagLabel(<i>TagName</i>.NULL)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\VehicleCollectionTag.cs (1)</div>
-<a href="../Tags/VehicleCollectionTag.cs.html#10"><b>10</b>[TagLabel(<i>TagName</i>.vehc)]</a>
+<a href="../Tags/VehicleCollectionTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.vehc)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\VehicleTag.cs (1)</div>
 <a href="../Tags/VehicleTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.vehi)]</a>
@@ -128,7 +131,7 @@
 <a href="../Tags/VertexShaderTag.cs.html#6"><b>6</b>[TagLabel(<i>TagName</i>.vrtx)]</a>
 </div>
 <div class="rF"><div class="rN">Tags\WeaponTag.cs (1)</div>
-<a href="../Tags/WeaponTag.cs.html#8"><b>8</b>[TagLabel(<i>TagName</i>.weap)]</a>
+<a href="../Tags/WeaponTag.cs.html#7"><b>7</b>[TagLabel(<i>TagName</i>.weap)]</a>
 </div>
 </div>
 </div>

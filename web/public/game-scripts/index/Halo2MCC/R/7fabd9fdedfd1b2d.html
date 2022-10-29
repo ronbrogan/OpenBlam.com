@@ -1,16 +1,16 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e21_cov_phantom1</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03b_newmombasa.Data.cs (1)</div>
-<a href="../03b_newmombasa.Data.cs.html#730"><b>730</b><i>e21_cov_phantom1</i> = new Squad_e21_cov_phantom1(scenarioTag);</a>
+<a href="../03b_newmombasa.Data.cs.html#637"><b>637</b><i>e21_cov_phantom1</i> = new Squad_e21_cov_phantom1(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">8 references to e21_cov_phantom1</div><div class="rA">Halo2MCC (8)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03b_newmombasa.cs (8)</div>
-<a href="../03b_newmombasa.cs.html#4003"><b>4003</b>Engine.ai_place(<i>e21_cov_phantom1</i>.Squad);</a>
-<a href="../03b_newmombasa.cs.html#4006"><b>4006</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>e21_cov_phantom1</i>.phantom0), &quot;phantom_sc01&quot;, Engine.ai_vehicle_get_from_starting_location(e21_cov_ghosts0_0.ghost0));</a>
-<a href="../03b_newmombasa.cs.html#4007"><b>4007</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>e21_cov_phantom1</i>.phantom0), &quot;phantom_sc02&quot;, Engine.ai_vehicle_get_from_starting_location(e21_cov_ghosts0_0.ghost1));</a>
-<a href="../03b_newmombasa.cs.html#4008"><b>4008</b>Engine.cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, new ScriptMethodReference(cs_e21_cov_phantom1_entry));</a>
-<a href="../03b_newmombasa.cs.html#4009"><b>4009</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(Engine.ai_vehicle_get(<i>e21_cov_phantom1</i>.phantom0)) &lt;= 0.05F || Engine.object_model_targets_destroyed(Engine.ai_vehicle_get(<i>e21_cov_phantom1</i>.phantom0), &quot;target_front&quot;) &gt;= 3, 10, this.one_minute);</a>
-<a href="../03b_newmombasa.cs.html#4011"><b>4011</b>Engine.cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, new ScriptMethodReference(cs_e21_cov_phantom_exit));</a>
-<a href="../03b_newmombasa.cs.html#4124"><b>4124</b>Engine.ai_disposable(<i>e21_cov_phantom1</i>.Squad, false);</a>
+<a href="../03b_newmombasa.cs.html#4003"><b>4003</b>ai_place(<i>e21_cov_phantom1</i>.Squad);</a>
+<a href="../03b_newmombasa.cs.html#4006"><b>4006</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>e21_cov_phantom1</i>.phantom0), &quot;phantom_sc01&quot;, ai_vehicle_get_from_starting_location(e21_cov_ghosts0_0.ghost0));</a>
+<a href="../03b_newmombasa.cs.html#4007"><b>4007</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>e21_cov_phantom1</i>.phantom0), &quot;phantom_sc02&quot;, ai_vehicle_get_from_starting_location(e21_cov_ghosts0_0.ghost1));</a>
+<a href="../03b_newmombasa.cs.html#4008"><b>4008</b>cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, new ScriptMethodReference(cs_e21_cov_phantom1_entry));</a>
+<a href="../03b_newmombasa.cs.html#4009"><b>4009</b>await sleep_until(async () =&gt; object_get_health(ai_vehicle_get(<i>e21_cov_phantom1</i>.phantom0)) &lt;= 0.05F || object_model_targets_destroyed(ai_vehicle_get(<i>e21_cov_phantom1</i>.phantom0), &quot;target_front&quot;) &gt;= 3, 10, this.one_minute);</a>
+<a href="../03b_newmombasa.cs.html#4011"><b>4011</b>cs_run_command_script(<i>e21_cov_phantom1</i>.phantom0, new ScriptMethodReference(cs_e21_cov_phantom_exit));</a>
+<a href="../03b_newmombasa.cs.html#4124"><b>4124</b>ai_disposable(<i>e21_cov_phantom1</i>.Squad, false);</a>
 </div>
 </div>
 </div>

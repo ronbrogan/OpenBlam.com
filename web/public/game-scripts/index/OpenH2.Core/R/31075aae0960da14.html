@@ -1,4 +1,8 @@
 ﻿<div class="referenceBody">
+<div class="rH">1 implementation of IScriptEngine</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (1)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#11"><b>11</b>public abstract class ScenarioScriptBase : <i>IScriptEngine</i></a>
+</div>
+</div>
 <div class="rH">61 references to IScriptEngine</div><div class="rA">Halo2MCC (26)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">00a_introduction.cs (1)</div>
 <a href="../../Halo2MCC/00a_introduction.cs.html#18"><b>18</b>public scnr_00a_introduction(<i>IScriptEngine</i> scriptEngine)</a>
 </div>
@@ -42,7 +46,7 @@
 <a href="../../Halo2MCC/08a_deltacliffs.cs.html#50"><b>50</b>public scnr_08a_deltacliffs(<i>IScriptEngine</i> scriptEngine)</a>
 </div>
 <div class="rF"><div class="rN">08b_deltacontrol.cs (1)</div>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#87"><b>87</b>public scnr_08b_deltacontrol(<i>IScriptEngine</i> scriptEngine)</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#86"><b>86</b>public scnr_08b_deltacontrol(<i>IScriptEngine</i> scriptEngine)</a>
 </div>
 <div class="rF"><div class="rN">backwash.cs (1)</div>
 <a href="../../Halo2MCC/backwash.cs.html#16"><b>16</b>public scnr_backwash(<i>IScriptEngine</i> scriptEngine)</a>
@@ -152,7 +156,7 @@
 </div>
 </div>
 <div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpretingScriptExecutor.cs (1)</div>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#49"><b>49</b>public void Initialize(<i>IScriptEngine</i> scriptEngine)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#47"><b>47</b>public void Initialize(<i>IScriptEngine</i> scriptEngine)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Execution\ScriptInterpreter.cs (2)</div>
 <a href="../Scripting/Execution/ScriptInterpreter.cs.html#13"><b>13</b>private readonly <i>IScriptEngine</i> scriptEngine;</a>
@@ -163,17 +167,17 @@
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#41"><b>41</b>public void Initialize(<i>IScriptEngine</i> engine)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\MethodCallContext.cs (2)</div>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#75"><b>75</b>var method = typeof(<i>IScriptEngine</i>).GetMethod(this.MethodName,</a>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#96"><b>96</b>var scriptEngineMethods = typeof(<i>IScriptEngine</i>).GetMethods().Where(m =&gt; m.Name == this.MethodName);</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#72"><b>72</b>var method = typeof(<i>IScriptEngine</i>).GetMethod(this.MethodName,</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#93"><b>93</b>var scriptEngineMethods = typeof(<i>IScriptEngine</i>).GetMethods().Where(m =&gt; m.Name == this.MethodName);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\ReferenceGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/ReferenceGetContext.cs.html#22"><b>22</b>GenericName(Identifier(nameof(<i>IScriptEngine</i>.GetReference)))</a>
+<a href="../Scripting/GenerationState/ReferenceGetContext.cs.html#20"><b>20</b>invocation = InvocationExpression(GenericName(Identifier(nameof(<i>IScriptEngine</i>.GetReference)))</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\TagGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/TagGetContext.cs.html#22"><b>22</b>GenericName(Identifier(nameof(<i>IScriptEngine</i>.GetTag)))</a>
+<a href="../Scripting/GenerationState/TagGetContext.cs.html#20"><b>20</b>invocation = InvocationExpression(GenericName(Identifier(nameof(<i>IScriptEngine</i>.GetTag)))</a>
 </div>
 <div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (1)</div>
-<a href="../Scripting/ScenarioScriptBase.cs.html#10"><b>10</b>protected <i>IScriptEngine</i> Engine;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#17"><b>17</b>protected <i>IScriptEngine</i> Engine;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\ScriptOps.cs (1)</div>
 <a href="../Scripting/ScriptOps.cs.html#15"><b>15</b>foreach(var method in typeof(<i>IScriptEngine</i>).GetMethods())</a>

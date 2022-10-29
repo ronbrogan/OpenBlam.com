@@ -1,14 +1,14 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to factory</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">06a_sentinelwalls.Data.cs (1)</div>
-<a href="../06a_sentinelwalls.Data.cs.html#1375"><b>1375</b><i>factory</i> = new ScenarioEntity&lt;IDevice&gt;(444, scenarioTag.WellKnownItems[444]);</a>
+<a href="../06a_sentinelwalls.Data.cs.html#1262"><b>1262</b><i>factory</i> = new ScenarioEntity&lt;IDevice&gt;(444, scenarioTag.WellKnownItems[444]);</a>
 </div>
 </div>
 <div class="rH">5 references to factory</div><div class="rA">Halo2MCC (5)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">06a_sentinelwalls.cs (5)</div>
-<a href="../06a_sentinelwalls.cs.html#5951"><b>5951</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), <i>factory</i>.Entity, 30F) || Engine.volume_test_objects(tv_qz_camp, Engine.players()), 30, 180);</a>
-<a href="../06a_sentinelwalls.cs.html#5953"><b>5953</b>Engine.device_set_position(<i>factory</i>.Entity, 1F);</a>
-<a href="../06a_sentinelwalls.cs.html#5956"><b>5956</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>factory</i>.Entity) &gt;= 0.025F, 10);</a>
-<a href="../06a_sentinelwalls.cs.html#5958"><b>5958</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>factory</i>.Entity) &gt;= 0.1F);</a>
-<a href="../06a_sentinelwalls.cs.html#5959"><b>5959</b>Engine.object_destroy(<i>factory</i>.Entity);</a>
+<a href="../06a_sentinelwalls.cs.html#5951"><b>5951</b>await sleep_until(async () =&gt; objects_can_see_object(players(), <i>factory</i>.Entity, 30F) || volume_test_objects(tv_qz_camp, players()), 30, 180);</a>
+<a href="../06a_sentinelwalls.cs.html#5953"><b>5953</b>device_set_position(<i>factory</i>.Entity, 1F);</a>
+<a href="../06a_sentinelwalls.cs.html#5956"><b>5956</b>await sleep_until(async () =&gt; device_get_position(<i>factory</i>.Entity) &gt;= 0.025F, 10);</a>
+<a href="../06a_sentinelwalls.cs.html#5958"><b>5958</b>await sleep_until(async () =&gt; device_get_position(<i>factory</i>.Entity) &gt;= 0.1F);</a>
+<a href="../06a_sentinelwalls.cs.html#5959"><b>5959</b>object_destroy(<i>factory</i>.Entity);</a>
 </div>
 </div>
 </div>

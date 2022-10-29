@@ -1,0 +1,29 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>
+&lbrace;
+    <b>public sealed class</b> <a id="49a9ae468f06d41b" href="../R/49a9ae468f06d41b.html" target="n" data-glyph="0,0" class="t t">OriginScenarioAttribute</a> : <span class="t t">Attribute</span>
+    &lbrace;
+        <b>public string</b> <a id="56f7646b37862b1b" href="../R/56f7646b37862b1b.html" target="n" data-glyph="102,1" class="i property">ScenarioId</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <b>public</b> <a id="b958d5fcf510bb59" href="../R/b958d5fcf510bb59.html" target="n" data-glyph="72,1" class="t constructor">OriginScenarioAttribute</a>(<b>string</b> <span id="r0 rd" class="r0 r">scenarioId</span>)
+        &lbrace;
+            <a href="#49a9ae468f06d41b" class="k">this</a>.<a href="#56f7646b37862b1b" class="i property">ScenarioId</a> = <span class="r0 r">scenarioId</span>;
+        &rbrace;
+    &rbrace;
+ 
+    <b>public sealed class</b> <a id="71ee3c88c18d1b28" href="../R/71ee3c88c18d1b28.html" target="n" data-glyph="0,0" class="t t">SpawnCountsAttribute</a> : <span class="t t">Attribute</span>
+    &lbrace;
+        <b>public int</b> <a id="3754cc6054927e95" href="../R/3754cc6054927e95.html" target="n" data-glyph="102,1" class="i property">Normal</a> &lbrace; <b>get</b>; &rbrace;
+        <b>public int</b> <a id="aa8a3a879631ce87" href="../R/aa8a3a879631ce87.html" target="n" data-glyph="102,1" class="i property">Legendary</a> &lbrace; <b>get</b>; &rbrace;
+ 
+        <b>public</b> <a id="c35b38b616fbfbe2" href="../R/c35b38b616fbfbe2.html" target="n" data-glyph="72,1" class="t constructor">SpawnCountsAttribute</a>(<b>int</b> <span id="r1 rd" class="r1 r">normal</span>, <b>int</b> <span id="r2 rd" class="r2 r">legendary</span>)
+        &lbrace;
+            <a href="#3754cc6054927e95" class="i property">Normal</a> = <span class="r1 r">normal</span>;
+            <a href="#aa8a3a879631ce87" class="i property">Legendary</a> = <span class="r2 r">legendary</span>;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

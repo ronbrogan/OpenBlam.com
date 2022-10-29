@@ -1,5 +1,6 @@
 mscorlib;5
 netstandard;5
+System.Runtime;5
 OpenH2.Core.Generators;3
 OpenH2.Foundation;3
 OpenH2.Core;2

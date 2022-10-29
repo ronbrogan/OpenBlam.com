@@ -1,12 +1,12 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 instantiation of TagIndexEntry</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
-<a href="../Factories/MapFactory.cs.html#123"><b>123</b>var entry = new <i>TagIndexEntry</i></a>
+<a href="../Factories/MapFactory.cs.html#152"><b>152</b>var entry = new <i>TagIndexEntry</i></a>
 </div>
 </div>
 <div class="rH">16 references to TagIndexEntry</div><div class="rA">OpenH2.Core (16)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (3)</div>
-<a href="../Factories/MapFactory.cs.html#107"><b>107</b>public static Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; BuildTagIndex(IH2Map scene, Stream reader, out int firstEntryOffset)</a>
-<a href="../Factories/MapFactory.cs.html#112"><b>112</b>var entries = new Dictionary&lt;uint, <i>TagIndexEntry</i>&gt;(index.TagIndexCount);</a>
-<a href="../Factories/MapFactory.cs.html#123"><b>123</b><i>var</i> entry = new TagIndexEntry</a>
+<a href="../Factories/MapFactory.cs.html#136"><b>136</b>public static Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; BuildTagIndex(IH2Map scene, Stream reader, out int firstEntryOffset)</a>
+<a href="../Factories/MapFactory.cs.html#141"><b>141</b>var entries = new Dictionary&lt;uint, <i>TagIndexEntry</i>&gt;(index.TagIndexCount);</a>
+<a href="../Factories/MapFactory.cs.html#152"><b>152</b><i>var</i> entry = new TagIndexEntry</a>
 </div>
 <div class="rF"><div class="rN">Factories\TagFactory.cs (1)</div>
 <a href="../Factories/TagFactory.cs.html#17"><b>17</b>public static BaseTag CreateTag(uint id, string name, <i>TagIndexEntry</i> index, IH2Map map, MapStream reader)</a>
@@ -18,8 +18,8 @@
 <a href="../Maps/H2BaseMap.cs.html#234"><b>234</b>protected BaseTag GetTag(<i>TagIndexEntry</i> entry)</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
-<a href="../Maps/IH2Map.cs.html#20"><b>20</b>Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; }</a>
-<a href="../Maps/IH2Map.cs.html#49"><b>49</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; } = new();</a>
+<a href="../Maps/IH2Map.cs.html#19"><b>19</b>Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; }</a>
+<a href="../Maps/IH2Map.cs.html#48"><b>48</b>public Dictionary&lt;uint, <i>TagIndexEntry</i>&gt; TagIndex { get; set; } = new();</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (5)</div>
 <a href="../Patching/TagPatcher.cs.html#50"><b>50</b><i>var</i> tagInfo = originalMap.TagIndex[tagId];</a>
@@ -29,7 +29,7 @@
 <a href="../Patching/TagPatcher.cs.html#146"><b>146</b>private void WritePropertyValue(<i>TagIndexEntry</i> tagInfo, ResolvedTagPropertyInfo info, TagPropertyPatch patch)</a>
 </div>
 <div class="rF"><div class="rN">Tags\BaseTag.cs (1)</div>
-<a href="../Tags/BaseTag.cs.html#20"><b>20</b>public <i>TagIndexEntry</i> TagIndexEntry { get; set; }</a>
+<a href="../Tags/BaseTag.cs.html#19"><b>19</b>public <i>TagIndexEntry</i> TagIndexEntry { get; set; }</a>
 </div>
 </div>
 </div>

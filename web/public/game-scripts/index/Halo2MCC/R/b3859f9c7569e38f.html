@@ -1,12 +1,12 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e5_cov_grunts0</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08a_deltacliffs.Data.cs (1)</div>
-<a href="../08a_deltacliffs.Data.cs.html#488"><b>488</b><i>e5_cov_grunts0</i> = new Squad_e5_cov_grunts0(scenarioTag);</a>
+<a href="../08a_deltacliffs.Data.cs.html#403"><b>403</b><i>e5_cov_grunts0</i> = new Squad_e5_cov_grunts0(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">3 references to e5_cov_grunts0</div><div class="rA">Halo2MCC (3)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08a_deltacliffs.cs (3)</div>
-<a href="../08a_deltacliffs.cs.html#1970"><b>1970</b>Engine.ai_migrate(<i>e5_cov_grunts0</i>.Squad, e6_cov_grunts0.Squad);</a>
-<a href="../08a_deltacliffs.cs.html#2040"><b>2040</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(e5_pro) &lt; 3 || (float)Engine.ai_strength(<i>e5_cov_grunts0</i>.Squad) &lt;= 0.8F || Engine.objects_distance_to_object(Engine.players(), Engine.ai_get_object(this.ai_current_actor)) &lt;= 0.75F || this.g_e5_grunts_released &gt;= 2, 15);</a>
-<a href="../08a_deltacliffs.cs.html#2065"><b>2065</b>Engine.ai_place(<i>e5_cov_grunts0</i>.Squad, (short)Engine.pin(10F - (float)Engine.ai_living_count(covenant1) + (float)Engine.ai_living_count(prophets), 1F, 5F));</a>
+<a href="../08a_deltacliffs.cs.html#1970"><b>1970</b>ai_migrate(<i>e5_cov_grunts0</i>.Squad, e6_cov_grunts0.Squad);</a>
+<a href="../08a_deltacliffs.cs.html#2040"><b>2040</b>await sleep_until(async () =&gt; (short)ai_living_count(e5_pro) &lt; 3 || (float)ai_strength(<i>e5_cov_grunts0</i>.Squad) &lt;= 0.8F || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt;= 0.75F || this.g_e5_grunts_released &gt;= 2, 15);</a>
+<a href="../08a_deltacliffs.cs.html#2065"><b>2065</b>ai_place(<i>e5_cov_grunts0</i>.Squad, (short)pin(10F - (float)ai_living_count(covenant1) + (float)ai_living_count(prophets), 1F, 5F));</a>
 </div>
 </div>
 </div>

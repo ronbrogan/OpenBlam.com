@@ -1,10 +1,10 @@
 ﻿<div class="referenceBody">
 <div class="rH">5 references to gondola_01_enemies</div><div class="rA">Halo2MCC (5)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (5)</div>
-<a href="../05b_deltatowers.cs.html#1909"><b>1909</b>if (Engine.volume_test_objects(vol_gondola_01, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, central_platform_enemies) == true &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>gondola_01_enemies</i>) == true)</a>
-<a href="../05b_deltatowers.cs.html#2222"><b>2222</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_near_gondola_01, Engine.players()) == true || (short)Engine.ai_living_count(<i>gondola_01_enemies</i>) &lt; 3);</a>
-<a href="../05b_deltatowers.cs.html#2226"><b>2226</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_gondola_01, Engine.players()) == true || (short)Engine.ai_living_count(<i>gondola_01_enemies</i>) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(central_platform_enemies) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(bridge_enemies) &lt;= 0, 30, 4000);</a>
-<a href="../05b_deltatowers.cs.html#2638"><b>2638</b>await Engine.sleep_until(async () =&gt; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>gondola_01_enemies</i>) == true, 30, 1800);</a>
-<a href="../05b_deltatowers.cs.html#3102"><b>3102</b>Engine.ai_disposable(<i>gondola_01_enemies</i>, true);</a>
+<a href="../05b_deltatowers.cs.html#1910"><b>1910</b>if (volume_test_objects(vol_gondola_01, players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; (bool)ai_trigger_test(&quot;done_fighting&quot;, central_platform_enemies) == true &amp;&amp; (bool)ai_trigger_test(&quot;done_fighting&quot;, <i>gondola_01_enemies</i>) == true)</a>
+<a href="../05b_deltatowers.cs.html#2223"><b>2223</b>await sleep_until(async () =&gt; volume_test_objects(vol_near_gondola_01, players()) == true || (short)ai_living_count(<i>gondola_01_enemies</i>) &lt; 3);</a>
+<a href="../05b_deltatowers.cs.html#2227"><b>2227</b>await sleep_until(async () =&gt; volume_test_objects(vol_gondola_01, players()) == true || (short)ai_living_count(<i>gondola_01_enemies</i>) &lt;= 0 &amp;&amp; (short)ai_living_count(central_platform_enemies) &lt;= 0 &amp;&amp; (short)ai_living_count(bridge_enemies) &lt;= 0, 30, 4000);</a>
+<a href="../05b_deltatowers.cs.html#2639"><b>2639</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;done_fighting&quot;, <i>gondola_01_enemies</i>) == true, 30, 1800);</a>
+<a href="../05b_deltatowers.cs.html#3103"><b>3103</b>ai_disposable(<i>gondola_01_enemies</i>, true);</a>
 </div>
 </div>
 </div>

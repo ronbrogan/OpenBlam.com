@@ -1,9 +1,18 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 implementations of Orientation</div><div class="rA">OpenH2.Foundation (2)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">IdentityTransform.cs (1)</div>
+<div class="rH">3 implementations of Orientation</div><div class="rA">OpenH2.Foundation (3)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">IdentityTransform.cs (1)</div>
 <a href="../IdentityTransform.cs.html#30"><b>30</b>public Quaternion <i>Orientation</i> { get =&gt; Quaternion.Identity; set { } }</a>
 </div>
-<div class="rF"><div class="rN">Transform.cs (1)</div>
-<a href="../Transform.cs.html#14"><b>14</b>public Quaternion <i>Orientation</i> { get; set; }</a>
+<div class="rF"><div class="rN">Transform.cs (2)</div>
+<a href="../Transform.cs.html#20"><b>20</b>public Quaternion <i>Orientation</i> { get =&gt; Quaternion.Multiply(a.Orientation, b.Orientation); set { a.Orientation = value; b.Orientation = Quaternion.Identity; } }</a>
+<a href="../Transform.cs.html#42"><b>42</b>public Quaternion <i>Orientation</i> { get; set; }</a>
+</div>
+</div>
+<div class="rH">2 writes to Orientation</div><div class="rA">OpenH2.Foundation (2)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Transform.cs (2)</div>
+<a href="../Transform.cs.html#20"><b>20</b>public Quaternion Orientation { get =&gt; Quaternion.Multiply(a.Orientation, b.Orientation); set { a.<i>Orientation</i> = value; b.<i>Orientation</i> = Quaternion.Identity; } }</a>
+</div>
+</div>
+<div class="rH">2 references to Orientation</div><div class="rA">OpenH2.Foundation (2)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Transform.cs (2)</div>
+<a href="../Transform.cs.html#20"><b>20</b>public Quaternion Orientation { get =&gt; Quaternion.Multiply(a.<i>Orientation</i>, b.<i>Orientation</i>); set { a.Orientation = value; b.Orientation = Quaternion.Identity; } }</a>
 </div>
 </div>
 </div>

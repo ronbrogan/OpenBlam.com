@@ -6,20 +6,20 @@
 <a href="../Extensions/StreamExtensions.cs.html#453"><b>453</b>return new <i>NormalOffset</i>(data.ReadInt32At(offset));</a>
 </div>
 <div class="rF"><div class="rN">Tags\BitmapTag.cs (1)</div>
-<a href="../Tags/BitmapTag.cs.html#150"><b>150</b>Offset = new <i>NormalOffset</i>((int)info.LodOffsets[i]),</a>
+<a href="../Tags/BitmapTag.cs.html#152"><b>152</b>Offset = new <i>NormalOffset</i>((int)info.LodOffsets[i]),</a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (4)</div>
-<a href="../Tags/BspTag.cs.html#153"><b>153</b>var headerOffset = new <i>NormalOffset</i>((int)part.DataBlockRawOffset);</a>
-<a href="../Tags/BspTag.cs.html#160"><b>160</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
-<a href="../Tags/BspTag.cs.html#182"><b>182</b>var headerOffset = new <i>NormalOffset</i>((int)def.DataBlockRawOffset);</a>
-<a href="../Tags/BspTag.cs.html#189"><b>189</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
+<a href="../Tags/BspTag.cs.html#150"><b>150</b>var headerOffset = new <i>NormalOffset</i>((int)part.DataBlockRawOffset);</a>
+<a href="../Tags/BspTag.cs.html#157"><b>157</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
+<a href="../Tags/BspTag.cs.html#179"><b>179</b>var headerOffset = new <i>NormalOffset</i>((int)def.DataBlockRawOffset);</a>
+<a href="../Tags/BspTag.cs.html#186"><b>186</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (2)</div>
-<a href="../Tags/RenderModelTag.cs.html#56"><b>56</b>var headerOffset = new <i>NormalOffset</i>((int)part.DataBlockRawOffset);</a>
-<a href="../Tags/RenderModelTag.cs.html#63"><b>63</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
+<a href="../Tags/RenderModelTag.cs.html#53"><b>53</b>var headerOffset = new <i>NormalOffset</i>((int)part.DataBlockRawOffset);</a>
+<a href="../Tags/RenderModelTag.cs.html#60"><b>60</b>mapData.Position = new <i>NormalOffset</i>((int)dataOffset).Value;</a>
 </div>
 </div>
-<div class="rH">12 references to NormalOffset</div><div class="rA">OpenH2.Core (12)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\MapExtensions.cs (1)</div>
+<div class="rH">13 references to NormalOffset</div><div class="rA">OpenH2.Core (13)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\MapExtensions.cs (1)</div>
 <a href="../Extensions/MapExtensions.cs.html#21"><b>21</b>public static Stream GetStream(this MapStream mapStream, <i>NormalOffset</i> offset)</a>
 </div>
 <div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
@@ -35,7 +35,10 @@
 <a href="../Maps/IndexHeader.cs.html#11"><b>11</b>public <i>NormalOffset</i> FileRawOffset { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Maps\MCC\H2mccMapHeader.cs (1)</div>
-<a href="../Maps/MCC/H2mccMapHeader.cs.html#20"><b>20</b>public <i>NormalOffset</i> IndexOffset { get; set; }</a>
+<a href="../Maps/MCC/H2mccMapHeader.cs.html#17"><b>17</b>public <i>NormalOffset</i> IndexOffset { get; set; }</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccV13MapHeader.cs (1)</div>
+<a href="../Maps/MCC/H2mccV13MapHeader.cs.html#17"><b>17</b>public <i>NormalOffset</i> IndexOffset { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Maps\Vista\H2vMapHeader.cs (1)</div>
 <a href="../Maps/Vista/H2vMapHeader.cs.html#20"><b>20</b>public <i>NormalOffset</i> IndexOffset { get; set; }</a>
@@ -44,11 +47,11 @@
 <a href="../Tags/BitmapTag.cs.html#132"><b>132</b>public <i>NormalOffset</i> Offset { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (2)</div>
-<a href="../Tags/BspTag.cs.html#153"><b>153</b><i>var</i> headerOffset = new NormalOffset((int)part.DataBlockRawOffset);</a>
-<a href="../Tags/BspTag.cs.html#182"><b>182</b><i>var</i> headerOffset = new NormalOffset((int)def.DataBlockRawOffset);</a>
+<a href="../Tags/BspTag.cs.html#150"><b>150</b><i>var</i> headerOffset = new NormalOffset((int)part.DataBlockRawOffset);</a>
+<a href="../Tags/BspTag.cs.html#179"><b>179</b><i>var</i> headerOffset = new NormalOffset((int)def.DataBlockRawOffset);</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
-<a href="../Tags/RenderModelTag.cs.html#56"><b>56</b><i>var</i> headerOffset = new NormalOffset((int)part.DataBlockRawOffset);</a>
+<a href="../Tags/RenderModelTag.cs.html#53"><b>53</b><i>var</i> headerOffset = new NormalOffset((int)part.DataBlockRawOffset);</a>
 </div>
 <div class="rF"><div class="rN">Tags\SoundMappingTag.cs (1)</div>
 <a href="../Tags/SoundMappingTag.cs.html#160"><b>160</b>public <i>NormalOffset</i> Offset { get; set; }</a>

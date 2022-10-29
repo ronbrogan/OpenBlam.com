@@ -4,6 +4,7 @@ Microsoft.CSharp
 Microsoft.VisualBasic
 Microsoft.VisualBasic.Core
 Microsoft.Win32.Primitives
+Microsoft.Win32.Registry
 mscorlib
 netstandard
 OpenBlam.Core
@@ -44,6 +45,7 @@ System.Diagnostics.Tracing
 System.Drawing
 System.Drawing.Primitives
 System.Dynamic.Runtime
+System.Formats.Asn1
 System.Globalization
 System.Globalization.Calendars
 System.Globalization.Extensions
@@ -53,12 +55,14 @@ System.IO.Compression.Brotli
 System.IO.Compression.FileSystem
 System.IO.Compression.ZipFile
 System.IO.FileSystem
+System.IO.FileSystem.AccessControl
 System.IO.FileSystem.DriveInfo
 System.IO.FileSystem.Primitives
 System.IO.FileSystem.Watcher
 System.IO.IsolatedStorage
 System.IO.MemoryMappedFiles
 System.IO.Pipes
+System.IO.Pipes.AccessControl
 System.IO.UnmanagedMemoryStream
 System.Linq
 System.Linq.Expressions
@@ -67,6 +71,7 @@ System.Linq.Queryable
 System.Memory
 System.Net
 System.Net.Http
+System.Net.Http.Json
 System.Net.HttpListener
 System.Net.Mail
 System.Net.NameResolution
@@ -105,7 +110,6 @@ System.Runtime.Extensions
 System.Runtime.Handles
 System.Runtime.InteropServices
 System.Runtime.InteropServices.RuntimeInformation
-System.Runtime.InteropServices.WindowsRuntime
 System.Runtime.Intrinsics
 System.Runtime.Loader
 System.Runtime.Numerics
@@ -115,13 +119,17 @@ System.Runtime.Serialization.Json
 System.Runtime.Serialization.Primitives
 System.Runtime.Serialization.Xml
 System.Security
+System.Security.AccessControl
 System.Security.Claims
 System.Security.Cryptography.Algorithms
+System.Security.Cryptography.Cng
 System.Security.Cryptography.Csp
 System.Security.Cryptography.Encoding
+System.Security.Cryptography.OpenSsl
 System.Security.Cryptography.Primitives
 System.Security.Cryptography.X509Certificates
 System.Security.Principal
+System.Security.Principal.Windows
 System.Security.SecureString
 System.ServiceModel.Web
 System.ServiceProcess

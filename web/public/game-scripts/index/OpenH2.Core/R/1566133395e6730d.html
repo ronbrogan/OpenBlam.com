@@ -1,7 +1,7 @@
 ﻿<div class="referenceBody">
 <div class="rH">3 instantiations of Scope</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (2)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#352"><b>352</b>var defScope = new <i>Scope</i>(variable.DataType, expressionContext, expressionContext);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#390"><b>390</b>var rootScope = new <i>Scope</i>(scriptMethod.ReturnType, block, block);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#370"><b>370</b>var defScope = new <i>Scope</i>(variable.DataType, expressionContext, expressionContext);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#408"><b>408</b>var rootScope = new <i>Scope</i>(scriptMethod.ReturnType, block, block);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\Scope.cs (1)</div>
 <a href="../Scripting/GenerationState/Scope.cs.html#18"><b>18</b>var child = new <i>Scope</i>(</a>
@@ -10,15 +10,15 @@
 <div class="rH">48 references to Scope</div><div class="rA">OpenH2.Core (48)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (12)</div>
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#34"><b>34</b>private <i>Scope</i> currentScope =&gt; scopes.Peek();</a>
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#35"><b>35</b>private Stack&lt;<i>Scope</i>&gt; scopes;</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#352"><b>352</b><i>var</i> defScope = new Scope(variable.DataType, expressionContext, expressionContext);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#353"><b>353</b><i>var</i> retScope = EvaluateNodes(variable.Value_H16, defScope);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#390"><b>390</b><i>var</i> rootScope = new Scope(scriptMethod.ReturnType, block, block);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#391"><b>391</b><i>var</i> retScope = EvaluateNodes(scriptMethod.SyntaxNodeIndex, rootScope);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#407"><b>407</b>private <i>Scope</i> EvaluateNodes(int rootIndex, <i>Scope</i> rootScope)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#409"><b>409</b>scopes = new Stack&lt;<i>Scope</i>&gt;();</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#424"><b>424</b><i>var</i> newScope = currentScope.CreateChild(newContext);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#438"><b>438</b><i>var</i> topScope = scopes.Pop();</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#616"><b>616</b><i>var</i> endingScope = scopes.Pop();</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#370"><b>370</b><i>var</i> defScope = new Scope(variable.DataType, expressionContext, expressionContext);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#371"><b>371</b><i>var</i> retScope = EvaluateNodes(variable.Value_H16, defScope);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#408"><b>408</b><i>var</i> rootScope = new Scope(scriptMethod.ReturnType, block, block);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#409"><b>409</b><i>var</i> retScope = EvaluateNodes(scriptMethod.SyntaxNodeIndex, rootScope);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#425"><b>425</b>private <i>Scope</i> EvaluateNodes(int rootIndex, <i>Scope</i> rootScope)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#427"><b>427</b>scopes = new Stack&lt;<i>Scope</i>&gt;();</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#442"><b>442</b><i>var</i> newScope = currentScope.CreateChild(newContext);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#456"><b>456</b><i>var</i> topScope = scopes.Pop();</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#634"><b>634</b><i>var</i> endingScope = scopes.Pop();</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\AiGetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/AiGetContext.cs.html#85"><b>85</b>public void GenerateInto(<i>Scope</i> scope)</a>
@@ -34,10 +34,10 @@
 <a href="../Scripting/GenerationState/BinaryOperatorContext.cs.html#31"><b>31</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\EntityGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/EntityGetContext.cs.html#61"><b>61</b>public void GenerateInto(<i>Scope</i> scope)</a>
+<a href="../Scripting/GenerationState/EntityGetContext.cs.html#60"><b>60</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\FieldGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/FieldGetContext.cs.html#54"><b>54</b>public void GenerateInto(<i>Scope</i> scope)</a>
+<a href="../Scripting/GenerationState/FieldGetContext.cs.html#53"><b>53</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\FieldSetContext.cs (1)</div>
 <a href="../Scripting/GenerationState/FieldSetContext.cs.html#38"><b>38</b>public void GenerateInto(<i>Scope</i> scope)</a>
@@ -60,13 +60,13 @@
 <a href="../Scripting/GenerationState/LiteralContext.cs.html#36"><b>36</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\MethodCallContext.cs (1)</div>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#47"><b>47</b>public void GenerateInto(<i>Scope</i> scope)</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#48"><b>48</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\NavigationPointContext.cs (1)</div>
 <a href="../Scripting/GenerationState/NavigationPointContext.cs.html#43"><b>43</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\ReferenceGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/ReferenceGetContext.cs.html#38"><b>38</b>public void GenerateInto(<i>Scope</i> scope)</a>
+<a href="../Scripting/GenerationState/ReferenceGetContext.cs.html#36"><b>36</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\Scope.cs (3)</div>
 <a href="../Scripting/GenerationState/Scope.cs.html#16"><b>16</b>public <i>Scope</i> CreateChild(IGenerationContext context)</a>
@@ -83,7 +83,7 @@
 <a href="../Scripting/GenerationState/ScriptInvocationContext.cs.html#32"><b>32</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\ScriptMethodReferenceContext.cs (1)</div>
-<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#57"><b>57</b>public void GenerateInto(<i>Scope</i> scope)</a>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#56"><b>56</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\SingleExpressionContext.cs (1)</div>
 <a href="../Scripting/GenerationState/SingleExpressionContext.cs.html#33"><b>33</b>public void GenerateInto(<i>Scope</i> scope)</a>
@@ -95,7 +95,7 @@
 <a href="../Scripting/GenerationState/StatementBlockContext.cs.html#44"><b>44</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\TagGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/TagGetContext.cs.html#36"><b>36</b>public void GenerateInto(<i>Scope</i> scope)</a>
+<a href="../Scripting/GenerationState/TagGetContext.cs.html#34"><b>34</b>public void GenerateInto(<i>Scope</i> scope)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\UnaryOperatorContext.cs (1)</div>
 <a href="../Scripting/GenerationState/UnaryOperatorContext.cs.html#35"><b>35</b>public void GenerateInto(<i>Scope</i> scope)</a>

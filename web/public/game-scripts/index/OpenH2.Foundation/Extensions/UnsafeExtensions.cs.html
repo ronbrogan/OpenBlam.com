@@ -1,0 +1,13 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>.<span class="i n">Runtime</span>.<span class="i n">CompilerServices</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Foundation</span>.<span class="i n">Extensions</span>
+&lbrace;
+    <b>public static class</b> <a id="1e680d02ad271c3d" href="../R/1e680d02ad271c3d.html" target="n" data-glyph="0,0" class="t t">UnsafeExtensions</a>
+    &lbrace;
+        <b>public unsafe static int</b> <a id="b3682e1dd6a7a74b" href="../R/b3682e1dd6a7a74b.html" target="n" data-glyph="72,1" class="i method">Offset</a>&lt;<span id="r0 rd t" class="r0 r t">TObj</span>, <span id="r1 rd t" class="r1 r t">TField</span>&gt;(<b>ref</b> <span class="r0 r t">TObj</span> <span id="r2 rd" class="r2 r">obj</span>, <b>ref</b> <span class="r1 r t">TField</span> <span id="r3 rd" class="r3 r">field</span>) <b>where</b> <span class="r0 r t">TObj</span> : <b>unmanaged where</b> <span class="r1 r t">TField</span> : <b>unmanaged</b>
+            =&gt; (<b>int</b>)((<b>byte</b>*)<span class="t t">Unsafe</span>.<span class="i method">AsPointer</span>(<b>ref</b> <span class="r3 r">field</span>) - (<b>byte</b>*)<span class="t t">Unsafe</span>.<span class="i method">AsPointer</span>(<b>ref</b> <span class="r2 r">obj</span>));
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

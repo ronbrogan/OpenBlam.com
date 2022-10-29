@@ -1,19 +1,19 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e8_mars_inf0</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08b_deltacontrol.Data.cs (1)</div>
-<a href="../08b_deltacontrol.Data.cs.html#773"><b>773</b><i>e8_mars_inf0</i> = new Squad_e8_mars_inf0(scenarioTag);</a>
+<a href="../08b_deltacontrol.Data.cs.html#661"><b>661</b><i>e8_mars_inf0</i> = new Squad_e8_mars_inf0(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">10 references to e8_mars_inf0</div><div class="rA">Halo2Vista (10)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08b_deltacontrol.cs (10)</div>
-<a href="../08b_deltacontrol.cs.html#5582"><b>5582</b>Engine.ai_place(<i>e8_mars_inf0</i>.Squad);</a>
-<a href="../08b_deltacontrol.cs.html#5587"><b>5587</b>if ((short)Engine.ai_living_count(<i>e8_mars_inf0</i>.Squad) &lt;= 0)</a>
-<a href="../08b_deltacontrol.cs.html#5589"><b>5589</b>Engine.ai_place(<i>e8_mars_inf0</i>.Squad, this.g_e8_mars_inf0_living_count);</a>
-<a href="../08b_deltacontrol.cs.html#5593"><b>5593</b>Engine.cs_run_command_script(<i>e8_mars_inf0</i>.Squad, new ScriptMethodReference(cs_e8_mars_inf0_emerge));</a>
-<a href="../08b_deltacontrol.cs.html#5594"><b>5594</b>Engine.cs_run_command_script(<i>e8_mars_inf0</i>.johnson, new ScriptMethodReference(cs_e8_mars_johnson_init));</a>
-<a href="../08b_deltacontrol.cs.html#5599"><b>5599</b>else if ((short)Engine.ai_living_count(<i>e8_mars_inf0</i>.Squad) &gt; 0)</a>
-<a href="../08b_deltacontrol.cs.html#5601"><b>5601</b>this.g_e8_mars_inf0_living_count = (short)Engine.ai_living_count(<i>e8_mars_inf0</i>.Squad);</a>
-<a href="../08b_deltacontrol.cs.html#5602"><b>5602</b>Engine.cs_run_command_script(<i>e8_mars_inf0</i>.Squad, new ScriptMethodReference(cs_e8_mars_inf0_retreat));</a>
-<a href="../08b_deltacontrol.cs.html#5603"><b>5603</b>await Engine.sleep_until(async () =&gt; await this.e8_mars_inf0_should_activate() || Engine.volume_test_objects_all(tv_scarab_interior, Engine.ai_actors(<i>e8_mars_inf0</i>.Squad)));</a>
-<a href="../08b_deltacontrol.cs.html#5606"><b>5606</b>Engine.ai_erase(<i>e8_mars_inf0</i>.Squad);</a>
+<a href="../08b_deltacontrol.cs.html#5582"><b>5582</b>ai_place(<i>e8_mars_inf0</i>.Squad);</a>
+<a href="../08b_deltacontrol.cs.html#5587"><b>5587</b>if ((short)ai_living_count(<i>e8_mars_inf0</i>.Squad) &lt;= 0)</a>
+<a href="../08b_deltacontrol.cs.html#5589"><b>5589</b>ai_place(<i>e8_mars_inf0</i>.Squad, this.g_e8_mars_inf0_living_count);</a>
+<a href="../08b_deltacontrol.cs.html#5593"><b>5593</b>cs_run_command_script(<i>e8_mars_inf0</i>.Squad, new ScriptMethodReference(cs_e8_mars_inf0_emerge));</a>
+<a href="../08b_deltacontrol.cs.html#5594"><b>5594</b>cs_run_command_script(<i>e8_mars_inf0</i>.johnson, new ScriptMethodReference(cs_e8_mars_johnson_init));</a>
+<a href="../08b_deltacontrol.cs.html#5599"><b>5599</b>else if ((short)ai_living_count(<i>e8_mars_inf0</i>.Squad) &gt; 0)</a>
+<a href="../08b_deltacontrol.cs.html#5601"><b>5601</b>this.g_e8_mars_inf0_living_count = (short)ai_living_count(<i>e8_mars_inf0</i>.Squad);</a>
+<a href="../08b_deltacontrol.cs.html#5602"><b>5602</b>cs_run_command_script(<i>e8_mars_inf0</i>.Squad, new ScriptMethodReference(cs_e8_mars_inf0_retreat));</a>
+<a href="../08b_deltacontrol.cs.html#5603"><b>5603</b>await sleep_until(async () =&gt; await this.e8_mars_inf0_should_activate() || volume_test_objects_all(tv_scarab_interior, ai_actors(<i>e8_mars_inf0</i>.Squad)));</a>
+<a href="../08b_deltacontrol.cs.html#5606"><b>5606</b>ai_erase(<i>e8_mars_inf0</i>.Squad);</a>
 </div>
 </div>
 </div>

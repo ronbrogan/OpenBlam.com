@@ -1,17 +1,17 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to tower1_hg_01b</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
-<a href="../05a_deltaapproach.Data.cs.html#1043"><b>1043</b><i>tower1_hg_01b</i> = new Squad_tower1_hg_01b(scenarioTag);</a>
+<a href="../05a_deltaapproach.Data.cs.html#846"><b>846</b><i>tower1_hg_01b</i> = new Squad_tower1_hg_01b(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">8 references to tower1_hg_01b</div><div class="rA">Halo2MCC (8)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.cs (8)</div>
-<a href="../05a_deltaapproach.cs.html#6365"><b>6365</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_tower1_see_hg, Engine.players()) == true &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(tower1_hg_01a.Squad), 0), 30F) || Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>tower1_hg_01b</i>.Squad), 0), 30F));</a>
-<a href="../05a_deltaapproach.cs.html#6392"><b>6392</b>Engine.ai_place(<i>tower1_hg_01b</i>.Squad, 1);</a>
-<a href="../05a_deltaapproach.cs.html#6399"><b>6399</b>Engine.cs_run_command_script(<i>tower1_hg_01b</i>.Squad, new ScriptMethodReference(long_pause));</a>
-<a href="../05a_deltaapproach.cs.html#6400"><b>6400</b>Engine.ai_set_orders(<i>tower1_hg_01b</i>.Squad, tower1_hg1b_back);</a>
-<a href="../05a_deltaapproach.cs.html#6410"><b>6410</b>Engine.cs_run_command_script(<i>tower1_hg_01b</i>.Squad, new ScriptMethodReference(long_pause_point));</a>
-<a href="../05a_deltaapproach.cs.html#6411"><b>6411</b>Engine.ai_set_orders(<i>tower1_hg_01b</i>.Squad, tower1_hg1b);</a>
-<a href="../05a_deltaapproach.cs.html#6416"><b>6416</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(tower1_hg_01a.Squad) &lt; 1 &amp;&amp; (short)Engine.ai_living_count(<i>tower1_hg_01b</i>.Squad) &lt; 1 || Engine.volume_test_objects(vol_tower1_upper, Engine.players()) == true);</a>
-<a href="../05a_deltaapproach.cs.html#6418"><b>6418</b>Engine.ai_place(tower1_hg_02b.Squad, (short)(1 - (float)Engine.ai_living_count(<i>tower1_hg_01b</i>.Squad)));</a>
+<a href="../05a_deltaapproach.cs.html#6365"><b>6365</b>await sleep_until(async () =&gt; volume_test_objects(vol_tower1_see_hg, players()) == true &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(tower1_hg_01a.Squad), 0), 30F) || objects_can_see_object(players(), list_get(ai_actors(<i>tower1_hg_01b</i>.Squad), 0), 30F));</a>
+<a href="../05a_deltaapproach.cs.html#6392"><b>6392</b>ai_place(<i>tower1_hg_01b</i>.Squad, 1);</a>
+<a href="../05a_deltaapproach.cs.html#6399"><b>6399</b>cs_run_command_script(<i>tower1_hg_01b</i>.Squad, new ScriptMethodReference(long_pause));</a>
+<a href="../05a_deltaapproach.cs.html#6400"><b>6400</b>ai_set_orders(<i>tower1_hg_01b</i>.Squad, tower1_hg1b_back);</a>
+<a href="../05a_deltaapproach.cs.html#6410"><b>6410</b>cs_run_command_script(<i>tower1_hg_01b</i>.Squad, new ScriptMethodReference(long_pause_point));</a>
+<a href="../05a_deltaapproach.cs.html#6411"><b>6411</b>ai_set_orders(<i>tower1_hg_01b</i>.Squad, tower1_hg1b);</a>
+<a href="../05a_deltaapproach.cs.html#6416"><b>6416</b>await sleep_until(async () =&gt; (short)ai_living_count(tower1_hg_01a.Squad) &lt; 1 &amp;&amp; (short)ai_living_count(<i>tower1_hg_01b</i>.Squad) &lt; 1 || volume_test_objects(vol_tower1_upper, players()) == true);</a>
+<a href="../05a_deltaapproach.cs.html#6418"><b>6418</b>ai_place(tower1_hg_02b.Squad, (short)(1 - (float)ai_living_count(<i>tower1_hg_01b</i>.Squad)));</a>
 </div>
 </div>
 </div>

@@ -7,7 +7,7 @@
 <a href="../Scripting/Types.cs.html#40"><b>40</b>public static GameObjectList Empty =&gt; new <i>GameObjectList</i>(Array.Empty&lt;IGameObject&gt;());</a>
 </div>
 </div>
-<div class="rH">27 references to GameObjectList</div><div class="rA">OpenH2.Core (27)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (26)</div>
+<div class="rH">57 references to GameObjectList</div><div class="rA">OpenH2.Core (57)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (26)</div>
 <a href="../Scripting/IScriptEngine.cs.html#23"><b>23</b><i>GameObjectList</i> ai_actors(IAiActorDefinition ai);</a>
 <a href="../Scripting/IScriptEngine.cs.html#31"><b>31</b>void ai_attach_units(<i>GameObjectList</i> units, IAiActorDefinition ai);</a>
 <a href="../Scripting/IScriptEngine.cs.html#71"><b>71</b>void ai_disregard(<i>GameObjectList</i> object_list, bool boolean);</a>
@@ -35,8 +35,38 @@
 <a href="../Scripting/IScriptEngine.cs.html#1572"><b>1572</b>bool volume_test_objects(ITriggerVolume trigger_volume, <i>GameObjectList</i> object_list);</a>
 <a href="../Scripting/IScriptEngine.cs.html#1582"><b>1582</b>bool volume_test_objects_all(ITriggerVolume trigger, <i>GameObjectList</i> object_list);</a>
 </div>
-<div class="rF"><div class="rN">Scripting\Types.cs (1)</div>
+<div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (26)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#50"><b>50</b>public <i>GameObjectList</i> ai_actors(IAiActorDefinition ai) =&gt; Engine.ai_actors(ai);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#54"><b>54</b>public void ai_attach_units(<i>GameObjectList</i> units, IAiActorDefinition ai) =&gt; Engine.ai_attach_units(units, ai);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#74"><b>74</b>public void ai_disregard(<i>GameObjectList</i> object_list, bool boolean) =&gt; Engine.ai_disregard(object_list, boolean);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#116"><b>116</b>public void ai_prefer_target(<i>GameObjectList</i> units, bool boolean) =&gt; Engine.ai_prefer_target(units, boolean);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#494"><b>494</b>public short list_count(<i>GameObjectList</i> object_list) =&gt; Engine.list_count(object_list);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#496"><b>496</b>public short list_count_not_dead(<i>GameObjectList</i> objects) =&gt; Engine.list_count_not_dead(objects);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#498"><b>498</b>public IGameObject list_get(<i>GameObjectList</i> object_list, int index) =&gt; Engine.list_get(object_list, index);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#516"><b>516</b>public bool objects_can_see_flag(<i>GameObjectList</i> list, ILocationFlag locationFlag, float floatValue) =&gt; Engine.objects_can_see_flag(list, locationFlag, floatValue);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#520"><b>520</b>public bool objects_can_see_object(<i>GameObjectList</i> list, IGameObject target, float degrees) =&gt; Engine.objects_can_see_object(list, target, degrees);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#526"><b>526</b>public float objects_distance_to_flag(<i>GameObjectList</i> list, ILocationFlag locationFlag) =&gt; Engine.objects_distance_to_flag(list, locationFlag);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#528"><b>528</b>public float objects_distance_to_object(<i>GameObjectList</i> list, IGameObject entity) =&gt; Engine.objects_distance_to_object(list, entity);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#532"><b>532</b>public void objects_predict(<i>GameObjectList</i> object_list) =&gt; Engine.objects_predict(object_list);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#534"><b>534</b>public void objects_predict_high(<i>GameObjectList</i> entity) =&gt; Engine.objects_predict_high(entity);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#544"><b>544</b>public void object_cannot_take_damage(<i>GameObjectList</i> object_list) =&gt; Engine.object_cannot_take_damage(object_list);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#548"><b>548</b>public void object_can_take_damage(<i>GameObjectList</i> object_list) =&gt; Engine.object_can_take_damage(object_list);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#630"><b>630</b>public <i>GameObjectList</i> players() =&gt; Engine.players();</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#758"><b>758</b>public void units_set_current_vitality(<i>GameObjectList</i> units, float body, float shield) =&gt; Engine.units_set_current_vitality(units, body, shield);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#760"><b>760</b>public void units_set_maximum_vitality(<i>GameObjectList</i> units, float body, float shield) =&gt; Engine.units_set_maximum_vitality(units, body, shield);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#764"><b>764</b>public void unit_doesnt_drop_items(<i>GameObjectList</i> entities) =&gt; Engine.unit_doesnt_drop_items(entities);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#780"><b>780</b>public void unit_impervious(<i>GameObjectList</i> object_list, bool boolean) =&gt; Engine.unit_impervious(object_list, boolean);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#808"><b>808</b>public void vehicle_load_magic(IGameObject vehicle, string vehicleSeat, <i>GameObjectList</i> units) =&gt; Engine.vehicle_load_magic(vehicle, vehicleSeat, units);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#814"><b>814</b>public bool vehicle_test_seat_list(IVehicle vehicle, string seat, <i>GameObjectList</i> subjects) =&gt; Engine.vehicle_test_seat_list(vehicle, seat, subjects);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#818"><b>818</b>public <i>GameObjectList</i> volume_return_objects(ITriggerVolume trigger_volume) =&gt; Engine.volume_return_objects(trigger_volume);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#820"><b>820</b>public <i>GameObjectList</i> volume_return_objects_by_type(ITriggerVolume trigger_volume, int value) =&gt; Engine.volume_return_objects_by_type(trigger_volume, value);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#830"><b>830</b>public bool volume_test_objects(ITriggerVolume trigger_volume, <i>GameObjectList</i> object_list) =&gt; Engine.volume_test_objects(trigger_volume, object_list);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#836"><b>836</b>public bool volume_test_objects_all(ITriggerVolume trigger, <i>GameObjectList</i> object_list) =&gt; Engine.volume_test_objects_all(trigger, object_list);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\Types.cs (5)</div>
 <a href="../Scripting/Types.cs.html#40"><b>40</b>public static <i>GameObjectList</i> Empty =&gt; new GameObjectList(Array.Empty&lt;IGameObject&gt;());</a>
+<a href="../Scripting/Types.cs.html#59"><b>59</b>public static bool operator ==(<i>GameObjectList</i> left, <i>GameObjectList</i> right)</a>
+<a href="../Scripting/Types.cs.html#64"><b>64</b>public static bool operator !=(<i>GameObjectList</i> left, <i>GameObjectList</i> right)</a>
 </div>
 </div>
 </div>

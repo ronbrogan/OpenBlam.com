@@ -1,71 +1,71 @@
 ﻿<div class="referenceBody">
 <div class="rH">86 references to all_allies</div><div class="rA">Halo2Vista (86)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.cs (86)</div>
-<a href="../05a_deltaapproach.cs.html#2566"><b>2566</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_lz_warthog, Engine.players()) == false &amp;&amp; Engine.volume_test_objects(vol_lz_warthog, Engine.ai_actors(<i>all_allies</i>)) == false &amp;&amp; await this.player_count() &gt; 0);</a>
-<a href="../05a_deltaapproach.cs.html#2626"><b>2626</b>Engine.ai_place(allies_lz_pelican.Squad, (short)(2 - (float)Engine.ai_living_count(<i>all_allies</i>)));</a>
-<a href="../05a_deltaapproach.cs.html#2668"><b>2668</b>Engine.ai_scene(&quot;lz_saddle_up_scene&quot;, new ScriptMethodReference(lz_saddle_up), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
-<a href="../05a_deltaapproach.cs.html#2673"><b>2673</b>Engine.ai_enter_squad_vehicles(<i>all_allies</i>);</a>
-<a href="../05a_deltaapproach.cs.html#2683"><b>2683</b>Engine.ai_place(allies_lz_pelican.Squad, (short)(4 - (float)Engine.ai_living_count(<i>all_allies</i>)));</a>
-<a href="../05a_deltaapproach.cs.html#2724"><b>2724</b>Engine.ai_scene(&quot;lz_saddle_up_scene&quot;, new ScriptMethodReference(lz_saddle_up), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
-<a href="../05a_deltaapproach.cs.html#2726"><b>2726</b>Engine.ai_enter_squad_vehicles(<i>all_allies</i>);</a>
-<a href="../05a_deltaapproach.cs.html#2783"><b>2783</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;lz_turrets_down_scene&quot;, new ScriptMethodReference(odst_turrets_down), <i>all_allies</i>) || (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1, 30, 600);</a>
-<a href="../05a_deltaapproach.cs.html#3264"><b>3264</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_all, Engine.players()) == true || Engine.ai_scene(&quot;overlook_remark_scene&quot;, new ScriptMethodReference(overlook_remark), <i>all_allies</i>) || (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1, 30, 300);</a>
-<a href="../05a_deltaapproach.cs.html#3301"><b>3301</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;bridge_wraith_warn_scene&quot;, new ScriptMethodReference(bridge_wraith_warn), <i>all_allies</i>) || (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1, 30, 150);</a>
-<a href="../05a_deltaapproach.cs.html#3701"><b>3701</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1 || Engine.ai_scene(&quot;bridge_holo_scene&quot;, new ScriptMethodReference(bridge_holo_comment), <i>all_allies</i>), 30, 300);</a>
-<a href="../05a_deltaapproach.cs.html#3955"><b>3955</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_tank, Engine.players()) == false &amp;&amp; Engine.volume_test_objects(vol_bridge_tank, Engine.ai_actors(<i>all_allies</i>)) == false &amp;&amp; await this.player_count() &gt; 0);</a>
-<a href="../05a_deltaapproach.cs.html#3976"><b>3976</b>Engine.ai_place(allies_bridge_pelican.Squad, (short)(2 - (float)Engine.ai_living_count(<i>all_allies</i>)));</a>
-<a href="../05a_deltaapproach.cs.html#3990"><b>3990</b>Engine.ai_place(allies_bridge_pelican.Squad, (short)(2 - (float)Engine.ai_living_count(<i>all_allies</i>)));</a>
-<a href="../05a_deltaapproach.cs.html#4152"><b>4152</b>Engine.ai_set_orders(<i>all_allies</i>, bridge_tank_wait);</a>
-<a href="../05a_deltaapproach.cs.html#4165"><b>4165</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;bridge_ally_scene&quot;, new ScriptMethodReference(bridge_ally_comment), <i>all_allies</i>) || (short)Engine.ai_living_count(bridge_allies) &lt; 1, 30, 150);</a>
-<a href="../05a_deltaapproach.cs.html#4610"><b>4610</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1 || Engine.ai_scene(&quot;temple_ent_scene&quot;, new ScriptMethodReference(back_home_comment), <i>all_allies</i>), 30, 300);</a>
-<a href="../05a_deltaapproach.cs.html#4723"><b>4723</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;old_temple_scene&quot;, new ScriptMethodReference(old_temple_structure_comment), <i>all_allies</i>) || (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1, 30, 150);</a>
-<a href="../05a_deltaapproach.cs.html#4784"><b>4784</b>Engine.ai_place(allies_old_temple_pelican.Squad, (short)(4 - (float)Engine.ai_living_count(<i>all_allies</i>)));</a>
-<a href="../05a_deltaapproach.cs.html#4805"><b>4805</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 5)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 5), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4807"><b>4807</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 5));</a>
-<a href="../05a_deltaapproach.cs.html#4811"><b>4811</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4813"><b>4813</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4));</a>
-<a href="../05a_deltaapproach.cs.html#4817"><b>4817</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4819"><b>4819</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3));</a>
-<a href="../05a_deltaapproach.cs.html#4823"><b>4823</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4825"><b>4825</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2));</a>
-<a href="../05a_deltaapproach.cs.html#4829"><b>4829</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4831"><b>4831</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1));</a>
-<a href="../05a_deltaapproach.cs.html#4835"><b>4835</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4837"><b>4837</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0));</a>
-<a href="../05a_deltaapproach.cs.html#4877"><b>4877</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 5)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 5), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4879"><b>4879</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 5));</a>
-<a href="../05a_deltaapproach.cs.html#4883"><b>4883</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4885"><b>4885</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 4));</a>
-<a href="../05a_deltaapproach.cs.html#4889"><b>4889</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4891"><b>4891</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 3));</a>
-<a href="../05a_deltaapproach.cs.html#4895"><b>4895</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4897"><b>4897</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 2));</a>
-<a href="../05a_deltaapproach.cs.html#4901"><b>4901</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4903"><b>4903</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 1));</a>
-<a href="../05a_deltaapproach.cs.html#4907"><b>4907</b>if (Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0)) &gt; 50F &amp;&amp; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0), 45F) == false)</a>
-<a href="../05a_deltaapproach.cs.html#4909"><b>4909</b>Engine.object_destroy(Engine.list_get(Engine.ai_actors(<i>all_allies</i>), 0));</a>
-<a href="../05a_deltaapproach.cs.html#5417"><b>5417</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1 || Engine.ai_scene(&quot;old_temple_mid_scene&quot;, new ScriptMethodReference(old_temple_middle_comment), <i>all_allies</i>), 30, 300);</a>
-<a href="../05a_deltaapproach.cs.html#5607"><b>5607</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;old_temple_pel_scene&quot;, new ScriptMethodReference(old_temple_pelican_comment), <i>all_allies</i>) || (short)Engine.ai_living_count(<i>all_allies</i>) &lt; 1, 30, 60);</a>
-<a href="../05a_deltaapproach.cs.html#6010"><b>6010</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;grotto_ally_cheese_scene&quot;, new ScriptMethodReference(grotto_ally_cheese), <i>all_allies</i>), 30, 450);</a>
-<a href="../05a_deltaapproach.cs.html#6445"><b>6445</b>Engine.ai_vehicle_exit(<i>all_allies</i>);</a>
-<a href="../05a_deltaapproach.cs.html#6446"><b>6446</b>Engine.ai_set_orders(<i>all_allies</i>, allies_bridge_bunker1);</a>
-<a href="../05a_deltaapproach.cs.html#6503"><b>6503</b>Engine.ai_enter_squad_vehicles(<i>all_allies</i>);</a>
-<a href="../05a_deltaapproach.cs.html#6611"><b>6611</b>Engine.ai_vehicle_exit(<i>all_allies</i>);</a>
-<a href="../05a_deltaapproach.cs.html#6615"><b>6615</b>Engine.ai_set_orders(<i>all_allies</i>, allies_old_temp_center);</a>
-<a href="../05a_deltaapproach.cs.html#6617"><b>6617</b>Engine.ai_set_orders(<i>all_allies</i>, allies_grotto_suppress);</a>
-<a href="../05a_deltaapproach.cs.html#6619"><b>6619</b>Engine.ai_set_orders(<i>all_allies</i>, grotto_follow_01);</a>
-<a href="../05a_deltaapproach.cs.html#6621"><b>6621</b>Engine.ai_set_orders(<i>all_allies</i>, allies_grotto_exit);</a>
-<a href="../05a_deltaapproach.cs.html#6623"><b>6623</b>Engine.ai_set_orders(<i>all_allies</i>, allies_approach);</a>
-<a href="../05a_deltaapproach.cs.html#6625"><b>6625</b>Engine.ai_set_orders(<i>all_allies</i>, allies_tower1);</a>
-<a href="../05a_deltaapproach.cs.html#6931"><b>6931</b>Engine.ai_vehicle_exit(<i>all_allies</i>);</a>
-<a href="../05a_deltaapproach.cs.html#6935"><b>6935</b>Engine.ai_set_orders(<i>all_allies</i>, allies_old_temp_center);</a>
-<a href="../05a_deltaapproach.cs.html#6937"><b>6937</b>Engine.ai_set_orders(<i>all_allies</i>, grotto_follow_01);</a>
-<a href="../05a_deltaapproach.cs.html#6939"><b>6939</b>Engine.ai_set_orders(<i>all_allies</i>, allies_grotto_exit);</a>
-<a href="../05a_deltaapproach.cs.html#6941"><b>6941</b>Engine.ai_set_orders(<i>all_allies</i>, allies_approach);</a>
-<a href="../05a_deltaapproach.cs.html#6943"><b>6943</b>Engine.ai_set_orders(<i>all_allies</i>, allies_tower1);</a>
-<a href="../05a_deltaapproach.cs.html#7511"><b>7511</b>Engine.ai_set_orders(<i>all_allies</i>, allies_w_path_follow);</a>
-<a href="../05a_deltaapproach.cs.html#7541"><b>7541</b>Engine.ai_set_orders(<i>all_allies</i>, temple_ent_all);</a>
-<a href="../05a_deltaapproach.cs.html#7573"><b>7573</b>Engine.ai_set_orders(<i>all_allies</i>, allies_tunnel_follow);</a>
-<a href="../05a_deltaapproach.cs.html#7606"><b>7606</b>Engine.ai_set_orders(<i>all_allies</i>, allies_old_temple_follow);</a>
+<a href="../05a_deltaapproach.cs.html#2566"><b>2566</b>await sleep_until(async () =&gt; volume_test_objects(vol_lz_warthog, players()) == false &amp;&amp; volume_test_objects(vol_lz_warthog, ai_actors(<i>all_allies</i>)) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../05a_deltaapproach.cs.html#2626"><b>2626</b>ai_place(allies_lz_pelican.Squad, (short)(2 - (float)ai_living_count(<i>all_allies</i>)));</a>
+<a href="../05a_deltaapproach.cs.html#2668"><b>2668</b>ai_scene(&quot;lz_saddle_up_scene&quot;, new ScriptMethodReference(lz_saddle_up), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05a_deltaapproach.cs.html#2673"><b>2673</b>ai_enter_squad_vehicles(<i>all_allies</i>);</a>
+<a href="../05a_deltaapproach.cs.html#2683"><b>2683</b>ai_place(allies_lz_pelican.Squad, (short)(4 - (float)ai_living_count(<i>all_allies</i>)));</a>
+<a href="../05a_deltaapproach.cs.html#2724"><b>2724</b>ai_scene(&quot;lz_saddle_up_scene&quot;, new ScriptMethodReference(lz_saddle_up), <i>all_allies</i>) // Couldn&#39;t generate cast from &#39;Boolean&#39; to &#39;Void&#39;</a>
+<a href="../05a_deltaapproach.cs.html#2726"><b>2726</b>ai_enter_squad_vehicles(<i>all_allies</i>);</a>
+<a href="../05a_deltaapproach.cs.html#2783"><b>2783</b>await sleep_until(async () =&gt; ai_scene(&quot;lz_turrets_down_scene&quot;, new ScriptMethodReference(odst_turrets_down), <i>all_allies</i>) || (short)ai_living_count(<i>all_allies</i>) &lt; 1, 30, 600);</a>
+<a href="../05a_deltaapproach.cs.html#3264"><b>3264</b>await sleep_until(async () =&gt; volume_test_objects(vol_bridge_all, players()) == true || ai_scene(&quot;overlook_remark_scene&quot;, new ScriptMethodReference(overlook_remark), <i>all_allies</i>) || (short)ai_living_count(<i>all_allies</i>) &lt; 1, 30, 300);</a>
+<a href="../05a_deltaapproach.cs.html#3301"><b>3301</b>await sleep_until(async () =&gt; ai_scene(&quot;bridge_wraith_warn_scene&quot;, new ScriptMethodReference(bridge_wraith_warn), <i>all_allies</i>) || (short)ai_living_count(<i>all_allies</i>) &lt; 1, 30, 150);</a>
+<a href="../05a_deltaapproach.cs.html#3701"><b>3701</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>all_allies</i>) &lt; 1 || ai_scene(&quot;bridge_holo_scene&quot;, new ScriptMethodReference(bridge_holo_comment), <i>all_allies</i>), 30, 300);</a>
+<a href="../05a_deltaapproach.cs.html#3955"><b>3955</b>await sleep_until(async () =&gt; volume_test_objects(vol_bridge_tank, players()) == false &amp;&amp; volume_test_objects(vol_bridge_tank, ai_actors(<i>all_allies</i>)) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../05a_deltaapproach.cs.html#3976"><b>3976</b>ai_place(allies_bridge_pelican.Squad, (short)(2 - (float)ai_living_count(<i>all_allies</i>)));</a>
+<a href="../05a_deltaapproach.cs.html#3990"><b>3990</b>ai_place(allies_bridge_pelican.Squad, (short)(2 - (float)ai_living_count(<i>all_allies</i>)));</a>
+<a href="../05a_deltaapproach.cs.html#4152"><b>4152</b>ai_set_orders(<i>all_allies</i>, bridge_tank_wait);</a>
+<a href="../05a_deltaapproach.cs.html#4165"><b>4165</b>await sleep_until(async () =&gt; ai_scene(&quot;bridge_ally_scene&quot;, new ScriptMethodReference(bridge_ally_comment), <i>all_allies</i>) || (short)ai_living_count(bridge_allies) &lt; 1, 30, 150);</a>
+<a href="../05a_deltaapproach.cs.html#4610"><b>4610</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>all_allies</i>) &lt; 1 || ai_scene(&quot;temple_ent_scene&quot;, new ScriptMethodReference(back_home_comment), <i>all_allies</i>), 30, 300);</a>
+<a href="../05a_deltaapproach.cs.html#4723"><b>4723</b>await sleep_until(async () =&gt; ai_scene(&quot;old_temple_scene&quot;, new ScriptMethodReference(old_temple_structure_comment), <i>all_allies</i>) || (short)ai_living_count(<i>all_allies</i>) &lt; 1, 30, 150);</a>
+<a href="../05a_deltaapproach.cs.html#4784"><b>4784</b>ai_place(allies_old_temple_pelican.Squad, (short)(4 - (float)ai_living_count(<i>all_allies</i>)));</a>
+<a href="../05a_deltaapproach.cs.html#4805"><b>4805</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 5)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 5), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4807"><b>4807</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 5));</a>
+<a href="../05a_deltaapproach.cs.html#4811"><b>4811</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 4)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 4), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4813"><b>4813</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 4));</a>
+<a href="../05a_deltaapproach.cs.html#4817"><b>4817</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 3)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 3), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4819"><b>4819</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 3));</a>
+<a href="../05a_deltaapproach.cs.html#4823"><b>4823</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 2)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 2), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4825"><b>4825</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 2));</a>
+<a href="../05a_deltaapproach.cs.html#4829"><b>4829</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 1)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 1), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4831"><b>4831</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 1));</a>
+<a href="../05a_deltaapproach.cs.html#4835"><b>4835</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 0)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 0), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4837"><b>4837</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 0));</a>
+<a href="../05a_deltaapproach.cs.html#4877"><b>4877</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 5)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 5), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4879"><b>4879</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 5));</a>
+<a href="../05a_deltaapproach.cs.html#4883"><b>4883</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 4)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 4), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4885"><b>4885</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 4));</a>
+<a href="../05a_deltaapproach.cs.html#4889"><b>4889</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 3)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 3), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4891"><b>4891</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 3));</a>
+<a href="../05a_deltaapproach.cs.html#4895"><b>4895</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 2)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 2), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4897"><b>4897</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 2));</a>
+<a href="../05a_deltaapproach.cs.html#4901"><b>4901</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 1)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 1), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4903"><b>4903</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 1));</a>
+<a href="../05a_deltaapproach.cs.html#4907"><b>4907</b>if (objects_distance_to_object(players(), list_get(ai_actors(<i>all_allies</i>), 0)) &gt; 50F &amp;&amp; objects_can_see_object(players(), list_get(ai_actors(<i>all_allies</i>), 0), 45F) == false)</a>
+<a href="../05a_deltaapproach.cs.html#4909"><b>4909</b>object_destroy(list_get(ai_actors(<i>all_allies</i>), 0));</a>
+<a href="../05a_deltaapproach.cs.html#5417"><b>5417</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>all_allies</i>) &lt; 1 || ai_scene(&quot;old_temple_mid_scene&quot;, new ScriptMethodReference(old_temple_middle_comment), <i>all_allies</i>), 30, 300);</a>
+<a href="../05a_deltaapproach.cs.html#5607"><b>5607</b>await sleep_until(async () =&gt; ai_scene(&quot;old_temple_pel_scene&quot;, new ScriptMethodReference(old_temple_pelican_comment), <i>all_allies</i>) || (short)ai_living_count(<i>all_allies</i>) &lt; 1, 30, 60);</a>
+<a href="../05a_deltaapproach.cs.html#6010"><b>6010</b>await sleep_until(async () =&gt; ai_scene(&quot;grotto_ally_cheese_scene&quot;, new ScriptMethodReference(grotto_ally_cheese), <i>all_allies</i>), 30, 450);</a>
+<a href="../05a_deltaapproach.cs.html#6445"><b>6445</b>ai_vehicle_exit(<i>all_allies</i>);</a>
+<a href="../05a_deltaapproach.cs.html#6446"><b>6446</b>ai_set_orders(<i>all_allies</i>, allies_bridge_bunker);</a>
+<a href="../05a_deltaapproach.cs.html#6503"><b>6503</b>ai_enter_squad_vehicles(<i>all_allies</i>);</a>
+<a href="../05a_deltaapproach.cs.html#6611"><b>6611</b>ai_vehicle_exit(<i>all_allies</i>);</a>
+<a href="../05a_deltaapproach.cs.html#6615"><b>6615</b>ai_set_orders(<i>all_allies</i>, allies_old_temp_center);</a>
+<a href="../05a_deltaapproach.cs.html#6617"><b>6617</b>ai_set_orders(<i>all_allies</i>, allies_grotto_suppress);</a>
+<a href="../05a_deltaapproach.cs.html#6619"><b>6619</b>ai_set_orders(<i>all_allies</i>, grotto_follow_01);</a>
+<a href="../05a_deltaapproach.cs.html#6621"><b>6621</b>ai_set_orders(<i>all_allies</i>, allies_grotto_exit);</a>
+<a href="../05a_deltaapproach.cs.html#6623"><b>6623</b>ai_set_orders(<i>all_allies</i>, allies_approach);</a>
+<a href="../05a_deltaapproach.cs.html#6625"><b>6625</b>ai_set_orders(<i>all_allies</i>, allies_tower1);</a>
+<a href="../05a_deltaapproach.cs.html#6931"><b>6931</b>ai_vehicle_exit(<i>all_allies</i>);</a>
+<a href="../05a_deltaapproach.cs.html#6935"><b>6935</b>ai_set_orders(<i>all_allies</i>, allies_old_temp_center);</a>
+<a href="../05a_deltaapproach.cs.html#6937"><b>6937</b>ai_set_orders(<i>all_allies</i>, grotto_follow_01);</a>
+<a href="../05a_deltaapproach.cs.html#6939"><b>6939</b>ai_set_orders(<i>all_allies</i>, allies_grotto_exit);</a>
+<a href="../05a_deltaapproach.cs.html#6941"><b>6941</b>ai_set_orders(<i>all_allies</i>, allies_approach);</a>
+<a href="../05a_deltaapproach.cs.html#6943"><b>6943</b>ai_set_orders(<i>all_allies</i>, allies_tower1);</a>
+<a href="../05a_deltaapproach.cs.html#7511"><b>7511</b>ai_set_orders(<i>all_allies</i>, allies_w_path_follow);</a>
+<a href="../05a_deltaapproach.cs.html#7541"><b>7541</b>ai_set_orders(<i>all_allies</i>, temple_ent_all);</a>
+<a href="../05a_deltaapproach.cs.html#7573"><b>7573</b>ai_set_orders(<i>all_allies</i>, allies_tunnel_follow);</a>
+<a href="../05a_deltaapproach.cs.html#7606"><b>7606</b>ai_set_orders(<i>all_allies</i>, allies_old_temple_follow);</a>
 </div>
 </div>
 </div>

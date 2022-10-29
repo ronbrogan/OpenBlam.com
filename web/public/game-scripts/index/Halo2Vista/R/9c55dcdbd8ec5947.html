@@ -1,15 +1,15 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e10_pod2_inserter</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.Data.cs (1)</div>
-<a href="../08a_deltacliffs.Data.cs.html#448"><b>448</b><i>e10_pod2_inserter</i> = new ScenarioEntity&lt;IDevice&gt;(41, scenarioTag.WellKnownItems[41]);</a>
+<a href="../08a_deltacliffs.Data.cs.html#363"><b>363</b><i>e10_pod2_inserter</i> = new ScenarioEntity&lt;IDevice&gt;(41, scenarioTag.WellKnownItems[41]);</a>
 </div>
 </div>
 <div class="rH">6 references to e10_pod2_inserter</div><div class="rA">Halo2Vista (6)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.cs (6)</div>
-<a href="../08a_deltacliffs.cs.html#1218"><b>1218</b>Engine.object_create(<i>e10_pod2_inserter</i>);</a>
-<a href="../08a_deltacliffs.cs.html#1219"><b>1219</b>Engine.objects_attach(<i>e10_pod2_inserter</i>.Entity, &quot;pod_attach&quot;, Engine.ai_vehicle_get(e10_cov_inf0.elite2), &quot;pod_attach&quot;);</a>
-<a href="../08a_deltacliffs.cs.html#1221"><b>1221</b>Engine.device_set_position(<i>e10_pod2_inserter</i>.Entity, 1F);</a>
-<a href="../08a_deltacliffs.cs.html#1222"><b>1222</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>e10_pod2_inserter</i>.Entity) &gt;= 1F, 1);</a>
-<a href="../08a_deltacliffs.cs.html#1224"><b>1224</b>Engine.objects_detach(<i>e10_pod2_inserter</i>.Entity, Engine.ai_vehicle_get(e10_cov_inf0.elite2));</a>
-<a href="../08a_deltacliffs.cs.html#1225"><b>1225</b>Engine.object_destroy(<i>e10_pod2_inserter</i>.Entity);</a>
+<a href="../08a_deltacliffs.cs.html#1218"><b>1218</b>object_create(<i>e10_pod2_inserter</i>);</a>
+<a href="../08a_deltacliffs.cs.html#1219"><b>1219</b>objects_attach(<i>e10_pod2_inserter</i>.Entity, &quot;pod_attach&quot;, ai_vehicle_get(e10_cov_inf0.elite2), &quot;pod_attach&quot;);</a>
+<a href="../08a_deltacliffs.cs.html#1221"><b>1221</b>device_set_position(<i>e10_pod2_inserter</i>.Entity, 1F);</a>
+<a href="../08a_deltacliffs.cs.html#1222"><b>1222</b>await sleep_until(async () =&gt; device_get_position(<i>e10_pod2_inserter</i>.Entity) &gt;= 1F, 1);</a>
+<a href="../08a_deltacliffs.cs.html#1224"><b>1224</b>objects_detach(<i>e10_pod2_inserter</i>.Entity, ai_vehicle_get(e10_cov_inf0.elite2));</a>
+<a href="../08a_deltacliffs.cs.html#1225"><b>1225</b>object_destroy(<i>e10_pod2_inserter</i>.Entity);</a>
 </div>
 </div>
 </div>

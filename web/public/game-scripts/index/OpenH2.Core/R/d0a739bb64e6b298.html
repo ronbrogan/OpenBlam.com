@@ -1,6 +1,6 @@
 ﻿<div class="referenceBody">
 <div class="rH">7 instantiations of SecondaryOffset</div><div class="rA">OpenH2.Core (7)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Factories\MapFactory.cs (1)</div>
-<a href="../Factories/MapFactory.cs.html#127"><b>127</b>Offset = new <i>SecondaryOffset</i>(scene, reader.ReadInt32At(entryBase + 8)),</a>
+<a href="../Factories/MapFactory.cs.html#156"><b>156</b>Offset = new <i>SecondaryOffset</i>(scene, reader.ReadInt32At(entryBase + 8)),</a>
 </div>
 <div class="rF"><div class="rN">Maps\H2BaseMap.cs (4)</div>
 <a href="../Maps/H2BaseMap.cs.html#201"><b>201</b>DataFile.Local =&gt; new <i>SecondaryOffset</i>(this, rawOffset),</a>
@@ -9,7 +9,7 @@
 <a href="../Maps/H2BaseMap.cs.html#204"><b>204</b>DataFile.SinglePlayerShared =&gt; new <i>SecondaryOffset</i>(this.spShared, rawOffset),</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2Map.cs (1)</div>
-<a href="../Maps/IH2Map.cs.html#99"><b>99</b>return new <i>SecondaryOffset</i>(this, rawOffset);</a>
+<a href="../Maps/IH2Map.cs.html#98"><b>98</b>return new <i>SecondaryOffset</i>(this, rawOffset);</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (1)</div>
 <a href="../Patching/TagPatcher.cs.html#121"><b>121</b>var baseOffset = new <i>SecondaryOffset</i>(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.Offset.Value + offset + startsAt + 4));</a>
@@ -19,8 +19,8 @@
 <a href="../Maps/H2BaseMap.cs.html#197"><b>197</b>public <i>SecondaryOffset</i> GetSecondaryOffset(DataFile source, int rawOffset)</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2Map.cs (2)</div>
-<a href="../Maps/IH2Map.cs.html#25"><b>25</b><i>SecondaryOffset</i> GetSecondaryOffset(DataFile source, int rawOffset);</a>
-<a href="../Maps/IH2Map.cs.html#97"><b>97</b>public <i>SecondaryOffset</i> GetSecondaryOffset(DataFile source, int rawOffset)</a>
+<a href="../Maps/IH2Map.cs.html#24"><b>24</b><i>SecondaryOffset</i> GetSecondaryOffset(DataFile source, int rawOffset);</a>
+<a href="../Maps/IH2Map.cs.html#96"><b>96</b>public <i>SecondaryOffset</i> GetSecondaryOffset(DataFile source, int rawOffset)</a>
 </div>
 <div class="rF"><div class="rN">Patching\TagPatcher.cs (1)</div>
 <a href="../Patching/TagPatcher.cs.html#121"><b>121</b><i>var</i> baseOffset = new SecondaryOffset(this.originalMap, this.mapToPatch.ReadInt32At(tagInfo.Offset.Value + offset + startsAt + 4));</a>

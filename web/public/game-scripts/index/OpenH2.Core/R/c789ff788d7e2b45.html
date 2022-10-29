@@ -1,70 +1,10 @@
 ﻿<div class="referenceBody">
-<div class="rH">46 references to volume_test_objects</div><div class="rA">Halo2MCC (23)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01a_tutorial.cs (1)</div>
-<a href="../../Halo2MCC/01a_tutorial.cs.html#1863"><b>1863</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(tv_tram, Engine.players()) &amp;&amp; Engine.<i>volume_test_objects</i>(tv_tram, Engine.ai_get_object(johnson.Squad)), 1);</a>
-</div>
-<div class="rF"><div class="rN">03b_newmombasa.cs (1)</div>
-<a href="../../Halo2MCC/03b_newmombasa.cs.html#3796"><b>3796</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e22_stairwell, Engine.players()) || Engine.<i>volume_test_objects</i>(tv_e22_stairwell, Engine.ai_get_object(e22_mars_inf0.perez)), 15);</a>
-</div>
-<div class="rF"><div class="rN">04b_floodlab.cs (1)</div>
-<a href="../../Halo2MCC/04b_floodlab.cs.html#3751"><b>3751</b>await Engine.sleep_until(async () =&gt; Engine.<i>volume_test_objects</i>(vol_gusty, Engine.ai_get_object(this.ai_current_actor)) == false, 1);</a>
-</div>
-<div class="rF"><div class="rN">05a_deltaapproach.cs (9)</div>
-<a href="../../Halo2MCC/05a_deltaapproach.cs.html#5359"><b>5359</b>return Engine.<i>volume_test_objects</i>(vol_old_temple_center_01, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_03, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_05, await this.player0()) == true || Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.far_r)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.far_l)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.near_l)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.center)) &lt;= 0F;</a>
-<a href="../../Halo2MCC/05a_deltaapproach.cs.html#5439"><b>5439</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == false &amp;&amp; Engine.<i>volume_test_objects</i>(vol_old_temple_center_01, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_03, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_05, await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == false &amp;&amp; Engine.<i>volume_test_objects</i>(vol_old_temple_center_01, await this.player1()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_03, await this.player1()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_05, await this.player1()) == true);</a>
-</div>
-<div class="rF"><div class="rN">05b_deltatowers.cs (1)</div>
-<a href="../../Halo2MCC/05b_deltatowers.cs.html#2485"><b>2485</b>return Engine.<i>volume_test_objects</i>(vol_tower3_entry, await this.player0()) == true || Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(tower3_turrets.right)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(tower3_turrets.left)) &lt;= 0F;</a>
-</div>
-<div class="rF"><div class="rN">06a_sentinelwalls.cs (4)</div>
-<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5682"><b>5682</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_a, await this.player0())));</a>
-<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5691"><b>5691</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_a, await this.player1())));</a>
-<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5700"><b>5700</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_b, await this.player0())));</a>
-<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#5709"><b>5709</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_b, await this.player1())));</a>
-</div>
-<div class="rF"><div class="rN">07a_highcharity.cs (1)</div>
-<a href="../../Halo2MCC/07a_highcharity.cs.html#5407"><b>5407</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), Engine.ai_get_object(ledge_lift_chieftan.Squad), 45F) &amp;&amp; Engine.<i>volume_test_objects</i>(tv_dervish_ledge_lift, Engine.ai_get_object(ledge_lift_chieftan.Squad)), 30, 30 * 20);</a>
-</div>
-<div class="rF"><div class="rN">08a_deltacliffs.cs (1)</div>
-<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2965"><b>2965</b>await Engine.sleep_until(async () =&gt; Engine.<i>volume_test_objects</i>(tv_e1_exit, Engine.ai_get_object(e1_cov_inf2.gold_elite)), 15);</a>
-</div>
-<div class="rF"><div class="rN">08b_deltacontrol.cs (4)</div>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#911"><b>911</b>if (Engine.<i>volume_test_objects</i>(kill_e13_0, Engine.ai_get_object(boss_miranda.Squad)))</a>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#919"><b>919</b>else if (!(Engine.<i>volume_test_objects</i>(tv_boss_ledge, Engine.ai_get_object(boss_johnson.Squad))))</a>
-<a href="../../Halo2MCC/08b_deltacontrol.cs.html#927"><b>927</b>else if (!(Engine.<i>volume_test_objects</i>(tv_boss_platform, Engine.ai_get_object(boss_tartarus.Squad))) &amp;&amp; !(Engine.<i>volume_test_objects</i>(tv_boss_ledge, Engine.ai_get_object(boss_tartarus.Squad))) &amp;&amp; await this.player_count() &gt; 0)</a>
+<div class="rH">1 implementation of volume_test_objects</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (1)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#826"><b>826</b>public bool <i>volume_test_objects</i>(ITriggerVolume trigger, IGameObject entity) =&gt; Engine.volume_test_objects(trigger, entity);</a>
 </div>
 </div>
-<div class="rA">Halo2Vista (23)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">01a_tutorial.cs (1)</div>
-<a href="../../Halo2Vista/01a_tutorial.cs.html#1863"><b>1863</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects_all(tv_tram, Engine.players()) &amp;&amp; Engine.<i>volume_test_objects</i>(tv_tram, Engine.ai_get_object(johnson.Squad)), 1);</a>
-</div>
-<div class="rF"><div class="rN">03b_newmombasa.cs (1)</div>
-<a href="../../Halo2Vista/03b_newmombasa.cs.html#3794"><b>3794</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e22_stairwell, Engine.players()) || Engine.<i>volume_test_objects</i>(tv_e22_stairwell, Engine.ai_get_object(e22_mars_inf0.perez)), 15);</a>
-</div>
-<div class="rF"><div class="rN">04b_floodlab.cs (1)</div>
-<a href="../../Halo2Vista/04b_floodlab.cs.html#3741"><b>3741</b>await Engine.sleep_until(async () =&gt; Engine.<i>volume_test_objects</i>(vol_gusty, Engine.ai_get_object(this.ai_current_actor)) == false, 1);</a>
-</div>
-<div class="rF"><div class="rN">05a_deltaapproach.cs (9)</div>
-<a href="../../Halo2Vista/05a_deltaapproach.cs.html#5355"><b>5355</b>return Engine.<i>volume_test_objects</i>(vol_old_temple_center_01, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_03, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_05, await this.player0()) == true || Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.far_r)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.far_l)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.near_l)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(old_temple_turrets.center)) &lt;= 0F;</a>
-<a href="../../Halo2Vista/05a_deltaapproach.cs.html#5435"><b>5435</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.player0()) == false &amp;&amp; Engine.<i>volume_test_objects</i>(vol_old_temple_center_01, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_03, await this.player0()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_05, await this.player0()) == true || Engine.unit_in_vehicle(await this.player1()) == false &amp;&amp; Engine.<i>volume_test_objects</i>(vol_old_temple_center_01, await this.player1()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_03, await this.player1()) == true || Engine.<i>volume_test_objects</i>(vol_old_temple_center_05, await this.player1()) == true);</a>
-</div>
-<div class="rF"><div class="rN">05b_deltatowers.cs (1)</div>
-<a href="../../Halo2Vista/05b_deltatowers.cs.html#2482"><b>2482</b>return Engine.<i>volume_test_objects</i>(vol_tower3_entry, await this.player0()) == true || Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(tower3_turrets.right)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(tower3_turrets.left)) &lt;= 0F;</a>
-</div>
-<div class="rF"><div class="rN">06a_sentinelwalls.cs (4)</div>
-<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5676"><b>5676</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_a, await this.player0())));</a>
-<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5685"><b>5685</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_a, await this.player1())));</a>
-<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5694"><b>5694</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_b, await this.player0())));</a>
-<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#5703"><b>5703</b>await Engine.sleep_until(async () =&gt; !(Engine.<i>volume_test_objects</i>(tv_slide_b, await this.player1())));</a>
-</div>
-<div class="rF"><div class="rN">07a_highcharity.cs (1)</div>
-<a href="../../Halo2Vista/07a_highcharity.cs.html#5404"><b>5404</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), Engine.ai_get_object(ledge_lift_chieftan.Squad), 45F) &amp;&amp; Engine.<i>volume_test_objects</i>(tv_dervish_ledge_lift, Engine.ai_get_object(ledge_lift_chieftan.Squad)), 30, 30 * 20);</a>
-</div>
-<div class="rF"><div class="rN">08a_deltacliffs.cs (1)</div>
-<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2963"><b>2963</b>await Engine.sleep_until(async () =&gt; Engine.<i>volume_test_objects</i>(tv_e1_exit, Engine.ai_get_object(e1_cov_inf2.gold_elite)), 15);</a>
-</div>
-<div class="rF"><div class="rN">08b_deltacontrol.cs (4)</div>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#911"><b>911</b>if (Engine.<i>volume_test_objects</i>(kill_e13_0, Engine.ai_get_object(boss_miranda.Squad)))</a>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#919"><b>919</b>else if (!(Engine.<i>volume_test_objects</i>(tv_boss_ledge, Engine.ai_get_object(boss_johnson.Squad))))</a>
-<a href="../../Halo2Vista/08b_deltacontrol.cs.html#927"><b>927</b>else if (!(Engine.<i>volume_test_objects</i>(tv_boss_platform, Engine.ai_get_object(boss_tartarus.Squad))) &amp;&amp; !(Engine.<i>volume_test_objects</i>(tv_boss_ledge, Engine.ai_get_object(boss_tartarus.Squad))) &amp;&amp; await this.player_count() &gt; 0)</a>
+<div class="rH">1 reference to volume_test_objects</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (1)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#826"><b>826</b>public bool volume_test_objects(ITriggerVolume trigger, IGameObject entity) =&gt; Engine.<i>volume_test_objects</i>(trigger, entity);</a>
 </div>
 </div>
 </div>

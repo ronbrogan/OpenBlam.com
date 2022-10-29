@@ -3,17 +3,18 @@
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#41"><b>41</b>this.<i>nameRepo</i> = nameRepo;</a>
 </div>
 </div>
-<div class="rH">10 references to nameRepo</div><div class="rA">OpenH2.Core (10)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (10)</div>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#136"><b>136</b>var squadPropName = <i>nameRepo</i>.RegisterName(squad.Description, ScriptDataType.AI.ToString(), i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#198"><b>198</b><i>nameRepo</i>.NestedRepos.Add(squadPropName, nestedRepo);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#247"><b>247</b>if (<i>nameRepo</i>.TryGetName(squad.Description, ScriptDataType.AI.ToString(), i, out var squadPropName) == false)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#265"><b>265</b>var propName = <i>nameRepo</i>.RegisterName(name, nameof(ScenarioTag.EntityReference), itemIndex);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#278"><b>278</b>var propName = <i>nameRepo</i>.RegisterName(name, type.ToString(), itemIndex);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#320"><b>320</b>if (<i>nameRepo</i>.TryGetName(desiredName, nameof(ScenarioTag.EntityReference), itemIndex, out var name) == false)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#524"><b>524</b>return new AiGetContext(scenario, node, <i>nameRepo</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#532"><b>532</b>return new EntityGetContext(scenario, node, <i>nameRepo</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#534"><b>534</b>return new ScriptMethodReferenceContext(scenario, node, <i>nameRepo</i>);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#547"><b>547</b>return new FieldGetContext(scenario, node, <i>nameRepo</i>);</a>
+<div class="rH">11 references to nameRepo</div><div class="rA">OpenH2.Core (11)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (11)</div>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#134"><b>134</b>var squadPropName = <i>nameRepo</i>.RegisterName(squad.Description, ScriptDataType.AI.ToString(), i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#178"><b>178</b>if (this.<i>nameRepo</i>.TryGetName(groupName, ScriptDataType.AI.ToString(), squad.SquadGroupIndex, out var stored))</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#216"><b>216</b><i>nameRepo</i>.NestedRepos.Add(squadPropName, nestedRepo);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#265"><b>265</b>if (<i>nameRepo</i>.TryGetName(squad.Description, ScriptDataType.AI.ToString(), i, out var squadPropName) == false)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#283"><b>283</b>var propName = <i>nameRepo</i>.RegisterName(name, nameof(ScenarioTag.EntityReference), itemIndex);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#296"><b>296</b>var propName = <i>nameRepo</i>.RegisterName(name, type.ToString(), itemIndex);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#338"><b>338</b>if (<i>nameRepo</i>.TryGetName(desiredName, nameof(ScenarioTag.EntityReference), itemIndex, out var name) == false)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#542"><b>542</b>return new AiGetContext(scenario, node, <i>nameRepo</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#550"><b>550</b>return new EntityGetContext(scenario, node, <i>nameRepo</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#553"><b>553</b>return new ScriptMethodReferenceContext(scenario, node, <i>nameRepo</i>);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#565"><b>565</b>return new FieldGetContext(scenario, node, <i>nameRepo</i>);</a>
 </div>
 </div>
 </div>

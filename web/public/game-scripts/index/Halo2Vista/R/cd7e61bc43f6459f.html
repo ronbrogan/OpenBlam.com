@@ -1,0 +1,39 @@
+﻿<div class="referenceBody">
+<div class="rH">1 write to old_temple_phantom1</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
+<a href="../05a_deltaapproach.Data.cs.html#780"><b>780</b><i>old_temple_phantom1</i> = new Squad_old_temple_phantom1(scenarioTag);</a>
+</div>
+</div>
+<div class="rH">30 references to old_temple_phantom1</div><div class="rA">Halo2Vista (30)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.cs (30)</div>
+<a href="../05a_deltaapproach.cs.html#4841"><b>4841</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 1);</a>
+<a href="../05a_deltaapproach.cs.html#4962"><b>4962</b>vehicle_unload(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), &quot;phantom_lc&quot;);</a>
+<a href="../05a_deltaapproach.cs.html#4963"><b>4963</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 2, 30, 900);</a>
+<a href="../05a_deltaapproach.cs.html#4971"><b>4971</b>ai_erase(<i>old_temple_phantom1</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#4988"><b>4988</b>vehicle_unload(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), &quot;phantom_lc&quot;);</a>
+<a href="../05a_deltaapproach.cs.html#4989"><b>4989</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 2, 30, 900);</a>
+<a href="../05a_deltaapproach.cs.html#4998"><b>4998</b>ai_erase(<i>old_temple_phantom1</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#5044"><b>5044</b>ai_erase(<i>old_temple_phantom1</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#5051"><b>5051</b>if (volume_test_objects(vol_old_temple_airspace_low, ai_actors(<i>old_temple_phantom1</i>.Squad)) == true)</a>
+<a href="../05a_deltaapproach.cs.html#5055"><b>5055</b>await sleep_until(async () =&gt; volume_test_objects(vol_old_temple_airspace_high, ai_actors(<i>old_temple_phantom1</i>.Squad)) == true);</a>
+<a href="../05a_deltaapproach.cs.html#5064"><b>5064</b>ai_erase(<i>old_temple_phantom1</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#5071"><b>5071</b>ai_place(<i>old_temple_phantom1</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#5074"><b>5074</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), &quot;phantom_lc&quot;, ai_vehicle_get_from_starting_location(old_temple_ghosts_air._1));</a>
+<a href="../05a_deltaapproach.cs.html#5075"><b>5075</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), &quot;phantom_lc&quot;, ai_vehicle_get_from_starting_location(old_temple_ghosts_air._2));</a>
+<a href="../05a_deltaapproach.cs.html#5077"><b>5077</b>ai_vehicle_reserve(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), true);</a>
+<a href="../05a_deltaapproach.cs.html#5078"><b>5078</b>cs_run_command_script(<i>old_temple_phantom1</i>.pilot, new ScriptMethodReference(old_temple_ph_01_arrives));</a>
+<a href="../05a_deltaapproach.cs.html#5079"><b>5079</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 1 || (short)ai_living_count(old_temple_ghosts_air.Squad) &lt; 1);</a>
+<a href="../05a_deltaapproach.cs.html#5082"><b>5082</b>cs_run_command_script(<i>old_temple_phantom1</i>.Squad, new ScriptMethodReference(old_temple_abort));</a>
+<a href="../05a_deltaapproach.cs.html#5085"><b>5085</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 1, 30, 8000);</a>
+<a href="../05a_deltaapproach.cs.html#5086"><b>5086</b>object_destroy(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot));</a>
+<a href="../05a_deltaapproach.cs.html#5093"><b>5093</b>ai_place(<i>old_temple_phantom1</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#5096"><b>5096</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), &quot;phantom_lc&quot;, ai_vehicle_get_from_starting_location(old_temple_ghosts_air._1));</a>
+<a href="../05a_deltaapproach.cs.html#5097"><b>5097</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), &quot;phantom_lc&quot;, ai_vehicle_get_from_starting_location(old_temple_ghosts_air._2));</a>
+<a href="../05a_deltaapproach.cs.html#5099"><b>5099</b>ai_vehicle_reserve(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot), true);</a>
+<a href="../05a_deltaapproach.cs.html#5100"><b>5100</b>cs_run_command_script(<i>old_temple_phantom1</i>.pilot, new ScriptMethodReference(old_temple_ph_02_arrives));</a>
+<a href="../05a_deltaapproach.cs.html#5101"><b>5101</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 1 || (short)ai_living_count(old_temple_ghosts_air.Squad) &lt; 1);</a>
+<a href="../05a_deltaapproach.cs.html#5104"><b>5104</b>cs_run_command_script(<i>old_temple_phantom1</i>.Squad, new ScriptMethodReference(old_temple_abort));</a>
+<a href="../05a_deltaapproach.cs.html#5107"><b>5107</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>old_temple_phantom1</i>.Squad) &lt; 1, 30, 8000);</a>
+<a href="../05a_deltaapproach.cs.html#5108"><b>5108</b>object_destroy(ai_vehicle_get_from_starting_location(<i>old_temple_phantom1</i>.pilot));</a>
+<a href="../05a_deltaapproach.cs.html#5445"><b>5445</b>cs_run_command_script(<i>old_temple_phantom1</i>.Squad, new ScriptMethodReference(old_temple_abort));</a>
+</div>
+</div>
+</div>

@@ -1,0 +1,30 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Core</span>.<span class="i n">MapLoading</span>;
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>;
+<b>using</b> <span class="i n">OpenBlam</span>.<span class="i n">Serialization</span>.<span class="i n">Layout</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Maps</span>.<span class="i n">Vista</span>
+&lbrace;
+    [<span class="t constructor">ArbitraryLength</span>]
+    <b>public class</b> <a id="a8d900f579a60860" href="../../R/a8d900f579a60860.html" target="n" data-glyph="0,0" class="t t"><span id="e6c09918df5230f9">H2vMapInfo</span></a> : <a href="../IH2MapInfo.cs.html#346fe9fd354fd6ac" class="t t">IH2MapInfo</a>
+    &lbrace;
+        <b>public string</b> <a id="66d04527c39dee5c" href="../../R/66d04527c39dee5c.html" target="n" data-glyph="102,1" class="i property">Name</a> =&gt; <a href="#b30bab19aead1fe7" class="i property">Header</a>.<a href="H2vMapHeader.cs.html#1ecfb86e2e515fb4" class="i property">Name</a>;
+ 
+        <b>public int</b> <a id="8f855664232cd61f" href="../../R/8f855664232cd61f.html" target="n" data-glyph="102,1" class="i property">PrimaryMagic</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <b>public int</b> <a id="9288b948d238ce55" href="../../R/9288b948d238ce55.html" target="n" data-glyph="102,1" class="i property">SecondaryMagic</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        [<span class="t constructor">InPlaceObject</span>(0)]
+        <b>public</b> <a href="H2vMapHeader.cs.html#872c828c5ea4322c" class="t t">H2vMapHeader</a> <a id="b30bab19aead1fe7" href="../../R/b30bab19aead1fe7.html" target="n" data-glyph="102,1" class="i property">Header</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+        <a href="../IH2MapHeader.cs.html#9d1836b658fffe65" class="t t">IH2MapHeader</a> <a href="../IH2MapInfo.cs.html#346fe9fd354fd6ac" class="t t">IH2MapInfo</a>.<a href="../IH2MapInfo.cs.html#c2e89f4c1375526d" class="i property">Header</a> =&gt; <a href="#a8d900f579a60860" class="k">this</a>.<a href="#b30bab19aead1fe7" class="i property">Header</a>;
+ 
+        <b>public void</b> <a id="2171d33a42aa9a25" href="../../R/2171d33a42aa9a25.html" target="n" data-glyph="72,1" class="i method">Load</a>(<b>byte</b> <span id="r0 rd" class="r0 r">selfIdentifier</span>, <span class="t t">MapStream</span> <span id="r1 rd" class="r1 r">mapStream</span>)
+        &lbrace; 
+        &rbrace;
+ 
+        <b>public void</b> <a id="9dc01257acce8e4c" href="../../R/9dc01257acce8e4c.html" target="n" data-glyph="72,1" class="i method">UseAncillaryMap</a>(<b>byte</b> <span id="r2 rd" class="r2 r">identifier</span>, <span class="t t">IMap</span> <span id="r3 rd" class="r3 r">ancillaryMap</span>)
+        &lbrace;
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

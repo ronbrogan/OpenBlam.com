@@ -1,14 +1,14 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e2_antennae</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.Data.cs (1)</div>
-<a href="../08a_deltacliffs.Data.cs.html#408"><b>408</b><i>e2_antennae</i> = new ScenarioEntity&lt;IBloc&gt;(1, scenarioTag.WellKnownItems[1]);</a>
+<a href="../08a_deltacliffs.Data.cs.html#323"><b>323</b><i>e2_antennae</i> = new ScenarioEntity&lt;IBloc&gt;(1, scenarioTag.WellKnownItems[1]);</a>
 </div>
 </div>
 <div class="rH">5 references to e2_antennae</div><div class="rA">Halo2Vista (5)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.cs (5)</div>
-<a href="../08a_deltacliffs.cs.html#2334"><b>2334</b>await Engine.sleep_until(async () =&gt; !((bool)Engine.cs_moving()) || Engine.object_get_health(<i>e2_antennae</i>.Entity) &lt;= 0F, 5);</a>
-<a href="../08a_deltacliffs.cs.html#2336"><b>2336</b>if (Engine.object_get_health(<i>e2_antennae</i>.Entity) &gt; 0F)</a>
-<a href="../08a_deltacliffs.cs.html#2338"><b>2338</b>Engine.cs_face_object(true, <i>e2_antennae</i>.Entity);</a>
-<a href="../08a_deltacliffs.cs.html#2340"><b>2340</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(<i>e2_antennae</i>.Entity) &lt;= 0F, 5, 60);</a>
-<a href="../08a_deltacliffs.cs.html#2341"><b>2341</b>if (Engine.object_get_health(<i>e2_antennae</i>.Entity) &gt; 0F)</a>
+<a href="../08a_deltacliffs.cs.html#2334"><b>2334</b>await sleep_until(async () =&gt; !((bool)cs_moving()) || object_get_health(<i>e2_antennae</i>.Entity) &lt;= 0F, 5);</a>
+<a href="../08a_deltacliffs.cs.html#2336"><b>2336</b>if (object_get_health(<i>e2_antennae</i>.Entity) &gt; 0F)</a>
+<a href="../08a_deltacliffs.cs.html#2338"><b>2338</b>cs_face_object(true, <i>e2_antennae</i>.Entity);</a>
+<a href="../08a_deltacliffs.cs.html#2340"><b>2340</b>await sleep_until(async () =&gt; object_get_health(<i>e2_antennae</i>.Entity) &lt;= 0F, 5, 60);</a>
+<a href="../08a_deltacliffs.cs.html#2341"><b>2341</b>if (object_get_health(<i>e2_antennae</i>.Entity) &gt; 0F)</a>
 </div>
 </div>
 </div>

@@ -1,86 +1,86 @@
 ﻿<div class="referenceBody">
 <div class="rH">81 references to player0</div><div class="rA">Halo2MCC (81)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05b_deltatowers.cs (81)</div>
-<a href="../05b_deltatowers.cs.html#264"><b>264</b>Engine.object_hide(await this.<i>player0</i>(), true);</a>
-<a href="../05b_deltatowers.cs.html#272"><b>272</b>Engine.object_hide(await this.<i>player0</i>(), false);</a>
-<a href="../05b_deltatowers.cs.html#284"><b>284</b>if (Engine.unit_get_shield(await this.<i>player0</i>()) &gt;= 1F &amp;&amp; (bool)Engine.player_action_test_vision_trigger())</a>
-<a href="../05b_deltatowers.cs.html#296"><b>296</b>Engine.unit_set_maximum_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
-<a href="../05b_deltatowers.cs.html#297"><b>297</b>Engine.unit_set_current_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
-<a href="../05b_deltatowers.cs.html#298"><b>298</b>Engine.object_set_shield(await this.<i>player0</i>(), 0F);</a>
-<a href="../05b_deltatowers.cs.html#301"><b>301</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(await this.<i>player0</i>()) &lt; 1F || (bool)Engine.player_action_test_vision_trigger(), 1);</a>
-<a href="../05b_deltatowers.cs.html#304"><b>304</b>Engine.unit_set_maximum_vitality(await this.<i>player0</i>(), 30F, 70F);</a>
-<a href="../05b_deltatowers.cs.html#305"><b>305</b>Engine.object_set_shield(await this.<i>player0</i>(), 0F);</a>
-<a href="../05b_deltatowers.cs.html#1632"><b>1632</b>Engine.object_teleport(await this.<i>player0</i>(), tower1_player0);</a>
-<a href="../05b_deltatowers.cs.html#2265"><b>2265</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4182775770U)) || Engine.unit_has_weapon(Engine.unit(await this.player1()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4182775770U)));</a>
-<a href="../05b_deltatowers.cs.html#2485"><b>2485</b>return Engine.volume_test_objects(vol_tower3_entry, await this.<i>player0</i>()) == true || Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(tower3_turrets.right)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(tower3_turrets.left)) &lt;= 0F;</a>
-<a href="../05b_deltatowers.cs.html#2693"><b>2693</b>if (Engine.volume_test_object(vol_elev_shaft_under, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
-<a href="../05b_deltatowers.cs.html#2695"><b>2695</b>Engine.object_teleport(await this.<i>player0</i>(), _1to2_teleport);</a>
-<a href="../05b_deltatowers.cs.html#2696"><b>2696</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2193694856U), await this.<i>player0</i>(), &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2702"><b>2702</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2193694856U), await this.<i>player0</i>(), &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2789"><b>2789</b>if (Engine.volume_test_object(vol_elev_shaft_up, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
-<a href="../05b_deltatowers.cs.html#2791"><b>2791</b>Engine.object_teleport(await this.<i>player0</i>(), _2to3_teleport);</a>
-<a href="../05b_deltatowers.cs.html#2792"><b>2792</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2193694856U), await this.<i>player0</i>(), &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2798"><b>2798</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2193694856U), await this.<i>player0</i>(), &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#3013"><b>3013</b>if (Engine.volume_test_object(vol_elev_shaft_under, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
-<a href="../05b_deltatowers.cs.html#3015"><b>3015</b>Engine.object_teleport(await this.<i>player0</i>(), _1to2_teleport);</a>
-<a href="../05b_deltatowers.cs.html#3016"><b>3016</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2193694856U), await this.<i>player0</i>(), &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#3778"><b>3778</b>if (Engine.volume_test_object(vol_elev_shaft_up, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
-<a href="../05b_deltatowers.cs.html#3780"><b>3780</b>Engine.object_teleport(await this.<i>player0</i>(), _2to3_teleport);</a>
-<a href="../05b_deltatowers.cs.html#3781"><b>3781</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2193694856U), await this.<i>player0</i>(), &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#4821"><b>4821</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide_bsp3);</a>
-<a href="../05b_deltatowers.cs.html#4831"><b>4831</b>Engine.object_teleport(await this.<i>player0</i>(), temple_ext_player0);</a>
-<a href="../05b_deltatowers.cs.html#5118"><b>5118</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5130"><b>5130</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5142"><b>5142</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5154"><b>5154</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5166"><b>5166</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5178"><b>5178</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5190"><b>5190</b>await Engine.sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5351"><b>5351</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5353"><b>5353</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5380"><b>5380</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_temple_02, Engine.players()) == true &amp;&amp; Engine.objects_can_see_object(Engine.ai_actors(regret1.Squad), await this.<i>player0</i>(), 45F) == true || Engine.objects_can_see_object(Engine.ai_actors(regret1.Squad), await this.player1(), 45F) == true);</a>
-<a href="../05b_deltatowers.cs.html#5399"><b>5399</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
-<a href="../05b_deltatowers.cs.html#5400"><b>5400</b>if (Engine.unit_in_vehicle(await this.<i>player0</i>()) == true || Engine.unit_in_vehicle(await this.player1()) == true)</a>
-<a href="../05b_deltatowers.cs.html#5408"><b>5408</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5410"><b>5410</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5437"><b>5437</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5439"><b>5439</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5469"><b>5469</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5471"><b>5471</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5512"><b>5512</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == true || Engine.unit_in_vehicle(await this.player1()) == true || Engine.objects_distance_to_object(Engine.players(), Engine.list_get(Engine.ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
-<a href="../05b_deltatowers.cs.html#5513"><b>5513</b>if (Engine.unit_in_vehicle(await this.<i>player0</i>()) == true || Engine.unit_in_vehicle(await this.player1()) == true)</a>
-<a href="../05b_deltatowers.cs.html#5521"><b>5521</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5523"><b>5523</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5560"><b>5560</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5577"><b>5577</b>Engine.unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
-<a href="../05b_deltatowers.cs.html#5579"><b>5579</b>await Engine.sleep_until(async () =&gt; Engine.unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; Engine.unit_in_vehicle(await this.player1()) == false);</a>
-<a href="../05b_deltatowers.cs.html#5721"><b>5721</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide_bsp3);</a>
-<a href="../05b_deltatowers.cs.html#5763"><b>5763</b>Engine.object_teleport(await this.<i>player0</i>(), player0_hide_bsp3);</a>
-<a href="../05b_deltatowers.cs.html#6522"><b>6522</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6524"><b>6524</b>Engine.object_teleport(await this.<i>player0</i>(), bridges_player0);</a>
-<a href="../05b_deltatowers.cs.html#6572"><b>6572</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6574"><b>6574</b>Engine.object_teleport(await this.<i>player0</i>(), tower2_player0);</a>
-<a href="../05b_deltatowers.cs.html#6621"><b>6621</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6623"><b>6623</b>Engine.object_teleport(await this.<i>player0</i>(), center_plat_player0);</a>
-<a href="../05b_deltatowers.cs.html#6668"><b>6668</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6670"><b>6670</b>Engine.object_teleport(await this.<i>player0</i>(), gondola_01_player0);</a>
-<a href="../05b_deltatowers.cs.html#6716"><b>6716</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6718"><b>6718</b>Engine.object_teleport(await this.<i>player0</i>(), tower3_player0);</a>
-<a href="../05b_deltatowers.cs.html#6762"><b>6762</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6765"><b>6765</b>Engine.object_teleport(await this.<i>player0</i>(), tunnel_01_player0);</a>
-<a href="../05b_deltatowers.cs.html#6805"><b>6805</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6808"><b>6808</b>Engine.object_teleport(await this.<i>player0</i>(), sunken_chamber_player0);</a>
-<a href="../05b_deltatowers.cs.html#6847"><b>6847</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6850"><b>6850</b>Engine.object_teleport(await this.<i>player0</i>(), tunnel_02_player0);</a>
-<a href="../05b_deltatowers.cs.html#6888"><b>6888</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6891"><b>6891</b>Engine.object_teleport(await this.<i>player0</i>(), island_player0);</a>
-<a href="../05b_deltatowers.cs.html#6927"><b>6927</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6930"><b>6930</b>Engine.object_teleport(await this.<i>player0</i>(), gondola_02_player0);</a>
-<a href="../05b_deltatowers.cs.html#6963"><b>6963</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6966"><b>6966</b>Engine.object_teleport(await this.<i>player0</i>(), temple_ext_player0);</a>
-<a href="../05b_deltatowers.cs.html#6996"><b>6996</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#6999"><b>6999</b>Engine.object_teleport(await this.<i>player0</i>(), temple_int_player0);</a>
-<a href="../05b_deltatowers.cs.html#7026"><b>7026</b>Engine.unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
-<a href="../05b_deltatowers.cs.html#7029"><b>7029</b>Engine.object_teleport(await this.<i>player0</i>(), temple_return_player0);</a>
+<a href="../05b_deltatowers.cs.html#264"><b>264</b>object_hide(await this.<i>player0</i>(), true);</a>
+<a href="../05b_deltatowers.cs.html#272"><b>272</b>object_hide(await this.<i>player0</i>(), false);</a>
+<a href="../05b_deltatowers.cs.html#284"><b>284</b>if (unit_get_shield(await this.<i>player0</i>()) &gt;= 1F &amp;&amp; (bool)player_action_test_vision_trigger())</a>
+<a href="../05b_deltatowers.cs.html#296"><b>296</b>unit_set_maximum_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
+<a href="../05b_deltatowers.cs.html#297"><b>297</b>unit_set_current_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
+<a href="../05b_deltatowers.cs.html#298"><b>298</b>object_set_shield(await this.<i>player0</i>(), 0F);</a>
+<a href="../05b_deltatowers.cs.html#301"><b>301</b>await sleep_until(async () =&gt; object_get_health(await this.<i>player0</i>()) &lt; 1F || (bool)player_action_test_vision_trigger(), 1);</a>
+<a href="../05b_deltatowers.cs.html#304"><b>304</b>unit_set_maximum_vitality(await this.<i>player0</i>(), 30F, 70F);</a>
+<a href="../05b_deltatowers.cs.html#305"><b>305</b>object_set_shield(await this.<i>player0</i>(), 0F);</a>
+<a href="../05b_deltatowers.cs.html#1633"><b>1633</b>object_teleport(await this.<i>player0</i>(), tower1_player0);</a>
+<a href="../05b_deltatowers.cs.html#2266"><b>2266</b>await sleep_until(async () =&gt; unit_has_weapon(unit(await this.<i>player0</i>()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4209777012U)) || unit_has_weapon(unit(await this.player1()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4209777012U)));</a>
+<a href="../05b_deltatowers.cs.html#2486"><b>2486</b>return volume_test_objects(vol_tower3_entry, await this.<i>player0</i>()) == true || object_get_health(ai_vehicle_get_from_starting_location(tower3_turrets.right)) &lt;= 0F &amp;&amp; object_get_health(ai_vehicle_get_from_starting_location(tower3_turrets.left)) &lt;= 0F;</a>
+<a href="../05b_deltatowers.cs.html#2694"><b>2694</b>if (volume_test_object(vol_elev_shaft_under, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
+<a href="../05b_deltatowers.cs.html#2696"><b>2696</b>object_teleport(await this.<i>player0</i>(), _1to2_teleport);</a>
+<a href="../05b_deltatowers.cs.html#2697"><b>2697</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2228626052U), await this.<i>player0</i>(), &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2703"><b>2703</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2228626052U), await this.<i>player0</i>(), &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2790"><b>2790</b>if (volume_test_object(vol_elev_shaft_up, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
+<a href="../05b_deltatowers.cs.html#2792"><b>2792</b>object_teleport(await this.<i>player0</i>(), _2to3_teleport);</a>
+<a href="../05b_deltatowers.cs.html#2793"><b>2793</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2228626052U), await this.<i>player0</i>(), &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2799"><b>2799</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2228626052U), await this.<i>player0</i>(), &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#3014"><b>3014</b>if (volume_test_object(vol_elev_shaft_under, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
+<a href="../05b_deltatowers.cs.html#3016"><b>3016</b>object_teleport(await this.<i>player0</i>(), _1to2_teleport);</a>
+<a href="../05b_deltatowers.cs.html#3017"><b>3017</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2228626052U), await this.<i>player0</i>(), &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#3779"><b>3779</b>if (volume_test_object(vol_elev_shaft_up, await this.<i>player0</i>()) == false &amp;&amp; await this.player_count() &gt; 0)</a>
+<a href="../05b_deltatowers.cs.html#3781"><b>3781</b>object_teleport(await this.<i>player0</i>(), _2to3_teleport);</a>
+<a href="../05b_deltatowers.cs.html#3782"><b>3782</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 2228626052U), await this.<i>player0</i>(), &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#4822"><b>4822</b>object_teleport(await this.<i>player0</i>(), player0_hide_bsp3);</a>
+<a href="../05b_deltatowers.cs.html#4832"><b>4832</b>object_teleport(await this.<i>player0</i>(), temple_ext_player0);</a>
+<a href="../05b_deltatowers.cs.html#5119"><b>5119</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5131"><b>5131</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5143"><b>5143</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5155"><b>5155</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5167"><b>5167</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5179"><b>5179</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5191"><b>5191</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5352"><b>5352</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5354"><b>5354</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5381"><b>5381</b>await sleep_until(async () =&gt; volume_test_objects(vol_temple_02, players()) == true &amp;&amp; objects_can_see_object(ai_actors(regret1.Squad), await this.<i>player0</i>(), 45F) == true || objects_can_see_object(ai_actors(regret1.Squad), await this.player1(), 45F) == true);</a>
+<a href="../05b_deltatowers.cs.html#5400"><b>5400</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == true || unit_in_vehicle(await this.player1()) == true || objects_distance_to_object(players(), list_get(ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../05b_deltatowers.cs.html#5401"><b>5401</b>if (unit_in_vehicle(await this.<i>player0</i>()) == true || unit_in_vehicle(await this.player1()) == true)</a>
+<a href="../05b_deltatowers.cs.html#5409"><b>5409</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5411"><b>5411</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5438"><b>5438</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5440"><b>5440</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5470"><b>5470</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5472"><b>5472</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5513"><b>5513</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == true || unit_in_vehicle(await this.player1()) == true || objects_distance_to_object(players(), list_get(ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../05b_deltatowers.cs.html#5514"><b>5514</b>if (unit_in_vehicle(await this.<i>player0</i>()) == true || unit_in_vehicle(await this.player1()) == true)</a>
+<a href="../05b_deltatowers.cs.html#5522"><b>5522</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5524"><b>5524</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5561"><b>5561</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5578"><b>5578</b>unit_exit_vehicle(await this.<i>player0</i>(), 1);</a>
+<a href="../05b_deltatowers.cs.html#5580"><b>5580</b>await sleep_until(async () =&gt; unit_in_vehicle(await this.<i>player0</i>()) == false &amp;&amp; unit_in_vehicle(await this.player1()) == false);</a>
+<a href="../05b_deltatowers.cs.html#5722"><b>5722</b>object_teleport(await this.<i>player0</i>(), player0_hide_bsp3);</a>
+<a href="../05b_deltatowers.cs.html#5764"><b>5764</b>object_teleport(await this.<i>player0</i>(), player0_hide_bsp3);</a>
+<a href="../05b_deltatowers.cs.html#6523"><b>6523</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6525"><b>6525</b>object_teleport(await this.<i>player0</i>(), bridges_player0);</a>
+<a href="../05b_deltatowers.cs.html#6573"><b>6573</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6575"><b>6575</b>object_teleport(await this.<i>player0</i>(), tower2_player0);</a>
+<a href="../05b_deltatowers.cs.html#6622"><b>6622</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6624"><b>6624</b>object_teleport(await this.<i>player0</i>(), center_plat_player0);</a>
+<a href="../05b_deltatowers.cs.html#6669"><b>6669</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6671"><b>6671</b>object_teleport(await this.<i>player0</i>(), gondola_01_player0);</a>
+<a href="../05b_deltatowers.cs.html#6717"><b>6717</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6719"><b>6719</b>object_teleport(await this.<i>player0</i>(), tower3_player0);</a>
+<a href="../05b_deltatowers.cs.html#6763"><b>6763</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6766"><b>6766</b>object_teleport(await this.<i>player0</i>(), tunnel_01_player0);</a>
+<a href="../05b_deltatowers.cs.html#6806"><b>6806</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6809"><b>6809</b>object_teleport(await this.<i>player0</i>(), sunken_chamber_player0);</a>
+<a href="../05b_deltatowers.cs.html#6848"><b>6848</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6851"><b>6851</b>object_teleport(await this.<i>player0</i>(), tunnel_02_player0);</a>
+<a href="../05b_deltatowers.cs.html#6889"><b>6889</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6892"><b>6892</b>object_teleport(await this.<i>player0</i>(), island_player0);</a>
+<a href="../05b_deltatowers.cs.html#6928"><b>6928</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6931"><b>6931</b>object_teleport(await this.<i>player0</i>(), gondola_02_player0);</a>
+<a href="../05b_deltatowers.cs.html#6964"><b>6964</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#6967"><b>6967</b>object_teleport(await this.<i>player0</i>(), temple_ext_player0);</a>
+<a href="../05b_deltatowers.cs.html#6997"><b>6997</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#7000"><b>7000</b>object_teleport(await this.<i>player0</i>(), temple_int_player0);</a>
+<a href="../05b_deltatowers.cs.html#7027"><b>7027</b>unit_add_equipment(await this.<i>player0</i>(), profile_1, true, true);</a>
+<a href="../05b_deltatowers.cs.html#7030"><b>7030</b>object_teleport(await this.<i>player0</i>(), temple_return_player0);</a>
 </div>
 </div>
 </div>

@@ -3,7 +3,7 @@
 <a href="../Maps/TagRef.cs.html#50"><b>50</b>return new <i>TagRef</i>&lt;TTag&gt;(tagref.Id);</a>
 </div>
 </div>
-<div class="rH">86 references to TagRef</div><div class="rA">OpenH2.Core (86)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
+<div class="rH">90 references to TagRef</div><div class="rA">OpenH2.Core (90)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Extensions\SpanByteExtensions.cs (1)</div>
 <a href="../Extensions/SpanByteExtensions.cs.html#21"><b>21</b>public static <i>TagRef</i>&lt;T&gt; ReadTagRefAt&lt;T&gt;(this Span&lt;byte&gt; data, int offset)</a>
 </div>
 <div class="rF"><div class="rN">Extensions\StreamExtensions.cs (1)</div>
@@ -14,10 +14,10 @@
 <a href="../Maps/H2BaseMap.cs.html#96"><b>96</b>public bool TryGetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref, out T tag) where T : BaseTag</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2Map.cs (4)</div>
-<a href="../Maps/IH2Map.cs.html#28"><b>28</b>bool TryGetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref, out T? tag) where T : BaseTag;</a>
-<a href="../Maps/IH2Map.cs.html#29"><b>29</b>T GetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref) where T : BaseTag;</a>
-<a href="../Maps/IH2Map.cs.html#63"><b>63</b>public T GetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref) where T : BaseTag</a>
-<a href="../Maps/IH2Map.cs.html#68"><b>68</b>public bool TryGetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref, out T? tag) where T : BaseTag</a>
+<a href="../Maps/IH2Map.cs.html#27"><b>27</b>bool TryGetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref, out T? tag) where T : BaseTag;</a>
+<a href="../Maps/IH2Map.cs.html#28"><b>28</b>T GetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref) where T : BaseTag;</a>
+<a href="../Maps/IH2Map.cs.html#62"><b>62</b>public T GetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref) where T : BaseTag</a>
+<a href="../Maps/IH2Map.cs.html#67"><b>67</b>public bool TryGetTag&lt;T&gt;(<i>TagRef</i>&lt;T&gt; tagref, out T? tag) where T : BaseTag</a>
 </div>
 <div class="rF"><div class="rN">Maps\IH2MapHeader.cs (1)</div>
 <a href="../Maps/IH2MapHeader.cs.html#16"><b>16</b><i>TagRef</i>&lt;SoundMappingTag&gt; LocalSounds { get; set; }</a>
@@ -27,7 +27,10 @@
 <a href="../Maps/IndexHeader.cs.html#28"><b>28</b>public <i>TagRef</i>&lt;GlobalsTag&gt; Globals { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Maps\MCC\H2mccMapHeader.cs (1)</div>
-<a href="../Maps/MCC/H2mccMapHeader.cs.html#60"><b>60</b>public <i>TagRef</i>&lt;SoundMappingTag&gt; LocalSounds { get; set; }</a>
+<a href="../Maps/MCC/H2mccMapHeader.cs.html#57"><b>57</b>public <i>TagRef</i>&lt;SoundMappingTag&gt; LocalSounds { get; set; }</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccV13MapHeader.cs (1)</div>
+<a href="../Maps/MCC/H2mccV13MapHeader.cs.html#72"><b>72</b>public <i>TagRef</i>&lt;SoundMappingTag&gt; LocalSounds { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Maps\TagRef.cs (3)</div>
 <a href="../Maps/TagRef.cs.html#38"><b>38</b>public static implicit operator uint(<i>TagRef</i>&lt;TTag&gt; tagref)</a>
@@ -41,20 +44,21 @@
 <a href="../Patching/TagPatcher.cs.html#42"><b>42</b>this.DataWriters.Add(typeof(<i>TagRef</i>&lt;&gt;), WriteTagRef);</a>
 </div>
 <div class="rF"><div class="rN">Tags\AnimationGraphTag.cs (2)</div>
-<a href="../Tags/AnimationGraphTag.cs.html#22"><b>22</b>public <i>TagRef</i>&lt;AnimationGraphTag&gt; Unknown { get; set; }</a>
-<a href="../Tags/AnimationGraphTag.cs.html#110"><b>110</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundTag { get; set; }</a>
+<a href="../Tags/AnimationGraphTag.cs.html#72"><b>72</b>public <i>TagRef</i>&lt;AnimationGraphTag&gt; ParentAnimation { get; set; }</a>
+<a href="../Tags/AnimationGraphTag.cs.html#173"><b>173</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundTag { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\BipedTag.cs (1)</div>
-<a href="../Tags/BipedTag.cs.html#24"><b>24</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Model { get; set; }</a>
+<a href="../Tags/BipedTag.cs.html#34"><b>34</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Model { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\BlocTag.cs (1)</div>
-<a href="../Tags/BlocTag.cs.html#25"><b>25</b>public <i>TagRef</i>&lt;HaloModelTag&gt; PhysicalModel { get; set; }</a>
+<a href="../Tags/BlocTag.cs.html#27"><b>27</b>public <i>TagRef</i>&lt;HaloModelTag&gt; PhysicalModel { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\BspTag.cs (1)</div>
-<a href="../Tags/BspTag.cs.html#214"><b>214</b>public <i>TagRef</i>&lt;ShaderTag&gt; Shader { get; set; }</a>
+<a href="../Tags/BspTag.cs.html#211"><b>211</b>public <i>TagRef</i>&lt;ShaderTag&gt; Shader { get; set; }</a>
 </div>
-<div class="rF"><div class="rN">Tags\CharacterTag.cs (1)</div>
+<div class="rF"><div class="rN">Tags\CharacterTag.cs (2)</div>
 <a href="../Tags/CharacterTag.cs.html#15"><b>15</b>public <i>TagRef</i>&lt;CharacterTag&gt; Parent { get; set; }</a>
+<a href="../Tags/CharacterTag.cs.html#27"><b>27</b>public <i>TagRef</i>&lt;CharacterTag&gt; Major { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Common\Models\ModelMesh.cs (2)</div>
 <a href="../Tags/Common/Models/ModelMesh.cs.html#19"><b>19</b>public <i>TagRef</i>&lt;ShaderTag&gt; Shader { get; set; }</a>
@@ -65,21 +69,25 @@
 <a href="../Tags/Common/Models/ModelResourceContainerProcessor.cs.html#24"><b>24</b>public <i>TagRef</i>&lt;ShaderTag&gt; Shader;</a>
 </div>
 <div class="rF"><div class="rN">Tags\Common\Models\ModelShaderReference.cs (1)</div>
-<a href="../Tags/Common/Models/ModelShaderReference.cs.html#11"><b>11</b>public <i>TagRef</i>&lt;ShaderTag&gt; ShaderId { get; set; }</a>
+<a href="../Tags/Common/Models/ModelShaderReference.cs.html#10"><b>10</b>public <i>TagRef</i>&lt;ShaderTag&gt; ShaderId { get; set; }</a>
+</div>
+<div class="rF"><div class="rN">Tags\CreatureTag.cs (1)</div>
+<a href="../Tags/CreatureTag.cs.html#15"><b>15</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Model { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\DialogMapTag.cs (1)</div>
 <a href="../Tags/DialogMapTag.cs.html#36"><b>36</b>public <i>TagRef</i>&lt;SoundTag&gt; Sound { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\EquipmentTag.cs (1)</div>
-<a href="../Tags/EquipmentTag.cs.html#17"><b>17</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Hlmt { get; set; }</a>
+<a href="../Tags/EquipmentTag.cs.html#16"><b>16</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Hlmt { get; set; }</a>
 </div>
-<div class="rF"><div class="rN">Tags\GlobalsTag.cs (6)</div>
-<a href="../Tags/GlobalsTag.cs.html#51"><b>51</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundTagA { get; set; }</a>
-<a href="../Tags/GlobalsTag.cs.html#54"><b>54</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundTagB { get; set; }</a>
-<a href="../Tags/GlobalsTag.cs.html#57"><b>57</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundTagC { get; set; }</a>
-<a href="../Tags/GlobalsTag.cs.html#60"><b>60</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; LoopingSoundTagA { get; set; }</a>
-<a href="../Tags/GlobalsTag.cs.html#63"><b>63</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundTagD { get; set; }</a>
-<a href="../Tags/GlobalsTag.cs.html#103"><b>103</b>public <i>TagRef</i>&lt;SoundMappingTag&gt; SoundMap { get; set; }</a>
+<div class="rF"><div class="rN">Tags\GlobalsTag.cs (7)</div>
+<a href="../Tags/GlobalsTag.cs.html#54"><b>54</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundSweetenerSmall { get; set; }</a>
+<a href="../Tags/GlobalsTag.cs.html#57"><b>57</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundSweetenerMedium { get; set; }</a>
+<a href="../Tags/GlobalsTag.cs.html#60"><b>60</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundSweetenerLarge { get; set; }</a>
+<a href="../Tags/GlobalsTag.cs.html#63"><b>63</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; SoundSweetenerRolling { get; set; }</a>
+<a href="../Tags/GlobalsTag.cs.html#66"><b>66</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; SoundSweetenerGrinding { get; set; }</a>
+<a href="../Tags/GlobalsTag.cs.html#69"><b>69</b>public <i>TagRef</i>&lt;SoundTag&gt; SoundSweetenerMelee { get; set; }</a>
+<a href="../Tags/GlobalsTag.cs.html#109"><b>109</b>public <i>TagRef</i>&lt;SoundMappingTag&gt; SoundMap { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\HaloModelTag.cs (4)</div>
 <a href="../Tags/HaloModelTag.cs.html#17"><b>17</b>public <i>TagRef</i>&lt;RenderModelTag&gt; RenderModel { get; set; }</a>
@@ -88,10 +96,10 @@
 <a href="../Tags/HaloModelTag.cs.html#29"><b>29</b>public <i>TagRef</i>&lt;PhysicsModelTag&gt; PhysicsModel { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\LensFlareTag.cs (1)</div>
-<a href="../Tags/LensFlareTag.cs.html#17"><b>17</b>public <i>TagRef</i>&lt;BitmapTag&gt; Bitmap { get; set; }</a>
+<a href="../Tags/LensFlareTag.cs.html#26"><b>26</b>public <i>TagRef</i>&lt;BitmapTag&gt; Bitmap { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\LoopingSoundTag.cs (1)</div>
-<a href="../Tags/LoopingSoundTag.cs.html#35"><b>35</b>public <i>TagRef</i>&lt;SoundTag&gt; Sound { get; set; }</a>
+<a href="../Tags/LoopingSoundTag.cs.html#34"><b>34</b>public <i>TagRef</i>&lt;SoundTag&gt; Sound { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\MachineryTag.cs (3)</div>
 <a href="../Tags/MachineryTag.cs.html#25"><b>25</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Model { get; set; }</a>
@@ -106,30 +114,30 @@
 <a href="../Tags/Scenario/ScenarioEnvironment.cs.html#187"><b>187</b>public <i>TagRef</i>&lt;SoundSceneryTag&gt; SoundScenery { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioGameplay.cs (3)</div>
-<a href="../Tags/Scenario/ScenarioGameplay.cs.html#16"><b>16</b>public <i>TagRef</i>&lt;BipedTag&gt; Biped { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioGameplay.cs.html#26"><b>26</b>public <i>TagRef</i>&lt;WeaponTag&gt; PrimaryWeapon { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioGameplay.cs.html#35"><b>35</b>public <i>TagRef</i>&lt;WeaponTag&gt; SecondaryWeapon { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioGameplay.cs.html#14"><b>14</b>public <i>TagRef</i>&lt;BipedTag&gt; Biped { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioGameplay.cs.html#24"><b>24</b>public <i>TagRef</i>&lt;WeaponTag&gt; PrimaryWeapon { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioGameplay.cs.html#33"><b>33</b>public <i>TagRef</i>&lt;WeaponTag&gt; SecondaryWeapon { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioItems.cs (4)</div>
-<a href="../Tags/Scenario/ScenarioItems.cs.html#17"><b>17</b>public <i>TagRef</i>&lt;VehicleTag&gt; Vehicle { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioItems.cs.html#24"><b>24</b>public <i>TagRef</i>&lt;EquipmentTag&gt; Equipment { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioItems.cs.html#55"><b>55</b>public <i>TagRef</i>&lt;WeaponTag&gt; Weapon { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioItems.cs.html#115"><b>115</b>public <i>TagRef</i>&lt;BlocTag&gt; Bloc { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioItems.cs.html#16"><b>16</b>public <i>TagRef</i>&lt;VehicleTag&gt; Vehicle { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioItems.cs.html#23"><b>23</b>public <i>TagRef</i>&lt;EquipmentTag&gt; Equipment { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioItems.cs.html#54"><b>54</b>public <i>TagRef</i>&lt;WeaponTag&gt; Weapon { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioItems.cs.html#137"><b>137</b>public <i>TagRef</i>&lt;BlocTag&gt; Bloc { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\Scenario\ScenarioTag.cs (9)</div>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#344"><b>344</b>public <i>TagRef</i>&lt;CharacterTag&gt; CharacterReference { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#351"><b>351</b>public <i>TagRef</i>&lt;SoundTag&gt; Sound { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#537"><b>537</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; LoopingSound1 { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#540"><b>540</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; LoopingSound2 { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#569"><b>569</b>public <i>TagRef</i>&lt;BspTag&gt; Bsp { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#643"><b>643</b>public <i>TagRef</i>&lt;BspTag&gt; BspRef { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#672"><b>672</b>public <i>TagRef</i>&lt;BitmapTag&gt; BitmapRef { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#688"><b>688</b>public <i>TagRef</i>&lt;BitmapTag&gt; BitmapRef { get; set; }</a>
-<a href="../Tags/Scenario/ScenarioTag.cs.html#702"><b>702</b>public <i>TagRef</i>&lt;DialogMapTag&gt; MdlgRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#356"><b>356</b>public <i>TagRef</i>&lt;CharacterTag&gt; CharacterReference { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#363"><b>363</b>public <i>TagRef</i>&lt;SoundTag&gt; Sound { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#549"><b>549</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; LoopingSound1 { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#552"><b>552</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; LoopingSound2 { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#581"><b>581</b>public <i>TagRef</i>&lt;BspTag&gt; Bsp { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#655"><b>655</b>public <i>TagRef</i>&lt;BspTag&gt; BspRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#684"><b>684</b>public <i>TagRef</i>&lt;BitmapTag&gt; BitmapRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#700"><b>700</b>public <i>TagRef</i>&lt;BitmapTag&gt; BitmapRef { get; set; }</a>
+<a href="../Tags/Scenario/ScenarioTag.cs.html#714"><b>714</b>public <i>TagRef</i>&lt;DialogMapTag&gt; MdlgRef { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\SceneryTag.cs (2)</div>
-<a href="../Tags/SceneryTag.cs.html#29"><b>29</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Model { get; set; }</a>
-<a href="../Tags/SceneryTag.cs.html#32"><b>32</b>public <i>TagRef</i>&lt;BlocTag&gt; Bloc { get; set; }</a>
+<a href="../Tags/SceneryTag.cs.html#27"><b>27</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Model { get; set; }</a>
+<a href="../Tags/SceneryTag.cs.html#30"><b>30</b>public <i>TagRef</i>&lt;BlocTag&gt; Bloc { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\ShaderPassTag.cs (1)</div>
 <a href="../Tags/ShaderPassTag.cs.html#29"><b>29</b>public <i>TagRef</i>&lt;VertexShaderTag&gt; VertexShaderId { get; set; }</a>
@@ -151,19 +159,19 @@
 <a href="../Tags/SkyboxTag.cs.html#47"><b>47</b>public <i>TagRef</i>&lt;LensFlareTag&gt; LensFlare { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\SoundSceneryTag.cs (1)</div>
-<a href="../Tags/SoundSceneryTag.cs.html#26"><b>26</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; Sound { get; set; }</a>
+<a href="../Tags/SoundSceneryTag.cs.html#25"><b>25</b>public <i>TagRef</i>&lt;LoopingSoundTag&gt; Sound { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\VehicleCollectionTag.cs (1)</div>
-<a href="../Tags/VehicleCollectionTag.cs.html#28"><b>28</b>public <i>TagRef</i>&lt;VehicleTag&gt; Vehicle { get; set; }</a>
+<a href="../Tags/VehicleCollectionTag.cs.html#25"><b>25</b>public <i>TagRef</i>&lt;VehicleTag&gt; Vehicle { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\VehicleTag.cs (1)</div>
 <a href="../Tags/VehicleTag.cs.html#15"><b>15</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Hlmt { get; set; }</a>
 </div>
 <div class="rF"><div class="rN">Tags\WeaponTag.cs (4)</div>
-<a href="../Tags/WeaponTag.cs.html#17"><b>17</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Hlmt { get; set; }</a>
-<a href="../Tags/WeaponTag.cs.html#42"><b>42</b>public <i>TagRef</i>&lt;BitmapTag&gt; Bitmap { get; set; }</a>
-<a href="../Tags/WeaponTag.cs.html#49"><b>49</b>public <i>TagRef</i>&lt;RenderModelTag&gt; Model { get; set; }</a>
-<a href="../Tags/WeaponTag.cs.html#52"><b>52</b>public <i>TagRef</i>&lt;AnimationGraphTag&gt; Animation { get; set; }</a>
+<a href="../Tags/WeaponTag.cs.html#16"><b>16</b>public <i>TagRef</i>&lt;HaloModelTag&gt; Hlmt { get; set; }</a>
+<a href="../Tags/WeaponTag.cs.html#47"><b>47</b>public <i>TagRef</i>&lt;BitmapTag&gt; Bitmap { get; set; }</a>
+<a href="../Tags/WeaponTag.cs.html#54"><b>54</b>public <i>TagRef</i>&lt;RenderModelTag&gt; Model { get; set; }</a>
+<a href="../Tags/WeaponTag.cs.html#57"><b>57</b>public <i>TagRef</i>&lt;AnimationGraphTag&gt; Animation { get; set; }</a>
 </div>
 </div>
 </div>

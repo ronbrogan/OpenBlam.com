@@ -1,26 +1,26 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to hl_hologram</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
-<a href="../04b_floodlab.Data.cs.html#1560"><b>1560</b><i>hl_hologram</i> = new Squad_hl_hologram(scenarioTag);</a>
+<a href="../04b_floodlab.Data.cs.html#1411"><b>1411</b><i>hl_hologram</i> = new Squad_hl_hologram(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">19 references to hl_hologram</div><div class="rA">Halo2MCC (19)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">04b_floodlab.cs (19)</div>
-<a href="../04b_floodlab.cs.html#1966"><b>1966</b>Engine.cs_aim_object(true, Engine.list_get(Engine.ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
-<a href="../04b_floodlab.cs.html#1969"><b>1969</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 900);</a>
-<a href="../04b_floodlab.cs.html#1970"><b>1970</b>Engine.cs_aim_object(false, Engine.list_get(Engine.ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
-<a href="../04b_floodlab.cs.html#1978"><b>1978</b>Engine.cs_aim_object(true, Engine.list_get(Engine.ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
-<a href="../04b_floodlab.cs.html#1981"><b>1981</b>Engine.cs_shoot(true, Engine.list_get(Engine.ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
-<a href="../04b_floodlab.cs.html#2178"><b>2178</b>Engine.ai_place(<i>hl_hologram</i>.Squad);</a>
-<a href="../04b_floodlab.cs.html#2179"><b>2179</b>Engine.unit_impervious(Engine.ai_actors(<i>hl_hologram</i>.Squad), true);</a>
-<a href="../04b_floodlab.cs.html#2180"><b>2180</b>Engine.ai_cannot_die(<i>hl_hologram</i>.Squad, true);</a>
-<a href="../04b_floodlab.cs.html#2181"><b>2181</b>Engine.cs_run_command_script(<i>hl_hologram</i>.Squad, new ScriptMethodReference(forever_pause));</a>
-<a href="../04b_floodlab.cs.html#2183"><b>2183</b>Engine.ai_disregard(Engine.ai_actors(<i>hl_hologram</i>.Squad), true);</a>
-<a href="../04b_floodlab.cs.html#2185"><b>2185</b>Engine.object_dynamic_simulation_disable(Engine.list_get(Engine.ai_actors(<i>hl_hologram</i>.Squad), 0), true);</a>
-<a href="../04b_floodlab.cs.html#2194"><b>2194</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_hl_scene&quot;, new ScriptMethodReference(hologram_ally_02), <i>hl_hologram</i>.Squad) || (short)Engine.ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 150);</a>
-<a href="../04b_floodlab.cs.html#2198"><b>2198</b>await Engine.sleep_until(async () =&gt; this.holo_ally_02_done == true || (short)Engine.ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 300);</a>
-<a href="../04b_floodlab.cs.html#2201"><b>2201</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_react_scene&quot;, new ScriptMethodReference(hologram_ally_03), disposal_commander.Squad, <i>hl_hologram</i>.Squad) || (short)Engine.ai_living_count(disposal_commander.Squad) == 0 || (short)Engine.ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 150);</a>
-<a href="../04b_floodlab.cs.html#2208"><b>2208</b>Engine.unit_doesnt_drop_items(Engine.ai_actors(<i>hl_hologram</i>.Squad));</a>
-<a href="../04b_floodlab.cs.html#2209"><b>2209</b>Engine.ai_cannot_die(<i>hl_hologram</i>.Squad, false);</a>
-<a href="../04b_floodlab.cs.html#2210"><b>2210</b>Engine.ai_kill_silent(<i>hl_hologram</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#1966"><b>1966</b>cs_aim_object(true, list_get(ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
+<a href="../04b_floodlab.cs.html#1969"><b>1969</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 900);</a>
+<a href="../04b_floodlab.cs.html#1970"><b>1970</b>cs_aim_object(false, list_get(ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
+<a href="../04b_floodlab.cs.html#1978"><b>1978</b>cs_aim_object(true, list_get(ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
+<a href="../04b_floodlab.cs.html#1981"><b>1981</b>cs_shoot(true, list_get(ai_actors(<i>hl_hologram</i>.Squad), 0));</a>
+<a href="../04b_floodlab.cs.html#2178"><b>2178</b>ai_place(<i>hl_hologram</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#2179"><b>2179</b>unit_impervious(ai_actors(<i>hl_hologram</i>.Squad), true);</a>
+<a href="../04b_floodlab.cs.html#2180"><b>2180</b>ai_cannot_die(<i>hl_hologram</i>.Squad, true);</a>
+<a href="../04b_floodlab.cs.html#2181"><b>2181</b>cs_run_command_script(<i>hl_hologram</i>.Squad, new ScriptMethodReference(forever_pause));</a>
+<a href="../04b_floodlab.cs.html#2183"><b>2183</b>ai_disregard(ai_actors(<i>hl_hologram</i>.Squad), true);</a>
+<a href="../04b_floodlab.cs.html#2185"><b>2185</b>object_dynamic_simulation_disable(list_get(ai_actors(<i>hl_hologram</i>.Squad), 0), true);</a>
+<a href="../04b_floodlab.cs.html#2194"><b>2194</b>await sleep_until(async () =&gt; ai_scene(&quot;holo_main_hl_scene&quot;, new ScriptMethodReference(hologram_ally_02), <i>hl_hologram</i>.Squad) || (short)ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2198"><b>2198</b>await sleep_until(async () =&gt; this.holo_ally_02_done == true || (short)ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 300);</a>
+<a href="../04b_floodlab.cs.html#2201"><b>2201</b>await sleep_until(async () =&gt; ai_scene(&quot;holo_main_react_scene&quot;, new ScriptMethodReference(hologram_ally_03), disposal_commander.Squad, <i>hl_hologram</i>.Squad) || (short)ai_living_count(disposal_commander.Squad) == 0 || (short)ai_living_count(<i>hl_hologram</i>.Squad) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2208"><b>2208</b>unit_doesnt_drop_items(ai_actors(<i>hl_hologram</i>.Squad));</a>
+<a href="../04b_floodlab.cs.html#2209"><b>2209</b>ai_cannot_die(<i>hl_hologram</i>.Squad, false);</a>
+<a href="../04b_floodlab.cs.html#2210"><b>2210</b>ai_kill_silent(<i>hl_hologram</i>.Squad);</a>
 </div>
 </div>
 </div>

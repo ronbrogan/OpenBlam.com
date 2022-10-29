@@ -1,21 +1,29 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 instantiations of CompressionSection</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\MCC\H2mccCompression.cs (1)</div>
-<a href="../Maps/MCC/H2mccCompression.cs.html#212"><b>212</b>var section = new H2mccCompressionSections.<i>CompressionSection</i>((int)compressed.Length + 2, (uint)compressTo.Position);</a>
+<div class="rH">3 instantiations of CompressionSection</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\MCC\H2mccCompression.cs (1)</div>
+<a href="../Maps/MCC/H2mccCompression.cs.html#211"><b>211</b>var section = new H2mccCompressionSections.<i>CompressionSection</i>((int)compressed.Length + 2, (uint)compressTo.Position);</a>
 </div>
 <div class="rF"><div class="rN">Maps\MCC\H2mccCompressionSections.cs (1)</div>
 <a href="../Maps/MCC/H2mccCompressionSections.cs.html#32"><b>32</b>return new <i>CompressionSection</i>(s.ReadInt32At(offset), s.ReadUInt32At(offset + 4));</a>
 </div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccCompressionV13.cs (1)</div>
+<a href="../Maps/MCC/H2mccCompressionV13.cs.html#229"><b>229</b>var section = new H2mccCompressionSections.<i>CompressionSection</i>((int)compressed.Length + 2, (uint)compressTo.Position);</a>
 </div>
-<div class="rH">7 references to CompressionSection</div><div class="rA">OpenH2.Core (7)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\MCC\H2mccCompression.cs (5)</div>
-<a href="../Maps/MCC/H2mccCompression.cs.html#53"><b>53</b>foreach (<i>var</i> section in info.Sections)</a>
-<a href="../Maps/MCC/H2mccCompression.cs.html#119"><b>119</b>foreach (<i>var</i> section in info.Sections)</a>
-<a href="../Maps/MCC/H2mccCompression.cs.html#192"><b>192</b>var sections = new List&lt;H2mccCompressionSections.<i>CompressionSection</i>&gt;();</a>
-<a href="../Maps/MCC/H2mccCompression.cs.html#212"><b>212</b><i>var</i> section = new H2mccCompressionSections.CompressionSection((int)compressed.Length + 2, (uint)compressTo.Position);</a>
-<a href="../Maps/MCC/H2mccCompression.cs.html#223"><b>223</b>foreach (<i>var</i> section in sections)</a>
+</div>
+<div class="rH">10 references to CompressionSection</div><div class="rA">OpenH2.Core (10)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Maps\MCC\H2mccCompression.cs (5)</div>
+<a href="../Maps/MCC/H2mccCompression.cs.html#52"><b>52</b>foreach (<i>var</i> section in info.Sections)</a>
+<a href="../Maps/MCC/H2mccCompression.cs.html#118"><b>118</b>foreach (<i>var</i> section in info.Sections)</a>
+<a href="../Maps/MCC/H2mccCompression.cs.html#191"><b>191</b>var sections = new List&lt;H2mccCompressionSections.<i>CompressionSection</i>&gt;();</a>
+<a href="../Maps/MCC/H2mccCompression.cs.html#211"><b>211</b><i>var</i> section = new H2mccCompressionSections.CompressionSection((int)compressed.Length + 2, (uint)compressTo.Position);</a>
+<a href="../Maps/MCC/H2mccCompression.cs.html#222"><b>222</b>foreach (<i>var</i> section in sections)</a>
 </div>
 <div class="rF"><div class="rN">Maps\MCC\H2mccCompressionSections.cs (2)</div>
 <a href="../Maps/MCC/H2mccCompressionSections.cs.html#11"><b>11</b>public <i>CompressionSection</i>[] Sections { get; set; }</a>
 <a href="../Maps/MCC/H2mccCompressionSections.cs.html#30"><b>30</b>public static <i>CompressionSection</i> ReadCompressionSection(Stream s, int offset)</a>
+</div>
+<div class="rF"><div class="rN">Maps\MCC\H2mccCompressionV13.cs (3)</div>
+<a href="../Maps/MCC/H2mccCompressionV13.cs.html#209"><b>209</b>var sections = new List&lt;H2mccCompressionSections.<i>CompressionSection</i>&gt;();</a>
+<a href="../Maps/MCC/H2mccCompressionV13.cs.html#229"><b>229</b><i>var</i> section = new H2mccCompressionSections.CompressionSection((int)compressed.Length + 2, (uint)compressTo.Position);</a>
+<a href="../Maps/MCC/H2mccCompressionV13.cs.html#240"><b>240</b>foreach (<i>var</i> section in sections)</a>
 </div>
 </div>
 </div>

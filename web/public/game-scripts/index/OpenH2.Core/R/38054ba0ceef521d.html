@@ -3,7 +3,7 @@
 <a href="../Scripting/Types.cs.html#15"><b>15</b>public class ScriptMethodReference : <i>IScriptMethodReference</i></a>
 </div>
 </div>
-<div class="rH">10 references to IScriptMethodReference</div><div class="rA">OpenH2.Core (10)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (10)</div>
+<div class="rH">20 references to IScriptMethodReference</div><div class="rA">OpenH2.Core (20)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (10)</div>
 <a href="../Scripting/IScriptEngine.cs.html#163"><b>163</b>bool ai_scene(string scene_name, <i>IScriptMethodReference</i> ai_command_script, IAiActorDefinition ai);</a>
 <a href="../Scripting/IScriptEngine.cs.html#167"><b>167</b>bool ai_scene(string scene_name, <i>IScriptMethodReference</i> ai_command_script, IAiActorDefinition ai, IAiActorDefinition ai1);</a>
 <a href="../Scripting/IScriptEngine.cs.html#431"><b>431</b>bool cs_command_script_queued(IAiActorDefinition ai, <i>IScriptMethodReference</i> ai_command_script);</a>
@@ -14,6 +14,18 @@
 <a href="../Scripting/IScriptEngine.cs.html#1329"><b>1329</b>Task sleep(short ticks, <i>IScriptMethodReference</i> script = null);</a>
 <a href="../Scripting/IScriptEngine.cs.html#1333"><b>1333</b>void sleep_forever(<i>IScriptMethodReference</i> script = null);</a>
 <a href="../Scripting/IScriptEngine.cs.html#1586"><b>1586</b>void wake(<i>IScriptMethodReference</i> script_name);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (10)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#120"><b>120</b>public bool ai_scene(string scene_name, <i>IScriptMethodReference</i> ai_command_script, IAiActorDefinition ai) =&gt; Engine.ai_scene(scene_name, ai_command_script, ai);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#122"><b>122</b>public bool ai_scene(string scene_name, <i>IScriptMethodReference</i> ai_command_script, IAiActorDefinition ai, IAiActorDefinition ai1) =&gt; Engine.ai_scene(scene_name, ai_command_script, ai, ai1);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#254"><b>254</b>public bool cs_command_script_queued(IAiActorDefinition ai, <i>IScriptMethodReference</i> ai_command_script) =&gt; Engine.cs_command_script_queued(ai, ai_command_script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#256"><b>256</b>public bool cs_command_script_running(IAiActorDefinition ai, <i>IScriptMethodReference</i> ai_command_script) =&gt; Engine.cs_command_script_running(ai, ai_command_script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#330"><b>330</b>public void cs_queue_command_script(IAiActorDefinition ai, <i>IScriptMethodReference</i> ai_command_script) =&gt; Engine.cs_queue_command_script(ai, ai_command_script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#332"><b>332</b>public void cs_run_command_script(IAiActorDefinition ai, <i>IScriptMethodReference</i> ai_command_script) =&gt; Engine.cs_run_command_script(ai, ai_command_script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#342"><b>342</b>public void cs_stack_command_script(IAiActorDefinition ai, <i>IScriptMethodReference</i> ai_command_script) =&gt; Engine.cs_stack_command_script(ai, ai_command_script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#710"><b>710</b>public Task sleep(short ticks, <i>IScriptMethodReference</i> script = null) =&gt; Engine.sleep(ticks, script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#712"><b>712</b>public void sleep_forever(<i>IScriptMethodReference</i> script = null) =&gt; Engine.sleep_forever(script);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#838"><b>838</b>public void wake(<i>IScriptMethodReference</i> script_name) =&gt; Engine.wake(script_name);</a>
 </div>
 </div>
 </div>

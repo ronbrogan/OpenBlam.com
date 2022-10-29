@@ -1,8 +1,8 @@
 ﻿<div class="referenceBody">
 <div class="rH">3 references to overlook_jackals</div><div class="rA">Halo2Vista (3)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.cs (3)</div>
-<a href="../05a_deltaapproach.cs.html#3263"><b>3263</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>overlook_jackals</i>) &lt; 1 || Engine.volume_test_objects(vol_bridge_all, Engine.players()) == true);</a>
-<a href="../05a_deltaapproach.cs.html#4293"><b>4293</b>Engine.ai_disposable(<i>overlook_jackals</i>, true);</a>
-<a href="../05a_deltaapproach.cs.html#6467"><b>6467</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_pause, Engine.players()) == true || Engine.volume_test_objects(vol_overlook_pause, Engine.ai_actors(LZ_warthog_01.Squad)) == true &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, <i>overlook_jackals</i>) == true);</a>
+<a href="../05a_deltaapproach.cs.html#3263"><b>3263</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>overlook_jackals</i>) &lt; 1 || volume_test_objects(vol_bridge_all, players()) == true);</a>
+<a href="../05a_deltaapproach.cs.html#4293"><b>4293</b>ai_disposable(<i>overlook_jackals</i>, true);</a>
+<a href="../05a_deltaapproach.cs.html#6467"><b>6467</b>await sleep_until(async () =&gt; volume_test_objects(vol_bridge_pause, players()) == true || volume_test_objects(vol_overlook_pause, ai_actors(LZ_warthog_01.Squad)) == true &amp;&amp; (bool)ai_trigger_test(&quot;done_fighting&quot;, <i>overlook_jackals</i>) == true);</a>
 </div>
 </div>
 </div>

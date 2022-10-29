@@ -1,36 +1,36 @@
 ﻿<div class="referenceBody">
 <div class="rH">33 references to player0</div><div class="rA">Halo2Vista (33)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03b_newmombasa.cs (33)</div>
-<a href="../03b_newmombasa.cs.html#296"><b>296</b>Engine.object_hide(await this.<i>player0</i>(), true);</a>
-<a href="../03b_newmombasa.cs.html#304"><b>304</b>Engine.object_hide(await this.<i>player0</i>(), false);</a>
-<a href="../03b_newmombasa.cs.html#316"><b>316</b>if (Engine.unit_get_shield(await this.<i>player0</i>()) &gt;= 1F &amp;&amp; (bool)Engine.player_action_test_vision_trigger())</a>
-<a href="../03b_newmombasa.cs.html#328"><b>328</b>Engine.unit_set_maximum_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
-<a href="../03b_newmombasa.cs.html#329"><b>329</b>Engine.unit_set_current_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
-<a href="../03b_newmombasa.cs.html#330"><b>330</b>Engine.object_set_shield(await this.<i>player0</i>(), 0F);</a>
-<a href="../03b_newmombasa.cs.html#333"><b>333</b>await Engine.sleep_until(async () =&gt; Engine.object_get_health(await this.<i>player0</i>()) &lt; 1F || (bool)Engine.player_action_test_vision_trigger(), 1);</a>
-<a href="../03b_newmombasa.cs.html#336"><b>336</b>Engine.unit_set_maximum_vitality(await this.<i>player0</i>(), 30F, 70F);</a>
-<a href="../03b_newmombasa.cs.html#337"><b>337</b>Engine.object_set_shield(await this.<i>player0</i>(), 0F);</a>
-<a href="../03b_newmombasa.cs.html#2353"><b>2353</b>return Engine.unit_in_vehicle(Engine.unit(await this.<i>player0</i>())) || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.unit_in_vehicle(Engine.unit(await this.player1()));</a>
-<a href="../03b_newmombasa.cs.html#2359"><b>2359</b>return Engine.unit_in_vehicle(Engine.unit(await this.<i>player0</i>())) &amp;&amp; !((bool)Engine.game_is_cooperative()) || Engine.unit_in_vehicle(Engine.unit(await this.player1()));</a>
+<a href="../03b_newmombasa.cs.html#296"><b>296</b>object_hide(await this.<i>player0</i>(), true);</a>
+<a href="../03b_newmombasa.cs.html#304"><b>304</b>object_hide(await this.<i>player0</i>(), false);</a>
+<a href="../03b_newmombasa.cs.html#316"><b>316</b>if (unit_get_shield(await this.<i>player0</i>()) &gt;= 1F &amp;&amp; (bool)player_action_test_vision_trigger())</a>
+<a href="../03b_newmombasa.cs.html#328"><b>328</b>unit_set_maximum_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
+<a href="../03b_newmombasa.cs.html#329"><b>329</b>unit_set_current_vitality(await this.<i>player0</i>(), 50F, 0F);</a>
+<a href="../03b_newmombasa.cs.html#330"><b>330</b>object_set_shield(await this.<i>player0</i>(), 0F);</a>
+<a href="../03b_newmombasa.cs.html#333"><b>333</b>await sleep_until(async () =&gt; object_get_health(await this.<i>player0</i>()) &lt; 1F || (bool)player_action_test_vision_trigger(), 1);</a>
+<a href="../03b_newmombasa.cs.html#336"><b>336</b>unit_set_maximum_vitality(await this.<i>player0</i>(), 30F, 70F);</a>
+<a href="../03b_newmombasa.cs.html#337"><b>337</b>object_set_shield(await this.<i>player0</i>(), 0F);</a>
+<a href="../03b_newmombasa.cs.html#2353"><b>2353</b>return unit_in_vehicle(unit(await this.<i>player0</i>())) || (bool)game_is_cooperative() &amp;&amp; unit_in_vehicle(unit(await this.player1()));</a>
+<a href="../03b_newmombasa.cs.html#2359"><b>2359</b>return unit_in_vehicle(unit(await this.<i>player0</i>())) &amp;&amp; !((bool)game_is_cooperative()) || unit_in_vehicle(unit(await this.player1()));</a>
 <a href="../03b_newmombasa.cs.html#3138"><b>3138</b>this.g_target = await this.<i>player0</i>();</a>
-<a href="../03b_newmombasa.cs.html#3272"><b>3272</b>Engine.object_teleport(await this.<i>player0</i>(), e23_test);</a>
-<a href="../03b_newmombasa.cs.html#3846"><b>3846</b>Engine.object_teleport(await this.<i>player0</i>(), e22_test);</a>
-<a href="../03b_newmombasa.cs.html#4130"><b>4130</b>Engine.object_teleport(await this.<i>player0</i>(), e21_test);</a>
-<a href="../03b_newmombasa.cs.html#4183"><b>4183</b>Engine.object_teleport(await this.<i>player0</i>(), e20_test);</a>
-<a href="../03b_newmombasa.cs.html#4301"><b>4301</b>await Engine.sleep_until(async () =&gt; Engine.objects_distance_to_object(Engine.ai_actors(e18_mars_warthog0.warthog0), await this.<i>player0</i>()) &gt; 7F || Engine.unit_in_vehicle(Engine.unit(await this.<i>player0</i>())), 15, 600);</a>
-<a href="../03b_newmombasa.cs.html#4446"><b>4446</b>if (Engine.objects_distance_to_object(Engine.ai_actors(e18_mars_warthog0.warthog0), await this.<i>player0</i>()) &lt; 6F &amp;&amp; !(Engine.unit_in_vehicle(Engine.unit(await this.<i>player0</i>()))))</a>
-<a href="../03b_newmombasa.cs.html#4478"><b>4478</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.<i>player0</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4219345360U)) || Engine.unit_has_weapon(Engine.unit(await this.player1()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4219345360U)));</a>
-<a href="../03b_newmombasa.cs.html#4521"><b>4521</b>Engine.object_teleport(await this.<i>player0</i>(), e18_test);</a>
-<a href="../03b_newmombasa.cs.html#4753"><b>4753</b>Engine.object_teleport(await this.<i>player0</i>(), e17_test);</a>
-<a href="../03b_newmombasa.cs.html#4973"><b>4973</b>Engine.object_teleport(await this.<i>player0</i>(), e16_test);</a>
-<a href="../03b_newmombasa.cs.html#5252"><b>5252</b>Engine.object_teleport(await this.<i>player0</i>(), e15_test);</a>
-<a href="../03b_newmombasa.cs.html#5286"><b>5286</b>if (Engine.unit_in_vehicle(Engine.unit(await this.<i>player0</i>())))</a>
-<a href="../03b_newmombasa.cs.html#5288"><b>5288</b>Engine.cs_shoot(true, await this.<i>player0</i>());</a>
-<a href="../03b_newmombasa.cs.html#5292"><b>5292</b>Engine.cs_shoot(false, await this.<i>player0</i>());</a>
-<a href="../03b_newmombasa.cs.html#5439"><b>5439</b>Engine.object_hide(await this.<i>player0</i>(), true);</a>
-<a href="../03b_newmombasa.cs.html#5443"><b>5443</b>Engine.object_teleport(await this.<i>player0</i>(), player0_start);</a>
-<a href="../03b_newmombasa.cs.html#5445"><b>5445</b>Engine.object_hide(await this.<i>player0</i>(), false);</a>
-<a href="../03b_newmombasa.cs.html#5462"><b>5462</b>Engine.object_hide(await this.<i>player0</i>(), true);</a>
-<a href="../03b_newmombasa.cs.html#5464"><b>5464</b>Engine.object_teleport(await this.<i>player0</i>(), player0_end);</a>
+<a href="../03b_newmombasa.cs.html#3272"><b>3272</b>object_teleport(await this.<i>player0</i>(), e23_test);</a>
+<a href="../03b_newmombasa.cs.html#3846"><b>3846</b>object_teleport(await this.<i>player0</i>(), e22_test);</a>
+<a href="../03b_newmombasa.cs.html#4130"><b>4130</b>object_teleport(await this.<i>player0</i>(), e21_test);</a>
+<a href="../03b_newmombasa.cs.html#4183"><b>4183</b>object_teleport(await this.<i>player0</i>(), e20_test);</a>
+<a href="../03b_newmombasa.cs.html#4301"><b>4301</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.<i>player0</i>()) &gt; 7F || unit_in_vehicle(unit(await this.<i>player0</i>())), 15, 600);</a>
+<a href="../03b_newmombasa.cs.html#4446"><b>4446</b>if (objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.<i>player0</i>()) &lt; 6F &amp;&amp; !(unit_in_vehicle(unit(await this.<i>player0</i>()))))</a>
+<a href="../03b_newmombasa.cs.html#4478"><b>4478</b>await sleep_until(async () =&gt; unit_has_weapon(unit(await this.<i>player0</i>()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4219345360U)) || unit_has_weapon(unit(await this.player1()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4219345360U)));</a>
+<a href="../03b_newmombasa.cs.html#4521"><b>4521</b>object_teleport(await this.<i>player0</i>(), e18_test);</a>
+<a href="../03b_newmombasa.cs.html#4753"><b>4753</b>object_teleport(await this.<i>player0</i>(), e17_test);</a>
+<a href="../03b_newmombasa.cs.html#4973"><b>4973</b>object_teleport(await this.<i>player0</i>(), e16_test);</a>
+<a href="../03b_newmombasa.cs.html#5252"><b>5252</b>object_teleport(await this.<i>player0</i>(), e15_test);</a>
+<a href="../03b_newmombasa.cs.html#5286"><b>5286</b>if (unit_in_vehicle(unit(await this.<i>player0</i>())))</a>
+<a href="../03b_newmombasa.cs.html#5288"><b>5288</b>cs_shoot(true, await this.<i>player0</i>());</a>
+<a href="../03b_newmombasa.cs.html#5292"><b>5292</b>cs_shoot(false, await this.<i>player0</i>());</a>
+<a href="../03b_newmombasa.cs.html#5439"><b>5439</b>object_hide(await this.<i>player0</i>(), true);</a>
+<a href="../03b_newmombasa.cs.html#5443"><b>5443</b>object_teleport(await this.<i>player0</i>(), player0_start);</a>
+<a href="../03b_newmombasa.cs.html#5445"><b>5445</b>object_hide(await this.<i>player0</i>(), false);</a>
+<a href="../03b_newmombasa.cs.html#5462"><b>5462</b>object_hide(await this.<i>player0</i>(), true);</a>
+<a href="../03b_newmombasa.cs.html#5464"><b>5464</b>object_teleport(await this.<i>player0</i>(), player0_end);</a>
 </div>
 </div>
 </div>

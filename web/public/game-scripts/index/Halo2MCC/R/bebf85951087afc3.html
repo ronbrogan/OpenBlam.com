@@ -1,11 +1,11 @@
 ﻿<div class="referenceBody">
 <div class="rH">6 references to vol_bridge_pause</div><div class="rA">Halo2MCC (6)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.cs (6)</div>
-<a href="../05a_deltaapproach.cs.html#4133"><b>4133</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(<i>vol_bridge_pause</i>, Engine.players()) == true);</a>
-<a href="../05a_deltaapproach.cs.html#6471"><b>6471</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(<i>vol_bridge_pause</i>, Engine.players()) == true || Engine.volume_test_objects(vol_overlook_pause, Engine.ai_actors(LZ_warthog_01.Squad)) == true &amp;&amp; (bool)Engine.ai_trigger_test(&quot;done_fighting&quot;, overlook_jackals) == true);</a>
-<a href="../05a_deltaapproach.cs.html#6472"><b>6472</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(<i>vol_bridge_pause</i>, Engine.players()) == true, 30, 300);</a>
-<a href="../05a_deltaapproach.cs.html#6485"><b>6485</b>return Engine.volume_test_objects(<i>vol_bridge_pause</i>, Engine.players()) == true;</a>
-<a href="../05a_deltaapproach.cs.html#6487"><b>6487</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(<i>vol_bridge_pause</i>, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0, 30, 300);</a>
-<a href="../05a_deltaapproach.cs.html#6844"><b>6844</b>return Engine.volume_test_objects(<i>vol_bridge_pause</i>, Engine.players()) == true;</a>
+<a href="../05a_deltaapproach.cs.html#4133"><b>4133</b>await sleep_until(async () =&gt; volume_test_objects(<i>vol_bridge_pause</i>, players()) == true);</a>
+<a href="../05a_deltaapproach.cs.html#6471"><b>6471</b>await sleep_until(async () =&gt; volume_test_objects(<i>vol_bridge_pause</i>, players()) == true || volume_test_objects(vol_overlook_pause, ai_actors(LZ_warthog_01.Squad)) == true &amp;&amp; (bool)ai_trigger_test(&quot;done_fighting&quot;, overlook_jackals) == true);</a>
+<a href="../05a_deltaapproach.cs.html#6472"><b>6472</b>await sleep_until(async () =&gt; volume_test_objects(<i>vol_bridge_pause</i>, players()) == true, 30, 300);</a>
+<a href="../05a_deltaapproach.cs.html#6485"><b>6485</b>return volume_test_objects(<i>vol_bridge_pause</i>, players()) == true;</a>
+<a href="../05a_deltaapproach.cs.html#6487"><b>6487</b>await sleep_until(async () =&gt; volume_test_objects(<i>vol_bridge_pause</i>, players()) == false &amp;&amp; await this.player_count() &gt; 0, 30, 300);</a>
+<a href="../05a_deltaapproach.cs.html#6844"><b>6844</b>return volume_test_objects(<i>vol_bridge_pause</i>, players()) == true;</a>
 </div>
 </div>
 </div>

@@ -1,7 +1,7 @@
 ProjectSourcePath=h2mcc\Halo2MCC.csproj
-DocumentCount=88
-LinesOfCode=142169
-BytesOfCode=8898585
-DeclaredSymbols=27743
+DocumentCount=131
+LinesOfCode=139168
+BytesOfCode=7970685
+DeclaredSymbols=24128
 DeclaredTypes=1850
 PublicTypes=1850

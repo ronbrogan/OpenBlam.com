@@ -1,14 +1,14 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e5_pro_inf0</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08a_deltacliffs.Data.cs (1)</div>
-<a href="../08a_deltacliffs.Data.cs.html#489"><b>489</b><i>e5_pro_inf0</i> = new Squad_e5_pro_inf0(scenarioTag);</a>
+<a href="../08a_deltacliffs.Data.cs.html#404"><b>404</b><i>e5_pro_inf0</i> = new Squad_e5_pro_inf0(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">6 references to e5_pro_inf0</div><div class="rA">Halo2MCC (6)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08a_deltacliffs.cs (6)</div>
-<a href="../08a_deltacliffs.cs.html#2023"><b>2023</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(<i>e5_pro_inf0</i>.Squad) &gt;= this.ai_combat_status_dangerous);</a>
-<a href="../08a_deltacliffs.cs.html#2051"><b>2051</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(tv_e5_exit, Engine.players()) || (short)Engine.ai_living_count(<i>e5_pro_inf0</i>.Squad) &lt;= 3 &amp;&amp; (short)Engine.ai_spawn_count(<i>e5_pro_inf0</i>.Squad) &gt; 0, 20);</a>
-<a href="../08a_deltacliffs.cs.html#2058"><b>2058</b>Engine.ai_place(<i>e5_pro_inf0</i>.Squad, (short)Engine.pin(10F - (float)Engine.ai_living_count(prophets), 2F, 6F));</a>
-<a href="../08a_deltacliffs.cs.html#2059"><b>2059</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get(<i>e5_pro_inf0</i>.turret0), true);</a>
-<a href="../08a_deltacliffs.cs.html#2074"><b>2074</b>await Engine.sleep_until(async () =&gt; (float)Engine.ai_strength(e5_cov_gold_elite.Squad) &lt; 1F || (float)Engine.ai_strength(<i>e5_pro_inf0</i>.Squad) &lt; 0.5F || Engine.volume_test_objects(tv_e5_lower_level, Engine.players()), 5);</a>
+<a href="../08a_deltacliffs.cs.html#2023"><b>2023</b>await sleep_until(async () =&gt; (short)ai_combat_status(<i>e5_pro_inf0</i>.Squad) &gt;= this.ai_combat_status_dangerous);</a>
+<a href="../08a_deltacliffs.cs.html#2051"><b>2051</b>await sleep_until(async () =&gt; volume_test_objects(tv_e5_exit, players()) || (short)ai_living_count(<i>e5_pro_inf0</i>.Squad) &lt;= 3 &amp;&amp; (short)ai_spawn_count(<i>e5_pro_inf0</i>.Squad) &gt; 0, 20);</a>
+<a href="../08a_deltacliffs.cs.html#2058"><b>2058</b>ai_place(<i>e5_pro_inf0</i>.Squad, (short)pin(10F - (float)ai_living_count(prophets), 2F, 6F));</a>
+<a href="../08a_deltacliffs.cs.html#2059"><b>2059</b>ai_vehicle_reserve(ai_vehicle_get(<i>e5_pro_inf0</i>.turret0), true);</a>
+<a href="../08a_deltacliffs.cs.html#2074"><b>2074</b>await sleep_until(async () =&gt; (float)ai_strength(e5_cov_gold_elite.Squad) &lt; 1F || (float)ai_strength(<i>e5_pro_inf0</i>.Squad) &lt; 0.5F || volume_test_objects(tv_e5_lower_level, players()), 5);</a>
 </div>
 </div>
 </div>

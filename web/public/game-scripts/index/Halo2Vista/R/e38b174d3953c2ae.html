@@ -1,8 +1,8 @@
 ﻿<div class="referenceBody">
 <div class="rH">3 references to vol_approach_ramp</div><div class="rA">Halo2Vista (3)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.cs (3)</div>
-<a href="../05a_deltaapproach.cs.html#6252"><b>6252</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(<i>vol_approach_ramp</i>, Engine.players()) == true || Engine.volume_test_objects(vol_approach_music, Engine.players()) == true &amp;&amp; Engine.objects_can_see_flag(Engine.players(), see_tower1, 30F) == true);</a>
-<a href="../05a_deltaapproach.cs.html#6254"><b>6254</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_combat_status(approach_enemies) &gt; this.ai_combat_status_idle || Engine.volume_test_objects(<i>vol_approach_ramp</i>, Engine.players()) == true);</a>
-<a href="../05a_deltaapproach.cs.html#6255"><b>6255</b>if (Engine.volume_test_objects(<i>vol_approach_ramp</i>, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; (short)Engine.ai_living_count(approach_enemies) &lt; 8)</a>
+<a href="../05a_deltaapproach.cs.html#6252"><b>6252</b>await sleep_until(async () =&gt; volume_test_objects(<i>vol_approach_ramp</i>, players()) == true || volume_test_objects(vol_approach_music, players()) == true &amp;&amp; objects_can_see_flag(players(), see_tower1, 30F) == true);</a>
+<a href="../05a_deltaapproach.cs.html#6254"><b>6254</b>await sleep_until(async () =&gt; (short)ai_combat_status(approach_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(<i>vol_approach_ramp</i>, players()) == true);</a>
+<a href="../05a_deltaapproach.cs.html#6255"><b>6255</b>if (volume_test_objects(<i>vol_approach_ramp</i>, players()) == false &amp;&amp; await this.player_count() &gt; 0 &amp;&amp; (short)ai_living_count(approach_enemies) &lt; 8)</a>
 </div>
 </div>
 </div>

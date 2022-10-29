@@ -1,0 +1,37 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Text</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Extensions</span>
+&lbrace;
+    <b>public unsafe static class</b> <a id="669fddd4a4b62ae3" href="../R/../../0000000000.html" target="n" data-glyph="0,0" class="t t">EncodingExtensions</a>
+    &lbrace;
+        <span class="c">// TODO this only works on byte=char -&gt; utf8/asci</span>
+        <b>public static string</b> <a id="0d0d69002da7a9a6" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">GetNullTerminatedString</a>(<b>this</b> <span class="t t">Encoding</span> <span id="r0 rd" class="r0 r">encoding</span>, <b>byte</b>* <span id="r1 rd" class="r1 r">data</span>, <b>int</b> <span id="r2 rd" class="r2 r">maxLength</span> = <b>short</b>.<span class="i field">MaxValue</span>)
+        &lbrace;
+            <b>var</b> <span id="r3 rd" class="r3 r">i</span> = 0;
+            <b>for</b> (; <span class="r3 r">i</span> &lt; <span class="r2 r">maxLength</span>; <span class="r3 r">i</span>++)
+            &lbrace;
+                <b>if</b> (<span class="r1 r">data</span>[<span class="r3 r">i</span>] == 0)
+                    <b>break</b>;
+            &rbrace;
+ 
+            <b>return</b> <span class="r0 r">encoding</span>.<span class="i method">GetString</span>(<span class="r1 r">data</span>, <span class="r3 r">i</span>);
+        &rbrace;
+ 
+        <span class="c">// TODO this only works on byte=char -&gt; utf8/asci</span>
+        <b>public static string</b> <a id="db346205b2bf03a3" href="../R/../../0000000000.html" target="n" data-glyph="220,1" class="i method">GetNullTerminatedString</a>(<b>this</b> <span class="t t">Encoding</span> <span id="r4 rd" class="r4 r">encoding</span>, <span class="t valueType">ReadOnlySpan</span>&lt;<b>byte</b>&gt; <span id="r5 rd" class="r5 r">data</span>, <b>int</b> <span id="r6 rd" class="r6 r">maxLength</span> = <b>short</b>.<span class="i field">MaxValue</span>)
+        &lbrace;
+            <b>var</b> <span id="r7 rd" class="r7 r">i</span> = 0;
+            <b>for</b> (; <span class="r7 r">i</span> &lt; <span class="r6 r">maxLength</span>; <span class="r7 r">i</span>++)
+            &lbrace;
+                <b>if</b> (<span class="r5 r">data</span>[<span class="r7 r">i</span>] == 0)
+                    <b>break</b>;
+            &rbrace;
+ 
+            <b>return</b> <span class="r4 r">encoding</span>.<span class="i method">GetString</span>(<span class="r5 r">data</span>.<span class="i method">Slice</span>(0, <span class="r7 r">i</span>));
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

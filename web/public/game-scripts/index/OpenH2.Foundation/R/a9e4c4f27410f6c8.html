@@ -1,13 +1,19 @@
 ﻿<div class="referenceBody">
-<div class="rH">2 implementations of ITransform</div><div class="rA">OpenH2.Foundation (2)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">IdentityTransform.cs (1)</div>
+<div class="rH">3 implementations of ITransform</div><div class="rA">OpenH2.Foundation (3)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">IdentityTransform.cs (1)</div>
 <a href="../IdentityTransform.cs.html#9"><b>9</b>public class IdentityTransform : <i>ITransform</i></a>
 </div>
-<div class="rF"><div class="rN">Transform.cs (1)</div>
-<a href="../Transform.cs.html#10"><b>10</b>public class Transform : <i>ITransform</i></a>
+<div class="rF"><div class="rN">Transform.cs (2)</div>
+<a href="../Transform.cs.html#7"><b>7</b>public class CompositeTransform : <i>ITransform</i></a>
+<a href="../Transform.cs.html#38"><b>38</b>public class Transform : <i>ITransform</i></a>
 </div>
 </div>
-<div class="rH">1 reference to ITransform</div><div class="rA">OpenH2.Foundation (1)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Physics\IBody.cs (1)</div>
-<a href="../Physics/IBody.cs.html#11"><b>11</b><i>ITransform</i> Transform { get; }</a>
+<div class="rH">5 references to ITransform</div><div class="rA">OpenH2.Foundation (5)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Physics\IBody.cs (1)</div>
+<a href="../Physics/IBody.cs.html#6"><b>6</b><i>ITransform</i> Transform { get; }</a>
+</div>
+<div class="rF"><div class="rN">Transform.cs (4)</div>
+<a href="../Transform.cs.html#9"><b>9</b>private readonly <i>ITransform</i> a;</a>
+<a href="../Transform.cs.html#10"><b>10</b>private readonly <i>ITransform</i> b;</a>
+<a href="../Transform.cs.html#12"><b>12</b>public CompositeTransform(<i>ITransform</i> a, <i>ITransform</i> b)</a>
 </div>
 </div>
 </div>

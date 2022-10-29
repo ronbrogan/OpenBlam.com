@@ -1,26 +1,26 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to bridge_pelican</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
-<a href="../05a_deltaapproach.Data.cs.html#918"><b>918</b><i>bridge_pelican</i> = new Squad_bridge_pelican(scenarioTag);</a>
+<a href="../05a_deltaapproach.Data.cs.html#721"><b>721</b><i>bridge_pelican</i> = new Squad_bridge_pelican(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">17 references to bridge_pelican</div><div class="rA">Halo2MCC (17)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.cs (17)</div>
-<a href="../05a_deltaapproach.cs.html#3936"><b>3936</b>Engine.object_destroy(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot));</a>
-<a href="../05a_deltaapproach.cs.html#3958"><b>3958</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_lc&quot;);</a>
-<a href="../05a_deltaapproach.cs.html#3962"><b>3962</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_p&quot;);</a>
-<a href="../05a_deltaapproach.cs.html#3965"><b>3965</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>bridge_pelican</i>.Squad) &lt; 4);</a>
-<a href="../05a_deltaapproach.cs.html#3974"><b>3974</b>Engine.ai_erase(<i>bridge_pelican</i>.Squad);</a>
-<a href="../05a_deltaapproach.cs.html#3981"><b>3981</b>Engine.ai_place(<i>bridge_pelican</i>.Squad);</a>
-<a href="../05a_deltaapproach.cs.html#3983"><b>3983</b>Engine.object_cannot_take_damage(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot));</a>
-<a href="../05a_deltaapproach.cs.html#3984"><b>3984</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_p&quot;, Engine.ai_actors(allies_bridge_pelican.Squad));</a>
-<a href="../05a_deltaapproach.cs.html#3985"><b>3985</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_lc&quot;, Engine.ai_vehicle_get_from_starting_location(bridge_tank1.driver));</a>
-<a href="../05a_deltaapproach.cs.html#3986"><b>3986</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), true);</a>
-<a href="../05a_deltaapproach.cs.html#3988"><b>3988</b>Engine.cs_run_command_script(<i>bridge_pelican</i>.pilot, new ScriptMethodReference(gimme_tank));</a>
-<a href="../05a_deltaapproach.cs.html#3995"><b>3995</b>Engine.ai_place(<i>bridge_pelican</i>.Squad);</a>
-<a href="../05a_deltaapproach.cs.html#3997"><b>3997</b>Engine.object_cannot_take_damage(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot));</a>
-<a href="../05a_deltaapproach.cs.html#3998"><b>3998</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_p&quot;, Engine.ai_actors(allies_bridge_pelican.Squad));</a>
-<a href="../05a_deltaapproach.cs.html#3999"><b>3999</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_lc&quot;, Engine.ai_vehicle_get_from_starting_location(bridge_tank1.driver));</a>
-<a href="../05a_deltaapproach.cs.html#4000"><b>4000</b>Engine.ai_vehicle_reserve(Engine.ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), true);</a>
-<a href="../05a_deltaapproach.cs.html#4001"><b>4001</b>Engine.cs_run_command_script(<i>bridge_pelican</i>.pilot, new ScriptMethodReference(gimme_tank));</a>
+<a href="../05a_deltaapproach.cs.html#3936"><b>3936</b>object_destroy(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot));</a>
+<a href="../05a_deltaapproach.cs.html#3958"><b>3958</b>vehicle_unload(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_lc&quot;);</a>
+<a href="../05a_deltaapproach.cs.html#3962"><b>3962</b>vehicle_unload(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_p&quot;);</a>
+<a href="../05a_deltaapproach.cs.html#3965"><b>3965</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>bridge_pelican</i>.Squad) &lt; 4);</a>
+<a href="../05a_deltaapproach.cs.html#3974"><b>3974</b>ai_erase(<i>bridge_pelican</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#3981"><b>3981</b>ai_place(<i>bridge_pelican</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#3983"><b>3983</b>object_cannot_take_damage(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot));</a>
+<a href="../05a_deltaapproach.cs.html#3984"><b>3984</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_p&quot;, ai_actors(allies_bridge_pelican.Squad));</a>
+<a href="../05a_deltaapproach.cs.html#3985"><b>3985</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_lc&quot;, ai_vehicle_get_from_starting_location(bridge_tank1.driver));</a>
+<a href="../05a_deltaapproach.cs.html#3986"><b>3986</b>ai_vehicle_reserve(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), true);</a>
+<a href="../05a_deltaapproach.cs.html#3988"><b>3988</b>cs_run_command_script(<i>bridge_pelican</i>.pilot, new ScriptMethodReference(gimme_tank));</a>
+<a href="../05a_deltaapproach.cs.html#3995"><b>3995</b>ai_place(<i>bridge_pelican</i>.Squad);</a>
+<a href="../05a_deltaapproach.cs.html#3997"><b>3997</b>object_cannot_take_damage(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot));</a>
+<a href="../05a_deltaapproach.cs.html#3998"><b>3998</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_p&quot;, ai_actors(allies_bridge_pelican.Squad));</a>
+<a href="../05a_deltaapproach.cs.html#3999"><b>3999</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), &quot;pelican_lc&quot;, ai_vehicle_get_from_starting_location(bridge_tank1.driver));</a>
+<a href="../05a_deltaapproach.cs.html#4000"><b>4000</b>ai_vehicle_reserve(ai_vehicle_get_from_starting_location(<i>bridge_pelican</i>.pilot), true);</a>
+<a href="../05a_deltaapproach.cs.html#4001"><b>4001</b>cs_run_command_script(<i>bridge_pelican</i>.pilot, new ScriptMethodReference(gimme_tank));</a>
 </div>
 </div>
 </div>

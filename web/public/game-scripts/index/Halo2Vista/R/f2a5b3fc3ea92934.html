@@ -1,13 +1,13 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to absorber_c</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">06a_sentinelwalls.Data.cs (1)</div>
-<a href="../06a_sentinelwalls.Data.cs.html#959"><b>959</b><i>absorber_c</i> = new ScenarioEntity&lt;IScenery&gt;(27, scenarioTag.WellKnownItems[27]);</a>
+<a href="../06a_sentinelwalls.Data.cs.html#846"><b>846</b><i>absorber_c</i> = new ScenarioEntity&lt;IScenery&gt;(27, scenarioTag.WellKnownItems[27]);</a>
 </div>
 </div>
 <div class="rH">4 references to absorber_c</div><div class="rA">Halo2Vista (4)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">06a_sentinelwalls.cs (4)</div>
-<a href="../06a_sentinelwalls.cs.html#2602"><b>2602</b>Engine.objects_attach(piston_c.Entity, &quot;absorber_a&quot;, <i>absorber_c</i>.Entity, &quot;absorber_a&quot;);</a>
-<a href="../06a_sentinelwalls.cs.html#2742"><b>2742</b>await Engine.sleep_until(async () =&gt; Engine.device_group_get(group_c) &gt; 0F || Engine.object_get_shield(<i>absorber_c</i>.Entity) &lt;= 0F, 1);</a>
-<a href="../06a_sentinelwalls.cs.html#2744"><b>2744</b>Engine.damage_object(Engine.GetTag&lt;DamageEffectTag&gt;(&quot;scenarios\\objects\\solo\\sentinelhq\\door_piston_absorber\\damage_effects\\damage_absorber&quot;, 4268563514U), <i>absorber_c</i>.Entity);</a>
-<a href="../06a_sentinelwalls.cs.html#4376"><b>4376</b>Engine.object_destroy(<i>absorber_c</i>.Entity);</a>
+<a href="../06a_sentinelwalls.cs.html#2602"><b>2602</b>objects_attach(piston_c.Entity, &quot;absorber_a&quot;, <i>absorber_c</i>.Entity, &quot;absorber_a&quot;);</a>
+<a href="../06a_sentinelwalls.cs.html#2742"><b>2742</b>await sleep_until(async () =&gt; device_group_get(group_c) &gt; 0F || object_get_shield(<i>absorber_c</i>.Entity) &lt;= 0F, 1);</a>
+<a href="../06a_sentinelwalls.cs.html#2744"><b>2744</b>damage_object(GetTag&lt;DamageEffectTag&gt;(&quot;scenarios\\objects\\solo\\sentinelhq\\door_piston_absorber\\damage_effects\\damage_absorber&quot;, 4268563514U), <i>absorber_c</i>.Entity);</a>
+<a href="../06a_sentinelwalls.cs.html#4376"><b>4376</b>object_destroy(<i>absorber_c</i>.Entity);</a>
 </div>
 </div>
 </div>

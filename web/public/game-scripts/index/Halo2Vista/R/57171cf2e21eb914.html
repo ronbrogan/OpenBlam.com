@@ -1,16 +1,16 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to lab_heretics_above</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
-<a href="../04b_floodlab.Data.cs.html#1587"><b>1587</b><i>lab_heretics_above</i> = new Squad_lab_heretics_above(scenarioTag);</a>
+<a href="../04b_floodlab.Data.cs.html#1438"><b>1438</b><i>lab_heretics_above</i> = new Squad_lab_heretics_above(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">8 references to lab_heretics_above</div><div class="rA">Halo2Vista (8)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.cs (8)</div>
-<a href="../04b_floodlab.cs.html#3198"><b>3198</b>Engine.ai_place(<i>lab_heretics_above</i>.Squad, 3);</a>
-<a href="../04b_floodlab.cs.html#3200"><b>3200</b>Engine.ai_magically_see_object(<i>lab_heretics_above</i>.Squad, await this.player0());</a>
-<a href="../04b_floodlab.cs.html#3201"><b>3201</b>Engine.ai_magically_see_object(<i>lab_heretics_above</i>.Squad, await this.player1());</a>
-<a href="../04b_floodlab.cs.html#3202"><b>3202</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), Engine.list_get(Engine.ai_actors(<i>lab_heretics_above</i>.Squad), 0), 60F) == true, 30, 450);</a>
-<a href="../04b_floodlab.cs.html#3289"><b>3289</b>return (short)Engine.ai_living_count(<i>lab_heretics_above</i>.Squad) &lt; 1 || Engine.volume_test_objects_all(vol_lab_floor, Engine.ai_actors(<i>lab_heretics_above</i>.Squad)) == true &amp;&amp; await this.player_count() &gt; 0;</a>
-<a href="../04b_floodlab.cs.html#3292"><b>3292</b>Engine.ai_set_orders(<i>lab_heretics_above</i>.Squad, lab_flood_all);</a>
-<a href="../04b_floodlab.cs.html#3295"><b>3295</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_nonswarm_count(lab_flood) &lt; 1 &amp;&amp; (short)Engine.ai_living_count(<i>lab_heretics_above</i>.Squad) &lt; 1, 30, 2000);</a>
+<a href="../04b_floodlab.cs.html#3198"><b>3198</b>ai_place(<i>lab_heretics_above</i>.Squad, 3);</a>
+<a href="../04b_floodlab.cs.html#3200"><b>3200</b>ai_magically_see_object(<i>lab_heretics_above</i>.Squad, await this.player0());</a>
+<a href="../04b_floodlab.cs.html#3201"><b>3201</b>ai_magically_see_object(<i>lab_heretics_above</i>.Squad, await this.player1());</a>
+<a href="../04b_floodlab.cs.html#3202"><b>3202</b>await sleep_until(async () =&gt; objects_can_see_object(players(), list_get(ai_actors(<i>lab_heretics_above</i>.Squad), 0), 60F) == true, 30, 450);</a>
+<a href="../04b_floodlab.cs.html#3289"><b>3289</b>return (short)ai_living_count(<i>lab_heretics_above</i>.Squad) &lt; 1 || volume_test_objects_all(vol_lab_floor, ai_actors(<i>lab_heretics_above</i>.Squad)) == true &amp;&amp; await this.player_count() &gt; 0;</a>
+<a href="../04b_floodlab.cs.html#3292"><b>3292</b>ai_set_orders(<i>lab_heretics_above</i>.Squad, lab_flood_all);</a>
+<a href="../04b_floodlab.cs.html#3295"><b>3295</b>await sleep_until(async () =&gt; (short)ai_nonswarm_count(lab_flood) &lt; 1 &amp;&amp; (short)ai_living_count(<i>lab_heretics_above</i>.Squad) &lt; 1, 30, 2000);</a>
 </div>
 </div>
 </div>

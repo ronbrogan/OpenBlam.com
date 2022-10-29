@@ -1,0 +1,205 @@
+﻿<div class="referenceBody">
+<div class="rH">Implemented interface member:</div><a href="/OpenH2.Core/A.html#e96fe732adc6f062" target="s"><div class="resultItem" onClick="resultClick(this);"><div class="resultLine"><img src="/content/icons/72.png" height="16" width="16" /><div class="resultKind">method</div><div class="resultName">ai_combat_status</div></div>
+<div class="resultDescription">OpenH2.Core.Scripting.IScriptEngine.ai_combat_status(OpenH2.Core.GameObjects.IAiActorDefinition)</div>
+</div></a>
+<div class="rH">176 references to ai_combat_status</div><div class="rA">Halo2MCC (88)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (11)</div>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2379"><b>2379</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e12_cov_inf0_0.Squad) &gt;= this.ai_combat_status_active, 15);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3274"><b>3274</b>if ((short)<i>ai_combat_status</i>(this.ai_current_squad) &lt; this.ai_combat_status_active)</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3281"><b>3281</b>if ((short)<i>ai_combat_status</i>(this.ai_current_squad) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3806"><b>3806</b>return volume_test_objects(tv_e7_cov_inf0_spring_ambush, ai_actors(e7_cov_inf0.Squad)) || (short)<i>ai_combat_status</i>(e7_cov_inf0.Squad) &gt;= this.ai_combat_status_certain &amp;&amp; (short)ai_spawn_count(e7_cov_inf0.Squad) &gt; 0;</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4585"><b>4585</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_squad) &gt;= this.ai_combat_status_clear_los || volume_test_objects(tv_e4_cov_inf2_begin, players()), 15);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#4745"><b>4745</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_certain, 10);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5342"><b>5342</b>await sleep_until(async () =&gt; !((bool)cs_moving()) || (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_visible, 10);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5344"><b>5344</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_dangerous, 3, 25);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5406"><b>5406</b>return (short)<i>ai_combat_status</i>(e1_cov_inf0_0.grunt1) &gt;= this.ai_combat_status_alert || (short)<i>ai_combat_status</i>(e1_cov_inf0_0.grunt2) &gt;= this.ai_combat_status_alert || (short)<i>ai_combat_status</i>(e1_cov_inf0_1.Squad) &gt;= this.ai_combat_status_alert;</a>
+</div>
+<div class="rF"><div class="rN">03b_newmombasa.cs (2)</div>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#3090"><b>3090</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e23_cov_inf1_0.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#3091"><b>3091</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e23_cov_inf1_0.Squad) &lt;= this.ai_combat_status_active);</a>
+</div>
+<div class="rF"><div class="rN">04a_gasgiant.cs (21)</div>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#2524"><b>2524</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(rec_center_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(hangar_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(first_hall_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(underhangar_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(second_hall_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(bottling_heretics) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3375"><b>3375</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(rec_center_heretic_03.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3458"><b>3458</b>if ((short)<i>ai_combat_status</i>(rec_center_heretics) &gt; this.ai_combat_status_idle)</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3525"><b>3525</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(all_enemies) &lt; this.ai_combat_status_uninspected, 30, 150);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#3976"><b>3976</b>return (short)<i>ai_combat_status</i>(hangar_heretics) &gt;= this.ai_combat_status_uninspected;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4011"><b>4011</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hangar_heretics) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4057"><b>4057</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hangar_heretic_heavies_L.Squad) &gt;= this.ai_combat_status_clear_los || (short)<i>ai_combat_status</i>(hangar_heretic_heavies_R.Squad) &gt;= this.ai_combat_status_clear_los, 30, 300);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4210"><b>4210</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hangar_heretics) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4660"><b>4660</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(first_hall_heretics) &gt; this.ai_combat_status_idle &amp;&amp; (short)ai_living_count(first_hall_heretic_01.Squad) &lt; 1 || (short)ai_living_count(first_hall_heretic_02.Squad) &lt; 1);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4751"><b>4751</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(underhangar_heretics) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4853"><b>4853</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(second_hall_grunts_01.Squad) &gt; this.ai_combat_status_idle || (short)<i>ai_combat_status</i>(second_hall_heretic_01.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4861"><b>4861</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(second_hall_heretic_03.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4876"><b>4876</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(second_hall_grunts_03.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#4917"><b>4917</b>if ((short)<i>ai_combat_status</i>(second_hall_heretics) &lt; this.ai_combat_status_active)</a>
+</div>
+<div class="rF"><div class="rN">04b_floodlab.cs (1)</div>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3909"><b>3909</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(control_flood) &gt;= this.ai_combat_status_visible || volume_test_objects(vol_control_middle, players()) == true || volume_test_objects(vol_control_perimeter, players()) == true || volume_test_objects(vol_control_top, ai_actors(control_flood)) == true);</a>
+</div>
+<div class="rF"><div class="rN">05a_deltaapproach.cs (11)</div>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#3482"><b>3482</b>return (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_idle;</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#3506"><b>3506</b>return (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_idle;</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#3529"><b>3529</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(bridge_enemies_bunker) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#3752"><b>3752</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(bridge_enemies_bunker) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#4093"><b>4093</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_visible);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#4290"><b>4290</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#4460"><b>4460</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(temple_ent_elites_01r.Squad) &gt; this.ai_combat_status_idle || (short)<i>ai_combat_status</i>(temple_ent_elites_01l.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#6258"><b>6258</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(approach_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(vol_approach_ramp, players()) == true);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#6377"><b>6377</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#6622"><b>6622</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(grotto_enemies) &gt; this.ai_combat_status_idle);</a>
+</div>
+<div class="rF"><div class="rN">05b_deltatowers.cs (8)</div>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#3186"><b>3186</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(tunnel_01_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(vol_tunnel_01_mid, players()) == true);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#3354"><b>3354</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(sunk_chamber_right_enemies) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#3381"><b>3381</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(sunk_chamber_left_enemies) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#3524"><b>3524</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(sunken_chamber_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(vol_leaving_sunken_chamber, players()) == true);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#3580"><b>3580</b>await sleep_until(async () =&gt; volume_test_objects(vol_sunk_chamber_near_01, players()) == true || (short)<i>ai_combat_status</i>(sunken_chamber_enemies) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#3881"><b>3881</b>await sleep_until(async () =&gt; volume_test_objects(vol_tunnel_02_mid_01, players()) == true || (short)<i>ai_combat_status</i>(tunnel_02_enemies) &gt; this.ai_combat_status_idle || (short)ai_living_count(tunnel_02_enemies) &lt; 1);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5083"><b>5083</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(regret1.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5098"><b>5098</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(temple_hg_init.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+</div>
+<div class="rF"><div class="rN">06a_sentinelwalls.cs (4)</div>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3006"><b>3006</b>if ((short)<i>ai_combat_status</i>(insertion_sen.Squad) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3040"><b>3040</b>if ((short)<i>ai_combat_status</i>(insertion_sen.Squad) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#4516"><b>4516</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_certain);</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6448"><b>6448</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(plug_launch_enforcer.Squad) &gt;= this.ai_combat_status_active, 30, 210);</a>
+</div>
+<div class="rF"><div class="rN">06b_floodzone.cs (1)</div>
+<a href="../../Halo2MCC/06b_floodzone.cs.html#1671"><b>1671</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_certain);</a>
+</div>
+<div class="rF"><div class="rN">07a_highcharity.cs (6)</div>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#5329"><b>5329</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(dervish_ledge_prophets) &gt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#5664"><b>5664</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hall_a_prophets) &gt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#5706"><b>5706</b>await sleep_until(async () =&gt; volume_test_objects(tv_room_a_mid, players()) || (short)ai_living_count(room_a_prophets) &lt;= 2 &amp;&amp; (short)<i>ai_combat_status</i>(room_a_prophets) &gt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#5707"><b>5707</b>if ((short)<i>ai_combat_status</i>(room_a_prophets) &gt;= this.ai_combat_status_active &amp;&amp; (short)ai_living_count(room_a_prophets) &lt;= 2)</a>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#5717"><b>5717</b>if ((short)<i>ai_combat_status</i>(room_a_prophets) &gt;= this.ai_combat_status_active &amp;&amp; (short)ai_living_count(room_a_prophets) &lt;= 4)</a>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#6847"><b>6847</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(jail_prophets) &gt;= this.ai_combat_status_active);</a>
+</div>
+<div class="rF"><div class="rN">08a_deltacliffs.cs (11)</div>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1055"><b>1055</b>return (short)<i>ai_combat_status</i>(e10_pro_inf0) &gt;= this.ai_combat_status_certain || (short)<i>ai_combat_status</i>(e10_pro_inf1) &gt;= this.ai_combat_status_certain;</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1674"><b>1674</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;generic_player_sighted&quot;, this.ai_current_squad) || (short)<i>ai_combat_status</i>(e7_pro_inf0_0.Squad) &gt;= this.ai_combat_status_active, 15);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1696"><b>1696</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;generic_player_sighted&quot;, this.ai_current_squad) || (short)<i>ai_combat_status</i>(e7_pro_inf0_0.Squad) &gt;= this.ai_combat_status_active, 15);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2023"><b>2023</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e5_pro_inf0.Squad) &gt;= this.ai_combat_status_dangerous);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2451"><b>2451</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e2_pro_inf0.Squad) &gt;= this.ai_combat_status_visible, 15);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2823"><b>2823</b>await sleep_until(async () =&gt; (short)ai_living_count(e1_cov_inf0.Squad) &lt;= 0 || (short)<i>ai_combat_status</i>(e1_pro) &gt; this.ai_combat_status_active, 30, this.one_minute);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2896"><b>2896</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &gt;= this.ai_combat_status_clear_los || (short)ai_living_count(e1_pro_inf1.Squad) &lt;= 0, 30, this._30_seconds);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2898"><b>2898</b>if ((short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &gt;= this.ai_combat_status_clear_los)</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2903"><b>2903</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &lt;= this.ai_combat_status_active, 10);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2904"><b>2904</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &lt;= this.ai_combat_status_alert, 10, 240);</a>
+</div>
+<div class="rF"><div class="rN">08b_deltacontrol.cs (12)</div>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#4208"><b>4208</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#4225"><b>4225</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#4447"><b>4447</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &lt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#4483"><b>4483</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &lt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#5534"><b>5534</b>if ((short)<i>ai_combat_status</i>(e8_pro_wraiths0_0.Squad) &lt;= this.ai_combat_status_active &amp;&amp; !(cs_command_script_queued(e8_pro_wraiths0_0.Squad, new ScriptMethodReference(cs_e8_pro_wraith0_0_bombard))))</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#5540"><b>5540</b>if ((short)<i>ai_combat_status</i>(e8_pro_wraiths0_1.Squad) &lt;= this.ai_combat_status_active &amp;&amp; !(cs_command_script_queued(e8_pro_wraiths0_1.Squad, new ScriptMethodReference(cs_e8_pro_wraith0_1_bombard))))</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#5546"><b>5546</b>if ((short)<i>ai_combat_status</i>(e8_pro_wraiths0_2.Squad) &lt;= this.ai_combat_status_active &amp;&amp; !(cs_command_script_queued(e8_pro_wraiths0_2.Squad, new ScriptMethodReference(cs_e8_pro_wraith0_2_bombard))))</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6092"><b>6092</b>if (!(unit_has_weapon(ai_get_unit(this.ai_current_actor), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3854369863U))) &amp;&amp; (short)<i>ai_combat_status</i>(this.ai_current_actor) &lt; this.ai_combat_status_certain)</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6105"><b>6105</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e6_pro) &gt;= this.ai_combat_status_active || object_get_health(e6_jail_shield1.Entity) &lt; 0F, 15);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6158"><b>6158</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e6_pro) &gt;= this.ai_combat_status_active || object_get_health(e6_jail_shield2.Entity) &lt; 0F, 15);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6232"><b>6232</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e6_pro_inf0) &gt; this.ai_combat_status_clear_los || (short)ai_living_count(e6_pro_inf0_0.Squad) &lt;= 2, 15);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6628"><b>6628</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_active, 3);</a>
+</div>
+</div>
+<div class="rA">Halo2Vista (88)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03a_oldmombasa.cs (11)</div>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#2365"><b>2365</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e12_cov_inf0_0.Squad) &gt;= this.ai_combat_status_active, 15);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3260"><b>3260</b>if ((short)<i>ai_combat_status</i>(this.ai_current_squad) &lt; this.ai_combat_status_active)</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3267"><b>3267</b>if ((short)<i>ai_combat_status</i>(this.ai_current_squad) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3792"><b>3792</b>return volume_test_objects(tv_e7_cov_inf0_spring_ambush, ai_actors(e7_cov_inf0.Squad)) || (short)<i>ai_combat_status</i>(e7_cov_inf0.Squad) &gt;= this.ai_combat_status_certain &amp;&amp; (short)ai_spawn_count(e7_cov_inf0.Squad) &gt; 0;</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#4571"><b>4571</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_squad) &gt;= this.ai_combat_status_clear_los || volume_test_objects(tv_e4_cov_inf2_begin, players()), 15);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#4731"><b>4731</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_certain, 10);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5328"><b>5328</b>await sleep_until(async () =&gt; !((bool)cs_moving()) || (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_visible, 10);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5330"><b>5330</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_dangerous, 3, 25);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5392"><b>5392</b>return (short)<i>ai_combat_status</i>(e1_cov_inf0_0.grunt1) &gt;= this.ai_combat_status_alert || (short)<i>ai_combat_status</i>(e1_cov_inf0_0.grunt2) &gt;= this.ai_combat_status_alert || (short)<i>ai_combat_status</i>(e1_cov_inf0_1.Squad) &gt;= this.ai_combat_status_alert;</a>
+</div>
+<div class="rF"><div class="rN">03b_newmombasa.cs (2)</div>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#3088"><b>3088</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e23_cov_inf1_0.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#3089"><b>3089</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e23_cov_inf1_0.Squad) &lt;= this.ai_combat_status_active);</a>
+</div>
+<div class="rF"><div class="rN">04a_gasgiant.cs (21)</div>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#2525"><b>2525</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(rec_center_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(hangar_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(first_hall_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(underhangar_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(second_hall_heretics) &gt; this.ai_combat_status_uninspected || (short)<i>ai_combat_status</i>(bottling_heretics) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#3375"><b>3375</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(rec_center_heretic_03.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#3458"><b>3458</b>if ((short)<i>ai_combat_status</i>(rec_center_heretics) &gt; this.ai_combat_status_idle)</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#3525"><b>3525</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(all_enemies) &lt; this.ai_combat_status_uninspected, 30, 150);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#3976"><b>3976</b>return (short)<i>ai_combat_status</i>(hangar_heretics) &gt;= this.ai_combat_status_uninspected;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4011"><b>4011</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hangar_heretics) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4057"><b>4057</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hangar_heretic_heavies_L.Squad) &gt;= this.ai_combat_status_clear_los || (short)<i>ai_combat_status</i>(hangar_heretic_heavies_R.Squad) &gt;= this.ai_combat_status_clear_los, 30, 300);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4210"><b>4210</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hangar_heretics) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4660"><b>4660</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(first_hall_heretics) &gt; this.ai_combat_status_idle &amp;&amp; (short)ai_living_count(first_hall_heretic_01.Squad) &lt; 1 || (short)ai_living_count(first_hall_heretic_02.Squad) &lt; 1);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4751"><b>4751</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(underhangar_heretics) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4853"><b>4853</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(second_hall_grunts_01.Squad) &gt; this.ai_combat_status_idle || (short)<i>ai_combat_status</i>(second_hall_heretic_01.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4861"><b>4861</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(second_hall_heretic_03.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4876"><b>4876</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(second_hall_grunts_03.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#4917"><b>4917</b>if ((short)<i>ai_combat_status</i>(second_hall_heretics) &lt; this.ai_combat_status_active)</a>
+</div>
+<div class="rF"><div class="rN">04b_floodlab.cs (1)</div>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#3899"><b>3899</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(control_flood) &gt;= this.ai_combat_status_visible || volume_test_objects(vol_control_middle, players()) == true || volume_test_objects(vol_control_perimeter, players()) == true || volume_test_objects(vol_control_top, ai_actors(control_flood)) == true);</a>
+</div>
+<div class="rF"><div class="rN">05a_deltaapproach.cs (11)</div>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#3480"><b>3480</b>return (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_idle;</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#3504"><b>3504</b>return (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_idle;</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#3527"><b>3527</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(bridge_enemies_bunker) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#3750"><b>3750</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(bridge_enemies_bunker) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#4089"><b>4089</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_visible);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#4286"><b>4286</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#4456"><b>4456</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(temple_ent_elites_01r.Squad) &gt; this.ai_combat_status_idle || (short)<i>ai_combat_status</i>(temple_ent_elites_01l.Squad) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#6254"><b>6254</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(approach_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(vol_approach_ramp, players()) == true);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#6373"><b>6373</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#6618"><b>6618</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(grotto_enemies) &gt; this.ai_combat_status_idle);</a>
+</div>
+<div class="rF"><div class="rN">05b_deltatowers.cs (8)</div>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#3182"><b>3182</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(tunnel_01_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(vol_tunnel_01_mid, players()) == true);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#3350"><b>3350</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(sunk_chamber_right_enemies) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#3377"><b>3377</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(sunk_chamber_left_enemies) &gt; this.ai_combat_status_idle);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#3520"><b>3520</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(sunken_chamber_enemies) &gt; this.ai_combat_status_idle || volume_test_objects(vol_leaving_sunken_chamber, players()) == true);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#3576"><b>3576</b>await sleep_until(async () =&gt; volume_test_objects(vol_sunk_chamber_near_01, players()) == true || (short)<i>ai_combat_status</i>(sunken_chamber_enemies) &gt; this.ai_combat_status_uninspected);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#3877"><b>3877</b>await sleep_until(async () =&gt; volume_test_objects(vol_tunnel_02_mid_01, players()) == true || (short)<i>ai_combat_status</i>(tunnel_02_enemies) &gt; this.ai_combat_status_idle || (short)ai_living_count(tunnel_02_enemies) &lt; 1);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5079"><b>5079</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(regret1.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5094"><b>5094</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(temple_hg_init.Squad) &gt;= this.ai_combat_status_clear_los);</a>
+</div>
+<div class="rF"><div class="rN">06a_sentinelwalls.cs (4)</div>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3002"><b>3002</b>if ((short)<i>ai_combat_status</i>(insertion_sen.Squad) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3036"><b>3036</b>if ((short)<i>ai_combat_status</i>(insertion_sen.Squad) &gt;= this.ai_combat_status_active)</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#4510"><b>4510</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_certain);</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#6442"><b>6442</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(plug_launch_enforcer.Squad) &gt;= this.ai_combat_status_active, 30, 210);</a>
+</div>
+<div class="rF"><div class="rN">06b_floodzone.cs (1)</div>
+<a href="../../Halo2Vista/06b_floodzone.cs.html#1668"><b>1668</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_certain);</a>
+</div>
+<div class="rF"><div class="rN">07a_highcharity.cs (6)</div>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#5326"><b>5326</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(dervish_ledge_prophets) &gt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#5661"><b>5661</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(hall_a_prophets) &gt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#5703"><b>5703</b>await sleep_until(async () =&gt; volume_test_objects(tv_room_a_mid, players()) || (short)ai_living_count(room_a_prophets) &lt;= 2 &amp;&amp; (short)<i>ai_combat_status</i>(room_a_prophets) &gt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#5704"><b>5704</b>if ((short)<i>ai_combat_status</i>(room_a_prophets) &gt;= this.ai_combat_status_active &amp;&amp; (short)ai_living_count(room_a_prophets) &lt;= 2)</a>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#5714"><b>5714</b>if ((short)<i>ai_combat_status</i>(room_a_prophets) &gt;= this.ai_combat_status_active &amp;&amp; (short)ai_living_count(room_a_prophets) &lt;= 4)</a>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#6844"><b>6844</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(jail_prophets) &gt;= this.ai_combat_status_active);</a>
+</div>
+<div class="rF"><div class="rN">08a_deltacliffs.cs (11)</div>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1053"><b>1053</b>return (short)<i>ai_combat_status</i>(e10_pro_inf0) &gt;= this.ai_combat_status_certain || (short)<i>ai_combat_status</i>(e10_pro_inf1) &gt;= this.ai_combat_status_certain;</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1672"><b>1672</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;generic_player_sighted&quot;, this.ai_current_squad) || (short)<i>ai_combat_status</i>(e7_pro_inf0_0.Squad) &gt;= this.ai_combat_status_active, 15);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1694"><b>1694</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;generic_player_sighted&quot;, this.ai_current_squad) || (short)<i>ai_combat_status</i>(e7_pro_inf0_0.Squad) &gt;= this.ai_combat_status_active, 15);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2021"><b>2021</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e5_pro_inf0.Squad) &gt;= this.ai_combat_status_dangerous);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2449"><b>2449</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e2_pro_inf0.Squad) &gt;= this.ai_combat_status_visible, 15);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2821"><b>2821</b>await sleep_until(async () =&gt; (short)ai_living_count(e1_cov_inf0.Squad) &lt;= 0 || (short)<i>ai_combat_status</i>(e1_pro) &gt; this.ai_combat_status_active, 30, this.one_minute);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2894"><b>2894</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &gt;= this.ai_combat_status_clear_los || (short)ai_living_count(e1_pro_inf1.Squad) &lt;= 0, 30, this._30_seconds);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2896"><b>2896</b>if ((short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &gt;= this.ai_combat_status_clear_los)</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2901"><b>2901</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &lt;= this.ai_combat_status_active, 10);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2902"><b>2902</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e1_pro_inf1.Squad) &lt;= this.ai_combat_status_alert, 10, 240);</a>
+</div>
+<div class="rF"><div class="rN">08b_deltacontrol.cs (12)</div>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#4210"><b>4210</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#4227"><b>4227</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt; this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#4449"><b>4449</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &lt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#4485"><b>4485</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &lt;= this.ai_combat_status_active);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#5535"><b>5535</b>if ((short)<i>ai_combat_status</i>(e8_pro_wraiths0_0.Squad) &lt;= this.ai_combat_status_active &amp;&amp; !(cs_command_script_queued(e8_pro_wraiths0_0.Squad, new ScriptMethodReference(cs_e8_pro_wraith0_0_bombard))))</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#5541"><b>5541</b>if ((short)<i>ai_combat_status</i>(e8_pro_wraiths0_1.Squad) &lt;= this.ai_combat_status_active &amp;&amp; !(cs_command_script_queued(e8_pro_wraiths0_1.Squad, new ScriptMethodReference(cs_e8_pro_wraith0_1_bombard))))</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#5547"><b>5547</b>if ((short)<i>ai_combat_status</i>(e8_pro_wraiths0_2.Squad) &lt;= this.ai_combat_status_active &amp;&amp; !(cs_command_script_queued(e8_pro_wraiths0_2.Squad, new ScriptMethodReference(cs_e8_pro_wraith0_2_bombard))))</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6093"><b>6093</b>if (!(unit_has_weapon(ai_get_unit(this.ai_current_actor), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3965258467U))) &amp;&amp; (short)<i>ai_combat_status</i>(this.ai_current_actor) &lt; this.ai_combat_status_certain)</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6106"><b>6106</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e6_pro) &gt;= this.ai_combat_status_active || object_get_health(e6_jail_shield1.Entity) &lt; 0F, 15);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6159"><b>6159</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e6_pro) &gt;= this.ai_combat_status_active || object_get_health(e6_jail_shield2.Entity) &lt; 0F, 15);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6233"><b>6233</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(e6_pro_inf0) &gt; this.ai_combat_status_clear_los || (short)ai_living_count(e6_pro_inf0_0.Squad) &lt;= 2, 15);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6629"><b>6629</b>await sleep_until(async () =&gt; (short)<i>ai_combat_status</i>(this.ai_current_actor) &gt;= this.ai_combat_status_active, 3);</a>
+</div>
+</div>
+</div>

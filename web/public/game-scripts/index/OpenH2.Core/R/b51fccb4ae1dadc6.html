@@ -1,0 +1,125 @@
+﻿<div class="referenceBody">
+<div class="rH">Implemented interface member:</div><a href="/OpenH2.Core/A.html#2d49d44a1f796c25" target="s"><div class="resultItem" onClick="resultClick(this);"><div class="resultLine"><img src="/content/icons/72.png" height="16" width="16" /><div class="resultKind">method</div><div class="resultName">ai_strength</div></div>
+<div class="resultDescription">OpenH2.Core.Scripting.IScriptEngine.ai_strength(OpenH2.Core.GameObjects.IAiActorDefinition)</div>
+</div></a>
+<div class="rH">96 references to ai_strength</div><div class="rA">Halo2MCC (48)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">01b_spacestation.cs (4)</div>
+<a href="../../Halo2MCC/01b_spacestation.cs.html#4955"><b>4955</b>await sleep_until(async () =&gt; volume_test_objects(tv_atr2_lstair, players()) || volume_test_objects(tv_atr2_floor_front, players()) || (float)<i>ai_strength</i>(atr2_cov) &lt; 0.35F, 1);</a>
+<a href="../../Halo2MCC/01b_spacestation.cs.html#5372"><b>5372</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(atr1_cov_stairs) &lt; 0.25F || volume_test_objects(tv_atr1_stairs, players()), 1);</a>
+<a href="../../Halo2MCC/01b_spacestation.cs.html#5664"><b>5664</b>await sleep_until(async () =&gt; volume_test_objects(tv_dck_mid, players()) || (float)<i>ai_strength</i>(dck_cov) &lt;= 0.3F, 1);</a>
+<a href="../../Halo2MCC/01b_spacestation.cs.html#5734"><b>5734</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(elv_cov) &lt;= 0.35F, 10);</a>
+</div>
+<div class="rF"><div class="rN">03a_oldmombasa.cs (13)</div>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3058"><b>3058</b>return (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.65F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F;</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3150"><b>3150</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_cov) &lt;= 0.4F || volume_test_objects(tv_e10_cov_phantom0_begin, players()), 15);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3254"><b>3254</b>return (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.65F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F;</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5000"><b>5000</b>if ((float)<i>ai_strength</i>(this.ai_current_actor) &gt; 0.98F)</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5019"><b>5019</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 3F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 3F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.98F, 5, 120);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5020"><b>5020</b>if (!(await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 3F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 3F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.98F))</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5026"><b>5026</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 4F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 4F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.98F, 5, 120);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5040"><b>5040</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 4F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 4F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 1F, 5, 240);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5094"><b>5094</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e2_cov_hunters0.Squad) &lt;= 0.8F, 30, this._30_seconds);</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5095"><b>5095</b>if (!((float)<i>ai_strength</i>(e2_cov_hunters0.Squad) &lt;= 0.8F))</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#5637"><b>5637</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e1_cov_inf3_2.Squad) &lt;= 0.75F &amp;&amp; objects_can_see_flag(players(), e1_cov_inf3_entrance, 25F), 5, this._30_seconds);</a>
+</div>
+<div class="rF"><div class="rN">03b_newmombasa.cs (5)</div>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4546"><b>4546</b>await sleep_until(async () =&gt; objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt; 10F || (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.5F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.75F || volume_test_objects(tv_e17_first_wall_approach, players()), 15, 600);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4608"><b>4608</b>await sleep_until(async () =&gt; volume_test_object(tv_e17_section3, ai_get_object(this.ai_current_actor)) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 1F, 10);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4823"><b>4823</b>await sleep_until(async () =&gt; objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt;= 12F || (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.9F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F);</a>
+</div>
+<div class="rF"><div class="rN">04b_floodlab.cs (2)</div>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3004"><b>3004</b>return (float)<i>ai_strength</i>(lab_heretics_01.Squad) &lt; 0.5F || volume_test_objects(vol_lab_floor, players()) == true;</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#7931"><b>7931</b>return volume_test_objects(vol_underhangar_return_01, players()) == true || (float)<i>ai_strength</i>(underhangar_heretics_01.Squad) &lt;= 0.25F || (short)ai_spawn_count(underhangar_return_flood) == 20;</a>
+</div>
+<div class="rF"><div class="rN">06a_sentinelwalls.cs (7)</div>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3027"><b>3027</b>await sleep_until(async () =&gt; volume_test_objects(tv_pussy_grunt, players()) || (float)<i>ai_strength</i>(pussy_grunt2.Squad) &lt; 1F);</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3121"><b>3121</b>if ((float)<i>ai_strength</i>(ins_cons) == 1F)</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3159"><b>3159</b>if ((float)<i>ai_strength</i>(ins_cons) == 1F)</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#3336"><b>3336</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(hall_a_cons) &lt; 0.8F);</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6295"><b>6295</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(ins_cons) &lt; 1F || volume_test_objects(tv_insertion_tube, players()), 5);</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6303"><b>6303</b>if ((float)<i>ai_strength</i>(ins_cons) &lt; 1F)</a>
+<a href="../../Halo2MCC/06a_sentinelwalls.cs.html#6341"><b>6341</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(hall_a_cons) &lt; 0.8F || volume_test_objects(tv_hall_a_bk, players()));</a>
+</div>
+<div class="rF"><div class="rN">07a_highcharity.cs (1)</div>
+<a href="../../Halo2MCC/07a_highcharity.cs.html#4937"><b>4937</b>await sleep_until(async () =&gt; (short)ai_living_count(council_prophets_floor) &lt;= 0 || (float)<i>ai_strength</i>(council_prophets_upper) &lt;= 0.4F, 30, 30 * 40);</a>
+</div>
+<div class="rF"><div class="rN">07b_forerunnership.cs (7)</div>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#2429"><b>2429</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_pro_inner_sanctum) &lt;= 0.8F, 15, 600);</a>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#2457"><b>2457</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_pro_inner_sanctum) &lt;= 0.5F, 15, 600);</a>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#2499"><b>2499</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_pro_inner_sanctum) &lt;= 0.3F, 15, 600);</a>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#2908"><b>2908</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e8_fld_inf1.Squad) &lt;= 0.3F, 15, 1800);</a>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#3002"><b>3002</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e8_fld_inf1.Squad) &lt;= 0.3F, 15, 450);</a>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#3035"><b>3035</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e8_fld_inf1.Squad) &lt;= 0.5F, 15, 450);</a>
+<a href="../../Halo2MCC/07b_forerunnership.cs.html#3275"><b>3275</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e6_pro_cave1) &lt;= 0.2F, 15, 600);</a>
+</div>
+<div class="rF"><div class="rN">08a_deltacliffs.cs (9)</div>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1512"><b>1512</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e9_pro_inf1.Squad) &lt; 0.9F, 15, 300);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1871"><b>1871</b>await sleep_until(async () =&gt; volume_test_objects(tv_e6_on_ledge0, players()) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.95F, 10, 90);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1872"><b>1872</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.95F, 10, 60);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1885"><b>1885</b>await sleep_until(async () =&gt; volume_test_objects(tv_e6_on_ledge0, players()) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.95F, 10, 90);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2040"><b>2040</b>await sleep_until(async () =&gt; (short)ai_living_count(e5_pro) &lt; 3 || (float)<i>ai_strength</i>(e5_cov_grunts0.Squad) &lt;= 0.8F || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt;= 0.75F || this.g_e5_grunts_released &gt;= 2, 15);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2074"><b>2074</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e5_cov_gold_elite.Squad) &lt; 1F || (float)<i>ai_strength</i>(e5_pro_inf0.Squad) &lt; 0.5F || volume_test_objects(tv_e5_lower_level, players()), 5);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2217"><b>2217</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;generic_player_within_2wu&quot;, this.ai_current_squad) &amp;&amp; !(volume_test_objects(tv_e3_lower_level, ai_actors(e3_pro_inf0))) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2437"><b>2437</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e2_pro_inf0.Squad), ai_get_object(this.ai_current_actor)) &lt;= 2F || (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.75F || (short)ai_living_count(e2_pro_inf0.Squad) &lt;= 1);</a>
+</div>
+</div>
+<div class="rA">Halo2Vista (48)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">01b_spacestation.cs (4)</div>
+<a href="../../Halo2Vista/01b_spacestation.cs.html#4950"><b>4950</b>await sleep_until(async () =&gt; volume_test_objects(tv_atr2_lstair, players()) || volume_test_objects(tv_atr2_floor_front, players()) || (float)<i>ai_strength</i>(atr2_cov) &lt; 0.35F, 1);</a>
+<a href="../../Halo2Vista/01b_spacestation.cs.html#5361"><b>5361</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(atr1_cov_stairs) &lt; 0.25F || volume_test_objects(tv_atr1_stairs, players()), 1);</a>
+<a href="../../Halo2Vista/01b_spacestation.cs.html#5653"><b>5653</b>await sleep_until(async () =&gt; volume_test_objects(tv_dck_mid, players()) || (float)<i>ai_strength</i>(dck_cov) &lt;= 0.3F, 1);</a>
+<a href="../../Halo2Vista/01b_spacestation.cs.html#5723"><b>5723</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(elv_cov) &lt;= 0.35F, 10);</a>
+</div>
+<div class="rF"><div class="rN">03a_oldmombasa.cs (13)</div>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3044"><b>3044</b>return (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.65F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F;</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3136"><b>3136</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_cov) &lt;= 0.4F || volume_test_objects(tv_e10_cov_phantom0_begin, players()), 15);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3240"><b>3240</b>return (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.65F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F;</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#4986"><b>4986</b>if ((float)<i>ai_strength</i>(this.ai_current_actor) &gt; 0.98F)</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5005"><b>5005</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 3F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 3F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.98F, 5, 120);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5006"><b>5006</b>if (!(await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 3F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 3F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.98F))</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5012"><b>5012</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 4F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 4F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.98F, 5, 120);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5026"><b>5026</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player0()) &lt;= 4F || (bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(this.ai_current_squad), await this.player1()) &lt;= 4F || (bool)ai_trigger_test(&quot;generic_player_fired&quot;, this.ai_current_squad) &amp;&amp; objects_can_see_flag(players(), e2_cov_hunters0_entry, 20F) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 1F, 5, 240);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5080"><b>5080</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e2_cov_hunters0.Squad) &lt;= 0.8F, 30, this._30_seconds);</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5081"><b>5081</b>if (!((float)<i>ai_strength</i>(e2_cov_hunters0.Squad) &lt;= 0.8F))</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#5623"><b>5623</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e1_cov_inf3_2.Squad) &lt;= 0.75F &amp;&amp; objects_can_see_flag(players(), e1_cov_inf3_entrance, 25F), 5, this._30_seconds);</a>
+</div>
+<div class="rF"><div class="rN">03b_newmombasa.cs (5)</div>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4544"><b>4544</b>await sleep_until(async () =&gt; objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt; 10F || (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.5F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.75F || volume_test_objects(tv_e17_first_wall_approach, players()), 15, 600);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4606"><b>4606</b>await sleep_until(async () =&gt; volume_test_object(tv_e17_section3, ai_get_object(this.ai_current_actor)) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 1F, 10);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4821"><b>4821</b>await sleep_until(async () =&gt; objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt;= 12F || (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.9F || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F);</a>
+</div>
+<div class="rF"><div class="rN">04b_floodlab.cs (2)</div>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#2994"><b>2994</b>return (float)<i>ai_strength</i>(lab_heretics_01.Squad) &lt; 0.5F || volume_test_objects(vol_lab_floor, players()) == true;</a>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#7910"><b>7910</b>return volume_test_objects(vol_underhangar_return_01, players()) == true || (float)<i>ai_strength</i>(underhangar_heretics_01.Squad) &lt;= 0.25F || (short)ai_spawn_count(underhangar_return_flood) == 20;</a>
+</div>
+<div class="rF"><div class="rN">06a_sentinelwalls.cs (7)</div>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3023"><b>3023</b>await sleep_until(async () =&gt; volume_test_objects(tv_pussy_grunt, players()) || (float)<i>ai_strength</i>(pussy_grunt2.Squad) &lt; 1F);</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3117"><b>3117</b>if ((float)<i>ai_strength</i>(ins_cons) == 1F)</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3155"><b>3155</b>if ((float)<i>ai_strength</i>(ins_cons) == 1F)</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#3332"><b>3332</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(hall_a_cons) &lt; 0.8F);</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#6289"><b>6289</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(ins_cons) &lt; 1F || volume_test_objects(tv_insertion_tube, players()), 5);</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#6297"><b>6297</b>if ((float)<i>ai_strength</i>(ins_cons) &lt; 1F)</a>
+<a href="../../Halo2Vista/06a_sentinelwalls.cs.html#6335"><b>6335</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(hall_a_cons) &lt; 0.8F || volume_test_objects(tv_hall_a_bk, players()));</a>
+</div>
+<div class="rF"><div class="rN">07a_highcharity.cs (1)</div>
+<a href="../../Halo2Vista/07a_highcharity.cs.html#4934"><b>4934</b>await sleep_until(async () =&gt; (short)ai_living_count(council_prophets_floor) &lt;= 0 || (float)<i>ai_strength</i>(council_prophets_upper) &lt;= 0.4F, 30, 30 * 40);</a>
+</div>
+<div class="rF"><div class="rN">07b_forerunnership.cs (7)</div>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#2427"><b>2427</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_pro_inner_sanctum) &lt;= 0.8F, 15, 600);</a>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#2455"><b>2455</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_pro_inner_sanctum) &lt;= 0.5F, 15, 600);</a>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#2497"><b>2497</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e10_pro_inner_sanctum) &lt;= 0.3F, 15, 600);</a>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#2906"><b>2906</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e8_fld_inf1.Squad) &lt;= 0.3F, 15, 1800);</a>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#3000"><b>3000</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e8_fld_inf1.Squad) &lt;= 0.3F, 15, 450);</a>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#3033"><b>3033</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e8_fld_inf1.Squad) &lt;= 0.5F, 15, 450);</a>
+<a href="../../Halo2Vista/07b_forerunnership.cs.html#3273"><b>3273</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e6_pro_cave1) &lt;= 0.2F, 15, 600);</a>
+</div>
+<div class="rF"><div class="rN">08a_deltacliffs.cs (9)</div>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1510"><b>1510</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e9_pro_inf1.Squad) &lt; 0.9F, 15, 300);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1869"><b>1869</b>await sleep_until(async () =&gt; volume_test_objects(tv_e6_on_ledge0, players()) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.95F, 10, 90);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1870"><b>1870</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.95F, 10, 60);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1883"><b>1883</b>await sleep_until(async () =&gt; volume_test_objects(tv_e6_on_ledge0, players()) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt; 0.95F, 10, 90);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2038"><b>2038</b>await sleep_until(async () =&gt; (short)ai_living_count(e5_pro) &lt; 3 || (float)<i>ai_strength</i>(e5_cov_grunts0.Squad) &lt;= 0.8F || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &lt;= 0.75F || this.g_e5_grunts_released &gt;= 2, 15);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2072"><b>2072</b>await sleep_until(async () =&gt; (float)<i>ai_strength</i>(e5_cov_gold_elite.Squad) &lt; 1F || (float)<i>ai_strength</i>(e5_pro_inf0.Squad) &lt; 0.5F || volume_test_objects(tv_e5_lower_level, players()), 5);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2215"><b>2215</b>await sleep_until(async () =&gt; (bool)ai_trigger_test(&quot;generic_player_within_2wu&quot;, this.ai_current_squad) &amp;&amp; !(volume_test_objects(tv_e3_lower_level, ai_actors(e3_pro_inf0))) || (float)<i>ai_strength</i>(this.ai_current_squad) &lt;= 0.5F);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2435"><b>2435</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e2_pro_inf0.Squad), ai_get_object(this.ai_current_actor)) &lt;= 2F || (float)<i>ai_strength</i>(this.ai_current_actor) &lt;= 0.75F || (short)ai_living_count(e2_pro_inf0.Squad) &lt;= 1);</a>
+</div>
+</div>
+</div>

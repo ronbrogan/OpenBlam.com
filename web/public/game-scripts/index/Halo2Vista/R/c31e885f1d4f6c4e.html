@@ -1,16 +1,16 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to da_bridge</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
-<a href="../05a_deltaapproach.Data.cs.html#851"><b>851</b><i>da_bridge</i> = new ScenarioEntity&lt;IDevice&gt;(105, scenarioTag.WellKnownItems[105]);</a>
+<a href="../05a_deltaapproach.Data.cs.html#654"><b>654</b><i>da_bridge</i> = new ScenarioEntity&lt;IDevice&gt;(105, scenarioTag.WellKnownItems[105]);</a>
 </div>
 </div>
 <div class="rH">7 references to da_bridge</div><div class="rA">Halo2Vista (7)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05a_deltaapproach.cs (7)</div>
-<a href="../05a_deltaapproach.cs.html#4043"><b>4043</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_bridge_middle, Engine.players()) == true &amp;&amp; Engine.device_get_position(<i>da_bridge</i>.Entity) == 0F);</a>
-<a href="../05a_deltaapproach.cs.html#4095"><b>4095</b>Engine.device_set_position_immediate(<i>da_bridge</i>.Entity, 0.5F);</a>
-<a href="../05a_deltaapproach.cs.html#4132"><b>4132</b>Engine.device_set_position(<i>da_bridge</i>.Entity, 1F);</a>
-<a href="../05a_deltaapproach.cs.html#4145"><b>4145</b>this.bridge_state = Engine.device_get_position(<i>da_bridge</i>.Entity);</a>
-<a href="../05a_deltaapproach.cs.html#4147"><b>4147</b>return Engine.device_get_position(<i>da_bridge</i>.Entity) &lt; this.bridge_state;</a>
-<a href="../05a_deltaapproach.cs.html#4184"><b>4184</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>da_bridge</i>.Entity) == 0F);</a>
-<a href="../05a_deltaapproach.cs.html#7476"><b>7476</b>Engine.device_set_position(<i>da_bridge</i>.Entity, 0.5F);</a>
+<a href="../05a_deltaapproach.cs.html#4043"><b>4043</b>await sleep_until(async () =&gt; volume_test_objects(vol_bridge_middle, players()) == true &amp;&amp; device_get_position(<i>da_bridge</i>.Entity) == 0F);</a>
+<a href="../05a_deltaapproach.cs.html#4095"><b>4095</b>device_set_position_immediate(<i>da_bridge</i>.Entity, 0.5F);</a>
+<a href="../05a_deltaapproach.cs.html#4132"><b>4132</b>device_set_position(<i>da_bridge</i>.Entity, 1F);</a>
+<a href="../05a_deltaapproach.cs.html#4145"><b>4145</b>this.bridge_state = device_get_position(<i>da_bridge</i>.Entity);</a>
+<a href="../05a_deltaapproach.cs.html#4147"><b>4147</b>return device_get_position(<i>da_bridge</i>.Entity) &lt; this.bridge_state;</a>
+<a href="../05a_deltaapproach.cs.html#4184"><b>4184</b>await sleep_until(async () =&gt; device_get_position(<i>da_bridge</i>.Entity) == 0F);</a>
+<a href="../05a_deltaapproach.cs.html#7476"><b>7476</b>device_set_position(<i>da_bridge</i>.Entity, 0.5F);</a>
 </div>
 </div>
 </div>

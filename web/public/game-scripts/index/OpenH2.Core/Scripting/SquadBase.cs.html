@@ -1,0 +1,24 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">GameObjects</span>;
+<b>using</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Scenario</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Scripting</span>
+&lbrace;
+    <b>public abstract class</b> <a id="61db224d92a492d6" href="../R/61db224d92a492d6.html" target="n" data-glyph="0,0" class="t t">SquadBase</a>
+    &lbrace;
+        <b>public</b> <a href="../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <a id="06a79b0203c22518" href="../R/06a79b0203c22518.html" target="n" data-glyph="102,1" class="i property">ScenarioTag</a> &lbrace; <b>get</b>; &rbrace;
+ 
+        <b>public</b> <a href="../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a>.<a href="../Tags/Scenario/ScenarioScripting.cs.html#e3ff411e1c283154" class="t t">AiSquadDefinition</a> <a id="741a07b82d1bdde1" href="../R/741a07b82d1bdde1.html" target="n" data-glyph="102,1" class="i property">Squad</a> &lbrace; <b>get</b>; &rbrace;
+ 
+        <b>public string</b>? <a id="5909ca395661fcce" href="../R/5909ca395661fcce.html" target="n" data-glyph="102,1" class="i property">SquadGroup</a> &lbrace; <b>get</b>; &rbrace;
+ 
+        <b>public</b> <a id="3baa03037835b484" href="../R/3baa03037835b484.html" target="n" data-glyph="72,1" class="t constructor">SquadBase</a>(<a href="../P/d8117f600839b8fd.html#d8117f600839b8fd" class="t t">ScenarioTag</a> <span id="r0 rd" class="r0 r">scenarioTag</span>, <b>int</b> <span id="r1 rd" class="r1 r">squadIndex</span>, <b>string</b>? <span id="r2 rd" class="r2 r">group</span> = <b>null</b>)
+        &lbrace;
+            <a href="#06a79b0203c22518" class="i property">ScenarioTag</a> = <span class="r0 r">scenarioTag</span>;
+            <a href="#5909ca395661fcce" class="i property">SquadGroup</a> = <span class="r2 r">group</span>;
+            <a href="#741a07b82d1bdde1" class="i property">Squad</a> = <span class="r0 r">scenarioTag</span>.<a href="../Tags/Scenario/ScenarioTag.cs.html#35719038c8b8dd7c" class="i property">AiSquadDefinitions</a>[<span class="r1 r">squadIndex</span>];
+        &rbrace;
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

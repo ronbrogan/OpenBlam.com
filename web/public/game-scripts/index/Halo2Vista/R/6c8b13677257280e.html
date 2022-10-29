@@ -1,20 +1,20 @@
 ﻿<div class="referenceBody">
 <div class="rH">15 references to player1</div><div class="rA">Halo2Vista (15)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">08a_deltacliffs.cs (15)</div>
-<a href="../08a_deltacliffs.cs.html#265"><b>265</b>Engine.object_hide(await this.<i>player1</i>(), true);</a>
-<a href="../08a_deltacliffs.cs.html#273"><b>273</b>Engine.object_hide(await this.<i>player1</i>(), false);</a>
-<a href="../08a_deltacliffs.cs.html#856"><b>856</b>return Engine.unit_in_vehicle(Engine.unit(await this.player0())) || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.unit_in_vehicle(Engine.unit(await this.<i>player1</i>()));</a>
-<a href="../08a_deltacliffs.cs.html#862"><b>862</b>return Engine.unit_in_vehicle(Engine.unit(await this.player0())) &amp;&amp; !((bool)Engine.game_is_cooperative()) || Engine.unit_in_vehicle(Engine.unit(await this.<i>player1</i>()));</a>
-<a href="../08a_deltacliffs.cs.html#1047"><b>1047</b>return !(Engine.unit_in_vehicle(Engine.unit(await this.player0()))) || !(Engine.unit_in_vehicle(Engine.unit(await this.<i>player1</i>())));</a>
-<a href="../08a_deltacliffs.cs.html#1393"><b>1393</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.player0()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4119794543U)) || Engine.unit_has_weapon(Engine.unit(await this.<i>player1</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4119794543U)));</a>
-<a href="../08a_deltacliffs.cs.html#2724"><b>2724</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.ai_get_object(this.ai_current_actor), await this.player0(), 10F) || (bool)Engine.game_is_cooperative() &amp;&amp; Engine.objects_can_see_object(Engine.ai_get_object(this.ai_current_actor), await this.<i>player1</i>(), 10F), 1, 30);</a>
-<a href="../08a_deltacliffs.cs.html#2998"><b>2998</b>await Engine.sleep_until(async () =&gt; Engine.unit_has_weapon(Engine.unit(await this.player0()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3904243520U)) || Engine.unit_has_weapon(Engine.unit(await this.<i>player1</i>()), Engine.GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3904243520U)), 10, this.one_minute);</a>
-<a href="../08a_deltacliffs.cs.html#3040"><b>3040</b>Engine.object_hide(await this.<i>player1</i>(), true);</a>
-<a href="../08a_deltacliffs.cs.html#3044"><b>3044</b>Engine.object_teleport(await this.<i>player1</i>(), player1_start);</a>
-<a href="../08a_deltacliffs.cs.html#3046"><b>3046</b>Engine.object_hide(await this.<i>player1</i>(), false);</a>
-<a href="../08a_deltacliffs.cs.html#3070"><b>3070</b>if (Engine.unit_in_vehicle(Engine.unit(await this.<i>player1</i>())))</a>
-<a href="../08a_deltacliffs.cs.html#3072"><b>3072</b>Engine.object_teleport(Engine.object_get_parent(await this.<i>player1</i>()), player1_end);</a>
-<a href="../08a_deltacliffs.cs.html#3076"><b>3076</b>Engine.object_teleport(await this.<i>player1</i>(), player1_end);</a>
-<a href="../08a_deltacliffs.cs.html#3080"><b>3080</b>Engine.object_hide(await this.<i>player1</i>(), false);</a>
+<a href="../08a_deltacliffs.cs.html#265"><b>265</b>object_hide(await this.<i>player1</i>(), true);</a>
+<a href="../08a_deltacliffs.cs.html#273"><b>273</b>object_hide(await this.<i>player1</i>(), false);</a>
+<a href="../08a_deltacliffs.cs.html#856"><b>856</b>return unit_in_vehicle(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; unit_in_vehicle(unit(await this.<i>player1</i>()));</a>
+<a href="../08a_deltacliffs.cs.html#862"><b>862</b>return unit_in_vehicle(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || unit_in_vehicle(unit(await this.<i>player1</i>()));</a>
+<a href="../08a_deltacliffs.cs.html#1047"><b>1047</b>return !(unit_in_vehicle(unit(await this.player0()))) || !(unit_in_vehicle(unit(await this.<i>player1</i>())));</a>
+<a href="../08a_deltacliffs.cs.html#1393"><b>1393</b>await sleep_until(async () =&gt; unit_has_weapon(unit(await this.player0()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4119794543U)) || unit_has_weapon(unit(await this.<i>player1</i>()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\multiplayer\\ball\\head_sp.weapon&quot;, 4119794543U)));</a>
+<a href="../08a_deltacliffs.cs.html#2724"><b>2724</b>await sleep_until(async () =&gt; objects_can_see_object(ai_get_object(this.ai_current_actor), await this.player0(), 10F) || (bool)game_is_cooperative() &amp;&amp; objects_can_see_object(ai_get_object(this.ai_current_actor), await this.<i>player1</i>(), 10F), 1, 30);</a>
+<a href="../08a_deltacliffs.cs.html#2998"><b>2998</b>await sleep_until(async () =&gt; unit_has_weapon(unit(await this.player0()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3904243520U)) || unit_has_weapon(unit(await this.<i>player1</i>()), GetTag&lt;BaseTag&gt;(&quot;objects\\weapons\\melee\\energy_blade\\energy_blade.weapon&quot;, 3904243520U)), 10, this.one_minute);</a>
+<a href="../08a_deltacliffs.cs.html#3040"><b>3040</b>object_hide(await this.<i>player1</i>(), true);</a>
+<a href="../08a_deltacliffs.cs.html#3044"><b>3044</b>object_teleport(await this.<i>player1</i>(), player1_start);</a>
+<a href="../08a_deltacliffs.cs.html#3046"><b>3046</b>object_hide(await this.<i>player1</i>(), false);</a>
+<a href="../08a_deltacliffs.cs.html#3070"><b>3070</b>if (unit_in_vehicle(unit(await this.<i>player1</i>())))</a>
+<a href="../08a_deltacliffs.cs.html#3072"><b>3072</b>object_teleport(object_get_parent(await this.<i>player1</i>()), player1_end);</a>
+<a href="../08a_deltacliffs.cs.html#3076"><b>3076</b>object_teleport(await this.<i>player1</i>(), player1_end);</a>
+<a href="../08a_deltacliffs.cs.html#3080"><b>3080</b>object_hide(await this.<i>player1</i>(), false);</a>
 </div>
 </div>
 </div>

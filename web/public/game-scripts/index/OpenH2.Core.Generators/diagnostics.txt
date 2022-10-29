@@ -1,8 +1,4 @@
-C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\Scripting\IterativeInterpreterMethodGenerator.cs(7,1): hidden CS8019: Unnecessary using directive.
-C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\Scripting\InterpreterMethodGenerator.cs(6,1): hidden CS8019: Unnecessary using directive.
 C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs(2,1): hidden CS8019: Unnecessary using directive.
 C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\obj\Debug\netstandard2.0\OpenH2.Core.Generators.AssemblyInfo.cs(10,1): hidden CS8019: Unnecessary using directive.
-C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\Scripting\TypeMapping.cs(3,1): hidden CS8019: Unnecessary using directive.
 C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs(3,1): hidden CS8019: Unnecessary using directive.
 C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\obj\Debug\netstandard2.0\OpenH2.Core.Generators.AssemblyInfo.cs(11,1): hidden CS8019: Unnecessary using directive.
-C:\Users\ronal\source\halo-scripts\OpenH2\src\OpenH2.Core.Generators\Scripting\TypeMapping.cs(1,1): hidden CS8019: Unnecessary using directive.

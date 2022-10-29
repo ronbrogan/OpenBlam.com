@@ -1,24 +1,24 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to disposal_commander</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.Data.cs (1)</div>
-<a href="../04b_floodlab.Data.cs.html#1552"><b>1552</b><i>disposal_commander</i> = new Squad_disposal_commander(scenarioTag);</a>
+<a href="../04b_floodlab.Data.cs.html#1403"><b>1403</b><i>disposal_commander</i> = new Squad_disposal_commander(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">16 references to disposal_commander</div><div class="rA">Halo2Vista (16)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">04b_floodlab.cs (16)</div>
-<a href="../04b_floodlab.cs.html#1824"><b>1824</b>Engine.ai_place(<i>disposal_commander</i>.Squad, 1);</a>
-<a href="../04b_floodlab.cs.html#1825"><b>1825</b>Engine.ai_cannot_die(<i>disposal_commander</i>.Squad, true);</a>
-<a href="../04b_floodlab.cs.html#2009"><b>2009</b>Engine.cs_face_object(true, Engine.list_get(Engine.ai_actors(<i>disposal_commander</i>.Squad), 0));</a>
-<a href="../04b_floodlab.cs.html#2058"><b>2058</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_soc_post, Engine.ai_actors(<i>disposal_commander</i>.Squad)) == false);</a>
-<a href="../04b_floodlab.cs.html#2069"><b>2069</b>await Engine.sleep_until(async () =&gt; Engine.volume_test_objects(vol_soc_reborn, Engine.ai_actors(<i>disposal_commander</i>.Squad)) == true);</a>
-<a href="../04b_floodlab.cs.html#2070"><b>2070</b>Engine.effect_new_on_object_marker(Engine.GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 4146795767U), Engine.list_get(Engine.ai_actors(<i>disposal_commander</i>.Squad), 0), &quot;&quot;);</a>
-<a href="../04b_floodlab.cs.html#2072"><b>2072</b>Engine.object_teleport(Engine.list_get(Engine.ai_actors(<i>disposal_commander</i>.Squad), 0), soc_reborn);</a>
-<a href="../04b_floodlab.cs.html#2075"><b>2075</b>Engine.ai_erase(<i>disposal_commander</i>.Squad);</a>
-<a href="../04b_floodlab.cs.html#2177"><b>2177</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_grunt_react_scene&quot;, new ScriptMethodReference(hologram_ally_01), all_allies) || (short)Engine.ai_living_count(allies_grunts_03.Squad) == 0 || (short)Engine.ai_living_count(<i>disposal_commander</i>.Squad) == 0, 30, 150);</a>
-<a href="../04b_floodlab.cs.html#2181"><b>2181</b>await Engine.sleep_until(async () =&gt; this.holo_ally_01_done == true || (short)Engine.ai_living_count(allies_grunts_03.Squad) == 0 || (short)Engine.ai_living_count(<i>disposal_commander</i>.Squad) == 0, 30, 300);</a>
-<a href="../04b_floodlab.cs.html#2191"><b>2191</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_main_react_scene&quot;, new ScriptMethodReference(hologram_ally_03), <i>disposal_commander</i>.Squad, hl_hologram.Squad) || (short)Engine.ai_living_count(<i>disposal_commander</i>.Squad) == 0 || (short)Engine.ai_living_count(hl_hologram.Squad) == 0, 30, 150);</a>
-<a href="../04b_floodlab.cs.html#2195"><b>2195</b>await Engine.sleep_until(async () =&gt; this.holo_ally_03_done == true || (short)Engine.ai_living_count(<i>disposal_commander</i>.Squad) == 0, 30, 450);</a>
-<a href="../04b_floodlab.cs.html#2211"><b>2211</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;holo_after_scene&quot;, new ScriptMethodReference(hologram_ally_04), all_allies) || (short)Engine.ai_living_count(<i>disposal_commander</i>.Squad) == 0 || (short)Engine.ai_living_count(allies_elites) == 0, 30, 150);</a>
-<a href="../04b_floodlab.cs.html#2218"><b>2218</b>await Engine.sleep_until(async () =&gt; Engine.ai_scene(&quot;disposal_comm_pussy_scene&quot;, new ScriptMethodReference(disposal_after_commander), <i>disposal_commander</i>.Squad), 30, 300);</a>
-<a href="../04b_floodlab.cs.html#3852"><b>3852</b>Engine.ai_erase(<i>disposal_commander</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#1824"><b>1824</b>ai_place(<i>disposal_commander</i>.Squad, 1);</a>
+<a href="../04b_floodlab.cs.html#1825"><b>1825</b>ai_cannot_die(<i>disposal_commander</i>.Squad, true);</a>
+<a href="../04b_floodlab.cs.html#2009"><b>2009</b>cs_face_object(true, list_get(ai_actors(<i>disposal_commander</i>.Squad), 0));</a>
+<a href="../04b_floodlab.cs.html#2058"><b>2058</b>await sleep_until(async () =&gt; volume_test_objects(vol_soc_post, ai_actors(<i>disposal_commander</i>.Squad)) == false);</a>
+<a href="../04b_floodlab.cs.html#2069"><b>2069</b>await sleep_until(async () =&gt; volume_test_objects(vol_soc_reborn, ai_actors(<i>disposal_commander</i>.Squad)) == true);</a>
+<a href="../04b_floodlab.cs.html#2070"><b>2070</b>effect_new_on_object_marker(GetTag&lt;EffectTag&gt;(&quot;effects\\gameplay\\coop_teleport&quot;, 4146795767U), list_get(ai_actors(<i>disposal_commander</i>.Squad), 0), &quot;&quot;);</a>
+<a href="../04b_floodlab.cs.html#2072"><b>2072</b>object_teleport(list_get(ai_actors(<i>disposal_commander</i>.Squad), 0), soc_reborn);</a>
+<a href="../04b_floodlab.cs.html#2075"><b>2075</b>ai_erase(<i>disposal_commander</i>.Squad);</a>
+<a href="../04b_floodlab.cs.html#2177"><b>2177</b>await sleep_until(async () =&gt; ai_scene(&quot;holo_grunt_react_scene&quot;, new ScriptMethodReference(hologram_ally_01), all_allies) || (short)ai_living_count(allies_grunts_03.Squad) == 0 || (short)ai_living_count(<i>disposal_commander</i>.Squad) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2181"><b>2181</b>await sleep_until(async () =&gt; this.holo_ally_01_done == true || (short)ai_living_count(allies_grunts_03.Squad) == 0 || (short)ai_living_count(<i>disposal_commander</i>.Squad) == 0, 30, 300);</a>
+<a href="../04b_floodlab.cs.html#2191"><b>2191</b>await sleep_until(async () =&gt; ai_scene(&quot;holo_main_react_scene&quot;, new ScriptMethodReference(hologram_ally_03), <i>disposal_commander</i>.Squad, hl_hologram.Squad) || (short)ai_living_count(<i>disposal_commander</i>.Squad) == 0 || (short)ai_living_count(hl_hologram.Squad) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2195"><b>2195</b>await sleep_until(async () =&gt; this.holo_ally_03_done == true || (short)ai_living_count(<i>disposal_commander</i>.Squad) == 0, 30, 450);</a>
+<a href="../04b_floodlab.cs.html#2211"><b>2211</b>await sleep_until(async () =&gt; ai_scene(&quot;holo_after_scene&quot;, new ScriptMethodReference(hologram_ally_04), all_allies) || (short)ai_living_count(<i>disposal_commander</i>.Squad) == 0 || (short)ai_living_count(allies_elites) == 0, 30, 150);</a>
+<a href="../04b_floodlab.cs.html#2218"><b>2218</b>await sleep_until(async () =&gt; ai_scene(&quot;disposal_comm_pussy_scene&quot;, new ScriptMethodReference(disposal_after_commander), <i>disposal_commander</i>.Squad), 30, 300);</a>
+<a href="../04b_floodlab.cs.html#3852"><b>3852</b>ai_erase(<i>disposal_commander</i>.Squad);</a>
 </div>
 </div>
 </div>

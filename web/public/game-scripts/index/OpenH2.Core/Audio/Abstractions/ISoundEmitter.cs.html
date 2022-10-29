@@ -1,0 +1,18 @@
+﻿
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+<b>using</b> <span class="i n">System</span>.<span class="i n">Numerics</span>;
+ 
+<b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Audio</span>.<span class="i n">Abstractions</span>
+&lbrace;
+    <b>public interface</b> <a id="8d40480c4e6b803c" href="../../R/8d40480c4e6b803c.html" target="n" data-glyph="48,0" class="t t">ISoundEmitter</a>
+    &lbrace;
+        <b>void</b> <a id="5644138c27f70e50" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">SetPosition</a>(<span class="t valueType">Vector3</span> <span id="r0 rd" class="r0 r">position</span>);
+        <b>void</b> <a id="4c2291b90b27c466" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">SetGain</a>(<b>float</b> <span id="r1 rd" class="r1 r">gain</span>);
+        <b>void</b> <a id="5f50c50b10141194" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">QueueSound</a>();
+        <b>void</b> <a id="efbc652c88d918a3" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">PlayImmediate</a>&lt;<span id="r2 rd t" class="r2 r t">TSample</span>&gt;(<a href="../AudioEncoding.cs.html#ed06da300fc369bc" class="t valueType">AudioEncoding</a> <span id="r3 rd" class="r3 r">encoding</span>, <a href="../SampleRate.cs.html#e19f7dae81730644" class="t t">SampleRate</a> <span id="r4 rd" class="r4 r">rate</span>, <span class="t valueType">Span</span>&lt;<span class="r2 r t">TSample</span>&gt; <span id="r5 rd" class="r5 r">data</span>) <b>where</b> <span class="r2 r t">TSample</span> : <b>unmanaged</b>;
+        <b>void</b> <a id="7a8344d272975b63" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">Stop</a>();
+        <span class="t valueType">TimeSpan</span> <a id="ccaf9125b2067321" href="../../R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">RemainingTime</a>();
+    &rbrace;
+&rbrace;
+</pre></td></tr></table></div></div>

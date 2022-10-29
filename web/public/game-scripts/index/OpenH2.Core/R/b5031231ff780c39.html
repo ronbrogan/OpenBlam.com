@@ -1,11 +1,15 @@
 ﻿<div class="referenceBody">
-<div class="rH">1 write to Components</div><div class="rA">OpenH2.Core (1)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Entity.cs (1)</div>
+<div class="rH">2 writes to Components</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Entity.cs (2)</div>
 <a href="../Architecture/Entity.cs.html#20"><b>20</b>this.<i>Components</i> = components;</a>
+<a href="../Architecture/Entity.cs.html#31"><b>31</b>Array.Resize(ref this.<i>Components</i>, end + components.Length);</a>
 </div>
 </div>
-<div class="rH">2 references to Components</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Entity.cs (2)</div>
-<a href="../Architecture/Entity.cs.html#32"><b>32</b>foreach(var c in <i>Components</i>)</a>
-<a href="../Architecture/Entity.cs.html#49"><b>49</b>foreach (var c in <i>Components</i>)</a>
+<div class="rH">5 references to Components</div><div class="rA">OpenH2.Core (5)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Architecture\Entity.cs (5)</div>
+<a href="../Architecture/Entity.cs.html#30"><b>30</b>var end = this.<i>Components</i>.Length;</a>
+<a href="../Architecture/Entity.cs.html#32"><b>32</b>Array.Copy(components, 0, this.<i>Components</i>, end, components.Length);</a>
+<a href="../Architecture/Entity.cs.html#37"><b>37</b>return this.<i>Components</i>;</a>
+<a href="../Architecture/Entity.cs.html#44"><b>44</b>foreach(var c in <i>Components</i>)</a>
+<a href="../Architecture/Entity.cs.html#61"><b>61</b>foreach (var c in <i>Components</i>)</a>
 </div>
 </div>
 </div>

@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">398 references to ScriptDataType</div><div class="rA">OpenH2.Core (398)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (26)</div>
+<div class="rH">396 references to ScriptDataType</div><div class="rA">OpenH2.Core (396)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\InterpreterResult.cs (26)</div>
 <a href="../Scripting/Execution/InterpreterResult.cs.html#23"><b>23</b>public <i>ScriptDataType</i> DataType;</a>
 <a href="../Scripting/Execution/InterpreterResult.cs.html#34"><b>34</b>if (DataType == <i>ScriptDataType</i>.Float)</a>
 <a href="../Scripting/Execution/InterpreterResult.cs.html#43"><b>43</b>if (DataType == <i>ScriptDataType</i>.Float)</a>
@@ -95,7 +95,7 @@
 <a href="../Scripting/Execution/ScriptInterpreter.cs.html#531"><b>531</b><i>ScriptDataType</i>.Float =&gt; Result.From(left.GetFloat() &lt;= right.GetFloat()),</a>
 <a href="../Scripting/Execution/ScriptInterpreter.cs.html#532"><b>532</b><i>ScriptDataType</i>.Short =&gt; Result.From(left.GetShort() &lt;= right.GetShort()),</a>
 </div>
-<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (77)</div>
+<div class="rF"><div class="rN">Scripting\Execution\ScriptIterativeInterpreter.cs (75)</div>
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#120"><b>120</b>DataType = <i>ScriptDataType</i>.MethodOrOperator,</a>
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#199"><b>199</b>if (state.TopFrame.OriginatingNode.DataType == <i>ScriptDataType</i>.Void)</a>
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#228"><b>228</b>if (invocationNode.DataType != <i>ScriptDataType</i>.MethodOrOperator) Throw.InterpreterException($&quot;Invocation&#39;s first child must be of type {<i>ScriptDataType</i>.MethodOrOperator}&quot;, state);</a>
@@ -170,75 +170,73 @@
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#836"><b>836</b>value.DataType = <i>ScriptDataType</i>.Short;</a>
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#838"><b>838</b>case <i>ScriptDataType</i>.List:</a>
 <a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#840"><b>840</b>value.DataType = <i>ScriptDataType</i>.List;</a>
-<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#842"><b>842</b>case <i>ScriptDataType</i>.Entity:</a>
-<a href="../Scripting/Execution/ScriptIterativeInterpreter.cs.html#843"><b>843</b>value.DataType = <i>ScriptDataType</i>.Entity;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\ScriptCSharpGenerator.cs (65)</div>
 <a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#81"><b>81</b>AddPublicProperty(<i>ScriptDataType</i>.CameraPathTarget, cam.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#89"><b>89</b>AddPublicProperty(<i>ScriptDataType</i>.AI, ai.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#95"><b>95</b>AddPublicProperty(<i>ScriptDataType</i>.AIOrders, order.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#101"><b>101</b>AddPublicProperty(<i>ScriptDataType</i>.LocationFlag, flag.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#107"><b>107</b>AddPublicProperty(<i>ScriptDataType</i>.CinematicTitle, title.Title, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#113"><b>113</b>AddPublicProperty(<i>ScriptDataType</i>.Trigger, tv.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#119"><b>119</b>AddPublicProperty(<i>ScriptDataType</i>.StartingProfile, profile.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#125"><b>125</b>AddPublicProperty(<i>ScriptDataType</i>.DeviceGroup, group.Description, i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#136"><b>136</b>var squadPropName = nameRepo.RegisterName(squad.Description, <i>ScriptDataType</i>.AI.ToString(), i);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#146"><b>146</b>var propName = nestedRepo.RegisterName(ai.Description, <i>ScriptDataType</i>.AI.ToString(), m);</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#158"><b>158</b>dataClassProps.Add(PropertyDeclaration(SyntaxUtil.ScriptTypeSyntax(<i>ScriptDataType</i>.AI), propName)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#173"><b>173</b>dataClassProps.Add(PropertyDeclaration(SyntaxUtil.ScriptTypeSyntax(<i>ScriptDataType</i>.AI), &quot;Squad&quot;)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#247"><b>247</b>if (nameRepo.TryGetName(squad.Description, <i>ScriptDataType</i>.AI.ToString(), i, out var squadPropName) == false)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#276"><b>276</b>private void AddPublicProperty(<i>ScriptDataType</i> type, string name, int itemIndex)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#282"><b>282</b><i>ScriptDataType</i>.CameraPathTarget =&gt; nameof(ScenarioTag.CameraPathTargets),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#283"><b>283</b><i>ScriptDataType</i>.LocationFlag =&gt; nameof(ScenarioTag.LocationFlagDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#284"><b>284</b><i>ScriptDataType</i>.CinematicTitle =&gt; nameof(ScenarioTag.CinematicTitleDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#285"><b>285</b><i>ScriptDataType</i>.Trigger =&gt; nameof(ScenarioTag.TriggerVolumes),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#286"><b>286</b><i>ScriptDataType</i>.StartingProfile =&gt; nameof(ScenarioTag.StartingProfileDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#287"><b>287</b><i>ScriptDataType</i>.DeviceGroup =&gt; nameof(ScenarioTag.DeviceGroupDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#288"><b>288</b><i>ScriptDataType</i>.AI =&gt; nameof(ScenarioTag.AiSquadGroupDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#289"><b>289</b><i>ScriptDataType</i>.AIOrders =&gt; nameof(ScenarioTag.AiOrderDefinitions),</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#378"><b>378</b>if (scriptMethod.ReturnType != <i>ScriptDataType</i>.Void)</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#506"><b>506</b>case <i>ScriptDataType</i>.Void:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#509"><b>509</b>case <i>ScriptDataType</i>.MethodOrOperator:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#511"><b>511</b>case <i>ScriptDataType</i>.Sound:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#512"><b>512</b>case <i>ScriptDataType</i>.Animation:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#513"><b>513</b>case <i>ScriptDataType</i>.TagReference:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#514"><b>514</b>case <i>ScriptDataType</i>.Model:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#515"><b>515</b>case <i>ScriptDataType</i>.LoopingSound:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#516"><b>516</b>case <i>ScriptDataType</i>.Effect:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#517"><b>517</b>case <i>ScriptDataType</i>.DamageEffect:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#519"><b>519</b>case <i>ScriptDataType</i>.Bsp:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#520"><b>520</b>case <i>ScriptDataType</i>.SpatialPoint:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#521"><b>521</b>case <i>ScriptDataType</i>.WeaponReference:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#523"><b>523</b>case <i>ScriptDataType</i>.AI:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#525"><b>525</b>case <i>ScriptDataType</i>.EntityIdentifier:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#526"><b>526</b>case <i>ScriptDataType</i>.Entity:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#527"><b>527</b>case <i>ScriptDataType</i>.Unit:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#528"><b>528</b>case <i>ScriptDataType</i>.Scenery:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#529"><b>529</b>case <i>ScriptDataType</i>.Device:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#530"><b>530</b>case <i>ScriptDataType</i>.Vehicle:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#531"><b>531</b>case <i>ScriptDataType</i>.List:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#533"><b>533</b>case <i>ScriptDataType</i>.ScriptReference:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#535"><b>535</b>case <i>ScriptDataType</i>.AIScript:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#536"><b>536</b>case <i>ScriptDataType</i>.Trigger:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#537"><b>537</b>case <i>ScriptDataType</i>.LocationFlag:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#538"><b>538</b>case <i>ScriptDataType</i>.DeviceGroup:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#539"><b>539</b>case <i>ScriptDataType</i>.AIOrders:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#540"><b>540</b>case <i>ScriptDataType</i>.StartingProfile:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#541"><b>541</b>case <i>ScriptDataType</i>.Team:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#542"><b>542</b>case <i>ScriptDataType</i>.CameraPathTarget:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#543"><b>543</b>case <i>ScriptDataType</i>.CinematicTitle:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#544"><b>544</b>case <i>ScriptDataType</i>.AIBehavior:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#545"><b>545</b>case <i>ScriptDataType</i>.DamageState:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#546"><b>546</b>case <i>ScriptDataType</i>.NavigationPoint:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#548"><b>548</b>case <i>ScriptDataType</i>.Float:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#549"><b>549</b>case <i>ScriptDataType</i>.Int:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#550"><b>550</b>case <i>ScriptDataType</i>.String:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#551"><b>551</b>case <i>ScriptDataType</i>.Short:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#552"><b>552</b>case <i>ScriptDataType</i>.Boolean:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#553"><b>553</b>case <i>ScriptDataType</i>.StringId:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#554"><b>554</b>case <i>ScriptDataType</i>.VehicleSeat:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#556"><b>556</b>case <i>ScriptDataType</i>.GameDifficulty:</a>
-<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#585"><b>585</b><i>ScriptDataType</i> rt = currentScope.Type;</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#87"><b>87</b>AddPublicProperty(<i>ScriptDataType</i>.AI, ai.Description, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#93"><b>93</b>AddPublicProperty(<i>ScriptDataType</i>.AIOrders, order.Description, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#99"><b>99</b>AddPublicProperty(<i>ScriptDataType</i>.LocationFlag, flag.Description, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#105"><b>105</b>AddPublicProperty(<i>ScriptDataType</i>.CinematicTitle, title.Title, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#111"><b>111</b>AddPublicProperty(<i>ScriptDataType</i>.Trigger, tv.Description, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#117"><b>117</b>AddPublicProperty(<i>ScriptDataType</i>.StartingProfile, profile.Description, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#123"><b>123</b>AddPublicProperty(<i>ScriptDataType</i>.DeviceGroup, group.Description, i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#134"><b>134</b>var squadPropName = nameRepo.RegisterName(squad.Description, <i>ScriptDataType</i>.AI.ToString(), i);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#143"><b>143</b>var propName = nestedRepo.RegisterName(ai.Description, <i>ScriptDataType</i>.AI.ToString(), m);</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#151"><b>151</b>dataClassProps.Add(PropertyDeclaration(SyntaxUtil.ScriptTypeSyntax(<i>ScriptDataType</i>.AI), propName)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#178"><b>178</b>if (this.nameRepo.TryGetName(groupName, <i>ScriptDataType</i>.AI.ToString(), squad.SquadGroupIndex, out var stored))</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#265"><b>265</b>if (nameRepo.TryGetName(squad.Description, <i>ScriptDataType</i>.AI.ToString(), i, out var squadPropName) == false)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#294"><b>294</b>private void AddPublicProperty(<i>ScriptDataType</i> type, string name, int itemIndex)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#300"><b>300</b><i>ScriptDataType</i>.CameraPathTarget =&gt; nameof(ScenarioTag.CameraPathTargets),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#301"><b>301</b><i>ScriptDataType</i>.LocationFlag =&gt; nameof(ScenarioTag.LocationFlagDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#302"><b>302</b><i>ScriptDataType</i>.CinematicTitle =&gt; nameof(ScenarioTag.CinematicTitleDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#303"><b>303</b><i>ScriptDataType</i>.Trigger =&gt; nameof(ScenarioTag.TriggerVolumes),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#304"><b>304</b><i>ScriptDataType</i>.StartingProfile =&gt; nameof(ScenarioTag.StartingProfileDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#305"><b>305</b><i>ScriptDataType</i>.DeviceGroup =&gt; nameof(ScenarioTag.DeviceGroupDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#306"><b>306</b><i>ScriptDataType</i>.AI =&gt; nameof(ScenarioTag.AiSquadGroupDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#307"><b>307</b><i>ScriptDataType</i>.AIOrders =&gt; nameof(ScenarioTag.AiOrderDefinitions),</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#396"><b>396</b>if (scriptMethod.ReturnType != <i>ScriptDataType</i>.Void)</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#524"><b>524</b>case <i>ScriptDataType</i>.Void:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#527"><b>527</b>case <i>ScriptDataType</i>.MethodOrOperator:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#529"><b>529</b>case <i>ScriptDataType</i>.Sound:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#530"><b>530</b>case <i>ScriptDataType</i>.Animation:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#531"><b>531</b>case <i>ScriptDataType</i>.TagReference:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#532"><b>532</b>case <i>ScriptDataType</i>.Model:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#533"><b>533</b>case <i>ScriptDataType</i>.LoopingSound:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#534"><b>534</b>case <i>ScriptDataType</i>.Effect:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#535"><b>535</b>case <i>ScriptDataType</i>.DamageEffect:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#537"><b>537</b>case <i>ScriptDataType</i>.Bsp:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#538"><b>538</b>case <i>ScriptDataType</i>.SpatialPoint:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#539"><b>539</b>case <i>ScriptDataType</i>.WeaponReference:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#541"><b>541</b>case <i>ScriptDataType</i>.AI:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#543"><b>543</b>case <i>ScriptDataType</i>.EntityIdentifier:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#544"><b>544</b>case <i>ScriptDataType</i>.Entity:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#545"><b>545</b>case <i>ScriptDataType</i>.Unit:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#546"><b>546</b>case <i>ScriptDataType</i>.Scenery:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#547"><b>547</b>case <i>ScriptDataType</i>.Device:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#548"><b>548</b>case <i>ScriptDataType</i>.Vehicle:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#549"><b>549</b>case <i>ScriptDataType</i>.List:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#551"><b>551</b>case <i>ScriptDataType</i>.ScriptReference:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#552"><b>552</b>case <i>ScriptDataType</i>.AIScript:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#554"><b>554</b>case <i>ScriptDataType</i>.Trigger:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#555"><b>555</b>case <i>ScriptDataType</i>.LocationFlag:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#556"><b>556</b>case <i>ScriptDataType</i>.DeviceGroup:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#557"><b>557</b>case <i>ScriptDataType</i>.AIOrders:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#558"><b>558</b>case <i>ScriptDataType</i>.StartingProfile:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#559"><b>559</b>case <i>ScriptDataType</i>.Team:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#560"><b>560</b>case <i>ScriptDataType</i>.CameraPathTarget:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#561"><b>561</b>case <i>ScriptDataType</i>.CinematicTitle:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#562"><b>562</b>case <i>ScriptDataType</i>.AIBehavior:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#563"><b>563</b>case <i>ScriptDataType</i>.DamageState:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#564"><b>564</b>case <i>ScriptDataType</i>.NavigationPoint:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#566"><b>566</b>case <i>ScriptDataType</i>.Float:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#567"><b>567</b>case <i>ScriptDataType</i>.Int:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#568"><b>568</b>case <i>ScriptDataType</i>.String:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#569"><b>569</b>case <i>ScriptDataType</i>.Short:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#570"><b>570</b>case <i>ScriptDataType</i>.Boolean:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#571"><b>571</b>case <i>ScriptDataType</i>.StringId:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#572"><b>572</b>case <i>ScriptDataType</i>.VehicleSeat:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#574"><b>574</b>case <i>ScriptDataType</i>.GameDifficulty:</a>
+<a href="../Scripting/Generation/ScriptCSharpGenerator.cs.html#603"><b>603</b><i>ScriptDataType</i> rt = currentScope.Type;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Generation\ScriptGenAnnotations.cs (1)</div>
 <a href="../Scripting/Generation/ScriptGenAnnotations.cs.html#13"><b>13</b>public static SyntaxAnnotation TypeAnnotation(<i>ScriptDataType</i> t) =&gt; new SyntaxAnnotation(TypeAnnotationKind, ((int)t).ToString());</a>
@@ -344,9 +342,9 @@
 <div class="rF"><div class="rN">Scripting\GenerationState\BeginRandomContext.cs (6)</div>
 <a href="../Scripting/GenerationState/BeginRandomContext.cs.html#13"><b>13</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
 <a href="../Scripting/GenerationState/BeginRandomContext.cs.html#25"><b>25</b>public BeginRandomContext(ScenarioTag.ScriptSyntaxNode node, <i>ScriptDataType</i> type) : base(node)</a>
-<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#79"><b>79</b><i>var</i> returnType = <i>ScriptDataType</i>.Void;</a>
-<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#85"><b>85</b>returnType = (<i>ScriptDataType</i>)int.Parse(annotations.First().Data);</a>
-<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#96"><b>96</b>if (this.OwnDataType == <i>ScriptDataType</i>.Void)</a>
+<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#77"><b>77</b><i>var</i> returnType = <i>ScriptDataType</i>.Void;</a>
+<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#83"><b>83</b>returnType = (<i>ScriptDataType</i>)int.Parse(annotations.First().Data);</a>
+<a href="../Scripting/GenerationState/BeginRandomContext.cs.html#94"><b>94</b>if (this.OwnDataType == <i>ScriptDataType</i>.Void)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\BinaryOperatorContext.cs (6)</div>
 <a href="../Scripting/GenerationState/BinaryOperatorContext.cs.html#18"><b>18</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
@@ -357,11 +355,11 @@
 <a href="../Scripting/GenerationState/BinaryOperatorContext.cs.html#56"><b>56</b><i>var</i> promoted = SyntaxUtil.BinaryNumericPromotion(leftType, rightType);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\EntityGetContext.cs (2)</div>
-<a href="../Scripting/GenerationState/EntityGetContext.cs.html#15"><b>15</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
-<a href="../Scripting/GenerationState/EntityGetContext.cs.html#44"><b>44</b>if (node.DataType != <i>ScriptDataType</i>.EntityIdentifier)</a>
+<a href="../Scripting/GenerationState/EntityGetContext.cs.html#14"><b>14</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
+<a href="../Scripting/GenerationState/EntityGetContext.cs.html#43"><b>43</b>if (node.DataType != <i>ScriptDataType</i>.EntityIdentifier)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\FieldGetContext.cs (1)</div>
-<a href="../Scripting/GenerationState/FieldGetContext.cs.html#15"><b>15</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
+<a href="../Scripting/GenerationState/FieldGetContext.cs.html#14"><b>14</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\GameDifficultyContext.cs (1)</div>
 <a href="../Scripting/GenerationState/GameDifficultyContext.cs.html#13"><b>13</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
@@ -378,12 +376,12 @@
 <a href="../Scripting/GenerationState/LiteralContext.cs.html#19"><b>19</b><i>var</i> dest = node.DataType;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\MethodCallContext.cs (7)</div>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#16"><b>16</b>public <i>ScriptDataType</i> ReturnType { get; }</a>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#19"><b>19</b>private List&lt;<i>ScriptDataType</i>?&gt; argumentTypes = new List&lt;<i>ScriptDataType</i>?&gt;();</a>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#23"><b>23</b>public MethodCallContext(ScenarioTag.ScriptSyntaxNode node, string methodName, <i>ScriptDataType</i> returnType) : base(node)</a>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#33"><b>33</b>if(SyntaxUtil.TryGetTypeOfExpression(argument, out <i>var</i> t))</a>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#85"><b>85</b>if (SyntaxUtil.TryGetScriptTypeFromType(materializedReturnType, out <i>var</i> fromType))</a>
-<a href="../Scripting/GenerationState/MethodCallContext.cs.html#108"><b>108</b>if(SyntaxUtil.TryGetScriptTypeFromType(materializedReturnType, out <i>var</i> fromType) &amp;&amp; fromType != this.ReturnType)</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#17"><b>17</b>public <i>ScriptDataType</i> ReturnType { get; }</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#20"><b>20</b>private List&lt;<i>ScriptDataType</i>?&gt; argumentTypes = new List&lt;<i>ScriptDataType</i>?&gt;();</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#24"><b>24</b>public MethodCallContext(ScenarioTag.ScriptSyntaxNode node, string methodName, <i>ScriptDataType</i> returnType) : base(node)</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#34"><b>34</b>if(SyntaxUtil.TryGetTypeOfExpression(argument, out <i>var</i> t))</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#82"><b>82</b>if (SyntaxUtil.TryGetScriptTypeFromType(materializedReturnType, out <i>var</i> fromType))</a>
+<a href="../Scripting/GenerationState/MethodCallContext.cs.html#105"><b>105</b>if(SyntaxUtil.TryGetScriptTypeFromType(materializedReturnType, out <i>var</i> fromType) &amp;&amp; fromType != this.ReturnType)</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\NavigationPointContext.cs (1)</div>
 <a href="../Scripting/GenerationState/NavigationPointContext.cs.html#14"><b>14</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
@@ -399,7 +397,7 @@
 <a href="../Scripting/GenerationState/ScopeGenerationContext.cs.html#13"><b>13</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\ScriptMethodReferenceContext.cs (1)</div>
-<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#15"><b>15</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
+<a href="../Scripting/GenerationState/ScriptMethodReferenceContext.cs.html#14"><b>14</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>
 </div>
 <div class="rF"><div class="rN">Scripting\GenerationState\SingleExpressionContext.cs (2)</div>
 <a href="../Scripting/GenerationState/SingleExpressionContext.cs.html#13"><b>13</b>public override <i>ScriptDataType</i>? OwnDataType { get; }</a>

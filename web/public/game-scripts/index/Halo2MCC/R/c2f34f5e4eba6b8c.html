@@ -1,17 +1,17 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e2_exit_door</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08b_deltacontrol.Data.cs (1)</div>
-<a href="../08b_deltacontrol.Data.cs.html#699"><b>699</b><i>e2_exit_door</i> = new ScenarioEntity&lt;IDevice&gt;(107, scenarioTag.WellKnownItems[107]);</a>
+<a href="../08b_deltacontrol.Data.cs.html#587"><b>587</b><i>e2_exit_door</i> = new ScenarioEntity&lt;IDevice&gt;(107, scenarioTag.WellKnownItems[107]);</a>
 </div>
 </div>
 <div class="rH">8 references to e2_exit_door</div><div class="rA">Halo2MCC (8)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">08b_deltacontrol.cs (8)</div>
-<a href="../08b_deltacontrol.cs.html#6589"><b>6589</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0.1F, 5);</a>
-<a href="../08b_deltacontrol.cs.html#6621"><b>6621</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0F, 5);</a>
-<a href="../08b_deltacontrol.cs.html#6651"><b>6651</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0F, 5, 30);</a>
-<a href="../08b_deltacontrol.cs.html#6690"><b>6690</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0F, 5, 30);</a>
-<a href="../08b_deltacontrol.cs.html#6728"><b>6728</b>Engine.device_operates_automatically_set(<i>e2_exit_door</i>.Entity, true);</a>
-<a href="../08b_deltacontrol.cs.html#6737"><b>6737</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), <i>e2_exit_door</i>.Entity, 15F) &amp;&amp; (bool)Engine.game_safe_to_save(), 15, 300);</a>
-<a href="../08b_deltacontrol.cs.html#6738"><b>6738</b>await Engine.sleep_until(async () =&gt; Engine.objects_can_see_object(Engine.players(), <i>e2_exit_door</i>.Entity, 15F), 15, this._30_seconds);</a>
-<a href="../08b_deltacontrol.cs.html#6752"><b>6752</b>Engine.device_operates_automatically_set(<i>e2_exit_door</i>.Entity, true);</a>
+<a href="../08b_deltacontrol.cs.html#6586"><b>6586</b>await sleep_until(async () =&gt; device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0.1F, 5);</a>
+<a href="../08b_deltacontrol.cs.html#6618"><b>6618</b>await sleep_until(async () =&gt; device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0F, 5);</a>
+<a href="../08b_deltacontrol.cs.html#6648"><b>6648</b>await sleep_until(async () =&gt; device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0F, 5, 30);</a>
+<a href="../08b_deltacontrol.cs.html#6687"><b>6687</b>await sleep_until(async () =&gt; device_get_position(<i>e2_exit_door</i>.Entity) &gt; 0F, 5, 30);</a>
+<a href="../08b_deltacontrol.cs.html#6725"><b>6725</b>device_operates_automatically_set(<i>e2_exit_door</i>.Entity, true);</a>
+<a href="../08b_deltacontrol.cs.html#6734"><b>6734</b>await sleep_until(async () =&gt; objects_can_see_object(players(), <i>e2_exit_door</i>.Entity, 15F) &amp;&amp; (bool)game_safe_to_save(), 15, 300);</a>
+<a href="../08b_deltacontrol.cs.html#6735"><b>6735</b>await sleep_until(async () =&gt; objects_can_see_object(players(), <i>e2_exit_door</i>.Entity, 15F), 15, this._30_seconds);</a>
+<a href="../08b_deltacontrol.cs.html#6749"><b>6749</b>device_operates_automatically_set(<i>e2_exit_door</i>.Entity, true);</a>
 </div>
 </div>
 </div>

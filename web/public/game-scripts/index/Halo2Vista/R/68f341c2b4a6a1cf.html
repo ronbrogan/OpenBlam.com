@@ -1,52 +1,52 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to gondola_01_a</div><div class="rA">Halo2Vista (1)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05b_deltatowers.Data.cs (1)</div>
-<a href="../05b_deltatowers.Data.cs.html#846"><b>846</b><i>gondola_01_a</i> = new ScenarioEntity&lt;IDevice&gt;(86, scenarioTag.WellKnownItems[86]);</a>
+<a href="../05b_deltatowers.Data.cs.html#689"><b>689</b><i>gondola_01_a</i> = new ScenarioEntity&lt;IDevice&gt;(86, scenarioTag.WellKnownItems[86]);</a>
 </div>
 </div>
 <div class="rH">49 references to gondola_01_a</div><div class="rA">Halo2Vista (49)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">05b_deltatowers.cs (49)</div>
-<a href="../05b_deltatowers.cs.html#2133"><b>2133</b>if (Engine.device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.37F &amp;&amp; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.59F &amp;&amp; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &gt; this.gondola_01_wake_state)</a>
-<a href="../05b_deltatowers.cs.html#2135"><b>2135</b>Engine.object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2136"><b>2136</b>Engine.object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2137"><b>2137</b>Engine.object_set_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;, 1F, 1F);</a>
-<a href="../05b_deltatowers.cs.html#2143"><b>2143</b>if (Engine.device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.37F &amp;&amp; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.59F &amp;&amp; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; this.gondola_01_wake_state)</a>
-<a href="../05b_deltatowers.cs.html#2145"><b>2145</b>Engine.object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2146"><b>2146</b>Engine.object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2147"><b>2147</b>Engine.object_set_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;, 1F, 1F);</a>
-<a href="../05b_deltatowers.cs.html#2153"><b>2153</b>if (Engine.device_get_position(<i>gondola_01_a</i>.Entity) == this.gondola_01_wake_state || Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.37F || Engine.device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.59F)</a>
-<a href="../05b_deltatowers.cs.html#2155"><b>2155</b>Engine.object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2156"><b>2156</b>Engine.object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2161"><b>2161</b>this.gondola_01_wake_state = Engine.device_get_position(<i>gondola_01_a</i>.Entity);</a>
-<a href="../05b_deltatowers.cs.html#2162"><b>2162</b>return Engine.device_get_position(<i>gondola_01_a</i>.Entity) == 0F;</a>
-<a href="../05b_deltatowers.cs.html#2175"><b>2175</b>Engine.objects_attach(<i>gondola_01_a</i>.Entity, &quot;control_back&quot;, gondola_01_switch_back.Entity, &quot;&quot;);</a>
-<a href="../05b_deltatowers.cs.html#2178"><b>2178</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, 0.5F);</a>
-<a href="../05b_deltatowers.cs.html#2206"><b>2206</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, 1F);</a>
-<a href="../05b_deltatowers.cs.html#2208"><b>2208</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.75F);</a>
-<a href="../05b_deltatowers.cs.html#2210"><b>2210</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) == 1F);</a>
-<a href="../05b_deltatowers.cs.html#2211"><b>2211</b>Engine.object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, true);</a>
-<a href="../05b_deltatowers.cs.html#2241"><b>2241</b>Engine.device_set_position_immediate(<i>gondola_01_a</i>.Entity, 0.5F);</a>
-<a href="../05b_deltatowers.cs.html#2335"><b>2335</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 1F);</a>
-<a href="../05b_deltatowers.cs.html#2489"><b>2489</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(tower3_dock_snipers.Squad) &lt;= 0 || Engine.device_get_position(<i>gondola_01_a</i>.Entity) == 0F);</a>
-<a href="../05b_deltatowers.cs.html#2490"><b>2490</b>if (Engine.device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0F)</a>
-<a href="../05b_deltatowers.cs.html#2537"><b>2537</b>return Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.25F;</a>
-<a href="../05b_deltatowers.cs.html#2546"><b>2546</b>this.gondola_01_state = Engine.device_get_position(<i>gondola_01_a</i>.Entity);</a>
-<a href="../05b_deltatowers.cs.html#2549"><b>2549</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, 0F);</a>
-<a href="../05b_deltatowers.cs.html#2554"><b>2554</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, this.gondola_01_state);</a>
-<a href="../05b_deltatowers.cs.html#2558"><b>2558</b>return Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.4F;</a>
-<a href="../05b_deltatowers.cs.html#2569"><b>2569</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, 0F);</a>
-<a href="../05b_deltatowers.cs.html#2574"><b>2574</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, 0.54F);</a>
-<a href="../05b_deltatowers.cs.html#2578"><b>2578</b>return Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.4F;</a>
-<a href="../05b_deltatowers.cs.html#2607"><b>2607</b>Engine.object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, false);</a>
-<a href="../05b_deltatowers.cs.html#2612"><b>2612</b>Engine.device_set_position(<i>gondola_01_a</i>.Entity, 0.54F);</a>
-<a href="../05b_deltatowers.cs.html#2616"><b>2616</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.85F);</a>
-<a href="../05b_deltatowers.cs.html#2625"><b>2625</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.7F);</a>
-<a href="../05b_deltatowers.cs.html#2627"><b>2627</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) == 0.54F);</a>
-<a href="../05b_deltatowers.cs.html#2632"><b>2632</b>Engine.object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, true);</a>
-<a href="../05b_deltatowers.cs.html#2638"><b>2638</b>Engine.object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, false);</a>
-<a href="../05b_deltatowers.cs.html#2642"><b>2642</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.25F);</a>
-<a href="../05b_deltatowers.cs.html#2644"><b>2644</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) == 0F);</a>
-<a href="../05b_deltatowers.cs.html#2655"><b>2655</b>await Engine.sleep_until(async () =&gt; Engine.device_get_position(<i>gondola_01_a</i>.Entity) == 0F &amp;&amp; Engine.volume_test_objects_all(vol_gondola_01, Engine.players()) == false &amp;&amp; await this.player_count() &gt; 0);</a>
-<a href="../05b_deltatowers.cs.html#2656"><b>2656</b>Engine.object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, true);</a>
-<a href="../05b_deltatowers.cs.html#6673"><b>6673</b>Engine.device_set_position_immediate(<i>gondola_01_a</i>.Entity, 1F);</a>
+<a href="../05b_deltatowers.cs.html#2133"><b>2133</b>if (device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.37F &amp;&amp; device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.59F &amp;&amp; device_get_position(<i>gondola_01_a</i>.Entity) &gt; this.gondola_01_wake_state)</a>
+<a href="../05b_deltatowers.cs.html#2135"><b>2135</b>object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2136"><b>2136</b>object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2137"><b>2137</b>object_set_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;, 1F, 1F);</a>
+<a href="../05b_deltatowers.cs.html#2143"><b>2143</b>if (device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.37F &amp;&amp; device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.59F &amp;&amp; device_get_position(<i>gondola_01_a</i>.Entity) &lt; this.gondola_01_wake_state)</a>
+<a href="../05b_deltatowers.cs.html#2145"><b>2145</b>object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2146"><b>2146</b>object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2147"><b>2147</b>object_set_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;, 1F, 1F);</a>
+<a href="../05b_deltatowers.cs.html#2153"><b>2153</b>if (device_get_position(<i>gondola_01_a</i>.Entity) == this.gondola_01_wake_state || device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.37F || device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.59F)</a>
+<a href="../05b_deltatowers.cs.html#2155"><b>2155</b>object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_forward&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2156"><b>2156</b>object_clear_function_variable(<i>gondola_01_a</i>.Entity, &quot;wake_backward&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2161"><b>2161</b>this.gondola_01_wake_state = device_get_position(<i>gondola_01_a</i>.Entity);</a>
+<a href="../05b_deltatowers.cs.html#2162"><b>2162</b>return device_get_position(<i>gondola_01_a</i>.Entity) == 0F;</a>
+<a href="../05b_deltatowers.cs.html#2175"><b>2175</b>objects_attach(<i>gondola_01_a</i>.Entity, &quot;control_back&quot;, gondola_01_switch_back.Entity, &quot;&quot;);</a>
+<a href="../05b_deltatowers.cs.html#2178"><b>2178</b>device_set_position(<i>gondola_01_a</i>.Entity, 0.5F);</a>
+<a href="../05b_deltatowers.cs.html#2206"><b>2206</b>device_set_position(<i>gondola_01_a</i>.Entity, 1F);</a>
+<a href="../05b_deltatowers.cs.html#2208"><b>2208</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0.75F);</a>
+<a href="../05b_deltatowers.cs.html#2210"><b>2210</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) == 1F);</a>
+<a href="../05b_deltatowers.cs.html#2211"><b>2211</b>object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, true);</a>
+<a href="../05b_deltatowers.cs.html#2241"><b>2241</b>device_set_position_immediate(<i>gondola_01_a</i>.Entity, 0.5F);</a>
+<a href="../05b_deltatowers.cs.html#2335"><b>2335</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) &lt; 1F);</a>
+<a href="../05b_deltatowers.cs.html#2489"><b>2489</b>await sleep_until(async () =&gt; (short)ai_living_count(tower3_dock_snipers.Squad) &lt;= 0 || device_get_position(<i>gondola_01_a</i>.Entity) == 0F);</a>
+<a href="../05b_deltatowers.cs.html#2490"><b>2490</b>if (device_get_position(<i>gondola_01_a</i>.Entity) &gt; 0F)</a>
+<a href="../05b_deltatowers.cs.html#2537"><b>2537</b>return device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.25F;</a>
+<a href="../05b_deltatowers.cs.html#2546"><b>2546</b>this.gondola_01_state = device_get_position(<i>gondola_01_a</i>.Entity);</a>
+<a href="../05b_deltatowers.cs.html#2549"><b>2549</b>device_set_position(<i>gondola_01_a</i>.Entity, 0F);</a>
+<a href="../05b_deltatowers.cs.html#2554"><b>2554</b>device_set_position(<i>gondola_01_a</i>.Entity, this.gondola_01_state);</a>
+<a href="../05b_deltatowers.cs.html#2558"><b>2558</b>return device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.4F;</a>
+<a href="../05b_deltatowers.cs.html#2569"><b>2569</b>device_set_position(<i>gondola_01_a</i>.Entity, 0F);</a>
+<a href="../05b_deltatowers.cs.html#2574"><b>2574</b>device_set_position(<i>gondola_01_a</i>.Entity, 0.54F);</a>
+<a href="../05b_deltatowers.cs.html#2578"><b>2578</b>return device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.4F;</a>
+<a href="../05b_deltatowers.cs.html#2607"><b>2607</b>object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, false);</a>
+<a href="../05b_deltatowers.cs.html#2612"><b>2612</b>device_set_position(<i>gondola_01_a</i>.Entity, 0.54F);</a>
+<a href="../05b_deltatowers.cs.html#2616"><b>2616</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.85F);</a>
+<a href="../05b_deltatowers.cs.html#2625"><b>2625</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.7F);</a>
+<a href="../05b_deltatowers.cs.html#2627"><b>2627</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) == 0.54F);</a>
+<a href="../05b_deltatowers.cs.html#2632"><b>2632</b>object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, true);</a>
+<a href="../05b_deltatowers.cs.html#2638"><b>2638</b>object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, false);</a>
+<a href="../05b_deltatowers.cs.html#2642"><b>2642</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) &lt; 0.25F);</a>
+<a href="../05b_deltatowers.cs.html#2644"><b>2644</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) == 0F);</a>
+<a href="../05b_deltatowers.cs.html#2655"><b>2655</b>await sleep_until(async () =&gt; device_get_position(<i>gondola_01_a</i>.Entity) == 0F &amp;&amp; volume_test_objects_all(vol_gondola_01, players()) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../05b_deltatowers.cs.html#2656"><b>2656</b>object_dynamic_simulation_disable(<i>gondola_01_a</i>.Entity, true);</a>
+<a href="../05b_deltatowers.cs.html#6673"><b>6673</b>device_set_position_immediate(<i>gondola_01_a</i>.Entity, 1F);</a>
 </div>
 </div>
 </div>

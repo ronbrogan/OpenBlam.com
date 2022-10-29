@@ -1,0 +1,231 @@
+﻿<div class="referenceBody">
+<div class="rH">Implemented interface member:</div><a href="/OpenH2.Core/A.html#ad74a5ad6c7737d3" target="s"><div class="resultItem" onClick="resultClick(this);"><div class="resultLine"><img src="/content/icons/72.png" height="16" width="16" /><div class="resultKind">method</div><div class="resultName">unit_in_vehicle</div></div>
+<div class="resultDescription">OpenH2.Core.Scripting.IScriptEngine.unit_in_vehicle(OpenH2.Core.GameObjects.IUnit)</div>
+</div></a>
+<div class="rH">270 references to unit_in_vehicle</div><div class="rA">Halo2MCC (135)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (9)</div>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2000"><b>2000</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2006"><b>2006</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2363"><b>2363</b>if (objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 50F &amp;&amp; !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))))</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#2847"><b>2847</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 10F || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3138"><b>3138</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 10F || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3346"><b>3346</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 8F || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))));</a>
+<a href="../../Halo2MCC/03a_oldmombasa.cs.html#3347"><b>3347</b>return await this.player_in_vehicle() || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor)));</a>
+</div>
+<div class="rF"><div class="rN">03b_newmombasa.cs (16)</div>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#2355"><b>2355</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#2361"><b>2361</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4303"><b>4303</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player0()) &gt; 7F || <i>unit_in_vehicle</i>(unit(await this.player0())), 15, 600);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4318"><b>4318</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player1()) &gt; 7F || <i>unit_in_vehicle</i>(unit(await this.player1())), 15, 600);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4448"><b>4448</b>if (objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player0()) &lt; 6F &amp;&amp; !(<i>unit_in_vehicle</i>(unit(await this.player0()))))</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4451"><b>4451</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(e18_mars_warthog0.warthog0))), 30, 900);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4453"><b>4453</b>else if ((bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player1()) &lt; 6F &amp;&amp; !(<i>unit_in_vehicle</i>(unit(await this.player1()))))</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4456"><b>4456</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(e18_mars_warthog0.warthog0))), 30, 900);</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4459"><b>4459</b>return !(<i>unit_in_vehicle</i>(ai_get_unit(e18_mars_warthog0.warthog0)));</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#4595"><b>4595</b>if (<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor)) &amp;&amp; volume_test_object(tv_e17_migration_area, ai_get_object(this.ai_current_actor)) &amp;&amp; (short)ai_living_count(e17_mars_inf0.Squad) &lt;= 2)</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5152"><b>5152</b>await sleep_until(async () =&gt; (short)ai_living_count(e16_cov_wraiths0_0.wraith1) &lt;= 0 || !(<i>unit_in_vehicle</i>(ai_vehicle_get(e16_cov_wraiths0_0.wraith1))));</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5165"><b>5165</b>await sleep_until(async () =&gt; (short)ai_living_count(e16_cov_wraiths0_0.wraith0) &lt;= 0 || !(<i>unit_in_vehicle</i>(ai_vehicle_get(e16_cov_wraiths0_0.wraith0))));</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5283"><b>5283</b>if (<i>unit_in_vehicle</i>(unit(await this.player1())))</a>
+<a href="../../Halo2MCC/03b_newmombasa.cs.html#5288"><b>5288</b>if (<i>unit_in_vehicle</i>(unit(await this.player0())))</a>
+</div>
+<div class="rF"><div class="rN">04a_gasgiant.cs (53)</div>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5301"><b>5301</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5304"><b>5304</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; volume_test_object(vol_arm_02_lz, await this.player0()) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5329"><b>5329</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5357"><b>5357</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5380"><b>5380</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5398"><b>5398</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5416"><b>5416</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5434"><b>5434</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5457"><b>5457</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5475"><b>5475</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5493"><b>5493</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5511"><b>5511</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5534"><b>5534</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5557"><b>5557</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5580"><b>5580</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5598"><b>5598</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5616"><b>5616</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5627"><b>5627</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player1()) == true);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5630"><b>5630</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player1()) == false &amp;&amp; volume_test_object(vol_arm_02_lz, await this.player1()) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5655"><b>5655</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5683"><b>5683</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5706"><b>5706</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5724"><b>5724</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5742"><b>5742</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5760"><b>5760</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5783"><b>5783</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5801"><b>5801</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5819"><b>5819</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5837"><b>5837</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5860"><b>5860</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5883"><b>5883</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5906"><b>5906</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5924"><b>5924</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#5942"><b>5942</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#6146"><b>6146</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1())) || (bool)game_is_cooperative() == false &amp;&amp; (bool)game_safe_to_save());</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#6861"><b>6861</b>await sleep_until(async () =&gt; volume_test_objects(vol_04a_game_won, players()) == true || this.dogfight_over == true &amp;&amp; volume_test_object(vol_real_win, await this.player0()) == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false || this.dogfight_over == true &amp;&amp; volume_test_object(vol_real_win, await this.player1()) == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7024"><b>7024</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7767"><b>7767</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7812"><b>7812</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7852"><b>7852</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2MCC/04a_gasgiant.cs.html#7891"><b>7891</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+</div>
+<div class="rF"><div class="rN">04b_floodlab.cs (5)</div>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3107"><b>3107</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true, 30, 450);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3108"><b>3108</b>if (<i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true)</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3123"><b>3123</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true, 30, 450);</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#3124"><b>3124</b>if (<i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true)</a>
+<a href="../../Halo2MCC/04b_floodlab.cs.html#6426"><b>6426</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(list_get(ai_actors(dervish_01.Squad), 0))) == true);</a>
+</div>
+<div class="rF"><div class="rN">05a_deltaapproach.cs (2)</div>
+<a href="../../Halo2MCC/05a_deltaapproach.cs.html#5439"><b>5439</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; volume_test_objects(vol_old_temple_center_01, await this.player0()) == true || volume_test_objects(vol_old_temple_center_03, await this.player0()) == true || volume_test_objects(vol_old_temple_center_05, await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == false &amp;&amp; volume_test_objects(vol_old_temple_center_01, await this.player1()) == true || volume_test_objects(vol_old_temple_center_03, await this.player1()) == true || volume_test_objects(vol_old_temple_center_05, await this.player1()) == true);</a>
+</div>
+<div class="rF"><div class="rN">05b_deltatowers.cs (34)</div>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5119"><b>5119</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5131"><b>5131</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5143"><b>5143</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5155"><b>5155</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5167"><b>5167</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5179"><b>5179</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5191"><b>5191</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5354"><b>5354</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5400"><b>5400</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true || objects_distance_to_object(players(), list_get(ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5401"><b>5401</b>if (<i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true)</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5411"><b>5411</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5440"><b>5440</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5472"><b>5472</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5513"><b>5513</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true || objects_distance_to_object(players(), list_get(ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5514"><b>5514</b>if (<i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true)</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5524"><b>5524</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2MCC/05b_deltatowers.cs.html#5580"><b>5580</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+</div>
+<div class="rF"><div class="rN">08a_deltacliffs.cs (9)</div>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#858"><b>858</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#864"><b>864</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#1049"><b>1049</b>return !(<i>unit_in_vehicle</i>(unit(await this.player0()))) || !(<i>unit_in_vehicle</i>(unit(await this.player1())));</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#2958"><b>2958</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(e1_cov_inf2.gold_elite))), 15);</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#3063"><b>3063</b>if (<i>unit_in_vehicle</i>(unit(await this.player0())))</a>
+<a href="../../Halo2MCC/08a_deltacliffs.cs.html#3072"><b>3072</b>if (<i>unit_in_vehicle</i>(unit(await this.player1())))</a>
+</div>
+<div class="rF"><div class="rN">08b_deltacontrol.cs (7)</div>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#3501"><b>3501</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#3507"><b>3507</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6903"><b>6903</b>await sleep_until(async () =&gt; await this.players_in_vehicle() &amp;&amp; <i>unit_in_vehicle</i>(this.g_cov_commander) || volume_test_objects(tv_e1_canyon_entry, players()), 10);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6914"><b>6914</b>await sleep_until(async () =&gt; await this.players_in_vehicle() &amp;&amp; <i>unit_in_vehicle</i>(this.g_cov_commander), 10);</a>
+<a href="../../Halo2MCC/08b_deltacontrol.cs.html#6933"><b>6933</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))), 5);</a>
+</div>
+</div>
+<div class="rA">Halo2Vista (135)</div><div class="rG" id="Halo2Vista"><div class="rF"><div class="rN">03a_oldmombasa.cs (9)</div>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#1986"><b>1986</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#1992"><b>1992</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#2349"><b>2349</b>if (objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 50F &amp;&amp; !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))))</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#2833"><b>2833</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 10F || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))));</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3124"><b>3124</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 10F || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))));</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3332"><b>3332</b>await sleep_until(async () =&gt; await this.player_in_vehicle() || objects_distance_to_object(players(), ai_get_object(this.ai_current_actor)) &gt; 8F || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))));</a>
+<a href="../../Halo2Vista/03a_oldmombasa.cs.html#3333"><b>3333</b>return await this.player_in_vehicle() || !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor)));</a>
+</div>
+<div class="rF"><div class="rN">03b_newmombasa.cs (16)</div>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#2353"><b>2353</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#2359"><b>2359</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4301"><b>4301</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player0()) &gt; 7F || <i>unit_in_vehicle</i>(unit(await this.player0())), 15, 600);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4316"><b>4316</b>await sleep_until(async () =&gt; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player1()) &gt; 7F || <i>unit_in_vehicle</i>(unit(await this.player1())), 15, 600);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4446"><b>4446</b>if (objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player0()) &lt; 6F &amp;&amp; !(<i>unit_in_vehicle</i>(unit(await this.player0()))))</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4449"><b>4449</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(e18_mars_warthog0.warthog0))), 30, 900);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4451"><b>4451</b>else if ((bool)game_is_cooperative() &amp;&amp; objects_distance_to_object(ai_actors(e18_mars_warthog0.warthog0), await this.player1()) &lt; 6F &amp;&amp; !(<i>unit_in_vehicle</i>(unit(await this.player1()))))</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4454"><b>4454</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(e18_mars_warthog0.warthog0))), 30, 900);</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4457"><b>4457</b>return !(<i>unit_in_vehicle</i>(ai_get_unit(e18_mars_warthog0.warthog0)));</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#4593"><b>4593</b>if (<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor)) &amp;&amp; volume_test_object(tv_e17_migration_area, ai_get_object(this.ai_current_actor)) &amp;&amp; (short)ai_living_count(e17_mars_inf0.Squad) &lt;= 2)</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#5150"><b>5150</b>await sleep_until(async () =&gt; (short)ai_living_count(e16_cov_wraiths0_0.wraith1) &lt;= 0 || !(<i>unit_in_vehicle</i>(ai_vehicle_get(e16_cov_wraiths0_0.wraith1))));</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#5163"><b>5163</b>await sleep_until(async () =&gt; (short)ai_living_count(e16_cov_wraiths0_0.wraith0) &lt;= 0 || !(<i>unit_in_vehicle</i>(ai_vehicle_get(e16_cov_wraiths0_0.wraith0))));</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#5281"><b>5281</b>if (<i>unit_in_vehicle</i>(unit(await this.player1())))</a>
+<a href="../../Halo2Vista/03b_newmombasa.cs.html#5286"><b>5286</b>if (<i>unit_in_vehicle</i>(unit(await this.player0())))</a>
+</div>
+<div class="rF"><div class="rN">04a_gasgiant.cs (53)</div>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5301"><b>5301</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == true);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5304"><b>5304</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; volume_test_object(vol_arm_02_lz, await this.player0()) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5329"><b>5329</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5357"><b>5357</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5380"><b>5380</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5398"><b>5398</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5416"><b>5416</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5434"><b>5434</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5457"><b>5457</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5475"><b>5475</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5493"><b>5493</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5511"><b>5511</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5534"><b>5534</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5557"><b>5557</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5580"><b>5580</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5598"><b>5598</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5616"><b>5616</b>return <i>unit_in_vehicle</i>(await this.player0()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5627"><b>5627</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player1()) == true);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5630"><b>5630</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player1()) == false &amp;&amp; volume_test_object(vol_arm_02_lz, await this.player1()) == false &amp;&amp; await this.player_count() &gt; 0);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5655"><b>5655</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5683"><b>5683</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5706"><b>5706</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5724"><b>5724</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5742"><b>5742</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5760"><b>5760</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5783"><b>5783</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5801"><b>5801</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5819"><b>5819</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5837"><b>5837</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5860"><b>5860</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5883"><b>5883</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5906"><b>5906</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5924"><b>5924</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#5942"><b>5942</b>return <i>unit_in_vehicle</i>(await this.player1()) == true;</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#6146"><b>6146</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1())) || (bool)game_is_cooperative() == false &amp;&amp; (bool)game_safe_to_save());</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#6855"><b>6855</b>await sleep_until(async () =&gt; volume_test_objects(vol_04a_game_won, players()) == true || this.dogfight_over == true &amp;&amp; volume_test_object(vol_real_win, await this.player0()) == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false || this.dogfight_over == true &amp;&amp; volume_test_object(vol_real_win, await this.player1()) == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#7018"><b>7018</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#7761"><b>7761</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#7806"><b>7806</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#7846"><b>7846</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+<a href="../../Halo2Vista/04a_gasgiant.cs.html#7885"><b>7885</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) || <i>unit_in_vehicle</i>(await this.player0()) &amp;&amp; (bool)game_is_cooperative() == false);</a>
+</div>
+<div class="rF"><div class="rN">04b_floodlab.cs (5)</div>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#3097"><b>3097</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true, 30, 450);</a>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#3098"><b>3098</b>if (<i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true)</a>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#3113"><b>3113</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true, 30, 450);</a>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#3114"><b>3114</b>if (<i>unit_in_vehicle</i>(unit(ai_get_object(this.ai_current_actor))) == true)</a>
+<a href="../../Halo2Vista/04b_floodlab.cs.html#6406"><b>6406</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(unit(list_get(ai_actors(dervish_01.Squad), 0))) == true);</a>
+</div>
+<div class="rF"><div class="rN">05a_deltaapproach.cs (2)</div>
+<a href="../../Halo2Vista/05a_deltaapproach.cs.html#5435"><b>5435</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; volume_test_objects(vol_old_temple_center_01, await this.player0()) == true || volume_test_objects(vol_old_temple_center_03, await this.player0()) == true || volume_test_objects(vol_old_temple_center_05, await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == false &amp;&amp; volume_test_objects(vol_old_temple_center_01, await this.player1()) == true || volume_test_objects(vol_old_temple_center_03, await this.player1()) == true || volume_test_objects(vol_old_temple_center_05, await this.player1()) == true);</a>
+</div>
+<div class="rF"><div class="rN">05b_deltatowers.cs (34)</div>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5115"><b>5115</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5127"><b>5127</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5139"><b>5139</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5151"><b>5151</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5163"><b>5163</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5175"><b>5175</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5187"><b>5187</b>await sleep_until(async () =&gt; this.bossfight_chatter == true &amp;&amp; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5350"><b>5350</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5396"><b>5396</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true || objects_distance_to_object(players(), list_get(ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5397"><b>5397</b>if (<i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true)</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5407"><b>5407</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5436"><b>5436</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5468"><b>5468</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5509"><b>5509</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true || objects_distance_to_object(players(), list_get(ai_actors(regret1.Squad), 0)) &gt; 5F, 30, 150);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5510"><b>5510</b>if (<i>unit_in_vehicle</i>(await this.player0()) == true || <i>unit_in_vehicle</i>(await this.player1()) == true)</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5520"><b>5520</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+<a href="../../Halo2Vista/05b_deltatowers.cs.html#5576"><b>5576</b>await sleep_until(async () =&gt; <i>unit_in_vehicle</i>(await this.player0()) == false &amp;&amp; <i>unit_in_vehicle</i>(await this.player1()) == false);</a>
+</div>
+<div class="rF"><div class="rN">08a_deltacliffs.cs (9)</div>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#856"><b>856</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#862"><b>862</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#1047"><b>1047</b>return !(<i>unit_in_vehicle</i>(unit(await this.player0()))) || !(<i>unit_in_vehicle</i>(unit(await this.player1())));</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#2956"><b>2956</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(e1_cov_inf2.gold_elite))), 15);</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#3061"><b>3061</b>if (<i>unit_in_vehicle</i>(unit(await this.player0())))</a>
+<a href="../../Halo2Vista/08a_deltacliffs.cs.html#3070"><b>3070</b>if (<i>unit_in_vehicle</i>(unit(await this.player1())))</a>
+</div>
+<div class="rF"><div class="rN">08b_deltacontrol.cs (7)</div>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#3503"><b>3503</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) || (bool)game_is_cooperative() &amp;&amp; <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#3509"><b>3509</b>return <i>unit_in_vehicle</i>(unit(await this.player0())) &amp;&amp; !((bool)game_is_cooperative()) || <i>unit_in_vehicle</i>(unit(await this.player1()));</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6904"><b>6904</b>await sleep_until(async () =&gt; await this.players_in_vehicle() &amp;&amp; <i>unit_in_vehicle</i>(this.g_cov_commander) || volume_test_objects(tv_e1_canyon_entry, players()), 10);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6915"><b>6915</b>await sleep_until(async () =&gt; await this.players_in_vehicle() &amp;&amp; <i>unit_in_vehicle</i>(this.g_cov_commander), 10);</a>
+<a href="../../Halo2Vista/08b_deltacontrol.cs.html#6934"><b>6934</b>await sleep_until(async () =&gt; !(<i>unit_in_vehicle</i>(ai_get_unit(this.ai_current_actor))), 5);</a>
+</div>
+</div>
+</div>

@@ -1,29 +1,29 @@
 ﻿<div class="referenceBody">
 <div class="rH">37 references to ScriptStatus</div><div class="rA">OpenH2.Core (37)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Execution\BaseScriptExecutor.cs (2)</div>
-<a href="../Scripting/Execution/BaseScriptExecutor.cs.html#15"><b>15</b>public abstract void SetStatus(<i>ScriptStatus</i> desiredStatus);</a>
-<a href="../Scripting/Execution/BaseScriptExecutor.cs.html#16"><b>16</b>public abstract void SetStatus(ushort methodId, <i>ScriptStatus</i> desiredStatus);</a>
+<a href="../Scripting/Execution/BaseScriptExecutor.cs.html#14"><b>14</b>public abstract void SetStatus(<i>ScriptStatus</i> desiredStatus);</a>
+<a href="../Scripting/Execution/BaseScriptExecutor.cs.html#15"><b>15</b>public abstract void SetStatus(ushort methodId, <i>ScriptStatus</i> desiredStatus);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Execution\InterpretingScriptExecutor.cs (17)</div>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#24"><b>24</b><i>var</i> initialStatus = method.Lifecycle switch</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#26"><b>26</b>Lifecycle.Startup =&gt; <i>ScriptStatus</i>.RunOnce,</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#27"><b>27</b>Lifecycle.Dormant =&gt; <i>ScriptStatus</i>.Terminated,</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#28"><b>28</b>Lifecycle.Continuous =&gt; <i>ScriptStatus</i>.RunContinuous,</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#29"><b>29</b>Lifecycle.Static =&gt; <i>ScriptStatus</i>.Terminated,</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#30"><b>30</b>Lifecycle.Stub =&gt; <i>ScriptStatus</i>.Terminated,</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#31"><b>31</b>Lifecycle.CommandScript =&gt; <i>ScriptStatus</i>.Terminated,</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#61"><b>61</b>if (state.Status == <i>ScriptStatus</i>.RunContinuous || state.Status == <i>ScriptStatus</i>.RunOnce)</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#69"><b>69</b>if(state.Status == <i>ScriptStatus</i>.RunOnce)</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#70"><b>70</b>state.Status = <i>ScriptStatus</i>.Terminated;</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#74"><b>74</b>if (state.Status == <i>ScriptStatus</i>.Sleeping &amp;&amp; --state.SleepTicksRemaining &lt;= 0)</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#76"><b>76</b>state.Status = <i>ScriptStatus</i>.RunOnce;</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#90"><b>90</b>state.Status = <i>ScriptStatus</i>.Sleeping;</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#96"><b>96</b>public override void SetStatus(<i>ScriptStatus</i> desiredStatus)</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#101"><b>101</b>public override void SetStatus(ushort id, <i>ScriptStatus</i> desiredStatus)</a>
-<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#112"><b>112</b>public <i>ScriptStatus</i> Status;</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#22"><b>22</b><i>var</i> initialStatus = method.Lifecycle switch</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#24"><b>24</b>Lifecycle.Startup =&gt; <i>ScriptStatus</i>.RunOnce,</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#25"><b>25</b>Lifecycle.Dormant =&gt; <i>ScriptStatus</i>.Terminated,</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#26"><b>26</b>Lifecycle.Continuous =&gt; <i>ScriptStatus</i>.RunContinuous,</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#27"><b>27</b>Lifecycle.Static =&gt; <i>ScriptStatus</i>.Terminated,</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#28"><b>28</b>Lifecycle.Stub =&gt; <i>ScriptStatus</i>.Terminated,</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#29"><b>29</b>Lifecycle.CommandScript =&gt; <i>ScriptStatus</i>.Terminated,</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#59"><b>59</b>if (state.Status == <i>ScriptStatus</i>.RunContinuous || state.Status == <i>ScriptStatus</i>.RunOnce)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#67"><b>67</b>if(state.Status == <i>ScriptStatus</i>.RunOnce)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#68"><b>68</b>state.Status = <i>ScriptStatus</i>.Terminated;</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#72"><b>72</b>if (state.Status == <i>ScriptStatus</i>.Sleeping &amp;&amp; --state.SleepTicksRemaining &lt;= 0)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#74"><b>74</b>state.Status = <i>ScriptStatus</i>.RunOnce;</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#88"><b>88</b>state.Status = <i>ScriptStatus</i>.Sleeping;</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#94"><b>94</b>public override void SetStatus(<i>ScriptStatus</i> desiredStatus)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#99"><b>99</b>public override void SetStatus(ushort id, <i>ScriptStatus</i> desiredStatus)</a>
+<a href="../Scripting/Execution/InterpretingScriptExecutor.cs.html#110"><b>110</b>public <i>ScriptStatus</i> Status;</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Execution\IScriptExecutor.cs (2)</div>
-<a href="../Scripting/Execution/IScriptExecutor.cs.html#15"><b>15</b>void SetStatus(<i>ScriptStatus</i> desiredStatus);</a>
-<a href="../Scripting/Execution/IScriptExecutor.cs.html#16"><b>16</b>void SetStatus(ushort methodId, <i>ScriptStatus</i> desiredStatus);</a>
+<a href="../Scripting/Execution/IScriptExecutor.cs.html#14"><b>14</b>void SetStatus(<i>ScriptStatus</i> desiredStatus);</a>
+<a href="../Scripting/Execution/IScriptExecutor.cs.html#15"><b>15</b>void SetStatus(ushort methodId, <i>ScriptStatus</i> desiredStatus);</a>
 </div>
 <div class="rF"><div class="rN">Scripting\Execution\ScriptTaskExecutor.cs (16)</div>
 <a href="../Scripting/Execution/ScriptTaskExecutor.cs.html#33"><b>33</b><i>var</i> initialStatus = attr.Lifecycle switch</a>

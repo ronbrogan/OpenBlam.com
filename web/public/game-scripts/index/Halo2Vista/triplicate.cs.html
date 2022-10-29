@@ -25,220 +25,220 @@
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(0, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<a href="/OpenH2.Core/A.html#313e3f6138586ffb" class="t t">IUnit</a>&gt; <a id="f4759638282a8669" href="R/f4759638282a8669.html" target="n" data-glyph="72,1" class="i method">player0</a>()
         &lbrace;
-            <b>return</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#e7efedce94c31ea7" class="i method">unit</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8fafb290e6a7d68a" class="i method">list_get</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#181f0583e5644a73" class="i method">players</a>(), 0));
+            <b>return</b> <a href="/OpenH2.Core/A.html#22453644a4d3a847" class="i method">unit</a>(<a href="/OpenH2.Core/A.html#2548a57ed795bcef" class="i method">list_get</a>(<a href="/OpenH2.Core/A.html#bd24b73994102c8a" class="i method">players</a>(), 0));
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(1, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<a href="/OpenH2.Core/A.html#313e3f6138586ffb" class="t t">IUnit</a>&gt; <a id="50f238616c6a39b1" href="R/50f238616c6a39b1.html" target="n" data-glyph="72,1" class="i method">player1</a>()
         &lbrace;
-            <b>return</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#e7efedce94c31ea7" class="i method">unit</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8fafb290e6a7d68a" class="i method">list_get</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#181f0583e5644a73" class="i method">players</a>(), 1));
+            <b>return</b> <a href="/OpenH2.Core/A.html#22453644a4d3a847" class="i method">unit</a>(<a href="/OpenH2.Core/A.html#2548a57ed795bcef" class="i method">list_get</a>(<a href="/OpenH2.Core/A.html#bd24b73994102c8a" class="i method">players</a>(), 1));
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(2, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<b>int</b>&gt; <a id="6c447be8ce84f926" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">player_count</a>()
         &lbrace;
-            <b>return</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#0be44e8958c979cf" class="i method">list_count</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#181f0583e5644a73" class="i method">players</a>());
+            <b>return</b> <a href="/OpenH2.Core/A.html#ee798d9bc7b46d33" class="i method">list_count</a>(<a href="/OpenH2.Core/A.html#bd24b73994102c8a" class="i method">players</a>());
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(3, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="709854951efa8aa7" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">end_segment</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#3804ccab49085062" class="i method">cinematic_start</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1d7acfa517881fd8" class="i method">fade_out</a>(0F, 0F, 0F, 15);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;end gameplay segment!  thank you for playing!&quot;</span>);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;grab jaime or paul to give feedback!&quot;</span>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;press the �a� button to reset!&quot;</span>);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt; (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1c04a80306166be9" class="i method">player_action_test_accept</a>());
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;reloading map...&quot;</span>);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#559f7fde20e613f6" class="i method">map_reset</a>();
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#87951ed30f1cc2f2" class="i method">cinematic_start</a>();
+            <a href="/OpenH2.Core/A.html#93dcadff64206bc4" class="i method">fade_out</a>(0F, 0F, 0F, 15);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+            <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;end gameplay segment!  thank you for playing!&quot;</span>);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;grab jaime or paul to give feedback!&quot;</span>);
+            <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;press the �a� button to reset!&quot;</span>);
+            <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt; (<b>bool</b>)<a href="/OpenH2.Core/A.html#b6a7ea13f045d44d" class="i method">player_action_test_accept</a>());
+            <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;reloading map...&quot;</span>);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#8f1fed23357085d5" class="i method">map_reset</a>();
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(4, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<b>bool</b>&gt; <a id="fe135629bb1c9b88" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">difficulty_legendary</a>()
         &lbrace;
-            <b>return</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#843165dc4877b8eb" class="i method">game_difficulty_get</a>() == <a href="/OpenH2.Core/A.html#495d481233ede722" class="t valueType">GameDifficulty</a>.<a href="/OpenH2.Core/A.html#d7f096370e918e8b" class="i method">Legendary</a>();
+            <b>return</b> <a href="/OpenH2.Core/A.html#b84849f62bffe213" class="i method">game_difficulty_get</a>() == <a href="/OpenH2.Core/A.html#495d481233ede722" class="t valueType">GameDifficulty</a>.<a href="/OpenH2.Core/A.html#d7f096370e918e8b" class="i method">Legendary</a>();
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(5, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<b>bool</b>&gt; <a id="e61037491afc1538" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">difficulty_heroic</a>()
         &lbrace;
-            <b>return</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#843165dc4877b8eb" class="i method">game_difficulty_get</a>() == <a href="/OpenH2.Core/A.html#495d481233ede722" class="t valueType">GameDifficulty</a>.<a href="/OpenH2.Core/A.html#413d66318cd8ce07" class="i method">Heroic</a>();
+            <b>return</b> <a href="/OpenH2.Core/A.html#b84849f62bffe213" class="i method">game_difficulty_get</a>() == <a href="/OpenH2.Core/A.html#495d481233ede722" class="t valueType">GameDifficulty</a>.<a href="/OpenH2.Core/A.html#413d66318cd8ce07" class="i method">Heroic</a>();
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(6, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<b>bool</b>&gt; <a id="0de2d0fb6ca97cde" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">difficulty_normal</a>()
         &lbrace;
-            <b>return</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#843165dc4877b8eb" class="i method">game_difficulty_get</a>() == <a href="/OpenH2.Core/A.html#495d481233ede722" class="t valueType">GameDifficulty</a>.<a href="/OpenH2.Core/A.html#43000117feea8cee" class="i method">Normal</a>();
+            <b>return</b> <a href="/OpenH2.Core/A.html#b84849f62bffe213" class="i method">game_difficulty_get</a>() == <a href="/OpenH2.Core/A.html#495d481233ede722" class="t valueType">GameDifficulty</a>.<a href="/OpenH2.Core/A.html#43000117feea8cee" class="i method">Normal</a>();
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(7, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span>&lt;<b>bool</b>&gt; <a id="d1fa7177ffb76963" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_skip_start</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#fa004b12b65b8ae6" class="i method">cinematic_skip_start_internal</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#f98440d429cb363d" class="i method">game_save_cinematic_skip</a>();
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt; !((<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#e543638a9b981714" class="i method">game_saving</a>()), 1);
-            <b>return</b> !((<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#ef955582f48add81" class="i method">game_reverted</a>());
+            <a href="/OpenH2.Core/A.html#0c416c39d701fb74" class="i method">cinematic_skip_start_internal</a>();
+            <a href="/OpenH2.Core/A.html#887b44337861eb90" class="i method">game_save_cinematic_skip</a>();
+            <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt; !((<b>bool</b>)<a href="/OpenH2.Core/A.html#19c47fdeb12256e7" class="i method">game_saving</a>()), 1);
+            <b>return</b> !((<b>bool</b>)<a href="/OpenH2.Core/A.html#cf69309db00767e8" class="i method">game_reverted</a>());
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(8, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="b268c24d5380a33b" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_skip_stop</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#4b3d3265d6a7fb42" class="i method">cinematic_skip_stop_internal</a>();
-            <b>if</b> (!((<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#ef955582f48add81" class="i method">game_reverted</a>()))
+            <a href="/OpenH2.Core/A.html#ed9b8b8b015150cd" class="i method">cinematic_skip_stop_internal</a>();
+            <b>if</b> (!((<b>bool</b>)<a href="/OpenH2.Core/A.html#cf69309db00767e8" class="i method">game_reverted</a>()))
             &lbrace;
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5bbd422c548d3af5" class="i method">game_revert</a>();
+                <a href="/OpenH2.Core/A.html#8c90f4e7e7699a59" class="i method">game_revert</a>();
             &rbrace;
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(9, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="dd5e83378cfee801" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_fade_to_white</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#cb2fecdb547c39f5" class="i method">hud_cinematic_fade</a>(0F, 0.5F);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#3804ccab49085062" class="i method">cinematic_start</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1d7acfa517881fd8" class="i method">fade_out</a>(1F, 1F, 1F, 30);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#c772dbdc8e3f83b9" class="i method">hud_cinematic_fade</a>(0F, 0.5F);
+            <a href="/OpenH2.Core/A.html#87951ed30f1cc2f2" class="i method">cinematic_start</a>();
+            <a href="/OpenH2.Core/A.html#93dcadff64206bc4" class="i method">fade_out</a>(1F, 1F, 1F, 30);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(10, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="70d8b1ed73fb2ec9" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_fade_from_white</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#cb2fecdb547c39f5" class="i method">hud_cinematic_fade</a>(1F, 0.5F);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#281c64dbd4d0458c" class="i method">cinematic_stop</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#4a4b077c21d01f38" class="i method">fade_in</a>(1F, 1F, 1F, 15);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#c772dbdc8e3f83b9" class="i method">hud_cinematic_fade</a>(1F, 0.5F);
+            <a href="/OpenH2.Core/A.html#b4000a1ba13dfdc0" class="i method">cinematic_stop</a>();
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#fb0df797c2228f98" class="i method">fade_in</a>(1F, 1F, 1F, 15);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(11, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="0ae4b0adee5e2294" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_fade_from_white_bars</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#281c64dbd4d0458c" class="i method">cinematic_stop</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#a99098a6233cff56" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#4a4b077c21d01f38" class="i method">fade_in</a>(1F, 1F, 1F, 15);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#b4000a1ba13dfdc0" class="i method">cinematic_stop</a>();
+            <a href="/OpenH2.Core/A.html#19df48783f2c83ea" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#fb0df797c2228f98" class="i method">fade_in</a>(1F, 1F, 1F, 15);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(12, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="4c3771607c6038fb" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_fade_from_black_bars</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#281c64dbd4d0458c" class="i method">cinematic_stop</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#a99098a6233cff56" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#4a4b077c21d01f38" class="i method">fade_in</a>(0F, 0F, 0F, 15);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#b4000a1ba13dfdc0" class="i method">cinematic_stop</a>();
+            <a href="/OpenH2.Core/A.html#19df48783f2c83ea" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#fb0df797c2228f98" class="i method">fade_in</a>(0F, 0F, 0F, 15);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(13, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="5209dc44073447ba" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_fade_to_black</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#cb2fecdb547c39f5" class="i method">hud_cinematic_fade</a>(0F, 0.5F);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#3804ccab49085062" class="i method">cinematic_start</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1d7acfa517881fd8" class="i method">fade_out</a>(0F, 0F, 0F, 30);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#c772dbdc8e3f83b9" class="i method">hud_cinematic_fade</a>(0F, 0.5F);
+            <a href="/OpenH2.Core/A.html#87951ed30f1cc2f2" class="i method">cinematic_start</a>();
+            <a href="/OpenH2.Core/A.html#93dcadff64206bc4" class="i method">fade_out</a>(0F, 0F, 0F, 30);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(14, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="fbf2b1a3149127c0" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_fade_from_black</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#cb2fecdb547c39f5" class="i method">hud_cinematic_fade</a>(1F, 0.5F);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#281c64dbd4d0458c" class="i method">cinematic_stop</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#4a4b077c21d01f38" class="i method">fade_in</a>(0F, 0F, 0F, 15);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#c772dbdc8e3f83b9" class="i method">hud_cinematic_fade</a>(1F, 0.5F);
+            <a href="/OpenH2.Core/A.html#b4000a1ba13dfdc0" class="i method">cinematic_stop</a>();
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#fb0df797c2228f98" class="i method">fade_in</a>(0F, 0F, 0F, 15);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(15, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="542d17d53ad653dc" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_snap_to_black</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1d7acfa517881fd8" class="i method">fade_out</a>(0F, 0F, 0F, 0);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#cb2fecdb547c39f5" class="i method">hud_cinematic_fade</a>(0F, 0F);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#3804ccab49085062" class="i method">cinematic_start</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#a99098a6233cff56" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#93dcadff64206bc4" class="i method">fade_out</a>(0F, 0F, 0F, 0);
+            <a href="/OpenH2.Core/A.html#c772dbdc8e3f83b9" class="i method">hud_cinematic_fade</a>(0F, 0F);
+            <a href="/OpenH2.Core/A.html#87951ed30f1cc2f2" class="i method">cinematic_start</a>();
+            <a href="/OpenH2.Core/A.html#19df48783f2c83ea" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(16, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="4528404bae8aacb3" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_snap_to_white</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#503dc4a7b1ce7860" class="i method">player_enable_input</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1556b2953b6412c4" class="i method">player_camera_control</a>(<b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1d7acfa517881fd8" class="i method">fade_out</a>(1F, 1F, 1F, 0);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#cb2fecdb547c39f5" class="i method">hud_cinematic_fade</a>(0F, 0F);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#3804ccab49085062" class="i method">cinematic_start</a>();
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#a99098a6233cff56" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#5a329c9c73fd43d0" class="i method">camera_control</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#fc45decb702249ec" class="i method">player_enable_input</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#d68ac76408226b01" class="i method">player_camera_control</a>(<b>false</b>);
+            <a href="/OpenH2.Core/A.html#93dcadff64206bc4" class="i method">fade_out</a>(1F, 1F, 1F, 0);
+            <a href="/OpenH2.Core/A.html#c772dbdc8e3f83b9" class="i method">hud_cinematic_fade</a>(0F, 0F);
+            <a href="/OpenH2.Core/A.html#87951ed30f1cc2f2" class="i method">cinematic_start</a>();
+            <a href="/OpenH2.Core/A.html#19df48783f2c83ea" class="i method">cinematic_show_letterbox_immediate</a>(<b>true</b>);
+            <a href="/OpenH2.Core/A.html#55974e0b06174b50" class="i method">camera_control</a>(<b>true</b>);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(17, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="cc3a221003f345b1" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_stash_players</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#daca60e29acefcb7" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), <b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#daca60e29acefcb7" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#50f238616c6a39b1" class="i method">player1</a>(), <b>true</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#bf124a7c86a5e522" class="i method">object_cannot_take_damage</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#181f0583e5644a73" class="i method">players</a>());
+            <a href="/OpenH2.Core/A.html#efa8c7c20036fc40" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), <b>true</b>);
+            <a href="/OpenH2.Core/A.html#efa8c7c20036fc40" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#50f238616c6a39b1" class="i method">player1</a>(), <b>true</b>);
+            <a href="/OpenH2.Core/A.html#1204f677454136f7" class="i method">object_cannot_take_damage</a>(<a href="/OpenH2.Core/A.html#bd24b73994102c8a" class="i method">players</a>());
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(18, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="eeadd45c3c480a26" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">cinematic_unstash_players</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#daca60e29acefcb7" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), <b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#daca60e29acefcb7" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#50f238616c6a39b1" class="i method">player1</a>(), <b>false</b>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#02cb329325233899" class="i method">object_can_take_damage</a>(<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#181f0583e5644a73" class="i method">players</a>());
+            <a href="/OpenH2.Core/A.html#efa8c7c20036fc40" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), <b>false</b>);
+            <a href="/OpenH2.Core/A.html#efa8c7c20036fc40" class="i method">object_hide</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#50f238616c6a39b1" class="i method">player1</a>(), <b>false</b>);
+            <a href="/OpenH2.Core/A.html#a87da234b7fc6cce" class="i method">object_can_take_damage</a>(<a href="/OpenH2.Core/A.html#bd24b73994102c8a" class="i method">players</a>());
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(19, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#1d55331eaa99be74" class="i field">Dormant</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="ac876763814cf3ad" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">_stealth_toggle_monitor</a>()
         &lbrace;
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt;
+            <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt;
             &lbrace;
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt;
+                <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt;
                 &lbrace;
-                    <b>if</b> (<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#331d660aefb66193" class="i method">unit_get_shield</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>()) &gt;= 1F &amp;&amp; (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#67354226028baf73" class="i method">player_action_test_vision_trigger</a>())
+                    <b>if</b> (<a href="/OpenH2.Core/A.html#04b77654034e316e" class="i method">unit_get_shield</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>()) &gt;= 1F &amp;&amp; (<b>bool</b>)<a href="/OpenH2.Core/A.html#ce6889441c2e8094" class="i method">player_action_test_vision_trigger</a>())
                     &lbrace;
                         <b>return</b> 1F == 1F;
                     &rbrace;
                     <b>else</b>
                     &lbrace;
-                        <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
+                        <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
                         <b>return</b> 1F == 0F;
                     &rbrace;
                 &rbrace;, 1);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#edeafede7d1141fc" class="i method">cheat_active_camouflage_by_player</a>(0, <b>true</b>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;stealth engaged&quot;</span>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#f137f6378068438a" class="i method">unit_set_maximum_vitality</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 50F, 0F);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#b208e110d542f4fc" class="i method">unit_set_current_vitality</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 50F, 0F);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a21435c82c2401d" class="i method">object_set_shield</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 0F);
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt; <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8eb178875c46fc64" class="i method">object_get_health</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>()) &lt; 1F || (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#67354226028baf73" class="i method">player_action_test_vision_trigger</a>(), 1);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#edeafede7d1141fc" class="i method">cheat_active_camouflage_by_player</a>(0, <b>false</b>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;stealth disengaged&quot;</span>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#f137f6378068438a" class="i method">unit_set_maximum_vitality</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 30F, 70F);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a21435c82c2401d" class="i method">object_set_shield</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 0F);
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
+                <a href="/OpenH2.Core/A.html#972a56dc6982de1d" class="i method">cheat_active_camouflage_by_player</a>(0, <b>true</b>);
+                <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;stealth engaged&quot;</span>);
+                <a href="/OpenH2.Core/A.html#2dd084e2be0c121c" class="i method">unit_set_maximum_vitality</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 50F, 0F);
+                <a href="/OpenH2.Core/A.html#07fa1caecbcef687" class="i method">unit_set_current_vitality</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 50F, 0F);
+                <a href="/OpenH2.Core/A.html#cb2efa58c556b07b" class="i method">object_set_shield</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 0F);
+                <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+                <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
+                <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt; <a href="/OpenH2.Core/A.html#b00eec08bf02bb63" class="i method">object_get_health</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>()) &lt; 1F || (<b>bool</b>)<a href="/OpenH2.Core/A.html#ce6889441c2e8094" class="i method">player_action_test_vision_trigger</a>(), 1);
+                <a href="/OpenH2.Core/A.html#972a56dc6982de1d" class="i method">cheat_active_camouflage_by_player</a>(0, <b>false</b>);
+                <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;stealth disengaged&quot;</span>);
+                <a href="/OpenH2.Core/A.html#2dd084e2be0c121c" class="i method">unit_set_maximum_vitality</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 30F, 70F);
+                <a href="/OpenH2.Core/A.html#cb2efa58c556b07b" class="i method">object_set_shield</a>(<b>await</b> <a href="P/9fbc513188a51500.html#9fbc513188a51500" class="k">this</a>.<a href="#f4759638282a8669" class="i method">player0</a>(), 0F);
+                <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+                <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
                 <b>return</b> <b>false</b>;
             &rbrace;, 1);
         &rbrace;
@@ -246,32 +246,32 @@
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(20, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#1d55331eaa99be74" class="i field">Dormant</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="c6fdce7bdc353e62" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">_stealth_timer_monitor</a>()
         &lbrace;
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt;
+            <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt;
             &lbrace;
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt;
+                <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt;
                 &lbrace;
-                    <b>if</b> ((<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#67354226028baf73" class="i method">player_action_test_vision_trigger</a>())
+                    <b>if</b> ((<b>bool</b>)<a href="/OpenH2.Core/A.html#ce6889441c2e8094" class="i method">player_action_test_vision_trigger</a>())
                     &lbrace;
                         <b>return</b> 1F == 1F;
                     &rbrace;
                     <b>else</b>
                     &lbrace;
-                        <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
+                        <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
                         <b>return</b> 1F == 0F;
                     &rbrace;
                 &rbrace;, 1);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#edeafede7d1141fc" class="i method">cheat_active_camouflage_by_player</a>(0, <b>true</b>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;stealth engaged&quot;</span>);
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(15);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt; (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#67354226028baf73" class="i method">player_action_test_vision_trigger</a>() || (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#aea10e6e00bc8726" class="i method">player_action_test_primary_trigger</a>() || (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#655a6534606dfb7d" class="i method">player_action_test_grenade_trigger</a>() || (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1a6ee4da57e7ae58" class="i method">player_action_test_melee</a>(), 1, 9 * 30);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#edeafede7d1141fc" class="i method">cheat_active_camouflage_by_player</a>(0, <b>false</b>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;stealth disengaged&quot;</span>);
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt;
+                <a href="/OpenH2.Core/A.html#972a56dc6982de1d" class="i method">cheat_active_camouflage_by_player</a>(0, <b>true</b>);
+                <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;stealth engaged&quot;</span>);
+                <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(15);
+                <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
+                <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt; (<b>bool</b>)<a href="/OpenH2.Core/A.html#ce6889441c2e8094" class="i method">player_action_test_vision_trigger</a>() || (<b>bool</b>)<a href="/OpenH2.Core/A.html#ce079e66ca6defca" class="i method">player_action_test_primary_trigger</a>() || (<b>bool</b>)<a href="/OpenH2.Core/A.html#660e4782440c9b6d" class="i method">player_action_test_grenade_trigger</a>() || (<b>bool</b>)<a href="/OpenH2.Core/A.html#96772d8bfb287e29" class="i method">player_action_test_melee</a>(), 1, 9 * 30);
+                <a href="/OpenH2.Core/A.html#972a56dc6982de1d" class="i method">cheat_active_camouflage_by_player</a>(0, <b>false</b>);
+                <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;stealth disengaged&quot;</span>);
+                <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+                <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
+                <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt;
                 &lbrace;
-                    <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#df59241fbb0d668b" class="i method">print</a>(<span class="s">&quot;+&quot;</span>);
+                    <a href="/OpenH2.Core/A.html#cf7a5024a22448e3" class="i method">print</a>(<span class="s">&quot;+&quot;</span>);
                     <b>return</b> <b>false</b>;
                 &rbrace;, 30, 5 * 30);
                 <b>return</b> <b>false</b>;
@@ -281,50 +281,50 @@
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(21, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="578f6cceb200a694" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">activate_stealth_toggle_monitor</a>()
         &lbrace;
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(1);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(1);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(22, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="8602ca89904d34b0" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">activate_stealth_timer_monitor</a>()
         &lbrace;
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(1);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(1);
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(23, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#030313851be53070" class="i field">Static</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="dd0cd16d8ccc6bb0" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">playtest_mission</a>()
         &lbrace;
-            <b>if</b> ((<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#498359a8c1e6c3d1" class="i method">game_is_playtest</a>())
+            <b>if</b> ((<b>bool</b>)<a href="/OpenH2.Core/A.html#2d83fc2f0c89b8d3" class="i method">game_is_playtest</a>())
             &lbrace;
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#c6704bcca4927749" class="i method">hud_set_training_text</a>(<span class="s">&quot;playtest_raisehand&quot;</span>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#f0037b119088f04c" class="i method">hud_show_training_text</a>(<b>true</b>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#33ae3d383d7d7e5d" class="i method">player_action_test_reset</a>();
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#d05cf9dbaf3252e7" class="i method">sleep_until</a>(<b>async</b> () =&gt; (<b>bool</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1c04a80306166be9" class="i method">player_action_test_accept</a>(), 1);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#f0037b119088f04c" class="i method">hud_show_training_text</a>(<b>false</b>);
-                <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(30);
+                <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
+                <a href="/OpenH2.Core/A.html#9380d7939b63d26f" class="i method">hud_set_training_text</a>(<span class="s">&quot;playtest_raisehand&quot;</span>);
+                <a href="/OpenH2.Core/A.html#f21a9078ffc72135" class="i method">hud_show_training_text</a>(<b>true</b>);
+                <a href="/OpenH2.Core/A.html#a38fc31b3817af7c" class="i method">player_action_test_reset</a>();
+                <b>await</b> <a href="/OpenH2.Core/A.html#356b89980f34f7d0" class="i method">sleep_until</a>(<b>async</b> () =&gt; (<b>bool</b>)<a href="/OpenH2.Core/A.html#b6a7ea13f045d44d" class="i method">player_action_test_accept</a>(), 1);
+                <a href="/OpenH2.Core/A.html#f21a9078ffc72135" class="i method">hud_show_training_text</a>(<b>false</b>);
+                <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(30);
             &rbrace;
         &rbrace;
  
         [<a href="/OpenH2.Core/A.html#6d98731082b97b97" class="t constructor">ScriptMethod</a>(24, <a href="/OpenH2.Core/A.html#ac85598e7db36c1d" class="t valueType">Lifecycle</a>.<a href="/OpenH2.Core/A.html#436787a911bc5594" class="i field">Continuous</a>)]
         <b>public async</b> <span class="t t">Task</span> <a id="ecd4acaa652158e0" href="R/../../0000000000.html" target="n" data-glyph="72,1" class="i method">train_of_death</a>()
         &lbrace;
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8f237f2bd41eb34f" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#81985537a902a8ee" class="i property">eastbound_train</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8f237f2bd41eb34f" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#82f428858d085f7e" class="i property">eastbound_death</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8f237f2bd41eb34f" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#9eb68872670b0a41" class="i property">westbound_train</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
-            <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#8f237f2bd41eb34f" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#c751c2424abdde56" class="i property">westbound_death</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#a81b5750e53e5a16" class="i method">sleep</a>((<b>short</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#40f53276acf1fc18" class="i method">random_range</a>(60, 360));
-            <b>if</b> (0 == (<b>short</b>)<a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#40f53276acf1fc18" class="i method">random_range</a>(0, 2))
+            <a href="/OpenH2.Core/A.html#889b895b866c4916" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#81985537a902a8ee" class="i property">eastbound_train</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
+            <a href="/OpenH2.Core/A.html#889b895b866c4916" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#82f428858d085f7e" class="i property">eastbound_death</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
+            <a href="/OpenH2.Core/A.html#889b895b866c4916" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#9eb68872670b0a41" class="i property">westbound_train</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
+            <a href="/OpenH2.Core/A.html#889b895b866c4916" class="i method">object_destroy</a>(<a href="triplicate.Data.cs.html#c751c2424abdde56" class="i property">westbound_death</a>.<a href="/OpenH2.Core/A.html#3299f0e68f4a4bb5" class="i property">Entity</a>);
+            <b>await</b> <a href="/OpenH2.Core/A.html#aa19aad28d7d818d" class="i method">sleep</a>((<b>short</b>)<a href="/OpenH2.Core/A.html#482774171512a7be" class="i method">random_range</a>(60, 360));
+            <b>if</b> (0 == (<b>short</b>)<a href="/OpenH2.Core/A.html#482774171512a7be" class="i method">random_range</a>(0, 2))
             &lbrace;
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1e300f6fadb864c6" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#81985537a902a8ee" class="i property">eastbound_train</a>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1e300f6fadb864c6" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#82f428858d085f7e" class="i property">eastbound_death</a>);
+                <a href="/OpenH2.Core/A.html#25e4d8d9603e8727" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#81985537a902a8ee" class="i property">eastbound_train</a>);
+                <a href="/OpenH2.Core/A.html#25e4d8d9603e8727" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#82f428858d085f7e" class="i property">eastbound_death</a>);
             &rbrace;
             <b>else</b>
             &lbrace;
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1e300f6fadb864c6" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#9eb68872670b0a41" class="i property">westbound_train</a>);
-                <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#1e300f6fadb864c6" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#c751c2424abdde56" class="i property">westbound_death</a>);
+                <a href="/OpenH2.Core/A.html#25e4d8d9603e8727" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#9eb68872670b0a41" class="i property">westbound_train</a>);
+                <a href="/OpenH2.Core/A.html#25e4d8d9603e8727" class="i method">object_create</a>(<a href="triplicate.Data.cs.html#c751c2424abdde56" class="i property">westbound_death</a>);
             &rbrace;
  
-            <b>await</b> <a href="/OpenH2.Core/A.html#8da654decb25bda5" class="i field">Engine</a>.<a href="/OpenH2.Core/A.html#9a61549445392cff" class="i method">sleep</a>(240);
+            <b>await</b> <a href="/OpenH2.Core/A.html#dca2ead6bab0a15a" class="i method">sleep</a>(240);
         &rbrace;
     &rbrace;
 &rbrace;</pre></td></tr></table></div></div>

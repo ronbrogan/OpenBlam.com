@@ -1,7 +1,7 @@
 ProjectSourcePath=OpenH2\src\OpenH2.Core\OpenH2.Core.csproj
-DocumentCount=199
-LinesOfCode=18091
-BytesOfCode=628995
-DeclaredSymbols=3248
-DeclaredTypes=458
-PublicTypes=443
+DocumentCount=217
+LinesOfCode=20421
+BytesOfCode=724945
+DeclaredSymbols=4032
+DeclaredTypes=495
+PublicTypes=478

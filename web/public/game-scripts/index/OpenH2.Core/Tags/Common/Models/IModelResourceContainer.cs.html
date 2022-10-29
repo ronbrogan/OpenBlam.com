@@ -1,7 +1,26 @@
 ﻿
-        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+        <div className="cB"><div className="cz"><table className="tb" cellpadding="0" cellspacing="0"><tr><td valign="top" align="right"><pre id="ln"><a id="1" href="#1" target="_top">1</a><br/><a id="2" href="#2" target="_top">2</a><br/><a id="3" href="#3" target="_top">3</a><br/><a id="4" href="#4" target="_top">4</a><br/><a id="5" href="#5" target="_top">5</a><br/><a id="6" href="#6" target="_top">6</a><br/><a id="7" href="#7" target="_top">7</a><br/><a id="8" href="#8" target="_top">8</a><br/><a id="9" href="#9" target="_top">9</a><br/><a id="10" href="#10" target="_top">10</a><br/><a id="11" href="#11" target="_top">11</a><br/><a id="12" href="#12" target="_top">12</a><br/><a id="13" href="#13" target="_top">13</a><br/><a id="14" href="#14" target="_top">14</a><br/><a id="15" href="#15" target="_top">15</a><br/><a id="16" href="#16" target="_top">16</a><br/><a id="17" href="#17" target="_top">17</a><br/><a id="18" href="#18" target="_top">18</a><br/><a id="19" href="#19" target="_top">19</a><br/><a id="20" href="#20" target="_top">20</a><br/><a id="21" href="#21" target="_top">21</a><br/><a id="22" href="#22" target="_top">22</a><br/><a id="23" href="#23" target="_top">23</a><br/><a id="24" href="#24" target="_top">24</a><br/><a id="25" href="#25" target="_top">25</a><br/><a id="26" href="#26" target="_top">26</a><br/><a id="27" href="#27" target="_top">27</a><br/><a id="28" href="#28" target="_top">28</a><br/><a id="29" href="#29" target="_top">29</a><br/><a id="30" href="#30" target="_top">30</a><br/><a id="31" href="#31" target="_top">31</a><br/><a id="32" href="#32" target="_top">32</a><br/><a id="33" href="#33" target="_top">33</a><br/><a id="34" href="#34" target="_top">34</a><br/><a id="35" href="#35" target="_top">35</a><br/><a id="36" href="#36" target="_top">36</a><br/><a id="37" href="#37" target="_top">37</a><br/><a id="38" href="#38" target="_top">38</a><br/><a id="39" href="#39" target="_top">39</a><br/><a id="40" href="#40" target="_top">40</a><br/><a id="41" href="#41" target="_top">41</a><br/><a id="42" href="#42" target="_top">42</a><br/><a id="43" href="#43" target="_top">43</a><br/><a id="44" href="#44" target="_top">44</a><br/><a id="45" href="#45" target="_top">45</a><br/></pre></td><td valign="top" align="left"><pre id="code">
+<b>using</b> <span class="i n">System</span>;
+ 
 <b>namespace</b> <span class="i n">OpenH2</span>.<span class="i n">Core</span>.<span class="i n">Tags</span>.<span class="i n">Common</span>.<span class="i n">Models</span>
 &lbrace;
+    <b>public enum</b> <a id="24caccbef5f06481" href="../../../R/24caccbef5f06481.html" target="n" data-glyph="18,0" class="t valueType"><span id="dec4cc68578a627d">GeometryClass</span></a> : <b>ushort</b>
+    &lbrace;
+        <a id="957b52ed27c3b22f" href="../../../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">Worldspace</a>,
+        <a id="bdb20b0034a79dab" href="../../../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">Rigid</a>,
+        <a id="7ecf7859405c7d44" href="../../../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">RigidBoned</a>,
+        <a id="6dd7650127c6058c" href="../../../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">Skinned</a>,
+        <a id="c66dbe02aff09406" href="../../../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">UnsupportedBroken</a>
+    &rbrace;
+ 
+    [<span class="t constructor">Flags</span>]
+    <b>public enum</b> <a id="dcc9958ce93a0226" href="../../../R/dcc9958ce93a0226.html" target="n" data-glyph="18,0" class="t valueType"><span id="656cb21c311a5e72">GeometryCompressionFlags</span></a> : <b>short</b>
+    &lbrace;
+        <a id="f284b659c931214a" href="../../../R/f284b659c931214a.html" target="n" data-glyph="24,1" class="i field">CompressedVerts</a> = 1 &lt;&lt; 0,
+        <a id="264bb2dbf227320b" href="../../../R/264bb2dbf227320b.html" target="n" data-glyph="24,1" class="i field">CompressedTexCoords</a> = 1 &lt;&lt; 1,
+        <a id="59cd889d39e7b13c" href="../../../R/../../0000000000.html" target="n" data-glyph="24,1" class="i field">CompressedSecTexCoords</a> = 1 &lt;&lt; 2,
+    &rbrace;
+ 
     <b>public interface</b> <a id="1e57445f6fe458d9" href="../../../R/1e57445f6fe458d9.html" target="n" data-glyph="48,0" class="t t">IModelResourceContainer</a>
     &lbrace;
         <b>ushort</b> <a id="b754929eedae6912" href="../../../R/b754929eedae6912.html" target="n" data-glyph="102,1" class="i property">VertexCount</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
@@ -15,6 +34,10 @@
         <b>uint</b> <a id="270e2e07f2b4b881" href="../../../R/270e2e07f2b4b881.html" target="n" data-glyph="102,1" class="i property">DataBlockSize</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         <b>uint</b> <a id="45faefee0bd58c81" href="../../../R/45faefee0bd58c81.html" target="n" data-glyph="102,1" class="i property">DataPreambleSize</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <a href="#24caccbef5f06481" class="t valueType">GeometryClass</a> <a id="40e5e44688f491e1" href="../../../R/40e5e44688f491e1.html" target="n" data-glyph="102,1" class="i property">GeometryClassification</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
+ 
+        <a href="#dcc9958ce93a0226" class="t valueType">GeometryCompressionFlags</a> <a id="fc0d8f50217473b6" href="../../../R/fc0d8f50217473b6.html" target="n" data-glyph="102,1" class="i property">CompressionFlags</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  
         <a href="ModelResourceBlockHeader.cs.html#7bbe166d2f752265" class="t t">ModelResourceBlockHeader</a> <a id="72d294f6908e9cf2" href="../../../R/72d294f6908e9cf2.html" target="n" data-glyph="102,1" class="i property">Header</a> &lbrace; <b>get</b>; <b>set</b>; &rbrace;
  

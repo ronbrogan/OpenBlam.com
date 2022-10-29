@@ -1,11 +1,11 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to temple_ent_elites_02r</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.Data.cs (1)</div>
-<a href="../05a_deltaapproach.Data.cs.html#935"><b>935</b><i>temple_ent_elites_02r</i> = new Squad_temple_ent_elites_02r(scenarioTag);</a>
+<a href="../05a_deltaapproach.Data.cs.html#738"><b>738</b><i>temple_ent_elites_02r</i> = new Squad_temple_ent_elites_02r(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">2 references to temple_ent_elites_02r</div><div class="rA">Halo2MCC (2)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">05a_deltaapproach.cs (2)</div>
-<a href="../05a_deltaapproach.cs.html#4473"><b>4473</b>await Engine.sleep_until(async () =&gt; (short)Engine.ai_living_count(<i>temple_ent_elites_02r</i>.Squad) &lt; 1 &amp;&amp; (short)Engine.ai_living_count(temple_ent_elites_02l.Squad) &lt; 1 &amp;&amp; (short)Engine.ai_living_count(temple_ent_ghosts_01.Squad) &lt; 1 || Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(temple_ent_ghosts_01.r)) &lt;= 0F &amp;&amp; Engine.object_get_health(Engine.ai_vehicle_get_from_starting_location(temple_ent_ghosts_01.l)) &lt;= 0F || Engine.volume_test_objects(vol_temple_ent_02, Engine.players()) == true || Engine.volume_test_objects(vol_temple_ent_03, Engine.players()) == true, 30, 900);</a>
-<a href="../05a_deltaapproach.cs.html#4570"><b>4570</b>Engine.ai_place(<i>temple_ent_elites_02r</i>.Squad, (short)(1 - (float)Engine.ai_living_count(temple_ent_elites_01r.Squad)));</a>
+<a href="../05a_deltaapproach.cs.html#4473"><b>4473</b>await sleep_until(async () =&gt; (short)ai_living_count(<i>temple_ent_elites_02r</i>.Squad) &lt; 1 &amp;&amp; (short)ai_living_count(temple_ent_elites_02l.Squad) &lt; 1 &amp;&amp; (short)ai_living_count(temple_ent_ghosts_01.Squad) &lt; 1 || object_get_health(ai_vehicle_get_from_starting_location(temple_ent_ghosts_01.r)) &lt;= 0F &amp;&amp; object_get_health(ai_vehicle_get_from_starting_location(temple_ent_ghosts_01.l)) &lt;= 0F || volume_test_objects(vol_temple_ent_02, players()) == true || volume_test_objects(vol_temple_ent_03, players()) == true, 30, 900);</a>
+<a href="../05a_deltaapproach.cs.html#4570"><b>4570</b>ai_place(<i>temple_ent_elites_02r</i>.Squad, (short)(1 - (float)ai_living_count(temple_ent_elites_01r.Squad)));</a>
 </div>
 </div>
 </div>

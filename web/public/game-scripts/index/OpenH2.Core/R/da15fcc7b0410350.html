@@ -1,5 +1,5 @@
 ﻿<div class="referenceBody">
-<div class="rH">13 references to ITeam</div><div class="rA">OpenH2.Core (13)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
+<div class="rH">19 references to ITeam</div><div class="rA">OpenH2.Core (19)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Generation\SyntaxUtil.cs (1)</div>
 <a href="../Scripting/Generation/SyntaxUtil.cs.html#109"><b>109</b>{ typeof(<i>ITeam</i>), ScriptDataType.Team },</a>
 </div>
 <div class="rF"><div class="rN">Scripting\IScriptEngine.cs (6)</div>
@@ -9,13 +9,18 @@
 <a href="../Scripting/IScriptEngine.cs.html#682"><b>682</b>void deactivate_team_nav_point_flag(<i>ITeam</i> team, ILocationFlag cutscene_flag);</a>
 <a href="../Scripting/IScriptEngine.cs.html#686"><b>686</b>void deactivate_team_nav_point_object(<i>ITeam</i> team, IGameObject entity);</a>
 </div>
-<div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (6)</div>
-<a href="../Scripting/ScenarioScriptBase.cs.html#11"><b>11</b>public <i>ITeam</i> player;</a>
-<a href="../Scripting/ScenarioScriptBase.cs.html#12"><b>12</b>public <i>ITeam</i> human;</a>
-<a href="../Scripting/ScenarioScriptBase.cs.html#13"><b>13</b>public <i>ITeam</i> prophet;</a>
-<a href="../Scripting/ScenarioScriptBase.cs.html#14"><b>14</b>public <i>ITeam</i> covenant;</a>
-<a href="../Scripting/ScenarioScriptBase.cs.html#15"><b>15</b>public <i>ITeam</i> sentinel;</a>
-<a href="../Scripting/ScenarioScriptBase.cs.html#16"><b>16</b>public <i>ITeam</i> heretic;</a>
+<div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (12)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#18"><b>18</b>public <i>ITeam</i> player;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#19"><b>19</b>public <i>ITeam</i> human;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#20"><b>20</b>public <i>ITeam</i> prophet;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#21"><b>21</b>public <i>ITeam</i> covenant;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#22"><b>22</b>public <i>ITeam</i> sentinel;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#23"><b>23</b>public <i>ITeam</i> heretic;</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#46"><b>46</b>public void activate_team_nav_point_flag(INavigationPoint navpoint, <i>ITeam</i> team, ILocationFlag cutscene_flag, float real) =&gt; Engine.activate_team_nav_point_flag(navpoint, team, cutscene_flag, real);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#48"><b>48</b>public void activate_team_nav_point_object(INavigationPoint navpoint, <i>ITeam</i> team, IGameObject entity, float real) =&gt; Engine.activate_team_nav_point_object(navpoint, team, entity, real);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#52"><b>52</b>public void ai_allegiance(<i>ITeam</i> team, <i>ITeam</i> team1) =&gt; Engine.ai_allegiance(team, team1);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#380"><b>380</b>public void deactivate_team_nav_point_flag(<i>ITeam</i> team, ILocationFlag cutscene_flag) =&gt; Engine.deactivate_team_nav_point_flag(team, cutscene_flag);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#382"><b>382</b>public void deactivate_team_nav_point_object(<i>ITeam</i> team, IGameObject entity) =&gt; Engine.deactivate_team_nav_point_object(team, entity);</a>
 </div>
 </div>
 </div>

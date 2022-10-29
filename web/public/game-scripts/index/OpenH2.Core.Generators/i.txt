@@ -1,7 +1,7 @@
 ProjectSourcePath=OpenH2\src\OpenH2.Core.Generators\OpenH2.Core.Generators.csproj
 DocumentCount=6
-LinesOfCode=745
-BytesOfCode=34674
+LinesOfCode=739
+BytesOfCode=34497
 DeclaredSymbols=22
 DeclaredTypes=4
 PublicTypes=2

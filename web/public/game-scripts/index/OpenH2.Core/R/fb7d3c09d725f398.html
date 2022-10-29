@@ -1,13 +1,18 @@
 ﻿<div class="referenceBody">
 <div class="rH">2 implementations of IEntityIdentifier</div><div class="rA">OpenH2.Core (2)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\Types.cs (2)</div>
-<a href="../Scripting/Types.cs.html#117"><b>117</b>public class EntityIdentifier : <i>IEntityIdentifier</i></a>
-<a href="../Scripting/Types.cs.html#127"><b>127</b>public struct ScenarioEntity&lt;TItem&gt; : <i>IEntityIdentifier</i></a>
+<a href="../Scripting/Types.cs.html#127"><b>127</b>public class EntityIdentifier : <i>IEntityIdentifier</i></a>
+<a href="../Scripting/Types.cs.html#137"><b>137</b>public struct ScenarioEntity&lt;TItem&gt; : <i>IEntityIdentifier</i></a>
 </div>
 </div>
-<div class="rH">3 references to IEntityIdentifier</div><div class="rA">OpenH2.Core (3)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (3)</div>
+<div class="rH">6 references to IEntityIdentifier</div><div class="rA">OpenH2.Core (6)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">Scripting\IScriptEngine.cs (3)</div>
 <a href="../Scripting/IScriptEngine.cs.html#1026"><b>1026</b>void object_create(<i>IEntityIdentifier</i> object_name);</a>
 <a href="../Scripting/IScriptEngine.cs.html#1030"><b>1030</b>void object_create_anew(<i>IEntityIdentifier</i> object_name);</a>
 <a href="../Scripting/IScriptEngine.cs.html#1038"><b>1038</b>void object_create_clone(<i>IEntityIdentifier</i> object_name);</a>
+</div>
+<div class="rF"><div class="rN">Scripting\ScenarioScriptBase.cs (3)</div>
+<a href="../Scripting/ScenarioScriptBase.cs.html#558"><b>558</b>public void object_create(<i>IEntityIdentifier</i> object_name) =&gt; Engine.object_create(object_name);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#560"><b>560</b>public void object_create_anew(<i>IEntityIdentifier</i> object_name) =&gt; Engine.object_create_anew(object_name);</a>
+<a href="../Scripting/ScenarioScriptBase.cs.html#564"><b>564</b>public void object_create_clone(<i>IEntityIdentifier</i> object_name) =&gt; Engine.object_create_clone(object_name);</a>
 </div>
 </div>
 </div>

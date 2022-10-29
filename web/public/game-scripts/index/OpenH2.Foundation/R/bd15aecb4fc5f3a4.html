@@ -22,14 +22,14 @@
 <a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#113"><b>113</b>var vert = new <i>VertexFormat</i>();</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (1)</div>
-<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#117"><b>117</b>var newVert = new <i>VertexFormat</i>(newPos,</a>
+<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#114"><b>114</b>var newVert = new <i>VertexFormat</i>(newPos,</a>
 </div>
 </div>
-<div class="rH">19 references to VertexFormat</div><div class="rA">OpenH2.Core (17)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">ExternalFormats\WavefrontObjWriter.cs (5)</div>
-<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#17"><b>17</b>private Dictionary&lt;(<i>VertexFormat</i>[], Matrix4x4), int&gt; indexBasis = new Dictionary&lt;(<i>VertexFormat</i>[], Matrix4x4), int&gt;();</a>
-<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#53"><b>53</b>foreach (<i>var</i> vert in verts)</a>
-<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#60"><b>60</b>foreach (<i>var</i> vert in verts)</a>
-<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#65"><b>65</b>foreach (<i>var</i> vert in verts)</a>
+<div class="rH">21 references to VertexFormat</div><div class="rA">OpenH2.Core (17)</div><div class="rG" id="OpenH2.Core"><div class="rF"><div class="rN">ExternalFormats\WavefrontObjWriter.cs (5)</div>
+<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#16"><b>16</b>private Dictionary&lt;(<i>VertexFormat</i>[], Matrix4x4), int&gt; indexBasis = new Dictionary&lt;(<i>VertexFormat</i>[], Matrix4x4), int&gt;();</a>
+<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#52"><b>52</b>foreach (<i>var</i> vert in verts)</a>
+<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#59"><b>59</b>foreach (<i>var</i> vert in verts)</a>
+<a href="../../OpenH2.Core/ExternalFormats/WavefrontObjWriter.cs.html#64"><b>64</b>foreach (<i>var</i> vert in verts)</a>
 </div>
 <div class="rF"><div class="rN">Factories\ModelFactory.cs (3)</div>
 <a href="../../OpenH2.Core/Factories/ModelFactory.cs.html#28"><b>28</b>Verticies = new <i>VertexFormat</i>[] {</a>
@@ -48,15 +48,16 @@
 <a href="../../OpenH2.Core/Tags/Common/Models/ModelResourceContainerProcessor.cs.html#145"><b>145</b><i>var</i> vert = verts[i];</a>
 </div>
 <div class="rF"><div class="rN">Tags\RenderModelTag.cs (2)</div>
-<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#102"><b>102</b><i>var</i> vert = mesh.Verticies[i];</a>
-<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#117"><b>117</b><i>var</i> newVert = new VertexFormat(newPos,</a>
+<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#99"><b>99</b><i>var</i> vert = mesh.Verticies[i];</a>
+<a href="../../OpenH2.Core/Tags/RenderModelTag.cs.html#114"><b>114</b><i>var</i> newVert = new VertexFormat(newPos,</a>
 </div>
 </div>
-<div class="rA">OpenH2.Foundation (2)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Mesh.cs (1)</div>
+<div class="rA">OpenH2.Foundation (4)</div><div class="rG" id="OpenH2.Foundation"><div class="rF"><div class="rN">Mesh.cs (1)</div>
 <a href="../Mesh.cs.html#6"><b>6</b>public <i>VertexFormat</i>[] Verticies { get; set; }</a>
 </div>
-<div class="rF"><div class="rN">VertexFormat.cs (1)</div>
-<a href="../VertexFormat.cs.html#33"><b>33</b>public static readonly int Size = Marshal.SizeOf&lt;<i>VertexFormat</i>&gt;();</a>
+<div class="rF"><div class="rN">VertexFormat.cs (3)</div>
+<a href="../VertexFormat.cs.html#25"><b>25</b><i>var</i> o = default(<i>VertexFormat</i>);</a>
+<a href="../VertexFormat.cs.html#52"><b>52</b>public static readonly int Size = Marshal.SizeOf&lt;<i>VertexFormat</i>&gt;();</a>
 </div>
 </div>
 </div>

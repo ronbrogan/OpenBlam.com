@@ -1,21 +1,21 @@
 ﻿<div class="referenceBody">
 <div class="rH">1 write to e13_cov_creep0_2</div><div class="rA">Halo2MCC (1)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.Data.cs (1)</div>
-<a href="../03a_oldmombasa.Data.cs.html#895"><b>895</b><i>e13_cov_creep0_2</i> = new Squad_e13_cov_creep0_2(scenarioTag);</a>
+<a href="../03a_oldmombasa.Data.cs.html#763"><b>763</b><i>e13_cov_creep0_2</i> = new Squad_e13_cov_creep0_2(scenarioTag);</a>
 </div>
 </div>
 <div class="rH">12 references to e13_cov_creep0_2</div><div class="rA">Halo2MCC (12)</div><div class="rG" id="Halo2MCC"><div class="rF"><div class="rN">03a_oldmombasa.cs (12)</div>
-<a href="../03a_oldmombasa.cs.html#2126"><b>2126</b>if ((short)Engine.ai_living_count(e13_cov_creep0_1.creep0) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
-<a href="../03a_oldmombasa.cs.html#2152"><b>2152</b>if ((short)Engine.ai_living_count(e13_cov_creep0_0.creep0) &lt;= 0 &amp;&amp; (short)Engine.ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
-<a href="../03a_oldmombasa.cs.html#2244"><b>2244</b>await Engine.sleep_until(async () =&gt; Engine.unit_get_health(Engine.ai_get_unit(e13_cov_creep0_1.creep0)) &lt;= 0F || Engine.objects_distance_to_object(Engine.players(), Engine.ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0)) &lt; Engine.objects_distance_to_object(Engine.players(), Engine.ai_vehicle_get_from_starting_location(e13_cov_creep0_1.creep0)) || Engine.volume_test_objects(tv_e13_waypoint1, Engine.players()));</a>
-<a href="../03a_oldmombasa.cs.html#2246"><b>2246</b>Engine.activate_team_nav_point_object(_default, player, Engine.ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0), 1.5F);</a>
-<a href="../03a_oldmombasa.cs.html#2247"><b>2247</b>await Engine.sleep_until(async () =&gt; Engine.unit_get_health(Engine.ai_get_unit(<i>e13_cov_creep0_2</i>.creep0)) &lt;= 0F || Engine.volume_test_objects(tv_e13_waypoint1, Engine.players()));</a>
-<a href="../03a_oldmombasa.cs.html#2248"><b>2248</b>Engine.deactivate_team_nav_point_object(player, Engine.ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0));</a>
-<a href="../03a_oldmombasa.cs.html#2271"><b>2271</b>Engine.vehicle_load_magic(Engine.ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0), &quot;creep_sc01&quot;, Engine.ai_vehicle_get_from_starting_location(e13_cov_ghosts0.ghost2));</a>
-<a href="../03a_oldmombasa.cs.html#2284"><b>2284</b>if ((short)Engine.ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
-<a href="../03a_oldmombasa.cs.html#2286"><b>2286</b>Engine.vehicle_unload(Engine.ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0), &quot;creep_sc01&quot;);</a>
-<a href="../03a_oldmombasa.cs.html#2302"><b>2302</b>Engine.ai_place(<i>e13_cov_creep0_2</i>.Squad);</a>
-<a href="../03a_oldmombasa.cs.html#2307"><b>2307</b>Engine.cs_queue_command_script(<i>e13_cov_creep0_2</i>.creep0, new ScriptMethodReference(cs_e13_cov_creep0_2_decision));</a>
-<a href="../03a_oldmombasa.cs.html#2312"><b>2312</b>if ((short)Engine.ai_living_count(e13_cov_creep0_0.creep0) &lt;= 0 || (short)Engine.ai_living_count(e13_cov_creep0_1.creep0) &lt;= 0 || (short)Engine.ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
+<a href="../03a_oldmombasa.cs.html#2126"><b>2126</b>if ((short)ai_living_count(e13_cov_creep0_1.creep0) &lt;= 0 &amp;&amp; (short)ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
+<a href="../03a_oldmombasa.cs.html#2152"><b>2152</b>if ((short)ai_living_count(e13_cov_creep0_0.creep0) &lt;= 0 &amp;&amp; (short)ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
+<a href="../03a_oldmombasa.cs.html#2244"><b>2244</b>await sleep_until(async () =&gt; unit_get_health(ai_get_unit(e13_cov_creep0_1.creep0)) &lt;= 0F || objects_distance_to_object(players(), ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0)) &lt; objects_distance_to_object(players(), ai_vehicle_get_from_starting_location(e13_cov_creep0_1.creep0)) || volume_test_objects(tv_e13_waypoint1, players()));</a>
+<a href="../03a_oldmombasa.cs.html#2246"><b>2246</b>activate_team_nav_point_object(_default, player, ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0), 1.5F);</a>
+<a href="../03a_oldmombasa.cs.html#2247"><b>2247</b>await sleep_until(async () =&gt; unit_get_health(ai_get_unit(<i>e13_cov_creep0_2</i>.creep0)) &lt;= 0F || volume_test_objects(tv_e13_waypoint1, players()));</a>
+<a href="../03a_oldmombasa.cs.html#2248"><b>2248</b>deactivate_team_nav_point_object(player, ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0));</a>
+<a href="../03a_oldmombasa.cs.html#2271"><b>2271</b>vehicle_load_magic(ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0), &quot;creep_sc01&quot;, ai_vehicle_get_from_starting_location(e13_cov_ghosts0.ghost2));</a>
+<a href="../03a_oldmombasa.cs.html#2284"><b>2284</b>if ((short)ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
+<a href="../03a_oldmombasa.cs.html#2286"><b>2286</b>vehicle_unload(ai_vehicle_get_from_starting_location(<i>e13_cov_creep0_2</i>.creep0), &quot;creep_sc01&quot;);</a>
+<a href="../03a_oldmombasa.cs.html#2302"><b>2302</b>ai_place(<i>e13_cov_creep0_2</i>.Squad);</a>
+<a href="../03a_oldmombasa.cs.html#2307"><b>2307</b>cs_queue_command_script(<i>e13_cov_creep0_2</i>.creep0, new ScriptMethodReference(cs_e13_cov_creep0_2_decision));</a>
+<a href="../03a_oldmombasa.cs.html#2312"><b>2312</b>if ((short)ai_living_count(e13_cov_creep0_0.creep0) &lt;= 0 || (short)ai_living_count(e13_cov_creep0_1.creep0) &lt;= 0 || (short)ai_living_count(<i>e13_cov_creep0_2</i>.creep0) &lt;= 0)</a>
 </div>
 </div>
 </div>
